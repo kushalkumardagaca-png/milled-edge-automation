@@ -1,2 +1,3 @@
-INACTIVE — no deletion phrase present.
-This workflow only deletes posts when this file contains the exact confirmation phrase.
+CONFIRM: DELETE ALL POSTS PERMANENTLY
+Requested by blog owner in Arena chat: 2026-11-01T02:52:38Z
+Scope: all posts only. Pages must not be touched. No content backup requested.
