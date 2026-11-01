@@ -1,3 +1,1 @@
-CONFIRM: DELETE ALL POSTS PERMANENTLY
-Requested by blog owner in Arena chat: 2026-11-01T02:52:38Z
-Scope: all posts only. Pages must not be touched. No content backup requested.
+INACTIVE — deletion completed on 2026-11-01T03:03:03Z. Do not add the confirmation phrase unless the owner explicitly requests another deletion.
