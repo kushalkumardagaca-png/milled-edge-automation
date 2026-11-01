@@ -1,2 +1,3 @@
-INACTIVE — no deletion phrase present.
-This workflow only deletes the two allowlisted pages when this file contains the exact confirmation phrase.
+CONFIRM: DELETE DAILY NEWS AND DAILY ARTICLE PAGES
+Requested by blog owner in Arena chat: 2026-11-01T04:42:55Z
+Scope: only Daily news and Daily article pages. No other pages may be deleted.
