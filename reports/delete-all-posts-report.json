@@ -1,0 +1,4619 @@
+{
+  "mode": "delete-all-posts",
+  "started_at_utc": "2026-11-01T02:52:59.987696+00:00",
+  "blog": {
+    "id": "8911514070006792465",
+    "name": "Milled Edge",
+    "url": "https://millededgeindia.blogspot.com/"
+  },
+  "found_by_status": {
+    "LIVE": 654,
+    "DRAFT": 0,
+    "SCHEDULED": 0,
+    "SOFT_TRASHED": 3
+  },
+  "deleted": [
+    {
+      "id": "5127564352236509364",
+      "title": "Banking & Personal Money — 25 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/banking-fintech-personal-money-2026-10_0951599945.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7026027618370290711",
+      "title": "Global Finance News — 25 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/global-finance-news-2026-10-25.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "541879484245074551",
+      "title": "Companies, IPOs & Deals News — 25 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/companies-ipos-deals-2026-10-25.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "981298219849103142",
+      "title": "Americas Finance News — 24 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/americas-finance-news-2026-10-25.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1323102802007734950",
+      "title": "India Finance News — 25 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/india-finance-news-2026-10-25.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1295591317782255906",
+      "title": "Europe Finance News — 25 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/europe-finance-news-2026-10-25.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8936166857896526595",
+      "title": "Economy, Trade & Jobs News — 25 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/economy-trade-jobs-2026-10-25.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6192634417521741829",
+      "title": "Markets & Commodities News — 25 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/markets-crypto-commodities-2026-10-25.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4535769649565742898",
+      "title": "Can A Trading App Truly Be Risk-Free When Real",
+      "url": "https://millededgeindia.blogspot.com/2026/10/can-trading-app-truly-be-risk-free-when.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4246285476538465745",
+      "title": "EUR/USD 1.1193 · EUR/GBP 0.8373 · EUR/JPY",
+      "url": "https://millededgeindia.blogspot.com/2026/10/eurusd-11193-eurgbp-08373-eurjpy.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5058081782143584795",
+      "title": "Russia Finance News — 25 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/russia-finance-news-2026-10-25.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3467254687628181721",
+      "title": "Bond dealers see small rise in UK debt",
+      "url": "https://millededgeindia.blogspot.com/2026/10/bond-dealers-see-small-rise-in-uk-debt.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4797101530150785482",
+      "title": "China Finance News — 25 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/china-finance-news-2026-10-25.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7693404432077661629",
+      "title": "Asia-Pacific Finance News — 25 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/asia-pacific-finance-news-2026-10-25.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4281384137334253886",
+      "title": "Time, labour and cost of caring for ageing",
+      "url": "https://millededgeindia.blogspot.com/2026/10/time-labour-and-cost-of-caring-for.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "377320423311250736",
+      "title": "UK consumer confidence falls at fastest rate",
+      "url": "https://millededgeindia.blogspot.com/2026/10/uk-consumer-confidence-falls-at-fastest.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5186135554674326101",
+      "title": "Current U.S. Inflation Rate Is 3.7%: Chart",
+      "url": "https://millededgeindia.blogspot.com/2026/10/current-us-inflation-rate-is-37-chart.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3837562723228423601",
+      "title": "Global Finance News — 24 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/global-finance-news-2026-10-24.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6285560956596515987",
+      "title": "Banking & Personal Money — 24 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/banking-fintech-personal-money-2026-10_0812342773.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "452593830051486340",
+      "title": "Companies, IPOs & Deals News — 24 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/companies-ipos-deals-2026-10-24.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8957985532236031735",
+      "title": "Americas Finance News — 23 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/americas-finance-news-2026-10-24_01348029101.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3193443628527815330",
+      "title": "War in Ukraine: Europe stands united behind",
+      "url": "https://millededgeindia.blogspot.com/2026/10/war-in-ukraine-europe-stands-united.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8071249161530160859",
+      "title": "Canadian Gaming Association to demonstrate",
+      "url": "https://millededgeindia.blogspot.com/2026/10/canadian-gaming-association-to.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7321350999013062196",
+      "title": "How to convert Crypto to cash without",
+      "url": "https://millededgeindia.blogspot.com/2026/10/how-to-convert-crypto-to-cash-without.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8311384829498550918",
+      "title": "European shares close out best week since",
+      "url": "https://millededgeindia.blogspot.com/2026/10/european-shares-close-out-best-week.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1613893354955206150",
+      "title": "Europe Finance News — 24 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/europe-finance-news-2026-10-24.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8471058718786426166",
+      "title": "Economy, Trade & Jobs News — 24 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/economy-trade-jobs-2026-10-24.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7293912576923715975",
+      "title": "Markets & Commodities News — 24 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/markets-crypto-commodities-2026-10-24.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3803739317390452556",
+      "title": "Russia Finance News — 24 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/russia-finance-news-2026-10-24.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3407815900675063101",
+      "title": "Rupee posts best week in seven months",
+      "url": "https://millededgeindia.blogspot.com/2026/10/rupee-posts-best-week-in-seven-months.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3122324012419341486",
+      "title": "The latest university side hustle?",
+      "url": "https://millededgeindia.blogspot.com/2026/10/the-latest-university-side-hustle.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7217463922205507868",
+      "title": "India Finance News — 24 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/india-finance-news-2026-10-24.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4383557322981049163",
+      "title": "Cyprus police investigate financial and tax",
+      "url": "https://millededgeindia.blogspot.com/2026/10/cyprus-police-investigate-financial-and.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7527241672717126091",
+      "title": "China Finance News — 24 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/china-finance-news-2026-10-24.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8671234749610684293",
+      "title": "Asia-Pacific Finance News — 24 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/asia-pacific-finance-news-2026-10-24.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1893141228816987288",
+      "title": "Declining loan amounts push new mortgage",
+      "url": "https://millededgeindia.blogspot.com/2026/10/declining-loan-amounts-push-new-mortgage.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8731270892727226370",
+      "title": "Ipsos Cost of Living Monitor",
+      "url": "https://millededgeindia.blogspot.com/2026/10/ipsos-cost-of-living-monitor.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7500088513739677295",
+      "title": "F.N.B (FNB) Stock Be 39% Undervalued",
+      "url": "https://millededgeindia.blogspot.com/2026/10/fnb-fnb-stock-be-39-undervalued.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2611421459709846009",
+      "title": "Your Guide to Open Enrollment and Health",
+      "url": "https://millededgeindia.blogspot.com/2026/10/your-guide-to-open-enrollment-and-health.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8726414175300377007",
+      "title": "Banking & Personal Money — 23 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/banking-fintech-personal-money-2026-10_092740615.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6868362413965754377",
+      "title": "Global Finance News — 23 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/global-finance-news-2026-10-23.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4593633743024567521",
+      "title": "Payment fintech funding doubles in H1",
+      "url": "https://millededgeindia.blogspot.com/2026/10/payment-fintech-funding-doubles-in-h1.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8683379711878383620",
+      "title": "Companies, IPOs & Deals News — 23 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/companies-ipos-deals-2026-10-23.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "713197566572330549",
+      "title": "Companies, IPOs & Deals News — 20 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/companies-ipos-deals-2026-10-20.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1204831259047951273",
+      "title": "Global Finance News — 20 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/global-finance-news-2026-10-20.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3770398349848652052",
+      "title": "Banking & Personal Money — 20 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/banking-fintech-personal-money-2026-10_01140619784.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6636779080409235472",
+      "title": "Cost of living protests hit Belgium, Italy",
+      "url": "https://millededgeindia.blogspot.com/2026/10/cost-of-living-protests-hit-belgium.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4577982504302647843",
+      "title": "4 Different Types of Life Insurance & How",
+      "url": "https://millededgeindia.blogspot.com/2026/10/4-different-types-of-life-insurance-how.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7004815846320476469",
+      "title": "Asia-Pacific Finance News — 21 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/asia-pacific-finance-news-2026-10-21.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8502904488042533776",
+      "title": "China Finance News — 21 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/china-finance-news-2026-10-21.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7353191763869785865",
+      "title": "India Finance News — 21 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/india-finance-news-2026-10-21.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7388204962101122216",
+      "title": "AI Knowledge Graph Matches University",
+      "url": "https://millededgeindia.blogspot.com/2026/10/ai-knowledge-graph-matches-university.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1614648280725922043",
+      "title": "A modest increase in bank taxes is not the end",
+      "url": "https://millededgeindia.blogspot.com/2026/10/a-modest-increase-in-bank-taxes-is-not.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3101142734363436598",
+      "title": "Markets & Commodities News — 21 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/markets-crypto-commodities-2026-10-21.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5561678841017292788",
+      "title": "Rowan-Cabarrus Community College to Facilitate",
+      "url": "https://millededgeindia.blogspot.com/2026/10/rowan-cabarrus-community-college-to.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "449281030970327101",
+      "title": "Europe Finance News — 21 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/europe-finance-news-2026-10-21.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7289776793714998506",
+      "title": "Economy, Trade & Jobs News — 21 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/economy-trade-jobs-2026-10-21.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3385104682195449335",
+      "title": "Russia Finance News — 21 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/russia-finance-news-2026-10-21.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4156442135494572049",
+      "title": "Billionaire Mukesh Ambani launches",
+      "url": "https://millededgeindia.blogspot.com/2026/10/billionaire-mukesh-ambani-launches.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2577353491876737055",
+      "title": "Bajaj Housing Finance Q2 Results: PAT rises",
+      "url": "https://millededgeindia.blogspot.com/2026/10/bajaj-housing-finance-q2-results-pat.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3396524310851150233",
+      "title": "Colorado construction leader says local",
+      "url": "https://millededgeindia.blogspot.com/2026/10/colorado-construction-leader-says-local.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1269331296722935928",
+      "title": "Americas Finance News — 20 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/americas-finance-news-2026-10-21.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8203951312799027369",
+      "title": "Global Market: Japan’s Nikkei falls 2% as tech",
+      "url": "https://millededgeindia.blogspot.com/2026/10/global-market-japans-nikkei-falls-2-as.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8730646758070246016",
+      "title": "Companies, IPOs & Deals News — 21 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/companies-ipos-deals-2026-10-21.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4243216869367220504",
+      "title": "Global Finance News — 21 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/global-finance-news-2026-10-21.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6108867866347636203",
+      "title": "Banking & Personal Money — 21 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/banking-fintech-personal-money-2026-10_0271866575.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3174973902426099039",
+      "title": "Profit warnings from UK-listed firms",
+      "url": "https://millededgeindia.blogspot.com/2026/10/profit-warnings-from-uk-listed-firms.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8694775490549012497",
+      "title": "Student Loan Interest Rates: Federal, Private",
+      "url": "https://millededgeindia.blogspot.com/2026/10/student-loan-interest-rates-federal.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8789548647198613671",
+      "title": "Is ₹3 lakh enough for your emergency fund",
+      "url": "https://millededgeindia.blogspot.com/2026/10/is-3-lakh-enough-for-your-emergency-fund.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2334661503074498747",
+      "title": "Asia-Pacific Finance News — 22 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/asia-pacific-finance-news-2026-10-22.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4833173877968427607",
+      "title": "China Finance News — 22 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/china-finance-news-2026-10-22.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2796036380906732386",
+      "title": "Chancellor rejects calls to raise Capital",
+      "url": "https://millededgeindia.blogspot.com/2026/10/chancellor-rejects-calls-to-raise.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8648219755845517290",
+      "title": "India Finance News — 22 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/india-finance-news-2026-10-22.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7107171055684140747",
+      "title": "How does lifestyle inflation trap people",
+      "url": "https://millededgeindia.blogspot.com/2026/10/how-does-lifestyle-inflation-trap-people.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1303717902064237738",
+      "title": "Prediction market odds on Tesla-SpaceX merger",
+      "url": "https://millededgeindia.blogspot.com/2026/10/prediction-market-odds-on-tesla-spacex.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4312239429628629803",
+      "title": "Russia Finance News — 22 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/russia-finance-news-2026-10-22.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7861304969837528494",
+      "title": "5 ETFs to Help Build Your Emergency Fund",
+      "url": "https://millededgeindia.blogspot.com/2026/10/5-etfs-to-help-build-your-emergency-fund.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4721719875757676328",
+      "title": "Markets & Commodities News — 22 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/markets-crypto-commodities-2026-10-22.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5300479940864132306",
+      "title": "Economy, Trade & Jobs News — 22 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/economy-trade-jobs-2026-10-22.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4135538795238990499",
+      "title": "Why is Elon Musk plotting a mega-merger",
+      "url": "https://millededgeindia.blogspot.com/2026/10/why-is-elon-musk-plotting-mega-merger.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8715778911542193478",
+      "title": "Trump and Student Loans: What’s Happening",
+      "url": "https://millededgeindia.blogspot.com/2026/10/trump-and-student-loans-whats-happening.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3658494215281139768",
+      "title": "Americas Finance News — 21 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/americas-finance-news-2026-10-22.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1300745469037343379",
+      "title": "Europe Finance News — 22 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/europe-finance-news-2026-10-22.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1126382412867853456",
+      "title": "China’s offshore tax crackdown could",
+      "url": "https://millededgeindia.blogspot.com/2026/10/chinas-offshore-tax-crackdown-could.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6271790969933165166",
+      "title": "Companies, IPOs & Deals News — 22 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/companies-ipos-deals-2026-10-22.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1599425060762981230",
+      "title": "Banking & Personal Money — 22 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/banking-fintech-personal-money-2026-10_0950223734.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7409054977055192195",
+      "title": "Global Finance News — 22 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/global-finance-news-2026-10-22.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8459522681593161682",
+      "title": "Sponsor Banks, BaaS, and Plugging Digital",
+      "url": "https://millededgeindia.blogspot.com/2026/10/sponsor-banks-baas-and-plugging-digital.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5411464423199331886",
+      "title": "Understanding the Total Portfolio Approach",
+      "url": "https://millededgeindia.blogspot.com/2026/10/understanding-total-portfolio-approach.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3094906652414957235",
+      "title": "China Finance News — 23 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/china-finance-news-2026-10-23.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5739826210989693745",
+      "title": "India Finance News — 23 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/india-finance-news-2026-10-23.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6613113947610254373",
+      "title": "Asia-Pacific Finance News — 23 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/asia-pacific-finance-news-2026-10-23.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1636631838452784385",
+      "title": "Meta strikes deal to keep Zuckerberg",
+      "url": "https://millededgeindia.blogspot.com/2026/10/meta-strikes-deal-to-keep-zuckerberg.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2640705153804887433",
+      "title": "Nasdaq slides 2% Friday to post worst week",
+      "url": "https://millededgeindia.blogspot.com/2026/10/nasdaq-slides-2-friday-to-post-worst.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3152171070393998600",
+      "title": "Need money in emergency?: Take loan against",
+      "url": "https://millededgeindia.blogspot.com/2026/10/need-money-in-emergency-take-loan.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3162070883021265451",
+      "title": "Russia Finance News — 23 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/russia-finance-news-2026-10-23.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8157529439344618215",
+      "title": "Europe Finance News — 23 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/europe-finance-news-2026-10-23.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5829871675540134168",
+      "title": "Markets & Commodities News — 23 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/markets-crypto-commodities-2026-10-23.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3151053370121987209",
+      "title": "Tesla beats earnings projections after Musk",
+      "url": "https://millededgeindia.blogspot.com/2026/10/tesla-beats-earnings-projections-after.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1066994052197675063",
+      "title": "Economy, Trade & Jobs News — 23 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/economy-trade-jobs-2026-10-23.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6711512469155695775",
+      "title": "Property Capital Gains Tax Changes Could",
+      "url": "https://millededgeindia.blogspot.com/2026/10/property-capital-gains-tax-changes-could.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3007539162419610864",
+      "title": "Americas Finance News — 22 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/americas-finance-news-2026-10-23.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "513465851024896385",
+      "title": "EUR/USD 1.1253 · EUR/GBP 0.8438 · EUR/JPY 177.",
+      "url": "https://millededgeindia.blogspot.com/2026/10/eurusd-11253-eurgbp-08438-eurjpy-177.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3794916987021150590",
+      "title": "Market News — 1 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/category-market-and-trading-2026-10-01.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2274700424288194259",
+      "title": "Proposals to close Minneapolis schools",
+      "url": "https://millededgeindia.blogspot.com/2026/10/proposals-to-close-minneapolis-schools.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3046344212324826316",
+      "title": "Asia-Pacific Finance News — 18 October… (2)",
+      "url": "https://millededgeindia.blogspot.com/2026/10/asia-pacific-finance-news-2026-10-18.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1603299896743938486",
+      "title": "Inside India newsletter: Billionaire",
+      "url": "https://millededgeindia.blogspot.com/2026/10/inside-india-newsletter-billionaire.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5507964045091284860",
+      "title": "Social Security to Adjust Cost of Living by 3",
+      "url": "https://millededgeindia.blogspot.com/2026/10/social-security-to-adjust-cost-of.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2421318385064853324",
+      "title": "How to Evaluate Healthcare AI",
+      "url": "https://millededgeindia.blogspot.com/2026/10/how-to-evaluate-healthcare-ai.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6875432953247800043",
+      "title": "Banking & Personal Money News (6)",
+      "url": "https://millededgeindia.blogspot.com/2026/10/banking-fintech-personal-money-2026-10_01559215980.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6440924687029284362",
+      "title": "Banking & Personal Money News (5)",
+      "url": "https://millededgeindia.blogspot.com/2026/10/banking-fintech-personal-money-2026-10_02014784419.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4182636857771329459",
+      "title": "Banking & Personal Money News (4)",
+      "url": "https://millededgeindia.blogspot.com/2026/10/banking-fintech-personal-money-2026-10_01893468813.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4653367058767878921",
+      "title": "Americas Finance News — 11 October 2026 (2)",
+      "url": "https://millededgeindia.blogspot.com/2026/10/americas-finance-news-2026-10-12.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6615935574461620333",
+      "title": "Banking & Personal Money News (3)",
+      "url": "https://millededgeindia.blogspot.com/2026/10/banking-fintech-personal-money-2026-10_0558819666.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6416571193713380748",
+      "title": "Banking & Personal Money News (2)",
+      "url": "https://millededgeindia.blogspot.com/2026/10/banking-fintech-personal-money-2026-10.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3642714645055323544",
+      "title": "Russia Finance News — 8 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/russia-2026-10-08.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2086402769837356848",
+      "title": "Personal Finance News — 8 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-personal-finance-2026-10-08.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1987294778846987824",
+      "title": "Mexico Finance News — 8 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/mexico-2026-10-08.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1124459578583235421",
+      "title": "Canada Finance News — 8 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/canada-2026-10-08.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5976976945670049457",
+      "title": "US Finance News — 8 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/us-2026-10-08.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7088831973636579413",
+      "title": "Brazil Finance News — 8 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/brazil-2026-10-08.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4518309045726699028",
+      "title": "Corporate Finance News — 8 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-corporate-finance-and-industry_0777916234.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1243917476458440522",
+      "title": "Italy Finance News — 8 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/italy-2026-10-08.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "9204978929483913360",
+      "title": "Spain Finance News — 8 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/spain-2026-10-08.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5213255900658508187",
+      "title": "China Finance News — 8 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/china-2026-10-08.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6046828668896748547",
+      "title": "UK Finance News — 8 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/uk-2026-10-08.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6519938804499910889",
+      "title": "Japan Finance News — 8 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/japan-2026-10-08.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6464871470548798984",
+      "title": "France Finance News — 8 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/france-2026-10-08.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3719754414711676298",
+      "title": "Germany Finance News — 8 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/germany-2026-10-08.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1146781738200323490",
+      "title": "Macro Policy News — 8 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-economy-and-macro-policy-2026_01862474054.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4659526555789622713",
+      "title": "Market News — 8 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-market-and-trading-2026-10-08.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8188495491336954127",
+      "title": "India Finance News — 8 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/india-2026-10-08.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1506964555052672098",
+      "title": "Global Finance News — 8 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/global-wire-top15-2026-10-08.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1588416772214254069",
+      "title": "South Korea Finance News — 8 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/south-korea-2026-10-08.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8091879574722465162",
+      "title": "Australia Finance News — 8 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/australia-2026-10-08.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6126351177979088020",
+      "title": "Russia Finance News — 7 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/russia-2026-10-07.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6928555553102007726",
+      "title": "Personal Finance News — 7 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-personal-finance-2026-10-07.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1267822633016363240",
+      "title": "Mexico Finance News — 7 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/mexico-2026-10-07.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7805587522923081516",
+      "title": "Canada Finance News — 7 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/canada-2026-10-07.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "403244398836150074",
+      "title": "US Finance News — 7 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/us-2026-10-07.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7567295669208024780",
+      "title": "Brazil Finance News — 7 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/brazil-2026-10-07.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8373179465591875563",
+      "title": "Corporate Finance News — 7 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-corporate-finance-and-industry_02075404004.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3906642234484602271",
+      "title": "Italy Finance News — 7 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/italy-2026-10-07.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8195532941961466665",
+      "title": "Spain Finance News — 7 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/spain-2026-10-07.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6406555063724104861",
+      "title": "China Finance News — 7 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/china-2026-10-07.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8655037016349971031",
+      "title": "UK Finance News — 7 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/uk-2026-10-07.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6864184901007014403",
+      "title": "Japan Finance News — 7 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/japan-2026-10-07.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6144789579006508886",
+      "title": "France Finance News — 7 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/france-2026-10-07.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3109300077794838580",
+      "title": "Germany Finance News — 7 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/germany-2026-10-07.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8974318104922843334",
+      "title": "Macro Policy News — 7 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-economy-and-macro-policy-2026_0694295104.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2078401247278256120",
+      "title": "Market News — 7 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-market-and-trading-2026-10-07.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3819542896221889448",
+      "title": "India Finance News — 7 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/india-2026-10-07.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2500756184123204747",
+      "title": "Global Finance News — 7 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/global-wire-top15-2026-10-07.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8424036406237802934",
+      "title": "South Korea Finance News — 7 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/south-korea-2026-10-07.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6338924420211395140",
+      "title": "Australia Finance News — 7 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/australia-2026-10-07.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5944176563098972409",
+      "title": "Corporate Finance and Industry News (6)",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-corporate-finance-and-industry_0259378603.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3979313414915210815",
+      "title": "Corporate Finance and Industry News (5)",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-corporate-finance-and-industry_0978730797.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3853953066895570500",
+      "title": "Corporate Finance and Industry News (4)",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-corporate-finance-and-industry_01760479359.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "9150949963237525136",
+      "title": "Corporate Finance and Industry News (3)",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-corporate-finance-and-industry_01971481127.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1504093871376035088",
+      "title": "Corporate Finance and Industry News (2)",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-corporate-finance-and-industry_01660061060.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "76036352328662163",
+      "title": "Stop Maxing Your 401(k)",
+      "url": "https://millededgeindia.blogspot.com/2026/09/context-httpsschema.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5564629106804601974",
+      "title": "Your Portfolio Does Not Owe You Rent",
+      "url": "https://millededgeindia.blogspot.com/2026/09/context-httpsschema_0119702296.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3610227808164818053",
+      "title": "Pension fund managers in India: A guide to per",
+      "url": "https://millededgeindia.blogspot.com/2026/10/pension-fund-managers-in-india-guide-to.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "301468101354895225",
+      "title": "How Healey's First UK Budget Impact Markets &",
+      "url": "https://millededgeindia.blogspot.com/2026/10/how-healeys-first-uk-budget-impact.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1766285354349597171",
+      "title": "Price Your Career Break Before You Take It",
+      "url": "https://millededgeindia.blogspot.com/2026/10/the-real-price-of-career-break.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7476330954814461730",
+      "title": "Build Your Layoff Plan Before You Need It",
+      "url": "https://millededgeindia.blogspot.com/2026/09/run-recession-checklist-while-employed.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2283440779727151028",
+      "title": "Cost-of-living struggles inspire Community",
+      "url": "https://millededgeindia.blogspot.com/2026/10/cost-of-living-struggles-inspire.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1850876032189829686",
+      "title": "John Healey ‘targets tax crackdown on online",
+      "url": "https://millededgeindia.blogspot.com/2026/10/john-healey-targets-tax-crackdown-on.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4499989432552412339",
+      "title": "Bank of America shares drop 5%",
+      "url": "https://millededgeindia.blogspot.com/2026/10/bank-of-america-shares-drop-5-after.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "9023812846107728662",
+      "title": "Kremlin-backed money launderer used London",
+      "url": "https://millededgeindia.blogspot.com/2026/10/kremlin-backed-money-launderer-used.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6583150827434029152",
+      "title": "Fairfax Financial Buying Majority Stake",
+      "url": "https://millededgeindia.blogspot.com/2026/10/fairfax-financial-buying-majority-stake.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "616765031614505219",
+      "title": "UAB-sponsored benefit options include",
+      "url": "https://millededgeindia.blogspot.com/2026/10/uab-sponsored-benefit-options-include.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5418418937101021321",
+      "title": "Cost-of-living demonstrations to grip",
+      "url": "https://millededgeindia.blogspot.com/2026/10/cost-of-living-demonstrations-to-grip.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8088108242072023689",
+      "title": "U.S. budget deficit swells to almost $2",
+      "url": "https://millededgeindia.blogspot.com/2026/10/us-budget-deficit-swells-to-almost-2.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6234213347996380703",
+      "title": "Global investors firm India BFSI bets",
+      "url": "https://millededgeindia.blogspot.com/2026/10/global-investors-firm-india-bfsi-bets.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "9069992116012703385",
+      "title": "X Money is here: What Elon Musk’s financial",
+      "url": "https://millededgeindia.blogspot.com/2026/10/x-money-is-here-what-elon-musks.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1164333058374665273",
+      "title": "(LEAD) S. Korea, U.S. hold first 2+2 meeting",
+      "url": "https://millededgeindia.blogspot.com/2026/10/lead-s-korea-us-hold-first-22-meeting-o.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2027432231152299218",
+      "title": "Be a gharjamai: Is wife asking her husband",
+      "url": "https://millededgeindia.blogspot.com/2026/10/be-gharjamai-is-wife-asking-her-husband.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7806487294052098789",
+      "title": "World Bank says ‘small AI’ could transform",
+      "url": "https://millededgeindia.blogspot.com/2026/10/world-bank-says-small-ai-could.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6920916215797924239",
+      "title": "Tear gas fired as thousands protest rising",
+      "url": "https://millededgeindia.blogspot.com/2026/10/tear-gas-fired-as-thousands-protest.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8227914744116637440",
+      "title": "Payoneer: How Stablecoin is Scaling",
+      "url": "https://millededgeindia.blogspot.com/2026/10/payoneer-how-stablecoin-is-scaling-in.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4792094839354608790",
+      "title": "Americas Finance News — 19 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/americas-finance-news-2026-10-20.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6572963176860585623",
+      "title": "Burnham Capital Gains Tax threat could disrupt",
+      "url": "https://millededgeindia.blogspot.com/2026/10/burnham-capital-gains-tax-threat-could.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3525051443986631738",
+      "title": "SpaceX, Tesla earnings to test Musk’s AI spend",
+      "url": "https://millededgeindia.blogspot.com/2026/10/spacex-tesla-earnings-to-test-musks-ai.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7863290360637206819",
+      "title": "Economy, Trade & Jobs News — 20 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/economy-trade-jobs-2026-10-20.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1439624398479128291",
+      "title": "Europe Finance News — 20 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/europe-finance-news-2026-10-20.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1724824406581106725",
+      "title": "Markets & Commodities News — 20 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/markets-crypto-commodities-2026-10-20.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5628935765798288570",
+      "title": "How can I declare my interest income on provid",
+      "url": "https://millededgeindia.blogspot.com/2026/10/how-can-i-declare-my-interest-income-on.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5971353314180738834",
+      "title": "Russia Finance News — 20 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/russia-finance-news-2026-10-20.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1065569986167957327",
+      "title": "How often is Daily Yield published?",
+      "url": "https://millededgeindia.blogspot.com/2026/10/how-often-is-daily-yield-published.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "9039578531745051353",
+      "title": "Could India’s Stock-Market Tax Cuts Unlock Liq",
+      "url": "https://millededgeindia.blogspot.com/2026/10/could-indias-stock-market-tax-cuts.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5659211543182531710",
+      "title": "India Finance News — 20 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/india-finance-news-2026-10-20.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "173937315598549930",
+      "title": "Bereaved families could face 'unjust' tax bill",
+      "url": "https://millededgeindia.blogspot.com/2026/10/bereaved-families-could-face-unjust-tax.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8957998181192228756",
+      "title": "China Finance News — 20 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/china-finance-news-2026-10-20.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2301150919697104650",
+      "title": "Asia-Pacific Finance News — 20 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/asia-pacific-finance-news-2026-10-20.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "450088471474196304",
+      "title": "Asset allocation: Gold leads as equity returns",
+      "url": "https://millededgeindia.blogspot.com/2026/10/asset-allocation-gold-leads-as-equity.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "24037414820760314",
+      "title": "Banking & Personal Money — 19 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/banking-fintech-personal-money-2026-10_0512615699.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7372596916794240277",
+      "title": "Global Finance News — 19 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/global-finance-news-2026-10-19.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1903543580274422137",
+      "title": "Companies, IPOs & Deals News — 19 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/companies-ipos-deals-2026-10-19.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3811014225069079739",
+      "title": "Americas Finance News — 18 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/americas-finance-news-2026-10-19.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2485587679705367737",
+      "title": "FRA approves six companies to conduct non-bank",
+      "url": "https://millededgeindia.blogspot.com/2026/10/fra-approves-six-companies-to-conduct.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2058928482498892618",
+      "title": "10 Ways to Pay Off Credit Card Debt",
+      "url": "https://millededgeindia.blogspot.com/2026/10/10-ways-to-pay-off-credit-card-debt.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6618830486964731686",
+      "title": "Trump's student loan overhaul could lead to mo",
+      "url": "https://millededgeindia.blogspot.com/2026/10/trumps-student-loan-overhaul-could-lead.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7522701975885879765",
+      "title": "Economy, Trade & Jobs News — 19 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/economy-trade-jobs-2026-10-19.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "78674684906186974",
+      "title": "Europe Finance News — 19 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/europe-finance-news-2026-10-19.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5954135184107712491",
+      "title": "Markets & Commodities News — 19 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/markets-crypto-commodities-2026-10-19.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "9060085774935695206",
+      "title": "Russia Finance News — 19 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/russia-finance-news-2026-10-19.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6856450570783361904",
+      "title": "India Finance News — 19 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/india-finance-news-2026-10-19.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7286868337322818533",
+      "title": "China Finance News — 19 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/china-finance-news-2026-10-19.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4889328831326021192",
+      "title": "Asia-Pacific Finance News — 19 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/asia-pacific-finance-news-2026-10-19.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4694425055740970329",
+      "title": "Call for more food funding due to high living",
+      "url": "https://millededgeindia.blogspot.com/2026/10/call-for-more-food-funding-due-to-high.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5724800732791944991",
+      "title": "China's central bank to boost support for glob",
+      "url": "https://millededgeindia.blogspot.com/2026/10/chinas-central-bank-to-boost-support.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "943062772594238272",
+      "title": "Fuel Surcharges Hit Low‑Cost Airlines",
+      "url": "https://millededgeindia.blogspot.com/2026/10/fuel-surcharges-hit-lowcost-airlines.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "9185981256107977926",
+      "title": "South Korea Finance News — 6 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/south-korea-2026-10-06.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "9115764774433521189",
+      "title": "South Korea Finance News — 26 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/south-korea-2026-09-26.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "9051696550888128467",
+      "title": "US Finance News — 27 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/us-2026-09-27.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8934759392828970541",
+      "title": "Defining Wealth: What Is an Asset?",
+      "url": "https://millededgeindia.blogspot.com/2026/10/defining-wealth-what-is-asset.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8780956659587017395",
+      "title": "Age Is a Bad Net Worth Target",
+      "url": "https://millededgeindia.blogspot.com/2026/09/real-net-worth-targets-by-age-for.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8605540625196160085",
+      "title": "South Korea Finance News — 25 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/south-korea-2026-09-25.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7949223128636486384",
+      "title": "Two Paychecks Can Still Break",
+      "url": "https://millededgeindia.blogspot.com/2026/09/why-dual-income-couples-still-feel-one.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7917175397372471855",
+      "title": "Bangladesh Startup Funding Drops",
+      "url": "https://millededgeindia.blogspot.com/2026/10/bangladesh-startup-funding-drops.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7856067051374791672",
+      "title": "SEC Unveils Tokenized Stock Exemption",
+      "url": "https://millededgeindia.blogspot.com/2026/10/sec-unveils-tokenized-stock-exemption.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7836621888717460852",
+      "title": "South Korea Finance News — 2 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/south-korea-2026-10-02.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7674640489272907651",
+      "title": "Fintech’s Evolution, Disruption, and Future",
+      "url": "https://millededgeindia.blogspot.com/2026/10/fintechs-evolution-disruption-and-future.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7632338182974546049",
+      "title": "US Finance News — 1 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/us-2026-10-01.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7509329855154139182",
+      "title": "Germany Finance News — 3 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/germany-2026-10-03.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "749521336862589933",
+      "title": "Personal Finance News — 25 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/category-personal-finance-2026-09-25.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6656356680841125757",
+      "title": "South Korea Finance News — 4 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/south-korea-2026-10-04.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6486688981578418368",
+      "title": "Build a Debt Plan Around Shift Work",
+      "url": "https://millededgeindia.blogspot.com/2026/09/nurse-two-kids-18k-debt-fixed.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6198179080179508205",
+      "title": "Markets & Commodities News — 13 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/markets-crypto-commodities-2026-10-13.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6121654008990265419",
+      "title": "Mastering Budgeting for Beginners",
+      "url": "https://millededgeindia.blogspot.com/2026/10/mastering-budgeting-for-beginners.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6110897283203249229",
+      "title": "US Finance News — 2 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/us-2026-10-02.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6066778244772837378",
+      "title": "Markets & Commodities News — 15 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/markets-crypto-commodities-2026-10-15.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5979745421799098842",
+      "title": "Markets & Commodities News — 14 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/markets-crypto-commodities-2026-10-14.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5701917770607627658",
+      "title": "Markets & Commodities News — 12 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/markets-crypto-commodities-2026-10-12.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5655979092044783562",
+      "title": "Personal Finance News — 6 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-personal-finance-2026-10-06.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5505177037483463182",
+      "title": "Markets & Commodities News — 11 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/markets-crypto-commodities-2026-10-11.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5404346285805003109",
+      "title": "Building a Healthcare AI Advantage",
+      "url": "https://millededgeindia.blogspot.com/2026/10/building-healthcare-ai-advantage.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5305676119975498294",
+      "title": "Gold and Silver Price Outlook & Macro Drivers",
+      "url": "https://millededgeindia.blogspot.com/2026/10/gold-and-silver-price-outlook-macro.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5131310480958239502",
+      "title": "South Korea Finance News — 5 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/south-korea-2026-10-05.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4770596769544807782",
+      "title": "Balancing Budgets And Cost Pressures",
+      "url": "https://millededgeindia.blogspot.com/2026/10/balancing-budgets-and-cost-pressures.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4559693310963899298",
+      "title": "Personal Finance News — 27 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/category-personal-finance-2026-09-27.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4156483657490223145",
+      "title": "South Korea Finance News — 29 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/south-korea-2026-09-29.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3732839907904396174",
+      "title": "Ambani Heirs Lead Record Jio IPO Roadshow",
+      "url": "https://millededgeindia.blogspot.com/2026/10/ambani-heirs-lead-record-jio-ipo.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3566483254293904115",
+      "title": "South Korea Finance News — 28 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/south-korea-2026-09-28.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3354573029890676948",
+      "title": "Mexico Finance News — 3 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/mexico-2026-10-03.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2983561509636256187",
+      "title": "South Korea Finance News — 27 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/south-korea-2026-09-27.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2542420316692426930",
+      "title": "South Korea Finance News — 1 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/south-korea-2026-10-01.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1728449732468068976",
+      "title": "National Budget Realities & Fiscal Policy",
+      "url": "https://millededgeindia.blogspot.com/2026/10/national-budget-realities-fiscal-policy.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1700784563179985190",
+      "title": "Markets & Commodities News — 10 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/markets-crypto-commodities-2026-10-10.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "132048976709130267",
+      "title": "Canada Finance News — 1 October 2026 (2)",
+      "url": "https://millededgeindia.blogspot.com/2026/10/canada-2026-10-01_0922194937.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1134526280711723914",
+      "title": "South Korea Finance News — 3 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/south-korea-2026-10-03.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1126447614310368625",
+      "title": "House Hack Only When the Math Works",
+      "url": "https://millededgeindia.blogspot.com/2026/09/house-hack-before-you-landlord.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8804767660614639774",
+      "title": "Banking & Personal Money News",
+      "url": "https://millededgeindia.blogspot.com/2026/10/banking-fintech-personal-money-2026-10_01450325346.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1407791015796238129",
+      "title": "Global Finance News — 18 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/global-finance-news-2026-10-18.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7081084934321272842",
+      "title": "Companies, IPOs & Deals News — 18 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/companies-ipos-deals-2026-10-18.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "9004215401947468965",
+      "title": "Americas Finance News — 17 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/americas-finance-news-2026-10-18.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7434389172805313190",
+      "title": "India Finance News — 25 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/india-2026-09-25.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "778009067188225768",
+      "title": "Market News — 25 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/category-market-and-trading-2026-09-25.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3580047848347313026",
+      "title": "Macro Policy News — 25 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/category-economy-and-macro-policy-2026.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "9219122336676981755",
+      "title": "Germany Finance News — 25 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/germany-2026-09-25.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4562345940833333639",
+      "title": "France Finance News — 25 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/france-2026-09-25.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1374496040576360177",
+      "title": "UK Finance News — 25 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/uk-2026-09-25.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1496481957315805113",
+      "title": "Corporate Finance News — 25 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/category-corporate-finance-and-industry.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6882231783502356233",
+      "title": "US Finance News — 25 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/us-2026-09-25.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3288071481427933520",
+      "title": "Russia Finance News — 25 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/russia-2026-09-25.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2557941853294839938",
+      "title": "Australia Finance News — 26 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/australia-2026-09-26.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "115783846078738704",
+      "title": "Global Finance News — 26 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/global-wire-top15-2026-09-26.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6622106669535090283",
+      "title": "India Finance News — 26 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/india-2026-09-26.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1244600316209982174",
+      "title": "Market News — 26 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/category-market-and-trading-2026-09-26.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6787552373366780877",
+      "title": "Macro Policy News — 26 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/category-economy-and-macro-policy-2026_01001893817.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1685234226138286098",
+      "title": "Germany Finance News — 26 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/germany-2026-09-26.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4996598231152424846",
+      "title": "France Finance News — 26 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/france-2026-09-26.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1107194767136752071",
+      "title": "Japan Finance News — 26 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/japan-2026-09-26.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4827012825782525705",
+      "title": "UK Finance News — 26 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/uk-2026-09-26.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6017439504908254782",
+      "title": "China Finance News — 26 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/china-2026-09-26.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7978855042342948180",
+      "title": "Spain Finance News — 26 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/spain-2026-09-26.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3265098780048862172",
+      "title": "Corporate Finance News — 26 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/category-corporate-finance-and-industry_01395999271.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4802097022733879661",
+      "title": "Italy Finance News — 26 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/italy-2026-09-26.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4252136656968625158",
+      "title": "Brazil Finance News — 26 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/brazil-2026-09-26.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7833492098676155691",
+      "title": "US Finance News — 26 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/us-2026-09-26.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "133946527053973582",
+      "title": "Canada Finance News — 26 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/canada-2026-09-26.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8973398431497020572",
+      "title": "Mexico Finance News — 26 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/mexico-2026-09-26.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5809539308164270577",
+      "title": "Personal Finance News — 26 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/category-personal-finance-2026-09-26.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8141949697072344971",
+      "title": "Russia Finance News — 26 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/russia-2026-09-26.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6643967970978131215",
+      "title": "Australia Finance News — 27 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/australia-2026-09-27.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1525321452486561932",
+      "title": "Global Finance News — 27 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/global-wire-top15-2026-09-27.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6563970637452730738",
+      "title": "India Finance News — 27 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/india-2026-09-27.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5949797759482040830",
+      "title": "Market News — 27 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/category-market-and-trading-2026-09-27.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6486100444408340779",
+      "title": "Macro Policy News — 27 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/category-economy-and-macro-policy-2026_0624211380.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "193247759891078847",
+      "title": "Germany Finance News — 27 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/germany-2026-09-27.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2148070858167788668",
+      "title": "France Finance News — 27 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/france-2026-09-27.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7952741125342031934",
+      "title": "Japan Finance News — 27 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/japan-2026-09-27.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6008980440625951868",
+      "title": "UK Finance News — 27 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/uk-2026-09-27.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4208803768759667992",
+      "title": "China Finance News — 27 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/china-2026-09-27.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3692047325956181058",
+      "title": "Spain Finance News — 27 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/spain-2026-09-27.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7973170617751893872",
+      "title": "Corporate Finance News — 27 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/category-corporate-finance-and-industry_01446121781.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5838514800314490393",
+      "title": "Brazil Finance News — 27 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/brazil-2026-09-27.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2949080403088347215",
+      "title": "Canada Finance News — 27 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/canada-2026-09-27.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2220914668880365188",
+      "title": "Mexico Finance News — 27 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/mexico-2026-09-27.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5984345327493779721",
+      "title": "Russia Finance News — 27 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/russia-2026-09-27.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8595229389581582705",
+      "title": "Australia Finance News — 28 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/australia-2026-09-28.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6334994565996995329",
+      "title": "Global Finance News — 28 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/global-wire-top15-2026-09-28.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7080232271061962890",
+      "title": "India Finance News — 28 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/india-2026-09-28.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4839715618924227739",
+      "title": "Market News — 28 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/category-market-and-trading-2026-09-28.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7120917028774007604",
+      "title": "Macro Policy News — 28 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/category-economy-and-macro-policy-2026_017346688.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7064447949502231390",
+      "title": "Germany Finance News — 28 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/germany-2026-09-28.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7610007741627454383",
+      "title": "France Finance News — 28 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/france-2026-09-28.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7828478888559605544",
+      "title": "Japan Finance News — 28 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/japan-2026-09-28.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2456526586094870954",
+      "title": "UK Finance News — 28 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/uk-2026-09-28.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6136867085515829924",
+      "title": "China Finance News — 28 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/china-2026-09-28.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3308607986117894116",
+      "title": "Spain Finance News — 28 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/spain-2026-09-28.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8220571972089630701",
+      "title": "Italy Finance News — 28 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/italy-2026-09-28.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1176196356811634898",
+      "title": "Corporate Finance News — 28 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/category-corporate-finance-and-industry_061642693.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2086262243563462858",
+      "title": "Brazil Finance News — 28 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/brazil-2026-09-28.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6398572425484507020",
+      "title": "US Finance News — 28 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/us-2026-09-28.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1692610470499812937",
+      "title": "Canada Finance News — 28 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/canada-2026-09-28.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1022860638256450673",
+      "title": "Personal Finance News — 28 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/category-personal-finance-2026-09-28.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5244611819587678418",
+      "title": "Russia Finance News — 28 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/russia-2026-09-28.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2829755268130449976",
+      "title": "Australia Finance News — 29 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/australia-2026-09-29.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1954269198646496705",
+      "title": "Global Finance News — 29 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/global-wire-top15-2026-09-29.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1470400056182955354",
+      "title": "India Finance News — 29 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/india-2026-09-29.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5663946889586320606",
+      "title": "Market News — 29 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/category-market-and-trading-2026-09-29.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5793837205624436935",
+      "title": "Macro Policy News — 29 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/category-economy-and-macro-policy-2026_01743986716.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5530506896553639228",
+      "title": "Germany Finance News — 29 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/germany-2026-09-29.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3888811538986935233",
+      "title": "France Finance News — 29 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/france-2026-09-29.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7667045939093536899",
+      "title": "UK Finance News — 29 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/uk-2026-09-29.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1810052964905988018",
+      "title": "Japan Finance News — 29 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/japan-2026-09-29.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "9007144551320250681",
+      "title": "China Finance News — 29 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/china-2026-09-29.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6059871633623862310",
+      "title": "Spain Finance News — 29 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/spain-2026-09-29.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5797453094847355471",
+      "title": "Italy Finance News — 29 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/italy-2026-09-29.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3890352632686960222",
+      "title": "Corporate Finance News — 29 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/category-corporate-finance-and-industry_0629962340.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6981062378758319524",
+      "title": "Brazil Finance News — 29 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/brazil-2026-09-29.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1559881385941953973",
+      "title": "US Finance News — 29 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/us-2026-09-29.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7003750694659761692",
+      "title": "Canada Finance News — 29 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/canada-2026-09-29.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7115176249025195517",
+      "title": "Mexico Finance News — 29 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/mexico-2026-09-29.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1079265428435182809",
+      "title": "Personal Finance News — 29 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/category-personal-finance-2026-09-29.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "9100032476497143186",
+      "title": "Russia Finance News — 29 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/russia-2026-09-29.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4294031392271634610",
+      "title": "Australia Finance News — 30 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/australia-2026-09-30.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3338477738272234964",
+      "title": "South Korea Finance News — 30 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/south-korea-2026-09-30.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4173730771472877576",
+      "title": "Global Finance News — 30 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/global-wire-top15-2026-09-30.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "734722129897789265",
+      "title": "India Finance News — 30 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/india-2026-09-30.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8099889816920857108",
+      "title": "Market News — 30 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/category-market-and-trading-2026-09-30.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7732982655147361005",
+      "title": "Macro Policy News — 30 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/category-economy-and-macro-policy-2026_0527246697.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "416760661369375574",
+      "title": "Germany Finance News — 30 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/germany-2026-09-30.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2849933272866910243",
+      "title": "France Finance News — 30 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/france-2026-09-30.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3369513303010484098",
+      "title": "Japan Finance News — 30 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/japan-2026-09-30.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8686096611857118978",
+      "title": "UK Finance News — 30 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/uk-2026-09-30.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "48092243194050927",
+      "title": "China Finance News — 30 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/china-2026-09-30.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1152148656719761146",
+      "title": "Spain Finance News — 30 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/spain-2026-09-30.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2913845025272989831",
+      "title": "Italy Finance News — 30 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/italy-2026-09-30.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5019452690942245047",
+      "title": "Corporate Finance News — 30 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/category-corporate-finance-and-industry_01348401010.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6754930054304268139",
+      "title": "Brazil Finance News — 30 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/brazil-2026-09-30.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4378017040434071616",
+      "title": "US Finance News — 30 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/us-2026-09-30.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3417859541869662007",
+      "title": "Canada Finance News — 30 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/canada-2026-09-30.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5921749039774626930",
+      "title": "Mexico Finance News — 30 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/mexico-2026-09-30.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3042075322183164827",
+      "title": "Personal Finance News — 30 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/category-personal-finance-2026-09-30.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1610593295668865715",
+      "title": "Russia Finance News — 30 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/russia-2026-09-30.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "635769679322746121",
+      "title": "Australia Finance News — 1 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/australia-2026-10-01.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "309111306060639526",
+      "title": "Global Finance News — 1 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/global-wire-top15-2026-10-01.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2678078863814343955",
+      "title": "India Finance News — 1 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/india-2026-10-01.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6190892833991317126",
+      "title": "Macro Policy News — 1 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/category-economy-and-macro-policy-2026_01962741990.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "967337411893740866",
+      "title": "Germany Finance News — 1 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/germany-2026-10-01.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7819017210363133781",
+      "title": "France Finance News — 1 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/france-2026-10-01.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5545386663868376235",
+      "title": "Japan Finance News — 1 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/japan-2026-10-01.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "983834499565146723",
+      "title": "UK Finance News — 1 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/uk-2026-10-01.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "9028432246850261596",
+      "title": "China Finance News — 1 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/china-2026-10-01.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "537381809861598684",
+      "title": "Spain Finance News — 1 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/spain-2026-10-01.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2370753968758385048",
+      "title": "Italy Finance News — 1 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/italy-2026-10-01.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2586213142082697872",
+      "title": "Corporate Finance News — 1 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-corporate-finance-and-industry.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "553934405300545275",
+      "title": "Brazil Finance News — 1 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/brazil-2026-10-01.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3571951616049148857",
+      "title": "Canada Finance News — 1 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/canada-2026-10-01.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7963636691459098956",
+      "title": "US Finance News — 1 October 2026 (2)",
+      "url": "https://millededgeindia.blogspot.com/2026/10/us-2026-10-01_01887906195.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1697237802506427825",
+      "title": "Mexico Finance News — 1 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/mexico-2026-10-01.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "255068634201679306",
+      "title": "Personal Finance News — 1 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-personal-finance-2026-10-01.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "626954337147022449",
+      "title": "Russia Finance News — 1 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/russia-2026-10-01.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5158064681276983892",
+      "title": "Australia Finance News — 2 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/australia-2026-10-02.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "888647573326388172",
+      "title": "Global Finance News — 2 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/global-wire-top15-2026-10-02.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7592536897293931312",
+      "title": "India Finance News — 2 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/india-2026-10-02.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6527694942512355244",
+      "title": "Market News — 2 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-market-and-trading-2026-10-02.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7126642917481377533",
+      "title": "Macro Policy News — 2 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-economy-and-macro-policy-2026.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1241153471079039627",
+      "title": "Germany Finance News — 2 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/germany-2026-10-02.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4732705071384887954",
+      "title": "France Finance News — 2 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/france-2026-10-02.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1875628838135514595",
+      "title": "Japan Finance News — 2 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/japan-2026-10-02.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3582600754100729351",
+      "title": "UK Finance News — 2 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/uk-2026-10-02.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3093831134407049207",
+      "title": "China Finance News — 2 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/china-2026-10-02.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2005014805006920526",
+      "title": "Spain Finance News — 2 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/spain-2026-10-02.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "955420358948638066",
+      "title": "Italy Finance News — 2 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/italy-2026-10-02.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1379109366375175777",
+      "title": "Brazil Finance News — 2 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/brazil-2026-10-02.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3374488531251831353",
+      "title": "Canada Finance News — 2 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/canada-2026-10-02.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8116771357609802510",
+      "title": "Mexico Finance News — 2 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/mexico-2026-10-02.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8681953723978380210",
+      "title": "Personal Finance News — 2 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-personal-finance-2026-10-02.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8604263644681996802",
+      "title": "Russia Finance News — 2 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/russia-2026-10-02.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1732882384791246050",
+      "title": "Australia Finance News — 3 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/australia-2026-10-03.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8521744947047722622",
+      "title": "Global Finance Wire — 3 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/global-wire-top15-2026-10-03.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1838531017002841703",
+      "title": "India Finance News — 3 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/india-2026-10-03.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "769802491907818695",
+      "title": "Market and Trading News — 3 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-market-and-trading-2026-10-03.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1064654714094741604",
+      "title": "Economy and Macro Policy News — 3 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-economy-and-macro-policy-2026_0526097754.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8233701864497037469",
+      "title": "France Finance News — 3 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/france-2026-10-03.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3235780247739134014",
+      "title": "Japan Finance News — 3 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/japan-2026-10-03.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "332980622017107325",
+      "title": "UK Finance News — 3 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/uk-2026-10-03.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3468962202153168979",
+      "title": "China Finance News — 3 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/china-2026-10-03.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "915852663858125554",
+      "title": "Spain Finance News — 3 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/spain-2026-10-03.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1850827666127980508",
+      "title": "Italy Finance News — 3 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/italy-2026-10-03.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8692987777881824271",
+      "title": "Brazil Finance News — 3 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/brazil-2026-10-03.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5715277917410069452",
+      "title": "US Finance News — 3 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/us-2026-10-03.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1916711467989940356",
+      "title": "Canada Finance News — 3 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/canada-2026-10-03.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1491878054535573888",
+      "title": "Personal Finance News — 3 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-personal-finance-2026-10-03.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4847652555679728824",
+      "title": "Tesla unveils long-delayed Roadster developed",
+      "url": "https://millededgeindia.blogspot.com/2026/10/tesla-unveils-long-delayed-roadster.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6211466663428164154",
+      "title": "Economy, Trade & Jobs News — 18 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/economy-trade-jobs-2026-10-18.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2944979484002140309",
+      "title": "Europe Finance News — 13 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/europe-finance-news-2026-10-13.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4563454953032332919",
+      "title": "Europe Finance News — 16 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/europe-finance-news-2026-10-16.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8325451787782494344",
+      "title": "Europe Finance News — 18 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/europe-finance-news-2026-10-18.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6003168629771257786",
+      "title": "Set Five Money Goals in Order",
+      "url": "https://millededgeindia.blogspot.com/2026/09/only-5-money-goals-for-your-20s.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8564410517739387148",
+      "title": "Build Childcare Into the Family Budget",
+      "url": "https://millededgeindia.blogspot.com/2026/09/childcare-is-new-mortgage.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1518139427210986224",
+      "title": "Turn a High Salary Into Net Worth",
+      "url": "https://millededgeindia.blogspot.com/2026/09/90k-salary-4k-net-worth-audit.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2333084406415618664",
+      "title": "Choose the FIRE Path Your Life Can Fund",
+      "url": "https://millededgeindia.blogspot.com/2026/10/coast-vs-barista-vs-fat-fire.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1166266494028589772",
+      "title": "Decoding IRA Withdrawals and RMD Rules",
+      "url": "https://millededgeindia.blogspot.com/2026/10/decoding-ira-withdrawals-and-rmd-rules.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5807931384399290858",
+      "title": "Coastal Real Estate Valuation Realities",
+      "url": "https://millededgeindia.blogspot.com/2026/10/coastal-real-estate-valuation-realities.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5898067771096342038",
+      "title": "Oil prices climb as traders weigh Saudi supply",
+      "url": "https://millededgeindia.blogspot.com/2026/10/oil-prices-climb-as-traders-weigh-saudi.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "592088317168952255",
+      "title": "How to Measure Side-Hustle Profit After Costs",
+      "url": "https://millededgeindia.blogspot.com/2026/10/how-to-measure-side-hustle-profit-after.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6779600207608409311",
+      "title": "From digital India to intelligent India",
+      "url": "https://millededgeindia.blogspot.com/2026/10/from-digital-india-to-intelligent-india.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "50508409100805419",
+      "title": "Social Security Administration announces 3.6%",
+      "url": "https://millededgeindia.blogspot.com/2026/10/social-security-administration.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8799173720433476146",
+      "title": "How to Plan Multigenerational Housing Without",
+      "url": "https://millededgeindia.blogspot.com/2026/10/how-to-plan-multigenerational-housing.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3102919282818220478",
+      "title": "Best Financial Habits For Gen Z: Budgeting, Sm",
+      "url": "https://millededgeindia.blogspot.com/2026/10/best-financial-habits-for-gen-z.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8291393601553833053",
+      "title": "Spanish stock market pays out €35.716 billion",
+      "url": "https://millededgeindia.blogspot.com/2026/10/spanish-stock-market-pays-out-35716.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7806533046947701970",
+      "title": "Best Tax-Free Savings Account Rates in Canada",
+      "url": "https://millededgeindia.blogspot.com/2026/10/best-tax-free-savings-account-rates-in.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8055389252776002109",
+      "title": "Meta- and Google-backed Jio Platforms to raise",
+      "url": "https://millededgeindia.blogspot.com/2026/10/meta-and-google-backed-jio-platforms-to.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2657168820439562506",
+      "title": "Bangladesh needs digital banking, but not more",
+      "url": "https://millededgeindia.blogspot.com/2026/10/bangladesh-needs-digital-banking-but.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7336110824982309685",
+      "title": "ET Alpha Wealth Summit 2.0: Why next market cy",
+      "url": "https://millededgeindia.blogspot.com/2026/10/et-alpha-wealth-summit-20-why-next.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5789508861746456986",
+      "title": "Brazil's first-round election results trigger",
+      "url": "https://millededgeindia.blogspot.com/2026/10/brazils-first-round-election-results.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2922363872385638039",
+      "title": "Markets & Commodities News — 17 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/markets-crypto-commodities-2026-10-17.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4297594808268899288",
+      "title": "Markets & Commodities News — 18 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/markets-crypto-commodities-2026-10-18.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3392110556522822384",
+      "title": "Sold a property? Eight different ways to reduc",
+      "url": "https://millededgeindia.blogspot.com/2026/10/sold-property-eight-different-ways-to_0586614503.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "569618339386857608",
+      "title": "Russian ministers join board of key trade paym",
+      "url": "https://millededgeindia.blogspot.com/2026/10/russian-ministers-join-board-of-key.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2663271375598998939",
+      "title": "Government moves to align education with futur",
+      "url": "https://millededgeindia.blogspot.com/2026/10/government-moves-to-align-education.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5672499759526547177",
+      "title": "What is the Daily Yield website?",
+      "url": "https://millededgeindia.blogspot.com/2026/10/what-is-daily-yield-website.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "841938757720681685",
+      "title": "Small business cash flow tips for peak trading",
+      "url": "https://millededgeindia.blogspot.com/2026/10/small-business-cash-flow-tips-for-peak.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8159514658740310801",
+      "title": "Russia Finance News — 11 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/russia-finance-news-2026-10-11.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "664919442370721038",
+      "title": "Russia Finance News — 16 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/russia-finance-news-2026-10-16.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4041471198707565382",
+      "title": "Russia Finance News — 18 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/russia-finance-news-2026-10-18.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2373709041132325539",
+      "title": "Build a Personal Finance Control Sheet",
+      "url": "https://millededgeindia.blogspot.com/2026/09/the-12-tab-personal-cfo-spreadsheet.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "9105498753770999311",
+      "title": "Build a Private AI Money Advisor",
+      "url": "https://millededgeindia.blogspot.com/2026/10/a-private-ai-advisor-on-your-data.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7248649539978874711",
+      "title": "Rewrite the Money Rules You Inherited",
+      "url": "https://millededgeindia.blogspot.com/2026/10/your-secret-money-script-explained.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5411360429708207151",
+      "title": "Companies, IPOs & Deals News — 10 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/companies-ipos-deals-2026-10-10.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4941446647180758450",
+      "title": "Companies, IPOs & Deals News — 11 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/companies-ipos-deals-2026-10-11.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8760215737341581721",
+      "title": "Fighting Denied Insurance Claims",
+      "url": "https://millededgeindia.blogspot.com/2026/10/fighting-denied-insurance-claims.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3996763115306790577",
+      "title": "Mastering Bank of America & Merrill",
+      "url": "https://millededgeindia.blogspot.com/2026/10/mastering-bank-of-america-merrill.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8440843476942158982",
+      "title": "Nvidia-Backed IPO Scrapped Amid AI Limits",
+      "url": "https://millededgeindia.blogspot.com/2026/10/nvidia-backed-ipo-scrapped-amid-ai.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1132583668251750835",
+      "title": "India Finance News — 4 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/india-2026-10-04.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2122568688867455249",
+      "title": "India Finance News — 11 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/india-finance-news-2026-10-11.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4098245360762980951",
+      "title": "India Finance News — 16 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/india-finance-news-2026-10-16.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4448460027645448991",
+      "title": "India Finance News — 18 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/india-finance-news-2026-10-18.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5457841022293819304",
+      "title": "China Finance News — 6 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/china-2026-10-06.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4503926661552527887",
+      "title": "China Finance News — 9 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/china-2026-10-09.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "265974413574679494",
+      "title": "China Finance News — 10 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/china-finance-news-2026-10-10.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7956949454543531501",
+      "title": "China Finance News — 11 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/china-finance-news-2026-10-11.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2499320937107075131",
+      "title": "China Finance News — 13 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/china-finance-news-2026-10-13.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4149379313573794618",
+      "title": "China Finance News — 16 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/china-finance-news-2026-10-16.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3552302227713712230",
+      "title": "China Finance News — 18 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/china-finance-news-2026-10-18.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3508131612868663036",
+      "title": "Asia-Pacific Finance News — 10 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/asia-pacific-finance-news-2026-10-10.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "298987823827450140",
+      "title": "Asia-Pacific Finance News — 11 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/asia-pacific-finance-news-2026-10-11.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7579368902743746876",
+      "title": "Asia-Pacific Finance News — 12 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/asia-pacific-finance-news-2026-10-12.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5863032681003617641",
+      "title": "Asia-Pacific Finance News — 13 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/asia-pacific-finance-news-2026-10-13.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2295309860945414494",
+      "title": "Asia-Pacific Finance News — 16 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/asia-pacific-finance-news-2026-10-16.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5742710458425404687",
+      "title": "Asia-Pacific Finance News — 18 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/asia-pacific-finance-news-2026-10-18_01443792159.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8449500133677536306",
+      "title": "Asia-Pacific Finance News — 17 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/asia-pacific-finance-news-2026-10-17.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8350731119481335563",
+      "title": "China Finance News — 17 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/china-finance-news-2026-10-17.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3588147786831904076",
+      "title": "India Finance News — 17 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/india-finance-news-2026-10-17.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5888650445805452737",
+      "title": "Russia Finance News — 17 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/russia-finance-news-2026-10-17.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4549970526900820116",
+      "title": "Europe Finance News — 17 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/europe-finance-news-2026-10-17.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4671352974546786267",
+      "title": "Americas Finance News — 16 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/americas-finance-news-2026-10-17.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2157865378353656913",
+      "title": "Companies, IPOs & Deals News — 17 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/companies-ipos-deals-2026-10-17.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1692764511373933270",
+      "title": "Global Finance News — 17 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/global-finance-news-2026-10-17.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "790457689716630806",
+      "title": "Economy, Trade & Jobs News — 17 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/economy-trade-jobs-2026-10-17.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3041537970389212664",
+      "title": "A Teacher Salary Needs a System",
+      "url": "https://millededgeindia.blogspot.com/2026/09/the-48000-teacher-money-rebuild-step-by.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8754928028995933789",
+      "title": "The Purchase Is Not the Reward",
+      "url": "https://millededgeindia.blogspot.com/2026/09/break-i-deserve-it-spend-loop.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1794738258819020541",
+      "title": "The Mortgage Is Only the Cover Charge",
+      "url": "https://millededgeindia.blogspot.com/2026/09/your-mortgage-is-not-real-cost-true.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "727827414976743220",
+      "title": "Your Paycheck Needs a Routing Order",
+      "url": "https://millededgeindia.blogspot.com/2026/09/the-payday-waterfall-7-automatic.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8372498042597820613",
+      "title": "A 0% Transfer Needs an Exit Date",
+      "url": "https://millededgeindia.blogspot.com/2026/09/0-balance-transfers-without-trap.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2862470767911665544",
+      "title": "Make AI Prove Every Spending Leak",
+      "url": "https://millededgeindia.blogspot.com/2026/09/ai-found-1200-i-was-wasting-step-by.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2758262234277933362",
+      "title": "A Three-Fund Portfolio Needs Three Jobs",
+      "url": "https://millededgeindia.blogspot.com/2026/09/3-funds-beat-your-12-etf-portfolio.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "824646953557055227",
+      "title": "FIRE Needs More Than One Number",
+      "url": "https://millededgeindia.blogspot.com/2026/09/fire-got-harder-heres-new-math.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4165288479268683898",
+      "title": "Your W-2 Has More Tax Levers Than You Think",
+      "url": "https://millededgeindia.blogspot.com/2026/09/w-2-tax-tricks-youre-allowed-to-use.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6406126111566056260",
+      "title": "Build the Case Before Asking for a Raise",
+      "url": "https://millededgeindia.blogspot.com/2026/09/ask-for-raise-that-beats-budgeting.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5309215588489880357",
+      "title": "A Side Hustle Must Pass the Net-Income Test",
+      "url": "https://millededgeindia.blogspot.com/2026/09/most-side-hustles-fail-this-filter.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5756773504895872461",
+      "title": "Buy Insurance for Losses You Cannot Absorb",
+      "url": "https://millededgeindia.blogspot.com/2026/09/only-these-insurance-policies-matter.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6615350878444001009",
+      "title": "Run a Money Meeting That Ends in Decisions",
+      "url": "https://millededgeindia.blogspot.com/2026/09/the-first-couples-money-meeting-agenda.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1187159577085494350",
+      "title": "Give Your First Paycheck Four Jobs",
+      "url": "https://millededgeindia.blogspot.com/2026/09/what-to-do-with-your-first-paycheck.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5733569512815684823",
+      "title": "Find £200 With a Ten-Minute Money Audit",
+      "url": "https://millededgeindia.blogspot.com/2026/09/find-200month-in-10-minutes.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4690992148902176975",
+      "title": "Put Every Payday on Autopilot",
+      "url": "https://millededgeindia.blogspot.com/2026/09/what-quiet-rich-people-do-on-payday.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4058080268134530730",
+      "title": "Size Your Emergency Fund to Your Income Risk",
+      "url": "https://millededgeindia.blogspot.com/2026/09/emergency-fund-size-by-job-type.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5855044192522572590",
+      "title": "Build a Twelve-Month Money Plan",
+      "url": "https://millededgeindia.blogspot.com/2026/09/12-money-moves-for-next-12-months.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8502389971570439316",
+      "title": "Global Finance News — 25 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/global-wire-top15-2026-09-25.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3885410382183430593",
+      "title": "Australia Finance News — 25 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/australia-2026-09-25.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4808062258120764865",
+      "title": "Split Household Costs by Capacity",
+      "url": "https://millededgeindia.blogspot.com/2026/09/stop-splitting-bills-5050.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2418376376538238746",
+      "title": "Start Investing Before You Feel Ready",
+      "url": "https://millededgeindia.blogspot.com/2026/09/10k-at-22-vs-10k-at-32.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2129270346434103164",
+      "title": "Japan Finance News — 25 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/japan-2026-09-25.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2786685833728780482",
+      "title": "Covered-Call ETFs Need an Upside Budget",
+      "url": "https://millededgeindia.blogspot.com/2026/09/covered-call-etfs-income-or-trap.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2070861226123418361",
+      "title": "Why a $90,000 Income Can Feel Fragile",
+      "url": "https://millededgeindia.blogspot.com/2026/09/90k-broke-new-middle-class.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8683335223431479047",
+      "title": "China Finance News — 25 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/china-2026-09-25.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2972395376134557585",
+      "title": "Brazil Finance News — 25 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/brazil-2026-09-25.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1403438240302459064",
+      "title": "A 5% Down Payment Needs a Cash Buffer",
+      "url": "https://millededgeindia.blogspot.com/2026/09/5-down-in-2026-ladder-or-trap.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4067190918070361492",
+      "title": "Build a Control System for Freelance Income",
+      "url": "https://millededgeindia.blogspot.com/2026/09/freelance-money-on-autopilot.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1971188583231907134",
+      "title": "Test Before Prepaying Student Loans",
+      "url": "https://millededgeindia.blogspot.com/2026/09/dont-panic-pay-cheap-student-loans.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6874126328143581453",
+      "title": "Make Social Security Part of Retirement",
+      "url": "https://millededgeindia.blogspot.com/2026/09/dont-ignore-state-pension-social.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3406242455506009272",
+      "title": "Finish Your UK Tax-Year Checklist",
+      "url": "https://millededgeindia.blogspot.com/2026/09/the-14-day-pre-5-april-tax-sprint.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "538540418347251104",
+      "title": "Italy Finance News — 27 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/italy-2026-09-27.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3867527095511324597",
+      "title": "Stop Paying the Job-Loyalty Penalty",
+      "url": "https://millededgeindia.blogspot.com/2026/09/the-loyalty-tax-youre-paying.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8711042237458005134",
+      "title": "Choose Your Best Route to £500 Extra",
+      "url": "https://millededgeindia.blogspot.com/2026/09/500-extra-overtime-hustle-or-skill.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7123852462020825588",
+      "title": "Protect Your Pay When Illness Stops Work",
+      "url": "https://millededgeindia.blogspot.com/2026/09/insure-your-income-not-just-your-phone.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8825196756986669857",
+      "title": "Design the Right Bank Accounts as a Couple",
+      "url": "https://millededgeindia.blogspot.com/2026/09/joint-vs-separate-vs-hybrid-accounts.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4516328180677729614",
+      "title": "Escape Your Student Overdraft Safely",
+      "url": "https://millededgeindia.blogspot.com/2026/09/your-student-overdraft-isnt-free.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2045026967272748700",
+      "title": "Buy for Value, Not Just Price",
+      "url": "https://millededgeindia.blogspot.com/2026/09/cheap-frugal-and-value-are-not-synonyms.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6158169707232928737",
+      "title": "Mexico Finance News — 28 September 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/09/mexico-2026-09-28.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6448805219822825799",
+      "title": "Build Financial Options, Not Status",
+      "url": "https://millededgeindia.blogspot.com/2026/09/buy-options-not-status.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3487685101279047331",
+      "title": "Recheck Every Money Rule",
+      "url": "https://millededgeindia.blogspot.com/2026/09/what-changed-for-your-money-in-2026.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2303680525771764438",
+      "title": "Check Your Portfolio on a Schedule",
+      "url": "https://millededgeindia.blogspot.com/2026/09/stop-checking-your-portfolio-daily.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1499457110813036815",
+      "title": "Build Passive Income That Survives",
+      "url": "https://millededgeindia.blogspot.com/2026/09/90-days-of-passive-income-truth.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2392626462720316715",
+      "title": "Price the Whole Car, Not the Payment",
+      "url": "https://millededgeindia.blogspot.com/2026/09/your-car-payment-is-wealth-killer.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5001890081868019899",
+      "title": "Earn Card Rewards Without Carrying Debt",
+      "url": "https://millededgeindia.blogspot.com/2026/10/credit-card-bonuses-without-damage.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1799455763474408220",
+      "title": "Choose U.S. or Global Stock Exposure",
+      "url": "https://millededgeindia.blogspot.com/2026/10/s-500-vs-global-pick-one.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "577819612147620529",
+      "title": "Calculate Capital Gains Before You Sell",
+      "url": "https://millededgeindia.blogspot.com/2026/10/capital-gains-explained-like-human.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7117674826205100667",
+      "title": "Test Four Side Hustles Before Picking One",
+      "url": "https://millededgeindia.blogspot.com/2026/10/4-hustles-30-days-each-1-winner.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1884059043694963597",
+      "title": "Choose Life Insurance by Need, Not Pitch",
+      "url": "https://millededgeindia.blogspot.com/2026/10/buy-term-skip-whole-life-pitch.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1007960234772753874",
+      "title": "Write the Money Rules for Your Relationship",
+      "url": "https://millededgeindia.blogspot.com/2026/10/a-money-constitution-for-couples.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7443620275479288667",
+      "title": "Use Five Tests Before You Buy",
+      "url": "https://millededgeindia.blogspot.com/2026/10/the-rule-of-5-before-you-buy.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6705981824863856048",
+      "title": "Russia Finance News — 3 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/russia-2026-10-03.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7269705468830606778",
+      "title": "Global Finance Wire — 4 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/global-wire-top15-2026-10-04.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "424542317912604382",
+      "title": "Australia Finance News — 4 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/australia-2026-10-04.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7880504546833796577",
+      "title": "Market and Trading News — 4 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-market-and-trading-2026-10-04.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1189890035012609567",
+      "title": "Economy and Macro Policy News — 4 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-economy-and-macro-policy-2026_01900447569.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6002847844933215206",
+      "title": "Germany Finance News — 4 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/germany-2026-10-04.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4432434648714199065",
+      "title": "France Finance News — 4 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/france-2026-10-04.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "229202460931910419",
+      "title": "Japan Finance News — 4 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/japan-2026-10-04.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8837021812610866691",
+      "title": "UK Finance News — 4 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/uk-2026-10-04.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3354774331177128079",
+      "title": "China Finance News — 4 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/china-2026-10-04.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1968451890589280606",
+      "title": "Italy Finance News — 4 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/italy-2026-10-04.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6812626816465387916",
+      "title": "Brazil Finance News — 4 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/brazil-2026-10-04.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5805918358850977102",
+      "title": "Spain Finance News — 4 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/spain-2026-10-04.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7379873073788189964",
+      "title": "Put Saving on the Payday Clock",
+      "url": "https://millededgeindia.blogspot.com/2026/10/put-money-on-calendar-not-your-mood.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7539208873847258637",
+      "title": "US Finance News — 4 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/us-2026-10-04.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7430932756267789505",
+      "title": "Canada Finance News — 4 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/canada-2026-10-04.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1063873294343467917",
+      "title": "Mexico Finance News — 4 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/mexico-2026-10-04.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4437161255878108427",
+      "title": "Personal Finance News — 4 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-personal-finance-2026-10-04.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "9090794225984393149",
+      "title": "Panic Selling Creates a Second Loss",
+      "url": "https://millededgeindia.blogspot.com/2026/10/selling-crash-is-expensive-feeling.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8855727893502199247",
+      "title": "Russia Finance News — 4 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/russia-2026-10-04.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5283900934510767783",
+      "title": "One Emergency Fund Is Doing Two Jobs",
+      "url": "https://millededgeindia.blogspot.com/2026/10/a-two-tier-emergency-fund.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1224431701070336470",
+      "title": "Appreciation Cannot Rescue Bad Rent Math",
+      "url": "https://millededgeindia.blogspot.com/2026/10/landlords-lie-with-appreciation.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7961948819417398860",
+      "title": "Australia Finance News — 5 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/australia-2026-10-05.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6243381812873175381",
+      "title": "Global Finance Wire — 5 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/global-wire-top15-2026-10-05.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7919917676289078104",
+      "title": "India Finance News — 5 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/india-2026-10-05.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8594486389302937562",
+      "title": "Trust Is Not Investment Due Diligence",
+      "url": "https://millededgeindia.blogspot.com/2026/10/the-investment-your-new-friend-found.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7411146526370632431",
+      "title": "Market and Trading News — 5 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-market-and-trading-2026-10-05.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6445645307688480581",
+      "title": "Economy and Macro Policy News — 5 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-economy-and-macro-policy-2026_0496477750.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3000292393265106707",
+      "title": "Germany Finance News — 5 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/germany-2026-10-05.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6951903988431941856",
+      "title": "France Finance News — 5 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/france-2026-10-05.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3845366839700982429",
+      "title": "Prioritize Tax-Advantaged Room Before Year-End",
+      "url": "https://millededgeindia.blogspot.com/2026/10/dont-leave-free-room-in-2026-accounts.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7060712805516241030",
+      "title": "Japan Finance News — 5 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/japan-2026-10-05.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "9058975335781746111",
+      "title": "UK Finance News — 5 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/uk-2026-10-05.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6054016105714886332",
+      "title": "China Finance News — 5 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/china-2026-10-05.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6612585196075280264",
+      "title": "Spain Finance News — 5 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/spain-2026-10-05.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8349257710837842951",
+      "title": "Italy Finance News — 5 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/italy-2026-10-05.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3442600443400729974",
+      "title": "Brazil Finance News — 5 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/brazil-2026-10-05.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3954264095832469965",
+      "title": "US Finance News — 5 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/us-2026-10-05.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "57952324199187304",
+      "title": "Canada Finance News — 5 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/canada-2026-10-05.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2338107994704127487",
+      "title": "Mexico Finance News — 5 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/mexico-2026-10-05.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4241027143860885131",
+      "title": "Personal Finance News — 5 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-personal-finance-2026-10-05.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4773816842762603402",
+      "title": "Russia Finance News — 5 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/russia-2026-10-05.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4849617287925200568",
+      "title": "Australia Finance News — 6 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/australia-2026-10-06.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3999216954256354022",
+      "title": "Global Finance Wire — 6 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/global-wire-top15-2026-10-06.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5060456186676893977",
+      "title": "India Finance News — 6 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/india-2026-10-06.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4770909723609986743",
+      "title": "Market and Trading News — 6 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-market-and-trading-2026-10-06.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2131183753015156738",
+      "title": "Economy and Macro Policy News — 6 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-economy-and-macro-policy-2026_0623923357.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7702526215843382727",
+      "title": "Germany Finance News — 6 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/germany-2026-10-06.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4554326019201695451",
+      "title": "France Finance News — 6 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/france-2026-10-06.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4754694742189980745",
+      "title": "Japan Finance News — 6 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/japan-2026-10-06.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1441598247842515795",
+      "title": "UK Finance News — 6 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/uk-2026-10-06.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4872291976348006361",
+      "title": "Spain Finance News — 6 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/spain-2026-10-06.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "937169609871614685",
+      "title": "Italy Finance News — 6 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/italy-2026-10-06.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7376915665513040680",
+      "title": "Brazil Finance News — 6 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/brazil-2026-10-06.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4096440118536242903",
+      "title": "US Finance News — 6 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/us-2026-10-06.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3920629068723264205",
+      "title": "Canada Finance News — 6 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/canada-2026-10-06.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3296585567368267652",
+      "title": "Mexico Finance News — 6 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/mexico-2026-10-06.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1650136372517124910",
+      "title": "Russia Finance News — 6 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/russia-2026-10-06.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4250817183859290165",
+      "title": "Australia Finance News — 9 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/australia-2026-10-09.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5663920214676671146",
+      "title": "South Korea Finance News — 9 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/south-korea-2026-10-09.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6459982346606846382",
+      "title": "Global Finance Wire — 9 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/global-wire-top15-2026-10-09.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2979365795944313069",
+      "title": "India Finance News — 9 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/india-2026-10-09.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3247681811902798859",
+      "title": "Market and Trading News — 9 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-market-and-trading-2026-10-09.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2480836368321778359",
+      "title": "Economy and Macro Policy News — 9 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-economy-and-macro-policy-2026_01679841755.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "319775129861437718",
+      "title": "Germany Finance News — 9 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/germany-2026-10-09.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4054147490024048150",
+      "title": "France Finance News — 9 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/france-2026-10-09.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1365618236906218504",
+      "title": "Japan Finance News — 9 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/japan-2026-10-09.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3644713591392052280",
+      "title": "UK Finance News — 9 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/uk-2026-10-09.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3923558914059133817",
+      "title": "Spain Finance News — 9 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/spain-2026-10-09.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4329692400309862229",
+      "title": "Italy Finance News — 9 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/italy-2026-10-09.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2343631790620996025",
+      "title": "Corporate Finance and Industry News",
+      "url": "https://millededgeindia.blogspot.com/2026/10/category-corporate-finance-and-industry_02023327578.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2623189629388682178",
+      "title": "Brazil Finance News — 9 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/brazil-2026-10-09.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1213809574013812625",
+      "title": "US Finance News — 9 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/us-2026-10-09.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1283814357164919153",
+      "title": "Canada Finance News — 9 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/canada-2026-10-09.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2159780762419668959",
+      "title": "Global Finance News — 9 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/global-finance-news-2026-10-09.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4321713008132800657",
+      "title": "Global Finance News — 10 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/global-finance-news-2026-10-10.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3765356538829628279",
+      "title": "Americas Finance News — 9 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/americas-finance-news-2026-10-10.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "249107466377745488",
+      "title": "Economy, Trade & Jobs News — 10 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/economy-trade-jobs-2026-10-10.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2517283804580291463",
+      "title": "India Finance News — 10 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/india-finance-news-2026-10-10.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7242936735281106431",
+      "title": "Cost of Living Crisis: Should You Invest?",
+      "url": "https://millededgeindia.blogspot.com/2026/10/cost-of-living-crisis-should-you-invest.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6506721843679871346",
+      "title": "Economy, Trade & Jobs News — 11 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/economy-trade-jobs-2026-10-11.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7233333976757185447",
+      "title": "Inside India's Currency Management Overhaul",
+      "url": "https://millededgeindia.blogspot.com/2026/10/inside-indias-currency-management.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5309039604018476257",
+      "title": "Europe Finance News — 11 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/europe-finance-news-2026-10-11.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "441428781263562499",
+      "title": "Americas Finance News — 10 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/americas-finance-news-2026-10-11.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7512430975901570945",
+      "title": "Global Finance News — 11 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/global-finance-news-2026-10-11.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7297416450054863519",
+      "title": "China Finance News — 12 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/china-finance-news-2026-10-12.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4385884134229151079",
+      "title": "India Finance News — 12 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/india-finance-news-2026-10-12.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5680418422067263371",
+      "title": "High-Yield Single-Day Gigs",
+      "url": "https://millededgeindia.blogspot.com/2026/10/high-yield-single-day-gigs.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1015742751486820159",
+      "title": "Russia Finance News — 12 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/russia-finance-news-2026-10-12.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8346521417971222619",
+      "title": "Economy, Trade & Jobs News — 12 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/economy-trade-jobs-2026-10-12.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7721768890204257344",
+      "title": "Europe Finance News — 12 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/europe-finance-news-2026-10-12.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3558117834732925749",
+      "title": "Companies, IPOs & Deals News — 12 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/companies-ipos-deals-2026-10-12.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "9114523213623152669",
+      "title": "Americas Finance News — 11 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/americas-finance-news-2026-10-12_01065225874.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5849095594285978796",
+      "title": "Global Finance News — 12 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/global-finance-news-2026-10-12.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "825963634831791122",
+      "title": "India Finance News — 13 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/india-finance-news-2026-10-13.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "528786193061592833",
+      "title": "Russia Finance News — 13 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/russia-finance-news-2026-10-13.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3774491320026884499",
+      "title": "Economy, Trade & Jobs News — 13 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/economy-trade-jobs-2026-10-13.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5279813430769227467",
+      "title": "Americas Finance News — 12 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/americas-finance-news-2026-10-13.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "9110135660101638977",
+      "title": "Companies, IPOs & Deals News — 13 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/companies-ipos-deals-2026-10-13.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6752182675801639496",
+      "title": "Global Finance News — 13 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/global-finance-news-2026-10-13.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3053663501746829932",
+      "title": "Asia-Pacific Finance News — 14 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/asia-pacific-finance-news-2026-10-14.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8936239960255667007",
+      "title": "China Finance News — 14 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/china-finance-news-2026-10-14.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7942003561033657119",
+      "title": "India Finance News — 14 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/india-finance-news-2026-10-14.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4122019545776418234",
+      "title": "Russia Finance News — 14 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/russia-finance-news-2026-10-14.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4419039076441729919",
+      "title": "Europe Finance News — 14 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/europe-finance-news-2026-10-14.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1327008160644487841",
+      "title": "Economy, Trade & Jobs News — 14 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/economy-trade-jobs-2026-10-14.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1930349544337193488",
+      "title": "Americas Finance News — 13 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/americas-finance-news-2026-10-14.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5987285018807056661",
+      "title": "Companies, IPOs & Deals News — 14 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/companies-ipos-deals-2026-10-14.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1394204476854205548",
+      "title": "Global Finance News — 14 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/global-finance-news-2026-10-14.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7305090550981004438",
+      "title": "Asia-Pacific Finance News — 15 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/asia-pacific-finance-news-2026-10-15.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4060502836086260770",
+      "title": "China Finance News — 15 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/china-finance-news-2026-10-15.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8044800567329380462",
+      "title": "Russia Finance News — 15 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/russia-finance-news-2026-10-15.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6932309168123575505",
+      "title": "Europe Finance News — 15 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/europe-finance-news-2026-10-15.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5558523116997618457",
+      "title": "India Finance News — 15 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/india-finance-news-2026-10-15.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "6244831159932950646",
+      "title": "Economy, Trade & Jobs News — 15 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/economy-trade-jobs-2026-10-15.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5508175457332514552",
+      "title": "Americas Finance News — 14 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/americas-finance-news-2026-10-15.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "5598188491028049064",
+      "title": "How to Build a Small-Business Cash-Flow Stress",
+      "url": "https://millededgeindia.blogspot.com/2026/10/how-to-build-small-business-cash-flow.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8964941381599329168",
+      "title": "Global Finance News — 15 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/global-finance-news-2026-10-15.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "4765322871632329517",
+      "title": "Companies, IPOs & Deals News — 15 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/companies-ipos-deals-2026-10-15.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "7627976069312756400",
+      "title": "EU Eyes €160 Billion Cut From Initial Budget H",
+      "url": "https://millededgeindia.blogspot.com/2026/10/eu-eyes-160-billion-cut-from-initial.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1493972825104492801",
+      "title": "Markets & Commodities News — 16 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/markets-crypto-commodities-2026-10-16.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8356697770530035367",
+      "title": "Economy, Trade & Jobs News — 16 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/economy-trade-jobs-2026-10-16.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "8747417613780689123",
+      "title": "Why using a personal loan to pay off credit ca",
+      "url": "https://millededgeindia.blogspot.com/2026/10/why-using-personal-loan-to-pay-off.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "1987006839216993815",
+      "title": "Americas Finance News — 15 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/americas-finance-news-2026-10-16.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "9202081475473274912",
+      "title": "Companies, IPOs & Deals News — 16 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/companies-ipos-deals-2026-10-16.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "2403469026466390187",
+      "title": "Global Finance News — 16 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/global-finance-news-2026-10-16.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "3898790139916778196",
+      "title": "Retirement planning: Why costs, asset allocati",
+      "url": "https://millededgeindia.blogspot.com/2026/10/retirement-planning-why-costs-asset.html",
+      "status": null,
+      "action": "deleted"
+    },
+    {
+      "id": "823068282048153204",
+      "title": "Americas Finance News — 23 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/americas-finance-news-2026-10-24_01553639241.html",
+      "status": "SOFT_TRASHED",
+      "action": "deleted"
+    },
+    {
+      "id": "8974701692933051691",
+      "title": "Americas Finance News — 23 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/americas-finance-news-2026-10-24.html",
+      "status": "SOFT_TRASHED",
+      "action": "deleted"
+    },
+    {
+      "id": "2748279235772147094",
+      "title": "Americas Finance News — 22 October 2026",
+      "url": "https://millededgeindia.blogspot.com/2026/10/americas-finance-news-2026-10-23_0361840868.html",
+      "status": "SOFT_TRASHED",
+      "action": "deleted"
+    }
+  ],
+  "failed": [],
+  "remaining_after": 0,
+  "finished_at_utc": "2026-11-01T03:02:31.761186+00:00"
+}
