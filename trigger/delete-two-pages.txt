@@ -1,3 +1,1 @@
-CONFIRM: DELETE DAILY NEWS AND DAILY ARTICLE PAGES
-Requested by blog owner in Arena chat: 2026-11-01T04:42:55Z
-Scope: only Daily news and Daily article pages. No other pages may be deleted.
+INACTIVE — two-page deletion completed on 2026-11-01T04:43:36Z. Do not add the confirmation phrase unless the owner explicitly requests another deletion.
