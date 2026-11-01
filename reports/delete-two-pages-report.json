@@ -1,0 +1,103 @@
+{
+  "mode": "delete-two-pages",
+  "started_at_utc": "2026-11-01T04:43:15.712955+00:00",
+  "blog": {
+    "id": "8911514070006792465",
+    "name": "Milled Edge",
+    "url": "https://millededgeindia.blogspot.com/"
+  },
+  "targets": [
+    {
+      "id": "9217579601621666930",
+      "expected_path": "/p/daily-news.html",
+      "label": "Daily news",
+      "actual_title": "Daily news",
+      "actual_url": "https://millededgeindia.blogspot.com/p/daily-news.html",
+      "state": "verified"
+    },
+    {
+      "id": "1685707888914861815",
+      "expected_path": "/p/article.html",
+      "label": "Daily article",
+      "actual_title": "Daily article",
+      "actual_url": "https://millededgeindia.blogspot.com/p/article.html",
+      "state": "verified"
+    }
+  ],
+  "deleted": [
+    {
+      "id": "9217579601621666930",
+      "expected_path": "/p/daily-news.html",
+      "label": "Daily news",
+      "actual_title": "Daily news",
+      "actual_url": "https://millededgeindia.blogspot.com/p/daily-news.html",
+      "state": "verified",
+      "action": "permanently-deleted"
+    },
+    {
+      "id": "1685707888914861815",
+      "expected_path": "/p/article.html",
+      "label": "Daily article",
+      "actual_title": "Daily article",
+      "actual_url": "https://millededgeindia.blogspot.com/p/article.html",
+      "state": "verified",
+      "action": "permanently-deleted"
+    }
+  ],
+  "already_missing": [],
+  "failed": [],
+  "remaining_pages_count": 10,
+  "remaining_pages": [
+    {
+      "id": "3254393081257151974",
+      "title": "Terms and conditions",
+      "url": "https://millededgeindia.blogspot.com/p/terms-and-conditions.html"
+    },
+    {
+      "id": "8504888514217789256",
+      "title": "Global snapshot",
+      "url": "https://millededgeindia.blogspot.com/p/global-snapshot.html"
+    },
+    {
+      "id": "5236051989054453802",
+      "title": "Markets today",
+      "url": "https://millededgeindia.blogspot.com/p/markets-today.html"
+    },
+    {
+      "id": "304220949515133754",
+      "title": "Privacy policy",
+      "url": "https://millededgeindia.blogspot.com/p/privacy-policy.html"
+    },
+    {
+      "id": "8572476015753638755",
+      "title": "Money atlas",
+      "url": "https://millededgeindia.blogspot.com/p/money-atlas_01486068069.html"
+    },
+    {
+      "id": "6065205676235626846",
+      "title": "For corporate",
+      "url": "https://millededgeindia.blogspot.com/p/for-corporate_01804417406.html"
+    },
+    {
+      "id": "3945823007631424733",
+      "title": "Disclaimer",
+      "url": "https://millededgeindia.blogspot.com/p/disclaimer.html"
+    },
+    {
+      "id": "4698688245681185879",
+      "title": "Contact us",
+      "url": "https://millededgeindia.blogspot.com/p/contact-us_01883938366.html"
+    },
+    {
+      "id": "7468827438203976743",
+      "title": "Calculator",
+      "url": "https://millededgeindia.blogspot.com/p/calculator_0908148622.html"
+    },
+    {
+      "id": "2716668129166401912",
+      "title": "About us",
+      "url": "https://millededgeindia.blogspot.com/p/about-us_02080501126.html"
+    }
+  ],
+  "finished_at_utc": "2026-11-01T04:43:18.268658+00:00"
+}
