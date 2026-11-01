@@ -2,9 +2,14 @@ name: Read-only Blogger inventory
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'trigger/readonly-inventory.txt'
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   inventory:
@@ -23,16 +28,43 @@ jobs:
         run: python -m pip install --upgrade pip && pip install -r requirements.txt
 
       - name: Run read-only inventory
+        id: inventory
         env:
           GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
           GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
           GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
-        run: python scripts/readonly_inventory.py
+        run: |
+          mkdir -p artifacts
+          set +e
+          python scripts/readonly_inventory.py 2>&1 | tee artifacts/inventory.log
+          STATUS=${PIPESTATUS[0]}
+          echo "$STATUS" > artifacts/inventory.exit
+          exit "$STATUS"
 
       - name: Upload inventory artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: readonly-inventory
-          path: artifacts/readonly-inventory.json
-          if-no-files-found: error
+          path: artifacts/
+          if-no-files-found: warn
+
+      - name: Save report to repository
+        if: always()
+        run: |
+          mkdir -p reports
+          if [ -f artifacts/readonly-inventory.json ]; then cp artifacts/readonly-inventory.json reports/readonly-inventory.json; fi
+          if [ -f artifacts/inventory.log ]; then cp artifacts/inventory.log reports/inventory.log; fi
+          if [ -f artifacts/inventory.exit ]; then cp artifacts/inventory.exit reports/inventory.exit; fi
+          printf '%s\n' "${{ github.run_id }}" > reports/last-run-id.txt
+          printf '%s\n' "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" > reports/last-run-url.txt
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports
+          if git diff --cached --quiet; then
+            echo 'No report changes to commit.'
+          else
+            git commit -m 'Update read-only inventory report [skip ci]'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
