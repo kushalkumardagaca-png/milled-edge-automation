@@ -1,0 +1,2 @@
+INACTIVE — no deletion phrase present.
+This workflow only deletes the two allowlisted pages when this file contains the exact confirmation phrase.
