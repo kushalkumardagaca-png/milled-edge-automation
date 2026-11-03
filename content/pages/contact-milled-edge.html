@@ -458,15 +458,12 @@
 #meDoc[data-effects="paused"] .md-io,#meDoc[data-effects="paused"] .md-io.in{opacity:1;transform:none;transition:none}
 </style>
 <style id="meHeroLive">
-/* the hero's changing word: one grid cell, so the line width never jumps */
+/* the hero's changing word: one cell, one word on at a time, no gap at handover */
 .md-h1 .me-flip{display:inline-grid;vertical-align:bottom;overflow:visible}
-.md-h1 .me-flip b{grid-area:1/1;font-weight:inherit;font-style:inherit;white-space:nowrap;opacity:0;
- animation:meFlip 12s cubic-bezier(.19,1,.22,1) infinite}
-.md-h1 .me-flip b:nth-child(1){animation-delay:0s}
-.md-h1 .me-flip b:nth-child(2){animation-delay:3s}
-.md-h1 .me-flip b:nth-child(3){animation-delay:6s}
-.md-h1 .me-flip b:nth-child(4){animation-delay:9s}
-@keyframes meFlip{0%{opacity:0;transform:translateY(.5em)}
+.md-h1 .me-flip b{grid-area:1/1;font-weight:inherit;font-style:inherit;white-space:nowrap;
+ opacity:0;transform:translateY(.4em);transition:opacity .45s ease,transform .5s cubic-bezier(.19,1,.22,1)}
+.md-h1 .me-flip b.on{opacity:1;transform:none}
+.md-h1 .me-flip:not(.lit) b:first-child{opacity:1;transform:none}
  3%,20%{opacity:1;transform:none}25%,100%{opacity:0;transform:translateY(-.5em)}}
 /* the sentence lands on the line below, so the reserved width is never seen */
 .md-h1 .me-h1b{display:block}
@@ -483,8 +480,7 @@
  #meDoc .md-hero-note .md-script{font-size:20px;white-space:nowrap}
 }
 @media (prefers-reduced-motion:reduce){
- .md-h1 .me-flip b{animation:none;transform:none;opacity:0}
- .md-h1 .me-flip b:nth-child(1){opacity:1}
+ .md-h1 .me-flip b{transition:none}
  .md-panel .me-live::before{animation:none}}
 </style>
 <div class="me-doc" data-page="contact-us" id="meDoc"><header class="md-hero"><div class="md-hero-in"><div><p class="md-kick">Contact · the desk</p><h1 class="md-h1">Say <em class="me-flip"><b>hello</b><b>namaste</b><b>bonjour</b><b>salaam</b></em><span class="me-h1b"> to the desk.</span></h1><p class="md-lede">A question about a page, a correction, a topic you would like covered — every message here is read by the person who writes the publication. No autoresponder, no ticket number, no queue.</p><p class="md-chips"><span class="md-chip"><b>Replies</b>2–3 working days</span><span class="md-chip"><b>Corrections</b>front of the queue</span><span class="md-chip"><b>Two inboxes</b>both monitored</span><span class="md-chip"><b>Advice</b>not given, ever</span></p><p class="md-hero-note"><span class="md-script">Kushal Kumar Daga</span><span>writer and publisher · reads every letter</span></p></div><div class="md-panel me-in me-in-2"><p class="md-panel-t">The desk, right now</p><div class="md-row"><span>Publisher’s local time</span><b class="me-live" data-clock="" data-me-live="clock">IST</b></div><div class="md-row"><span>Reply window</span><b>2–3 working days</b></div><div class="md-row"><span>Corrections</span><b>front of the queue</b></div><div class="md-row"><span>Read by</span><b>a person, not a robot</b></div><div class="md-row"><span>Personal advice</span><b><span class="md-pill md-pill--off">Not offered</span></b></div><div class="md-actions" style="margin-top:12px"><a class="md-btn" href="mailto:millededge.official@gmail.com?subject=Enquiry">Mail us</a><a class="md-btn md-btn--ghost" href="#two-inboxes">Both inboxes</a></div></div></div></header><div aria-hidden="true" class="md-ticker"><div class="md-ticker-t"><i>Corrections jump the queue<b>✦</b></i><i>Replies in 2–3 working days<b>✦</b></i><i>Two monitored inboxes<b>✦</b></i><i>No personal advice, ever<b>✦</b></i><i>Reader questions shape the calendar<b>✦</b></i><i>Written in Ambikapur, read everywhere<b>✦</b></i><i>Corrections jump the queue<b>✦</b></i><i>Replies in 2–3 working days<b>✦</b></i><i>Two monitored inboxes<b>✦</b></i><i>No personal advice, ever<b>✦</b></i><i>Reader questions shape the calendar<b>✦</b></i><i>Written in Ambikapur, read everywhere<b>✦</b></i></div></div><div class="md-grid"><aside aria-label="On this page" class="md-rail"><div aria-hidden="true" class="md-prog"><i></i></div><div class="md-rail-meta"><b data-readtime="">a few minutes</b><span>to read</span></div><p class="md-rail-t">On this page</p><ul class="md-toc"><li><a href="#before-you-write">Before you write</a></li><li><a href="#which-desk">Which desk</a></li><li><a href="#what-to-include">What to include</a></li><li><a href="#two-inboxes">The two inboxes</a></li><li><a href="#reply-times">Reply times</a></li><li><a href="#faq">Common questions</a></li><li><a href="#who-publishes">Who publishes</a></li><li><a href="#find-us">Find us elsewhere</a></li><li><a href="#advertising">Advertising</a></li><li><a href="#credits">About this page</a></li></ul><div class="md-rail-foot"><button aria-pressed="false" class="md-btn md-btn--ghost md-btn--sm" data-pause="" type="button">Pause effects</button><button class="md-btn md-btn--ghost md-btn--sm" data-print="" type="button">Print this page</button><p class="md-fine">Reviewed 3 November 2026</p></div></aside><div class="md-article"><section aria-labelledby="before-you-write-h" class="md-sec" id="before-you-write"><span aria-hidden="true" class="md-chapter">01</span><div aria-hidden="true" class="md-orn"><span>✦</span></div><p class="md-num"><i>01</i>Before you write</p><h2 id="before-you-write-h">Three sentences that get you a better answer.</h2><div class="md-note" style="margin:0 0 18px"><b>Two doors, one desk.</b> Write about a page and the person who wrote it reads it. That has been the arrangement since the first week, and it is why the reply window below is honest rather than optimistic.</div><div class="md-measure"><p class="md-drop">There is no form on this page, no account to create and no tracking pixel watching what you type. What you send is what arrives — which is exactly why it is worth spending thirty seconds on it.</p><ul class="md-list"><li><b>One topic per message.</b> Two questions in one email usually get one answer.</li><li><b>No passwords, one-time codes, account numbers or identity documents.</b> Never needed, and never asked for.</li><li><b>Corrections go first.</b> If something on a page is wrong, say so plainly — accuracy outranks everything else here.</li></ul><blockquote class="md-quote">A short, specific question gets a sharper answer than a long, worried one.<cite>the only writing rule that matters</cite></blockquote></div></section><section aria-labelledby="which-desk-h" class="md-sec md-sec--design" id="which-desk"><span aria-hidden="true" class="md-chapter">✦</span><p class="md-num"><i>✦</i>Choose the desk</p><h2 id="which-desk-h">Which desk is your question about?</h2><p class="md-lead md-measure">Six desks, six checklists. Pick one and the page tells you what makes an enquiry answerable in a single reply.</p><div data-tabs=""><div aria-label="Which desk" class="md-tabs" role="tablist"><button aria-controls="p-articles" aria-selected="true" class="md-tab" id="p-articles-tab" role="tab" tabindex="0" type="button">Articles</button><button aria-controls="p-news" aria-selected="false" class="md-tab" id="p-news-tab" role="tab" tabindex="-1" type="button">News</button><button aria-controls="p-calc" aria-selected="false" class="md-tab" id="p-calc-tab" role="tab" tabindex="-1" type="button">Calculators</button><button aria-controls="p-corp" aria-selected="false" class="md-tab" id="p-corp-tab" role="tab" tabindex="-1" type="button">Corporate</button><button aria-controls="p-atlas" aria-selected="false" class="md-tab" id="p-atlas-tab" role="tab" tabindex="-1" type="button">Money Atlas</button><button aria-controls="p-markets" aria-selected="false" class="md-tab" id="p-markets-tab" role="tab" tabindex="-1" type="button">Markets</button></div><div aria-labelledby="p-articles-tab" class="md-pane" id="p-articles" role="tabpanel"><h3>Articles</h3><p>A paragraph, a title or a source on a written page.</p><ul class="md-list"><li>The page address and the sentence concerned.</li><li>What you expected to read, and what it says.</li><li>A public source and its date, if you have one.</li></ul></div><div aria-labelledby="p-news-tab" class="md-pane" hidden="" id="p-news" role="tabpanel"><h3>News</h3><p>A dated event, a headline or a country classification.</p><ul class="md-list"><li>The link to the dispatch and its date.</li><li>The country or desk it belongs to.</li><li>A primary source where one exists.</li></ul></div><div aria-labelledby="p-calc-tab" class="md-pane" hidden="" id="p-calc" role="tabpanel"><h3>Calculators</h3><p>A result that looks wrong, or a field that will not behave.</p><ul class="md-list"><li>The calculator's name, and the country or currency you used.</li><li>Invented or rounded sample figures — never your real records.</li><li>What you expected, what appeared, and which browser you used.</li></ul></div><div aria-labelledby="p-corp-tab" class="md-pane" hidden="" id="p-corp" role="tabpanel"><h3>Corporate</h3><p>A model, a template or a planning assumption.</p><ul class="md-list"><li>Which model: NPV, runway, valuation or something else.</li><li>Non-confidential sample figures.</li><li>The assumption you think is doing too much work.</li></ul></div><div aria-labelledby="p-atlas-tab" class="md-pane" hidden="" id="p-atlas" role="tabpanel"><h3>Money Atlas</h3><p>A country figure, a comparison or an eligibility rule.</p><ul class="md-list"><li>The country, the metric and the value shown.</li><li>An official source and the date it applies from.</li><li>Whether you are looking at a manual reference figure or a live quote.</li></ul></div><div aria-labelledby="p-markets-tab" class="md-pane" hidden="" id="p-markets" role="tabpanel"><h3>Markets</h3><p>A price, a chart, a symbol or a NAV.</p><ul class="md-list"><li>The instrument, the exchange and the currency.</li><li>The source timestamp, and when you checked.</li><li>A note if the price differs from your broker's — theirs is the one that trades.</li></ul></div></div><div class="md-note" data-draft="" data-to="millededge.official@gmail.com"><b>Write it without rewriting it.</b> Pick the desk, open a draft, and the subject line and the checklist are already in your own mail app. Nothing is sent from this page, and nothing you type here is stored anywhere.<div class="md-actions" style="margin:12px 0 10px"><label class="md-fine" for="md-desk" style="align-self:center">Desk</label><select aria-label="Which desk is your question about" id="md-desk" style="padding:9px 12px;border:1px solid #EADCC8;border-radius:999px;background:#fff;font:600 13px/1 Inter,Arial,sans-serif;color:#241610"><option data-body="Page address:
@@ -707,6 +703,27 @@ on(pause,'click',function(){
  document.querySelectorAll('[data-me-live]').forEach(function(el){
    var kind=el.getAttribute('data-me-live');
    el.textContent = kind==='clock' ? clock() : (kind==='date' ? date : (kind==='consent' ? consent : el.textContent));
+ });
+})();
+</script>
+<script id="meFlipDriver">
+(function(){
+ 'use strict';
+ var wraps=[].slice.call(document.querySelectorAll('.me-flip'));
+ if(!wraps.length) return;
+ var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ wraps.forEach(function(w){
+   var words=[].slice.call(w.children);
+   if(!words.length) return;
+   w.classList.add('lit');
+   words[0].classList.add('on');
+   if(reduce||words.length<2) return;
+   var i=0;
+   setInterval(function(){
+     words[i].classList.remove('on');
+     i=(i+1)%words.length;
+     words[i].classList.add('on');
+   },3200);
  });
 })();
 </script>

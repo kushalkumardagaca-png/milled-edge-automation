@@ -714,20 +714,11 @@ html,body{margin:0;padding:0;background:#F8F0E3}.wrap{max-width:none !important;
 <!-- ===================== VIEW: HOME ===================== -->
 <div class="wrap pr-page">
 <style id="meFlipAbout">
-/* the hero's changing word: one cell, one visible word, constant line width */
 .kvP-hero .kvP-flip{display:inline-grid!important;overflow:visible;vertical-align:bottom}
-.kvP-hero .kvP-flip i{grid-area:1/1;opacity:0;font-style:normal;white-space:nowrap;
- animation:meFlipAbout 12s cubic-bezier(.19,1,.22,1) infinite;transition:none!important}
-.kvP-hero .kvP-flip i:nth-child(1){animation-delay:0s}
-.kvP-hero .kvP-flip i:nth-child(2){animation-delay:3s}
-.kvP-hero .kvP-flip i:nth-child(3){animation-delay:6s}
-.kvP-hero .kvP-flip i:nth-child(4){animation-delay:9s}
-@keyframes meFlipAbout{0%{opacity:0;transform:translateY(.5em)}
- 3%,20%{opacity:1;transform:none}
- 25%,100%{opacity:0;transform:translateY(-.5em)}}
-@media (prefers-reduced-motion:reduce){
- .kvP-hero .kvP-flip i{animation:none;transform:none;opacity:0}
- .kvP-hero .kvP-flip i:nth-child(1){opacity:1}}
+.kvP-hero .kvP-flip i{grid-area:1/1;opacity:0;font-style:normal;white-space:nowrap;transform:translateY(.4em);
+ transition:opacity .45s ease,transform .5s cubic-bezier(.19,1,.22,1)!important}
+.kvP-hero .kvP-flip i.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.kvP-hero .kvP-flip i{transition:none}}
 </style>
 <section class="kvP-hero kvP-about pr-hero" data-motion="hero" style="--me-delay:130ms">
 <div class="kvP-in">
@@ -997,6 +988,20 @@ root.addEventListener('input',function(e){if(paused||!e.target.closest('.kc-sec'
 <p>MILLED EDGE uses automated tools to assist with topic discovery, source collection, drafting, validation, formatting, scheduling and distribution. The named publisher remains accountable for the publication; not every automated draft is represented as personally reviewed. Material must pass checks for evidence, originality, licensing, privacy, misleading claims and safety before release.</p>
 <p>Automation is not used to invent experience, qualifications, quotations or financial results. Material claims should be attributable to their sources. When evidence is insufficient, an item is rebuilt, replaced or held rather than forced live.</p>
 </section><!-- DY_BLOGGER_POLICY_2026_12_END --></div>
+<script id="meFlipAboutScript">
+(function(){
+ 'use strict';
+ var w=document.querySelector('.kvP-hero .kvP-flip');
+ if(!w) return;
+ var words=[].slice.call(w.children);
+ if(!words.length) return;
+ words[0].classList.add('on');
+ if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+ if(words.length<2) return;
+ var i=0;
+ setInterval(function(){words[i].classList.remove('on');i=(i+1)%words.length;words[i].classList.add('on');},3200);
+})();
+</script>
 </main>
 
 <script>
