@@ -2,11 +2,6 @@ name: Publish the five pages
 
 on:
   workflow_dispatch:
-    inputs:
-      confirm:
-        description: 'Type PUBLISH to write to the live blog'
-        required: false
-        default: 'PUBLISH'
   push:
     paths:
       - 'content/publish-request.txt'
@@ -14,16 +9,21 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: blogger-core-page-publish
+  cancel-in-progress: false
+
 jobs:
   publish:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - run: pip install --quiet google-auth google-api-python-client
-      - name: Dry run
+      - name: Local preflight (no remote diff)
         working-directory: scripts
         run: python publish_pages.py --dry-run
       - name: Publish

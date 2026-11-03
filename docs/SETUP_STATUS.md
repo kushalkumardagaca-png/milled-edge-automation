@@ -42,6 +42,6 @@ The manual theme upload remains a publisher action: Blogger's API publishing wor
 
 ## Audit notes
 
-- `publish-pages.yml` exposes a `confirm` input that is not currently used as a job condition; its command passes the script confirmation value directly. Review this before expanding the workflow.
-- The script's dry-run lists local file sizes and does not fetch or compare live page bodies. Treat it as a basic preflight, not a live diff.
+- The unused `confirm` input was removed from `publish-pages.yml`; the owner’s no-approval workflow now runs on manual dispatch or the publish-request push.
+- `publish_pages.py` prevalidates the expected blog ID and all five page destinations before any write. Its local dry-run only checks local bodies and sizes; it is not a remote diff.
 - `cleanup_site_pages.py` validates all ten target URLs before patching them, then updates all ten. Any commit to its watched content paths triggers that workflow.

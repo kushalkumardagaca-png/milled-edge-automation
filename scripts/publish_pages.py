@@ -45,26 +45,46 @@ def main() -> int:
         print('Missing page bodies: ' + ', '.join(missing), file=sys.stderr)
         return 2
 
-    if args.dry_run:
-        service = None
-        blog = {'id': site['expected_blog_id']}
-        pages = None
-    else:
-        get_credentials()
-        service = get_blogger_service()
-        blog = get_blog_by_url(service, site['blog_url'])
-        pages = service.pages().list(blogId=blog['id'], fetchBodies=False).execute().get('items', [])
+    bodies = {
+        slug: (CONTENT_DIR / filename).read_text(encoding='utf-8')
+        for filename, slug in PAGES.items()
+    }
+    if any(not body.strip() for body in bodies.values()):
+        print('Refusing to publish an empty page body', file=sys.stderr)
+        return 2
 
-    for filename, slug in PAGES.items():
-        body = (CONTENT_DIR / filename).read_text(encoding='utf-8')
-        if args.dry_run:
-            print(f'dry run  {slug:38s} {len(body):7d} bytes')
-            continue
-        match = [p for p in pages if p['url'].rstrip('/').endswith(f'/p/{slug}.html')]
-        if len(match) != 1:
-            print(f'no single page matches {slug} ({len(match)} found) — skipped', file=sys.stderr)
-            continue
-        page = match[0]
+    if args.dry_run:
+        print('Local preflight only; no Blogger API calls or remote content comparison.')
+        for slug, body in bodies.items():
+            print(f'preflight {slug:38s} {len(body):7d} bytes')
+        return 0
+
+    get_credentials()
+    service = get_blogger_service()
+    blog = get_blog_by_url(service, site['blog_url'])
+    if str(blog['id']) != str(site['expected_blog_id']):
+        print('Refusing to publish: resolved Blogger blog ID does not match config/site.json', file=sys.stderr)
+        return 2
+    pages = service.pages().list(blogId=blog['id'], fetchBodies=False).execute().get('items', [])
+
+    # Resolve and validate every destination before the first write. A mismatch
+    # aborts the whole run instead of silently leaving a partial publication.
+    targets = {}
+    errors = []
+    for slug in bodies:
+        matches = [p for p in pages if p.get('url', '').rstrip('/').endswith(f'/p/{slug}.html')]
+        if len(matches) != 1:
+            errors.append(f'{slug}: expected exactly one page, found {len(matches)}')
+        else:
+            targets[slug] = matches[0]
+    if errors:
+        print('Refusing to publish; destination preflight failed:', file=sys.stderr)
+        for error in errors:
+            print(f' - {error}', file=sys.stderr)
+        return 2
+
+    for slug, body in bodies.items():
+        page = targets[slug]
         service.pages().patch(blogId=blog['id'], pageId=page['id'], body={'content': body}).execute()
         print(f'updated  {slug:38s} pageId={page["id"]}  {len(body):7d} bytes')
     return 0

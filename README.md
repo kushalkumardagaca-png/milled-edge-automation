@@ -34,7 +34,7 @@ reports/                           Historical workflow reports; not a live inven
 - `publish-markets-today.yml`: validates and patches ten existing pages in place when tracked page-fix sources change.
 - `delete-two-pages.yml` and `delete-all-posts.yml`: destructive jobs with explicit confirmation-file guards. Their trigger files currently say `INACTIVE`. Do not activate them unless the publisher explicitly directs a new deletion.
 
-Before changing a write workflow, inspect its matching rules, conditions, page scope and failure behavior. The `publish-pages.yml` dispatch input currently does not gate the job; the script's hard-coded confirmation is what authorizes the write. The dry-run reports local file sizes and is not a remote content diff. Do not treat either as proof that live Blogger content matches the repository.
+Before changing a write workflow, inspect its matching rules, conditions, page scope and failure behavior. The core-page workflow intentionally has no approval prompt: a manual dispatch or the publish-request push writes the five pages. The script's local preflight reports file sizes but does not fetch a remote diff; on a real write it validates the configured blog ID and all five destination slugs before the first patch. Do not treat the preflight as proof that live Blogger content matches the repository.
 
 ## Secrets and access
 
