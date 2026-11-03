@@ -1,0 +1,72 @@
+name: Audit page links across the whole site (read-only)
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - arena/4d7c35f7-milled-edge-automation
+    paths:
+      - 'trigger/audit-page-links.txt'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: audit-page-links
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    name: Read-only link audit
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip && pip install -r requirements.txt
+
+      - name: Run read-only link audit
+        env:
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+        run: |
+          mkdir -p artifacts
+          set +e
+          python scripts/audit_page_links.py 2>&1 | tee artifacts/page-links-audit.log
+          STATUS=${PIPESTATUS[0]}
+          echo "$STATUS" > artifacts/page-links-audit.exit
+          exit "$STATUS"
+
+      - name: Upload audit artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: page-links-audit
+          path: artifacts/
+          if-no-files-found: warn
+
+      - name: Save audit report to repository
+        if: always()
+        run: |
+          mkdir -p reports artifacts
+          for file in page-links-audit.json page-links-audit.log page-links-audit.exit; do
+            if [ -f "artifacts/$file" ]; then cp "artifacts/$file" "reports/$file"; fi
+          done
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports/page-links-audit.json reports/page-links-audit.log reports/page-links-audit.exit
+          if git diff --cached --quiet; then
+            echo 'No audit report changes to commit.'
+          else
+            git commit -m 'Page-links audit report [skip ci]'
+            git pull --rebase origin arena/4d7c35f7-milled-edge-automation
+            git push origin HEAD:arena/4d7c35f7-milled-edge-automation
+          fi
