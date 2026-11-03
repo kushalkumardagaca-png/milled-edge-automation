@@ -1,0 +1,1863 @@
+ DY_CONTINUOUS_MOTION_START 
+<style id="dyContinuousMotionStyle">
+.kvsd-mqwrap,.kn-rowwrap,.dyw-marquee,.marquee,.ar-viewport,.dy-related-viewport{cursor:grab;touch-action:pan-y;user-select:none;-webkit-user-select:none;overscroll-behavior-inline:contain}.dy-grabbing{cursor:grabbing!important}.dy-grabbing a,.dy-grabbing button{pointer-events:none}.dy-native-loop{scrollbar-width:none!important;-ms-overflow-style:none}.dy-native-loop::-webkit-scrollbar{display:none!important}
+</style>
+<script id="dyContinuousMotionScript">
+(function(w,d){'use strict';
+ /* Homepage motion is intentionally owned by the Theme and remains unchanged. */
+ if(d.body&&d.body.classList.contains('fk-home'))return;
+ var reduced=w.matchMedia&&w.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ function bind(view,track,speed,auto){
+ if(!view||view.dataset.dyMotion)return;view.dataset.dyMotion='3';view.classList.add('dy-native-loop');
+ if(track){track.style.animation='none';track.style.animationPlayState='running';track.style.transform='none';track.style.flexWrap='nowrap';track.style.maxWidth='none'}
+ var drag=null,moved=false,last=0,pausedUntil=0,hover=false;
+ function cycle(){if(!track)return 0;var first=track.querySelector('.dyw-category-copy,.dy-related-group');return first?first.scrollWidth:track.scrollWidth/2}
+ function normalize(){var c=cycle();if(c>0){while(view.scrollLeft>=c)view.scrollLeft-=c;while(view.scrollLeft<0)view.scrollLeft+=c}}
+ function delay(ms){pausedUntil=Date.now()+ms}
+ view.addEventListener('pointerdown',function(e){if(e.pointerType==='mouse'&&e.button!==0)return;drag={x:e.clientX,s:view.scrollLeft,id:e.pointerId};moved=false;pausedUntil=0;view.classList.add('dy-grabbing');try{view.setPointerCapture(e.pointerId)}catch(_){}});
+ view.addEventListener('pointermove',function(e){if(!drag)return;var dx=e.clientX-drag.x;if(Math.abs(dx)>5)moved=true;var next=drag.s-dx,c=cycle();if(next<0&&c>0){drag.s+=c;next+=c}view.scrollLeft=next;if(moved)e.preventDefault()});
+ function end(){if(!drag)return;var id=drag.id;drag=null;normalize();view.classList.remove('dy-grabbing');try{if(view.hasPointerCapture(id))view.releasePointerCapture(id)}catch(_){}delay(180);if(moved){view.dataset.dySwiped='1';setTimeout(function(){delete view.dataset.dySwiped},420)}}
+ view.addEventListener('pointerup',end);view.addEventListener('pointercancel',end);view.addEventListener('lostpointercapture',end);w.addEventListener('blur',end);
+ view.addEventListener('pointerenter',function(e){if(e.pointerType==='mouse')hover=true});view.addEventListener('pointerleave',function(e){if(e.pointerType==='mouse'){hover=false;delay(250)}});
+ view.addEventListener('click',function(e){if(view.dataset.dySwiped){e.preventDefault();e.stopPropagation()}},true);view.addEventListener('dragstart',function(e){e.preventDefault()});
+ view.addEventListener('wheel',function(e){var delta=Math.abs(e.deltaX)>Math.abs(e.deltaY)?e.deltaX:(e.shiftKey?e.deltaY:0);if(!delta)return;view.scrollLeft+=delta;normalize();delay(900);e.preventDefault()},{passive:false});
+ function frame(ts){if(!last)last=ts;var dt=Math.min(.05,(ts-last)/1000);last=ts;if(auto&&!drag&&!hover&&Date.now()>pausedUntil&&!reduced&&!d.hidden&&track&&track.scrollWidth>view.clientWidth+8){view.scrollLeft+=speed*dt;normalize()}w.requestAnimationFrame(frame)}w.requestAnimationFrame(frame)
+ }
+ function scan(){
+ if(d.body&&d.body.classList.contains('fk-home'))return;
+ d.querySelectorAll('.kvsd-mqwrap').forEach(function(v){bind(v,v.querySelector('.kvsd-mq'),72,true)});
+ d.querySelectorAll('.kn-rowwrap').forEach(function(v){bind(v,v.querySelector('.kn-track'),72,true)});
+ d.querySelectorAll('.dyw-marquee').forEach(function(v){bind(v,v.querySelector('.dyw-category-track'),72,true)});
+ d.querySelectorAll('.marquee').forEach(function(v){bind(v,v.querySelector('.marquee-track'),72,true)});
+ d.querySelectorAll('.dy-related-viewport').forEach(function(v){bind(v,v.querySelector('.dy-related-track'),72,true)});
+ d.querySelectorAll('.ar-viewport').forEach(function(v){bind(v,null,0,false)});
+ }
+ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',scan);else scan();new MutationObserver(scan).observe(d.documentElement,{childList:true,subtree:true});
+})(window,document);
+</script>
+ DY_CONTINUOUS_MOTION_END 
+<div class="post-body entry-content"><div data-layout="professional" data-page="share-market" id="enhancedSite"><div class="enh-original">
+<script>document.documentElement.className += ' js';</script>
+<style>
+/* &#9552;&#9552;&#9552; THE CALCULATOR DESK v3.1 &#183; self-contained page skin (safe to paste) &#9552;&#9552;&#9552; */
+:root{
+ --paper:#F8F0E3;--surface:#FFFDF8;--ink:#241610;--muted:#6E5D4B;
+ --accent:#BC5B33;--accent-dark:#9C4522;--accent-soft:#F6E3D3;--line:#EADCC8;
+ --note1:#FFF3C9;
+}.wrap{max-width:1080px;margin:0 auto;padding:0 clamp(16px,4vw,48px)}.kc-sec{scroll-margin-top:130px}
+
+/* &#9472;&#9472;&#9472; hero &#9472;&#9472;&#9472; */.kc-hero{text-align:center;padding:clamp(28px,6vw,58px) 0 clamp(30px,5vw,48px);position:relative;background:linear-gradient(180deg,#F6E3D3 0%,rgba(246,227,211,.5) 52%,rgba(248,240,227,0) 100%);border-radius:0 0 26px 26px}.kc-htop{display:grid;grid-template-columns:1.04fr.96fr;gap:clamp(22px,4vw,44px);align-items:center}.kc-hcopy{text-align:left}.kc-htop.kcd-panel{margin:0;max-width:none}.kc-htop.kc-squig{margin:6px 0 0}.kc-htop.kc-geoline{margin-top:18px}
+@media (max-width:880px){.kc-htop{grid-template-columns:1fr;gap:4px}.kc-hcopy{text-align:center}.kc-htop.kc-squig{margin:6px auto 0}.kc-htop.kcd-panel{margin:26px auto 0;max-width:520px}
+}.kc-badge{display:inline-block;font:700 11px Inter,-apple-system,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--accent-dark);background:var(--accent-soft);border:2px dashed var(--accent-dark);border-radius:99px;padding:8px 18px;transform:rotate(-2deg);box-shadow:2px 3px 0 rgba(156,69,34,.18)}.kc-hero h1{font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:clamp(34px,6.4vw,60px);line-height:1.12;color:var(--ink);margin:20px 0 0;letter-spacing:.01em}.kc-flip{position:relative;display:inline-block;color:var(--accent-dark)}.kc-flip i{font-style:normal;display:none;white-space:nowrap}.kc-flip i.on{display:inline-block;animation:flipIn.55s cubic-bezier(.34,1.56,.64,1)}.kc-flip i.out{display:inline-block;position:absolute;left:0;top:0;animation:flipOut.4s ease forwards}
+@keyframes flipIn{from{opacity:0;transform:rotateX(78deg) translateY(-10px)}to{opacity:1;transform:none}}
+@keyframes flipOut{to{opacity:0;transform:rotateX(-72deg) translateY(10px)}}.kc-squig{display:block;width:min(300px,62%);height:14px;margin:6px auto 0;overflow:visible}.kc-squig path{fill:none;stroke:var(--accent);stroke-width:4;stroke-linecap:round;stroke-dasharray:330;stroke-dashoffset:330;animation:sqDraw 1.1s ease.35s forwards}
+@keyframes sqDraw{to{stroke-dashoffset:0}}.kc-lede{max-width:660px;margin:18px auto 0;font:400 clamp(14.5px,2vw,16.5px)/1.7 Inter,-apple-system,sans-serif;color:var(--muted)}
+html.js.kc-badge,html.js.kc-hero h1,html.js.kc-lede,html.js.kc-geoline{animation:fadeUp.7s cubic-bezier(.22,.8,.36,1) backwards}
+html.js.kc-hero h1{animation-delay:.12s}html.js.kc-lede{animation-delay:.24s}html.js.kc-geoline{animation-delay:.4s}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+
+/* &#9472;&#9472;&#9472; hero slide-deck panel (5 slides, overflow-safe rows) &#9472;&#9472;&#9472; */.kcd-panel{position:relative;max-width:520px;margin:34px auto 0;background:var(--surface);border:1.5px solid var(--line);border-radius:20px;padding:16px 16px 12px;box-shadow:0 22px 44px -26px rgba(36,22,16,.32);transform:rotate(.6deg);text-align:left;box-sizing:border-box}.kcd-panel::before{content:'';position:absolute;top:-11px;left:50%;width:92px;height:22px;background:rgba(188,91,51,.22);transform:translateX(-50%) rotate(-3deg);border-left:2px dashed rgba(255,253,248,.75);border-right:2px dashed rgba(255,253,248,.75)}.kcd-deck{overflow:hidden;border-radius:14px;box-sizing:border-box}.kcd-track{display:flex;width:100%;transition:transform.55s cubic-bezier(.22,.8,.36,1);box-sizing:border-box}.kcd-slide{flex:0 0 100%;min-width:100%;box-sizing:border-box;background:var(--paper);border:1.5px dashed var(--line);border-radius:14px;padding:16px 18px 12px;opacity:.4;transition:opacity.5s ease;overflow:hidden}.kcd-slide.kcd-now{opacity:1}.kcd-slide:nth-child(2){background:#F9EFE0}.kcd-slide:nth-child(3){background:#FBEDE2}.kcd-slide:nth-child(4){background:#F7EBDB}.kcd-slide:nth-child(5){background:#FAEEE3}.kcd-caveat{display:block;margin:-2px 0 6px;font-family:Caveat,'Segoe Script',cursive;font-size:25px;color:var(--accent-dark);transform:rotate(-1.4deg)}.kcd-srow{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:7.5px 2px;border-bottom:1.5px dashed rgba(156,69,34,.16);font:600 13.5px/1.4 Inter,-apple-system,sans-serif;color:var(--ink)}.kcd-srow:last-child{border-bottom:none}.kcd-srow span{flex:1 1 auto;min-width:0;overflow-wrap:anywhere}.kcd-srow b{flex:0 1 auto;min-width:0;max-width:58%;text-align:right;overflow-wrap:anywhere;font:800 11.5px Inter,-apple-system,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-dark)}.kcd-prog{height:4px;margin:12px 4px 8px;background:var(--accent-soft);border-radius:99px;overflow:hidden}.kcd-prog i{display:block;height:100%;width:0;background:var(--accent);border-radius:99px}.kcd-fine{margin:2px 0 0;text-align:center;font-family:Caveat,cursive;font-size:18.5px;color:var(--muted)}
+html.js.kcd-panel{animation:fadeUp.8s cubic-bezier(.22,.8,.36,1).35s backwards}
+
+/* &#9472;&#9472;&#9472; geo line + welcome &#9472;&#9472;&#9472; */.kc-geoline{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-family:Caveat,cursive;font-size:20px;color:var(--accent-dark)}.kc-geoline svg{width:19px;height:19px;stroke:var(--accent-dark);fill:none;stroke-width:2}.kc-sub{margin:26px 0 0;font:400 15px/1.75 Inter,-apple-system,sans-serif;color:var(--muted)}.kc-sub strong{color:var(--ink)}
+
+/* &#9472;&#9472;&#9472; sections: stamp + giant numeral + drawn underline &#9472;&#9472;&#9472; */.kc-sec{position:relative;margin-top:clamp(48px,7.5vw,78px)}.kc-sec::before{content:attr(data-n);position:absolute;top:-46px;right:-8px;z-index:0;font:800 clamp(64px,10vw,124px)/1 Inter,-apple-system,sans-serif;letter-spacing:-.05em;color:transparent;-webkit-text-stroke:2px rgba(156,69,34,.15);pointer-events:none;opacity:1}
+html.js.kc-sec::before{opacity:0;transform:translateY(12px) scale(.96);transition:opacity.7s ease.18s,transform.7s ease.18s}
+html.js.kc-sec.kc-in::before{opacity:1;transform:none}.kc-shead{position:relative;z-index:1}.kc-stamp{display:inline-block;font:700 10.5px Inter,-apple-system,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--accent-dark);background:rgba(246,227,211,.55);border:2px dashed var(--accent-dark);border-radius:7px;padding:6px 12px;transform:rotate(-2.4deg)}
+html.js.kc-in.kc-stamp{animation:stampIn.55s cubic-bezier(.34,1.56,.64,1).12s backwards}
+@keyframes stampIn{from{opacity:0;transform:rotate(-9deg) scale(1.9)}to{opacity:1;transform:rotate(-2.4deg) scale(1)}}.kc-shead h2{position:relative;display:inline-block;margin:12px 0 0;font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:clamp(24px,3.7vw,37px);color:var(--ink)}.kc-ul{position:absolute;left:2%;bottom:-11px;width:96%;height:12px;overflow:visible}.kc-ul path{fill:none;stroke:var(--accent);stroke-width:3.5;stroke-linecap:round;stroke-dasharray:330;stroke-dashoffset:330}.kc-in.kc-ul path{stroke-dashoffset:0;transition:stroke-dashoffset 1s ease.3s}.kc-ann{display:inline-block;margin-left:12px;font-family:Caveat,cursive;font-size:clamp(18px,2vw,21px);color:var(--accent);transform:rotate(-1.6deg)}
+html.js.kc-sec{opacity:0;transform:translateY(30px);transition:opacity.75s ease,transform.75s cubic-bezier(.22,.8,.36,1)}
+html.js.kc-sec.kc-in{opacity:1;transform:none}
+
+/* &#9472;&#9472;&#9472; per-calculator country + currency bar &#9472;&#9472;&#9472; */.kc-locale{position:relative;z-index:1;display:flex;align-items:center;flex-wrap:wrap;gap:9px 14px;background:linear-gradient(135deg,var(--accent-soft) 0%,#FFF7EC 100%);border:1.5px dashed var(--accent);border-radius:14px;padding:10px 14px;margin:18px 0 16px;box-shadow:3px 3px 0 rgba(188,91,51,.12)}.kc-locale label{display:inline-flex;align-items:center;gap:7px;font:700 10.5px Inter,-apple-system,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}.kc-locale select{font:600 13.5px Inter,-apple-system,sans-serif;color:var(--ink);background:var(--accent-soft);border:1.5px solid var(--line);border-radius:9px;padding:7px 9px;max-width:230px}.kc-locale select:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(188,91,51,.16)}.kc-lglobe{width:20px;height:20px;stroke:var(--accent-dark);fill:none;stroke-width:2;flex:0 0 20px}.kc-lhint{margin-left:auto;font-family:Caveat,cursive;font-size:17.5px;color:var(--accent-dark)}
+
+/* &#9472;&#9472;&#9472; control desk (inputs) &#9472;&#9472;&#9472; */.kc-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.06fr.94fr;gap:clamp(18px,3vw,30px);align-items:start}.kc-card{position:relative;background:linear-gradient(180deg,#FFFDF8 0%,#FDF5E8 100%);border:1.5px solid var(--line);border-radius:18px;padding:clamp(16px,2.6vw,26px);box-shadow:0 18px 36px -22px rgba(36,22,16,.28)}.kc-card::before{content:'';position:absolute;top:-12px;left:26px;width:74px;height:22px;background:rgba(188,91,51,.2);transform:rotate(-4deg);border-left:2px dashed rgba(255,253,248,.7);border-right:2px dashed rgba(255,253,248,.7)}.kc-chead{display:flex;align-items:center;gap:8px;padding-bottom:10px;margin-bottom:4px;border-bottom:1.5px dashed var(--line)}.kc-chead b{font:800 10.5px Inter,-apple-system,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}.kc-chead svg{width:17px;height:17px;stroke:var(--accent-dark);fill:var(--surface);stroke-width:1.8}.kc-chint{margin-left:auto;font-family:Caveat,cursive;font-size:17px;color:var(--accent-dark);transform:rotate(-1.6deg)}.kc-row-i{display:grid;grid-template-columns:1fr 118px;gap:4px 14px;align-items:center;padding:11px 0;border-bottom:1px dashed var(--line)}.kc-row-i:last-of-type{border-bottom:none}.kc-row-i label{grid-column:1/-1;font:700 10.5px Inter,-apple-system,sans-serif;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}.kc-row-i select{grid-column:1/-1;font:600 14px Inter,-apple-system,sans-serif;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:10px;padding:9px 10px;width:100%}.kc-row-i select:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(188,91,51,.16)}.kc-rng{position:relative;display:block}.kc-bub{position:absolute;bottom:26px;left:50%;transform:translateX(-50%) translateY(5px);background:var(--ink);color:#FFFDF8;font:700 11px Inter,-apple-system,sans-serif;padding:4px 9px;border-radius:8px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity.18s ease,transform.18s ease;z-index:3}.kc-bub::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:5px solid transparent;border-top-color:var(--ink)}.kc-rng.drag.kc-bub{opacity:1;transform:translateX(-50%) translateY(0)}.kc-numw{position:relative;display:block}.kc-numw::before{content:attr(data-sym);position:absolute;left:10px;top:50%;transform:translateY(-50%);font:700 12px Inter,-apple-system,sans-serif;color:var(--muted);pointer-events:none;max-width:46px;overflow:hidden}.kc-numw input{padding-left:30px}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:8px;border-radius:99px;background:#EADCC8;outline:none;margin:6px 0;cursor:pointer}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:var(--accent);border:3px solid var(--surface);box-shadow:0 2px 6px rgba(36,22,16,.32);cursor:grab;transition:transform.2s ease}
+input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.15)}
+input[type=range]:active::-webkit-slider-thumb{cursor:grabbing;transform:scale(1.22)}
+input[type=range]::-moz-range-thumb{width:16px;height:16px;border-radius:50%;background:var(--accent);border:3px solid var(--surface);box-shadow:0 2px 6px rgba(36,22,16,.32);cursor:grab}
+input[type=range]:focus-visible{box-shadow:0 0 0 3px rgba(188,91,51,.2)}
+input[type=number]{width:100%;font:700 15.5px Inter,-apple-system,sans-serif;text-align:right;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:10px;padding:8px 10px}
+input[type=number]:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(188,91,51,.16)}
+
+/* &#9472;&#9472;&#9472; the live board (results) &#9472;&#9472;&#9472; */.kc-board{position:relative;background:linear-gradient(180deg,#FFFDF8 0%,#FBF1E2 100%);border:1.5px solid var(--line);border-radius:18px;padding:16px 18px 14px;box-shadow:0 18px 36px -22px rgba(36,22,16,.28);overflow:hidden}.kc-board::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:repeating-linear-gradient(90deg,var(--accent) 0 16px,var(--accent-dark) 16px 32px);opacity:.75}.kc-btop{display:flex;align-items:center;gap:9px;margin-top:4px}.kc-btag{display:inline-flex;align-items:center;gap:5px;font:800 9px Inter,-apple-system,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}.kc-btag i{width:7px;height:7px;border-radius:50%;background:var(--accent);animation:dotP 1.5s ease-in-out infinite}
+@keyframes dotP{0%,100%{opacity:.35;transform:scale(.85)}50%{opacity:1;transform:scale(1.15)}}.kc-btop>b{font:800 11px Inter,-apple-system,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--ink)}.kc-copy{margin-left:auto;font:700 10px Inter,-apple-system,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-dark);background:transparent;border:1.5px dashed var(--accent-dark);border-radius:99px;padding:5px 11px;cursor:pointer;transition:background.25s ease,transform.25s ease}.kc-copy:hover{background:var(--accent-soft);transform:translateY(-1px)}.kc-copy:active{transform:scale(.95)}.kc-big{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;margin-top:13px;padding:11px 12px;background:var(--paper);border:1.5px dashed var(--line);border-radius:12px}.kc-big span{font:800 9.5px Inter,-apple-system,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}.kc-big b{margin-left:auto;display:inline-block;font:800 clamp(21px,2.6vw,27px) Inter,-apple-system,sans-serif;font-variant-numeric:tabular-nums;color:var(--accent-dark);white-space:nowrap}.kc-bump{animation:kcBump.5s cubic-bezier(.34,1.56,.64,1)}
+@keyframes kcBump{35%{transform:scale(1.06)}70%{transform:scale(.985)}}.kc-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.kc-chip{flex:1 1 130px;background:var(--paper);border:1.5px dashed var(--line);border-radius:11px;padding:7px 11px}.kc-chip span{display:block;font:700 8.5px Inter,-apple-system,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}.kc-chip b{font:800 14px Inter,-apple-system,sans-serif;font-variant-numeric:tabular-nums;color:var(--ink)}.kc-chart{display:block;width:100%;height:auto;margin-top:13px}.kc-ct{font:700 9px Inter,-apple-system,sans-serif;fill:#8A7A63;letter-spacing:.05em}.kc-ctw{fill:var(--accent-dark);font-size:10px;font-weight:800}.kc-cbig{font:800 17px Inter,-apple-system,sans-serif;fill:var(--ink)}.kc-cl{fill:none;stroke:var(--accent-dark);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}.kc-cl2{fill:none;stroke:#8A7A63;stroke-width:1.8;stroke-dasharray:5 5}.kc-area{fill:rgba(188,91,51,.1)}.kc-dotg{fill:var(--accent);stroke:var(--surface);stroke-width:2}.kc-leg{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px}.kc-leg span{display:inline-flex;align-items:center;gap:6px;font:600 10.5px Inter,-apple-system,sans-serif;color:var(--muted)}.kc-leg i{display:inline-block;width:14px;height:4px;border-radius:99px}.lg-a{background:var(--accent-dark)}.lg-b{background:repeating-linear-gradient(90deg,#8A7A63 0 4px,transparent 4px 7px)}.lg-c{background:#3A2A1C}.kc-bfine{margin-top:11px;text-align:center;font:700 8.5px Inter,-apple-system,sans-serif;letter-spacing:.28em;color:var(--muted)}
+
+/* &#9472;&#9472;&#9472; entrances for card + board &#9472;&#9472;&#9472; */
+html.js.kc-card{opacity:0;transform:translateX(-26px)}
+html.js.kc-board{opacity:0;transform:translateX(26px)}
+html.js.kc-in.kc-card,html.js.kc-in.kc-board{opacity:1;transform:none;transition:opacity.7s ease,transform.7s cubic-bezier(.22,.8,.36,1)}
+html.js.kc-in.kc-board{transition-delay:.15s}
+
+/* &#9472;&#9472;&#9472; formula strip, notes, tips, warnings &#9472;&#9472;&#9472; */.kc-formula{display:inline-block;margin-top:16px;font:600 13px ui-monospace,'Cascadia Mono',Consolas,monospace;color:var(--accent-dark);background:var(--accent-soft);border:1.5px dashed rgba(156,69,34,.45);border-radius:10px;padding:7px 13px;transform:rotate(-.5deg)}.kc-note-fine{margin:12px 2px 0;font:italic 400 12.5px/1.6 Georgia,serif;color:var(--muted)}.kc-tip{display:inline-block;margin:20px 0 0;font-family:Caveat,cursive;font-size:21px;line-height:1.25;color:var(--ink);background:var(--note1);padding:9px 18px;transform:rotate(-.7deg);box-shadow:2px 3px 0 rgba(36,22,16,.08);border-radius:4px}.kc-tip b{color:var(--accent-dark);font-weight:700}.kc-warn{margin:12px 4px 0;font-family:Caveat,cursive;font-size:19px;line-height:1.4;color:var(--accent-dark)}
+
+/* &#9472;&#9472;&#9472; country guide &#9472;&#9472;&#9472; */.kc-guide{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,3vw,28px);margin-top:4px}.kc-list h4{margin:0 0 12px;padding-bottom:7px;border-bottom:2px solid var(--accent-soft);font:800 11.5px Inter,-apple-system,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--accent-dark)}.kc-pick{display:flex;justify-content:space-between;align-items:center;gap:10px;width:100%;text-align:left;background:var(--surface);border:1.5px solid var(--line);border-radius:12px;padding:10px 14px;margin:0 0 8px;cursor:pointer;font:600 13.5px Inter,-apple-system,sans-serif;color:var(--ink);box-shadow:2px 2px 0 rgba(36,22,16,.06);transition:transform.25s ease,border-color.25s ease,box-shadow.25s ease}.kc-pick em{font:800 12px Inter,-apple-system,sans-serif;font-style:normal;white-space:nowrap;color:var(--accent-dark);background:var(--accent-soft);border-radius:99px;padding:3px 10px}.kc-pick:hover{transform:translateY(-2px) rotate(-.4deg);border-color:var(--accent);box-shadow:3px 5px 0 rgba(188,91,51,.16)}.kc-fx{cursor:default}.kc-fx:hover{transform:none;border-color:var(--line);box-shadow:2px 2px 0 rgba(36,22,16,.06)}.kc-fx em{font:700 11.5px ui-monospace,Consolas,monospace;font-style:normal;color:var(--accent-dark)}
+
+
+/* &#9472;&#9472;&#9472; desk index (quick jump) &#9472;&#9472;&#9472; */.kc-index{position:relative;z-index:1;background:linear-gradient(180deg,#FFFDF8 0%,#FBF1E2 100%);border:1.5px solid var(--line);border-radius:18px;padding:16px 18px 16px;margin-top:26px;box-shadow:0 18px 36px -22px rgba(36,22,16,.28)}.kc-index::before{content:'';position:absolute;top:-12px;left:26px;width:74px;height:22px;background:rgba(188,91,51,.2);transform:rotate(-4deg);border-left:2px dashed rgba(255,253,248,.7);border-right:2px dashed rgba(255,253,248,.7)}.kc-ihead{display:flex;align-items:center;gap:10px;padding-bottom:10px;margin-bottom:12px;border-bottom:1.5px dashed var(--line)}.kc-ihead b{font:800 10.5px Inter,-apple-system,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}.kc-ihint{margin-left:auto;font-family:Caveat,cursive;font-size:17px;color:var(--accent-dark);transform:rotate(-1.6deg)}.kc-ilinks{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.kc-icard{position:relative;display:flex;flex-direction:column;gap:4px;background:var(--paper);border:1.5px solid var(--line);border-radius:14px;padding:12px 13px 36px;min-height:124px;text-decoration:none;overflow:hidden;transition:transform.25s cubic-bezier(.22,.8,.36,1),border-color.25s ease,box-shadow.25s ease,background.25s ease}.kc-icard:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:3px 6px 0 rgba(188,91,51,.14)}.kc-inum{font:800 23px Inter,-apple-system,sans-serif;letter-spacing:.02em;color:transparent;-webkit-text-stroke:1.2px var(--accent-dark);opacity:.9}.kc-iic{position:absolute;top:10px;right:11px;width:35px;height:32px}.kc-iic path,.kc-iic circle,.kc-iic ellipse{fill:none;stroke:var(--accent-dark);stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}.kc-it{font:800 14.5px/1.25 Inter,-apple-system,sans-serif;color:var(--ink);padding-right:26px}.kc-id{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-family:Caveat,cursive;font-size:16.5px;line-height:1.1;color:var(--accent-dark);transform:rotate(-1.2deg);padding-right:2px}.kc-igo{position:absolute;bottom:8px;right:12px;font:800 12px Inter,-apple-system,sans-serif;color:var(--accent-dark);opacity:0;transform:translateX(-5px);transition:opacity.22s ease,transform.22s ease}.kc-icard:hover.kc-igo{opacity:1;transform:none}.kc-icard.here{background:var(--accent-dark);border-color:var(--accent-dark);box-shadow:3px 6px 0 rgba(36,22,16,.18)}.kc-icard.here.kc-inum{-webkit-text-stroke:1.2px #FFFDF8}.kc-icard.here.kc-it,.kc-icard.here.kc-igo{color:#FFFDF8}.kc-icard.here.kc-id{color:#FFE9D9}.kc-icard.here.kc-iic path,.kc-icard.here.kc-iic circle,.kc-icard.here.kc-iic ellipse{stroke:#FFFDF8}
+@media (max-width:880px){.kc-ilinks{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:700px){.kc-ilinks{grid-template-columns:repeat(2,1fr);gap:11px}.kc-icard{padding:14px 15px 36px;min-height:140px}.kc-ilinks>.kc-icard:nth-child(odd){transform:rotate(-.7deg)}.kc-ilinks>.kc-icard:nth-child(even){transform:rotate(.7deg)}.kc-id{font-size:17.5px}}
+
+/* &#9472;&#9472;&#9472; markets desks &#9472;&#9472;&#9472; */.mk-tag{display:inline-block;margin-left:10px;font:800 9px Inter,-apple-system,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-dark);background:var(--accent-soft);border:1.5px dashed var(--accent-dark);border-radius:99px;padding:4px 11px;vertical-align:middle;transform:rotate(1.2deg)}.mk-embed{background:var(--surface);border:1.5px solid var(--line);border-radius:18px;padding:10px 10px 6px;box-shadow:0 18px 36px -22px rgba(36,22,16,.28);overflow:hidden}.mk-cap{display:block;text-align:center;font-family:Caveat,cursive;font-size:17px;color:var(--muted);margin:6px 0 2px}.mk-currow{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:13px 0 4px}.mk-cur{font:800 11px Inter,-apple-system,sans-serif;letter-spacing:.1em;padding:6px 14px;border-radius:99px;border:1.5px solid var(--line);background:var(--paper);color:var(--accent-dark);cursor:pointer;transition:transform.2s ease,background.2s ease,color.2s ease}.mk-cur:hover{transform:translateY(-1px);border-color:var(--accent)}.mk-cur.on{background:var(--accent-dark);color:#FFFDF8;border-color:var(--accent-dark);transform:none}.mk-currow.mk-cd{margin-left:auto}.mk-cd{font-family:Caveat,cursive;font-size:17px;color:var(--muted)}.mk-crows{margin-top:8px}.mk-crow{display:grid;grid-template-columns:30px 1.35fr 1fr.95fr.8fr;gap:12px;align-items:center;padding:10px 4px;border-bottom:1.5px dashed var(--line)}.mk-crow:last-child{border-bottom:none}.mk-rk{font:800 12px Inter,-apple-system,sans-serif;color:transparent;-webkit-text-stroke:1px var(--accent-dark)}.mk-cn{display:flex;align-items:center;gap:9px;min-width:0}.mk-cn img{width:30px;height:30px;border-radius:50%;background:var(--paper);border:1px solid var(--line);flex:0 0 30px}.mk-cn b{display:block;font:800 13px Inter,-apple-system,sans-serif;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.mk-cn span{font:700 10px Inter,-apple-system,sans-serif;letter-spacing:.08em;color:var(--muted);text-transform:uppercase}.mk-sp{display:block;width:100%;height:34px;color:var(--accent-dark)}.mk-pr{font:800 14px Inter,-apple-system,sans-serif;color:var(--ink);text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}.mk-ch{font:800 12px Inter,-apple-system,sans-serif;text-align:right;white-space:nowrap}.mk-up{color:var(--accent-dark)}.mk-dn{color:#8A7A63}.mk-wait{padding:18px 4px;font-family:Caveat,cursive;font-size:19px;color:var(--muted)}.mk-ctryrow{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:14px 0 10px}.mk-sel{font:800 12px Inter,-apple-system,sans-serif;letter-spacing:.06em;color:var(--ink);background:var(--surface);border:1.5px solid var(--line);border-radius:12px;padding:9px 12px;cursor:pointer;max-width:100%}.mk-sel:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(188,91,51,.16)}.mk-cmsg{font-family:Caveat,cursive;font-size:17px;color:var(--muted)}.mk-ftab,.mk-gtab{font:800 11px Inter,-apple-system,sans-serif;letter-spacing:.1em;text-transform:uppercase;padding:7px 14px;border-radius:99px;border:1.5px solid var(--line);background:var(--surface);color:var(--muted);cursor:pointer;transition:transform.15s,border-color.15s}.mk-ftab:hover,.mk-gtab:hover{transform:translateY(-1px);border-color:var(--accent)}.mk-ftab.on{background:var(--accent-dark);color:#FFFDF8;border-color:var(--accent-dark);transform:none}.mk-chiprow{display:flex;flex-wrap:wrap;gap:8px}.mk-fh{font-family:Caveat,cursive;font-size:21px;color:var(--ink);margin:6px 0 2px}.mk-live{position:relative}.mk-fb{display:grid;gap:3px;padding:14px 16px;border:1.5px dashed var(--line);border-radius:12px;background:var(--accent-soft)}.mk-fb b{font:800 11px Inter,-apple-system,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-dark)}.mk-fb span{font:700 13px Inter,-apple-system,sans-serif;color:var(--ink)}.mk-fb em{font-family:Caveat,cursive;font-style:normal;font-size:16px;color:var(--muted)}.mk-barl{font-family:Caveat,cursive;font-size:19px;color:var(--muted);white-space:nowrap}.mk-own{background:var(--surface);border:1.5px solid var(--line);border-radius:18px;padding:4px 14px;box-shadow:0 12px 26px -18px rgba(36,22,16,.3)}.mk-pxline{margin-top:10px;font:700 13px Inter,sans-serif;color:var(--ink);background:rgba(188,91,51,.07);border:1px dashed rgba(188,91,51,.45);border-radius:12px;padding:8px 12px}
+#mkFundBox,#mkMfPanel{max-height:540px;overflow-y:auto;scrollbar-width:thin;scrollbar-color:rgba(188,91,51,.45) transparent}
+#mkFundBox::-webkit-scrollbar,#mkMfPanel::-webkit-scrollbar{width:8px}
+#mkFundBox::-webkit-scrollbar-thumb,#mkMfPanel::-webkit-scrollbar-thumb{background:rgba(188,91,51,.4);border-radius:99px}.mk-orow{display:grid;grid-template-columns:34px 1.5fr 1.1fr.8fr;gap:12px;align-items:center;padding:9px 2px;border-bottom:1.5px solid var(--paper)}.mk-orow:last-child{border-bottom:none}.mk-olg{width:34px;height:34px;border-radius:50%;background:var(--paper);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;overflow:hidden}.mk-olg img{width:26px;height:26px;object-fit:contain}.mk-olg b{font:800 14px Inter,-apple-system,sans-serif;color:var(--accent-dark)}.mk-onm{min-width:0}.mk-onm b{display:block;font:800 13.5px Inter,-apple-system,sans-serif;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.mk-onm span{display:block;font:700 10.5px Inter,-apple-system,sans-serif;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.mk-opr{text-align:right}.mk-opr b{display:block;font:800 14px Inter,-apple-system,sans-serif;color:var(--ink);font-variant-numeric:tabular-nums}.mk-opr span{font:700 10px Inter,-apple-system,sans-serif;color:var(--muted)}.mk-och{font:800 12px Inter,-apple-system,sans-serif;text-align:right;white-space:nowrap}.mk-ofine{font-family:Caveat,cursive;font-size:15.5px;color:var(--muted);padding:8px 2px;text-align:center}.mk-search{display:flex;gap:10px;margin-top:12px}.mk-search input{flex:1 1 auto;min-width:0;font:700 14px Inter,-apple-system,sans-serif;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:12px;padding:11px 13px}.mk-search input:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(188,91,51,.16)}.mk-search button{font:800 11px Inter,-apple-system,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#FFFDF8;background:var(--accent-dark);border:none;border-radius:12px;padding:11px 18px;cursor:pointer;transition:transform.2s ease}.mk-search button:hover{transform:translateY(-1px)}.mk-res{margin-top:10px}.mk-navrow{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:7px 0;border-bottom:1.5px dashed var(--line);font:600 12.5px Inter,-apple-system,sans-serif;color:var(--muted)}.mk-navrow:last-child{border-bottom:none}.mk-navrow b{font:800 13.5px Inter,-apple-system,sans-serif;color:var(--ink);text-align:right}.mk-det{margin-top:12px}
+@media (max-width:700px){.mk-crow{grid-template-columns:24px 1.3fr.9fr.7fr;gap:8px}.mk-sp{display:none}.mk-pr{font-size:13px}.mk-search{flex-direction:column}.mk-search button{width:100%}.mk-ctryrow{flex-direction:column;align-items:stretch}.mk-sel{width:100%}.mk-orow{grid-template-columns:30px 1.4fr.9fr;gap:8px}.mk-och{display:none}.mk-olg{width:30px;height:30px}.mk-olg img{width:22px;height:22px}
+}
+
+/* &#9472;&#9472;&#9472; page toast &#9472;&#9472;&#9472; */
+#kcToast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(8px);background:var(--ink);color:#FFFDF8;font:700 12.5px Inter,-apple-system,sans-serif;padding:9px 16px;border-radius:99px;opacity:0;pointer-events:none;transition:opacity.28s ease,transform.28s ease;z-index:9999;box-shadow:0 8px 22px rgba(36,22,16,.35)}
+#kcToast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* &#9472;&#9472;&#9472; responsive &#9472;&#9472;&#9472; */
+@media (max-width:880px){.kc-grid{grid-template-columns:1fr}
+}
+@media (max-width:700px){.kcd-panel{padding:12px 10px 10px}.kcd-slide{padding:13px 12px 9px}.kcd-srow{font-size:12.5px;gap:8px;padding:7px 1px}.kcd-caveat{font-size:22px}.kc-guide{grid-template-columns:1fr}.kc-row-i{grid-template-columns:1fr 98px}.kc-lhint{display:none}.kc-sec::before{top:-34px}.kc-btop>b{letter-spacing:.14em}
+}
+@media (prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none !important;transition:none !important}
+ html.js.kc-sec{opacity:1;transform:none}
+ html.js.kc-sec::before{opacity:1;transform:none}
+ html.js.kc-card,html.js.kc-board{opacity:1;transform:none}.kc-squig path,.kc-ul path{stroke-dashoffset:0 !important}
+}
+
+ /* &#8212;&#8212; design pass: glance band &#183; section dividers &#183; colophon &#8212;&#8212; */.kc-glance{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:14px;padding-top:13px;border-top:1.5px dashed var(--line)}.kc-glab{font-family:Caveat,cursive;font-size:19px;color:var(--accent-dark);transform:rotate(-1.6deg);white-space:nowrap}.kc-grow{display:flex;flex-wrap:wrap;gap:9px}.kc-gchip{border:1.5px solid var(--line);border-radius:11px;background:var(--paper);padding:6px 12px 7px;font:600 10.5px Inter,-apple-system,sans-serif;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}.kc-gchip b{display:block;font:800 17px Inter,-apple-system,sans-serif;letter-spacing:-.01em;text-transform:none;color:var(--accent-dark);margin-bottom:1px}.kc-gchip:nth-child(odd){transform:rotate(-.8deg)}.kc-gchip:nth-child(even){transform:rotate(.8deg)}.kc-sec +.kc-sec::before{content:'\002726';display:block;width:min(340px,72%);height:13px;margin:0 auto 30px;color:rgba(188,91,51,.7);font:700 12px/13px Inter,-apple-system,sans-serif;text-align:center;background:linear-gradient(180deg,transparent 6px,rgba(188,91,51,.32) 6px,rgba(188,91,51,.32) 7px,transparent 7px)}.kc-colophon{margin-top:clamp(56px,8vw,84px);padding:28px 18px 30px;border:1.5px dashed var(--line);border-radius:18px;background:linear-gradient(180deg,#FFFDF8,#FBF1E2);text-align:center}.kc-orn{font-size:13px;letter-spacing:10px;text-indent:10px;color:rgba(188,91,51,.6)}.kc-colo-line{margin:10px 0 2px;font:italic 500 15.5px Georgia,'Times New Roman',serif;color:var(--muted)}.kc-colo-sign{margin:0;font-family:Caveat,cursive;font-size:31px;color:var(--accent-dark);transform:rotate(-1.8deg)}.kc-colo-fine{display:block;margin-top:9px;font:600 10px Inter,-apple-system,sans-serif;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+ @media (max-width:700px){.kc-glance{gap:10px}.kc-gchip{padding:5px 10px 6px}.kc-gchip b{font-size:15px}.kc-colophon{padding:22px 14px 26px}.kc-orn{letter-spacing:7px;text-indent:7px}
+ }
+ </style>
+<div class="wrap pr-page"><section class="kc-hero kf-market pr-hero" id="kcTop">
+<div class="kc-htop kf-layout">
+<div class="kc-hcopy kf-copy">
+<span class="kc-badge">✳ the markets desk · free · no sign-up</span>
+<h1>World markets,<br/><span class="kc-flip" id="kcWord"><i class="on">ticking.</i><i>priced.</i><i>surging.</i><i>correcting.</i><i>settling.</i><i>compounding.</i><i>watched.</i><i>quoted.</i><i>alive.</i></span></h1>
+<svg aria-hidden="true" class="kc-squig" viewbox="0 0 300 14"><path d="M4 9 C 60 3, 110 13, 158 7 S 258 4, 296 9"></path></svg>
+<p class="kc-lede">Stocks, indices, commodities, currencies and crypto — from Mumbai to New York, London to Tokyo — auto-updating on one desk. Crypto ticks in near real-time; quotes ride licensed exchange feeds; fund NAVs follow their official daily rhythm. Nothing to sign up for, nothing stored.</p>
+<p class="kc-geoline"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12 h18 M12 3 c3.5 3 3.5 15 0 18 M12 3 c-3.5 3 -3.5 15 0 18"></path></svg><em id="kcGeoNote" style="font-style: normal;">detecting your location…</em></p>
+</div>
+<div class="kcd-panel kf-note">
+<div class="kcd-deck"><div class="kcd-track" id="kcDeck">
+<div class="kcd-slide"><span class="kcd-caveat">the compounding magic ✳</span>
+<div class="kcd-srow"><span>₹10,000 a month at 12% → 10 yrs</span><b>₹23 lakh</b></div>
+<div class="kcd-srow"><span>the same SIP kept for 20 years</span><b>~₹1 crore</b></div>
+<div class="kcd-srow"><span>double the years, four times the money</span><b>start early</b></div>
+</div>
+<div class="kcd-slide"><span class="kcd-caveat">rules that never age ✳</span>
+<div class="kcd-srow"><span>rule of 72: 72 ÷ return % =</span><b>years to double</b></div>
+<div class="kcd-srow"><span>at 12% a year, money doubles</span><b>every 6 yrs</b></div>
+<div class="kcd-srow"><span>100 minus your age ≈ equity %</span><b>compass, not law</b></div>
+</div>
+<div class="kcd-slide"><span class="kcd-caveat">history whispers ✳</span>
+<div class="kcd-srow"><span>Sensex: 100 in 1979 → 80,000+ by 2024</span><b>~16%/yr</b></div>
+<div class="kcd-srow"><span>every crash felt like the end</span><b>none was</b></div>
+<div class="kcd-srow"><span>time in the market beats</span><b>timing it</b></div>
+</div>
+<div class="kcd-slide"><span class="kcd-caveat">reading any price ✳</span>
+<div class="kcd-srow"><span>a ₹10,000 stock can be cheaper</span><b>than a ₹50 one</b></div>
+<div class="kcd-srow"><span>price × shares on offer = value</span><b>compare value</b></div>
+<div class="kcd-srow"><span>a P/E of 25 means paying</span><b>25 yrs of earnings</b></div>
+</div>
+<div class="kcd-slide"><span class="kcd-caveat">habits that pay ✳</span>
+<div class="kcd-srow"><span>keep 6 months of expenses liquid,</span><b>then invest</b></div>
+<div class="kcd-srow"><span>gold for fear, equity for growth —</span><b>hold both</b></div>
+<div class="kcd-srow"><span>SIP on salary day</span><b>pay future-you</b></div><div class="kcd-srow">the wider desk ✳</div></div><div class="kcd-slide"><div class="kcd-srow"><span>Understand the question</span><b>Plain guides</b></div><div class="kcd-srow"><span>Test the assumptions</span><b>calculators</b></div><div class="kcd-srow"><span>Read the context</span><b>Markets + Atlas</b></div><div class="kcd-srow"><span>Plan a business case</span><b>For Corporate</b></div></div></div>
+</div></div></div></section><style id="dyDeskIndexStyle">
+/* Daily Yield desk index &#8212; one designed board, three desks. */
+.dxi{--dxi-ink:#241610;--dxi-muted:#7A6A57;--dxi-line:#E7D8C4;--dxi-soft:#F7E6D5;--dxi-accent:#BC5B33;--dxi-accent-dark:#9C4522;--dxi-paper:#FFFDF9;
+  position:relative;margin:34px 0 0;padding:clamp(18px,3.4vw,30px);border:1px solid var(--dxi-line);border-radius:22px;
+  background:linear-gradient(180deg,var(--dxi-paper) 0%,#FBF2E6 100%);box-shadow:0 26px 50px -34px rgba(36,22,16,.45);color:var(--dxi-ink);
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;box-sizing:border-box}
+.dxi *,.dxi *::before,.dxi *::after{box-sizing:inherit}
+.dxi::before{content:'';position:absolute;inset:0 auto 0 0;width:5px;border-radius:22px 0 0 22px;background:linear-gradient(180deg,var(--dxi-accent) 0%,#D98B5F 48%,#E8C49B 100%)}
+.dxi-head{position:relative;padding:0 0 16px;margin:0 0 22px;border-bottom:1px solid var(--dxi-line)}
+.dxi-eyebrow{margin:0;font:800 10px/1 Inter,sans-serif;letter-spacing:.26em;text-transform:uppercase;color:var(--dxi-accent-dark)}
+.dxi-title{margin:10px 0 0;font:800 clamp(23px,3.5vw,34px)/1.12 Georgia,"Playfair Display",serif;letter-spacing:-.01em;color:var(--dxi-ink)}
+.dxi-note{position:absolute;right:0;bottom:16px;margin:0;font:600 clamp(15px,1.7vw,19px)/1.2 Caveat,"Segoe Script",cursive;color:var(--dxi-accent);transform:rotate(-1.4deg);max-width:46%}
+.dxi-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:14px 0 0}
+.dxi-chip{display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border:1px solid var(--dxi-line);border-radius:999px;background:#fff;
+  font:700 10px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--dxi-muted)}
+.dxi-chip b{color:var(--dxi-accent-dark);font-weight:800}
+.dxi-chip--tip{border-style:dashed;color:var(--dxi-accent-dark);background:var(--dxi-soft)}
+.dxi-group{margin:0 0 26px}
+.dxi-group:last-child{margin-bottom:2px}
+.dxi-ghead{display:flex;align-items:center;gap:12px;margin:0 0 13px}
+.dxi-gnum{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:9px;background:var(--dxi-ink);color:#FFF6EC;
+  font:800 11.5px/1 Inter,sans-serif;font-variant-numeric:tabular-nums;letter-spacing:.02em;flex:0 0 30px}
+.dxi-gname{margin:0;font:800 11.5px/1.1 Inter,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--dxi-ink);white-space:nowrap}
+.dxi-gcount{font:700 10px/1 Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--dxi-accent-dark);background:var(--dxi-soft);
+  border-radius:999px;padding:4px 9px;white-space:nowrap}
+.dxi-gline{flex:1 1 40px;height:1px;min-width:18px;background:linear-gradient(90deg,var(--dxi-line),rgba(231,216,196,0))}
+/* one track count per group, so no row of the index ends in a hole */
+.dxi-grid{display:grid;grid-template-columns:repeat(var(--dxi-cols,4),minmax(min(196px,100%),318px));justify-content:center;gap:13px;list-style:none;margin:0;padding:0}
+.dxi-card{position:relative;display:flex;flex-direction:column;gap:9px;min-height:150px;padding:15px 15px 12px;border:1px solid var(--dxi-line);border-radius:15px;
+  background:#fff;color:var(--dxi-ink);text-decoration:none;overflow:hidden;transition:transform .22s cubic-bezier(.22,.8,.36,1),border-color .22s ease,box-shadow .22s ease}
+.dxi-card::before{content:'';position:absolute;left:14px;right:14px;top:0;height:2px;border-radius:0 0 2px 2px;background:linear-gradient(90deg,var(--dxi-accent),#E3A97F);opacity:0;transition:opacity .22s ease}
+.dxi-card:hover,.dxi-card:focus-visible{transform:translateY(-3px);border-color:var(--dxi-accent);box-shadow:0 20px 34px -26px rgba(156,69,34,.7),0 2px 0 rgba(188,91,51,.1);outline:none}
+.dxi-card:hover::before,.dxi-card:focus-visible::before,.dxi-card[aria-current]{opacity:1}
+.dxi-card:focus-visible{box-shadow:0 0 0 3px rgba(188,91,51,.28),0 20px 34px -26px rgba(156,69,34,.7)}
+.dxi-card:active{transform:translateY(-1px)}
+.dxi-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.dxi-num{font:800 12px/1 Inter,sans-serif;font-variant-numeric:tabular-nums;letter-spacing:.16em;color:var(--dxi-muted)}
+.dxi-ico{display:inline-flex;align-items:center;justify-content:center;width:clamp(44px,4.6vw,52px);height:clamp(44px,4.6vw,52px);
+  border-radius:15px;background:var(--dxi-soft);border:1px solid #EFD9C2;flex:0 0 auto}
+/* square, centred, never clipped: the glyph fills two thirds of the badge and its own geometry
+   decides the box, so an icon drawn wide is not squeezed and one drawn small is not flung off-centre */
+.dxi-ico svg{display:block;width:clamp(26px,2.9vw,32px);height:clamp(26px,2.9vw,32px);flex:0 0 auto}
+.dxi-ico svg *{fill:none;stroke:var(--dxi-accent-dark);stroke-width:var(--dxi-sw,1.9);stroke-linecap:round;stroke-linejoin:round}
+.dxi-name{font:800 14.5px/1.28 Inter,sans-serif;letter-spacing:-.005em;color:var(--dxi-ink)}
+.dxi-note2{margin:0;font:500 11.8px/1.45 Inter,sans-serif;color:var(--dxi-muted)}
+.dxi-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto;padding-top:9px;border-top:1px dashed var(--dxi-line)}
+.dxi-open{font:800 9.5px/1 Inter,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--dxi-accent-dark)}
+.dxi-arrow{font:800 13px/1 Inter,sans-serif;color:var(--dxi-accent);transition:transform .22s cubic-bezier(.22,.8,.36,1)}
+.dxi-card:hover .dxi-arrow,.dxi-card:focus-visible .dxi-arrow{transform:translateX(4px)}
+.dxi-card[aria-current="true"]{border-color:var(--dxi-accent);background:linear-gradient(180deg,#FFF8F1,#FDF0E4)}
+@media (max-width:900px){
+  .dxi-note{position:static;display:block;margin:10px 0 0;max-width:none;transform:none}
+  .dxi-grid{grid-template-columns:repeat(var(--dxi-cols-mid,3),minmax(min(168px,100%),300px))}
+}
+@media (max-width:560px){
+  .dxi{padding:16px 14px;border-radius:18px}
+  .dxi::before{border-radius:18px 0 0 18px}
+  .dxi-ghead{flex-wrap:wrap;gap:8px}
+  .dxi-gname{white-space:normal}
+  .dxi-gline{display:none}
+  .dxi-grid{grid-template-columns:repeat(auto-fit,minmax(146px,1fr));gap:11px}
+  .dxi-grid[data-odd="1"] .dxi-card:last-child{grid-column:1/-1}
+  .dxi-card{min-height:140px;padding:12px 12px 10px}
+  .dxi-ico{width:44px;height:44px}
+  .dxi-ico svg{width:27px;height:27px}
+  .dxi-name{font-size:13.5px}
+}
+@media (prefers-reduced-motion:reduce){
+  .dxi-card,.dxi-arrow{transition:none}
+  .dxi-card:hover{transform:none}
+}
+</style><script data-dy-desk-index="1">(function(){var d=document,n=d.querySelector('.dxi');if(!n||n.dataset.dyIndexReady)return;n.dataset.dyIndexReady='1';
+var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches,cards=[].slice.call(n.querySelectorAll('.dxi-card'));
+function target(a){var h=a.getAttribute('href')||'';return h.charAt(0)==='#'?d.getElementById(h.slice(1)):null}
+cards.forEach(function(a){a.addEventListener('click',function(ev){var t=target(a);if(!t||ev.metaKey||ev.ctrlKey||ev.shiftKey)return;ev.preventDefault();
+t.scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'});if(history.replaceState)history.replaceState(null,'',a.getAttribute('href'));
+cards.forEach(function(x){x.removeAttribute('aria-current')});a.setAttribute('aria-current','true')})});
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;
+cards.forEach(function(x){if(target(x)===e.target)x.setAttribute('aria-current','true')})})},{rootMargin:'-45% 0px -50% 0px'});
+cards.forEach(function(a){var t=target(a);if(t)io.observe(t)})}})();</script><nav aria-label="Markets desk index" class="dxi"><header class="dxi-head"><p class="dxi-eyebrow">Markets index</p><h2 class="dxi-title">Pick a desk</h2><p class="dxi-note">nine desks, one tape</p><div class="dxi-meta"><span class="dxi-chip">36,000+ funds</span><span class="dxi-chip">14 commodities</span><span class="dxi-chip">69 one-tap charts</span><span class="dxi-chip">41 currencies</span><span class="dxi-chip">25 mega caps</span><span class="dxi-chip dxi-chip--tip"><b>9</b> desks</span></div></header><div class="dxi-body"><section class="dxi-group"><header class="dxi-ghead"><span class="dxi-gnum">01</span><h3 class="dxi-gname">Market overview</h3><span class="dxi-gcount">3 desks</span><span aria-hidden="true" class="dxi-gline"></span></header><div class="dxi-grid" data-odd="1" style="--dxi-cols:3;--dxi-cols-mid:3"><a class="dxi-card" href="#kc-board"><span class="dxi-top"><span class="dxi-num">01</span><span class="dxi-ico"><svg aria-hidden="true" focusable="false" preserveaspectratio="xMidYMid meet" style="--dxi-sw:1.54" viewbox="2.25 2.25 19.5 19.5"><circle cx="12" cy="12" r="8"></circle><path d="M4 12 h16 M12 4 v16 M6.3 6.3 l11.4 11.4"></path></svg></span></span><strong class="dxi-name">World board</strong><span class="dxi-note2">global top 25, live</span><span class="dxi-foot"><span class="dxi-open">Open board</span><span aria-hidden="true" class="dxi-arrow">→</span></span></a><a class="dxi-card" href="#kc-ctry"><span class="dxi-top"><span class="dxi-num">02</span><span class="dxi-ico"><svg aria-hidden="true" focusable="false" preserveaspectratio="xMidYMid meet" style="--dxi-sw:1.62" viewbox="1.25 2.25 20.5 20.5"><path d="M6 21 V4 M6 4 h11 l-2.5 3.5 L17 11 H6"></path></svg></span></span><strong class="dxi-name">Your market</strong><span class="dxi-note2">your country’s top 25</span><span class="dxi-foot"><span class="dxi-open">Open board</span><span aria-hidden="true" class="dxi-arrow">→</span></span></a><a class="dxi-card" href="#kc-idx"><span class="dxi-top"><span class="dxi-num">03</span><span class="dxi-ico"><svg aria-hidden="true" focusable="false" preserveaspectratio="xMidYMid meet" style="--dxi-sw:1.54" viewbox="2.25 2.75 19.5 19.5"><path d="M4 16 a8 8 0 0 1 16 0"></path><path d="M12 16 L16 9"></path></svg></span></span><strong class="dxi-name">World indices</strong><span class="dxi-note2">how boards breathe</span><span class="dxi-foot"><span class="dxi-open">Open board</span><span aria-hidden="true" class="dxi-arrow">→</span></span></a></div></section><section class="dxi-group"><header class="dxi-ghead"><span class="dxi-gnum">02</span><h3 class="dxi-gname">Assets &amp; charting</h3><span class="dxi-gcount">4 desks</span><span aria-hidden="true" class="dxi-gline"></span></header><div class="dxi-grid" style="--dxi-cols:4;--dxi-cols-mid:2"><a class="dxi-card" href="#kc-cmd"><span class="dxi-top"><span class="dxi-num">04</span><span class="dxi-ico"><svg aria-hidden="true" focusable="false" preserveaspectratio="xMidYMid meet" style="--dxi-sw:1.23" viewbox="4.25 0.75 15.5 15.5"><path d="M12 3 c3 4 6 7 6 11 a6 6 0 0 1 -12 0 c0 -4 3 -7 6 -11 Z"></path></svg></span></span><strong class="dxi-name">Commodities</strong><span class="dxi-note2">gold · silver · crude</span><span class="dxi-foot"><span class="dxi-open">Open board</span><span aria-hidden="true" class="dxi-arrow">→</span></span></a><a class="dxi-card" href="#kc-cry"><span class="dxi-top"><span class="dxi-num">05</span><span class="dxi-ico"><svg aria-hidden="true" focusable="false" preserveaspectratio="xMidYMid meet" style="--dxi-sw:1.54" viewbox="2.25 2.25 19.5 19.5"><circle cx="12" cy="12" r="8"></circle><path d="M9.5 9 h3.5 a1.8 1.8 0 0 1 0 3.6 H9.5 V7.5 m0 9 h3.8 a1.8 1.8 0 0 0 0 -3.6 H9.5"></path></svg></span></span><strong class="dxi-name">Crypto live</strong><span class="dxi-note2">ticking every 45s</span><span class="dxi-foot"><span class="dxi-open">Open board</span><span aria-hidden="true" class="dxi-arrow">→</span></span></a><a class="dxi-card" href="#kc-fund"><span class="dxi-top"><span class="dxi-num">06</span><span class="dxi-ico"><svg aria-hidden="true" focusable="false" preserveaspectratio="xMidYMid meet" style="--dxi-sw:1.54" viewbox="3 1.25 19.4 19.4"><path d="M5 5 a2 2 0 0 1 2 -2 h6 l4 4 v6 M7 11 h6 M7 14.5 h6 M7 18 h4"></path><path d="M14 16.5 l2.4 2.4 4 -4.4"></path></svg></span></span><strong class="dxi-name">Funds &amp; ETFs</strong><span class="dxi-note2">51 markets · every fund</span><span class="dxi-foot"><span class="dxi-open">Open board</span><span aria-hidden="true" class="dxi-arrow">→</span></span></a><a class="dxi-card" href="#kc-chart"><span class="dxi-top"><span class="dxi-num">07</span><span class="dxi-ico"><svg aria-hidden="true" focusable="false" preserveaspectratio="xMidYMid meet" style="--dxi-sw:1.54" viewbox="2.25 2.25 19.5 19.5"><path d="M4 19 V5 M4 19 h16 M7 15 l4 -4 3 2.5 5 -6"></path></svg></span></span><strong class="dxi-name">Any-chart desk</strong><span class="dxi-note2">tap · type · graph</span><span class="dxi-foot"><span class="dxi-open">Open board</span><span aria-hidden="true" class="dxi-arrow">→</span></span></a></div></section><section class="dxi-group"><header class="dxi-ghead"><span class="dxi-gnum">03</span><h3 class="dxi-gname">Reading &amp; data guides</h3><span class="dxi-gcount">2 desks</span><span aria-hidden="true" class="dxi-gline"></span></header><div class="dxi-grid" style="--dxi-cols:2;--dxi-cols-mid:2"><a class="dxi-card" href="#kc-edu"><span class="dxi-top"><span class="dxi-num">08</span><span class="dxi-ico"><svg aria-hidden="true" focusable="false" preserveaspectratio="xMidYMid meet" style="--dxi-sw:1.7" viewbox="1.25 -0.25 21.5 21.5"><path d="M3 8 l9 -4.5 L21 8 l-9 4.5 Z"></path><path d="M7 10.5 V15 c0 1.4 2.2 2.5 5 2.5 s5 -1.1 5 -2.5 v-4.5"></path></svg></span></span><strong class="dxi-name">Reading the board</strong><span class="dxi-note2">six timeless ideas</span><span class="dxi-foot"><span class="dxi-open">Open board</span><span aria-hidden="true" class="dxi-arrow">→</span></span></a><a class="dxi-card" href="#kc-honest"><span class="dxi-top"><span class="dxi-num">09</span><span class="dxi-ico"><svg aria-hidden="true" focusable="false" preserveaspectratio="xMidYMid meet" style="--dxi-sw:1.7" viewbox="1.25 1.25 21.5 21.5"><path d="M12 3 L5 6 v5 c0 5 3 8 7 10 4 -2 7 -5 7 -10 V6 Z"></path><path d="M9 11.5 l2.2 2.2 4 -4.4"></path></svg></span></span><strong class="dxi-name">Data honesty</strong><span class="dxi-note2">every delay labelled</span><span class="dxi-foot"><span class="dxi-open">Open board</span><span aria-hidden="true" class="dxi-arrow">→</span></span></a></div></section></div></nav><p class="kc-sub"><strong>Welcome to the markets desk.</strong> One board for the whole world — the indices, the megacaps, the metals, the money and the coins. Every panel refreshes itself; the crypto desk ticks on its own clock. Like everything on this blog: <strong>no sign-up, no storage, no uploads</strong> — the page simply watches the markets so you can too.</p><div class="pr-group-divider" id="markets-overview"><strong>Market overview</strong><span>01 — 03</span></div><section class="kc-sec" data-n="02" id="kc-board">
+<header class="kc-shead">
+<span class="kc-stamp">01 · the world board</span>
+<h2>Global top 25 — the shares the whole world watches<svg aria-hidden="true" class="kc-ul" viewbox="0 0 220 12"><path d="M3 8 C 55 2, 120 12, 217 5"></path></svg></h2>
+<span class="kc-ann">the planet’s most-watched shares</span><span class="mk-tag">auto-updating</span>
+</header>
+<p class="kc-sub">The tape never stops. Below are the twenty-five names the whole planet seems to watch — Manhattan to Mumbai to Taipei’s Hsinchu hills — updating themselves as trades print.</p>
+<div class="mk-currow"><span class="mk-barl">show prices in</span>
+<select aria-label="World board currency" class="mk-sel" id="mkCurW">
+<option selected="" value="usd">US Dollar · $</option>
+<option value="inr">Indian Rupee · ₹</option>
+<option value="eur">Euro · €</option>
+<option value="gbp">Pound · £</option>
+<option value="jpy">Yen · ¥</option>
+<option value="cny">Yuan · CN¥</option>
+<option value="krw">Won · ₩</option>
+<option value="twd">Taiwan $ · NT$</option>
+<option value="hkd">HK Dollar · HK$</option>
+<option value="sgd">Singapore $ · S$</option>
+<option value="aud">Aussie $ · A$</option>
+<option value="nzd">NZ Dollar · NZ$</option>
+<option value="cad">Canuck $ · C$</option>
+<option value="chf">Swiss Franc · CHF</option>
+<option value="nok">Krone · kr</option>
+<option value="sek">Krona · kr</option>
+<option value="dkk">Danish kr · kr</option>
+<option value="pln">Złoty · zł</option>
+<option value="czk">Koruna · Kč</option>
+<option value="huf">Forint · Ft</option>
+<option value="try">Lira · ₺</option>
+<option value="mxn">Mexican $ · MX$</option>
+<option value="brl">Real · R$</option>
+<option value="ars">Peso · AR$</option>
+<option value="clp">Chilean $ · CLP$</option>
+<option value="zar">Rand · R</option>
+<option value="aed">Dirham · AED</option>
+<option value="sar">Riyal · SAR</option>
+<option value="kwd">Dinar · KD</option>
+<option value="bhd">Bahraini · BD</option>
+<option value="ils">Shekel · ₪</option>
+<option value="pkr">Rupee · Rs</option>
+<option value="bdt">Taka · ৳</option>
+<option value="lkr">Rupee · Rs</option>
+<option value="php">Peso · ₱</option>
+<option value="idr">Rupiah · Rp</option>
+<option value="thb">Baht · ฿</option>
+<option value="myr">Ringgit · RM</option>
+<option value="vnd">Đồng · ₫</option>
+<option value="ngn">Naira · ₦</option>
+<option value="uah">Hryvnia · ₴</option>
+</select>
+</div>
+<div class="mk-own" id="mkOwnW"></div>
+<span class="mk-cap">rows refresh every 60s · converted inside this page at today’s rates · delayed rows carry a ′ mark</span>
+<p class="kc-tip"><b>ca’s corner:</b> a share price is the market’s live vote on a business — twenty-five votes from every corner of the world.</p>
+</section><section class="kc-sec" data-n="04" id="kc-ctry">
+<header class="kc-shead">
+<span class="kc-stamp">02 · your market</span>
+<h2>Your country’s top 25<svg aria-hidden="true" class="kc-ul" viewbox="0 0 220 12"><path d="M3 8 C 55 2, 120 12, 217 5"></path></svg></h2>
+<span class="kc-ann">set from your location — switch freely</span><span class="mk-tag">auto-detected</span>
+</header>
+<p class="kc-sub">The board below loads your flag: we read your location the same gentle way the calculators do, then show that country’s most-watched shares. No curated list for it yet? The world mega caps stand in — pick any country from the menu.</p>
+<div class="mk-ctryrow">
+<select aria-label="Choose a country market" class="mk-sel" id="mkCtry">
+<option selected="" value="WW">World mega caps</option>
+<option value="US">United States</option>
+<option value="IN">India</option>
+<option value="GB">United Kingdom</option>
+<option value="JP">Japan</option>
+<option value="DE">Germany</option>
+<option value="CN">China (HK listed)</option>
+<option value="CA">Canada</option>
+<option value="AU">Australia</option>
+<option value="BR">Brazil</option>
+<option value="KR">South Korea</option>
+<option value="CH">Switzerland</option>
+<option value="TW">Taiwan</option>
+<option value="FR">France</option>
+</select>
+<span class="mk-barl">show in</span>
+<select aria-label="Country board currency" class="mk-sel" id="mkCurT">
+<option selected="" value="usd">US Dollar · $</option>
+<option value="inr">Indian Rupee · ₹</option>
+<option value="eur">Euro · €</option>
+<option value="gbp">Pound · £</option>
+<option value="jpy">Yen · ¥</option>
+<option value="cny">Yuan · CN¥</option>
+<option value="krw">Won · ₩</option>
+<option value="twd">Taiwan $ · NT$</option>
+<option value="hkd">HK Dollar · HK$</option>
+<option value="sgd">Singapore $ · S$</option>
+<option value="aud">Aussie $ · A$</option>
+<option value="nzd">NZ Dollar · NZ$</option>
+<option value="cad">Canuck $ · C$</option>
+<option value="chf">Swiss Franc · CHF</option>
+<option value="nok">Krone · kr</option>
+<option value="sek">Krona · kr</option>
+<option value="dkk">Danish kr · kr</option>
+<option value="pln">Złoty · zł</option>
+<option value="czk">Koruna · Kč</option>
+<option value="huf">Forint · Ft</option>
+<option value="try">Lira · ₺</option>
+<option value="mxn">Mexican $ · MX$</option>
+<option value="brl">Real · R$</option>
+<option value="ars">Peso · AR$</option>
+<option value="clp">Chilean $ · CLP$</option>
+<option value="zar">Rand · R</option>
+<option value="aed">Dirham · AED</option>
+<option value="sar">Riyal · SAR</option>
+<option value="kwd">Dinar · KD</option>
+<option value="bhd">Bahraini · BD</option>
+<option value="ils">Shekel · ₪</option>
+<option value="pkr">Rupee · Rs</option>
+<option value="bdt">Taka · ৳</option>
+<option value="lkr">Rupee · Rs</option>
+<option value="php">Peso · ₱</option>
+<option value="idr">Rupiah · Rp</option>
+<option value="thb">Baht · ฿</option>
+<option value="myr">Ringgit · RM</option>
+<option value="vnd">Đồng · ₫</option>
+<option value="ngn">Naira · ₦</option>
+<option value="uah">Hryvnia · ₴</option>
+</select>
+<span class="mk-cmsg" id="mkCtryMsg">detecting your country…</span>
+<button class="mk-gtab" id="mkCtryChart" type="button">graph this market</button>
+</div>
+<div class="mk-embed" id="mkCtryBox" style="min-height: 660px;"></div>
+<p class="kc-tip"><b>ca’s corner:</b> shares are always quoted in their home money — Reliance in rupees, Toyota in yen. Currency-hopping is the exchange rate’s job, not the price tag’s.</p>
+</section><section class="kc-sec" data-n="06" id="kc-idx">
+<header class="kc-shead">
+<span class="kc-stamp">03 · world indices</span>
+<h2>How the big boards breathe<svg aria-hidden="true" class="kc-ul" viewbox="0 0 220 12"><path d="M3 8 C 55 2, 120 12, 217 5"></path></svg></h2>
+<span class="kc-ann">one number per market</span><span class="mk-tag">auto-updating</span>
+</header>
+<p class="kc-sub">Fourteen indices, five continents — each a single number summarising an entire market’s mood today.</p>
+<div class="mk-currow"><span class="mk-barl">show levels in</span>
+<select aria-label="Indices currency" class="mk-sel" id="mkCurI">
+<option selected="" value="usd">US Dollar · $</option>
+<option value="inr">Indian Rupee · ₹</option>
+<option value="eur">Euro · €</option>
+<option value="gbp">Pound · £</option>
+<option value="jpy">Yen · ¥</option>
+<option value="cny">Yuan · CN¥</option>
+<option value="krw">Won · ₩</option>
+<option value="twd">Taiwan $ · NT$</option>
+<option value="hkd">HK Dollar · HK$</option>
+<option value="sgd">Singapore $ · S$</option>
+<option value="aud">Aussie $ · A$</option>
+<option value="nzd">NZ Dollar · NZ$</option>
+<option value="cad">Canuck $ · C$</option>
+<option value="chf">Swiss Franc · CHF</option>
+<option value="nok">Krone · kr</option>
+<option value="sek">Krona · kr</option>
+<option value="dkk">Danish kr · kr</option>
+<option value="pln">Złoty · zł</option>
+<option value="czk">Koruna · Kč</option>
+<option value="huf">Forint · Ft</option>
+<option value="try">Lira · ₺</option>
+<option value="mxn">Mexican $ · MX$</option>
+<option value="brl">Real · R$</option>
+<option value="ars">Peso · AR$</option>
+<option value="clp">Chilean $ · CLP$</option>
+<option value="zar">Rand · R</option>
+<option value="aed">Dirham · AED</option>
+<option value="sar">Riyal · SAR</option>
+<option value="kwd">Dinar · KD</option>
+<option value="bhd">Bahraini · BD</option>
+<option value="ils">Shekel · ₪</option>
+<option value="pkr">Rupee · Rs</option>
+<option value="bdt">Taka · ৳</option>
+<option value="lkr">Rupee · Rs</option>
+<option value="php">Peso · ₱</option>
+<option value="idr">Rupiah · Rp</option>
+<option value="thb">Baht · ฿</option>
+<option value="myr">Ringgit · RM</option>
+<option value="vnd">Đồng · ₫</option>
+<option value="ngn">Naira · ₦</option>
+<option value="uah">Hryvnia · ₴</option>
+</select>
+</div>
+<div class="mk-own" id="mkOwnI"></div>
+<span class="mk-cap">index levels × exchange rate — indicative, for feel rather than accounting</span>
+<p class="kc-tip"><b>ca’s corner:</b> an index is just a weighted average — the board above is thousands of businesses shaking hands.</p>
+</section><div class="pr-group-divider" id="markets-explore"><strong>Assets &amp; charting</strong><span>04 — 07</span></div><section class="kc-sec" data-n="03" id="kc-cmd">
+<header class="kc-shead">
+<span class="kc-stamp">04 · commodities</span>
+<h2>Gold, silver &amp; the crude truth<svg aria-hidden="true" class="kc-ul" viewbox="0 0 220 12"><path d="M3 8 C 55 2, 120 12, 217 5"></path></svg></h2>
+<span class="kc-ann">energy · metals · grains · softs</span><span class="mk-tag">auto-updating</span>
+</header>
+<p class="kc-sub">The planet’s raw materials, priced around the clock — the numbers that decide your petrol, your jewellery and your morning coffee. Every quote shows its standard unit — gold per 10 grams, silver per kilogram, crude per barrel, with 101 live commodities spanning precious metals, energy, base &amp; strategic metals, agriculture &amp; grains, softs, dairy &amp; livestock, lumber, plastics and polymers, Chinese SHFE/DCE/ZCE markets, Indian MCX spices &amp; metals, and carbon — auto-converted to your local currency.</p>
+<div class="mk-currow"><span class="mk-barl">show prices in</span>
+<select aria-label="Commodities currency" class="mk-sel" id="mkCurC">
+<option selected="" value="usd">US Dollar · $</option>
+<option value="inr">Indian Rupee · ₹</option>
+<option value="eur">Euro · €</option>
+<option value="gbp">Pound · £</option>
+<option value="jpy">Yen · ¥</option>
+<option value="cny">Yuan · CN¥</option>
+<option value="krw">Won · ₩</option>
+<option value="twd">Taiwan $ · NT$</option>
+<option value="hkd">HK Dollar · HK$</option>
+<option value="sgd">Singapore $ · S$</option>
+<option value="aud">Aussie $ · A$</option>
+<option value="nzd">NZ Dollar · NZ$</option>
+<option value="cad">Canuck $ · C$</option>
+<option value="chf">Swiss Franc · CHF</option>
+<option value="nok">Krone · kr</option>
+<option value="sek">Krona · kr</option>
+<option value="dkk">Danish kr · kr</option>
+<option value="pln">Złoty · zł</option>
+<option value="czk">Koruna · Kč</option>
+<option value="huf">Forint · Ft</option>
+<option value="try">Lira · ₺</option>
+<option value="mxn">Mexican $ · MX$</option>
+<option value="brl">Real · R$</option>
+<option value="ars">Peso · AR$</option>
+<option value="clp">Chilean $ · CLP$</option>
+<option value="zar">Rand · R</option>
+<option value="aed">Dirham · AED</option>
+<option value="sar">Riyal · SAR</option>
+<option value="kwd">Dinar · KD</option>
+<option value="bhd">Bahraini · BD</option>
+<option value="ils">Shekel · ₪</option>
+<option value="pkr">Rupee · Rs</option>
+<option value="bdt">Taka · ৳</option>
+<option value="lkr">Rupee · Rs</option>
+<option value="php">Peso · ₱</option>
+<option value="idr">Rupiah · Rp</option>
+<option value="thb">Baht · ฿</option>
+<option value="myr">Ringgit · RM</option>
+<option value="vnd">Đồng · ₫</option>
+<option value="ngn">Naira · ₦</option>
+<option value="uah">Hryvnia · ₴</option>
+</select>
+</div>
+<div class="mk-own" id="mkOwnC"></div>
+<span class="mk-cap">gold, crude &amp; the harvest — your money, converting inside the page</span>
+<p class="kc-tip"><b>ca’s corner:</b> gold is priced in dollars — when the dollar strengthens, gold usually pauses. Watch that see-saw.</p>
+</section><section class="kc-sec" data-n="05" id="kc-cry">
+<header class="kc-shead">
+<span class="kc-stamp">05 · crypto, truly live</span>
+<h2>Crypto desk — ticking every 45 seconds<svg aria-hidden="true" class="kc-ul" viewbox="0 0 220 12"><path d="M3 8 C 55 2, 120 12, 217 5"></path></svg></h2>
+<span class="kc-ann">the desk that breathes</span><span class="mk-tag">near real-time</span>
+</header>
+<p class="kc-sub">Top coins by market value, pulled fresh from public market data and re-priced automatically — in the currency you pick.</p>
+<div class="kc-board">
+<div class="kc-btop"><span class="kc-btag"><i></i>live</span><b>GLOBAL CRYPTO BOARD</b><span class="mk-cd" id="mkCd"></span></div>
+<div aria-label="Display currency" class="mk-currow" id="mkCur">
+<span class="mk-barl">show prices in</span>
+<select aria-label="Crypto display currency" class="mk-sel" id="mkCurCry">
+<option selected="" value="usd">US Dollar · $</option>
+<option value="inr">Indian Rupee · ₹</option>
+<option value="eur">Euro · €</option>
+<option value="gbp">Pound · £</option>
+<option value="jpy">Yen · ¥</option>
+<option value="cny">Yuan · CN¥</option>
+<option value="krw">Won · ₩</option>
+<option value="twd">Taiwan $ · NT$</option>
+<option value="hkd">HK Dollar · HK$</option>
+<option value="sgd">Singapore $ · S$</option>
+<option value="aud">Aussie $ · A$</option>
+<option value="nzd">NZ Dollar · NZ$</option>
+<option value="cad">Canuck $ · C$</option>
+<option value="chf">Swiss Franc · CHF</option>
+<option value="nok">Krone · kr</option>
+<option value="sek">Krona · kr</option>
+<option value="dkk">Danish kr · kr</option>
+<option value="pln">Złoty · zł</option>
+<option value="czk">Koruna · Kč</option>
+<option value="huf">Forint · Ft</option>
+<option value="try">Lira · ₺</option>
+<option value="mxn">Mexican $ · MX$</option>
+<option value="brl">Real · R$</option>
+<option value="ars">Peso · AR$</option>
+<option value="clp">Chilean $ · CLP$</option>
+<option value="zar">Rand · R</option>
+<option value="aed">Dirham · AED</option>
+<option value="sar">Riyal · SAR</option>
+<option value="kwd">Dinar · KD</option>
+<option value="bhd">Bahraini · BD</option>
+<option value="ils">Shekel · ₪</option>
+<option value="pkr">Rupee · Rs</option>
+<option value="bdt">Taka · ৳</option>
+<option value="lkr">Rupee · Rs</option>
+<option value="php">Peso · ₱</option>
+<option value="idr">Rupiah · Rp</option>
+<option value="thb">Baht · ฿</option>
+<option value="myr">Ringgit · RM</option>
+<option value="vnd">Đồng · ₫</option>
+<option value="ngn">Naira · ₦</option>
+<option value="uah">Hryvnia · ₴</option>
+</select>
+<span class="mk-cd">7-day shape · 24h change</span>
+</div>
+<div class="mk-crows" id="mkCrows"><div class="mk-wait">waking the board…</div></div>
+<div class="kc-bfine">★ DATA FROM PUBLIC MARKET APIS · NOTHING STORED ★</div>
+</div>
+<p class="kc-tip"><b>ca’s corner:</b> crypto trades around the clock — even this desk works weekends.</p>
+</section><section class="kc-sec" data-n="07" id="kc-fund">
+<header class="kc-shead">
+<span class="kc-stamp">06 · the funds desk</span>
+<h2>Every market on earth — pick a country<svg aria-hidden="true" class="kc-ul" viewbox="0 0 220 12"><path d="M3 8 C 55 2, 120 12, 217 5"></path></svg></h2>
+<span class="kc-ann">51 markets · indexes · funds · every cap</span><span class="mk-tag">your country first</span>
+</header>
+<p class="kc-sub">Choose a country — its indexes, its traded funds, its large caps, mid &amp; small caps, its gold &amp; bond funds: live from 50+ exchanges, converted to your money, 60 rows at a tap. India keeps its NAV search too.</p>
+<div class="mk-currow"><span class="mk-barl">country</span>
+<select aria-label="Choose a country market" class="mk-sel" id="mkXCtry"></select>
+<span class="mk-barl">show in</span>
+<select aria-label="Explorer currency" class="mk-sel" id="mkCurF">
+<option selected="" value="usd">US Dollar · $</option>
+<option value="inr">Indian Rupee · ₹</option>
+<option value="eur">Euro · €</option>
+<option value="gbp">Pound · £</option>
+<option value="jpy">Yen · ¥</option>
+<option value="cny">Yuan · CN¥</option>
+<option value="krw">Won · ₩</option>
+<option value="twd">Taiwan $ · NT$</option>
+<option value="hkd">HK Dollar · HK$</option>
+<option value="sgd">Singapore $ · S$</option>
+<option value="aud">Aussie $ · A$</option>
+<option value="nzd">NZ Dollar · NZ$</option>
+<option value="cad">Canuck $ · C$</option>
+<option value="chf">Swiss Franc · CHF</option>
+<option value="nok">Krone · kr</option>
+<option value="sek">Krona · kr</option>
+<option value="dkk">Danish kr · kr</option>
+<option value="pln">Złoty · zł</option>
+<option value="czk">Koruna · Kč</option>
+<option value="huf">Forint · Ft</option>
+<option value="try">Lira · ₺</option>
+<option value="mxn">Mexican $ · MX$</option>
+<option value="brl">Real · R$</option>
+<option value="ars">Peso · AR$</option>
+<option value="clp">Chilean $ · CLP$</option>
+<option value="zar">Rand · R</option>
+<option value="aed">Dirham · AED</option>
+<option value="sar">Riyal · SAR</option>
+<option value="kwd">Dinar · KD</option>
+<option value="bhd">Bahraini · BD</option>
+<option value="ils">Shekel · ₪</option>
+<option value="pkr">Rupee · Rs</option>
+<option value="bdt">Taka · ৳</option>
+<option value="lkr">Rupee · Rs</option>
+<option value="php">Peso · ₱</option>
+<option value="idr">Rupiah · Rp</option>
+<option value="thb">Baht · ฿</option>
+<option value="myr">Ringgit · RM</option>
+<option value="vnd">Đồng · ₫</option>
+<option value="ngn">Naira · ₦</option>
+<option value="uah">Hryvnia · ₴</option>
+</select>
+</div>
+<div class="mk-chiprow" style="margin-top: 12px;">
+<button class="mk-ftab on" data-x="idx" type="button">indexes</button>
+<button class="mk-ftab" data-x="funds" type="button">all funds</button>
+<button class="mk-ftab" data-x="large" type="button">large caps</button>
+<button class="mk-ftab" data-x="midsmall" type="button">mid &amp; small caps</button>
+<button class="mk-ftab" data-x="gold" type="button">gold &amp; bonds</button>
+<button class="mk-ftab" data-x="mf" type="button">india mf search</button>
+</div>
+<div class="mk-own" id="mkFundBox"></div>
+<div hidden="" id="mkMfPanel">
+<h4 class="mk-fh">indian mutual funds · search any of 2,000+ schemes</h4>
+<div class="mk-search">
+<input aria-label="Search Indian mutual fund schemes" id="mkQ" placeholder="e.g. nifty index, blue chip, ELSS…" type="text"/>
+<button id="mkQBtn" type="button">find NAV</button>
+</div>
+<div aria-live="polite" class="mk-res" id="mkRes"></div>
+<div class="mk-det" hidden="" id="mkDet"></div>
+<p class="kc-note-fine">✳ NAV is one number per day — calculated after markets close. That’s the rule, everywhere. Outside India, fund NAVs sit behind paid data walls — so the world’s fund desks use ETFs: the same funds, traded live on exchanges.</p>
+</div>
+<p class="kc-tip"><b>ca’s corner:</b> a mutual fund prices once a day; an ETF is the same fund breathing on the exchange all day. One search finds the NAV; the tabs trade live — each in its home exchange’s money.</p>
+</section><section class="kc-sec" data-n="08" id="kc-chart">
+<header class="kc-shead">
+<span class="kc-stamp">07 · any-chart desk</span>
+<h2>Search anything — watch the real chart<svg aria-hidden="true" class="kc-ul" viewbox="0 0 220 12"><path d="M3 8 C 55 2, 120 12, 217 5"></path></svg></h2>
+<span class="kc-ann">every market, one desk</span><span class="mk-tag">currency · list · graph</span>
+</header>
+<p class="kc-sub">Pick your money, then pick any market from the list — indices, stocks, commodities in standard units, forex, crypto, funds. The chart draws in the exchange’s own currency; the price line below converts it to yours.</p>
+<div class="mk-currow"><span class="mk-barl">see results in</span>
+<select aria-label="Chart results currency" class="mk-sel" id="mkCurG"><option selected="" value="usd">US Dollar · $</option>
+<option value="inr">Indian Rupee · ₹</option>
+<option value="eur">Euro · €</option>
+<option value="gbp">Pound · £</option>
+<option value="jpy">Yen · ¥</option>
+<option value="cny">Yuan · CN¥</option>
+<option value="krw">Won · ₩</option>
+<option value="twd">Taiwan $ · NT$</option>
+<option value="hkd">HK Dollar · HK$</option>
+<option value="sgd">Singapore $ · S$</option>
+<option value="aud">Aussie $ · A$</option>
+<option value="nzd">NZ Dollar · NZ$</option>
+<option value="cad">Canuck $ · C$</option>
+<option value="chf">Swiss Franc · CHF</option>
+<option value="nok">Krone · kr</option>
+<option value="sek">Krona · kr</option>
+<option value="dkk">Danish kr · kr</option>
+<option value="pln">Złoty · zł</option>
+<option value="czk">Koruna · Kč</option>
+<option value="huf">Forint · Ft</option>
+<option value="try">Lira · ₺</option>
+<option value="mxn">Mexican $ · MX$</option>
+<option value="brl">Real · R$</option>
+<option value="ars">Peso · AR$</option>
+<option value="clp">Chilean $ · CLP$</option>
+<option value="zar">Rand · R</option>
+<option value="aed">Dirham · AED</option>
+<option value="sar">Riyal · SAR</option>
+<option value="kwd">Dinar · KD</option>
+<option value="bhd">Bahraini · BD</option>
+<option value="ils">Shekel · ₪</option>
+<option value="pkr">Rupee · Rs</option>
+<option value="bdt">Taka · ৳</option>
+<option value="lkr">Rupee · Rs</option>
+<option value="php">Peso · ₱</option>
+<option value="idr">Rupiah · Rp</option>
+<option value="thb">Baht · ฿</option>
+<option value="myr">Ringgit · RM</option>
+<option value="vnd">Đồng · ₫</option>
+<option value="ngn">Naira · ₦</option>
+<option value="uah">Hryvnia · ₴</option></select>
+</div>
+<div class="mk-currow"><span class="mk-barl">pick any market</span>
+<select aria-label="Any market — the full list" class="mk-sel" id="mkPick">
+<optgroup label="indices">
+<option selected="" value="BSE:SENSEX">Sensex</option>
+<option value="FOREXCOM:SPX500">S&amp;P 500</option>
+<option value="NASDAQ:QQQ">Nasdaq 100 (QQQ)</option>
+<option value="AMEX:DIA">Dow 30 (DIA)</option>
+<option value="XETR:DAX">DAX</option>
+<option value="FOREXCOM:UK100">FTSE 100</option>
+<option value="FOREXCOM:JP225">Nikkei 225</option>
+<option value="HSI:HSI">Hang Seng</option>
+<option value="SSE:000001">Shanghai Composite</option>
+<option value="EURONEXT:PX1">CAC 40</option>
+<option value="AMEX:EWY">Korea (EWY fund)</option>
+<option value="ASX:XJO">ASX 200</option>
+<option value="BMFBOVESPA:IBOV">Ibovespa</option>
+</optgroup>
+<optgroup label="stocks">
+<option value="BSE:RELIANCE">Reliance</option>
+<option value="BSE:TCS">TCS</option>
+<option value="BSE:HDFCBANK">HDFC Bank</option>
+<option value="BSE:INFY">Infosys</option>
+<option value="NASDAQ:AAPL">Apple</option>
+<option value="NASDAQ:MSFT">Microsoft</option>
+<option value="NASDAQ:NVDA">Nvidia</option>
+<option value="NASDAQ:GOOGL">Alphabet</option>
+<option value="NASDAQ:AMZN">Amazon</option>
+<option value="NASDAQ:META">Meta</option>
+<option value="NASDAQ:TSLA">Tesla</option>
+<option value="NYSE:BRK.B">Berkshire Hathaway</option>
+<option value="NYSE:JPM">JPMorgan</option>
+<option value="NYSE:V">Visa</option>
+<option value="EURONEXT:MC">LVMH</option>
+<option value="SIX:NESN">Nestlé</option>
+</optgroup>
+<optgroup label="commodities · standard units">
+<option value="TVC:GOLD">Gold · per 10 g</option>
+<option value="TVC:SILVER">Silver · per 1 kg</option>
+<option value="TVC:USOIL">WTI Crude · per bbl</option>
+<option value="TVC:UKOIL">Brent Crude · per bbl</option>
+<option value="TVC:PLATINUM">Platinum · per 10 g</option>
+<option value="TVC:PALLADIUM">Palladium · per 10 g</option>
+<option value="CBOT:ZC1!">Corn · per bu</option>
+<option value="CBOT:ZS1!">Soybean · per bu</option>
+<option value="ICEUS:KC1!">Coffee · per lb</option>
+<option value="ICEUS:CC1!">Cocoa · per t</option>
+<option value="ICEUS:SB1!">Sugar · per lb</option>
+</optgroup>
+<optgroup label="forex">
+<option value="FX:EURUSD">EUR / USD</option>
+<option value="FX_IDC:USDINR">USD / INR</option>
+<option value="FX:USDJPY">USD / JPY</option>
+<option value="FX:GBPUSD">GBP / USD</option>
+<option value="FX:AUDUSD">AUD / USD</option>
+<option value="FX_IDC:USDCNY">USD / CNY</option>
+<option value="FX:EURGBP">EUR / GBP</option>
+<option value="FX_IDC:GBPINR">GBP / INR</option>
+</optgroup>
+<optgroup label="crypto">
+<option value="BINANCE:BTCUSD">Bitcoin</option>
+<option value="BINANCE:ETHUSD">Ethereum</option>
+<option value="BINANCE:USDTUSD">Tether</option>
+<option value="BINANCE:BNBUSD">BNB</option>
+<option value="BINANCE:SOLUSD">Solana</option>
+<option value="BINANCE:XRPUSD">XRP</option>
+<option value="BINANCE:DOGEUSD">Dogecoin</option>
+</optgroup>
+<optgroup label="etfs · funds">
+<option value="AMEX:SPY">S&amp;P 500 ETF · SPY</option>
+<option value="NASDAQ:QQQ">Nasdaq 100 ETF · QQQ</option>
+<option value="NSE:NIFTYBEES">Nifty BeES</option>
+<option value="NSE:GOLDBEES">Gold BeES</option>
+<option value="LSE:VUSA">S&amp;P 500 UCITS · VUSA</option>
+</optgroup>
+</select>
+</div>
+<div class="mk-embed" id="mkChartBox" style="margin-top: 14px; min-height: 560px;"></div>
+<div class="mk-pxline" hidden="" id="mkPx"></div>
+<span class="mk-cap">the real graph · charts draw in the exchange’s own money · the price line converts to your pick</span>
+</section><div class="pr-group-divider" id="markets-reference"><strong>Reading &amp; data guides</strong><span>08 — 09</span></div><section class="kc-sec" data-n="01" id="kc-edu">
+<header class="kc-shead">
+<span class="kc-stamp">08 · reading the board</span>
+<h2>What all these numbers actually mean<svg aria-hidden="true" class="kc-ul" viewbox="0 0 220 12"><path d="M3 8 C 55 2, 120 12, 217 5"></path></svg></h2>
+<span class="kc-ann">timeless, in six lines</span>
+</header>
+<p class="kc-sub">Six ideas that outlive every market cycle — the decode sheet for every desk on this page.</p>
+<div class="kc-guide">
+<div class="kc-list"><h4>the language of prices</h4>
+<div class="kc-pick kc-fx"><span>Index</span><em>a weighted basket of many stocks</em></div>
+<div class="kc-pick kc-fx"><span>Bid · Ask · Spread</span><em>buyer’s price · seller’s price · the gap</em></div>
+<div class="kc-pick kc-fx"><span>24h change</span><em>today’s price vs this time yesterday</em></div>
+<div class="kc-pick kc-fx"><span>Market cap</span><em>price × total shares/coins in existence</em></div>
+</div>
+<div class="kc-list"><h4>the language of funds</h4>
+<div class="kc-pick kc-fx"><span>NAV</span><em>(fund’s assets − debts) ÷ units held</em></div>
+<div class="kc-pick kc-fx"><span>ETF</span><em>a fund that trades all day like a stock</em></div>
+<div class="kc-pick kc-fx"><span>Expense ratio</span><em>the fund’s annual fee, silent but certain</em></div>
+<div class="kc-pick kc-fx"><span>Volatility</span><em>how wildly the ride swings — risk’s pulse</em></div>
+</div>
+</div>
+<p class="kc-tip"><b>ca’s corner:</b> you don’t need to predict the board — you need to read it without flinching.</p>
+</section><section class="kc-sec" data-n="09" id="kc-honest">
+<header class="kc-shead">
+<span class="kc-stamp">09 · data honesty</span>
+<h2>Exactly how fresh each desk is<svg aria-hidden="true" class="kc-ul" viewbox="0 0 220 12"><path d="M3 8 C 55 2, 120 12, 217 5"></path></svg></h2>
+<span class="kc-ann">no fine print, big print</span>
+</header>
+<p class="kc-sub">Every desk labels itself — here is the whole honesty ledger in one place.</p>
+<div class="kc-chips" style="margin-top: 14px;">
+<div class="kc-chip"><span>share &amp; fund tables</span><b>our own · converted in-page</b></div>
+<div class="kc-chip"><span>explorer coverage</span><b>51 markets · 36,000+ funds</b></div>
+<div class="kc-chip"><span>fx conversion rates</span><b>daily · open api</b></div>
+<div class="kc-chip"><span>crypto desk</span><b>near real-time · 45s</b></div>
+<div class="kc-chip"><span>commodities · fx · indices</span><b>licensed feeds*</b></div>
+<div class="kc-chip"><span>fund etfs · charts</span><b>licensed feeds*</b></div>
+<div class="kc-chip"><span>closed markets</span><b>last price · auto-resumes</b></div>
+<div class="kc-chip"><span>indian mf nav</span><b>daily, evening</b></div>
+<div class="kc-chip"><span>country detect</span><b>ip + timezone · never stored</b></div>
+</div>
+<p class="kc-note-fine">* Exchange licences decide free-quote timing — most desks track closely; a few markets may lag by up to ~15 minutes. Even Google pays exchange fees for its instant quotes. Fund NAVs are published once daily by design — for everyone, everywhere. The world top-25 and country boards are our hand-curated “most-watched” lists — prices refresh themselves; the names are revisited by hand from time to time. A closed market shows its last traded price and wakes up by itself at the next open — you will never see a frozen “live”. Currency conversion uses free daily reference rates; the quotes themselves refresh every minute. Educational information, never investment advice.</p>
+<p class="kc-tip"><b>ca’s corner:</b> a platform that hides its delays is selling you something. This one prints them.</p>
+</section><div class="kc-colophon">
+<div class="kc-orn">✦ ✦ ✦</div>
+<p class="kc-colo-line">every number on this page is free, honest and yours —</p>
+<p class="kc-colo-sign">finance by Kushal Daga</p>
+<span class="kc-colo-fine">updated around the clock · no ads · no sign-ups · no data collected · educational, never investment advice</span>
+</div><div aria-label="Page display and reading options" class="enh-toolbar"><button aria-pressed="false" class="enh-effects" type="button">Pause effects</button></div>
+<!--&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; HERO &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;-->
+<script>
+/* hero glue: flip words + slide deck (self-contained for paste) */
+(function(){
+ var rm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var f = document.getElementById('kcWord');
+ if (f && !rm){
+ var ws = [].slice.call(f.children), i = 0;
+ setInterval(function(){
+ var c = ws[i]; i = (i + 1) % ws.length; var nx = ws[i];
+ c.classList.remove('on'); c.classList.add('out');
+ setTimeout(function(){ c.classList.remove('out'); }, 500);
+ nx.classList.add('on');
+ }, 2300);
+ }
+ var t = document.getElementById('kcDeck');
+ if (t){
+ var sl = t.children, n = sl.length, k = 0, tm = null;
+ var bar = document.querySelector('.kcd-prog i');
+ function barRun(){ if (!bar) return; bar.style.transition = 'none'; bar.style.width = rm ? '100%' : '0%'; void bar.offsetWidth;
+ if (!rm){ bar.style.transition = 'width 4.5s linear'; bar.style.width = '100%'; } }
+ function go(x){ k = (x + n) % n; var w = sl[0] ? sl[0].offsetWidth : 0; t.style.transform = 'translateX(-' + (k * w) + 'px)';
+ for (var s2 = 0; s2 < n; s2++){ sl[s2].classList.toggle('kcd-now', s2 === k); } barRun(); }
+ function auto(){ if (tm) clearInterval(tm); if (!rm) tm = setInterval(function(){ go(k + 1); }, 4500); }
+ var x0 = null;
+ t.addEventListener('touchstart', function(e){ x0 = e.touches[0].clientX; }, { passive: true });
+ t.addEventListener('touchend', function(e){
+ if (x0 === null) return;
+ var dx = e.changedTouches[0].clientX - x0; x0 = null;
+ if (dx < -40){ go(k + 1); auto(); } else if (dx > 40){ go(k - 1); auto(); }
+ }, { passive: true });
+ go(0); auto();
+ if (window.addEventListener) window.addEventListener('resize', function(){ go(k); });
+ }
+})();
+</script>
+<!--&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; 09 &#183; READING THE BOARD &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;-->
+<!--&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; 01 &#183; THE WORLD BOARD &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;-->
+<!--&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; 02 &#183; COMMODITIES &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;-->
+<!--&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; 03 &#183; YOUR MARKET &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;-->
+<!--&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; 04 &#183; CRYPTO LIVE &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;-->
+<!--&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; 06 &#183; WORLD INDICES &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;-->
+<!--&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; 07 &#183; FUNDS &amp; ETFS &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;-->
+<!--&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; 08 &#183; ANY-CHART DESK &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;-->
+<!--&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; 10 &#183; DATA HONESTY &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;-->
+<script>
+/* \u2550\u2550\u2550 markets engine \u00b7 crypto live desk + fund NAV search + reveals \u00b7 all client-side \u2550\u2550\u2550 */
+(function(){
+ var d = document;
+ var rm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+ /* ---------- desk index: smooth scroll + scroll-spy ---------- */
+ var idxLinks = [].slice.call(d.querySelectorAll('.kc-icard'));
+ idxLinks.forEach(function(a){
+ a.addEventListener('click', function(ev){
+ var t = d.getElementById((a.getAttribute('href') || '').slice(1));
+ if (t){ ev.preventDefault(); t.scrollIntoView({ behavior: rm ? 'auto' : 'smooth', block: 'start' }); }
+ });
+ });
+ if ('IntersectionObserver' in window){
+ var spy = new IntersectionObserver(function(es){
+ es.forEach(function(en){
+ if (en.isIntersecting){
+ idxLinks.forEach(function(a){ a.classList.toggle('here', a.getAttribute('href') === '#' + en.target.id); });
+ }
+ });
+ }, { rootMargin: '-40% 0px -55% 0px' });
+ ['kc-edu','kc-board','kc-cmd','kc-ctry','kc-cry','kc-idx','kc-fund','kc-chart','kc-honest'].forEach(function(id){
+ var s = d.getElementById(id); if (s) spy.observe(s);
+ });
+ }
+ var secs = [].slice.call(d.querySelectorAll('.kc-sec'));
+ if ('IntersectionObserver' in window){
+ var io = new IntersectionObserver(function(es){
+ es.forEach(function(en){ if (en.isIntersecting){ en.target.classList.add('kc-in'); io.unobserve(en.target); } });
+ }, { threshold:.12 });
+ secs.forEach(function(s){ io.observe(s); });
+ } else { secs.forEach(function(s){ s.classList.add('kc-in'); }); }
+
+ /* ---------- geo \u2192 display currency for the crypto desk ---------- */
+ var EURZ = ['DE','FR','NL','ES','IT','IE','BE','AT','PT','FI','GR','SK','SI','LT','LV','EE','LU','CY','MT','HR'];
+ var TZC = {'Asia/Kolkata':'IN','Asia/Calcutta':'IN','Europe/London':'GB','America/New_York':'US','America/Chicago':'US','America/Denver':'US','America/Los_Angeles':'US','America/Toronto':'CA','Europe/Berlin':'DE','Europe/Paris':'FR','Europe/Madrid':'ES','Europe/Rome':'IT','Europe/Amsterdam':'NL','Europe/Vienna':'AT','Europe/Brussels':'BE','Europe/Dublin':'IE','Europe/Lisbon':'PT','Europe/Helsinki':'FI','Europe/Athens':'GR','Europe/Zurich':'CH','Europe/Stockholm':'SE','Europe/Oslo':'NO','Europe/Copenhagen':'DK','Europe/Warsaw':'PL','Europe/Prague':'CZ','Europe/Budapest':'HU','Asia/Tokyo':'JP','Asia/Singapore':'SG','Asia/Hong_Kong':'HK','Asia/Seoul':'KR','Asia/Dubai':'AE','Asia/Riyadh':'SA','Australia/Sydney':'AU','Australia/Melbourne':'AU','Pacific/Auckland':'NZ','America/Sao_Paulo':'BR','America/Mexico_City':'MX','Africa/Johannesburg':'ZA','Africa/Lagos':'NG','Asia/Karachi':'PK','Asia/Dhaka':'BD','Asia/Colombo':'LK','Asia/Kathmandu':'NP','Europe/Istanbul':'TR','Asia/Jakarta':'ID','Asia/Manila':'PH','Asia/Bangkok':'TH'};
+ var CUR = 'usd';
+ function geoCur(){
+ var c = null;
+ try { var tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; c = TZC[tz] || null; } catch(e){}
+ if (!c) return;
+ if (c === 'IN') CUR = 'inr';
+ else if (c === 'GB') CUR = 'gbp';
+ else if (EURZ.indexOf(c) !== -1) CUR = 'eur';
+ }
+ function markCur(){
+ var cs = d.getElementById('mkCurCry');
+ if (cs) cs.value = CUR;
+ }
+ /* ---------- ip \u2192 country board + display currency (3-provider chain, tz fallback) ---------- */
+ var PROVS = ['https://ipwho.is/', 'https://get.geojs.io/v1/ip/country.json', 'https://api.country.is/'];
+ var curLock = false, ctryLock = false, geoTried = 0;
+ var NAMES = { US:'United States', IN:'India', GB:'United Kingdom', JP:'Japan', DE:'Germany', CN:'China (HK listed)', CA:'Canada', AU:'Australia', BR:'Brazil', KR:'South Korea', CH:'Switzerland', TW:'Taiwan', FR:'France' };
+ var BOARDS = {
+ US: "NASDAQ:AAPL|Apple,NASDAQ:MSFT|Microsoft,NASDAQ:NVDA|Nvidia,NASDAQ:GOOGL|Alphabet,NASDAQ:AMZN|Amazon,NASDAQ:META|Meta,NASDAQ:TSLA|Tesla,NYSE:BRK.B|Berkshire,NASDAQ:AVGO|Broadcom,NYSE:LLY|Eli Lilly,NYSE:JPM|JPMorgan,NYSE:V|Visa,NYSE:UNH|UnitedHealth,NYSE:XOM|Exxon Mobil,NYSE:MA|Mastercard,NYSE:JNJ|Johnson & Johnson,NASDAQ:WMT|Walmart,NYSE:PG|P&G,NASDAQ:COST|Costco,NYSE:HD|Home Depot,NYSE:ORCL|Oracle,NYSE:MRK|Merck,NYSE:ABBV|AbbVie,NYSE:CVX|Chevron,NYSE:KO|Coca-Cola",
+ IN: "NSE:RELIANCE|Reliance,NSE:TCS|TCS,NSE:HDFCBANK|HDFC Bank,NSE:BHARTIARTL|Bharti Airtel,NSE:ICICIBANK|ICICI Bank,NSE:SBIN|SBI,NSE:INFY|Infosys,NSE:HINDUNILVR|Hindustan Unilever,NSE:ITC|ITC,NSE:LT|Larsen & Toubro,NSE:KOTAKBANK|Kotak Mahindra,NSE:AXISBANK|Axis Bank,NSE:BAJFINANCE|Bajaj Finance,NSE:ASIANPAINT|Asian Paints,NSE:MARUTI|Maruti Suzuki,NSE:SUNPHARMA|Sun Pharma,NSE:TITAN|Titan,NSE:ULTRACEMCO|UltraTech Cement,NSE:NESTLEIND|Nestle India,NSE:HCLTECH|HCL Tech,NSE:BAJAJFINSV|Bajaj Finserv,NSE:WIPRO|Wipro,NSE:ADANIENT|Adani Enterprises,NSE:NTPC|NTPC,NSE:TATASTEEL|Tata Steel",
+ GB: "LSE:SHEL|Shell,LSE:AZN|AstraZeneca,LSE:HSBA|HSBC,LSE:ULVR|Unilever,LSE:BP.|BP,LSE:RIO|Rio Tinto,LSE:GSK|GSK,LSE:BARC|Barclays,LSE:DGE|Diageo,LSE:BATS|British American Tobacco,LSE:LSEG|LSEG,LSE:NG.|National Grid,LSE:PRU|Prudential,LSE:RR.|Rolls-Royce,LSE:AAL|Anglo American,LSE:BHP|BHP,LSE:SSE|SSE,LSE:TSCO|Tesco,LSE:SBRY|Sainsbury's,LSE:AV.|Aviva,LSE:LGEN|Legal & General,LSE:NWG|NatWest,LSE:STAN|Standard Chartered,LSE:HLN|Haleon,LSE:CPG|Compass Group",
+ JP: "TSE:7203|Toyota,TSE:6758|Sony,TSE:9984|SoftBank,TSE:6861|Keyence,TSE:6501|Hitachi,TSE:8306|MUFG,TSE:8411|Mizuho,TSE:9432|NTT,TSE:7267|Honda,TSE:9983|Fast Retailing,TSE:8035|Tokyo Electron,TSE:4063|Shin-Etsu,TSE:6954|Fanuc,TSE:4502|Takeda,TSE:8766|Tokio Marine,TSE:6098|Recruit,TSE:6981|Murata,TSE:4902|Fujifilm,TSE:8001|Itochu,TSE:8058|Mitsubishi Corp,TSE:7751|Canon,TSE:6702|Sumitomo Electric,TSE:5401|Nippon Steel,TSE:4568|Daiichi Sankyo,TSE:7741|Hoya",
+ DE: "XETR:SAP|SAP,XETR:SIE|Siemens,XETR:ALV|Allianz,XETR:DTE|Deutsche Telekom,XETR:MUV2|Munich Re,XETR:BAS|BASF,XETR:BAYN|Bayer,XETR:RWE|RWE,XETR:MBG|Mercedes-Benz,XETR:BMW|BMW,XETR:VOW3|Volkswagen,XETR:AIR|Airbus,XETR:EOAN|E.ON,XETR:MRK|Merck KGaA,XETR:FME|Fresenius Medical,XETR:HEN3|Henkel,XETR:CON|Continental,XETR:BEI|Beiersdorf,XETR:ZAL|Zalando,XETR:PUM|Puma,XETR:DHER|Delivery Hero,XETR:QIA|Qiagen,XETR:SY1|Symrise,XETR:SRT3|Sartorius,XETR:HEI|Heidelberg Materials",
+ CN: "HKEX:700|Tencent,HKEX:9988|Alibaba,HKEX:1398|ICBC,HKEX:939|China Construction Bank,HKEX:3690|Meituan,HKEX:1810|Xiaomi,HKEX:2318|Ping An,HKEX:941|China Mobile,HKEX:883|CNOOC,HKEX:857|PetroChina,HKEX:386|Sinopec,HKEX:1299|AIA,HKEX:3988|Bank of China,HKEX:2628|China Life,HKEX:2319|China Merchants Bank,HKEX:2020|Anta,HKEX:9618|JD.com,HKEX:9999|NetEase,HKEX:6160|Baidu,HKEX:2269|WuXi Biologics,HKEX:1211|BYD,HKEX:1093|CSPC Pharma,HKEX:5|HSBC,HKEX:9633|Nongfu Spring,HKEX:669|Techtronic",
+ CA: "TSX:RY|RBC,TSX:TD|TD Bank,TSX:ENB|Enbridge,TSX:CNR|CN Rail,TSX:BNS|Scotiabank,TSX:SHOP|Shopify,TSX:CP|CPKC,TSX:CNQ|Canadian Natural,TSX:BAM|Brookfield,TSX:TRI|Thomson Reuters,TSX:BCE|BCE,TSX:BMO|BMO,TSX:MFC|Manulife,TSX:SLF|Sun Life,TSX:FTS|Fortis,TSX:ABX|Barrick,TSX:AEM|Agnico Eagle,TSX:WCN|Waste Connections,TSX:ATD|Couche-Tard,TSX:L|Loblaw,TSX:GIL|Gildan,TSX:DOL|Dollarama,TSX:CSU|Constellation,TSX:IMO|Imperial Oil,TSX:K|Kinross",
+ AU: "ASX:BHP|BHP,ASX:CBA|Commonwealth Bank,ASX:CSL|CSL,ASX:NAB|NAB,ASX:WBC|Westpac,ASX:ANZ|ANZ,ASX:WES|Wesfarmers,ASX:RIO|Rio Tinto,ASX:FMG|Fortescue,ASX:MQG|Macquarie,ASX:WDS|Woodside,ASX:GMG|Goodman,ASX:TLS|Telstra,ASX:WOW|Woolworths,ASX:STO|Santos,ASX:QBE|QBE,ASX:S32|South32,ASX:RMD|ResMed,ASX:ALL|Aristocrat,ASX:NXT|NextDC,ASX:ORG|Origin,ASX:QAN|Qantas,ASX:MIN|Mineral Resources,ASX:COL|Coles,ASX:JHX|James Hardie",
+ BR: "BMFBOVESPA:PETR4|Petrobras,BMFBOVESPA:VALE3|Vale,BMFBOVESPA:ITUB4|Itau,BMFBOVESPA:BBDC4|Bradesco,BMFBOVESPA:BBAS3|Banco do Brasil,BMFBOVESPA:ABEV3|Ambev,BMFBOVESPA:WEGE3|WEG,BMFBOVESPA:B3SA3|B3,BMFBOVESPA:PETR3|Petrobras PN,BMFBOVESPA:RENT3|Localiza,BMFBOVESPA:EQTL3|Equatorial,BMFBOVESPA:PRIO3|Prio,BMFBOVESPA:SUZB3|Suzano,BMFBOVESPA:GGBR4|Gerdau,BMFBOVESPA:CSNA3|CSN,BMFBOVESPA:TOTS3|Totvs,BMFBOVESPA:RADL3|Raia Drogasil,BMFBOVESPA:LREN3|Renner,BMFBOVESPA:UGPA3|Ultrapar,BMFBOVESPA:HAPV3|Hapvida,BMFBOVESPA:SBSP3|Sabesp,BMFBOVESPA:BBSE3|BB Seguridade,BMFBOVESPA:ITSA4|Itausa,BMFBOVESPA:RAIL3|Rumo,BMFBOVESPA:FLRY3|Fleury",
+ KR: "KRX:005930|Samsung Electronics,KRX:000660|SK Hynix,KRX:373220|LG Energy,KRX:207940|Samsung Biologics,KRX:011070|LG Innotek,KRX:005380|Hyundai Motor,KRX:000270|Kia,KRX:012330|Hyundai Mobis,KRX:035420|Naver,KRX:105560|KB Financial,KRX:055550|Shinhan,KRX:017670|SK Telecom,KRX:032830|Samsung C&T,KRX:066570|LG Electronics,KRX:051910|Samsung SDI,KRX:035720|Kakao,KRX:006400|Samsung SDS,KRX:068270|Celltrion,KRX:030200|KT,KRX:009150|Samsung Electro,KRX:015760|KEPCO,KRX:012450|Hanwha Aerospace,KRX:034020|Doosan Enerbility,KRX:011200|HMM,KRX:005490|POSCO",
+ CH: "SIX:NESN|Nestle,SIX:NOVN|Novartis,SIX:RO|Roche,SIX:UBSG|UBS,SIX:ABBN|ABB,SIX:ZURN|Zurich,SIX:LONN|Lonza,SIX:GIVN|Givaudan,SIX:SIKA|Sika,SIX:SREN|Swiss Re,SIX:ADEN|Adecco,SIX:SCHP|Schindler,SIX:GEBN|Geberit,SIX:BUCN|Bucher,SIX:BAER|Julius Baer,SIX:LOGN|Logitech,SIX:TEMN|Temenos,SIX:CLN|Clariant",
+ TW: "TWSE:2330|TSMC,TWSE:2317|Hon Hai,TWSE:2454|MediaTek,TWSE:2308|Foxconn,TWSE:2303|UMC,TWSE:2882|Cathay Financial,TWSE:2881|Fubon,TWSE:6505|Formosa,TWSE:3034|Taiwan Mobile,TWSE:2382|Quanta,TWSE:2891|CTBC,TWSE:3008|Largan,TWSE:2887|Taishin,TWSE:2884|E.SUN,TWSE:3045|Unimicron,TWSE:2207|Hotai",
+ FR: "EURONEXT:MC|LVMH,EURONEXT:OR|L'Oreal,EURONEXT:TTE|TotalEnergies,EURONEXT:SAN|Sanofi,EURONEXT:AIR|Airbus,EURONEXT:AI|Air Liquide,EURONEXT:SU|Schneider,EURONEXT:BNP|BNP Paribas,EURONEXT:ACA|Credit Agricole,EURONEXT:GLE|Societe Generale,EURONEXT:CAP|Capgemini,EURONEXT:HO|Thales,EURONEXT:KER|Kering,EURONEXT:RMS|Hermes,EURONEXT:PUB|Publicis,EURONEXT:DSY|Dassault,EURONEXT:EN|Bouygues,EURONEXT:VIE|Veolia,EURONEXT:RI|Pernod,EURONEXT:EDEN|Edenred,EURONEXT:ALO|Alstom,EURONEXT:FRVIA|Forvia",
+ WW: "NASDAQ:AAPL|Apple,NASDAQ:MSFT|Microsoft,NASDAQ:NVDA|Nvidia,NASDAQ:GOOGL|Alphabet,NASDAQ:AMZN|Amazon,NASDAQ:META|Meta,NASDAQ:AVGO|Broadcom,NASDAQ:TSLA|Tesla,NYSE:BRK.B|Berkshire,NYSE:LLY|Eli Lilly,TWSE:2330|TSMC,NASDAQ:WMT|Walmart,NYSE:JPM|JPMorgan,NYSE:V|Visa,HKEX:700|Tencent,NYSE:XOM|Exxon Mobil,NYSE:UNH|UnitedHealth,NYSE:JNJ|Johnson & Johnson,NYSE:NVO|Novo Nordisk,EURONEXT:ASML|ASML,NYSE:PG|P&G,NASDAQ:COST|Costco,NYSE:ORCL|Oracle,XETR:SAP|SAP,SIX:NESN|Nestle"
+ };
+ var cbox = d.getElementById('mkCtryBox'), csel = d.getElementById('mkCtry'), cmsg = d.getElementById('mkCtryMsg');
+ var cdesk = null;
+ var DESKS = [], DESKPICK = {};
+ var CC2CUR = { IN:'inr', GB:'gbp', JP:'jpy', CN:'cny', KR:'krw', TW:'twd', HK:'hkd', SG:'sgd', AU:'aud', NZ:'nzd', CA:'cad', CH:'chf', NO:'nok', SE:'sek', DK:'dkk', PL:'pln', CZ:'czk', HU:'huf', TR:'try', MX:'mxn', BR:'brl', AR:'ars', CL:'clp', ZA:'zar', AE:'aed', SA:'sar', KW:'kwd', BH:'bhd', IL:'ils', PK:'pkr', BD:'bdt', LK:'lkr', PH:'php', ID:'idr', TH:'thb', MY:'myr', VN:'vnd', NG:'ngn', UA:'uah' };
+ function setCur(cc){
+ if (curLock) return;
+ CUR = EURZ.indexOf(cc) !== -1 ? 'eur' : (CC2CUR[cc] || 'usd');
+ markCur();
+ syncDesks(CUR);
+ if (crows && !busy && crows.firstChild){ crows.innerHTML = ''; load(); }
+ }
+ function buildBoard(cc){
+ if (!cbox) return;
+ var t = (cc === 'WW' ? 'World mega caps' : NAMES[cc]) + ' \u00b7 top 25';
+ var cfg = moCfg(t, BOARDS[cc]);
+ var fb = (cc === 'WW' ? 'Apple \u00b7 Microsoft \u00b7 Nvidia \u00b7 TSMC \u00b7 Tencent \u00b7 Nestle' : fbNames(BOARDS[cc], 4)) + ' \u2014 licensed board';
+ if (cdesk){ var ix = DESKS.indexOf(cdesk); if (ix !== -1) DESKS.splice(ix, 1); }
+ cdesk = ownDesk(cbox, d.getElementById('mkCurT'), parseT(BOARDS[cc]), cfg, fb);
+ DESKS.push(cdesk);
+ }
+ function applyGeo(cc, how){
+ setCur(cc);
+ if (ctryLock) return;
+ var have = !!BOARDS[cc];
+ if (csel) csel.value = have ? cc : 'WW';
+ buildBoard(have ? cc : 'WW');
+ if (gSel && !gLock) gSel.value = CUR;
+ xGeoHook(cc);
+ if (cmsg) cmsg.textContent = how === 'tz' ? 'preset from your timezone \u2014 confirming with your network\u2026'
+ : have ? 'country & currency set from your location \u2014 switch any time'
+ : 'your market is not curated yet \u2014 world mega caps are standing in; pick any country';
+ var gn = d.getElementById('kcGeoNote');
+ if (gn) gn.textContent = how === 'tz' ? 'your time zone set the defaults \u2014 confirming with your network\u2026'
+ : have ? 'board & currency tuned to ' + (NAMES[cc] || cc) + ' \u2014 switch any time'
+ : 'no curated desk for your country yet \u2014 world board on';
+ saveGeo();
+ }
+ function saveGeo(){
+ try { localStorage.setItem('kcMkGeo', JSON.stringify({ cc: csel ? csel.value : null, cur: CUR, desks: DESKPICK })); } catch(e){}
+ }
+ var SAVED = null;
+ try { SAVED = JSON.parse(localStorage.getItem('kcMkGeo') || 'null'); } catch(e){}
+ function restoreGeo(){
+ if (!SAVED || !SAVED.cur) return false;
+ if (!curLock){ CUR = SAVED.cur; markCur(); syncDesks(CUR); }
+ if (SAVED.cc && BOARDS[SAVED.cc] && !ctryLock && csel){ csel.value = SAVED.cc; buildBoard(SAVED.cc); }
+ var sd = SAVED.desks || {}, any = false, k;
+ for (k in sd){
+ if (!sd[k]) continue;
+ DESKPICK[k] = sd[k];
+ DESKS.forEach(function(x){ if (x.sel && x.sel.id === k) x.setCode(sd[k]); });
+ any = true;
+ }
+ if (sd.mkCurF && fSelC) XCODE = sd.mkCurF;
+ if (sd.mkXCtry && XM[sd.mkXCtry] && xSel){ xSel.value = sd.mkXCtry; if (XMK !== sd.mkXCtry){ XMK = sd.mkXCtry; XROWS = []; XTOTAL = 0; xLoad(); } }
+ if (sd.mkCurG && gSel && !gLock){ gSel.value = sd.mkCurG; gLock = true; }
+ return true;
+ }
+ function tzGeo(){
+ var cc = null;
+ try { var tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; cc = TZC[tz] || null; } catch(e){}
+ if (cc) applyGeo(cc, 'tz');
+ }
+ function tryGeo(){
+ if (geoTried >= PROVS.length){ if (!ctryLock && cmsg && csel && csel.value === 'WW') cmsg.textContent = 'could not see your location \u2014 world board on; pick your country'; var gn2 = d.getElementById('kcGeoNote'); if (gn2 && !ctryLock) gn2.textContent = 'location unseen \u2014 world board on; pick your country'; return; }
+ var race = Promise.race([
+ fetch(PROVS[geoTried]).then(function(r){ return r.json(); }),
+ new Promise(function(_, no){ setTimeout(function(){ no(new Error('slow')); }, 3500); })
+ ]);
+ race.then(function(j){
+ var cc = j.country_code || j.country;
+ if (typeof cc === 'string' && cc.length === 2){ if (!ctryLock || !curLock) applyGeo(String(cc).toUpperCase(), 'ip'); return; }
+ throw new Error('no country');
+ }).catch(function(){ geoTried++; tryGeo(); });
+ }
+ if (csel){
+ csel.addEventListener('change', function(){
+ ctryLock = true; buildBoard(csel.value);
+ saveGeo();
+ if (cmsg) cmsg.textContent = 'switched to ' + (NAMES[csel.value] || 'world mega caps') + ' \u2014 prices in the local listing currency';
+ });
+ buildBoard('WW');
+ }
+
+ /* ---------- shared tv embed factory + gentle fallback cards ---------- */
+ var MO_URL = 'https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js';
+ var AC_URL = 'https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js';
+ function tvEmbed(holder, url, cfg, fb){
+ if (!holder) return;
+ while (holder.firstChild) holder.removeChild(holder.firstChild);
+ var live = d.createElement('div'); live.className = 'mk-live';
+ if (fb) live.setAttribute('data-fb', fb);
+ var w = d.createElement('div'); w.className = 'tradingview-widget-container';
+ var wi = d.createElement('div'); wi.className = 'tradingview-widget-container__widget'; w.appendChild(wi);
+ var s = d.createElement('script'); s.src = url; s.async = true; s.type = 'text/javascript';
+ s.text = JSON.stringify(cfg);
+ w.appendChild(s); live.appendChild(w); holder.appendChild(live);
+ }
+ function fbNames(str, n){
+ var out = [], parts = str.split(','), i;
+ for (i = 0; i !== n && i !== parts.length; i++) out.push(parts[i].split('|')[1]);
+ return out.join(' \u00b7 ');
+ }
+ function fbSweep(){
+ [].slice.call(d.querySelectorAll('.mk-live')).forEach(function(lv){
+ var wg = lv.querySelector('.tradingview-widget-container__widget');
+ if ((wg && wg.firstChild) || lv.querySelector('iframe')){
+ lv.setAttribute('data-ok', '1');
+ if (lv.getAttribute('data-fbd') === '1'){ var f = lv.lastChild; if (f && f.className === 'mk-fb') lv.removeChild(f); }
+ return;
+ }
+ var fb = lv.getAttribute('data-fb');
+ if (fb && lv.getAttribute('data-fbd') !== '1'){
+ lv.setAttribute('data-fbd', '1');
+ var c = el('div', 'mk-fb');
+ c.appendChild(el('b', null, 'live board \u00b7 wakes up with internet'));
+ c.appendChild(el('span', null, fb));
+ c.appendChild(el('em', null, 'this preview blocks the network \u2014 on your blog, or the downloaded file, the ticking rows appear right here'));
+ lv.appendChild(c);
+ }
+ });
+ }
+ setTimeout(fbSweep, 1500); setInterval(fbSweep, 3000);
+
+ /* ---------- funds desk: tabs by kind ---------- */
+ var fbox = d.getElementById('mkFundBox'), mfPanel = d.getElementById('mkMfPanel');
+
+ /* ---------- global explorer: 51 markets \u00b7 indexes \u00b7 funds \u00b7 caps ---------- */
+ var XM = { us:['america','United States','\ud83c\uddfa\ud83c\uddf8','SP,NASDAQ,DJ'], in:['india','India','\ud83c\uddee\ud83c\uddf3','NSE,BSE'], gb:['LSE','United Kingdom','\ud83c\uddec\ud83c\udde7','LSE'], jp:['japan','Japan','\ud83c\uddef\ud83c\uddf5','TSE'], de:['germany','Germany','\ud83c\udde9\ud83c\uddea','XETR'], fr:['france','France','\ud83c\uddeb\ud83c\uddf7','EURONEXT'], ch:['switzerland','Switzerland','\ud83c\udde8\ud83c\udded','SIX'], au:['australia','Australia','\ud83c\udde6\ud83c\uddfa','ASX'], ca:['canada','Canada','\ud83c\udde8\ud83c\udde6','TSX'], cn:['china','China \u00b7 A-shares','\ud83c\udde8\ud83c\uddf3','SSE,SZSE'], hk:['hongkong','Hong Kong','\ud83c\udded\ud83c\uddf0','HKEX,HSI'], kr:['korea','South Korea','\ud83c\uddf0\ud83c\uddf7','KRX'], tw:['taiwan','Taiwan','\ud83c\uddf9\ud83c\uddfc','TWSE'], br:['brazil','Brazil','\ud83c\udde7\ud83c\uddf7','BMFBOVESPA'], nl:['netherlands','Netherlands','\ud83c\uddf3\ud83c\uddf1','EURONEXT'], es:['spain','Spain','\ud83c\uddea\ud83c\uddf8','BME'], sg:['singapore','Singapore','\ud83c\uddf8\ud83c\uddec','SGX'], mx:['mexico','Mexico','\ud83c\uddf2\ud83c\uddfd','BMV'], il:['israel','Israel','\ud83c\uddee\ud83c\uddf1','TASE'], at:['austria','Austria','\ud83c\udde6\ud83c\uddf9',''], lu:['luxembourg','Luxembourg','\ud83c\uddf1\ud83c\uddfa',''], pe:['peru','Peru','\ud83c\uddf5\ud83c\uddea',''], co:['colombia','Colombia','\ud83c\udde8\ud83c\uddf4',''], pl:['poland','Poland','\ud83c\uddf5\ud83c\uddf1',''], id:['indonesia','Indonesia','\ud83c\uddee\ud83c\udde9','IDX'], dk:['denmark','Denmark','\ud83c\udde9\ud83c\uddf0',''], hu:['hungary','Hungary','\ud83c\udded\ud83c\uddfa',''], th:['thailand','Thailand','\ud83c\uddf9\ud83c\udded','SET'], bd:['bangladesh','Bangladesh','\ud83c\udde7\ud83c\udde9',''], bg:['bulgaria','Bulgaria','\ud83c\udde7\ud83c\uddec',''], ae:['uae','UAE','\ud83c\udde6\ud83c\uddea',''], tr:['turkey','T\u00fcrkiye','\ud83c\uddf9\ud83c\uddf7','BIST'], cl:['chile','Chile','\ud83c\udde8\ud83c\uddf1',''], vn:['vietnam','Vietnam','\ud83c\uddfb\ud83c\uddf3',''], sa:['ksa','Saudi Arabia','\ud83c\uddf8\ud83c\udde6','TADAWUL'], my:['malaysia','Malaysia','\ud83c\uddf2\ud83c\uddfe',''], ro:['romania','Romania','\ud83c\uddf7\ud83c\uddf4',''], hr:['croatia','Croatia','\ud83c\udded\ud83c\uddf7',''], si:['slovenia','Slovenia','\ud83c\uddf8\ud83c\uddee',''], be:['belgium','Belgium','\ud83c\udde7\ud83c\uddea','EURONEXT'], ng:['nigeria','Nigeria','\ud83c\uddf3\ud83c\uddec',''], lk:['srilanka','Sri Lanka','\ud83c\uddf1\ud83c\uddf0',''], cz:['czech','Czechia','\ud83c\udde8\ud83c\uddff',''], ke:['kenya','Kenya','\ud83c\uddf0\ud83c\uddea',''], ph:['philippines','Philippines','\ud83c\uddf5\ud83c\udded',''], ar:['argentina','Argentina','\ud83c\udde6\ud83c\uddf7',''], fi:['finland','Finland','\ud83c\uddeb\ud83c\uddee',''], gr:['greece','Greece','\ud83c\uddec\ud83c\uddf7',''], pt:['portugal','Portugal','\ud83c\uddf5\ud83c\uddf9',''], se:['sweden','Sweden','\ud83c\uddf8\ud83c\uddea',''], ru:['russia','Russia','\ud83c\uddf7\ud83c\uddfa','MOEX'] };
+ var GEO2X = { US:'us', IN:'in', GB:'gb', JP:'jp', DE:'de', FR:'fr', CH:'ch', AU:'au', CA:'ca', CN:'cn', HK:'hk', KR:'kr', TW:'tw', BR:'br', NL:'nl', ES:'es', SG:'sg', MX:'mx', IL:'il', AT:'at', LU:'lu', PE:'pe', CO:'co', PL:'pl', ID:'id', DK:'dk', HU:'hu', TH:'th', BD:'bd', BG:'bg', AE:'ae', TR:'tr', CL:'cl', VN:'vn', SA:'sa', MY:'my', RO:'ro', HR:'hr', SI:'si', BE:'be', NG:'ng', LK:'lk', CZ:'cz', KE:'ke', PH:'ph', AR:'ar', FI:'fi', GR:'gr', PT:'pt', SE:'se', RU:'ru' };
+ var xSel = d.getElementById('mkXCtry'), XCODE = 'usd', XMK = 'us', XTAB = 'idx', XROWS = [], XTOTAL = 0, xSeq = 0, xBusy = false;
+ (function(){
+ var k;
+ for (k in XM){ var o = d.createElement('option'); o.value = k; o.textContent = XM[k][2] + ' ' + XM[k][1]; xSel.appendChild(o); }
+ })();
+ function scanQ(url, body, cb){
+ fetch(url, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=UTF-8' }, body: JSON.stringify(body) }).then(function(r){ return r.json(); }).then(function(j){
+ var out = [], i;
+ if (j && j.data){ for (i = 0; i !== j.data.length; i++){ var dd = j.data[i].d; if (dd && dd.length > 3) out.push({ sym: j.data[i].s, name: dd[0], desc: dd[1], close: dd[2], chg: dd[3], cur: dd[4], mode: dd[5], logo: dd[6] }); } }
+ cb({ total: j && j.totalCount ? j.totalCount : out.length, rows: out });
+ }).catch(function(){ cb(null); });
+ }
+ function xWait(){ while (fbox.firstChild) fbox.removeChild(fbox.firstChild); fbox.appendChild(el('div', 'mk-wait', 'scanning the exchange\u2026')); }
+ function xNote(t){ fbox.appendChild(el('div', 'mk-ofine', t)); }
+ function xFail(){ while (fbox.firstChild) fbox.removeChild(fbox.firstChild); fbox.appendChild(el('div', 'mk-wait', 'market feed busy \u2014 tap the tab again in a moment')); xBusy = false; }
+ function xRow(r){
+ var row = el('div', 'mk-orow');
+ var lg = el('span', 'mk-olg');
+ if (r.logo){ var im = d.createElement('img'); im.src = 'https://s3-symbol-logo.tradingview.com/' + r.logo + '.svg'; im.alt = ''; im.loading = 'lazy'; im.addEventListener('error', function(){ im.style.visibility = 'hidden'; }); lg.appendChild(im); }
+ else lg.appendChild(el('b', null, (r.name || '?').slice(0, 1)));
+ row.appendChild(lg);
+ var nm = el('div', 'mk-onm');
+ nm.appendChild(el('b', null, r.name));
+ nm.appendChild(el('span', null, ((r.desc || '') + (r.mode && r.mode.indexOf('delayed') === 0 ? ' \u00b7 ' + delayOf(r.mode) : '')).slice(0, 70) || r.sym));
+ row.appendChild(nm);
+ var pb = el('div', 'mk-opr');
+ if (r.cur){ var c = r.cur.toLowerCase(); var indm = (XCODE === 'inr' && (r.sym === 'TVC:GOLD' || r.sym === 'TVC:SILVER'));
+ pb.appendChild(el('b', null, fmt2(convert(r.close, c, XCODE) * (indm ? INDLAND : 1), XCODE) + (indm ? ' \u00b7 India landed' : '')));
+ pb.appendChild(el('span', null, indm ? 'intl spot ' + fmt2(convert(r.close, c, XCODE), XCODE) + ' \u00b7 +15% duty +3% GST' : fmt2(r.close, c))); }
+ else { pb.appendChild(el('b', null, Math.round(r.close).toLocaleString('en-US'))); pb.appendChild(el('span', null, 'index points')); }
+ row.appendChild(pb);
+ var ch = el('div', 'mk-och');
+ if (r.chg != null){ ch.textContent = (r.chg >= 0 ? '\u25b2 ' : '\u25bc ') + Math.abs(r.chg).toFixed(2) + '%'; ch.className = 'mk-och ' + (r.chg >= 0 ? 'mk-up' : 'mk-dn'); }
+ row.appendChild(ch);
+ return row;
+ }
+ function xRender(){
+ while (fbox.firstChild) fbox.removeChild(fbox.firstChild);
+ if (!XROWS.length){ fbox.appendChild(el('div', 'mk-wait', 'nothing tracked here yet \u2014 try another tab or country')); return; }
+ XROWS.forEach(function(r){ fbox.appendChild(xRow(r)); });
+ var lab = (XM[XMK] ? XM[XMK][1] : '') + ' \u00b7 ' + XTAB.replace('midsmall', 'mid & small caps').replace('large', 'large caps').replace('funds', 'traded funds').replace('idx', 'indexes');
+ var xn = 'showing ' + XROWS.length + (XTOTAL > XROWS.length ? ' of ' + XTOTAL : '') + ' \u00b7 ' + lab + (FXR ? ' \u00b7 ' + fxStamp() : '') + ' \u00b7 checked ' + hhmmss() + (xStamp ? ' \u00b7 auto-refresh ' + xStamp.moved + ' moved' : '');
+ var xsn = sessNote();
+ if (xsn) xn += ' \u00b7 ' + xsn;
+ xNote(xn);
+ if (XTOTAL > XROWS.length && XTAB !== 'gold'){
+ var more = el('button', 'mk-ftab');
+ more.type = 'button';
+ more.textContent = 'show 60 more \u00b7 ' + (XTOTAL - XROWS.length) + ' left';
+ more.addEventListener('click', function(){ if (!xBusy){ more.disabled = true; xLoad(); } });
+ var wr = el('div', 'mk-chiprow');
+ wr.style.marginTop = '10px';
+ wr.appendChild(more);
+ fbox.appendChild(wr);
+ }
+ }
+ function xWorldIdx(seq){
+ scanQ('https://scanner.tradingview.com/global/scan', { filter: [{ left: 'type', operation: 'equal', right: 'index' }], options: { lang: 'en' }, sort: { sortBy: 'volume', sortOrder: 'desc' }, range: [0, 60], columns: ['name','description','close','change','currency','update_mode','logoid'] }, function(res){
+ if (seq !== xSeq) return;
+ if (!res){ xFail(); return; }
+ XROWS = res.rows; XTOTAL = res.total; xBusy = false; xRender();
+ });
+ }
+ function xLoad(){
+ xSeq++; var seq = xSeq;
+ if (!XM[XMK]) return;
+ xBusy = true; xWait();
+ var isUK = XM[XMK][0] === 'LSE';
+ var ep = isUK ? 'uk' : XM[XMK][0];
+ if (XTAB === 'idx'){
+ var IX = {
+ us: 'SP:SPX|S&P 500,DJ:DJI|Dow 30,NASDAQ:IXIC|Nasdaq Composite,TVC:RUT|Russell 2000',
+ in: 'NSE:NIFTY|Nifty 50,BSE:SENSEX|BSE Sensex,NSE:BANKNIFTY|Nifty Bank',
+ gb: 'TVC:UKX|FTSE 100',
+ jp: 'TVC:NI225|Nikkei 225',
+ de: 'XETR:DAX|DAX 40',
+ fr: 'EURONEXT:PX1|CAC 40',
+ ch: 'SIX:SMI|Swiss Market Index',
+ au: 'ASX:XJO|S&P/ASX 200',
+ ca: 'TSX:TSX|S&P/TSX Composite',
+ cn: 'SSE:000001|SSE Composite,SZSE:399001|Shenzhen Component',
+ hk: 'HSI:HSI|Hang Seng',
+ kr: 'KRX:KOSPI|KOSPI',
+ tw: 'TWSE:IX0001|Taiwan Weighted',
+ br: 'BMFBOVESPA:IBOV|Bovespa',
+ mx: 'BMV:ME|S&P/BMV IPC',
+ sg: 'TVC:STI|Straits Times',
+ nl: 'EURONEXT:AEX|AEX Index',
+ il: 'TASE:TA35|TA-35 Index'
+ };
+ var WORLD = 'SP:SPX|S&P 500,DJ:DJI|Dow 30,NASDAQ:IXIC|Nasdaq,TVC:UKX|FTSE 100,TVC:NI225|Nikkei 225,TVC:DXY|US Dollar Index,TVC:VIX|Volatility S&P 500';
+ var ixl = (IX[XMK] ? IX[XMK] + ',' : '') + WORLD;
+ var seen = {}, tks = [], labs = {};
+ ixl.split(',').forEach(function(p){
+ var bits = p.split('|');
+ if (bits[0] && !seen[bits[0]]){ seen[bits[0]] = 1; tks.push(bits[0]); labs[bits[0]] = bits[1] || bits[0]; }
+ });
+ scan(tks, function(rows){
+ if (seq !== xSeq) return;
+ if (!rows){ xWorldIdx(seq); return; }
+ XROWS = rows.map(function(r){ return { sym: r.sym, name: r.name, desc: labs[r.sym] || r.name, close: r.close, chg: r.chg, cur: r.cur, mode: r.mode, logo: r.logo }; });
+ XTOTAL = XROWS.length; xBusy = false; xRender();
+ });
+ return;
+ }
+ if (XTAB === 'gold'){
+ scanQ('https://scanner.tradingview.com/' + ep + '/scan', { filter: [{ left: 'type', operation: 'equal', right: 'fund' }].concat(isUK ? [{ left: 'exchange', operation: 'equal', right: 'LSE' }] : []), options: { lang: 'en' }, sort: { sortBy: 'market_cap_basic', sortOrder: 'desc' }, range: [0, 300], columns: ['name','description','close','change','currency','update_mode','logoid'] }, function(res){
+ if (seq !== xSeq) return;
+ if (!res){ xFail(); return; }
+ XROWS = res.rows.filter(function(r){ return /gold|silver|bond|treasur|yield|fixed income|gilt/i.test((r.desc || '') + ' ' + r.name); });
+ XTOTAL = XROWS.length; xBusy = false; xRender();
+ });
+ return;
+ }
+ var f;
+ if (XTAB === 'large') f = [{ left: 'type', operation: 'equal', right: 'stock' }, { left: 'market_cap_basic', operation: 'greater', right: 10000000000 }];
+ else if (XTAB === 'midsmall') f = [{ left: 'type', operation: 'equal', right: 'stock' }, { left: 'market_cap_basic', operation: 'greater', right: 300000000 }, { left: 'market_cap_basic', operation: 'less', right: 10000000000 }];
+ else f = [{ left: 'type', operation: 'equal', right: 'fund' }];
+ if (isUK) f.push({ left: 'exchange', operation: 'equal', right: 'LSE' });
+ scanQ('https://scanner.tradingview.com/' + ep + '/scan', { filter: f, options: { lang: 'en' }, sort: { sortBy: 'market_cap_basic', sortOrder: 'desc' }, range: [XROWS.length, XROWS.length + 60], columns: ['name','description','close','change','currency','update_mode','logoid'] }, function(res){
+ if (seq !== xSeq) return;
+ if (!res){ xFail(); return; }
+ XROWS = XROWS.concat(res.rows); XTOTAL = res.total; xBusy = false; xRender();
+ });
+ }
+ function xGeoHook(cc){
+ var want = GEO2X[cc];
+ if (!want || DESKPICK['mkXCtry'] || !xSel) return;
+ xSel.value = want;
+ if (XMK !== want){ XMK = want; XROWS = []; XTOTAL = 0; xLoad(); }
+ }
+ xSel.addEventListener('change', function(){
+ DESKPICK['mkXCtry'] = xSel.value;
+ if (XMK === xSel.value) return;
+ XMK = xSel.value; XROWS = []; XTOTAL = 0; xLoad(); saveGeo();
+ });
+ [].slice.call(d.querySelectorAll('.mk-ftab[data-x]')).forEach(function(b){
+ b.addEventListener('click', function(){
+ [].slice.call(d.querySelectorAll('.mk-ftab[data-x]')).forEach(function(x){ x.classList.toggle('on', x === b); });
+ XTAB = b.getAttribute('data-x');
+ if (XTAB === 'mf'){ fbox.hidden = true; mfPanel.hidden = false; return; }
+ mfPanel.hidden = true; fbox.hidden = false;
+ XROWS = []; XTOTAL = 0; xLoad();
+ });
+ });
+ var fSelC = d.getElementById('mkCurF');
+ fSelC.addEventListener('change', function(){
+ XCODE = fSelC.value;
+ DESKPICK['mkCurF'] = XCODE;
+ saveGeo();
+ if (XROWS.length) xRender();
+ });
+ xSel.value = 'us'; XMK = 'us'; xLoad();
+ var xStamp = null;
+ setInterval(function(){
+ if (d.hidden || xBusy || !XROWS.length) return;
+ var tk = XROWS.map(function(r){ return r.sym; });
+ scan(tk, function(rows){
+ if (!rows) return;
+ var map = {}, i;
+ for (i = 0; i !== rows.length; i++) map[rows[i].sym] = rows[i];
+ var moved = 0;
+ for (i = 0; i !== XROWS.length; i++){
+ var u = map[XROWS[i].sym];
+ if (!u) continue;
+ if (u.close !== XROWS[i].close) moved++;
+ XROWS[i] = { sym: XROWS[i].sym, name: u.name || XROWS[i].name, desc: XROWS[i].desc, close: u.close, chg: u.chg, cur: u.cur || XROWS[i].cur, mode: u.mode, logo: u.logo || XROWS[i].logo };
+ }
+ xStamp = { moved: moved };
+ xRender();
+ });
+ }, 120000);
+
+ /* ---------- any-chart desk: money \u2192 list \u2192 chart ---------- */
+ var chBox = d.getElementById('mkChartBox');
+ var gSel = d.getElementById('mkCurG'), ddSel = d.getElementById('mkPick'), PXBOX = d.getElementById('mkPx');
+ /* chart-embed symbols that the quote scanner knows under another name */
+ var QSYMOF = { 'FOREXCOM:SPX500':'SP:SPX', 'FOREXCOM:UK100':'TVC:UKX', 'FOREXCOM:JP225':'TVC:NI225', 'AMEX:DIA':'DJ:DJI', 'NASDAQ:QQQ':'NASDAQ:IXIC', 'AMEX:EWY':'KRX:KOSPI' };
+ var gLock = false, lastQuote = null, lastSym = null, lastLab = null;
+ function buildChart(sym, label){
+ lastSym = sym; lastLab = label || sym;
+ var cfg = { allow_symbol_change: false, symbol: sym, width: '100%', height: 500, interval: 'D', timezone: 'Etc/UTC', theme: 'light', style: '1', locale: 'en', withdateranges: true, hide_side_toolbar: false, save_image: false };
+ tvEmbed(chBox, AC_URL, cfg, label + ' (' + sym + ') \u2014 the real chart, drawing live');
+ lastQuote = null; paintPx();
+ var q = QSYMOF[sym] || sym;
+ scan([q], function(rows){ if (rows && rows[0] && rows[0].sym === q){ lastQuote = rows[0]; paintPx(); } });
+ }
+ function paintPx(){
+ if (!PXBOX) return;
+ if (!lastQuote || !lastSym){ PXBOX.hidden = true; return; }
+ var qc = (lastQuote.cur || '').toUpperCase();
+ var qcl = CC2CUR[qc] || qc.toLowerCase();
+ var gc = gSel ? gSel.value : '';
+ var ux = unitOf(lastSym);
+ var val = lastQuote.close * ux[0];
+ var txt = lastLab + ' \u2014 last ' + (qcl ? fmt2(val, qcl) + ' ' + qc : Math.round(val).toLocaleString('en-US') + ' pts') + ux[1];
+ if (FXR && gc && qcl && qcl !== gc && FXR[qcl] && FXR[gc]) txt += ' \u2248 ' + fmt2(convert(val, qcl, gc), gc) + ' ' + gc.toUpperCase() + ux[1];
+ if (lastQuote.chg) txt += (lastQuote.chg > 0 ? ' \u00b7 \u25b2 ' : ' \u00b7 \u25bc ') + Math.abs(lastQuote.chg).toFixed(2) + '%';
+ if ((lastSym === 'TVC:GOLD' || lastSym === 'TVC:SILVER') && FXR && FXR['inr']){ var spotInr = (qcl === 'inr') ? val : convert(val, qcl, 'inr'); if (isFinite(spotInr) && spotInr > 0) txt += ' \u00b7 India landed \u2248 ' + fmt2(spotInr * INDLAND, 'inr') + ux[1] + ' (spot+15%+3%)'; }
+ txt += ' \u00b7 ' + delayOf(lastQuote.mode);
+ PXBOX.textContent = txt;
+ PXBOX.hidden = false;
+ }
+ if (ddSel) ddSel.addEventListener('change', function(){
+ var v = ddSel.value;
+ if (!v) return;
+ var lab = ddSel.options[ddSel.selectedIndex] ? ddSel.options[ddSel.selectedIndex].textContent : v;
+ buildChart(v, lab);
+ });
+ if (gSel){
+ gSel.value = CUR;
+ gSel.addEventListener('change', function(){ gLock = true; DESKPICK['mkCurG'] = gSel.value; saveGeo(); paintPx(); });
+ }
+ // Load the embedded chart when reached, so its autofocus cannot bypass the hero.
+ if (chBox && 'IntersectionObserver' in window) {
+ var chartStartObserver = new IntersectionObserver(function(entries) {
+ if (!entries.some(function(entry) { return entry.isIntersecting; })) return;
+ chartStartObserver.disconnect();
+ if (!lastSym) buildChart('BSE:SENSEX', 'Sensex');
+ }, {threshold: 0.05});
+ chartStartObserver.observe(chBox);
+ } else if (chBox) buildChart('BSE:SENSEX', 'Sensex');
+
+ setInterval(function(){
+ if (d.hidden || !lastSym) return;
+ var q = QSYMOF[lastSym] || lastSym;
+ scan([q], function(rows){ if (rows && rows[0] && rows[0].sym === q){ lastQuote = rows[0]; paintPx(); } });
+ }, 60000);
+ /* ---------- country \u2192 chart this market ---------- */
+ var cbtn = d.getElementById('mkCtryChart');
+ var IDXMAP = { US:['FOREXCOM:SPX500','S&P 500'], IN:['BSE:SENSEX','Sensex'], GB:['FOREXCOM:UK100','FTSE 100'], JP:['FOREXCOM:JP225','Nikkei 225'], DE:['XETR:DAX','DAX 40'], CN:['HSI:HSI','Hang Seng'], CA:['AMEX:EWC','Canada fund'], AU:['AMEX:EWA','Australia fund'], BR:['AMEX:EWZ','Brazil fund'], KR:['AMEX:EWY','Korea fund'], CH:['AMEX:EWL','Swiss fund'], TW:['AMEX:EWT','Taiwan fund'], FR:['EURONEXT:PX1','CAC 40'] };
+ if (cbtn){
+ cbtn.addEventListener('click', function(){
+ var cc = csel ? csel.value : 'WW';
+ var pick = IDXMAP[cc] || [BOARDS[cc].split(',')[0].split('|')[0], 'top stock'];
+ buildChart(pick[0], pick[1]);
+ var cs = d.getElementById('kc-chart'); if (cs && cs.scrollIntoView) cs.scrollIntoView({ behavior: rm ? 'auto' : 'smooth', block: 'start' });
+ });
+ }
+
+
+ /* ---------- crypto desk ---------- */
+ var SYMS = { usd:'$', inr:'\u20b9', eur:'\u20ac', gbp:'\u00a3', jpy:'\u00a5', cny:'CN\u00a5', krw:'\u20a9', twd:'NT$', hkd:'HK$', sgd:'S$', aud:'A$', nzd:'NZ$', cad:'C$', chf:'CHF ', nok:'kr ', sek:'kr ', dkk:'kr ', pln:'z\u0142 ', czk:'K\u010d ', huf:'Ft ', try:'\u20ba', mxn:'MX$', brl:'R$', ars:'AR$', clp:'CLP$', zar:'R', aed:'AED ', sar:'SAR ', kwd:'KD ', bhd:'BD ', ils:'\u20aa', pkr:'Rs ', bdt:'\u09f3', lkr:'Rs ', php:'\u20b1', idr:'Rp ', thb:'\u0e3f', myr:'RM ', vnd:'\u20ab', ngn:'\u20a6', mad:'MAD ', uah:'\u20b4' };
+ var LAST = {};
+ function el(tag, cls, txt){
+ var e = d.createElement(tag);
+ if (cls) e.className = cls;
+ if (txt != null) e.textContent = txt;
+ return e;
+ }
+ function fmtPrice(v, cur){
+ if (!isFinite(v)) return '\u2014';
+ var digits = v >= 1000 ? 0 : (v >= 1 ? 2 : 5);
+ try { return SYMS[cur] + v.toLocaleString('en-US', { maximumFractionDigits: digits, minimumFractionDigits: v >= 1 && v < 1000 ? 2 : 0 }); }
+ catch(e){ return SYMS[cur] + v.toFixed(digits); }
+ }
+ function fmtBig(v, cur){
+ if (!isFinite(v)) return '\u2014';
+ var u = [['B', 1e9], ['M', 1e6], ['K', 1e3]], i;
+ for (i = 0; i < u.length; i++){ if (v >= u[i][1]) return SYMS[cur] + (v / u[i][1]).toFixed(1) + u[i][0]; }
+ return SYMS[cur] + Math.round(v).toLocaleString('en-US');
+ }
+ function spark(prices){
+ var NS = 'http://www.w3.org/2000/svg';
+ var sv = d.createElementNS(NS, 'svg');
+ sv.setAttribute('viewBox', '0 0 120 36');
+ sv.setAttribute('class', 'mk-sp');
+ if (!prices || prices.length < 4) return sv;
+ var step = Math.max(1, Math.floor(prices.length / 40));
+ var pts = [];
+ for (var i = 0; i < prices.length; i += step) pts.push(prices[i]);
+ var lo = Math.min.apply(null, pts), hi = Math.max.apply(null, pts), sp = (hi - lo) || 1;
+ var path = pts.map(function(p, ix){
+ return (ix ? 'L' : 'M') + (2 + 116 * ix / (pts.length - 1)).toFixed(1) + ' ' + (32 - (p - lo) / sp * 28).toFixed(1);
+ }).join(' ');
+ var ln = d.createElementNS(NS, 'path');
+ ln.setAttribute('d', path);
+ ln.setAttribute('fill', 'none');
+ ln.setAttribute('stroke', 'currentColor');
+ ln.setAttribute('stroke-width', '2');
+ ln.setAttribute('stroke-linecap', 'round');
+ sv.appendChild(ln);
+ return sv;
+ }
+ var crows = d.getElementById('mkCrows');
+ var cdown = d.getElementById('mkCd');
+ var WAIT = 45, tick = 0, busy = false;
+ function draw(rows){
+ while (crows.firstChild) crows.removeChild(crows.firstChild);
+ rows.forEach(function(r, ix){
+ var row = el('div', 'mk-crow');
+ row.appendChild(el('span', 'mk-rk', String(ix + 1)));
+ var cn = el('div', 'mk-cn');
+ var im = d.createElement('img');
+ im.src = r.image; im.alt = ''; im.loading = 'lazy';
+ im.addEventListener('error', function(){ im.style.visibility = 'hidden'; });
+ cn.appendChild(im);
+ var nb = el('b', null, r.name);
+ cn.appendChild(nb);
+ cn.appendChild(el('span', null, String(r.symbol).toUpperCase()));
+ row.appendChild(cn);
+ row.appendChild(spark(r.sparkline_in_7d && r.sparkline_in_7d.price));
+ var pr = el('div', 'mk-pr', fmtPrice(r.current_price, CUR));
+ pr.id = 'mkp_' + r.id;
+ row.appendChild(pr);
+ var ch = el('div', 'mk-ch');
+ var pc = r.price_change_percentage_24h;
+ ch.textContent = (pc >= 0 ? '\u25b2 ' : '\u25bc ') + Math.abs(pc).toFixed(2) + '%';
+ ch.className = 'mk-ch ' + (pc >= 0 ? 'mk-up' : 'mk-dn');
+ row.appendChild(ch);
+ crows.appendChild(row);
+ });
+ }
+ function load(){
+ if (busy || d.hidden) return;
+ busy = true;
+ var want = CUR;
+ var url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=' + CUR +
+ '&order=market_cap_desc&per_page=12&page=1&price_change_percentage=24h&sparkline=true';
+ fetch(url).then(function(r){ return r.json(); }).then(function(rows){
+ busy = false;
+ if (!rows || !rows.length || rows.error) throw new Error('cg down');
+ if (want !== CUR){ load(); return; }
+ draw(rows); tick = 0;
+ }).catch(function(){ busy = false; loadAlt(); });
+ }
+ function loadAlt(){
+ if (busy || d.hidden) return;
+ busy = true;
+ var want = CUR;
+ var ALT = { BTCUSDT:['Bitcoin','btc'], ETHUSDT:['Ethereum','eth'], SOLUSDT:['Solana','sol'], BNBUSDT:['BNB','bnb'], XRPUSDT:['XRP','xrp'], DOGEUSDT:['Dogecoin','doge'], ADAUSDT:['Cardano','ada'], AVAXUSDT:['Avalanche','avax'], LINKUSDT:['Chainlink','link'], TRXUSDT:['TRON','trx'], DOTUSDT:['Polkadot','dot'], LTCUSDT:['Litecoin','ltc'] };
+ var q = encodeURIComponent(JSON.stringify(Object.keys(ALT)));
+ fetch('https://data-api.binance.vision/api/v3/ticker/24hr?symbols=' + q).then(function(r){ return r.json(); }).then(function(list){
+ busy = false;
+ if (!list || !list.length || list.error) return;
+ if (want !== CUR) return;
+ var rows = [];
+ list.forEach(function(t){
+ var nm = ALT[t.symbol] || [t.symbol, 'cc'];
+ var ic = 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28"><rect width="28" height="28" rx="14" fill="%23bc5b33"/><text x="14" y="19" font-size="13" font-family="Arial" font-weight="bold" fill="%23fffdf8" text-anchor="middle">' + nm[1].charAt(0).toUpperCase() + '</text></svg>';
+ rows.push({ id: nm[1], symbol: nm[1], name: nm[0], image: ic, current_price: convert(parseFloat(t.lastPrice), 'usd', CUR), price_change_percentage_24h: parseFloat(t.priceChangePercent), sparkline_in_7d: null });
+ });
+ draw(rows); tick = 0;
+ }).catch(function(){ busy = false; });
+ }
+ var crySel = d.getElementById('mkCurCry');
+ if (crySel){
+ crySel.addEventListener('change', function(){
+ if (CUR === crySel.value) return;
+ curLock = true;
+ CUR = crySel.value; markCur();
+ if (crows) crows.innerHTML = '';
+ load();
+ saveGeo();
+ });
+ }
+ if (crows && cdown){
+ load();
+ setInterval(function(){
+ if (d.hidden) return;
+ tick++;
+ if (tick >= WAIT){ tick = 0; load(); }
+ cdown.textContent = 'next refresh in ' + (WAIT - tick) + 's';
+ }, 1000);
+ }
+
+ /* ---------- Indian fund NAV search ---------- */
+ var q = d.getElementById('mkQ'), qb = d.getElementById('mkQBtn'), res = d.getElementById('mkRes'), det = d.getElementById('mkDet');
+ function navCard(meta, latest, yr){
+ while (det.firstChild) det.removeChild(det.firstChild);
+ var t = el('b', null, meta.scheme_name || ''); det.appendChild(t);
+ var rows = [
+ ['fund house', meta.fund_house || '\u2014'],
+ ['category', meta.scheme_category || '\u2014'],
+ ['latest NAV', latest.nav + ' \u00b7 as on ' + latest.date],
+ ['\u22481-yr move', yr == null ? '\u2014' : (yr >= 0 ? '\u25b2 ' : '\u25bc ') + Math.abs(yr).toFixed(2) + '%']
+ ];
+ rows.forEach(function(r){
+ var p = el('div', 'mk-navrow');
+ p.appendChild(el('span', null, r[0]));
+ p.appendChild(el('b', null, r[1]));
+ det.appendChild(p);
+ });
+ det.hidden = false;
+ }
+ function search(){
+ var v = (q.value || '').trim();
+ if (v.length < 3){ while (res.firstChild) res.removeChild(res.firstChild); res.appendChild(el('div', 'mk-wait', 'type at least 3 letters\u2026')); return; }
+ while (res.firstChild) res.removeChild(res.firstChild);
+ res.appendChild(el('div', 'mk-wait', 'searching \u201c' + v + '\u201d\u2026'));
+ fetch('https://api.mfapi.in/mf/search?q=' + encodeURIComponent(v)).then(function(r){ return r.json(); }).then(function(list){
+ while (res.firstChild) res.removeChild(res.firstChild);
+ if (!list || !list.length){ res.appendChild(el('div', 'mk-wait', 'no scheme matched \u2014 try fewer words')); return; }
+ list.slice(0, 8).forEach(function(it){
+ var b = el('button', 'kc-pick');
+ b.type = 'button';
+ b.appendChild(el('span', null, it.schemeName));
+ b.appendChild(el('em', null, '#' + it.schemeCode));
+ b.addEventListener('click', function(){
+ while (det.firstChild) det.removeChild(det.firstChild);
+ det.hidden = false;
+ det.appendChild(el('div', 'mk-wait', 'fetching NAV\u2026'));
+ fetch('https://api.mfapi.in/mf/' + it.schemeCode).then(function(r){ return r.json(); }).then(function(j){
+ if (!j || !j.meta || !j.data || !j.data.length){ det.textContent = 'NAV data unavailable for this scheme.'; return; }
+ var latest = j.data[0];
+ var oldIx = Math.min(j.data.length - 1, 250);
+ var yr = null;
+ try { yr = (parseFloat(latest.nav) / parseFloat(j.data[oldIx].nav) - 1) * 100; } catch(e){}
+ navCard(j.meta, latest, yr);
+ }).catch(function(){ det.textContent = 'Could not reach the NAV service \u2014 try again.'; });
+ });
+ res.appendChild(b);
+ });
+ }).catch(function(){
+ while (res.firstChild) res.removeChild(res.firstChild);
+ res.appendChild(el('div', 'mk-wait', 'search service unreachable \u2014 try again in a moment'));
+ });
+ }
+ if (q && qb){
+ qb.addEventListener('click', search);
+ q.addEventListener('keydown', function(e){ if (e.key === 'Enter') search(); });
+ }
+ /* ---------- our own quote + conversion engine (per-desk money) ---------- */
+ var FXR = {aed:3.6725,afn:64.6621,all:79.5116,amd:363.512,ang:1.79,aoa:928.846,ars:1506.68,aud:1.40315,awg:1.79,azn:1.69977,bam:1.69516,bbd:2,bdt:123.098,bgn:1.69516,bhd:0.376,bif:2993.77,bmd:1,bnd:1.2728,bob:11.8715,brl:5.15019,bsd:1,btn:96.0005,bwp:13.8309,byn:3.03118,bzd:2,cad:1.39126,cdf:2305.68,chf:0.818951,clf:0.024216,clp:957.185,cnh:6.71249,cny:6.72683,cop:3104,crc:449.047,cup:24,cve:95.5688,czk:21.0596,djf:177.721,dkk:6.47829,dop:58.9045,dzd:133.654,egp:52.0639,ern:15,etb:161.765,eur:0.86671,fjd:2.20442,fkp:0.742032,fok:6.47829,gbp:0.742032,gel:2.60518,ggp:0.742032,ghs:11.4255,gip:0.742032,gmd:74.6792,gnf:8786,gtq:7.6338,gyd:209.273,hkd:7.84436,hnl:26.8531,hrk:6.5303,htg:130.679,huf:317.094,idr:17688.1,ils:3.04081,imp:0.742032,inr:95.9893,iqd:1311.96,irr:1.46818e+06,isk:121.339,jep:0.742032,jmd:157.772,jod:0.709,jpy:155.076,kes:129.535,kgs:87.6253,khr:4039.73,kid:1.40322,kmf:426.398,krw:1360.36,kwd:0.308429,kyd:0.833333,kzt:448.238,lak:22224.1,lbp:89500,lkr:328.794,lrd:174.484,lsl:16.2622,lyd:6.33495,mad:9.47922,mdl:17.3745,mga:4333.92,mkd:52.9848,mmk:2100.39,mnt:3593.59,mop:8.08036,mru:40.1184,mur:47.0879,mvr:15.4396,mwk:1746.53,mxn:17.1577,myr:4.08443,mzn:63.7229,nad:16.2622,ngn:1328.88,nio:36.7522,nok:9.34733,npr:153.601,nzd:1.73745,omr:0.384497,pab:1,pen:3.36514,pgk:4.45889,php:62.8692,pkr:277.721,pln:3.76308,pyg:5971.65,qar:3.64,ron:4.55976,rsd:101.702,rub:84.3035,rwf:1474.49,sar:3.75,sbd:7.97673,scr:14.0395,sdg:449.086,sek:9.7784,sgd:1.27272,shp:0.742032,sle:24.6816,sll:24681.6,sos:571.701,srd:38.0071,ssp:5651.43,stn:21.2346,syp:121.682,szl:16.2622,thb:33.2944,tjs:9.24767,tmt:3.50002,tnd:2.92011,top:2.38278,try:48.6646,ttd:6.76729,tvd:1.40322,twd:31.8404,tzs:2642.49,uah:44.6706,ugx:3756.66,usd:1,uyu:40.1806,uzs:11785.2,ves:846.513,vnd:25904.2,vuv:117.844,wst:2.70232,xaf:568.531,xcd:2.7,xcg:1.79,xdr:0.730865,xof:568.531,xpf:103.427,yer:236.68,zar:16.2654,zmw:19.2419,zwg:26.7933,zwl:26.7933};
+var UNITX = {
+ 'TVC:GOLD':[0.321507,' / 10 g'],
+ 'TVC:SILVER':[32.1507,' / 1 kg'],
+ 'TVC:PLATINUM':[0.321507,' / 10 g'],
+ 'TVC:PALLADIUM':[0.321507,' / 10 g'],
+ 'COMEX:GC1!':[0.321507,' / 10 g'],
+ 'COMEX:SI1!':[32.1507,' / 1 kg'],
+ 'NYMEX:PL1!':[0.321507,' / 10 g'],
+ 'NYMEX:PA1!':[0.321507,' / 10 g'],
+ 'NYMEX:BZ1!':[1,' / 1 bbl'],
+ 'MCX:GOLD1!':[0.01,' / 10 g'],
+ 'MCX:GOLDM1!':[0.01,' / 10 g'],
+ 'MCX:GOLDPETAL1!':[0.01,' / 1 g'],
+ 'MCX:SILVER1!':[1,' / 1 kg'],
+ 'MCX:SILVERM1!':[1,' / 5 kg'],
+ 'MCX:SILVERMIC1!':[1,' / 1 kg'],
+ 'NYMEX:CL1!':[1,' / 1 bbl'],
+ 'NYMEX:NG1!':[1,' / 1 MMBtu'],
+ 'NYMEX:HO1!':[1,' / 1 gal'],
+ 'NYMEX:RB1!':[1,' / 1 gal'],
+ 'ICEEUR:BRN1!':[1,' / 1 bbl'],
+ 'MCX:CRUDEOIL1!':[1,' / 1 bbl'],
+ 'MCX:CRUDEOILM1!':[1,' / 1 bbl'],
+ 'MCX:NATURALGAS1!':[1,' / 1 MMBtu'],
+ 'COMEX:HG1!':[2.20462,' / 1 kg'],
+ 'MCX:COPPER1!':[1,' / 1 kg'],
+ 'MCX:ALUMINIUM1!':[1,' / 1 kg'],
+ 'MCX:ZINC1!':[1,' / 1 kg'],
+ 'MCX:NICKEL1!':[1,' / 1 kg'],
+ 'MCX:LEAD1!':[1,' / 1 kg'],
+ 'LME:CO1!':[1,' / 1 t'],
+ 'SHFE:CU1!':[1,' / 1 t'],
+ 'SHFE:AU1!':[1,' / 1 g'],
+ 'SHFE:AG1!':[1,' / 1 kg'],
+ 'SHFE:AL1!':[1,' / 1 t'],
+ 'SHFE:ZN1!':[1,' / 1 t'],
+ 'SHFE:NI1!':[1,' / 1 t'],
+ 'SHFE:PB1!':[1,' / 1 t'],
+ 'SHFE:SN1!':[1,' / 1 t'],
+ 'SHFE:RB1!':[1,' / 1 t'],
+ 'SHFE:HC1!':[1,' / 1 t'],
+ 'SHFE:BU1!':[1,' / 1 t'],
+ 'SHFE:FU1!':[1,' / 1 t'],
+ 'SHFE:RU1!':[1,' / 1 t'],
+ 'SHFE:SS1!':[1,' / 1 t'],
+ 'SHFE:SP1!':[1,' / 1 t'],
+ 'SHFE:WR1!':[1,' / 1 t'],
+ 'DCE:A1!':[1,' / 1 t'],
+ 'DCE:C1!':[1,' / 1 t'],
+ 'DCE:M1!':[1,' / 1 t'],
+ 'DCE:Y1!':[1,' / 1 t'],
+ 'DCE:I1!':[1,' / 1 t'],
+ 'DCE:L1!':[1,' / 5 t'],
+ 'DCE:V1!':[1,' / 5 t'],
+ 'DCE:PP1!':[1,' / 5 t'],
+ 'DCE:EG1!':[1,' / 10 t'],
+ 'DCE:JD1!':[1,' / 500 kg'],
+ 'DCE:CS1!':[1,' / 1 t'],
+ 'DCE:PG1!':[1,' / 1 t'],
+ 'DCE:EB1!':[1,' / 1 t'],
+ 'DCE:BB1!':[1,' / 1 t'],
+ 'DCE:FB1!':[1,' / 1 t'],
+ 'ZCE:CF1!':[1,' / 5 t'],
+ 'ZCE:SR1!':[1,' / 10 t'],
+ 'ZCE:TA1!':[1,' / 5 t'],
+ 'ZCE:MA1!':[1,' / 10 t'],
+ 'ZCE:FG1!':[1,' / 20 t'],
+ 'ZCE:SF1!':[1,' / 5 t'],
+ 'ZCE:SM1!':[1,' / 5 t'],
+ 'ZCE:SH1!':[1,' / 1 t'],
+ 'ZCE:UR1!':[1,' / 10 t'],
+ 'ZCE:AP1!':[1,' / 10 t'],
+ 'ZCE:CJ1!':[1,' / 5 t'],
+ 'ZCE:OI1!':[1,' / 10 t'],
+ 'ZCE:RM1!':[1,' / 10 t'],
+ 'ZCE:PF1!':[1,' / 5 t'],
+ 'CBOT:ZC1!':[1,' / 1 bu'],
+ 'CBOT:ZW1!':[1,' / 1 bu'],
+ 'CBOT:ZS1!':[1,' / 1 bu'],
+ 'CBOT:ZM1!':[1,' / 1 short ton'],
+ 'CBOT:ZL1!':[1,' / 1 lb'],
+ 'CBOT:ZO1!':[1,' / 1 bu'],
+ 'CBOT:ZR1!':[1,' / 1 cwt'],
+ 'ICEUS:KC1!':[1,' / 1 lb'],
+ 'ICEUS:CC1!':[1,' / 1 t'],
+ 'ICEUS:SB1!':[1,' / 1 lb'],
+ 'ICEUS:CT1!':[1,' / 1 lb'],
+ 'ICEUS:OJ1!':[1,' / 1 lb'],
+ 'ICEUS:RS1!':[1,' / 1 t'],
+ 'ICEEUR:W1!':[1,' / 1 t'],
+ 'CME:HE1!':[1,' / 1 lb'],
+ 'CME:DC1!':[1,' / 1 cwt'],
+ 'CME:GNF1!':[1,' / 1 lb'],
+ 'CME:CSC1!':[1,' / 1 lb'],
+ 'CME:LBR1!':[1,' / 1000 bd ft'],
+ 'SGX:FEF1!':[1,' / 1 t'],
+ 'BMFBOVESPA:CCM1!':[1,' / 60 kg bag'],
+ 'BMFBOVESPA:BGI1!':[1,' / 1 head'],
+ 'BMFBOVESPA:ETH1!':[1,' / 1 m&#179;'],
+ 'BMFBOVESPA:ICF1!':[1,' / 1 lb'],
+ 'ICEEUR:UKA1!':[1,' / 1 t'],
+ 'MCX:KAPAS1!':[1,' / 20 kg']
+};
+ function unitOf(sym){ var u = UNITX[sym]; return u || [1, '']; }
+ var INDLAND = 1.1845; /* India landed metal price: intl spot + 15% import duty (10% BCD + 5% AIDC, May-2026) + 3% GST */
+ var CMDL = 'TVC:GOLD|Gold spot,TVC:SILVER|Silver spot,TVC:PLATINUM|Platinum spot,TVC:PALLADIUM|Palladium spot,COMEX:GC1!|Gold futures COMEX front,COMEX:SI1!|Silver futures COMEX front,NYMEX:PL1!|Platinum futures NYMEX,NYMEX:PA1!|Palladium futures NYMEX,NYMEX:BZ1!|Brent Crude NYMEX,MCX:GOLD1!|Gold MCX India,MCX:GOLDM1!|Gold Mini 100g MCX,MCX:GOLDPETAL1!|Gold Petal 1g MCX,MCX:SILVER1!|Silver MCX India,MCX:SILVERM1!|Silver Mini 5kg MCX,MCX:SILVERMIC1!|Silver Micro 1kg MCX,NYMEX:CL1!|WTI Crude Oil,NYMEX:NG1!|Natural Gas Henry Hub,NYMEX:HO1!|Heating Oil ULSD Diesel,NYMEX:RB1!|RBOB Gasoline Petrol,ICEEUR:BRN1!|Brent Crude Oil ICE Europe,MCX:CRUDEOIL1!|Crude Oil MCX India,MCX:CRUDEOILM1!|Crude Oil Mini MCX,MCX:NATURALGAS1!|Natural Gas MCX India,COMEX:HG1!|Copper COMEX,MCX:COPPER1!|Copper MCX India,MCX:ALUMINIUM1!|Aluminium MCX India,MCX:ZINC1!|Zinc MCX India,MCX:NICKEL1!|Nickel MCX India,MCX:LEAD1!|Lead MCX India,LME:CO1!|Cobalt LME,SHFE:CU1!|Copper Shanghai,SHFE:AU1!|Gold Shanghai,SHFE:AG1!|Silver Shanghai,SHFE:AL1!|Aluminium Shanghai,SHFE:ZN1!|Zinc Shanghai,SHFE:NI1!|Nickel Shanghai,SHFE:PB1!|Lead Shanghai,SHFE:SN1!|Tin Shanghai,SHFE:RB1!|Steel Rebar Shanghai,SHFE:HC1!|Hot Rolled Coil Steel Shanghai,SHFE:BU1!|Bitumen Asphalt Shanghai,SHFE:FU1!|Fuel Oil Shanghai,SHFE:RU1!|Natural Rubber Shanghai,SHFE:SS1!|Stainless Steel Shanghai,SHFE:SP1!|Softwood Pulp Shanghai,SHFE:WR1!|Wire Rod Steel Shanghai,DCE:A1!|Soybeans No. 1 Dalian,DCE:C1!|Corn Maize Dalian,DCE:M1!|Soybean Meal Dalian,DCE:Y1!|Palm Oil Dalian,DCE:I1!|Iron Ore Dalian,DCE:L1!|LDPE Plastic Resin Dalian,DCE:V1!|PVC Plastic Resin Dalian,DCE:PP1!|Polypropylene Dalian,DCE:EG1!|Ethylene Glycol Dalian,DCE:JD1!|Fresh Eggs Dalian,DCE:CS1!|Corn Starch Dalian,DCE:PG1!|LPG Cooking Gas Dalian,DCE:EB1!|Ethylbenzene Dalian,DCE:BB1!|Plywood Dalian,DCE:FB1!|Fiberboard Dalian,ZCE:CF1!|Cotton Zhengzhou,ZCE:SR1!|White Sugar Zhengzhou,ZCE:TA1!|PTA Polyester Feedstock Zhengzhou,ZCE:MA1!|Methanol Zhengzhou,ZCE:FG1!|Flat Glass Zhengzhou,ZCE:SF1!|Ferrosilicon Zhengzhou,ZCE:SM1!|Silicomanganese Zhengzhou,ZCE:SH1!|Caustic Soda Zhengzhou,ZCE:UR1!|Urea Fertilizer Zhengzhou,ZCE:AP1!|Fresh Apples Zhengzhou,ZCE:CJ1!|Red Dates Jujube Zhengzhou,ZCE:OI1!|Rapeseed Oil Zhengzhou,ZCE:RM1!|Rapeseed Meal Zhengzhou,ZCE:PF1!|Polyester Staple Fiber Zhengzhou,CBOT:ZC1!|Corn Maize CBOT,CBOT:ZW1!|Chicago SRW Wheat CBOT,CBOT:ZS1!|Soybeans CBOT,CBOT:ZM1!|Soybean Meal CBOT,CBOT:ZL1!|Soybean Oil CBOT,CBOT:ZO1!|Oats CBOT,CBOT:ZR1!|Rough Rice CBOT,ICEUS:KC1!|Coffee Arabica ICE US,ICEUS:CC1!|Cocoa ICE US,ICEUS:SB1!|Sugar No. 11 world raw ICE US,ICEUS:CT1!|Cotton No. 2 ICE US,ICEUS:OJ1!|Orange Juice FCOJ ICE US,ICEUS:RS1!|Canola ICE Canada,ICEEUR:W1!|White Sugar No. 5 ICE London,CME:HE1!|Lean Hogs CME,CME:DC1!|Class III Milk CME,CME:GNF1!|Non-Fat Dry Milk CME,CME:CSC1!|Cheddar Cheese CME,CME:LBR1!|Random Length Lumber CME,SGX:FEF1!|Iron Ore 62pct Fe SGX,BMFBOVESPA:CCM1!|Corn Brazil BM&F,BMFBOVESPA:BGI1!|Live Cattle Brazil,BMFBOVESPA:ETH1!|Ethanol Brazil,BMFBOVESPA:ICF1!|Cotton No. 2 Brazil,ICEEUR:UKA1!|UK Carbon Allowances,MCX:KAPAS1!|Raw Cotton Kapas MCX';
+ var IDXL = 'NSE:NIFTY|Nifty 50,BSE:SENSEX|Sensex,SP:SPX|S&amp;P 500,NASDAQ:IXIC|Nasdaq,DJ:DJI|Dow 30,XETR:DAX|DAX,TVC:UKX|FTSE 100,TVC:NI225|Nikkei 225,HSI:HSI|Hang Seng,SSE:000001|Shanghai Composite,EURONEXT:PX1|CAC 40,BMFBOVESPA:IBOV|Ibovespa,KRX:KOSPI|KOSPI,ASX:XJO|ASX 200';
+ var IDXCUR = { 'SP:SPX':'USD','NASDAQ:IXIC':'USD','DJ:DJI':'USD','NSE:NIFTY':'INR','BSE:SENSEX':'INR','XETR:DAX':'EUR','TVC:UKX':'GBP','TVC:NI225':'JPY','HSI:HSI':'HKD','SSE:000001':'CNY','EURONEXT:PX1':'EUR','BMFBOVESPA:IBOV':'BRL','KRX:KOSPI':'KRW','ASX:XJO':'AUD' };
+ function parseT(str){
+ var out = [], p = str.split(','), i;
+ for (i = 0; i !== p.length; i++) out.push(p[i].split('|')[0].replace('&amp;', '&'));
+ return out;
+ }
+ function pairList(str){
+ var out = [], p = str.split(','), i;
+ for (i = 0; i !== p.length; i++){ var pr = p[i].split('|'); out.push({ s: pr[0].replace('&amp;', '&'), d: pr[1].replace('&amp;', '&') }); }
+ return out;
+ }
+ function moCfg(title, list, h){
+ return { colorTheme:'light', dateRange:'1D', showChart:false, locale:'en', width:'100%', height: String(h || 640), largeChartUrl:'', isTransparent:false, showSymbolLogo:true, showFloatingTooltip:true, tabs: [{ title: title, symbols: pairList(list) }] };
+ }
+ function loadFx(){
+ fetch('https://open.er-api.com/v6/latest/USD').then(function(r){ return r.json(); }).then(function(j){
+ if (j && j.rates && (j.rates.inr || j.rates.INR)){ var t = {}, k; for (k in j.rates){ t[k.toLowerCase()] = j.rates[k]; } FXR = t; FXDATE = dateFromUtc(j.time_last_update_utc); redrawDesks(); paintPx(); }
+ else throw new Error('bad');
+ }).catch(function(){
+ fetch('https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/usd.min.json').then(function(r){ return r.json(); }).then(function(j2){
+ if (j2 && j2.usd){ var t = {}, k; for (k in j2.usd){ t[k.toLowerCase()] = j2.usd[k]; } FXR = t; FXDATE = dateFromYmd(j2.date); redrawDesks(); paintPx(); }
+ }).catch(function(){ setTimeout(loadFx, 60000); });
+ });
+ }
+ function convert(v, from, to){
+ if (!FXR || !from || !to || from === to || !FXR[from] || !FXR[to]) return v;
+ return v / FXR[from] * FXR[to];
+ }
+ function scan(tickers, cb){
+ // Route tickers to the correct TradingView scanner endpoint by exchange prefix.
+ // Stocks live on regional endpoints, futures on /futures, spot metals and
+ // world indices on /global; anything missed is retried once on /global.
+ var REG = { NASDAQ:'america', NYSE:'america', NYSEARCA:'america', ARCA:'america', AMEX:'america', BATS:'america', OTC:'america', PINK:'america',
+ NSE:'india', BSE:'india', LSE:'uk', LSIN:'uk', TSE:'japan', XETR:'germany', ETR:'germany',
+ EURONEXT:'france', EPA:'france', SIX:'switzerland', BX:'switzerland', ASX:'australia',
+ TSX:'canada', TSXV:'canada', NEO:'canada', NEOE:'canada', CVE:'canada',
+ SSE:'china', SZSE:'china', HKEX:'hongkong', KRX:'korea', KOSDAQ:'korea',
+ TWSE:'taiwan', BMFBOVESPA:'brazil', B3:'brazil', SGX:'singapore' };
+ var FUT = { COMEX:1, NYMEX:1, CBOT:1, CME:1, ICEUS:1, ICEEUR:1, MCX:1, DCE:1, SHFE:1, ZCE:1, LME:1 };
+ var GLB = { TVC:1, SP:1, DJ:1, HSI:1, BMV:1, FX:1, FOREXCOM:1, CRYPTOCAP:1, CRYPTO:1 };
+ function regionOf(t){
+ var ex = t.split(':')[0];
+ if (GLB[ex]) return 'global';
+ if (t.indexOf('!') !== -1 || FUT[ex]) return 'futures';
+ return REG[ex] || 'global';
+ }
+ var groups = {}, i;
+ for (i = 0; i !== tickers.length; i++){
+ var rg = regionOf(tickers[i]);
+ (groups[rg] = groups[rg] || []).push(tickers[i]);
+ }
+ var merged = {}, done = 0, keys = Object.keys(groups);
+ function absorb(j){
+ if (j && j.data){ for (var k = 0; k !== j.data.length; k++){ var dd = j.data[k].d; if (dd) merged[j.data[k].s] = { sym: j.data[k].s, name: dd[0], close: dd[1], chg: dd[2], chga: dd[3], cur: dd[4], mode: dd[5], logo: dd[6] }; } }
+ }
+ function hit(ep, list, after){
+ fetch('https://scanner.tradingview.com/' + ep + '/scan', { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=UTF-8' }, body: JSON.stringify({ symbols: { tickers: list }, columns: ['name','close','change','change_abs','currency','update_mode','logoid'] }) }).then(function(r){ return r.json(); }).then(absorb).catch(function(){}).then(after);
+ }
+ function retryGlobal(){
+ var missing = [], i2;
+ for (i2 = 0; i2 !== tickers.length; i2++){ if (!merged[tickers[i2]]) missing.push(tickers[i2]); }
+ if (!missing.length){ finalize(); return; }
+ hit('global', missing, finalize);
+ }
+ function finalize(){
+ var out = [], i3;
+ for (i3 = 0; i3 !== tickers.length; i3++) if (merged[tickers[i3]]) out.push(merged[tickers[i3]]);
+ cb(out.length ? out : null);
+ }
+ if (!keys.length){ finalize(); return; }
+ keys.forEach(function(k){ hit(k, groups[k], function(){ done++; if (done === keys.length) retryGlobal(); }); });
+ }
+ function delayOf(mode){
+ if (!mode || mode.indexOf('delayed_streaming_') !== 0) return 'live';
+ return Math.round(parseInt(mode.split('_').pop(), 10) / 60) + '\u2032 delayed';
+ }
+ /* ---------- KC-FRESHNESS v1: visible liveness stamps ---------- */
+ var FXDATE = '';
+ var MONS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+ function hhmmss(){ var n = new Date(); function p(v){ return (v < 10 ? '0' : '') + v; } return p(n.getHours()) + ':' + p(n.getMinutes()) + ':' + p(n.getSeconds()); }
+ function dateFromUtc(s){ var m = /(\d{1,2}) (\w{3}) (\d{4})/.exec(s || ''); return m ? m[1] + ' ' + m[2] + ' ' + m[3] : ''; }
+ function dateFromYmd(s){ var m = /(\d{4})-(\d{2})-(\d{2})/.exec(s || ''); return m ? parseInt(m[3], 10) + ' ' + MONS[parseInt(m[2], 10) - 1] + ' ' + m[1] : ''; }
+ function fxStamp(){ return FXDATE ? 'converted at reference rates of ' + FXDATE : 'built-in reference rates \u00b7 live rates pending'; }
+ function sessNote(){ var u = new Date(), dy = u.getUTCDay(), hr = u.getUTCHours(); if (dy === 0 || (dy === 6 && hr >= 20) || (dy === 5 && hr >= 20)) return 'global exchanges closed for the weekend \u2014 prices hold at last close'; return ''; }
+ function fmt2(v, code){
+ if (!isFinite(v)) return '\u2014';
+ var s = SYMS[code] || (code.toUpperCase() + ' ');
+ var dg = Math.abs(v) >= 10000 ? 0 : 2;
+ try { return s + v.toLocaleString('en-US', { maximumFractionDigits: dg, minimumFractionDigits: Math.abs(v) >= 10000 ? 0 : 2 }); }
+ catch(e){ return s + v.toFixed(dg); }
+ }
+ function renderOwn(holder, rows, code, info){
+ while (holder.firstChild) holder.removeChild(holder.firstChild);
+ rows.forEach(function(r){
+ var curCode = r.cur ? r.cur.toLowerCase() : (IDXCUR[r.sym] ? IDXCUR[r.sym].toLowerCase() : null);
+ var price = curCode ? convert(r.close, curCode, code) : r.close;
+ var row = el('div', 'mk-orow');
+ var lg = el('span', 'mk-olg');
+ if (r.logo){ var im = d.createElement('img'); im.src = 'https://s3-symbol-logo.tradingview.com/' + r.logo + '.svg'; im.alt = ''; im.loading = 'lazy'; im.addEventListener('error', function(){ im.style.visibility = 'hidden'; }); lg.appendChild(im); }
+ else lg.appendChild(el('b', null, (r.name || '?').slice(0, 1)));
+ row.appendChild(lg);
+ var nm = el('div', 'mk-onm');
+ nm.appendChild(el('b', null, r.sym.split(':')[1]));
+ nm.appendChild(el('span', null, r.name + ' \u00b7 ' + delayOf(r.mode)));
+ row.appendChild(nm);
+ var ux = unitOf(r.sym);
+ var pb = el('div', 'mk-opr');
+ var indm = (code === 'inr' && (r.sym === 'TVC:GOLD' || r.sym === 'TVC:SILVER'));
+ pb.appendChild(el('b', null, (curCode ? fmt2(price * ux[0] * (indm ? INDLAND : 1), code) : Math.round(price * ux[0]).toLocaleString('en-US')) + ux[1] + (indm ? ' \u00b7 India landed' : '')));
+ pb.appendChild(el('span', null, indm ? 'intl spot ' + fmt2(price * ux[0], 'inr') + ux[1] + ' \u00b7 +15% duty +3% GST' : (curCode ? fmt2(r.close, curCode) : 'index points')));
+ row.appendChild(pb);
+ var ch = el('div', 'mk-och');
+ ch.textContent = (r.chg >= 0 ? '\u25b2 ' : '\u25bc ') + Math.abs(r.chg).toFixed(2) + '%';
+ ch.className = 'mk-och ' + (r.chg >= 0 ? 'mk-up' : 'mk-dn');
+ row.appendChild(ch);
+ holder.appendChild(row);
+ });
+ var f = el('div', 'mk-ofine');
+ var ft = 'refreshes every 60s \u00b7 live check ' + hhmmss();
+ if (info && info.moved != null) ft += ' \u00b7 ' + info.moved + ' of ' + rows.length + ' moved since last check';
+ ft += FXR ? ' \u00b7 ' + fxStamp() : ' \u00b7 reference rates arriving';
+ var sn = sessNote();
+ if (sn) ft += ' \u00b7 ' + sn;
+ f.textContent = ft;
+ holder.appendChild(f);
+ }
+ var CMD_NAMES = {"TVC:GOLD": "Gold spot", "TVC:SILVER": "Silver spot", "TVC:PLATINUM": "Platinum spot", "TVC:PALLADIUM": "Palladium spot", "COMEX:GC1!": "Gold futures COMEX front", "COMEX:SI1!": "Silver futures COMEX front", "NYMEX:PL1!": "Platinum futures NYMEX", "NYMEX:PA1!": "Palladium futures NYMEX", "NYMEX:BZ1!": "Brent Crude NYMEX", "MCX:GOLD1!": "Gold MCX India", "MCX:GOLDM1!": "Gold Mini 100g MCX", "MCX:GOLDPETAL1!": "Gold Petal 1g MCX", "MCX:SILVER1!": "Silver MCX India", "MCX:SILVERM1!": "Silver Mini 5kg MCX", "MCX:SILVERMIC1!": "Silver Micro 1kg MCX", "NYMEX:CL1!": "WTI Crude Oil", "NYMEX:NG1!": "Natural Gas Henry Hub", "NYMEX:HO1!": "Heating Oil ULSD Diesel", "NYMEX:RB1!": "RBOB Gasoline Petrol", "ICEEUR:BRN1!": "Brent Crude Oil ICE Europe", "MCX:CRUDEOIL1!": "Crude Oil MCX India", "MCX:CRUDEOILM1!": "Crude Oil Mini MCX", "MCX:NATURALGAS1!": "Natural Gas MCX India", "COMEX:HG1!": "Copper COMEX", "MCX:COPPER1!": "Copper MCX India", "MCX:ALUMINIUM1!": "Aluminium MCX India", "MCX:ZINC1!": "Zinc MCX India", "MCX:NICKEL1!": "Nickel MCX India", "MCX:LEAD1!": "Lead MCX India", "LME:CO1!": "Cobalt LME", "SHFE:CU1!": "Copper Shanghai", "SHFE:AU1!": "Gold Shanghai", "SHFE:AG1!": "Silver Shanghai", "SHFE:AL1!": "Aluminium Shanghai", "SHFE:ZN1!": "Zinc Shanghai", "SHFE:NI1!": "Nickel Shanghai", "SHFE:PB1!": "Lead Shanghai", "SHFE:SN1!": "Tin Shanghai", "SHFE:RB1!": "Steel Rebar Shanghai", "SHFE:HC1!": "Hot Rolled Coil Steel Shanghai", "SHFE:BU1!": "Bitumen Asphalt Shanghai", "SHFE:FU1!": "Fuel Oil Shanghai", "SHFE:RU1!": "Natural Rubber Shanghai", "SHFE:SS1!": "Stainless Steel Shanghai", "SHFE:SP1!": "Softwood Pulp Shanghai", "SHFE:WR1!": "Wire Rod Steel Shanghai", "DCE:A1!": "Soybeans No. 1 Dalian", "DCE:C1!": "Corn Maize Dalian", "DCE:M1!": "Soybean Meal Dalian", "DCE:Y1!": "Palm Oil Dalian", "DCE:I1!": "Iron Ore Dalian", "DCE:L1!": "LDPE Plastic Resin Dalian", "DCE:V1!": "PVC Plastic Resin Dalian", "DCE:PP1!": "Polypropylene Dalian", "DCE:EG1!": "Ethylene Glycol Dalian", "DCE:JD1!": "Fresh Eggs Dalian", "DCE:CS1!": "Corn Starch Dalian", "DCE:PG1!": "LPG Cooking Gas Dalian", "DCE:EB1!": "Ethylbenzene Dalian", "DCE:BB1!": "Plywood Dalian", "DCE:FB1!": "Fiberboard Dalian", "ZCE:CF1!": "Cotton Zhengzhou", "ZCE:SR1!": "White Sugar Zhengzhou", "ZCE:TA1!": "PTA Polyester Feedstock Zhengzhou", "ZCE:MA1!": "Methanol Zhengzhou", "ZCE:FG1!": "Flat Glass Zhengzhou", "ZCE:SF1!": "Ferrosilicon Zhengzhou", "ZCE:SM1!": "Silicomanganese Zhengzhou", "ZCE:SH1!": "Caustic Soda Zhengzhou", "ZCE:UR1!": "Urea Fertilizer Zhengzhou", "ZCE:AP1!": "Fresh Apples Zhengzhou", "ZCE:CJ1!": "Red Dates Jujube Zhengzhou", "ZCE:OI1!": "Rapeseed Oil Zhengzhou", "ZCE:RM1!": "Rapeseed Meal Zhengzhou", "ZCE:PF1!": "Polyester Staple Fiber Zhengzhou", "CBOT:ZC1!": "Corn Maize CBOT", "CBOT:ZW1!": "Chicago SRW Wheat CBOT", "CBOT:ZS1!": "Soybeans CBOT", "CBOT:ZM1!": "Soybean Meal CBOT", "CBOT:ZL1!": "Soybean Oil CBOT", "CBOT:ZO1!": "Oats CBOT", "CBOT:ZR1!": "Rough Rice CBOT", "ICEUS:KC1!": "Coffee Arabica ICE US", "ICEUS:CC1!": "Cocoa ICE US", "ICEUS:SB1!": "Sugar No. 11 world raw ICE US", "ICEUS:CT1!": "Cotton No. 2 ICE US", "ICEUS:OJ1!": "Orange Juice FCOJ ICE US", "ICEUS:RS1!": "Canola ICE Canada", "ICEEUR:W1!": "White Sugar No. 5 ICE London", "CME:HE1!": "Lean Hogs CME", "CME:DC1!": "Class III Milk CME", "CME:GNF1!": "Non-Fat Dry Milk CME", "CME:CSC1!": "Cheddar Cheese CME", "CME:LBR1!": "Random Length Lumber CME", "SGX:FEF1!": "Iron Ore 62pct Fe SGX", "BMFBOVESPA:CCM1!": "Corn Brazil BM&F", "BMFBOVESPA:BGI1!": "Live Cattle Brazil", "BMFBOVESPA:ETH1!": "Ethanol Brazil", "BMFBOVESPA:ICF1!": "Cotton No. 2 Brazil", "ICEEUR:UKA1!": "UK Carbon Allowances", "MCX:KAPAS1!": "Raw Cotton Kapas MCX"};
+ function ownDesk(holder, sel, tickers, tvCfg, fb){
+ var desk = { rows: null, code: sel && sel.value ? sel.value : 'usd', sel: sel };
+ function draw(){ if (desk.rows && holder) renderOwn(holder, desk.rows, desk.code, desk); }
+ desk.redraw = draw;
+ desk.setCode = function(c){ desk.code = c; if (sel) sel.value = c; draw(); };
+ function fallback(){
+ while (holder.firstChild) holder.removeChild(holder.firstChild);
+ tvEmbed(holder, MO_URL, tvCfg, fb);
+ }
+ function refresh(){
+ scan(tickers, function(r){
+ if (!r){ fallback(); return; }
+ var i, mv = 0;
+ if (desk.prev){ for (i = 0; i !== r.length; i++){ var p = desk.prev[r[i].sym]; if (p != null && p !== r[i].close) mv++; } desk.moved = mv; }
+ desk.prev = {};
+ for (i = 0; i !== r.length; i++){
+ if (CMD_NAMES[r[i].sym]) r[i].name = CMD_NAMES[r[i].sym];
+ desk.prev[r[i].sym] = r[i].close;
+ }
+ desk.rows = r; draw();
+ });
+ }
+ if (sel) sel.addEventListener('change', function(){ desk.code = sel.value; if (sel.id) DESKPICK[sel.id] = sel.value; draw(); saveGeo(); });
+ if (holder){ refresh(); setInterval(function(){ if (!d.hidden) refresh(); }, 60000); }
+ return desk;
+ }
+ function redrawDesks(){ DESKS.forEach(function(x){ x.redraw(); }); }
+ function syncDesks(c){ DESKS.forEach(function(x){ if (!x.sel || !DESKPICK[x.sel.id]) x.setCode(c); }); }
+ DESKS.push(ownDesk(d.getElementById('mkOwnW'), d.getElementById('mkCurW'), parseT(BOARDS.WW), moCfg('Global top 25', BOARDS.WW), 'Apple \u00b7 Microsoft \u00b7 Nvidia \u00b7 TSMC \u2014 licensed board'));
+ DESKS.push(ownDesk(d.getElementById('mkOwnC'), d.getElementById('mkCurC'), parseT(CMDL), moCfg('Commodities', CMDL, 480), 'Gold \u00b7 Silver \u00b7 Crude \u00b7 Copper \u00b7 Agri \u2014 101 live commodities'));
+ DESKS.push(ownDesk(d.getElementById('mkOwnI'), d.getElementById('mkCurI'), parseT(IDXL), moCfg('World indices', IDXL, 480), 'Nifty \u00b7 S&P 500 \u00b7 Nikkei \u2014 licensed board'));
+ loadFx();
+ setInterval(function(){ if (!d.hidden) loadFx(); }, 3600000);
+ /* hero freshness line: proves the engine ticks even when prices are static */
+ (function(){
+ var g = d.querySelector('.kc-geoline');
+ if (!g || !g.parentNode) return;
+ var n = d.createElement('div');
+ n.className = 'kc-geoline mk-freshline';
+ function paint(){
+ var sn = sessNote();
+ n.textContent = '\u25cf live data engine \u00b7 clock ' + hhmmss() + ' \u00b7 boards re-check every 60s' + (sn ? ' \u00b7 ' + sn : '');
+ }
+ paint();
+ setInterval(function(){ if (!d.hidden) paint(); }, 1000);
+ g.parentNode.insertBefore(n, g.nextSibling);
+ })();
+ var rested = restoreGeo();
+ if (!rested) tzGeo();
+ tryGeo();
+})();
+</script>
+</div>
+<style>.kss-box{position:relative;}.kss-box.kss-slide{position:absolute;inset:0;opacity:0;transform:rotateX(-70deg);transform-origin:50% 100%;transition:opacity.55s ease,transform.6s cubic-bezier(.22,.7,.3,1);pointer-events:none;}.kss-box.kss-slide.kss-on{position:relative;opacity:1;transform:none;pointer-events:auto;}</style><script>(function(){var dd=document;[].slice.call(dd.querySelectorAll('.kc-tip')).forEach(function(x){x.classList.add('kss-pending');});})();</script><script>(function(){if(window.__kssLive){return;}window.__kssLive=1;var d=document,w=window,reduce=false;try{reduce=w.matchMedia('(prefers-reduced-motion: reduce)').matches;}catch(e){}var POOL=["Save first, spend later - the order is the whole trick.", "A written goal beats a wish every single month.", "Track net worth yearly; track spending weekly.", "An EMI should never meet half your take-home.", "Insure the catastrophe, self-insure the inconvenience.", "The emergency fund is sleep, not returns.", "Raises belong to future-you before present-you.", "Automate the SIP; romance never pays on the 5th.", "One index fund beats nine opinions.", "Fees compound too - in the wrong direction.", "A cheap product with cover beats a rich one without.", "Never borrow for a depreciating toy at a young age.", "Prepay the costliest loan; the maths is ruthless.", "Credit score is a habit printed as a number.", " utilisation under 30 percent keeps the bureau calm.", "Pay the full card bill; the minimum is a trapdoor.", "Tax saved legally is the highest-yield investment of April.", "File early; refunds and loans both move faster.", "Keep proof of every deduction; paperwork is the deduction.", "Nominate everywhere; update after every life event.", "A will is love with a signature.", "Joint accounts need individual audits.", "Gold jewellery is emotion; gold bonds are arithmetic.", "Property yields rent; patience yields appreciation.", "Rent is not waste; it buys flexibility by the month.", "Compare loans on total outgo, never on EMI.", "Tenure is the biggest lever - pull it down first.", "Insurance is protection; investment is growth; mixing blurs both.", "An emergency is not an investment opportunity.", "A falling market is a discount for the disciplined.", "SIPs during crashes buy your best units quietly.", "Nobody rings a bell at the top or the bottom.", "Forecasting is entertainment; allocation is strategy.", "Rebalance on a calendar, not on a headline.", "Diversification is admitting you cannot know everything.", "If you cannot explain it, you cannot size it.", "Complex products hide simple fees.", "Guaranteed returns above market are a costume.", "If sales pressure is high, the margin must be too.", "Read the exclusions; the brochure hides them in plain sight.", "Claim settlement ratio is the insurer\"s character.", "Health cover first; the gym membership second.", "A premium waived is a claim avoided.", "Teach kids with real money and real small failures.", "Money fights are values fights wearing numbers.", "Couples who audit together, stay together - financially.", "Teach the jar system before the stock market.", "Retirement is a number wearing an age.", "Start early; even small money outruns late big money.", "The best decade to plant compounding was yesterday.", "Withdrawals before 60 steal twice - once now, once later.", "Annuities buy peace; equities buy growth; retire on both.", "Bucket your money by the year you will need it.", "Cash is a tool, not a home.", "Inflation is the silent partner taking a cut nightly.", "Real return is the only return that matters.", "Currency risk is the toll on every foreign bridge.", "A strong dollar season drains everything else.", "Budgets fail as diets; they work as direction.", "Sinking funds turn emergencies into calendar items.", "Name every account after the goal it serves.", "Subscriptions audit themselves into your bank - quarterly.", "Cashback funded by revolving balances is not a reward.", "Buy now pay later is a credit card without the guardrails.", "One no is cheaper than twelve EMI months of regret.", "Skills are the highest-yield asset at any net worth.", "Income from three taps beats income from one salary.", "Side income is risk management wearing a hobby.", "The tracker is the teacher - what gets measured gets managed.", "Review once a year; ignore the noise the rest of it.", "A flat portfolio is a decision by neglect.", "Rebalancing bands end the should-I-sell debate forever.", "Boring is the highest compliment for a core portfolio.", "If the pitch needs urgency, the product needs a mask.", "Unlisted tips travel with the seller\"s margin.", "Screenshots are the receipts of the digital age.", "The comment section is not a research desk.", "Compounding rewards the boring and bills the brilliant.", "Time in the market funds more seats than timing the market.", "Wealth is quiet; it compounds while you sleep and skip the show."];function buildSlide(){return d.createElement('div');}function lead(slide,text){var b=d.createElement('b');b.textContent=text;slide.appendChild(b);}function pick3(idx){var out=[],base=(idx*3)%POOL.length;for(var j=1;4>j;j++){out.push(POOL[(base+j*3)%POOL.length]);}return out;}var boxes=[].slice.call(d.querySelectorAll('.kss-pending'));boxes.forEach(function(box,bi){var slides=[];var first=buildSlide();first.className='kss-slide kss-on';while(box.firstChild){first.appendChild(box.firstChild);}box.appendChild(first);slides.push(first);var p3=pick3(bi);for(var k=0;p3.length>k;k++){var s=buildSlide();s.className='kss-slide';lead(s,"CA's corner:");s.appendChild(d.createTextNode(' '+p3[k]));box.appendChild(s);slides.push(s);}var cur=0,timer=null;function size(){var sh=slides[cur].offsetHeight;if(sh){box.style.minHeight=sh+'px';}}function show(n){cur=(n+slides.length)%slides.length;slides.forEach(function(s,si){s.classList.toggle('kss-on',si===cur);});size();}function arm(){if(timer){w.clearInterval(timer);}timer=w.setInterval(function(){show(cur+1);},6200+bi*750);}if(!reduce){box.addEventListener('mouseenter',function(){if(timer){w.clearInterval(timer);timer=null;}});box.addEventListener('mouseleave',arm);arm();}});})();</script><style>/* HERO LAYOUT REPAIR &#8212; scoped to the three edited page heroes only. */.kf-layout,.kf-layout *{box-sizing:border-box;}.kf-layout{--kf-ink:#241610;--kf-accent:#9C4522;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:clamp(14px,3vw,40px);align-items:center;width:100%;min-width:0;text-align:left;}.kf-layout>.kf-copy{min-width:0;width:100%;padding:0;margin:0;text-align:left;}.kf-layout>.kf-note{min-width:0;width:100%;max-width:370px;justify-self:end;align-self:center;margin:0;padding:0;}.kf-news,.kf-atlas{position:relative;padding:clamp(26px,4vw,44px) 0 clamp(24px,3.5vw,36px);background:linear-gradient(180deg,rgba(246,227,211,.8),rgba(248,240,227,0));border-radius:0 0 22px 22px;}.knews.kf-layout.kn-hero::before,.knews.kf-layout.kn-hero::after{display:none;}.kf-layout.kn-h1,.kf-layout.kp-h1{font-size:clamp(30px,4.6vw,54px);line-height:1.12;margin:18px 0 12px;text-align:left;letter-spacing:-.025em;}.kf-layout.kn-kick,.kf-layout.kp-kick{max-width:100%;font-size:10px;line-height:1.6;letter-spacing:.18em;padding:7px 13px;border:1px dashed #BC5B33;background:#FBF1E5;}.kf-layout.kn-sub,.kf-layout.kp-sub{max-width:none;margin:12px 0 0;text-align:left;font-size:14px;line-height:1.75;}.kf-layout.kn-date{font-size:11px;line-height:1.6;letter-spacing:.04em;margin:8px 0;}.kf-layout.kn-chips,.kf-layout.kp-chips{justify-content:flex-start;gap:6px;margin:18px 0 0;}.kf-layout.kn-chip,.kf-layout.kp-chip{font-size:9px;line-height:1.6;padding:4px 9px;letter-spacing:.04em;}.kpg.kp-hero.kf-atlas-outer{padding:0;text-align:left;}.kpg.kf-atlas-outer>.kp-ticker{margin-top:10px;}.kpg.kf-atlas-outer>.kp-steps{margin-top:22px;}
+/* The sticky note is sized by its column, never by the combined width of its slides. */.kf-layout.kvP-hubwrap{width:100%;max-width:none;margin:0;padding:0;opacity:1;transform:none;}.kf-layout.kvP-panel,.kf-layout>.kcd-panel{position:relative;width:100%;min-width:0;max-width:370px;height:auto;min-height:0;margin:0;padding:15px 15px 12px;background:#FFFDF8;border:1px solid #EADCC8;border-radius:19px;box-shadow:0 20px 38px -26px rgba(36,22,16,.4);transform:rotate(.5deg);text-align:left;}.kf-layout.kvP-panel::before,.kf-layout>.kcd-panel::before{content:'';position:absolute;left:50%;top:-10px;bottom:auto;width:78px;height:20px;background:rgba(188,91,51,.22);border-left:2px dashed rgba(255,253,248,.75);border-right:2px dashed rgba(255,253,248,.75);transform:translateX(-50%) rotate(-3deg);}.kf-layout.kvP-deck,.kf-layout.kcd-deck{width:100%;min-width:0;overflow:hidden;border-radius:12px;}.kf-layout.kvP-track,.kf-layout.kcd-track{display:flex;width:100%;min-width:0;align-items:stretch;}.kf-layout.kvP-slide,.kf-layout.kcd-slide{flex:0 0 100%;width:100%;min-width:0;max-width:100%;padding:16px 13px 12px;background:#F8F0E3;border:1px solid #EADCC8;border-radius:12px;overflow:hidden;text-align:left;}.kf-layout.kvP-lhead{display:block;margin:0 0 8px;padding:0 0 7px;border-bottom:1px dashed #E3D3B3;}.kf-layout.kvP-lhead>b{display:block;font:700 9px/1.4 Inter,Arial,sans-serif;letter-spacing:.18em;margin-bottom:7px;color:#6E5D4B;}.kf-layout.kvP-caveat,.kf-layout.kcd-caveat{display:block;font:500 21px/1.15 Caveat,'Segoe Script',cursive;color:#9C4522;margin:0 0 9px;transform:none;}.kf-layout.kvP-lhead.kvP-caveat{margin:0;}.kf-layout.kvP-lrow,.kf-layout.kvP-srow,.kf-layout.kcd-srow{display:flex;align-items:baseline;justify-content:space-between;gap:9px;padding:8px 0;border-bottom:1px dashed rgba(156,69,34,.16);font:500 11.5px/1.45 Inter,Arial,sans-serif;letter-spacing:0;color:#241610;}.kf-layout.kvP-lrow:last-of-type,.kf-layout.kvP-srow:last-of-type,.kf-layout.kcd-srow:last-of-type{border-bottom:0;}.kf-layout.kvP-lrow>span,.kf-layout.kvP-srow>span,.kf-layout.kcd-srow>span{flex:1 1 0;min-width:0;font:inherit;letter-spacing:0;color:inherit;overflow-wrap:anywhere;}.kf-layout.kvP-lrow>i{display:none;}.kf-layout.kvP-lrow>b,.kf-layout.kvP-srow>b,.kf-layout.kcd-srow>b{flex:0 1 46%;min-width:0;max-width:46%;font:700 10px/1.45 Inter,Arial,sans-serif;letter-spacing:.02em;white-space:normal;overflow-wrap:anywhere;color:#9C4522;text-align:right;opacity:1;transform:none;animation:none;}.kf-layout.kvP-fine{font:400 10.5px/1.5 Inter,Arial,sans-serif;margin:10px 0 0;color:#7A6854;}.kf-layout.kvP-prog,.kf-layout.kcd-prog{height:3px;margin:12px 2px 7px;background:#EADCC8;border-radius:99px;}.kf-layout.kcd-fine{margin:8px 3px 2px;font:500 16px/1.35 Caveat,'Segoe Script',cursive;color:#6E5D4B;text-align:center;}
+/* Override the old 880px stacking rule on Global Snapshot. */.kc-hero.kf-market{padding:clamp(26px,4vw,44px) 0 clamp(24px,3.5vw,36px);}.kf-market.kc-htop.kf-layout{grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:clamp(14px,3vw,40px);}.kf-market.kc-hcopy{text-align:left;}.kf-market.kc-hcopy h1{font-size:clamp(30px,4.6vw,54px);line-height:1.12;letter-spacing:-.025em;margin:18px 0 0;}.kf-market.kc-lede{font-size:14px;line-height:1.75;margin:14px 0 0;}.kf-market.kc-badge{max-width:100%;font-size:10px;line-height:1.6;letter-spacing:.18em;padding:7px 13px;}.kf-market.kc-htop.kc-squig{width:min(240px,90%);margin:6px 0 0;}.kf-market.kc-geoline{font-size:14px;line-height:1.5;justify-content:flex-start;}.kf-market.kc-flip i{white-space:normal;overflow-wrap:normal;}
+@media(max-width:600px){.kf-layout,.kf-market.kc-htop.kf-layout{grid-template-columns:minmax(0,1.04fr) minmax(0,.96fr);gap:12px;}.kf-news,.kf-atlas,.kc-hero.kf-market{padding:25px 0 24px;}.kf-layout.kn-h1,.kf-layout.kp-h1,.kf-market.kc-hcopy h1{font-size:clamp(23px,5.8vw,34px);line-height:1.12;margin-top:14px;}.kf-layout.kn-sub,.kf-layout.kp-sub,.kf-market.kc-lede{font-size:12px;line-height:1.65;}.kf-layout.kn-kick,.kf-layout.kp-kick,.kf-market.kc-badge{font-size:8px;letter-spacing:.1em;padding:6px 8px;}.kf-layout.kn-date{font-size:10px;letter-spacing:0;}.kf-layout.kn-chip,.kf-layout.kp-chip{font-size:8px;padding:3px 6px;}.kf-layout.kn-chips,.kf-layout.kp-chips{gap:4px;margin-top:12px;}.kf-layout.kvP-panel,.kf-layout>.kcd-panel{padding:8px 7px 8px;border-radius:14px;}.kf-layout.kvP-slide,.kf-layout.kcd-slide{padding:12px 8px 9px;border-radius:9px;}.kf-layout.kvP-caveat,.kf-layout.kcd-caveat{font-size:17px;}.kf-layout.kvP-lrow,.kf-layout.kvP-srow,.kf-layout.kcd-srow{font-size:10.5px;line-height:1.4;gap:5px;padding:7px 0;flex-wrap:wrap;}.kf-layout.kvP-lrow>span,.kf-layout.kcd-srow>span{flex-basis:100%;}.kf-layout.kvP-lrow>b,.kf-layout.kvP-srow>b,.kf-layout.kcd-srow>b{flex-basis:100%;max-width:100%;font-size:10px;line-height:1.4;text-align:left;}.kf-layout.kvP-fine{font-size:10px;line-height:1.4;}.kf-layout.kcd-fine{font-size:13px;}.kf-market.kc-geoline{font-size:12px;}
+}
+@media(prefers-reduced-motion:reduce){.kf-layout.kvP-slide,.kf-layout.kcd-slide{opacity:1;}.kf-layout.kvP-panel,.kf-layout>.kcd-panel{transform:none;}
+}
+/* Blogger theme compatibility: its broad !important div-width rules otherwise
+ override the note and carousel sizing. These overrides affect only our heroes. */.post-body.kf-layout.kf-layout{width:100%!important;max-width:100%!important;}.post-body.kf-layout.kf-layout>.kf-copy{width:100%!important;max-width:100%!important;}.post-body.kf-layout.kf-layout>.kf-note{width:100%!important;max-width:370px!important;min-width:0!important;}.post-body.kf-layout.kf-layout.kvP-hubwrap,.post-body.kf-layout.kf-layout.kvP-panel,.post-body.kf-layout.kf-layout.kvP-deck,.post-body.kf-layout.kf-layout.kcd-deck,.post-body.kf-layout.kf-layout.kvP-track,.post-body.kf-layout.kf-layout.kcd-track{width:100%!important;max-width:100%!important;}.post-body.kf-layout.kf-layout.kvP-slide,.post-body.kf-layout.kf-layout.kcd-slide{width:100%!important;max-width:100%!important;flex:0 0 100%!important;}.post-body.kf-layout.kf-layout.kvP-lrow,.post-body.kf-layout.kf-layout.kvP-srow,.post-body.kf-layout.kf-layout.kcd-srow{flex-wrap:nowrap!important;}.post-body.kf-layout.kf-layout.kvP-fine{margin:10px 0 0!important;}.post-body.kf-layout.kf-layout.kcd-fine{margin:8px 3px 2px!important;}.post-body.kf-layout.kf-layout.kn-sub,.post-body.kf-layout.kf-layout.kp-sub{margin:12px 0 0!important;}.post-body.kf-layout.kf-layout.kc-lede{margin:14px 0 0!important;}
+@media(max-width:600px){.post-body:has(.kf-layout){padding-left:0!important;padding-right:0!important;}.post-body.knews:has(.kf-layout),.post-body.kpg:has(.kf-layout){padding-left:12px!important;padding-right:12px!important;}.post-body.wrap:has(.kf-layout){padding-left:12px!important;padding-right:12px!important;}.post-body.kf-layout.kf-layout.kvP-lrow,.post-body.kf-layout.kf-layout.kvP-srow,.post-body.kf-layout.kf-layout.kcd-srow{flex-wrap:wrap!important;}
+}
+</style></div></div><style>/* Additive edition: original page skins stay intact. Only new.enh-* elements use this skin. */
+#enhancedSite{position:relative;max-width:1180px;margin:auto;--eh-ink:#2b1d15;--eh-accent:#a4512d;--eh-line:#e1caab;--eh-paper:#fffaf0}
+#enhancedSite.enh-toolbar{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:10px 8px;margin-bottom:8px;border-bottom:1px dashed #d9c4a4;color:#947557;font:600 9px/1.5 Inter,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase}#enhancedSite.enh-toolbar a{color:inherit;text-decoration:none}#enhancedSite.enh-effects{font:600 10px/1.5 Inter,Arial,sans-serif;padding:7px 12px;border:1px solid #d9c4a4;background:#fff9ee;color:#8a4429;border-radius:30px;cursor:pointer;white-space:nowrap}
+#enhancedSite.enh-announcement{display:flex;align-items:center;justify-content:space-between;gap:12px;border-block:1px dashed #d8bc99;padding:13px 18px;background:#f2dfbf40;margin:20px 0;color:#8a5233;font:500 11px/1.8 Inter,Arial,sans-serif}#enhancedSite.enh-announcement a{color:#9c4522;font-weight:700;text-decoration:none;white-space:nowrap}
+#enhancedSite.enh-module{position:relative;isolation:isolate;margin:45px 0 20px;padding:clamp(23px,3.8vw,44px);border:1px solid #dec6a4;border-radius:5px 22px 5px 22px;background:radial-gradient(ellipse at 100% 0,#e6c29638,transparent 50%),#fffaf0;color:#2b1d15;box-shadow:0 25px 55px -45px #805333;overflow:hidden;font:14px/1.8 Inter,Arial,sans-serif;scroll-margin-top:50px}
+#enhancedSite.enh-module::before{content:'';position:absolute;inset:9px;border:1px solid #c9a77833;border-radius:2px 16px 2px 16px;pointer-events:none;z-index:-1}#enhancedSite.enh-module *{box-sizing:border-box}#enhancedSite.enh-kicker{display:block;font:700 9px/1.5 Inter,Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#a4512d;margin-bottom:13px}
+#enhancedSite.enh-module h2{font:600 clamp(26px,3.4vw,39px)/1.2 'Playfair Display',Georgia,serif;color:#2b1d15;margin:0 0 15px;letter-spacing:-.025em}#enhancedSite.enh-module h2 em{color:#a4512d;font-weight:500}#enhancedSite.enh-intro{font:400 13px/1.85 Inter,Arial,sans-serif;color:#79624e;max-width:810px;margin:0 0 26px}#enhancedSite.enh-module h3{font:600 23px/1.3 'Playfair Display',Georgia,serif;margin:0 0 12px;color:#2b1d15}
+#enhancedSite.enh-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}#enhancedSite.enh-card{--rx:0deg;--ry:0deg;position:relative;display:block;min-width:0;padding:24px 22px;border:1px solid #e2cdb0;border-radius:13px;background:#fffdf6;color:#2b1d15;text-decoration:none!important;transform:perspective(800px) rotateX(var(--rx)) rotateY(var(--ry));transition:transform.25s ease,box-shadow.25s ease,border-color.25s ease;overflow:hidden;isolation:isolate}#enhancedSite.enh-card::after{content:'';position:absolute;inset:-40%;background:linear-gradient(110deg,transparent 40%,#dba75a13 50%,transparent 60%);transform:translateX(-70%);pointer-events:none;z-index:-1}#enhancedSite.enh-card:hover{border-color:#bd8b56;box-shadow:0 18px 30px -25px #995f2a}#enhancedSite.enh-card:hover::after{animation:enh-shine 1.1s ease}
+#enhancedSite.enh-card p{font:400 12px/1.85 Inter,Arial,sans-serif;color:#816953;margin:0 0 20px}#enhancedSite.enh-card small{font:700 10px/1.6 Inter,Arial,sans-serif;letter-spacing:.04em;color:#9c4522}#enhancedSite.enh-icon{display:block;width:44px;height:44px;margin-bottom:23px;fill:none;stroke:#a75c35;stroke-width:1.35;stroke-linecap:round;stroke-linejoin:round}#enhancedSite.enh-icon path{stroke-dasharray:160;stroke-dashoffset:0}#enhancedSite.enh-card:hover.enh-icon path{animation:enh-draw 1.3s ease}
+#enhancedSite.enh-trail{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin:25px 0 8px;border:1px solid #d9bf98;border-radius:12px;overflow:hidden}#enhancedSite.enh-trail div{padding:22px;border-right:1px dashed #d9bf98;background:#f7ead1}#enhancedSite.enh-trail div:last-child{border:0}#enhancedSite.enh-trail b{display:block;font:italic 28px/1.1 Georgia,serif;color:#ad683d;margin-bottom:10px}#enhancedSite.enh-trail strong{display:block;font-size:12px;color:#5f3f26;margin-bottom:7px}#enhancedSite.enh-trail span{font-size:11px;line-height:1.8;color:#806346}
+#enhancedSite.enh-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 18px}#enhancedSite.enh-tab{font:600 11px/1.5 Inter,Arial,sans-serif;color:#895032;border:1px solid #d7bc97;background:#fffaf0;padding:10px 15px;border-radius:25px;cursor:pointer}#enhancedSite.enh-tab[aria-selected=true]{background:#352319;border-color:#352319;color:#fff2df}#enhancedSite.enh-panel{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;padding:25px;background:repeating-linear-gradient(transparent 0 31px,#a4754120 32px),#f6e8cf;border:1px solid #dfc5a0;border-radius:4px 16px 4px 16px}#enhancedSite.enh-panel[hidden]{display:none!important}#enhancedSite.enh-panel h3{font-size:27px}#enhancedSite.enh-panel p{font-size:13px;line-height:1.85;color:#715235;margin:0 0 12px}#enhancedSite.enh-panel ul{margin:0;padding-left:17px;font:12px/1.9 Inter,Arial,sans-serif;color:#806044}#enhancedSite.enh-panel a{color:#954a28;font-weight:700;font-size:11px}#enhancedSite.enh-panel.enh-selected{animation:enh-note.45s ease}
+#enhancedSite.enh-details{margin:14px 0 0;border-top:1px dashed #ccb08a;padding:14px 0;font:12px/1.85 Inter,Arial,sans-serif;color:#775b43}#enhancedSite.enh-details summary{cursor:pointer;font-weight:700;color:#6d472b}#enhancedSite.enh-fine{font:400 10px/1.75 Inter,Arial,sans-serif;color:#92765c;margin:18px 0 0}#enhancedSite.enh-callout{padding:16px 20px;border-left:3px solid #af6036;border-radius:0 9px 9px 0;background:#efe0c5;margin:20px 0;font:12px/1.85 Inter,Arial,sans-serif;color:#805932}
+
+#enhancedSite.enh-pulse{animation:enh-pulse.6s ease}#enhancedSite [data-enhanced-note]{position:relative}
+/* Keep the original page's revelation effects visible in standalone and sandbox previews. */
+#enhancedSite.reveal,#enhancedSite.reveal.will-reveal{opacity:1;visibility:visible}#enhancedSite.enh-in{animation:enh-enter.65s cubic-bezier(.2,.7,.2,1) both}
+/* Preserve the approved left/right heroes without flattening their original skins. */
+#enhancedSite .kvP-in,#enhancedSite .kc-htop{display:grid!important;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr)!important;gap:clamp(14px,3vw,38px)!important;align-items:center}#enhancedSite .kvP-in>*,#enhancedSite .kc-htop>*{min-width:0;max-width:100%;width:100%}#enhancedSite .kvP-in>.kvP-panel,#enhancedSite .kc-htop>.kcd-panel{max-width:370px!important;justify-self:end}#enhancedSite .kvP-in .kvP-h1,#enhancedSite .kc-htop h1{font-size:clamp(26px,4.5vw,54px)}
+#enhancedSite.kc-guide{grid-template-columns:repeat(2,minmax(0,1fr))}#enhancedSite.kc-guide>*{min-width:0}#enhancedSite.kc-pick>*{min-width:0;white-space:normal;overflow-wrap:anywhere}#enhancedSite.kc-locale label{min-width:0;max-width:100%;flex-wrap:wrap}#enhancedSite.kc-locale select{min-width:0;max-width:100%}
+#enhancedSite.enh-controls :focus-visible,#enhancedSite.enh-module :focus-visible,#enhancedSite.enh-toolbar :focus-visible{outline:3px solid #ac6237;outline-offset:4px}
+#enhancedSite[data-effects=paused] *,#enhancedSite[data-effects=paused] *::before,#enhancedSite[data-effects=paused] *::after{animation-play-state:paused!important;transition:none!important}
+@keyframes enh-enter{from{opacity:.6;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}@keyframes enh-shine{to{transform:translateX(70%)}}@keyframes enh-draw{from{stroke-dashoffset:160}to{stroke-dashoffset:0}}@keyframes enh-note{from{opacity:.55;transform:translateY(8px) rotate(-.3deg)}to{opacity:1;transform:none}}@keyframes enh-pulse{30%{box-shadow:0 0 0 4px #b4743130}}.post-body #enhancedSite{width:100%!important;max-width:1180px!important}.post-body #enhancedSite.enh-module,.post-body #enhancedSite.enh-grid,.post-body #enhancedSite.enh-panel,.post-body #enhancedSite.enh-trail{width:100%!important;max-width:100%!important}.post-body #enhancedSite.enh-card,.post-body #enhancedSite.enh-panel>*,.post-body #enhancedSite.enh-trail>*{width:100%!important;max-width:100%!important;min-width:0!important}.post-body #enhancedSite .kvP-in>*,.post-body #enhancedSite .kc-htop>*{width:100%!important;max-width:100%!important;min-width:0!important}.post-body #enhancedSite .kvP-in>.kvP-panel,.post-body #enhancedSite .kc-htop>.kcd-panel{max-width:370px!important}
+@media(max-width:700px){#enhancedSite.enh-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#enhancedSite.enh-panel{grid-template-columns:1fr;gap:12px;padding:20px}#enhancedSite.enh-trail{grid-template-columns:1fr}#enhancedSite.enh-trail div{border-right:0;border-bottom:1px dashed #d9bf98;padding:18px 22px}#enhancedSite.enh-module{padding:25px 19px;margin:30px 0 15px}#enhancedSite.enh-announcement{font-size:10px;align-items:start}#enhancedSite.enh-announcement a{white-space:normal}#enhancedSite .kvP-in .kvP-h1,#enhancedSite .kc-htop h1{font-size:clamp(24px,5.8vw,34px)!important}#enhancedSite .kvP-in.kvP-lede,#enhancedSite .kc-htop.kc-lede{font-size:12px;line-height:1.7}#enhancedSite .kvP-in .kvP-panel,#enhancedSite .kc-htop.kcd-panel{padding:12px 10px!important}#enhancedSite .kvP-in.kvP-slide,#enhancedSite .kc-htop.kcd-slide{padding:12px 8px!important}#enhancedSite .kvP-in.kvP-srow,#enhancedSite .kvP-in.kvP-lrow,#enhancedSite .kc-htop.kcd-srow{font-size:10px!important;line-height:1.5;gap:5px;flex-wrap:wrap}#enhancedSite .kvP-in.kvP-lrow>b,#enhancedSite .kc-htop.kcd-srow>b{font-size:12px!important;white-space:normal}#enhancedSite .kvP-in.kvP-caveat,#enhancedSite .kc-htop.kcd-caveat{font-size:18px!important}#enhancedSite .kvP-in.kvP-fine{font-size:10px!important}#enhancedSite.kc-guide{grid-template-columns:minmax(0,1fr)}#enhancedSite.kc-locale label{width:100%}#enhancedSite.kc-locale select{flex:1 1 120px}}
+@media(max-width:450px){#enhancedSite.enh-grid{grid-template-columns:1fr}#enhancedSite.enh-card{padding:22px}#enhancedSite.enh-icon{margin-bottom:14px}#enhancedSite.enh-module{padding:25px 16px}#enhancedSite.enh-toolbar{font-size:8px}#enhancedSite.enh-effects{font-size:9px}}
+@media(prefers-reduced-motion:reduce){#enhancedSite *,#enhancedSite *::before,#enhancedSite *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}#enhancedSite.enh-card{transform:none!important}}
+
+#enhancedSite,#enhancedSite *{box-sizing:border-box}#enhancedSite.kn-tile>img{display:block;width:100%;height:100%;object-fit:cover;transition:transform.6s ease}#enhancedSite.kn-tile:hover>img{transform:scale(1.045)}
+/* Keep the original ledger details legible when animation is reduced or paused. */
+@media(prefers-reduced-motion:reduce){#enhancedSite.kvP-lrow b,#enhancedSite.kvP-lrow i{opacity:1!important;transform:none!important}}
+#enhancedSite[data-effects=paused].kvP-lrow b{opacity:1!important;transform:none!important}
+@media(max-width:700px){#enhancedSite .kvP-in.kvP-lhead{display:block!important;padding-bottom:9px!important}#enhancedSite .kvP-in.kvP-lhead>b{font-size:8px!important;letter-spacing:.16em!important;display:block;margin:0 0 7px}#enhancedSite .kvP-in.kvP-lhead.kvP-caveat{display:block;max-width:100%;margin:0;font-size:17px!important}#enhancedSite .kvP-in.kvP-lrow i{display:none}#enhancedSite .kvP-in.kvP-lrow{display:block!important;padding:7px 0}#enhancedSite .kvP-in.kvP-lrow span{font-size:10px}#enhancedSite .kvP-in.kvP-lrow b{display:block;font-size:15px!important;margin-top:4px}#enhancedSite .kvP-swrow{display:block;font-size:10px!important;padding:8px 0!important}#enhancedSite .kvP-swrow>.kvP-sw{display:flex!important;justify-content:space-between;align-items:center;width:100%!important;gap:7px;margin-top:6px}#enhancedSite .kvP-swrow>.kvP-sw i{flex:0 0 35px;width:35px!important;height:20px!important}#enhancedSite .kvP-swrow>.kvP-sw i::before{width:14px!important;height:14px!important;top:3px!important}#enhancedSite .kvP-swrow>.kvP-sw.on i::before{left:17px!important}}
+@media(max-width:700px){#enhancedSite.kvP-contact #kvPtype{font-size:16px!important;line-height:1.5!important}#enhancedSite.kvP-contact #statusChip{display:block!important;width:100%;max-width:100%;border-radius:14px;letter-spacing:0;font-size:9px!important;line-height:1.5;padding:10px!important}#enhancedSite.kvP-contact #clock{display:block;font-size:9px!important;line-height:1.5;letter-spacing:0}}
+/* The approved News photos occupy the same uniform panels as the original art. */
+#enhancedSite.kn-tile>img{height:160px;object-fit:cover}@media(max-width:600px){#enhancedSite.kn-tile>img{height:130px}}
+</style><script>/* Additive interactions: no original calculator or data engine is replaced. */
+(function(){'use strict';var root=document.getElementById('enhancedSite');if(!root||root.dataset.enhanced)return;root.dataset.enhanced='true';var media=matchMedia('(prefers-reduced-motion: reduce)'),paused=media.matches,btn=root.querySelector('.enh-effects');
+function sync(){root.dataset.effects=paused?'paused':'playing';if(btn){btn.textContent=paused?'Play effects':'Pause effects';btn.setAttribute('aria-pressed',String(paused));}var ar=root.querySelector('#ar-motion');if(ar&&((paused&&ar.getAttribute('aria-pressed')!=='true')||(!paused&&ar.getAttribute('aria-pressed')==='true')))ar.click();}if(btn)btn.addEventListener('click',function(){paused=!paused;sync();});sync();if(media.addEventListener)media.addEventListener('change',function(e){paused=e.matches;sync();});
+root.querySelectorAll('.enh-tabset').forEach(function(set){var tabs=[].slice.call(set.querySelectorAll('.enh-tab')),panels=set.querySelectorAll('.enh-panel');function activate(i,focus){tabs.forEach(function(t,j){t.setAttribute('aria-selected',String(i===j));t.tabIndex=i===j?0:-1;});panels.forEach(function(p,j){p.hidden=i!==j;p.classList.remove('enh-selected');if(i===j&&!paused){void p.offsetWidth;p.classList.add('enh-selected');}});if(focus)tabs[i].focus();}tabs.forEach(function(t,i){t.addEventListener('click',function(){activate(i,false);});t.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();activate((i+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length,true);}if(e.key==='Home'){e.preventDefault();activate(0,true);}if(e.key==='End'){e.preventDefault();activate(tabs.length-1,true);}});});activate(0,false);});
+var reveal=root.querySelectorAll('.reveal,.tl-item,.enh-module,.enh-card,.kc-sec,.kn-sec,.ar-section');if('IntersectionObserver' in window){var ob=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;ob.unobserve(e.target);e.target.classList.add('in');e.target.classList.remove('will-reveal');if(!paused){e.target.classList.add('enh-in');var target=e.target;setTimeout(function(){target.classList.remove('enh-in');},720);}});},{threshold:.04});reveal.forEach(function(e){ob.observe(e);});}else reveal.forEach(function(e){e.classList.add('in');e.classList.remove('will-reveal');});
+if(matchMedia('(pointer:fine)').matches)root.querySelectorAll('.enh-card').forEach(function(card){card.addEventListener('pointermove',function(e){if(paused)return;var r=card.getBoundingClientRect();card.style.setProperty('--rx',((.5-(e.clientY-r.top)/r.height)*3).toFixed(2)+'deg');card.style.setProperty('--ry',(((e.clientX-r.left)/r.width-.5)*4).toFixed(2)+'deg');});card.addEventListener('pointerleave',function(){card.style.setProperty('--rx','0deg');card.style.setProperty('--ry','0deg');});});
+root.addEventListener('input',function(e){if(paused||!e.target.closest('.kc-sec'))return;var section=e.target.closest('.kc-sec'),out=section.querySelector('.kc-receipt,.kc-ticket,.kc-result,.kc-out');if(out){out.classList.remove('enh-pulse');void out.offsetWidth;out.classList.add('enh-pulse');}});
+})();
+</script><style id="professional-page-layout">/* Page hierarchy only. Theme header/footer/navigation remain outside these snippets. */
+#enhancedSite[data-layout=professional]{padding-top:12px;padding-bottom:20px}
+#enhancedSite.pr-page{padding:0 clamp(12px,2vw,24px)!important}
+#enhancedSite.pr-page>.pr-hero{margin:0 0 24px!important;border:1px solid #e3ccb0;border-radius:8px 24px 8px 24px;isolation:isolate}
+#enhancedSite.pr-page>.pr-hero:first-child{margin-top:0!important}
+#enhancedSite .pr-local-nav{display:flex;align-items:center;flex-wrap:wrap;column-gap:8px;row-gap:0;margin:0 0 32px;padding:10px 0;border-bottom:1px solid #ddc8ac;font:500 11px/1.5 Inter,Arial,sans-serif}
+#enhancedSite .pr-nav-label{color:#95765b;text-transform:uppercase;letter-spacing:.13em;font-size:9px;font-weight:700;margin-right:14px}
+#enhancedSite .pr-local-nav a{display:inline-flex;align-items:center;min-height:44px;padding:8px 10px;color:#794c30;text-decoration:none;border-radius:6px;transition:background.2s}
+#enhancedSite .pr-local-nav a:hover{background:#ead2af40;color:#9b4221}
+#enhancedSite .pr-local-nav a:focus-visible,#enhancedSite.pr-index-heading:focus-visible{outline:2px solid #a45b32;outline-offset:3px}
+#enhancedSite.pr-page>.section-head,#enhancedSite.pr-page>.rs-head{padding-top:clamp(30px,4vw,48px);padding-bottom:20px}
+#enhancedSite.pr-page>.story,#enhancedSite.pr-page>.author{margin-top:32px;margin-bottom:32px}
+#enhancedSite.pr-page>.enh-module{margin-top:36px;margin-bottom:28px}
+#enhancedSite.pr-page>.cta{margin-top:40px}
+#enhancedSite.pr-page>.enh-toolbar{margin:32px 0 12px;padding:18px 0 4px;border-top:1px solid #e3d1b9;border-bottom:0;letter-spacing:.07em}
+#enhancedSite.pr-page>.enh-announcement{margin:30px 0 0;padding:15px 0;background:transparent;border-top:1px solid #e3d1b9;border-bottom:0;font-size:10px}
+#enhancedSite.pr-page>.enh-announcement a{font-size:10px;white-space:normal;text-align:right;max-width:155px}
+#enhancedSite.pr-index-heading{grid-column:1/-1;display:block!important;margin-top:12px;padding:8px 0;border-bottom:1px solid #dfc8a7;color:#8e4c29!important;background:none!important;box-shadow:none!important;border-radius:0!important;font:700 10px/1.5 Inter,Arial,sans-serif;text-decoration:none;text-transform:uppercase;letter-spacing:.12em}
+#enhancedSite.pr-index-heading:first-child{margin-top:0}
+#enhancedSite.pr-group-divider{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:20px 0 12px;margin:34px 0 0;border-bottom:1px solid #d5b894;color:#8e4c29;font:600 11px/1.6 Inter,Arial,sans-serif;scroll-margin-top:100px}
+#enhancedSite.pr-group-divider strong{text-transform:uppercase;letter-spacing:.14em;font-size:10px}
+#enhancedSite.pr-group-divider span{color:#9b8069;font-variant-numeric:tabular-nums;white-space:nowrap;font-size:10px}
+#enhancedSite.pr-page>[id]{scroll-margin-top:100px}
+#enhancedSite.pr-page>.ar-mast{margin:12px 0 22px;padding:10px 0;border-top:0;justify-content:flex-start;text-align:left}
+#enhancedSite.pr-page>.ar-toolbar{margin-top:24px;margin-bottom:18px}
+#enhancedSite.pr-page>.ar-directory{margin-top:0}
+#enhancedSite.pr-page>.doc{margin-top:32px}
+@media(max-width:600px){
+ #enhancedSite .pr-local-nav{margin-bottom:22px;padding:6px 0;column-gap:4px}
+ #enhancedSite .pr-nav-label{flex-basis:100%;padding:8px 8px 0;font-size:9px}
+ #enhancedSite .pr-local-nav a{font-size:10px;padding:7px 8px}
+ #enhancedSite.pr-page>.pr-hero{margin-bottom:18px!important;border-radius:5px 16px 5px 16px}
+ #enhancedSite.pr-page>.section-head,#enhancedSite.pr-page>.rs-head{padding-top:28px;padding-bottom:17px}
+ #enhancedSite.pr-group-divider{margin-top:25px;gap:10px}
+ #enhancedSite.pr-group-divider strong{font-size:9px;letter-spacing:.1em}
+ #enhancedSite.pr-page>.enh-toolbar{margin-top:25px}
+}
+
+#enhancedSite.pr-page>.ar-mast{display:block;font-size:11px;line-height:1.7}
+#enhancedSite.pr-page>.ar-mast>span{display:block;text-align:left;max-width:none;width:auto}
+#enhancedSite.pr-page>.kp-steps{margin-top:36px;margin-bottom:28px}
+/* Inset hero copy as well as the note; a framed heading must not touch its border. */
+#enhancedSite.pr-page>.pr-hero{padding-left:clamp(14px,2vw,24px)!important;padding-right:clamp(14px,2vw,24px)!important}
+/* Local links remain compact even inside Blogger's broad post-body styling. */.post-body #enhancedSite .pr-local-nav a,.post-body #enhancedSite .pr-nav-label{width:auto!important;max-width:100%!important}.post-body #enhancedSite.pr-index-heading{width:100%!important}
+@media(max-width:700px){
+ /* Blogger already supplies mobile gutters: avoid narrowing the two-column hero twice. */.post-body #enhancedSite.pr-page{padding-left:0!important;padding-right:0!important}
+ #enhancedSite.kcd-srow,#enhancedSite.kvP-srow{display:block!important}
+ #enhancedSite.kcd-srow>span,#enhancedSite.kvP-srow>span{display:block!important;width:auto!important}
+ #enhancedSite.kcd-srow>b,#enhancedSite.kvP-srow>b{display:block!important;width:auto!important;max-width:100%!important;text-align:left!important;margin-top:4px}
+ #enhancedSite.kcd-fine{font:14px/1.6 'Caveat',cursive!important;margin:12px 0 0!important}
+ #enhancedSite.kc-geoline,#enhancedSite.kc-geoline em{font-size:11px!important;line-height:1.65!important}
+}
+</style></div>
+<script data-global-snapshot-nav="1">(function(){var u="https://millededgeindia.blogspot.com/p/global-snapshot.html";document.querySelectorAll('a[href*="share-market_0718113516"]').forEach(function(a){a.href=u;var s=a.querySelector('span');if(s)s.textContent='Global Snapshot';else if(a.textContent.trim())a.textContent='Global Snapshot';a.setAttribute('aria-label','Global Snapshot');a.setAttribute('title','Global Snapshot')})})();</script>
+ DY_PAGE_FAMILY_START 
+ DY_PAGE_FAMILY_END 
+ DY_SEO_META_START 
+ DY_SEO_META_END 
+ DY_BRAND_IDENTITY_START 
+ DY_BRAND_IDENTITY_END 
+ DY_BRAND_SEO_START 
+ DY_BRAND_SEO_END 

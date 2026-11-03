@@ -1,17 +1,18 @@
-name: Fix Markets Today links
+name: Clean retired routes and page links
 
 on:
   push:
     paths:
       - 'content/markets-today.html'
-      - 'scripts/publish_markets_today.py'
+      - 'content/pages-fixes/**'
+      - 'scripts/cleanup_site_pages.py'
       - '.github/workflows/publish-markets-today.yml'
 
 permissions:
   contents: read
 
 jobs:
-  update-existing-page:
+  update-existing-pages:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -19,10 +20,10 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install --quiet google-auth google-api-python-client
-      - name: Patch the existing page in Blogger
+      - name: Patch the five existing pages in place
         working-directory: scripts
         env:
           GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
           GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
           GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
-        run: python publish_markets_today.py
+        run: python cleanup_site_pages.py

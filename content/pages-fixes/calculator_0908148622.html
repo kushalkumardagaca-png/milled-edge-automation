@@ -1,0 +1,1759 @@
+ DY_CONTINUOUS_MOTION_START 
+<style id="dyContinuousMotionStyle">
+.kvsd-mqwrap,.kn-rowwrap,.dyw-marquee,.marquee,.ar-viewport,.dy-related-viewport{cursor:grab;touch-action:pan-y;user-select:none;-webkit-user-select:none;overscroll-behavior-inline:contain}.dy-grabbing{cursor:grabbing!important}.dy-grabbing a,.dy-grabbing button{pointer-events:none}.dy-native-loop{scrollbar-width:none!important;-ms-overflow-style:none}.dy-native-loop::-webkit-scrollbar{display:none!important}
+</style>
+<script id="dyContinuousMotionScript">
+(function(w,d){'use strict';
+ /* Homepage motion is intentionally owned by the Theme and remains unchanged. */
+ if(d.body&&d.body.classList.contains('fk-home'))return;
+ var reduced=w.matchMedia&&w.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ function bind(view,track,speed,auto){
+ if(!view||view.dataset.dyMotion)return;view.dataset.dyMotion='3';view.classList.add('dy-native-loop');
+ if(track){track.style.animation='none';track.style.animationPlayState='running';track.style.transform='none';track.style.flexWrap='nowrap';track.style.maxWidth='none'}
+ var drag=null,moved=false,last=0,pausedUntil=0,hover=false;
+ function cycle(){if(!track)return 0;var first=track.querySelector('.dyw-category-copy,.dy-related-group');return first?first.scrollWidth:track.scrollWidth/2}
+ function normalize(){var c=cycle();if(c>0){while(view.scrollLeft>=c)view.scrollLeft-=c;while(view.scrollLeft<0)view.scrollLeft+=c}}
+ function delay(ms){pausedUntil=Date.now()+ms}
+ view.addEventListener('pointerdown',function(e){if(e.pointerType==='mouse'&&e.button!==0)return;drag={x:e.clientX,s:view.scrollLeft,id:e.pointerId};moved=false;pausedUntil=0;view.classList.add('dy-grabbing');try{view.setPointerCapture(e.pointerId)}catch(_){}});
+ view.addEventListener('pointermove',function(e){if(!drag)return;var dx=e.clientX-drag.x;if(Math.abs(dx)>5)moved=true;var next=drag.s-dx,c=cycle();if(next<0&&c>0){drag.s+=c;next+=c}view.scrollLeft=next;if(moved)e.preventDefault()});
+ function end(){if(!drag)return;var id=drag.id;drag=null;normalize();view.classList.remove('dy-grabbing');try{if(view.hasPointerCapture(id))view.releasePointerCapture(id)}catch(_){}delay(180);if(moved){view.dataset.dySwiped='1';setTimeout(function(){delete view.dataset.dySwiped},420)}}
+ view.addEventListener('pointerup',end);view.addEventListener('pointercancel',end);view.addEventListener('lostpointercapture',end);w.addEventListener('blur',end);
+ view.addEventListener('pointerenter',function(e){if(e.pointerType==='mouse')hover=true});view.addEventListener('pointerleave',function(e){if(e.pointerType==='mouse'){hover=false;delay(250)}});
+ view.addEventListener('click',function(e){if(view.dataset.dySwiped){e.preventDefault();e.stopPropagation()}},true);view.addEventListener('dragstart',function(e){e.preventDefault()});
+ view.addEventListener('wheel',function(e){var delta=Math.abs(e.deltaX)>Math.abs(e.deltaY)?e.deltaX:(e.shiftKey?e.deltaY:0);if(!delta)return;view.scrollLeft+=delta;normalize();delay(900);e.preventDefault()},{passive:false});
+ function frame(ts){if(!last)last=ts;var dt=Math.min(.05,(ts-last)/1000);last=ts;if(auto&&!drag&&!hover&&Date.now()>pausedUntil&&!reduced&&!d.hidden&&track&&track.scrollWidth>view.clientWidth+8){view.scrollLeft+=speed*dt;normalize()}w.requestAnimationFrame(frame)}w.requestAnimationFrame(frame)
+ }
+ function scan(){
+ if(d.body&&d.body.classList.contains('fk-home'))return;
+ d.querySelectorAll('.kvsd-mqwrap').forEach(function(v){bind(v,v.querySelector('.kvsd-mq'),72,true)});
+ d.querySelectorAll('.kn-rowwrap').forEach(function(v){bind(v,v.querySelector('.kn-track'),72,true)});
+ d.querySelectorAll('.dyw-marquee').forEach(function(v){bind(v,v.querySelector('.dyw-category-track'),72,true)});
+ d.querySelectorAll('.marquee').forEach(function(v){bind(v,v.querySelector('.marquee-track'),72,true)});
+ d.querySelectorAll('.dy-related-viewport').forEach(function(v){bind(v,v.querySelector('.dy-related-track'),72,true)});
+ d.querySelectorAll('.ar-viewport').forEach(function(v){bind(v,null,0,false)});
+ }
+ if(d.readyState==='loading')d.addEventListener('DOMContentLoaded',scan);else scan();new MutationObserver(scan).observe(d.documentElement,{childList:true,subtree:true});
+})(window,document);
+</script>
+ DY_CONTINUOUS_MOTION_END 
+<div data-layout="professional" data-page="calculator" id="enhancedSite"><div class="enh-original">
+<script>document.documentElement.className += ' js';</script>
+<style>
+/* &#9552;&#9552;&#9552; THE CALCULATOR DESK v3.1 &#183; self-contained page skin (safe to paste) &#9552;&#9552;&#9552; */
+:root{
+ --paper:#F8F0E3;--surface:#FFFDF8;--ink:#241610;--muted:#6E5D4B;
+ --accent:#BC5B33;--accent-dark:#9C4522;--accent-soft:#F6E3D3;--line:#EADCC8;
+ --note1:#FFF3C9;
+}.wrap{max-width:1080px;margin:0 auto;padding:0 clamp(16px,4vw,48px)}.kc-sec{scroll-margin-top:130px}
+
+/* &#9472;&#9472;&#9472; hero &#9472;&#9472;&#9472; */.kc-hero{text-align:center;padding:clamp(28px,6vw,58px) 0 clamp(30px,5vw,48px);position:relative;background:linear-gradient(180deg,#F6E3D3 0%,rgba(246,227,211,.5) 52%,rgba(248,240,227,0) 100%);border-radius:0 0 26px 26px}.kc-htop{display:grid;grid-template-columns:1.04fr.96fr;gap:clamp(22px,4vw,44px);align-items:center}.kc-hcopy{text-align:left}.kc-htop.kcd-panel{margin:0;max-width:none}.kc-htop.kc-squig{margin:6px 0 0}.kc-htop.kc-geoline{margin-top:18px}
+@media (max-width:880px){.kc-htop{grid-template-columns:1fr;gap:4px}.kc-hcopy{text-align:center}.kc-htop.kc-squig{margin:6px auto 0}.kc-htop.kcd-panel{margin:26px auto 0;max-width:520px}
+}.kc-badge{display:inline-block;font:700 11px Inter,-apple-system,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--accent-dark);background:var(--accent-soft);border:2px dashed var(--accent-dark);border-radius:99px;padding:8px 18px;transform:rotate(-2deg);box-shadow:2px 3px 0 rgba(156,69,34,.18)}.kc-hero h1{font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:clamp(34px,6.4vw,60px);line-height:1.12;color:var(--ink);margin:20px 0 0;letter-spacing:.01em}.kc-flip{position:relative;display:inline-block;color:var(--accent-dark)}.kc-flip i{font-style:normal;display:none;white-space:nowrap}.kc-flip i.on{display:inline-block;animation:flipIn.55s cubic-bezier(.34,1.56,.64,1)}.kc-flip i.out{display:inline-block;position:absolute;left:0;top:0;animation:flipOut.4s ease forwards}
+@keyframes flipIn{from{opacity:0;transform:rotateX(78deg) translateY(-10px)}to{opacity:1;transform:none}}
+@keyframes flipOut{to{opacity:0;transform:rotateX(-72deg) translateY(10px)}}.kc-squig{display:block;width:min(300px,62%);height:14px;margin:6px auto 0;overflow:visible}.kc-squig path{fill:none;stroke:var(--accent);stroke-width:4;stroke-linecap:round;stroke-dasharray:330;stroke-dashoffset:330;animation:sqDraw 1.1s ease.35s forwards}
+@keyframes sqDraw{to{stroke-dashoffset:0}}.kc-lede{max-width:660px;margin:18px auto 0;font:400 clamp(14.5px,2vw,16.5px)/1.7 Inter,-apple-system,sans-serif;color:var(--muted)}
+html.js.kc-badge,html.js.kc-hero h1,html.js.kc-lede,html.js.kc-geoline{animation:fadeUp.7s cubic-bezier(.22,.8,.36,1) backwards}
+html.js.kc-hero h1{animation-delay:.12s}html.js.kc-lede{animation-delay:.24s}html.js.kc-geoline{animation-delay:.4s}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+
+/* &#9472;&#9472;&#9472; hero slide-deck panel (5 slides, overflow-safe rows) &#9472;&#9472;&#9472; */.kcd-panel{position:relative;max-width:520px;margin:34px auto 0;background:var(--surface);border:1.5px solid var(--line);border-radius:20px;padding:16px 16px 12px;box-shadow:0 22px 44px -26px rgba(36,22,16,.32);transform:rotate(.6deg);text-align:left;box-sizing:border-box}.kcd-panel::before{content:'';position:absolute;top:-11px;left:50%;width:92px;height:22px;background:rgba(188,91,51,.22);transform:translateX(-50%) rotate(-3deg);border-left:2px dashed rgba(255,253,248,.75);border-right:2px dashed rgba(255,253,248,.75)}.kcd-deck{overflow:hidden;border-radius:14px;box-sizing:border-box}.kcd-track{display:flex;width:100%;transition:transform.55s cubic-bezier(.22,.8,.36,1);box-sizing:border-box}.kcd-slide{flex:0 0 100%;min-width:100%;box-sizing:border-box;background:var(--paper);border:1.5px dashed var(--line);border-radius:14px;padding:16px 18px 12px;opacity:.4;transition:opacity.5s ease;overflow:hidden}.kcd-slide.kcd-now{opacity:1}.kcd-slide:nth-child(2){background:#F9EFE0}.kcd-slide:nth-child(3){background:#FBEDE2}.kcd-slide:nth-child(4){background:#F7EBDB}.kcd-slide:nth-child(5){background:#FAEEE3}.kcd-caveat{display:block;margin:-2px 0 6px;font-family:Caveat,'Segoe Script',cursive;font-size:25px;color:var(--accent-dark);transform:rotate(-1.4deg)}.kcd-srow{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:7.5px 2px;border-bottom:1.5px dashed rgba(156,69,34,.16);font:600 13.5px/1.4 Inter,-apple-system,sans-serif;color:var(--ink)}.kcd-srow:last-child{border-bottom:none}.kcd-srow span{flex:1 1 auto;min-width:0;overflow-wrap:anywhere}.kcd-srow b{flex:0 1 auto;min-width:0;max-width:58%;text-align:right;overflow-wrap:anywhere;font:800 11.5px Inter,-apple-system,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-dark)}.kcd-prog{height:4px;margin:12px 4px 8px;background:var(--accent-soft);border-radius:99px;overflow:hidden}.kcd-prog i{display:block;height:100%;width:0;background:var(--accent);border-radius:99px}.kcd-fine{margin:2px 0 0;text-align:center;font-family:Caveat,cursive;font-size:18.5px;color:var(--muted)}
+html.js.kcd-panel{animation:fadeUp.8s cubic-bezier(.22,.8,.36,1).35s backwards}
+
+/* &#9472;&#9472;&#9472; geo line + welcome &#9472;&#9472;&#9472; */.kc-geoline{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-family:Caveat,cursive;font-size:20px;color:var(--accent-dark)}.kc-geoline svg{width:19px;height:19px;stroke:var(--accent-dark);fill:none;stroke-width:2}.kc-sub{margin:26px 0 0;font:400 15px/1.75 Inter,-apple-system,sans-serif;color:var(--muted)}.kc-sub strong{color:var(--ink)}
+
+/* &#9472;&#9472;&#9472; sections: stamp + giant numeral + drawn underline &#9472;&#9472;&#9472; */.kc-sec{position:relative;margin-top:clamp(48px,7.5vw,78px)}.kc-sec::before{content:attr(data-n);position:absolute;top:-46px;right:-8px;z-index:0;font:800 clamp(64px,10vw,124px)/1 Inter,-apple-system,sans-serif;letter-spacing:-.05em;color:transparent;-webkit-text-stroke:2px rgba(156,69,34,.15);pointer-events:none;opacity:1}
+html.js.kc-sec::before{opacity:0;transform:translateY(12px) scale(.96);transition:opacity.7s ease.18s,transform.7s ease.18s}
+html.js.kc-sec.kc-in::before{opacity:1;transform:none}.kc-shead{position:relative;z-index:1}.kc-stamp{display:inline-block;font:700 10.5px Inter,-apple-system,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--accent-dark);background:rgba(246,227,211,.55);border:2px dashed var(--accent-dark);border-radius:7px;padding:6px 12px;transform:rotate(-2.4deg)}
+html.js.kc-in.kc-stamp{animation:stampIn.55s cubic-bezier(.34,1.56,.64,1).12s backwards}
+@keyframes stampIn{from{opacity:0;transform:rotate(-9deg) scale(1.9)}to{opacity:1;transform:rotate(-2.4deg) scale(1)}}.kc-shead h2{position:relative;display:inline-block;margin:12px 0 0;font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:clamp(24px,3.7vw,37px);color:var(--ink)}.kc-ul{position:absolute;left:2%;bottom:-11px;width:96%;height:12px;overflow:visible}.kc-ul path{fill:none;stroke:var(--accent);stroke-width:3.5;stroke-linecap:round;stroke-dasharray:330;stroke-dashoffset:330}.kc-in.kc-ul path{stroke-dashoffset:0;transition:stroke-dashoffset 1s ease.3s}.kc-ann{display:inline-block;margin-left:12px;font-family:Caveat,cursive;font-size:clamp(18px,2vw,21px);color:var(--accent);transform:rotate(-1.6deg)}
+html.js.kc-sec{opacity:0;transform:translateY(30px);transition:opacity.75s ease,transform.75s cubic-bezier(.22,.8,.36,1)}
+html.js.kc-sec.kc-in{opacity:1;transform:none}
+
+/* &#9472;&#9472;&#9472; per-calculator country + currency bar &#9472;&#9472;&#9472; */.kc-locale{position:relative;z-index:1;display:flex;align-items:center;flex-wrap:wrap;gap:9px 14px;background:linear-gradient(135deg,var(--accent-soft) 0%,#FFF7EC 100%);border:1.5px dashed var(--accent);border-radius:14px;padding:10px 14px;margin:18px 0 16px;box-shadow:3px 3px 0 rgba(188,91,51,.12)}.kc-locale label{display:inline-flex;align-items:center;gap:7px;font:700 10.5px Inter,-apple-system,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}.kc-locale select{font:600 13.5px Inter,-apple-system,sans-serif;color:var(--ink);background:var(--accent-soft);border:1.5px solid var(--line);border-radius:9px;padding:7px 9px;max-width:230px}.kc-locale select:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(188,91,51,.16)}.kc-lglobe{width:20px;height:20px;stroke:var(--accent-dark);fill:none;stroke-width:2;flex:0 0 20px}.kc-lhint{margin-left:auto;font-family:Caveat,cursive;font-size:17.5px;color:var(--accent-dark)}
+
+/* &#9472;&#9472;&#9472; control desk (inputs) &#9472;&#9472;&#9472; */.kc-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.06fr.94fr;gap:clamp(18px,3vw,30px);align-items:start}.kc-card{position:relative;background:linear-gradient(180deg,#FFFDF8 0%,#FDF5E8 100%);border:1.5px solid var(--line);border-radius:18px;padding:clamp(16px,2.6vw,26px);box-shadow:0 18px 36px -22px rgba(36,22,16,.28)}.kc-card::before{content:'';position:absolute;top:-12px;left:26px;width:74px;height:22px;background:rgba(188,91,51,.2);transform:rotate(-4deg);border-left:2px dashed rgba(255,253,248,.7);border-right:2px dashed rgba(255,253,248,.7)}.kc-chead{display:flex;align-items:center;gap:8px;padding-bottom:10px;margin-bottom:4px;border-bottom:1.5px dashed var(--line)}.kc-chead b{font:800 10.5px Inter,-apple-system,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}.kc-chead svg{width:17px;height:17px;stroke:var(--accent-dark);fill:var(--surface);stroke-width:1.8}.kc-chint{margin-left:auto;font-family:Caveat,cursive;font-size:17px;color:var(--accent-dark);transform:rotate(-1.6deg)}.kc-row-i{display:grid;grid-template-columns:1fr 118px;gap:4px 14px;align-items:center;padding:11px 0;border-bottom:1px dashed var(--line)}.kc-row-i:last-of-type{border-bottom:none}.kc-row-i label{grid-column:1/-1;font:700 10.5px Inter,-apple-system,sans-serif;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}.kc-row-i select{grid-column:1/-1;font:600 14px Inter,-apple-system,sans-serif;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:10px;padding:9px 10px;width:100%}.kc-row-i select:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(188,91,51,.16)}.kc-rng{position:relative;display:block}.kc-bub{position:absolute;bottom:26px;left:50%;transform:translateX(-50%) translateY(5px);background:var(--ink);color:#FFFDF8;font:700 11px Inter,-apple-system,sans-serif;padding:4px 9px;border-radius:8px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity.18s ease,transform.18s ease;z-index:3}.kc-bub::after{content:'';position:absolute;top:100%;left:50%;transform:translateX(-50%);border:5px solid transparent;border-top-color:var(--ink)}.kc-rng.drag.kc-bub{opacity:1;transform:translateX(-50%) translateY(0)}.kc-numw{position:relative;display:block}.kc-numw::before{content:attr(data-sym);position:absolute;left:10px;top:50%;transform:translateY(-50%);font:700 12px Inter,-apple-system,sans-serif;color:var(--muted);pointer-events:none;max-width:46px;overflow:hidden}.kc-numw input{padding-left:30px}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:8px;border-radius:99px;background:#EADCC8;outline:none;margin:6px 0;cursor:pointer}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:var(--accent);border:3px solid var(--surface);box-shadow:0 2px 6px rgba(36,22,16,.32);cursor:grab;transition:transform.2s ease}
+input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.15)}
+input[type=range]:active::-webkit-slider-thumb{cursor:grabbing;transform:scale(1.22)}
+input[type=range]::-moz-range-thumb{width:16px;height:16px;border-radius:50%;background:var(--accent);border:3px solid var(--surface);box-shadow:0 2px 6px rgba(36,22,16,.32);cursor:grab}
+input[type=range]:focus-visible{box-shadow:0 0 0 3px rgba(188,91,51,.2)}
+input[type=number]{width:100%;font:700 15.5px Inter,-apple-system,sans-serif;text-align:right;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:10px;padding:8px 10px}
+input[type=number]:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(188,91,51,.16)}
+
+/* &#9472;&#9472;&#9472; the live board (results) &#9472;&#9472;&#9472; */.kc-board{position:relative;background:linear-gradient(180deg,#FFFDF8 0%,#FBF1E2 100%);border:1.5px solid var(--line);border-radius:18px;padding:16px 18px 14px;box-shadow:0 18px 36px -22px rgba(36,22,16,.28);overflow:hidden}.kc-board::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:repeating-linear-gradient(90deg,var(--accent) 0 16px,var(--accent-dark) 16px 32px);opacity:.75}.kc-btop{display:flex;align-items:center;gap:9px;margin-top:4px}.kc-btag{display:inline-flex;align-items:center;gap:5px;font:800 9px Inter,-apple-system,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}.kc-btag i{width:7px;height:7px;border-radius:50%;background:var(--accent);animation:dotP 1.5s ease-in-out infinite}
+@keyframes dotP{0%,100%{opacity:.35;transform:scale(.85)}50%{opacity:1;transform:scale(1.15)}}.kc-btop>b{font:800 11px Inter,-apple-system,sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--ink)}.kc-copy{margin-left:auto;font:700 10px Inter,-apple-system,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-dark);background:transparent;border:1.5px dashed var(--accent-dark);border-radius:99px;padding:5px 11px;cursor:pointer;transition:background.25s ease,transform.25s ease}.kc-copy:hover{background:var(--accent-soft);transform:translateY(-1px)}.kc-copy:active{transform:scale(.95)}.kc-big{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;margin-top:13px;padding:11px 12px;background:var(--paper);border:1.5px dashed var(--line);border-radius:12px}.kc-big span{font:800 9.5px Inter,-apple-system,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}.kc-big b{margin-left:auto;display:inline-block;font:800 clamp(21px,2.6vw,27px) Inter,-apple-system,sans-serif;font-variant-numeric:tabular-nums;color:var(--accent-dark);white-space:nowrap}.kc-bump{animation:kcBump.5s cubic-bezier(.34,1.56,.64,1)}
+@keyframes kcBump{35%{transform:scale(1.06)}70%{transform:scale(.985)}}.kc-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.kc-chip{flex:1 1 130px;background:var(--paper);border:1.5px dashed var(--line);border-radius:11px;padding:7px 11px}.kc-chip span{display:block;font:700 8.5px Inter,-apple-system,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}.kc-chip b{font:800 14px Inter,-apple-system,sans-serif;font-variant-numeric:tabular-nums;color:var(--ink)}.kc-chart{display:block;width:100%;height:auto;margin-top:13px}.kc-ct{font:700 9px Inter,-apple-system,sans-serif;fill:#8A7A63;letter-spacing:.05em}.kc-ctw{fill:var(--accent-dark);font-size:10px;font-weight:800}.kc-cbig{font:800 17px Inter,-apple-system,sans-serif;fill:var(--ink)}.kc-cl{fill:none;stroke:var(--accent-dark);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}.kc-cl2{fill:none;stroke:#8A7A63;stroke-width:1.8;stroke-dasharray:5 5}.kc-area{fill:rgba(188,91,51,.1)}.kc-dotg{fill:var(--accent);stroke:var(--surface);stroke-width:2}.kc-leg{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px}.kc-leg span{display:inline-flex;align-items:center;gap:6px;font:600 10.5px Inter,-apple-system,sans-serif;color:var(--muted)}.kc-leg i{display:inline-block;width:14px;height:4px;border-radius:99px}.lg-a{background:var(--accent-dark)}.lg-b{background:repeating-linear-gradient(90deg,#8A7A63 0 4px,transparent 4px 7px)}.lg-c{background:#3A2A1C}.kc-bfine{margin-top:11px;text-align:center;font:700 8.5px Inter,-apple-system,sans-serif;letter-spacing:.28em;color:var(--muted)}
+
+/* &#9472;&#9472;&#9472; entrances for card + board &#9472;&#9472;&#9472; */
+html.js.kc-card{opacity:0;transform:translateX(-26px)}
+html.js.kc-board{opacity:0;transform:translateX(26px)}
+html.js.kc-in.kc-card,html.js.kc-in.kc-board{opacity:1;transform:none;transition:opacity.7s ease,transform.7s cubic-bezier(.22,.8,.36,1)}
+html.js.kc-in.kc-board{transition-delay:.15s}
+
+/* &#9472;&#9472;&#9472; formula strip, notes, tips, warnings &#9472;&#9472;&#9472; */.kc-formula{display:inline-block;margin-top:16px;font:600 13px ui-monospace,'Cascadia Mono',Consolas,monospace;color:var(--accent-dark);background:var(--accent-soft);border:1.5px dashed rgba(156,69,34,.45);border-radius:10px;padding:7px 13px;transform:rotate(-.5deg)}.kc-note-fine{margin:12px 2px 0;font:italic 400 12.5px/1.6 Georgia,serif;color:var(--muted)}.kc-tip{display:inline-block;margin:20px 0 0;font-family:Caveat,cursive;font-size:21px;line-height:1.25;color:var(--ink);background:var(--note1);padding:9px 18px;transform:rotate(-.7deg);box-shadow:2px 3px 0 rgba(36,22,16,.08);border-radius:4px}.kc-tip b{color:var(--accent-dark);font-weight:700}.kc-warn{margin:12px 4px 0;font-family:Caveat,cursive;font-size:19px;line-height:1.4;color:var(--accent-dark)}
+
+/* &#9472;&#9472;&#9472; country guide &#9472;&#9472;&#9472; */.kc-guide{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,3vw,28px);margin-top:4px}.kc-list h4{margin:0 0 12px;padding-bottom:7px;border-bottom:2px solid var(--accent-soft);font:800 11.5px Inter,-apple-system,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--accent-dark)}.kc-pick{display:flex;justify-content:space-between;align-items:center;gap:10px;width:100%;text-align:left;background:var(--surface);border:1.5px solid var(--line);border-radius:12px;padding:10px 14px;margin:0 0 8px;cursor:pointer;font:600 13.5px Inter,-apple-system,sans-serif;color:var(--ink);box-shadow:2px 2px 0 rgba(36,22,16,.06);transition:transform.25s ease,border-color.25s ease,box-shadow.25s ease}.kc-pick em{font:800 12px Inter,-apple-system,sans-serif;font-style:normal;white-space:nowrap;color:var(--accent-dark);background:var(--accent-soft);border-radius:99px;padding:3px 10px}.kc-pick:hover{transform:translateY(-2px) rotate(-.4deg);border-color:var(--accent);box-shadow:3px 5px 0 rgba(188,91,51,.16)}
+
+
+/* &#9472;&#9472;&#9472; desk index (quick jump) &#9472;&#9472;&#9472; */.kc-index{position:relative;z-index:1;background:linear-gradient(180deg,#FFFDF8 0%,#FBF1E2 100%);border:1.5px solid var(--line);border-radius:18px;padding:16px 18px 16px;margin-top:26px;box-shadow:0 18px 36px -22px rgba(36,22,16,.28)}.kc-index::before{content:'';position:absolute;top:-12px;left:26px;width:74px;height:22px;background:rgba(188,91,51,.2);transform:rotate(-4deg);border-left:2px dashed rgba(255,253,248,.7);border-right:2px dashed rgba(255,253,248,.7)}.kc-ihead{display:flex;align-items:center;gap:10px;padding-bottom:10px;margin-bottom:12px;border-bottom:1.5px dashed var(--line)}.kc-ihead b{font:800 10.5px Inter,-apple-system,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}.kc-ihint{margin-left:auto;font-family:Caveat,cursive;font-size:17px;color:var(--accent-dark);transform:rotate(-1.6deg)}.kc-ilinks{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.kc-icard{position:relative;display:flex;flex-direction:column;gap:4px;background:var(--paper);border:1.5px solid var(--line);border-radius:14px;padding:12px 13px 36px;min-height:124px;text-decoration:none;overflow:hidden;transition:transform.25s cubic-bezier(.22,.8,.36,1),border-color.25s ease,box-shadow.25s ease,background.25s ease}.kc-icard:hover{transform:translateY(-3px);border-color:var(--accent);box-shadow:3px 6px 0 rgba(188,91,51,.14)}.kc-inum{font:800 19px Inter,-apple-system,sans-serif;letter-spacing:.02em;color:transparent;-webkit-text-stroke:1.2px var(--accent-dark);opacity:.9}.kc-iic{position:absolute;top:9px;right:10px;width:31px;height:28px}.kc-iic path,.kc-iic circle,.kc-iic ellipse{fill:none;stroke:var(--accent-dark);stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}.kc-it{font:800 13.5px/1.25 Inter,-apple-system,sans-serif;color:var(--ink);padding-right:26px}.kc-id{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-family:Caveat,cursive;font-size:16.5px;line-height:1.1;color:var(--accent-dark);transform:rotate(-1.2deg);padding-right:2px}.kc-igo{position:absolute;bottom:8px;right:12px;font:800 12px Inter,-apple-system,sans-serif;color:var(--accent-dark);opacity:0;transform:translateX(-5px);transition:opacity.22s ease,transform.22s ease}.kc-icard:hover.kc-igo{opacity:1;transform:none}.kc-icard.here{background:var(--accent-dark);border-color:var(--accent-dark);box-shadow:3px 6px 0 rgba(36,22,16,.18)}.kc-icard.here.kc-inum{-webkit-text-stroke:1.2px #FFFDF8}.kc-icard.here.kc-it,.kc-icard.here.kc-igo{color:#FFFDF8}.kc-icard.here.kc-id{color:#FFE9D9}.kc-icard.here.kc-iic path,.kc-icard.here.kc-iic circle,.kc-icard.here.kc-iic ellipse{stroke:#FFFDF8}
+@media (max-width:880px){.kc-ilinks{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:700px){.kc-ilinks{grid-template-columns:repeat(2,1fr);gap:11px}.kc-icard{padding:11px 12px 34px;min-height:118px}.kc-ilinks>.kc-icard:nth-child(odd){transform:rotate(-.7deg)}.kc-ilinks>.kc-icard:nth-child(even){transform:rotate(.7deg)}.kc-id{font-size:15.5px}}
+
+/* &#9472;&#9472;&#9472; page toast &#9472;&#9472;&#9472; */
+#kcToast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(8px);background:var(--ink);color:#FFFDF8;font:700 12.5px Inter,-apple-system,sans-serif;padding:9px 16px;border-radius:99px;opacity:0;pointer-events:none;transition:opacity.28s ease,transform.28s ease;z-index:9999;box-shadow:0 8px 22px rgba(36,22,16,.35)}
+#kcToast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* &#9472;&#9472;&#9472; responsive &#9472;&#9472;&#9472; */
+@media (max-width:880px){.kc-grid{grid-template-columns:1fr}
+}
+@media (max-width:700px){.kcd-panel{padding:12px 10px 10px}.kcd-slide{padding:13px 12px 9px}.kcd-srow{font-size:12.5px;gap:8px;padding:7px 1px}.kcd-caveat{font-size:22px}.kc-guide{grid-template-columns:1fr}.kc-row-i{grid-template-columns:1fr 98px}.kc-lhint{display:none}.kc-sec::before{top:-34px}.kc-btop>b{letter-spacing:.14em}
+}
+@media (prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none !important;transition:none !important}
+ html.js.kc-sec{opacity:1;transform:none}
+ html.js.kc-sec::before{opacity:1;transform:none}
+ html.js.kc-card,html.js.kc-board{opacity:1;transform:none}.kc-squig path,.kc-ul path{stroke-dashoffset:0 !important}
+}
+</style>
+<div class="wrap pr-page"><section class="kc-hero pr-hero" id="kcTop">
+<div class="kc-htop">
+<div class="kc-hcopy">
+<span class="kc-badge">✳ the calculator desk · free · no sign-up</span>
+<h1>Money maths,<br/><span class="kc-flip" id="kcWord"><i class="on">sorted.</i><i>settled.</i><i>solved.</i><i>simplified.</i><i>decoded.</i><i>crunched.</i><i>planned.</i><i>handled.</i><i>done.</i></span></h1>
+<svg aria-hidden="true" class="kc-squig" viewbox="0 0 300 14"><path d="M4 9 C 60 3, 110 13, 158 7 S 258 4, 296 9"></path></svg>
+<p class="kc-lede">SIP, lump sum, SWP, annuity, loan EMI and interest on every kind of account — drag a slider or type the exact figure, pick your country &amp; currency inside each table, and watch the working stay in the open.</p>
+<p class="kc-geoline"><svg aria-hidden="true" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12 h18 M12 3 c3.5 3 3.5 15 0 18 M12 3 c-3.5 3 -3.5 15 0 18"></path></svg><em id="kcGeoNote" style="font-style:normal">detecting your location…</em></p>
+</div>
+<div class="kcd-panel">
+<div class="kcd-deck"><div class="kcd-track" id="kcDeck">
+<div class="kcd-slide"><span class="kcd-caveat">what's inside ✳</span>
+<div class="kcd-srow"><span>14 desks on one page</span><b>all free</b></div>
+<div class="kcd-srow"><span>loans, before you sign</span><b>table 01</b></div>
+<div class="kcd-srow"><span>budget · safety net · goals</span><b>05–07</b></div>
+<div class="kcd-srow"><span>card trap · emergency fund</span><b>04 · 06</b></div>
+</div>
+<div class="kcd-slide"><span class="kcd-caveat">how it works</span>
+<div class="kcd-srow"><span>drag a slider or type it exact</span><b>both live</b></div>
+<div class="kcd-srow"><span>country + currency per table</span><b>auto-set</b></div>
+<div class="kcd-srow"><span>every desk draws a live chart</span><b>watch it move</b></div>
+<div class="kcd-srow"><span>receipts copy + share</span><b>one tap</b></div>
+</div>
+<div class="kcd-slide"><span class="kcd-caveat">try this now ✳</span>
+<div class="kcd-srow"><span>crank the card APR to 42%</span><b>months explode</b></div>
+<div class="kcd-srow"><span>slide budget wants to 40%</span><b>savings shrink</b></div>
+<div class="kcd-srow"><span>add 5,000 extra EMI a month</span><b>years fall off</b></div>
+</div>
+<div class="kcd-slide"><span class="kcd-caveat">the honest bit</span>
+<div class="kcd-srow"><span>textbook formulas, shown fully</span><b>no tricks</b></div>
+<div class="kcd-srow"><span>rates are indicative only</span><b>banks differ</b></div>
+<div class="kcd-srow"><span>education, never advice</span><b>CA promise</b></div>
+</div>
+<div class="kcd-slide"><span class="kcd-caveat">before you go ✳</span>
+<div class="kcd-srow"><span>start at desk 01 or 05</span><b>emi or budget</b></div>
+<div class="kcd-srow"><span>the best day to start?</span><b>today</b></div>
+<div class="kcd-srow"><span>bookmark the desk</span><b>see you soon</b></div>
+</div>
+<div class="kcd-slide"><p class="kcd-caveat">the wider desk ✳</p><div class="kcd-srow"><span>Understand the question</span><b>Plain guides</b></div><div class="kcd-srow"><span>Test the assumptions</span><b>calculators</b></div><div class="kcd-srow"><span>Read the context</span><b>Markets + Atlas</b></div><div class="kcd-srow"><span>Plan a business case</span><b>For Corporate</b></div></div></div></div>
+<div class="kcd-prog"><i></i></div>
+<p class="kcd-fine">every receipt below is live — go on, slide something ✍</p>
+</div>
+</div></section><style id="dyDeskIndexStyle">
+/* Daily Yield desk index &#8212; one designed board, three desks. */
+.dxi{--dxi-ink:#241610;--dxi-muted:#7A6A57;--dxi-line:#E7D8C4;--dxi-soft:#F7E6D5;--dxi-accent:#BC5B33;--dxi-accent-dark:#9C4522;--dxi-paper:#FFFDF9;
+  position:relative;margin:34px 0 0;padding:clamp(18px,3.4vw,30px);border:1px solid var(--dxi-line);border-radius:22px;
+  background:linear-gradient(180deg,var(--dxi-paper) 0%,#FBF2E6 100%);box-shadow:0 26px 50px -34px rgba(36,22,16,.45);color:var(--dxi-ink);
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;box-sizing:border-box}
+.dxi *,.dxi *::before,.dxi *::after{box-sizing:inherit}
+.dxi::before{content:'';position:absolute;inset:0 auto 0 0;width:5px;border-radius:22px 0 0 22px;background:linear-gradient(180deg,var(--dxi-accent) 0%,#D98B5F 48%,#E8C49B 100%)}
+.dxi-head{position:relative;padding:0 0 16px;margin:0 0 22px;border-bottom:1px solid var(--dxi-line)}
+.dxi-eyebrow{margin:0;font:800 10px/1 Inter,sans-serif;letter-spacing:.26em;text-transform:uppercase;color:var(--dxi-accent-dark)}
+.dxi-title{margin:10px 0 0;font:800 clamp(23px,3.5vw,34px)/1.12 Georgia,"Playfair Display",serif;letter-spacing:-.01em;color:var(--dxi-ink)}
+.dxi-note{position:absolute;right:0;bottom:16px;margin:0;font:600 clamp(15px,1.7vw,19px)/1.2 Caveat,"Segoe Script",cursive;color:var(--dxi-accent);transform:rotate(-1.4deg);max-width:46%}
+.dxi-meta{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:14px 0 0}
+.dxi-chip{display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border:1px solid var(--dxi-line);border-radius:999px;background:#fff;
+  font:700 10px/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--dxi-muted)}
+.dxi-chip b{color:var(--dxi-accent-dark);font-weight:800}
+.dxi-chip--tip{border-style:dashed;color:var(--dxi-accent-dark);background:var(--dxi-soft)}
+.dxi-group{margin:0 0 26px}
+.dxi-group:last-child{margin-bottom:2px}
+.dxi-ghead{display:flex;align-items:center;gap:12px;margin:0 0 13px}
+.dxi-gnum{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:9px;background:var(--dxi-ink);color:#FFF6EC;
+  font:800 11.5px/1 Inter,sans-serif;font-variant-numeric:tabular-nums;letter-spacing:.02em;flex:0 0 30px}
+.dxi-gname{margin:0;font:800 11.5px/1.1 Inter,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--dxi-ink);white-space:nowrap}
+.dxi-gcount{font:700 10px/1 Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--dxi-accent-dark);background:var(--dxi-soft);
+  border-radius:999px;padding:4px 9px;white-space:nowrap}
+.dxi-gline{flex:1 1 40px;height:1px;min-width:18px;background:linear-gradient(90deg,var(--dxi-line),rgba(231,216,196,0))}
+/* one track count per group, so no row of the index ends in a hole */
+.dxi-grid{display:grid;grid-template-columns:repeat(var(--dxi-cols,4),minmax(min(196px,100%),318px));justify-content:center;gap:13px;list-style:none;margin:0;padding:0}
+.dxi-card{position:relative;display:flex;flex-direction:column;gap:9px;min-height:150px;padding:15px 15px 12px;border:1px solid var(--dxi-line);border-radius:15px;
+  background:#fff;color:var(--dxi-ink);text-decoration:none;overflow:hidden;transition:transform .22s cubic-bezier(.22,.8,.36,1),border-color .22s ease,box-shadow .22s ease}
+.dxi-card::before{content:'';position:absolute;left:14px;right:14px;top:0;height:2px;border-radius:0 0 2px 2px;background:linear-gradient(90deg,var(--dxi-accent),#E3A97F);opacity:0;transition:opacity .22s ease}
+.dxi-card:hover,.dxi-card:focus-visible{transform:translateY(-3px);border-color:var(--dxi-accent);box-shadow:0 20px 34px -26px rgba(156,69,34,.7),0 2px 0 rgba(188,91,51,.1);outline:none}
+.dxi-card:hover::before,.dxi-card:focus-visible::before,.dxi-card[aria-current]{opacity:1}
+.dxi-card:focus-visible{box-shadow:0 0 0 3px rgba(188,91,51,.28),0 20px 34px -26px rgba(156,69,34,.7)}
+.dxi-card:active{transform:translateY(-1px)}
+.dxi-top{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.dxi-num{font:800 12px/1 Inter,sans-serif;font-variant-numeric:tabular-nums;letter-spacing:.16em;color:var(--dxi-muted)}
+.dxi-ico{display:inline-flex;align-items:center;justify-content:center;width:clamp(44px,4.6vw,52px);height:clamp(44px,4.6vw,52px);
+  border-radius:15px;background:var(--dxi-soft);border:1px solid #EFD9C2;flex:0 0 auto}
+/* square, centred, never clipped: the glyph fills two thirds of the badge and its own geometry
+   decides the box, so an icon drawn wide is not squeezed and one drawn small is not flung off-centre */
+.dxi-ico svg{display:block;width:clamp(26px,2.9vw,32px);height:clamp(26px,2.9vw,32px);flex:0 0 auto}
+.dxi-ico svg *{fill:none;stroke:var(--dxi-accent-dark);stroke-width:var(--dxi-sw,1.9);stroke-linecap:round;stroke-linejoin:round}
+.dxi-name{font:800 14.5px/1.28 Inter,sans-serif;letter-spacing:-.005em;color:var(--dxi-ink)}
+.dxi-note2{margin:0;font:500 11.8px/1.45 Inter,sans-serif;color:var(--dxi-muted)}
+.dxi-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto;padding-top:9px;border-top:1px dashed var(--dxi-line)}
+.dxi-open{font:800 9.5px/1 Inter,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--dxi-accent-dark)}
+.dxi-arrow{font:800 13px/1 Inter,sans-serif;color:var(--dxi-accent);transition:transform .22s cubic-bezier(.22,.8,.36,1)}
+.dxi-card:hover .dxi-arrow,.dxi-card:focus-visible .dxi-arrow{transform:translateX(4px)}
+.dxi-card[aria-current="true"]{border-color:var(--dxi-accent);background:linear-gradient(180deg,#FFF8F1,#FDF0E4)}
+@media (max-width:900px){
+  .dxi-note{position:static;display:block;margin:10px 0 0;max-width:none;transform:none}
+  .dxi-grid{grid-template-columns:repeat(var(--dxi-cols-mid,3),minmax(min(168px,100%),300px))}
+}
+@media (max-width:560px){
+  .dxi{padding:16px 14px;border-radius:18px}
+  .dxi::before{border-radius:18px 0 0 18px}
+  .dxi-ghead{flex-wrap:wrap;gap:8px}
+  .dxi-gname{white-space:normal}
+  .dxi-gline{display:none}
+  .dxi-grid{grid-template-columns:repeat(auto-fit,minmax(146px,1fr));gap:11px}
+  .dxi-grid[data-odd="1"] .dxi-card:last-child{grid-column:1/-1}
+  .dxi-card{min-height:140px;padding:12px 12px 10px}
+  .dxi-ico{width:44px;height:44px}
+  .dxi-ico svg{width:27px;height:27px}
+  .dxi-name{font-size:13.5px}
+}
+@media (prefers-reduced-motion:reduce){
+  .dxi-card,.dxi-arrow{transition:none}
+  .dxi-card:hover{transform:none}
+}
+</style><script data-dy-desk-index="1">(function(){var d=document,n=d.querySelector('.dxi');if(!n||n.dataset.dyIndexReady)return;n.dataset.dyIndexReady='1';
+var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches,cards=[].slice.call(n.querySelectorAll('.dxi-card'));
+function target(a){var h=a.getAttribute('href')||'';return h.charAt(0)==='#'?d.getElementById(h.slice(1)):null}
+cards.forEach(function(a){a.addEventListener('click',function(ev){var t=target(a);if(!t||ev.metaKey||ev.ctrlKey||ev.shiftKey)return;ev.preventDefault();
+t.scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'});if(history.replaceState)history.replaceState(null,'',a.getAttribute('href'));
+cards.forEach(function(x){x.removeAttribute('aria-current')});a.setAttribute('aria-current','true')})});
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;
+cards.forEach(function(x){if(target(x)===e.target)x.setAttribute('aria-current','true')})})},{rootMargin:'-45% 0px -50% 0px'});
+cards.forEach(function(a){var t=target(a);if(t)io.observe(t)})}})();</script><nav aria-label="Calculator desk index" class="dxi"><header class="dxi-head"><p class="dxi-eyebrow">Desk index</p><h2 class="dxi-title">Pick a desk</h2><p class="dxi-note">fifteen calculators, grouped by task</p><div class="dxi-meta"><span class="dxi-chip">No sign-up</span><span class="dxi-chip">Nothing stored</span><span class="dxi-chip">Runs in your browser</span><span class="dxi-chip">45 countries</span><span class="dxi-chip dxi-chip--tip"><b>15</b> desks</span></div></header><div class="dxi-body"><section class="dxi-group"><header class="dxi-ghead"><span class="dxi-gnum">01</span><h3 class="dxi-gname">Borrow &amp; repay</h3><span class="dxi-gcount">4 desks</span><span aria-hidden="true" class="dxi-gline"></span></header><div class="dxi-grid" style="--dxi-cols:4;--dxi-cols-mid:2"><a class="dxi-card" href="#kc-emi"><span class="dxi-top"><span class="dxi-num">01</span><span class="dxi-ico"><svg aria-hidden="true" focusable="false" preserveaspectratio="xMidYMid meet" style="--dxi-sw:1.9" viewbox="1.25 -0.15 24 24"><path d="M3 11 L11 4 L19 11 M6 9.2 V18.5 H16 V9.2"></path><circle cx="19.6" cy="14.6" r="1.15"></circle><circle cx="22.4" cy="18.6" r="1.15"></circle><path d="M18.6 19.6 L23 13.4"></path></svg></span></span><strong class="dxi-name">Loan EMI</strong><span class="dxi-note2">the world’s no. 1 maths</span><span class="dxi-foot"><span class="dxi-open">Open desk</span><span aria-hidden="true" class="dxi-arrow">→</span></span></a><a class="dxi-card" href="#kc-af"><span class="dxi-top"><span class="dxi-num">02</span><span class="dxi-ico"><svg aria-hidden="true" focusable="false" preserveaspectratio="xMidYMid meet" style="--dxi-sw:1.7" viewbox="1.25 1.25 21.5 21.5"><path d="M4 19 v-6 M9 19 v-10 M14 19 v-7 M19 19 V5 M3 19 h18"></path></svg></span></span><strong class="dxi-name">Can I afford it?</strong><span class="dxi-note2">know your ceiling</span><span class="dxi-foot"><span class="dxi-open">Open desk</span><span aria-hidden="true" class="dxi-arrow">→</span></span></a><a class="dxi-card" href="#kc-pp"><span class="dxi-top"><span class="dxi-num">03</span><span class="dxi-ico"><svg aria-hidden="true" focusable="false" preserveaspectratio="xMidYMid meet" style="--dxi-sw:1.5" viewbox="2.25 2 19 19"><path d="M4 5 l7 6.5 L4 18 Z M12.5 5 l7 6.5 -7 6.5 Z"></path></svg></span></span><strong class="dxi-name">Prepay early</strong><span class="dxi-note2">small extra, huge save</span><span class="dxi-foot"><span class="dxi-open">Open desk</span><span aria-hidden="true" class="dxi-arrow">→</span></span></a><a class="dxi-card" href="#kc-cc"><span class="dxi-top"><span class="dxi-num">04</span><span class="dxi-ico"><svg aria-hidden="true" focusable="false" preserveaspectratio="xMidYMid meet" style="--dxi-sw:1.7" viewbox="1.25 1.25 21.5 21.5"><rect height="12" rx="2" width="18" x="3" y="6"></rect><path d="M3 10 H21 M6 14.5 H11"></path></svg></span></span><strong class="dxi-name">Card payoff</strong><span class="dxi-note2">stop feeding the card</span><span class="dxi-foot"><span class="dxi-open">Open desk</span><span aria-hidden="true" class="dxi-arrow">→</span></span></a></div></section><section class="dxi-group"><header class="dxi-ghead"><span class="dxi-gnum">02</span><h3 class="dxi-gname">Budget &amp; build a safety net</h3><span class="dxi-gcount">3 desks</span><span aria-hidden="true" class="dxi-gline"></span></header><div class="dxi-grid" data-odd="1" style="--dxi-cols:3;--dxi-cols-mid:3"><a class="dxi-card" href="#kc-bg"><span class="dxi-top"><span class="dxi-num">05</span><span class="dxi-ico"><svg aria-hidden="true" focusable="false" preserveaspectratio="xMidYMid meet" style="--dxi-sw:1.54" viewbox="2.25 1.25 19.5 19.5"><circle cx="12" cy="11" r="8"></circle><path d="M12 3 V11 L17.5 16.5"></path><path d="M12 11 L6.5 5.5"></path></svg></span></span><strong class="dxi-name">Budget 50/30/20</strong><span class="dxi-note2">every rupee gets a job</span><span class="dxi-foot"><span class="dxi-open">Open desk</span><span aria-hidden="true" class="dxi-arrow">→</span></span></a><a class="dxi-card" href="#kc-ef"><span class="dxi-top"><span class="dxi-num">06</span><span class="dxi-ico"><svg aria-hidden="true" focusable="false" preserveaspectratio="xMidYMid meet" style="--dxi-sw:1.78" viewbox="0.75 0.75 22.5 22.5"><path d="M12 4 c6 0 9 4.5 9.5 8.5 c-3 -1.5 -5 -1 -6.5.5 c-1.5 -2.5 -4.5 -2.5 -6 0 c-1.5 -1.5 -3.5 -2 -6.5 -.5 C3 8.5 6 4 12 4 Z M12 4 V20"></path></svg></span></span><strong class="dxi-name">Emergency fund</strong><span class="dxi-note2">sleep-at-night money</span><span class="dxi-foot"><span class="dxi-open">Open desk</span><span aria-hidden="true" class="dxi-arrow">→</span></span></a><a class="dxi-card" href="#kc-gl"><span class="dxi-top"><span class="dxi-num">07</span><span class="dxi-ico"><svg aria-hidden="true" focusable="false" preserveaspectratio="xMidYMid meet" style="--dxi-sw:1.5" viewbox="2.5 2.75 19 19"><path d="M5 20 V4.5 L12 8 L19 4.5 V13 L12 16.5 L5 13"></path></svg></span></span><strong class="dxi-name">Savings goal</strong><span class="dxi-note2">work backwards</span><span class="dxi-foot"><span class="dxi-open">Open desk</span><span aria-hidden="true" class="dxi-arrow">→</span></span></a></div></section><section class="dxi-group"><header class="dxi-ghead"><span class="dxi-gnum">03</span><h3 class="dxi-gname">Save &amp; invest</h3><span class="dxi-gcount">3 desks</span><span aria-hidden="true" class="dxi-gline"></span></header><div class="dxi-grid" data-odd="1" style="--dxi-cols:3;--dxi-cols-mid:3"><a class="dxi-card" href="#kc-sip"><span class="dxi-top"><span class="dxi-num">08</span><span class="dxi-ico"><svg aria-hidden="true" focusable="false" preserveaspectratio="xMidYMid meet" style="--dxi-sw:1.62" viewbox="1.25 1.25 20.5 20.5"><path d="M3 18 L9 12.5 L13 15 L20 5"></path><path d="M15.5 5 L20 5 L20 9.5"></path></svg></span></span><strong class="dxi-name">SIP</strong><span class="dxi-note2">the quiet wealth machine</span><span class="dxi-foot"><span class="dxi-open">Open desk</span><span aria-hidden="true" class="dxi-arrow">→</span></span></a><a class="dxi-card" href="#kc-lump"><span class="dxi-top"><span class="dxi-num">09</span><span class="dxi-ico"><svg aria-hidden="true" focusable="false" preserveaspectratio="xMidYMid meet" style="--dxi-sw:1.7" viewbox="1.25 0.75 21.5 21.5"><ellipse cx="9" cy="16" rx="6" ry="2.3"></ellipse><ellipse cx="9" cy="11.5" rx="6" ry="2.3"></ellipse><ellipse cx="9" cy="7" rx="6" ry="2.3"></ellipse><path d="M16.5 12 L21 5.5"></path><path d="M17.6 5.2 L21 5.5 L20.6 8.9"></path></svg></span></span><strong class="dxi-name">Lump sum</strong><span class="dxi-note2">patience, compounded</span><span class="dxi-foot"><span class="dxi-open">Open desk</span><span aria-hidden="true" class="dxi-arrow">→</span></span></a><a class="dxi-card" href="#kc-int"><span class="dxi-top"><span class="dxi-num">10</span><span class="dxi-ico"><svg aria-hidden="true" focusable="false" preserveaspectratio="xMidYMid meet" style="--dxi-sw:1.54" viewbox="2.25 1.5 19.5 19.5"><path d="M4 8.5 L12 3.5 L20 8.5 M5.5 8.5 V17 M9.8 8.5 V17 M14.2 8.5 V17 M18.5 8.5 V17 M4 19 H20"></path></svg></span></span><strong class="dxi-name">Interest &amp; FD</strong><span class="dxi-note2">the bank’s promise</span><span class="dxi-foot"><span class="dxi-open">Open desk</span><span aria-hidden="true" class="dxi-arrow">→</span></span></a></div></section><section class="dxi-group"><header class="dxi-ghead"><span class="dxi-gnum">04</span><h3 class="dxi-gname">Plan future income</h3><span class="dxi-gcount">4 desks</span><span aria-hidden="true" class="dxi-gline"></span></header><div class="dxi-grid" style="--dxi-cols:4;--dxi-cols-mid:2"><a class="dxi-card" href="#kc-rt"><span class="dxi-top"><span class="dxi-num">11</span><span class="dxi-ico"><svg aria-hidden="true" focusable="false" preserveaspectratio="xMidYMid meet" style="--dxi-sw:1.46" viewbox="2.75 2.75 18.5 18.5"><circle cx="12" cy="12" r="7.5"></circle><path d="M12 8 v4 l3 2.5 M4.5 4.5 L7 7 M19.5 4.5 L17 7"></path></svg></span></span><strong class="dxi-name">Retirement</strong><span class="dxi-note2">future you says thanks</span><span class="dxi-foot"><span class="dxi-open">Open desk</span><span aria-hidden="true" class="dxi-arrow">→</span></span></a><a class="dxi-card" href="#kc-swp"><span class="dxi-top"><span class="dxi-num">12</span><span class="dxi-ico"><svg aria-hidden="true" focusable="false" preserveaspectratio="xMidYMid meet" style="--dxi-sw:1.52" viewbox="1.25 0.05 19.2 19.2"><ellipse cx="8" cy="5.5" rx="5" ry="2.2"></ellipse><path d="M8 8 v8"></path><path d="M16 5 l0 8.5 m0 0 l-2.7 -2.7 M16 13.5 l2.7 -2.7"></path></svg></span></span><strong class="dxi-name">SWP</strong><span class="dxi-note2">salary from your corpus</span><span class="dxi-foot"><span class="dxi-open">Open desk</span><span aria-hidden="true" class="dxi-arrow">→</span></span></a><a class="dxi-card" href="#kc-ann"><span class="dxi-top"><span class="dxi-num">13</span><span class="dxi-ico"><svg aria-hidden="true" focusable="false" preserveaspectratio="xMidYMid meet" style="--dxi-sw:1.46" viewbox="2.75 1.75 18.5 18.5"><path d="M5 11.5 a7 7 0 0 1 12 -4.5"></path><path d="M17 3.5 v4 h-4"></path><path d="M19 10.5 a7 7 0 0 1 -12 4.5"></path><path d="M7 18.5 v-4 h4"></path></svg></span></span><strong class="dxi-name">Annuity</strong><span class="dxi-note2">why pensions sleep</span><span class="dxi-foot"><span class="dxi-open">Open desk</span><span aria-hidden="true" class="dxi-arrow">→</span></span></a><a class="dxi-card" href="#kc-infl"><span class="dxi-top"><span class="dxi-num">14</span><span class="dxi-ico"><svg aria-hidden="true" focusable="false" preserveaspectratio="xMidYMid meet" style="--dxi-sw:1.7" viewbox="1.25 -0.75 21.5 21.5"><path d="M3 7 l18 0 m0 0 l-4.5 -4 M21 7 l-4.5 4"></path><path d="M3 17 h11 a3.5 3.5 0 0 0 0 -7"></path></svg></span></span><strong class="dxi-name">Inflation</strong><span class="dxi-note2">the silent thief</span><span class="dxi-foot"><span class="dxi-open">Open desk</span><span aria-hidden="true" class="dxi-arrow">→</span></span></a></div></section><section class="dxi-group"><header class="dxi-ghead"><span class="dxi-gnum">05</span><h3 class="dxi-gname">Country reference</h3><span class="dxi-gcount">1 desk</span><span aria-hidden="true" class="dxi-gline"></span></header><div class="dxi-grid" data-odd="1" style="--dxi-cols:1;--dxi-cols-mid:1"><a class="dxi-card" href="#kc-cty"><span class="dxi-top"><span class="dxi-num">15</span><span class="dxi-ico"><svg aria-hidden="true" focusable="false" preserveaspectratio="xMidYMid meet" style="--dxi-sw:1.46" viewbox="2.75 1.75 18.5 18.5"><circle cx="12" cy="11" r="7.5"></circle><path d="M4.5 11 h15 M12 3.5 c3 3.4 3 11.6 0 15 M12 3.5 c-3 3.4 -3 11.6 0 15"></path></svg></span></span><strong class="dxi-name">World desk</strong><span class="dxi-note2">45 countries, your rates</span><span class="dxi-foot"><span class="dxi-open">Open desk</span><span aria-hidden="true" class="dxi-arrow">→</span></span></a></div></section></div></nav><p class="kc-sub"><strong>Welcome to the calculator desk.</strong> Every calculator runs the standard, textbook formulas — the same ones printed in CFA and banking literature — with nothing hidden. Each table below carries <strong>its own country &amp; currency picker</strong> (auto-set for you), so every number speaks your money's language. Use the sliders to explore, or type exact figures; the two always agree. And nothing you type goes anywhere — no sign-up, no storage, no uploads; every calculation runs inside your browser.</p><div class="pr-group-divider" id="calc-borrow"><strong>Borrow &amp; repay</strong><span>01 — 04</span></div><section class="kc-sec" data-n="01" id="kc-emi">
+<header class="kc-shead">
+<span class="kc-stamp">01 · borrowing well</span>
+<h2>Loan EMI calculator — every loan type<svg aria-hidden="true" class="kc-ul" viewbox="0 0 220 12"><path d="M3 8 C 55 2, 120 12, 217 5"></path></svg></h2>
+<span class="kc-ann">tenure is the biggest lever</span>
+</header>
+<p class="kc-sub">Pick a loan type — typical street rates for your country pre-fill themselves — then slide to your number.</p>
+<div class="kc-locale">
+<svg aria-hidden="true" class="kc-lglobe" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12 h18 M12 3 c3.5 3 3.5 15 0 18 M12 3 c-3.5 3 -3.5 15 0 18"></path></svg>
+<label>country <select aria-label="Country for loan EMI calculator" id="kcEmiCC"></select></label>
+<label>currency <select aria-label="Currency for loan EMI calculator" id="kcEmiCY"></select></label>
+</div>
+<div class="kc-grid">
+<div class="kc-card">
+<div class="kc-chead"><svg aria-hidden="true" viewbox="0 0 20 20"><path d="M3 5h14M3 10h14M3 15h14" fill="none"></path><circle cx="8" cy="5" r="2.3"></circle><circle cx="13" cy="10" r="2.3"></circle><circle cx="6" cy="15" r="2.3"></circle></svg><b>control desk</b><span class="kc-chint">slide or type</span></div>
+<div class="kc-row-i"><label for="kcEmiT">Loan type</label><select id="kcEmiT"></select></div>
+<div class="kc-row-i"><label for="kcEmiP">Loan amount</label><span class="kc-rng"><input id="kcEmiPR" max="50000000" min="50000" step="10000" type="range" value="5000000"/><span class="kc-bub"></span></span><span class="kc-numw" data-sym="₹"><input id="kcEmiP" min="10000" step="10000" type="number" value="5000000"/></span></div>
+<div class="kc-row-i"><label for="kcEmiR">Interest / yr</label><span class="kc-rng"><input id="kcEmiRR" max="36" min="1" step="0.05" type="range" value="8.5"/><span class="kc-bub"></span></span><input id="kcEmiR" max="36" min="0.5" step="0.05" type="number" value="8.5"/></div>
+<div class="kc-row-i"><label for="kcEmiY">Tenure (years)</label><span class="kc-rng"><input id="kcEmiYR" max="30" min="1" step="1" type="range" value="20"/><span class="kc-bub"></span></span><input id="kcEmiY" max="30" min="1" step="1" type="number" value="20"/></div>
+</div>
+<div>
+<div class="kc-board">
+<div class="kc-btop"><span class="kc-btag"><i></i>live</span><b>LOAN RECEIPT</b><button class="kc-copy" data-sec="emi" type="button">copy ⧉</button></div>
+<div class="kc-big"><span>monthly EMI</span><b id="kcEmiOut">—</b></div>
+<div class="kc-chips">
+<div class="kc-chip"><span>interest cost</span><b id="kcEmiInt">—</b></div>
+<div class="kc-chip"><span>total repaid</span><b id="kcEmiTot">—</b></div>
+</div>
+<svg aria-hidden="true" class="kc-chart" id="kcEmCg" viewbox="0 0 320 132"></svg>
+<div class="kc-leg" id="kcEmiLeg"></div>
+<div class="kc-bfine">★ BORROW SADLY · REPAY HAPPILY ★</div>
+</div>
+<p class="kc-warn" id="kcEmiNote"></p>
+<p class="kc-formula">EMI = P × i × (1+i)ⁿ ÷ ((1+i)ⁿ − 1)</p>
+</div>
+</div>
+<p class="kc-tip"><b>ca's corner:</b> tenure is the biggest EMI lever you control — pull it down.</p>
+</section><section class="kc-sec" data-n="09" id="kc-af">
+<header class="kc-shead">
+<span class="kc-stamp">02 · before you borrow</span>
+<h2>Loan affordability — how much can I borrow?<svg aria-hidden="true" class="kc-ul" viewbox="0 0 220 12"><path d="M3 8 C 55 2, 120 12, 217 5"></path></svg></h2>
+<span class="kc-ann">know your ceiling</span>
+</header>
+<p class="kc-sub">Banks decide your ceiling by capping the EMI share of your income. Flip that maths: get the EMI you can afford and the biggest loan it buys.</p>
+<div class="kc-locale">
+<svg aria-hidden="true" class="kc-lglobe" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12 h18 M12 3 c3.5 3 3.5 15 0 18 M12 3 c-3.5 3 -3.5 15 0 18"></path></svg>
+<label>country <select aria-label="Country for Loan affordability — how much can I borrow?" id="kcAfCC"></select></label>
+<label>currency <select aria-label="Currency for Loan affordability — how much can I borrow?" id="kcAfCY"></select></label>
+</div>
+<div class="kc-grid">
+<div class="kc-card">
+<div class="kc-chead"><svg aria-hidden="true" viewbox="0 0 20 20"><path d="M3 5h14M3 10h14M3 15h14" fill="none"></path><circle cx="8" cy="5" r="2.3"></circle><circle cx="13" cy="10" r="2.3"></circle><circle cx="6" cy="15" r="2.3"></circle></svg><b>control desk</b><span class="kc-chint">slide or type</span></div>
+<div class="kc-row-i"><label for="kcAfInc">Monthly income</label><span class="kc-rng"><input id="kcAfIncR" max="1000000" min="10000" step="1000" type="range" value="100000"/><span class="kc-bub"></span></span><span class="kc-numw" data-sym="₹"><input id="kcAfInc" min="10000" step="1000" type="number" value="100000"/></span></div>
+<div class="kc-row-i"><label for="kcAfFo">Share of income for EMI</label><span class="kc-rng"><input id="kcAfFoR" max="60" min="10" step="1" type="range" value="40"/><span class="kc-bub"></span></span><input id="kcAfFo" max="60" min="10" step="1" type="number" value="40"/></div>
+<div class="kc-row-i"><label for="kcAfR">Interest / yr</label><span class="kc-rng"><input id="kcAfRR" max="36" min="1" step="0.5" type="range" value="8.5"/><span class="kc-bub"></span></span><input id="kcAfR" max="36" min="1" step="0.5" type="number" value="8.5"/></div>
+<div class="kc-row-i"><label for="kcAfY">Tenure (years)</label><span class="kc-rng"><input id="kcAfYR" max="30" min="1" step="1" type="range" value="20"/><span class="kc-bub"></span></span><input id="kcAfY" max="30" min="1" step="1" type="number" value="20"/></div>
+</div>
+<div>
+<div class="kc-board">
+<div class="kc-btop"><span class="kc-btag"><i></i>live</span><b>AFFORD RECEIPT</b><button class="kc-copy" data-sec="af" type="button">copy ⧉</button></div>
+<div class="kc-big"><span>max loan you can carry</span><b id="kcAfLoan">—</b></div>
+<div class="kc-chips">
+<div class="kc-chip"><span>affordable EMI / mo</span><b id="kcAfEmi">—</b></div>
+<div class="kc-chip"><span>goes to EMI</span><b id="kcAfShare">—</b></div>
+</div>
+<svg aria-hidden="true" class="kc-chart" id="kcAfCg" viewbox="0 0 320 132"></svg>
+<div class="kc-leg" id="kcAfLeg"></div>
+<div class="kc-bfine">★ BORROW INSIDE YOUR MEANS ★</div>
+</div>
+<p class="kc-warn" id="kcAfNote"></p>
+<p class="kc-formula">Max loan = EMI × [1 − (1+i)⁻ⁿ] ÷ i</p>
+</div>
+</div>
+<p class="kc-tip"><p class="kc-tip"><b>ca’s corner:</b> the bank approves what you can repay; you should approve what you can live with.</p></p>
+</section><section class="kc-sec" data-n="10" id="kc-pp">
+<header class="kc-shead">
+<span class="kc-stamp">03 · the fast-forward button</span>
+<h2>Prepayment calculator — pay off early<svg aria-hidden="true" class="kc-ul" viewbox="0 0 220 12"><path d="M3 8 C 55 2, 120 12, 217 5"></path></svg></h2>
+<span class="kc-ann">small extra, huge save</span>
+</header>
+<p class="kc-sub">One extra payment a month attacks the principal directly. Watch the interest melt and the finish line pull closer.</p>
+<div class="kc-locale">
+<svg aria-hidden="true" class="kc-lglobe" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12 h18 M12 3 c3.5 3 3.5 15 0 18 M12 3 c-3.5 3 -3.5 15 0 18"></path></svg>
+<label>country <select aria-label="Country for Prepayment calculator — pay off early" id="kcPpCC"></select></label>
+<label>currency <select aria-label="Currency for Prepayment calculator — pay off early" id="kcPpCY"></select></label>
+</div>
+<div class="kc-grid">
+<div class="kc-card">
+<div class="kc-chead"><svg aria-hidden="true" viewbox="0 0 20 20"><path d="M3 5h14M3 10h14M3 15h14" fill="none"></path><circle cx="8" cy="5" r="2.3"></circle><circle cx="13" cy="10" r="2.3"></circle><circle cx="6" cy="15" r="2.3"></circle></svg><b>control desk</b><span class="kc-chint">slide or type</span></div>
+<div class="kc-row-i"><label for="kcPpP">Loan outstanding</label><span class="kc-rng"><input id="kcPpPR" max="50000000" min="100000" step="10000" type="range" value="5000000"/><span class="kc-bub"></span></span><span class="kc-numw" data-sym="₹"><input id="kcPpP" min="100000" step="10000" type="number" value="5000000"/></span></div>
+<div class="kc-row-i"><label for="kcPpR">Interest / yr</label><span class="kc-rng"><input id="kcPpRR" max="36" min="1" step="0.5" type="range" value="8.5"/><span class="kc-bub"></span></span><input id="kcPpR" max="36" min="1" step="0.5" type="number" value="8.5"/></div>
+<div class="kc-row-i"><label for="kcPpY">Years left</label><span class="kc-rng"><input id="kcPpYR" max="30" min="1" step="1" type="range" value="20"/><span class="kc-bub"></span></span><input id="kcPpY" max="30" min="1" step="1" type="number" value="20"/></div>
+<div class="kc-row-i"><label for="kcPpX">Extra you pay every month</label><span class="kc-rng"><input id="kcPpXR" max="200000" min="500" step="500" type="range" value="5000"/><span class="kc-bub"></span></span><span class="kc-numw" data-sym="₹"><input id="kcPpX" min="500" step="500" type="number" value="5000"/></span></div>
+</div>
+<div>
+<div class="kc-board">
+<div class="kc-btop"><span class="kc-btag"><i></i>live</span><b>PREPAY RECEIPT</b><button class="kc-copy" data-sec="pp" type="button">copy ⧉</button></div>
+<div class="kc-big"><span>interest saved</span><b id="kcPpSave">—</b></div>
+<div class="kc-chips">
+<div class="kc-chip"><span>loan ends sooner by</span><b id="kcPpCut">—</b></div>
+<div class="kc-chip"><span>new payoff time</span><b id="kcPpNew">—</b></div>
+</div>
+<svg aria-hidden="true" class="kc-chart" id="kcPpCg" viewbox="0 0 320 132"></svg>
+<div class="kc-leg" id="kcPpLeg"></div>
+<div class="kc-bfine">★ EXTRA TODAY · FREE SOONER ★</div>
+</div>
+<p class="kc-warn" id="kcPpNote"></p>
+<p class="kc-formula">Same amortisation — but every extra rupee skips its interest</p>
+</div>
+</div>
+<p class="kc-tip"><p class="kc-tip"><b>ca’s corner:</b> check for a prepayment penalty first — most floating-rate home loans have none.</p></p>
+</section><section class="kc-sec" data-n="08" id="kc-cc">
+<header class="kc-shead">
+<span class="kc-stamp">04 · plastic damage control</span>
+<h2>Credit card payoff calculator<svg aria-hidden="true" class="kc-ul" viewbox="0 0 220 12"><path d="M3 8 C 55 2, 120 12, 217 5"></path></svg></h2>
+<span class="kc-ann">kill the balance before it kills you</span>
+</header>
+<p class="kc-sub">Card debt compounds daily at brutal rates. See exactly how many months your payment needs — and what the interest really costs.</p>
+<div class="kc-locale">
+<svg aria-hidden="true" class="kc-lglobe" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12 h18 M12 3 c3.5 3 3.5 15 0 18 M12 3 c-3.5 3 -3.5 15 0 18"></path></svg>
+<label>country <select aria-label="Country for Credit card payoff calculator" id="kcCcCC"></select></label>
+<label>currency <select aria-label="Currency for Credit card payoff calculator" id="kcCcCY"></select></label>
+</div>
+<div class="kc-grid">
+<div class="kc-card">
+<div class="kc-chead"><svg aria-hidden="true" viewbox="0 0 20 20"><path d="M3 5h14M3 10h14M3 15h14" fill="none"></path><circle cx="8" cy="5" r="2.3"></circle><circle cx="13" cy="10" r="2.3"></circle><circle cx="6" cy="15" r="2.3"></circle></svg><b>control desk</b><span class="kc-chint">slide or type</span></div>
+<div class="kc-row-i"><label for="kcCcBal">Card balance outstanding</label><span class="kc-rng"><input id="kcCcBalR" max="1000000" min="5000" step="1000" type="range" value="100000"/><span class="kc-bub"></span></span><span class="kc-numw" data-sym="₹"><input id="kcCcBal" min="5000" step="1000" type="number" value="100000"/></span></div>
+<div class="kc-row-i"><label for="kcCcR">Card interest / yr (APR)</label><span class="kc-rng"><input id="kcCcRR" max="48" min="9" step="0.5" type="range" value="36"/><span class="kc-bub"></span></span><input id="kcCcR" max="48" min="9" step="0.5" type="number" value="36"/></div>
+<div class="kc-row-i"><label for="kcCcPay">You repay every month</label><span class="kc-rng"><input id="kcCcPayR" max="100000" min="1000" step="500" type="range" value="8000"/><span class="kc-bub"></span></span><span class="kc-numw" data-sym="₹"><input id="kcCcPay" min="1000" step="500" type="number" value="8000"/></span></div>
+</div>
+<div>
+<div class="kc-board">
+<div class="kc-btop"><span class="kc-btag"><i></i>live</span><b>PAYOFF RECEIPT</b><button class="kc-copy" data-sec="cc" type="button">copy ⧉</button></div>
+<div class="kc-big"><span>months to freedom</span><b id="kcCcMo">—</b></div>
+<div class="kc-chips">
+<div class="kc-chip"><span>interest you’ll pay</span><b id="kcCcInt">—</b></div>
+<div class="kc-chip"><span>total you’ll repay</span><b id="kcCcTot">—</b></div>
+</div>
+<svg aria-hidden="true" class="kc-chart" id="kcCcCg" viewbox="0 0 320 132"></svg>
+<div class="kc-leg" id="kcCcLeg"></div>
+<div class="kc-bfine">★ STOP FEEDING THE CARD ★</div>
+</div>
+<p class="kc-warn" id="kcCcNote"></p>
+<p class="kc-formula">n = −ln(1 − B·i ÷ P) ÷ ln(1+i)</p>
+</div>
+</div>
+<p class="kc-tip"><p class="kc-tip"><b>ca’s corner:</b> paying only the minimum is how a phone turns into a two-year loan.</p></p>
+</section><div class="pr-group-divider" id="calc-plan"><strong>Budget &amp; build a safety net</strong><span>05 — 07</span></div><section class="kc-sec" data-n="04" id="kc-bg">
+<header class="kc-shead">
+<span class="kc-stamp">05 · the spending plan</span>
+<h2>Budget planner — the 50/30/20 split<svg aria-hidden="true" class="kc-ul" viewbox="0 0 220 12"><path d="M3 8 C 55 2, 120 12, 217 5"></path></svg></h2>
+<span class="kc-ann">every rupee gets a job</span>
+</header>
+<p class="kc-sub">Split your take-home into needs, wants and savings — the classic 50/30/20 rule, with sliders because real life is not a textbook.</p>
+<div class="kc-locale">
+<svg aria-hidden="true" class="kc-lglobe" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12 h18 M12 3 c3.5 3 3.5 15 0 18 M12 3 c-3.5 3 -3.5 15 0 18"></path></svg>
+<label>country <select aria-label="Country for Budget planner — the 50/30/20 split" id="kcBgCC"></select></label>
+<label>currency <select aria-label="Currency for Budget planner — the 50/30/20 split" id="kcBgCY"></select></label>
+</div>
+<div class="kc-grid">
+<div class="kc-card">
+<div class="kc-chead"><svg aria-hidden="true" viewbox="0 0 20 20"><path d="M3 5h14M3 10h14M3 15h14" fill="none"></path><circle cx="8" cy="5" r="2.3"></circle><circle cx="13" cy="10" r="2.3"></circle><circle cx="6" cy="15" r="2.3"></circle></svg><b>control desk</b><span class="kc-chint">slide or type</span></div>
+<div class="kc-row-i"><label for="kcBgInc">Monthly take-home income</label><span class="kc-rng"><input id="kcBgIncR" max="1000000" min="10000" step="1000" type="range" value="50000"/><span class="kc-bub"></span></span><span class="kc-numw" data-sym="₹"><input id="kcBgInc" min="10000" step="1000" type="number" value="50000"/></span></div>
+<div class="kc-row-i"><label for="kcBgN">Needs share (rent, bills, food)</label><span class="kc-rng"><input id="kcBgNR" max="60" min="40" step="1" type="range" value="50"/><span class="kc-bub"></span></span><input id="kcBgN" max="60" min="40" step="1" type="number" value="50"/></div>
+<div class="kc-row-i"><label for="kcBgW">Wants share (fun, shopping)</label><span class="kc-rng"><input id="kcBgWR" max="40" min="15" step="1" type="range" value="30"/><span class="kc-bub"></span></span><input id="kcBgW" max="40" min="15" step="1" type="number" value="30"/></div>
+<p class="kc-note-fine">✳ Savings share is the remainder — aim for at least 20%.</p>
+</div>
+<div>
+<div class="kc-board">
+<div class="kc-btop"><span class="kc-btag"><i></i>live</span><b>BUDGET RECEIPT</b><button class="kc-copy" data-sec="bg" type="button">copy ⧉</button></div>
+<div class="kc-big"><span>savings each month</span><b id="kcBgSave">—</b></div>
+<div class="kc-chips">
+<div class="kc-chip"><span>needs</span><b id="kcBgNeed">—</b></div>
+<div class="kc-chip"><span>wants</span><b id="kcBgWant">—</b></div>
+</div>
+<svg aria-hidden="true" class="kc-chart" id="kcBgCg" viewbox="0 0 320 132"></svg>
+<div class="kc-leg" id="kcBgLeg"></div>
+<div class="kc-bfine">★ EVERY RUPEE GETS A JOB ★</div>
+</div>
+<p class="kc-warn" id="kcBgNote"></p>
+<p class="kc-formula">Needs 50 · Wants 30 · Savings 20 — slide to fit your life</p>
+</div>
+</div>
+<p class="kc-tip"><p class="kc-tip"><b>ca’s corner:</b> a budget you can keep beats a perfect one you quit.</p></p>
+</section><section class="kc-sec" data-n="14" id="kc-ef">
+<header class="kc-shead">
+<span class="kc-stamp">06 · the shock absorber</span>
+<h2>Emergency fund calculator<svg aria-hidden="true" class="kc-ul" viewbox="0 0 220 12"><path d="M3 8 C 55 2, 120 12, 217 5"></path></svg></h2>
+<span class="kc-ann">sleep-at-night money</span>
+</header>
+<p class="kc-sub">Job pauses, hospitals, gutted phones — life invoices without notice. Size the buffer that keeps a bad month from becoming debt.</p>
+<div class="kc-locale">
+<svg aria-hidden="true" class="kc-lglobe" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12 h18 M12 3 c3.5 3 3.5 15 0 18 M12 3 c-3.5 3 -3.5 15 0 18"></path></svg>
+<label>country <select aria-label="Country for Emergency fund calculator" id="kcEfCC"></select></label>
+<label>currency <select aria-label="Currency for Emergency fund calculator" id="kcEfCY"></select></label>
+</div>
+<div class="kc-grid">
+<div class="kc-card">
+<div class="kc-chead"><svg aria-hidden="true" viewbox="0 0 20 20"><path d="M3 5h14M3 10h14M3 15h14" fill="none"></path><circle cx="8" cy="5" r="2.3"></circle><circle cx="13" cy="10" r="2.3"></circle><circle cx="6" cy="15" r="2.3"></circle></svg><b>control desk</b><span class="kc-chint">slide or type</span></div>
+<div class="kc-row-i"><label for="kcEfExp">Essential spend / month</label><span class="kc-rng"><input id="kcEfExpR" max="500000" min="5000" step="1000" type="range" value="40000"/><span class="kc-bub"></span></span><span class="kc-numw" data-sym="₹"><input id="kcEfExp" min="5000" step="1000" type="number" value="40000"/></span></div>
+<div class="kc-row-i"><label for="kcEfMo">Months of cover you want</label><span class="kc-rng"><input id="kcEfMoR" max="12" min="1" step="1" type="range" value="6"/><span class="kc-bub"></span></span><input id="kcEfMo" max="12" min="1" step="1" type="number" value="6"/></div>
+<div class="kc-row-i"><label for="kcEfHave">Already saved</label><span class="kc-rng"><input id="kcEfHaveR" max="5000000" min="0" step="1000" type="range" value="100000"/><span class="kc-bub"></span></span><span class="kc-numw" data-sym="₹"><input id="kcEfHave" min="0" step="1000" type="number" value="100000"/></span></div>
+</div>
+<div>
+<div class="kc-board">
+<div class="kc-btop"><span class="kc-btag"><i></i>live</span><b>EMERGENCY RECEIPT</b><button class="kc-copy" data-sec="ef" type="button">copy ⧉</button></div>
+<div class="kc-big"><span>your target fund</span><b id="kcEfTgt">—</b></div>
+<div class="kc-chips">
+<div class="kc-chip"><span>still to build</span><b id="kcEfGap">—</b></div>
+<div class="kc-chip"><span>progress</span><b id="kcEfPct">—</b></div>
+</div>
+<svg aria-hidden="true" class="kc-chart" id="kcEfCg" viewbox="0 0 320 132"></svg>
+<div class="kc-leg" id="kcEfLeg"></div>
+<div class="kc-bfine">★ CASH FOR RAINY DAYS ★</div>
+</div>
+<p class="kc-warn" id="kcEfNote"></p>
+<p class="kc-formula">Target = monthly essentials × months of cover</p>
+</div>
+</div>
+<p class="kc-tip"><p class="kc-tip"><b>ca’s corner:</b> this fund is not for investments — it’s for 3 a.m. emergencies. Keep it boring, keep it liquid.</p></p>
+</section><section class="kc-sec" data-n="05" id="kc-gl">
+<header class="kc-shead">
+<span class="kc-stamp">07 · the goal machine</span>
+<h2>Savings goal calculator — how much per month?<svg aria-hidden="true" class="kc-ul" viewbox="0 0 220 12"><path d="M3 8 C 55 2, 120 12, 217 5"></path></svg></h2>
+<span class="kc-ann">work backwards from the dream</span>
+</header>
+<p class="kc-sub">A wedding, a home down-payment, a degree. Set the target and the date — this works out the exact monthly saving that lands it.</p>
+<div class="kc-locale">
+<svg aria-hidden="true" class="kc-lglobe" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12 h18 M12 3 c3.5 3 3.5 15 0 18 M12 3 c-3.5 3 -3.5 15 0 18"></path></svg>
+<label>country <select aria-label="Country for Savings goal calculator — how much per month?" id="kcGlCC"></select></label>
+<label>currency <select aria-label="Currency for Savings goal calculator — how much per month?" id="kcGlCY"></select></label>
+</div>
+<div class="kc-grid">
+<div class="kc-card">
+<div class="kc-chead"><svg aria-hidden="true" viewbox="0 0 20 20"><path d="M3 5h14M3 10h14M3 15h14" fill="none"></path><circle cx="8" cy="5" r="2.3"></circle><circle cx="13" cy="10" r="2.3"></circle><circle cx="6" cy="15" r="2.3"></circle></svg><b>control desk</b><span class="kc-chint">slide or type</span></div>
+<div class="kc-row-i"><label for="kcGlTgt">Target amount</label><span class="kc-rng"><input id="kcGlTgtR" max="50000000" min="100000" step="10000" type="range" value="5000000"/><span class="kc-bub"></span></span><span class="kc-numw" data-sym="₹"><input id="kcGlTgt" min="100000" step="10000" type="number" value="5000000"/></span></div>
+<div class="kc-row-i"><label for="kcGlY">Years to get there</label><span class="kc-rng"><input id="kcGlYR" max="30" min="1" step="1" type="range" value="5"/><span class="kc-bub"></span></span><input id="kcGlY" max="30" min="1" step="1" type="number" value="5"/></div>
+<div class="kc-row-i"><label for="kcGlR">Expected return / yr</label><span class="kc-rng"><input id="kcGlRR" max="30" min="1" step="0.5" type="range" value="10"/><span class="kc-bub"></span></span><input id="kcGlR" max="30" min="1" step="0.5" type="number" value="10"/></div>
+</div>
+<div>
+<div class="kc-board">
+<div class="kc-btop"><span class="kc-btag"><i></i>live</span><b>GOAL RECEIPT</b><button class="kc-copy" data-sec="gl" type="button">copy ⧉</button></div>
+<div class="kc-big"><span>save every month</span><b id="kcGlMo">—</b></div>
+<div class="kc-chips">
+<div class="kc-chip"><span>you put in</span><b id="kcGlPut">—</b></div>
+<div class="kc-chip"><span>growth does the rest</span><b id="kcGlGain">—</b></div>
+</div>
+<svg aria-hidden="true" class="kc-chart" id="kcGlCg" viewbox="0 0 320 132"></svg>
+<div class="kc-leg" id="kcGlLeg"></div>
+<div class="kc-bfine">★ SMALL MONTHLY · BIG DREAM ★</div>
+</div>
+<p class="kc-warn" id="kcGlNote"></p>
+<p class="kc-formula">P = FV × i ÷ [((1+i)ⁿ − 1) × (1+i)]</p>
+</div>
+</div>
+<p class="kc-tip"><p class="kc-tip"><b>ca’s corner:</b> name the goal — unnamed savings always find a way to get spent.</p></p>
+</section><div class="pr-group-divider" id="calc-grow"><strong>Save &amp; invest</strong><span>08 — 10</span></div><section class="kc-sec" data-n="02" id="kc-sip">
+<header class="kc-shead">
+<span class="kc-stamp">08 · systematic investing</span>
+<h2>SIP calculator<svg aria-hidden="true" class="kc-ul" viewbox="0 0 220 12"><path d="M3 8 C 55 2, 120 12, 217 5"></path></svg></h2>
+<span class="kc-ann">the quiet wealth machine</span>
+</header>
+<p class="kc-sub">Invest a fixed amount every month and let compounding do the quiet work.</p>
+<div class="kc-locale">
+<svg aria-hidden="true" class="kc-lglobe" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12 h18 M12 3 c3.5 3 3.5 15 0 18 M12 3 c-3.5 3 -3.5 15 0 18"></path></svg>
+<label>country <select aria-label="Country for SIP calculator" id="kcSipCC"></select></label>
+<label>currency <select aria-label="Currency for SIP calculator" id="kcSipCY"></select></label>
+<em class="kc-lhint">every table picks its own — this one is yours</em>
+</div>
+<div class="kc-grid">
+<div class="kc-card">
+<div class="kc-chead"><svg aria-hidden="true" viewbox="0 0 20 20"><path d="M3 5h14M3 10h14M3 15h14" fill="none"></path><circle cx="8" cy="5" r="2.3"></circle><circle cx="13" cy="10" r="2.3"></circle><circle cx="6" cy="15" r="2.3"></circle></svg><b>control desk</b><span class="kc-chint">slide or type</span></div>
+<div class="kc-row-i"><label for="kcSipAmt">Monthly investment</label><span class="kc-rng"><input id="kcSipAmtR" max="200000" min="500" step="500" type="range" value="10000"/><span class="kc-bub"></span></span><span class="kc-numw" data-sym="₹"><input id="kcSipAmt" min="100" step="100" type="number" value="10000"/></span></div>
+<div class="kc-row-i"><label for="kcSipR">Expected return / yr</label><span class="kc-rng"><input id="kcSipRR" max="30" min="1" step="0.5" type="range" value="12"/><span class="kc-bub"></span></span><input id="kcSipR" max="30" min="1" step="0.5" type="number" value="12"/></div>
+<div class="kc-row-i"><label for="kcSipY">Years</label><span class="kc-rng"><input id="kcSipYR" max="40" min="1" step="1" type="range" value="15"/><span class="kc-bub"></span></span><input id="kcSipY" max="40" min="1" step="1" type="number" value="15"/></div>
+<p class="kc-note-fine">✳ Monthly compounding assumed. Gains shown are pre-tax.</p>
+</div>
+<div>
+<div class="kc-board">
+<div class="kc-btop"><span class="kc-btag"><i></i>live</span><b>SIP RECEIPT</b><button class="kc-copy" data-sec="sip" type="button">copy ⧉</button></div>
+<div class="kc-big"><span>total value</span><b id="kcSipTot">—</b></div>
+<div class="kc-chips">
+<div class="kc-chip"><span>you invest</span><b id="kcSipInv">—</b></div>
+<div class="kc-chip"><span>est. gains</span><b id="kcSipGain">—</b></div>
+</div>
+<svg aria-hidden="true" class="kc-chart" id="kcSipCg" viewbox="0 0 320 132"></svg>
+<div class="kc-leg" id="kcSipLeg"></div>
+<div class="kc-bfine">★ KEEP SLIDING · KEEP GROWING ★</div>
+</div>
+<p class="kc-formula">FV = P × [((1+i)ⁿ − 1) ÷ i] × (1+i)</p>
+</div>
+</div>
+<p class="kc-tip"><b>ca's corner:</b> a 10-year SIP is boring. that's exactly why it works.</p>
+</section><section class="kc-sec" data-n="03" id="kc-lump">
+<header class="kc-shead">
+<span class="kc-stamp">09 · one-shot growth</span>
+<h2>Lump sum calculator<svg aria-hidden="true" class="kc-ul" viewbox="0 0 220 12"><path d="M3 8 C 55 2, 120 12, 217 5"></path></svg></h2>
+<span class="kc-ann">patience, compounded</span>
+</header>
+<p class="kc-sub">One deposit, left alone. The most underrated ingredient is the years.</p>
+<div class="kc-locale">
+<svg aria-hidden="true" class="kc-lglobe" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12 h18 M12 3 c3.5 3 3.5 15 0 18 M12 3 c-3.5 3 -3.5 15 0 18"></path></svg>
+<label>country <select aria-label="Country for lump sum calculator" id="kcLsCC"></select></label>
+<label>currency <select aria-label="Currency for lump sum calculator" id="kcLsCY"></select></label>
+</div>
+<div class="kc-grid">
+<div class="kc-card">
+<div class="kc-chead"><svg aria-hidden="true" viewbox="0 0 20 20"><path d="M3 5h14M3 10h14M3 15h14" fill="none"></path><circle cx="8" cy="5" r="2.3"></circle><circle cx="13" cy="10" r="2.3"></circle><circle cx="6" cy="15" r="2.3"></circle></svg><b>control desk</b><span class="kc-chint">slide or type</span></div>
+<div class="kc-row-i"><label for="kcLsAmt">One-time amount</label><span class="kc-rng"><input id="kcLsAmtR" max="5000000" min="1000" step="1000" type="range" value="500000"/><span class="kc-bub"></span></span><span class="kc-numw" data-sym="₹"><input id="kcLsAmt" min="500" step="500" type="number" value="500000"/></span></div>
+<div class="kc-row-i"><label for="kcLsR">Expected return / yr</label><span class="kc-rng"><input id="kcLsRR" max="30" min="1" step="0.5" type="range" value="10"/><span class="kc-bub"></span></span><input id="kcLsR" max="30" min="1" step="0.5" type="number" value="10"/></div>
+<div class="kc-row-i"><label for="kcLsY">Years</label><span class="kc-rng"><input id="kcLsYR" max="40" min="1" step="1" type="range" value="10"/><span class="kc-bub"></span></span><input id="kcLsY" max="40" min="1" step="1" type="number" value="10"/></div>
+<p class="kc-note-fine">✳ Monthly compounding assumed. Gains shown are pre-tax.</p>
+</div>
+<div>
+<div class="kc-board">
+<div class="kc-btop"><span class="kc-btag"><i></i>live</span><b>LUMP SUM RECEIPT</b><button class="kc-copy" data-sec="ls" type="button">copy ⧉</button></div>
+<div class="kc-big"><span>total value</span><b id="kcLsTot">—</b></div>
+<div class="kc-chips">
+<div class="kc-chip"><span>you invest</span><b id="kcLsInv">—</b></div>
+<div class="kc-chip"><span>est. gains</span><b id="kcLsGain">—</b></div>
+</div>
+<svg aria-hidden="true" class="kc-chart" id="kcLsCg" viewbox="0 0 320 132"></svg>
+<div class="kc-leg" id="kcLsLeg"></div>
+<div class="kc-bfine">★ SET IT · FORGET IT · CHECK IN DECADES ★</div>
+</div>
+<p class="kc-formula">FV = P × (1+i)ⁿ, i = annual rate ÷ 12</p>
+</div>
+</div>
+<p class="kc-tip"><b>ca's corner:</b> one good lump sum + decades of patience = quiet compounding.</p>
+</section><section class="kc-sec" data-n="07" id="kc-int">
+<header class="kc-shead">
+<span class="kc-stamp">10 · the bank's promise</span>
+<h2>Interest income calculator — savings, FD, RD &amp; schemes<svg aria-hidden="true" class="kc-ul" viewbox="0 0 220 12"><path d="M3 8 C 55 2, 120 12, 217 5"></path></svg></h2>
+<span class="kc-ann">ask about compounding</span>
+</header>
+<p class="kc-sub">Pick an account or scheme — typical rates for your country pre-fill — then set deposit and years. Compounding switches itself sensibly.</p>
+<div class="kc-locale">
+<svg aria-hidden="true" class="kc-lglobe" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12 h18 M12 3 c3.5 3 3.5 15 0 18 M12 3 c-3.5 3 -3.5 15 0 18"></path></svg>
+<label>country <select aria-label="Country for interest calculator" id="kcInCC"></select></label>
+<label>currency <select aria-label="Currency for interest calculator" id="kcInCY"></select></label>
+</div>
+<div class="kc-grid">
+<div class="kc-card">
+<div class="kc-chead"><svg aria-hidden="true" viewbox="0 0 20 20"><path d="M3 5h14M3 10h14M3 15h14" fill="none"></path><circle cx="8" cy="5" r="2.3"></circle><circle cx="13" cy="10" r="2.3"></circle><circle cx="6" cy="15" r="2.3"></circle></svg><b>control desk</b><span class="kc-chint">slide or type</span></div>
+<div class="kc-row-i"><label for="kcInT">Account / scheme</label><select id="kcInT"></select></div>
+<div class="kc-row-i"><label for="kcInP">Deposit</label><span class="kc-rng"><input id="kcInPR" max="20000000" min="5000" step="5000" type="range" value="1000000"/><span class="kc-bub"></span></span><span class="kc-numw" data-sym="₹"><input id="kcInP" min="1000" step="1000" type="number" value="1000000"/></span></div>
+<div class="kc-row-i"><label for="kcInR">Interest / yr</label><span class="kc-rng"><input id="kcInRR" max="20" min="0" step="0.05" type="range" value="7"/><span class="kc-bub"></span></span><input id="kcInR" max="20" min="0" step="0.05" type="number" value="7"/></div>
+<div class="kc-row-i"><label for="kcInY">Years</label><span class="kc-rng"><input id="kcInYR" max="25" min="1" step="1" type="range" value="5"/><span class="kc-bub"></span></span><input id="kcInY" max="25" min="1" step="1" type="number" value="5"/></div>
+<div class="kc-row-i"><label for="kcInC">Compounding</label><select id="kcInC"><option value="12">Monthly</option><option selected="" value="4">Quarterly</option><option value="2">Half-yearly</option><option value="1">Yearly</option><option value="0">Simple interest</option></select></div>
+</div>
+<div>
+<div class="kc-board">
+<div class="kc-btop"><span class="kc-btag"><i></i>live</span><b>INTEREST RECEIPT</b><button class="kc-copy" data-sec="int" type="button">copy ⧉</button></div>
+<div class="kc-big"><span>maturity value</span><b id="kcInMat">—</b></div>
+<div class="kc-chips">
+<div class="kc-chip"><span>interest earned</span><b id="kcInInt">—</b></div>
+</div>
+<svg aria-hidden="true" class="kc-chart" id="kcInCg" viewbox="0 0 320 132"></svg>
+<div class="kc-leg" id="kcInLeg"></div>
+<div class="kc-bfine">★ THE BANK PAYS · YOU JUST COMPOUND ★</div>
+</div>
+<p class="kc-formula">M = P × (1 + r/m)<sup>m×Y</sup> · simple: P(1 + rY)</p>
+</div>
+</div>
+<p class="kc-tip"><b>ca's corner:</b> compounding frequency is free money — always ask for it.</p>
+</section><div class="pr-group-divider" id="calc-future"><strong>Plan future income</strong><span>11 — 14</span></div><section class="kc-sec" data-n="06" id="kc-rt">
+<header class="kc-shead">
+<span class="kc-stamp">11 · future you</span>
+<h2>Retirement corpus calculator<svg aria-hidden="true" class="kc-ul" viewbox="0 0 220 12"><path d="M3 8 C 55 2, 120 12, 217 5"></path></svg></h2>
+<span class="kc-ann">your 60-year-old self says thanks</span>
+</header>
+<p class="kc-sub">Inflate today’s lifestyle to retirement day, size the corpus with the 4% rule, and work out the monthly SIP that builds it.</p>
+<div class="kc-locale">
+<svg aria-hidden="true" class="kc-lglobe" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12 h18 M12 3 c3.5 3 3.5 15 0 18 M12 3 c-3.5 3 -3.5 15 0 18"></path></svg>
+<label>country <select aria-label="Country for Retirement corpus calculator" id="kcRtCC"></select></label>
+<label>currency <select aria-label="Currency for Retirement corpus calculator" id="kcRtCY"></select></label>
+</div>
+<div class="kc-grid">
+<div class="kc-card">
+<div class="kc-chead"><svg aria-hidden="true" viewbox="0 0 20 20"><path d="M3 5h14M3 10h14M3 15h14" fill="none"></path><circle cx="8" cy="5" r="2.3"></circle><circle cx="13" cy="10" r="2.3"></circle><circle cx="6" cy="15" r="2.3"></circle></svg><b>control desk</b><span class="kc-chint">slide or type</span></div>
+<div class="kc-row-i"><label for="kcRtAge">Current age</label><span class="kc-rng"><input id="kcRtAgeR" max="60" min="18" step="1" type="range" value="30"/><span class="kc-bub"></span></span><input id="kcRtAge" max="60" min="18" step="1" type="number" value="30"/></div>
+<div class="kc-row-i"><label for="kcRtRAge">Retire at age</label><span class="kc-rng"><input id="kcRtRAgeR" max="75" min="45" step="1" type="range" value="60"/><span class="kc-bub"></span></span><input id="kcRtRAge" max="75" min="45" step="1" type="number" value="60"/></div>
+<div class="kc-row-i"><label for="kcRtExp">Monthly expense (today’s prices)</label><span class="kc-rng"><input id="kcRtExpR" max="500000" min="5000" step="1000" type="range" value="50000"/><span class="kc-bub"></span></span><span class="kc-numw" data-sym="₹"><input id="kcRtExp" min="5000" step="1000" type="number" value="50000"/></span></div>
+<div class="kc-row-i"><label for="kcRtInf">Inflation / yr</label><span class="kc-rng"><input id="kcRtInfR" max="15" min="0" step="0.25" type="range" value="6"/><span class="kc-bub"></span></span><input id="kcRtInf" max="15" min="0" step="0.25" type="number" value="6"/></div>
+<div class="kc-row-i"><label for="kcRtR">Return before retiring / yr</label><span class="kc-rng"><input id="kcRtRR" max="30" min="1" step="0.5" type="range" value="10"/><span class="kc-bub"></span></span><input id="kcRtR" max="30" min="1" step="0.5" type="number" value="10"/></div>
+<p class="kc-note-fine">✳ Corpus = 25× your first year of retirement expenses (the 4% rule).</p>
+</div>
+<div>
+<div class="kc-board">
+<div class="kc-btop"><span class="kc-btag"><i></i>live</span><b>RETIREMENT RECEIPT</b><button class="kc-copy" data-sec="rt" type="button">copy ⧉</button></div>
+<div class="kc-big"><span>corpus needed</span><b id="kcRtCorpus">—</b></div>
+<div class="kc-chips">
+<div class="kc-chip"><span>SIP every month</span><b id="kcRtSip">—</b></div>
+<div class="kc-chip"><span>years left to build</span><b id="kcRtYrs">—</b></div>
+</div>
+<svg aria-hidden="true" class="kc-chart" id="kcRtCg" viewbox="0 0 320 132"></svg>
+<div class="kc-leg" id="kcRtLeg"></div>
+<div class="kc-bfine">★ FUTURE YOU IS WATCHING ★</div>
+</div>
+<p class="kc-warn" id="kcRtNote"></p>
+<p class="kc-formula">Corpus = 25 × annual expense at retirement</p>
+</div>
+</div>
+<p class="kc-tip"><p class="kc-tip"><b>ca’s corner:</b> retirement is not an age — it’s a number. This finds yours.</p></p>
+</section><section class="kc-sec" data-n="11" id="kc-swp">
+<header class="kc-shead">
+<span class="kc-stamp">12 · drawing an income</span>
+<h2>SWP calculator<svg aria-hidden="true" class="kc-ul" viewbox="0 0 220 12"><path d="M3 8 C 55 2, 120 12, 217 5"></path></svg></h2>
+<span class="kc-ann">a salary from your own corpus</span>
+</header>
+<p class="kc-sub">Withdraw a fixed amount every month from a corpus and see what survives.</p>
+<div class="kc-locale">
+<svg aria-hidden="true" class="kc-lglobe" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12 h18 M12 3 c3.5 3 3.5 15 0 18 M12 3 c-3.5 3 -3.5 15 0 18"></path></svg>
+<label>country <select aria-label="Country for SWP calculator" id="kcSwCC"></select></label>
+<label>currency <select aria-label="Currency for SWP calculator" id="kcSwCY"></select></label>
+</div>
+<div class="kc-grid">
+<div class="kc-card">
+<div class="kc-chead"><svg aria-hidden="true" viewbox="0 0 20 20"><path d="M3 5h14M3 10h14M3 15h14" fill="none"></path><circle cx="8" cy="5" r="2.3"></circle><circle cx="13" cy="10" r="2.3"></circle><circle cx="6" cy="15" r="2.3"></circle></svg><b>control desk</b><span class="kc-chint">slide or type</span></div>
+<div class="kc-row-i"><label for="kcSwW">Corpus</label><span class="kc-rng"><input id="kcSwWR" max="100000000" min="100000" step="50000" type="range" value="10000000"/><span class="kc-bub"></span></span><span class="kc-numw" data-sym="₹"><input id="kcSwW" min="50000" step="10000" type="number" value="10000000"/></span></div>
+<div class="kc-row-i"><label for="kcSwS">Monthly withdrawal</label><span class="kc-rng"><input id="kcSwSR" max="500000" min="1000" step="1000" type="range" value="50000"/><span class="kc-bub"></span></span><span class="kc-numw" data-sym="₹"><input id="kcSwS" min="500" step="500" type="number" value="50000"/></span></div>
+<div class="kc-row-i"><label for="kcSwR">Expected return / yr</label><span class="kc-rng"><input id="kcSwRR" max="20" min="0" step="0.5" type="range" value="8"/><span class="kc-bub"></span></span><input id="kcSwR" max="20" min="0" step="0.5" type="number" value="8"/></div>
+<div class="kc-row-i"><label for="kcSwY">After years</label><span class="kc-rng"><input id="kcSwYR" max="40" min="1" step="1" type="range" value="20"/><span class="kc-bub"></span></span><input id="kcSwY" max="40" min="1" step="1" type="number" value="20"/></div>
+</div>
+<div>
+<div class="kc-board">
+<div class="kc-btop"><span class="kc-btag"><i></i>live</span><b>SWP RECEIPT</b><button class="kc-copy" data-sec="swp" type="button">copy ⧉</button></div>
+<div class="kc-big"><span>balance left</span><b id="kcSwBal">—</b></div>
+<div class="kc-chips">
+<div class="kc-chip"><span>you withdraw</span><b id="kcSwOut">—</b></div>
+</div>
+<svg aria-hidden="true" class="kc-chart" id="kcSwCg" viewbox="0 0 320 132"></svg>
+<div class="kc-leg" id="kcSwLeg"></div>
+<div class="kc-bfine">★ DON'T OUT-EARN THE CORPUS ★</div>
+</div>
+<p class="kc-warn" id="kcSwNote"></p>
+<p class="kc-formula">Bal = W(1+i)ⁿ − S × [((1+i)ⁿ − 1) ÷ i]</p>
+</div>
+</div>
+<p class="kc-tip"><b>ca's corner:</b> withdraw less than it earns, and the corpus never ages.</p>
+</section><section class="kc-sec" data-n="12" id="kc-ann">
+<header class="kc-shead">
+<span class="kc-stamp">13 · corpus to income</span>
+<h2>Annuity calculator<svg aria-hidden="true" class="kc-ul" viewbox="0 0 220 12"><path d="M3 8 C 55 2, 120 12, 217 5"></path></svg></h2>
+<span class="kc-ann">why pensions sleep peacefully</span>
+</header>
+<p class="kc-sub">Turn a one-time corpus into a level monthly income for a fixed number of years.</p>
+<div class="kc-locale">
+<svg aria-hidden="true" class="kc-lglobe" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12 h18 M12 3 c3.5 3 3.5 15 0 18 M12 3 c-3.5 3 -3.5 15 0 18"></path></svg>
+<label>country <select aria-label="Country for annuity calculator" id="kcAnCC"></select></label>
+<label>currency <select aria-label="Currency for annuity calculator" id="kcAnCY"></select></label>
+</div>
+<div class="kc-grid">
+<div class="kc-card">
+<div class="kc-chead"><svg aria-hidden="true" viewbox="0 0 20 20"><path d="M3 5h14M3 10h14M3 15h14" fill="none"></path><circle cx="8" cy="5" r="2.3"></circle><circle cx="13" cy="10" r="2.3"></circle><circle cx="6" cy="15" r="2.3"></circle></svg><b>control desk</b><span class="kc-chint">slide or type</span></div>
+<div class="kc-row-i"><label for="kcAnW">Corpus</label><span class="kc-rng"><input id="kcAnWR" max="100000000" min="500000" step="50000" type="range" value="20000000"/><span class="kc-bub"></span></span><span class="kc-numw" data-sym="₹"><input id="kcAnW" min="100000" step="10000" type="number" value="20000000"/></span></div>
+<div class="kc-row-i"><label for="kcAnR">Return / yr</label><span class="kc-rng"><input id="kcAnRR" max="15" min="0" step="0.25" type="range" value="6"/><span class="kc-bub"></span></span><input id="kcAnR" max="15" min="0" step="0.25" type="number" value="6"/></div>
+<div class="kc-row-i"><label for="kcAnY">Payout years</label><span class="kc-rng"><input id="kcAnYR" max="40" min="5" step="1" type="range" value="25"/><span class="kc-bub"></span></span><input id="kcAnY" max="40" min="5" step="1" type="number" value="25"/></div>
+</div>
+<div>
+<div class="kc-board">
+<div class="kc-btop"><span class="kc-btag"><i></i>live</span><b>PAYOUT RECEIPT</b><button class="kc-copy" data-sec="ann" type="button">copy ⧉</button></div>
+<div class="kc-big"><span>monthly income</span><b id="kcAnOut">—</b></div>
+<div class="kc-chips">
+<div class="kc-chip"><span>total paid out</span><b id="kcAnTot">—</b></div>
+</div>
+<svg aria-hidden="true" class="kc-chart" id="kcAnCg" viewbox="0 0 320 132"></svg>
+<div class="kc-leg" id="kcAnLeg"></div>
+<div class="kc-bfine">★ A PAYCHEQUE YOU BUILT YOURSELF ★</div>
+</div>
+<p class="kc-formula">PMT = W × i ÷ (1 − (1+i)⁻ⁿ)</p>
+</div>
+</div>
+<p class="kc-tip"><b>ca's corner:</b> annuity maths is why pension funds sleep peacefully.</p>
+</section><section class="kc-sec" data-n="13" id="kc-infl">
+<header class="kc-shead">
+<span class="kc-stamp">14 · the silent thief</span>
+<h2>Inflation impact calculator<svg aria-hidden="true" class="kc-ul" viewbox="0 0 220 12"><path d="M3 8 C 55 2, 120 12, 217 5"></path></svg></h2>
+<span class="kc-ann">why 100 shrinks without anyone stealing it</span>
+</header>
+<p class="kc-sub">Same item, same shelf — heavier price tag. See tomorrow’s price of anything, and what today’s money will actually buy then.</p>
+<div class="kc-locale">
+<svg aria-hidden="true" class="kc-lglobe" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12 h18 M12 3 c3.5 3 3.5 15 0 18 M12 3 c-3.5 3 -3.5 15 0 18"></path></svg>
+<label>country <select aria-label="Country for Inflation impact calculator" id="kcIfCC"></select></label>
+<label>currency <select aria-label="Currency for Inflation impact calculator" id="kcIfCY"></select></label>
+</div>
+<div class="kc-grid">
+<div class="kc-card">
+<div class="kc-chead"><svg aria-hidden="true" viewbox="0 0 20 20"><path d="M3 5h14M3 10h14M3 15h14" fill="none"></path><circle cx="8" cy="5" r="2.3"></circle><circle cx="13" cy="10" r="2.3"></circle><circle cx="6" cy="15" r="2.3"></circle></svg><b>control desk</b><span class="kc-chint">slide or type</span></div>
+<div class="kc-row-i"><label for="kcIfCost">What it costs today</label><span class="kc-rng"><input id="kcIfCostR" max="1000000" min="500" step="500" type="range" value="10000"/><span class="kc-bub"></span></span><span class="kc-numw" data-sym="₹"><input id="kcIfCost" min="500" step="500" type="number" value="10000"/></span></div>
+<div class="kc-row-i"><label for="kcIfR">Inflation / yr</label><span class="kc-rng"><input id="kcIfRR" max="20" min="0" step="0.25" type="range" value="6"/><span class="kc-bub"></span></span><input id="kcIfR" max="20" min="0" step="0.25" type="number" value="6"/></div>
+<div class="kc-row-i"><label for="kcIfY">Years from now</label><span class="kc-rng"><input id="kcIfYR" max="40" min="1" step="1" type="range" value="10"/><span class="kc-bub"></span></span><input id="kcIfY" max="40" min="1" step="1" type="number" value="10"/></div>
+</div>
+<div>
+<div class="kc-board">
+<div class="kc-btop"><span class="kc-btag"><i></i>live</span><b>INFLATION RECEIPT</b><button class="kc-copy" data-sec="infl" type="button">copy ⧉</button></div>
+<div class="kc-big"><span>it will cost</span><b id="kcIfFut">—</b></div>
+<div class="kc-chips">
+<div class="kc-chip"><span>today’s money buys then</span><b id="kcIfPow">—</b></div>
+<div class="kc-chip"><span>price multiplier</span><b id="kcIfMul">—</b></div>
+</div>
+<svg aria-hidden="true" class="kc-chart" id="kcIfCg" viewbox="0 0 320 132"></svg>
+<div class="kc-leg" id="kcIfLeg"></div>
+<div class="kc-bfine">★ OUTRUN THE THIEF ★</div>
+</div>
+<p class="kc-warn" id="kcIfNote"></p>
+<p class="kc-formula">F = C × (1+f)ⁿ · purchasing power = C ÷ (1+f)ⁿ</p>
+</div>
+</div>
+<p class="kc-tip"><p class="kc-tip"><b>ca’s corner:</b> cash under the mattress is the only investment guaranteed to lose.</p></p>
+</section><div class="pr-group-divider" id="calc-reference"><strong>Country reference</strong><span>15 — 15</span></div><section class="kc-sec" data-n="15" id="kc-cty">
+<header class="kc-shead">
+<span class="kc-stamp">15 · the world desk</span>
+<h2>Country guide: accounts &amp; loan rates<svg aria-hidden="true" class="kc-ul" viewbox="0 0 220 12"><path d="M3 8 C 55 2, 120 12, 217 5"></path></svg></h2>
+<span class="kc-ann">tap a row → it loads the calculator</span>
+</header>
+<p class="kc-sub">Pick a country to browse its typical savings schemes and loan rates. Tapping any row carries the country, currency and typical rate straight into the matching calculator above.</p>
+<div class="kc-locale">
+<svg aria-hidden="true" class="kc-lglobe" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12 h18 M12 3 c3.5 3 3.5 15 0 18 M12 3 c-3.5 3 -3.5 15 0 18"></path></svg>
+<label>country <select aria-label="Country for the guide" id="kcCty"></select></label>
+</div>
+<div class="kc-guide">
+<div class="kc-list"><h4>accounts &amp; schemes</h4><div id="kcAccList"></div></div>
+<div class="kc-list"><h4>loans</h4><div id="kcLoanList"></div></div>
+</div>
+<p class="kc-tip"><b>ca's corner:</b> rates move — treat these as a map, not a promise.</p>
+</section><div aria-label="Page display and reading options" class="enh-toolbar"><button aria-pressed="false" class="enh-effects" type="button">Pause effects</button></div>
+<!-- &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; HERO &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+<script>
+/* hero glue: flip words + slide deck (self-contained for paste) */
+(function(){
+ var rm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var f = document.getElementById('kcWord');
+ if (f && !rm){
+ var ws = [].slice.call(f.children), i = 0;
+ setInterval(function(){
+ var c = ws[i]; i = (i + 1) % ws.length; var nx = ws[i];
+ c.classList.remove('on'); c.classList.add('out');
+ setTimeout(function(){ c.classList.remove('out'); }, 500);
+ nx.classList.add('on');
+ }, 2300);
+ }
+ var t = document.getElementById('kcDeck');
+ if (t){
+ var sl = t.children, n = sl.length, k = 0, tm = null;
+ var bar = document.querySelector('.kcd-prog i');
+ function barRun(){ if (!bar) return; bar.style.transition = 'none'; bar.style.width = rm ? '100%' : '0%'; void bar.offsetWidth;
+ if (!rm){ bar.style.transition = 'width 4.5s linear'; bar.style.width = '100%'; } }
+ function go(x){ k = (x + n) % n; var w = sl[0] ? sl[0].offsetWidth : 0; t.style.transform = 'translateX(-' + (k * w) + 'px)';
+ for (var s2 = 0; s2 < n; s2++){ sl[s2].classList.toggle('kcd-now', s2 === k); } barRun(); }
+ function auto(){ if (tm) clearInterval(tm); if (!rm) tm = setInterval(function(){ go(k + 1); }, 4500); }
+ var x0 = null;
+ t.addEventListener('touchstart', function(e){ x0 = e.touches[0].clientX; }, { passive: true });
+ t.addEventListener('touchend', function(e){
+ if (x0 === null) return;
+ var dx = e.changedTouches[0].clientX - x0; x0 = null;
+ if (dx < -40){ go(k + 1); auto(); } else if (dx > 40){ go(k - 1); auto(); }
+ }, { passive: true });
+ go(0); auto();
+ if (window.addEventListener) window.addEventListener('resize', function(){ go(k); });
+ }
+})();
+</script>
+<!-- &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; 05 &#183; LOAN EMI &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+<!-- &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; 01 &#183; SIP &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+<!-- &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; 02 &#183; LUMP SUM &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+<!-- &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; 04 &#183; the spending plan &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+<!-- &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; 05 &#183; the goal machine &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+<!-- &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; 06 &#183; future you &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+<!-- &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; 06 &#183; INTEREST INCOME &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+<!-- &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; 08 &#183; plastic damage control &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+<!-- &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; 09 &#183; before you borrow &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+<!-- &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; 10 &#183; the fast-forward button &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+<!-- &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; 03 &#183; SWP &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+<!-- &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; 04 &#183; ANNUITY &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+<!-- &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; 13 &#183; the silent thief &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+<!-- &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; 14 &#183; the shock absorber &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+<!-- &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; 07 &#183; COUNTRY GUIDE &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
+<script>
+/* &#9552;&#9552;&#9552; calculator engine (self-contained for paste) &#9552;&#9552;&#9552; */
+(function(){
+ var d = document;
+ var rm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var KC = { EXTRA_ACC: null, EXTRA_LOAN: null };
+
+ var CURS = [['INR','&#8377; Indian Rupee'],['USD','$ US Dollar'],['EUR','&#8364; Euro'],['GBP','&#163; British Pound'],['JPY','&#165; Japanese Yen'],['CNY','&#165; Chinese Yuan'],['CAD','$ Canadian Dollar'],['AUD','$ Australian Dollar'],['NZD','$ NZ Dollar'],['CHF','Swiss Franc'],['SEK','Swedish Krona'],['NOK','Norwegian Krone'],['DKK','Danish Krone'],['SGD','Singapore Dollar'],['HKD','Hong Kong Dollar'],['AED','UAE Dirham'],['SAR','Saudi Riyal'],['QAR','Qatari Riyal'],['KWD','Kuwaiti Dinar'],['KRW','Korean Won'],['ZAR','South African Rand'],['NGN','Nigerian Naira'],['KES','Kenyan Shilling'],['EGP','Egyptian Pound'],['BRL','Brazilian Real'],['MXN','Mexican Peso'],['ARS','Argentine Peso'],['IDR','Indonesian Rupiah'],['MYR','Malaysian Ringgit'],['PHP','Philippine Peso'],['THB','Thai Baht'],['VND','Vietnamese Dong'],['PKR','Pakistani Rupee'],['BDT','Bangladeshi Taka'],['LKR','Sri Lankan Rupee'],['NPR','Nepalese Rupee'],['TRY','Turkish Lira'],['PLN','Polish Zloty'],['CZK','Czech Koruna'],['HUF','Hungarian Forint'],['ILS','Israeli Shekel'],['RUB','Russian Ruble']];
+
+ var C = {
+ IN:['INR','India',[
+ ['Savings Account',3],['Current Account',0],['Fixed Deposit (FD)',7],['Recurring Deposit (RD)',6.5],
+ ['Tax-Saver FD (5-yr)',7],['NRE Savings',3],['NRO Savings',3],['PPF (15-yr)',7.1],['EPF',8.25],
+ ['Post-Office MIS',7.4],['NSC (5-yr)',7.7],['Senior Citizen Scheme (SCSS)',8.2],['Sukanya Samriddhi',8.2],['Kisan Vikas Patra',7.5]],
+ [['Home Loan',8.5],['Car Loan',9],['Personal Loan',11],['Education Loan',8.5],['Gold Loan',9.5],['Loan Against Property',9],['Business Loan',13],['Two-Wheeler Loan',11]]],
+ US:['USD','United States',[
+ ['Savings Account',0.45],['High-Yield Savings',4.25],['Checking / Current',0],['Certificate of Deposit (CD)',4.5],['Money Market Account',4.3],['401(k) (target)',7]],
+ [['Mortgage (30-yr fixed)',6.7],['Auto Loan',6.5],['Personal Loan',11.5],['Student Loan',6.5],['Business Loan',9.5],['Credit Card APR',22]]],
+ GB:['GBP','United Kingdom',[
+ ['Savings Account',2.25],['Easy-Access Savings',4.4],['Current Account',0],['Fixed-Rate Bond (1-2 yr)',4.4],['Cash ISA',4.5],['Help-to-Buy ISA',2.5]],
+ [['Mortgage (2-yr fixed)',5],['Car Finance (PCP)',7.9],['Personal Loan',9.5],['Student Loan (Plan 2)',7.3],['Business Loan',10]]],
+ CA:['CAD','Canada',[
+ ['Savings Account',1.5],['High-Interest Savings (HISA)',3.5],['Chequing',0],['GIC (1-yr)',4.3],['TFSA (savings)',3.5],['RRSP (target)',6]],
+ [['Mortgage (5-yr fixed)',5.2],['Auto Loan',6.8],['Personal Loan',10.5],['Student Loan',5.5],['Business Loan',9]]],
+ AU:['AUD','Australia',[
+ ['Savings Account',3],['Bonus Savings',4.75],['Transaction Account',0],['Term Deposit (1-yr)',4.3],['First Home Super Saver',7]],
+ [['Mortgage (variable)',6.4],['Car Loan',7.5],['Personal Loan',11],['HECS/HELP Student',0],['Business Loan',9.5]]],
+ NZ:['NZD','New Zealand',[
+ ['Savings Account',2.8],['Bonus Savings',4.2],['Everyday Account',0],['Term Deposit (1-yr)',4.5]],
+ [['Mortgage (1-yr fixed)',6.6],['Car Loan',8.5],['Personal Loan',11.5],['Student Loan (Interest-free NZ)',0]]],
+ AE:['AED','United Arab Emirates',[
+ ['Savings Account',1],['Fixed Deposit (1-yr)',4],['Current Account',0],['Recurring Deposit',3.5],['Islamic Murabaha Deposit',3.8]],
+ [['Home Loan',4.5],['Auto Loan',4],['Personal Loan',7],['Business Loan',8.5],['Islamic Home Finance',4.8]]],
+ SA:['SAR','Saudi Arabia',[
+ ['Savings Account',0.8],['Fixed Deposit',4.2],['Current Account',0],['Islamic Mudarabah Savings',3.5]],
+ [['Home Mortgage',5.5],['Auto Loan',5],['Personal Loan',8],['Business Loan',9]]],
+ QA:['QAR','Qatar',[['Savings Account',0.9],['Fixed Deposit',4],['Current Account',0]],[['Home Loan',5.2],['Car Loan',4.8],['Personal Loan',7.5]]],
+ KW:['KWD','Kuwait',[['Savings Account',0.7],['Fixed Deposit',3.8],['Current Account',0]],[['Home Loan',4.8],['Auto Loan',4.2],['Personal Loan',7.2]]],
+ SG:['SGD','Singapore',[
+ ['Savings Account',0.05],['High-Yield Savings (bonus)',3.5],['Current Account',0],['Fixed Deposit (1-yr)',3.2],['CPF OA (guaranteed)',2.5],['SGS T-Bill (1-yr)',3.3]],
+ [['Home Loan (floating)',4.3],['Car Loan',3],['Personal Loan',8],['Education Loan',4.5],['Business Loan',8.5]]],
+ JP:['JPY','Japan',[['Ordinary Savings',0.1],['Time Deposit (1-yr)',0.25],['Current Account',0],['Japan Post Fixed',0.3]],[['Home Mortgage (variable)',1.5],['Car Loan',3],['Personal Loan',8],['Education Loan',2]]],
+ CN:['CNY','China',[['Current Demand Deposit',0.2],['Time Deposit (1-yr)',1.7],['Savings Passbook',0.35],['Money Market Fund (target)',2]],[['Mortgage (first home)',3.7],['Auto Loan',5],['Personal Loan',7],['Business Loan',5.5]]],
+ KR:['KRW','South Korea',[['Passbook Savings',1.5],['Installment Savings',3.2],['Time Deposit',2.9],['Current Account',0]],[['Mortgage (variable)',4],['Auto Loan',5.5],['Personal Loan',7.5],['Chonse Loan',4]]],
+ HK:['HKD','Hong Kong',[['Savings Account',0.5],['Time Deposit (1-yr)',3.3],['Current Account',0]],[['Mortgage (HIBOR-based)',3.9],['Car Loan',6],['Personal Loan',8]]],
+ DE:['EUR','Germany',[['Tagesgeld (Call Money)',2.5],['Festgeld (Fixed 1-yr)',3],['Girokonto (Current)',0],['Bauspar (Building Society)',1.5]],[['Immobilienkredit (Mortgage)',3.6],['Autokredit (Car)',5.5],['Ratenkredit (Personal)',7.5],['Student Loan (BAföG)',0]]],
+ FR:['EUR','France',[['Livret A (tax-free)',3],['LDDS',3],['Compte Courant',0],['Livret Jeune',3.5],['PEL',2.25]],[['Prêt Immobilier (Mortgage)',3.9],['Crédit Auto',5.5],['Prêt Personnel',7.5],['Prêt Étudiant (0%)',0]]],
+ NL:['EUR','Netherlands',[['Spaarrekening (Savings)',2.3],['High-Yield Savings',3.2],['Betaalrekening (Current)',0],['Deposito (1-yr)',3]],[['Hypotheek (Mortgage)',4],['Autolening (Car)',6.5],['Persoonlijke Lening',8]]],
+ ES:['EUR','Spain',[['Cuenta de Ahorro (Savings)',2.5],['Depósito Fijo (1-yr)',2.9],['Cuenta Corriente',0]],[['Hipoteca (Mortgage)',3.8],['Crédito Coche (Car)',6.5],['Préstamo Personal',8.5]]],
+ IT:['EUR','Italy',[['Conto Deposito (Savings)',3],['Conto Corrente (Current)',0],['Buoni Fruttiferi Postali',2.5]],[['Mutuo (Mortgage)',3.9],['Prestito Auto (Car)',6.8],['Prestito Personale',8.8]]],
+ CH:['CHF','Switzerland',[['Savings Account',0.8],['Fixed Deposit (1-yr)',1.4],['Current Account',0],['Pillar 3a (target)',5]],[['Mortgage (SARON)',2.2],['Auto Loan',4.5],['Personal Loan',6.5]]],
+ SE:['SEK','Sweden',[['Sparkonto (Savings)',3],['Fixed Deposit',3.4],['Brukskonto (Current)',0]],[['Bolån (Mortgage)',4],['Billån (Car)',6],['Privatlån (Personal)',8]]],
+ NO:['NOK','Norway',[['Savings Account',4],['Fixed Deposit',4.6],['Current Account',0]],[['Boliglån (Mortgage)',5.5],['Bilån (Car)',6.5],['Forbrukslån (Personal)',12]]],
+ DK:['DKK','Denmark',[['Indlånskonto (Savings)',2.2],['Fixed Deposit',3],['Current Account',0]],[['Boliglån (Mortgage)',4.5],['Billån',6],['Forbrugslån (Personal)',9]]],
+ ZA:['ZAR','South Africa',[['Savings Account',4.5],['Fixed Deposit (1-yr)',8.3],['Call Deposit',5],['Tax-Free Savings (TFSA target)',8]],[['Home Loan (variable)',11],['Vehicle Finance',12],['Personal Loan',17],['Study Loan',11]]],
+ NG:['NGN','Nigeria',[['Savings Account',4],['Fixed Deposit (1-yr)',15],['Current Account',1],['Treasury Bills (target)',18]],[['Mortgage (NHFF)',12],['Auto Loan',22],['Personal Loan',28],['Business SME',26]]],
+ KE:['KES','Kenya',[['Savings Account',4],['Fixed Deposit (1-yr)',10],['Current Account',0],['Money Market Fund (target)',12]],[['Mortgage',13.5],['Auto Loan',14],['Personal Loan',16],['Business Loan',15]]],
+ EG:['EGP','Egypt',[['Savings Account',11],['Fixed Deposit (1-yr)',22],['Current Account',2]],[['Mortgage (subsidised)',8],['Car Loan',22],['Personal Loan',26]]],
+ BR:['BRL','Brazil',[['Poupança (Savings)',6.2],['CDB (1-yr, target)',10],['Conta Corrente (Current)',0],['Tesouro Direto (target)',10.5]],[['Financiamento Imobiliário (Mortgage)',10],['Crédito Automotivo (Car)',18],['Crédito Pessoal (Personal)',28]]],
+ MX:['MXN','Mexico',[['Cuenta de Ahorro (Savings)',3],['Pagaré Bancario (1-yr)',9],['Cuenta Corriente',0],['CETES (target)',10.5]],[['Crédito Hipotecario (Mortgage)',11],['Crédito Automotriz (Car)',14],['Préstamo Personal',25]]],
+ AR:['ARS','Argentina',[['Caja de Ahorro (Savings)',40],['Plazo Fijo (30-day, UVA-adjusted varies)',70],['Cuenta Corriente',0]],[['Hipoteca UVA (Mortgage)',8],['Préstamo Personal',60]]],
+ ID:['IDR','Indonesia',[['Tabungan (Savings)',2.5],['Deposito Berjangka (1-yr)',6],['Giro (Current)',1.5]],[['KPR (Mortgage)',8.5],['Kredit Mobil (Car)',6],['KTA (Personal)',13]]],
+ MY:['MYR','Malaysia',[['Savings Account',1],['Fixed Deposit (1-yr)',3.4],['Current Account',0],['EPF (guaranteed)',5.5]],[['Home Loan (floating)',4.6],['Car Loan',3.6],['Personal Loan',8.5],['SME Loan',7.5]]],
+ PH:['PHP','Philippines',[['Savings Account',0.5],['Time Deposit (1-yr)',5],['Current Account',0],['Pag-IBIG MP2 (dividend)',7]],[['Housing Loan (Pag-IBIG)',7],['Auto Loan',7.5],['Personal Loan',12]]],
+ TH:['THB','Thailand',[['Savings Account',0.8],['Fixed Deposit (1-yr)',2.2],['Current Account',0],['Provident Fund (target)',5]],[['Home Mortgage',6],['Auto Hire-Purchase',7],['Personal Loan',16]]],
+ VN:['VND','Vietnam',[['Savings Passbook',4.5],['Term Deposit (1-yr)',6],['Current Account',0.2]],[['Home Loan',9.5],['Car Loan',9],['Personal Loan',14]]],
+ PK:['PKR','Pakistan',[['Savings Account',9],['Fixed Deposit (1-yr)',17],['Current Account',0],['National Savings Certificates',15]],[['Home Finance',17],['Car Loan (IB)',17],['Personal Loan',24]]],
+ BD:['BDT','Bangladesh',[['Savings Account',4],['Fixed Deposit (1-yr)',8],['Current Account',0],['Sanchayapatra (Savings Certificates)',11.5]],[['Home Loan',9],['Auto Loan',10],['Personal Loan',13]]],
+ LK:['LKR','Sri Lanka',[['Savings Account',6],['Fixed Deposit (1-yr)',11],['Current Account',0]],[['Home Loan',13],['Auto Loan',15],['Personal Loan',18]]],
+ NP:['NPR','Nepal',[['Savings Account',5],['Fixed Deposit (1-yr)',8.5],['Current Account',0]],[['Home Loan',10.5],['Auto Loan',11],['Personal Loan',13]]],
+ TR:['TRY','Turkey',[['Vadeli Mevduat (Time Deposit)',42],['Savings Account',15],['Current Account',0]],[['Konut Kredisi (Mortgage)',30],['Taşıt Kredisi (Car)',28],['İhtiyaç Kredisi (Personal)',45]]],
+ IL:['ILS','Israel',[['Savings (Pikadon)',3.5],['Fixed Deposit (1-yr)',4],['Current Account',0]],[['Mortgage (variable)',5],['Car Loan',6.5],['Personal Loan',9]]],
+ PL:['PLN','Poland',[['Lokata (Fixed 1-yr)',6],['Savings Account',2.5],['ROR (Current)',0],['IKE (target)',7]],[['Kredyt Hipoteczny (Mortgage)',8],['Kredyt Samochodowy (Car)',9.5],['Pożyczka Gotówkowa (Personal)',12]]],
+ CZ:['CZK','Czechia',[['Sporicí účet (Savings)',4.5],['Termínovaný vklad (Fixed)',5.2],['Current Account',0]],[['Hypotéka (Mortgage)',5.8],['Autoúvěr (Car)',8],['Spotřebitelský úvěr (Personal)',10.5]]],
+ HU:['HUF','Hungary',[['Lekötött betét (Fixed 1-yr)',12],['Savings Account',3],['Current Account',0]],[['Jelzáloghitel (Mortgage)',9],['Autóhitel (Car)',11],['Személyi kölcsön (Personal)',17]]]
+ };
+
+ var GENERIC_A = [['Savings Account',3],['Current Account',0],['Fixed / Term Deposit (1-yr)',5],['Recurring Deposit',4.5],['Money Market Fund',4]];
+ var GENERIC_L = [['Home Mortgage',7],['Auto / Vehicle Loan',8],['Personal Loan',12],['Education Loan',7],['Business / SME Loan',11],['Credit Card APR',20]];
+
+ /* ---------- per-calculator locale: EVERY table picks its own ---------- */
+ var SECS = {
+ sip:{ cur:'INR', cty:'IN', man:false, lock:false },
+ ls:{ cur:'INR', cty:'IN', man:false, lock:false },
+ swp:{ cur:'INR', cty:'IN', man:false, lock:false },
+ ann:{ cur:'INR', cty:'IN', man:false, lock:false },
+ emi:{ cur:'INR', cty:'IN', man:false, lock:false },
+ int:{ cur:'INR', cty:'IN', man:false, lock:false },
+ bg:{ cur:'INR', cty:'IN', man:false, lock:false },
+ gl:{ cur:'INR', cty:'IN', man:false, lock:false },
+ rt:{ cur:'INR', cty:'IN', man:false, lock:false },
+ cc:{ cur:'INR', cty:'IN', man:false, lock:false },
+ af:{ cur:'INR', cty:'IN', man:false, lock:false },
+ pp:{ cur:'INR', cty:'IN', man:false, lock:false },
+ infl:{ cur:'INR', cty:'IN', man:false, lock:false },
+ ef:{ cur:'INR', cty:'IN', man:false, lock:false }
+ };
+ var SECID = { sip:'kc-sip', ls:'kc-lump', swp:'kc-swp', ann:'kc-ann', emi:'kc-emi', int:'kc-int', bg:'kc-bg', gl:'kc-gl', rt:'kc-rt', cc:'kc-cc', af:'kc-af', pp:'kc-pp', infl:'kc-infl', ef:'kc-ef' };
+ var SEL = {
+ sip:[d.getElementById('kcSipCC'), d.getElementById('kcSipCY')],
+ ls:[d.getElementById('kcLsCC'), d.getElementById('kcLsCY')],
+ swp:[d.getElementById('kcSwCC'), d.getElementById('kcSwCY')],
+ ann:[d.getElementById('kcAnCC'), d.getElementById('kcAnCY')],
+ emi:[d.getElementById('kcEmiCC'), d.getElementById('kcEmiCY')],
+ int:[d.getElementById('kcInCC'), d.getElementById('kcInCY')],
+ bg:[d.getElementById('kcBgCC'), d.getElementById('kcBgCY')],
+ gl:[d.getElementById('kcGlCC'), d.getElementById('kcGlCY')],
+ rt:[d.getElementById('kcRtCC'), d.getElementById('kcRtCY')],
+ cc:[d.getElementById('kcCcCC'), d.getElementById('kcCcCY')],
+ af:[d.getElementById('kcAfCC'), d.getElementById('kcAfCY')],
+ pp:[d.getElementById('kcPpCC'), d.getElementById('kcPpCY')],
+ infl:[d.getElementById('kcIfCC'), d.getElementById('kcIfCY')],
+ ef:[d.getElementById('kcEfCC'), d.getElementById('kcEfCY')]
+ };
+ var SYM = {};
+ function symFor(cur){
+ try { return new Intl.NumberFormat('en', { style:'currency', currency:cur }).format(0).replace(/[\d.,\s]/g, ''); }
+ catch(e){ return cur; }
+ }
+ function setSym(k){
+ var sec = d.getElementById(SECID[k]); if (!sec) return;
+ [].slice.call(sec.querySelectorAll('.kc-numw')).forEach(function(w){ w.setAttribute('data-sym', SYM[k] || ''); });
+ }
+ function opt(sel, v, t){ var o = d.createElement('option'); o.value = v; o.textContent = t; sel.appendChild(o); return o; }
+ function fillCountries(){
+ Object.keys(SEL).forEach(function(k){
+ var cc = SEL[k][0], cy = SEL[k][1];
+ if (!cc) return;
+ cc.textContent = '';
+ Object.keys(C).forEach(function(code){ opt(cc, code, C[code][1] + ' &#183; ' + C[code][0]); });
+ cc.value = SECS[k].cty;
+ if (cy){ cy.textContent = ''; CURS.forEach(function(c){ opt(cy, c[0], c[1]); }); cy.value = SECS[k].cur; }
+ SYM[k] = symFor(SECS[k].cur); setSym(k);
+ });
+ }
+ fillCountries();
+
+ /* ---------- formatting (per-section currency; INR gets lakh grouping) ---------- */
+ function fmt(v, cur){
+ try { return new Intl.NumberFormat(cur === 'INR' ? 'en-IN' : 'en', { style:'currency', currency:cur, maximumFractionDigits:0 }).format(v); }
+ catch(e){ return cur + ' ' + Math.round(v).toLocaleString('en-US'); }
+ }
+ function pct(v){ return (Math.round(v * 100) / 100) + '%'; }
+
+ /* ---------- count-up result numbers + bump ---------- */
+ var LAST = {};
+ var BIG = { kcSipTot:1, kcLsTot:1, kcSwBal:1, kcAnOut:1, kcEmiOut:1, kcInMat:1, kcBgSave:1, kcGlMo:1, kcRtCorpus:1, kcRtSip:1, kcCcMo:1, kcAfLoan:1, kcPpSave:1, kcIfFut:1, kcEfTgt:1 };
+ function bump(el){ el.classList.remove('kc-bump'); void el.offsetWidth; el.classList.add('kc-bump'); }
+ function put(id, v, cur){
+ var el = d.getElementById(id); if (!el) return;
+ var target = Math.round(v);
+ if (!isFinite(target)){ el.textContent = '&#8212;'; return; }
+ if (rm){ el.textContent = fmt(target, cur); LAST[id] = target; return; }
+ var prev = LAST[id];
+ var from = (prev != null) ? prev : Math.max(0, target - Math.max(1, Math.round(Math.abs(target) * 0.12)));
+ LAST[id] = target;
+ if (BIG[id] && prev != null && Math.abs(target - prev) >= Math.max(1, Math.abs(prev) * 0.02)) bump(el);
+ if (from === target){ el.textContent = fmt(target, cur); return; }
+ if (el._raf) cancelAnimationFrame(el._raf);
+ var t0 = null;
+ function step(ts){
+ if (t0 === null) t0 = ts;
+ var k = Math.min(1, (ts - t0) / 420), e = 1 - Math.pow(1 - k, 3);
+ el.textContent = fmt(Math.round(from + (target - from) * e), cur);
+ if (k < 1) el._raf = requestAnimationFrame(step);
+ }
+ el._raf = requestAnimationFrame(step);
+ }
+ function putText(id, s){ var el = d.getElementById(id); if (el) el.textContent = s; }
+
+ /* ---------- slider + number binding with fill paint + value bubble ---------- */
+ function paint(r){ var p = (r.value - r.min) / (r.max - r.min) * 100; r.style.background = 'linear-gradient(90deg, var(--accent) ' + p + '%, #EADCC8 ' + p + '%)'; }
+ function V(id){ var e = d.getElementById(id), v = e ? +e.value : NaN; return isFinite(v) ? v : 0; }
+ function bind(rid, nid, fn, k){
+ var r = d.getElementById(rid), n = d.getElementById(nid); if (!r || !n) return;
+ var rng = r.parentNode, bub = rng ? rng.querySelector('.kc-bub') : null;
+ paint(r);
+ function bubUp(v){
+ if (!bub) return;
+ if (/R$/.test(nid)) bub.textContent = v + '%';
+ else if (/Y$/.test(nid)) bub.textContent = v + (v === 1 ? ' yr' : ' yrs');
+ else bub.textContent = fmt(v, SECS[k] ? SECS[k].cur : 'INR');
+ var p = (v - +r.min) / (+r.max - +r.min) * 100;
+ bub.style.left = Math.max(9, Math.min(91, p)) + '%';
+ }
+ r.addEventListener('input', function(){ n.value = r.value; paint(r); bubUp(+r.value); fn(); });
+ r.addEventListener('pointerdown', function(){ if (rng) rng.classList.add('drag'); bubUp(+r.value); });
+ n.addEventListener('input', function(){ var v = +n.value; if (v >= +r.min && v <= +r.max){ r.value = v; paint(r); fn(); } });
+ }
+ d.addEventListener('pointerup', function(){
+ [].slice.call(d.querySelectorAll('.kc-rng.drag')).forEach(function(x){ x.classList.remove('drag'); });
+ });
+
+ /* ---------- live mini-charts ---------- */
+ var NSX = 'http://www.w3.org/2000/svg';
+ function S(tag, at){ var e = d.createElementNS(NSX, tag); for (var k in at) e.setAttribute(k, at[k]); return e; }
+ function clr(svg){ while (svg.firstChild) svg.removeChild(svg.firstChild); }
+ function grid(svg, cur, maxV, rl){
+ [0,.5, 1].forEach(function(t){
+ var y = 118 - t * 104;
+ svg.appendChild(S('line', { x1:6, y1:y, x2:314, y2:y, stroke:'rgba(36,22,16,.12)', 'stroke-dasharray':'3 5', 'stroke-width':1 }));
+ });
+ var a = S('text', { x:8, y:10, 'class':'kc-ct' }); a.textContent = fmt(maxV, cur); svg.appendChild(a);
+ var b = S('text', { x:8, y:130, 'class':'kc-ct' }); b.textContent = '0'; svg.appendChild(b);
+ if (rl){ var c = S('text', { x:312, y:130, 'class':'kc-ct', 'text-anchor':'end' }); c.textContent = rl; svg.appendChild(c); }
+ }
+ function drawIn(p){
+ if (rm) return;
+ try {
+ var L = p.getTotalLength();
+ p.style.strokeDasharray = L; p.style.strokeDashoffset = L;
+ p.getBoundingClientRect();
+ p.style.transition = 'stroke-dashoffset.8s cubic-bezier(.22,.8,.36,1)';
+ p.style.strokeDashoffset = '0';
+ } catch(e){}
+ }
+ function fadeIn(el){
+ if (rm) return;
+ el.style.opacity = 0; el.getBoundingClientRect();
+ el.style.transition = 'opacity.9s ease.1s'; el.style.opacity = 1;
+ }
+ function legend(id, html){ var el = d.getElementById(id); if (el) el.innerHTML = html; }
+ function lineChart(svgId, legId, series, cur, maxV, rl){
+ var svg = d.getElementById(svgId); if (!svg) return;
+ clr(svg); grid(svg, cur, maxV, rl);
+ series.forEach(function(sr, ix){
+ var dPath = sr.pts.map(function(p, i){ return (i ? 'L' : 'M') + p[0].toFixed(1) + ' ' + (118 - p[1] / maxV * 104).toFixed(1); }).join(' ');
+ if (sr.fill){
+ var lp = sr.pts[sr.pts.length - 1];
+ var area = S('path', { d: dPath + ' L' + lp[0].toFixed(1) + ' 118 L6 118 Z', 'class':'kc-area' });
+ svg.appendChild(area); fadeIn(area);
+ }
+ var el = S('path', { d: dPath, 'class': sr.dash ? 'kc-cl2' : 'kc-cl' });
+ svg.appendChild(el);
+ if (sr.dash) el.style.opacity =.8; else drawIn(el);
+ if (ix === 0 && !sr.dash){
+ var e2 = sr.pts[sr.pts.length - 1];
+ svg.appendChild(S('circle', { cx:e2[0], cy:(118 - e2[1] / maxV * 104).toFixed(1), r:4.5, 'class':'kc-dotg' }));
+ }
+ });
+ if (legId) legend(legId, series.map(function(s2){
+ return s2.name ? '<span><i class="' + (s2.dash ? 'lg-b' : 'lg-a') + '"></i>' + s2.name + '</span>' : '';
+ }).join(''));
+ }
+ function donut(svgId, legId, share, cur, pairs, word){
+ var svg = d.getElementById(svgId); if (!svg) return;
+ clr(svg);
+ share = Math.max(0, Math.min(1, share || 0));
+ var C2 = 2 * Math.PI * 44;
+ svg.appendChild(S('circle', { cx:160, cy:64, r:44, fill:'none', stroke:'#EADCC8', 'stroke-width':15 }));
+ var fg = S('circle', { cx:160, cy:64, r:44, fill:'none', stroke:'var(--accent-dark)', 'stroke-width':15, 'stroke-linecap':'round', 'stroke-dasharray':'0 ' + C2, transform:'rotate(-90 160 64)' });
+ svg.appendChild(fg);
+ var target = (C2 * share).toFixed(1) + ' ' + C2.toFixed(1);
+ if (rm){ fg.setAttribute('stroke-dasharray', target); }
+ else { requestAnimationFrame(function(){ fg.style.transition = 'stroke-dasharray.8s cubic-bezier(.22,.8,.36,1)'; fg.style.strokeDasharray = target; }); }
+ var t1 = S('text', { x:160, y:62, 'text-anchor':'middle', 'class':'kc-cbig' }); t1.textContent = Math.round(share * 100) + '%'; svg.appendChild(t1);
+ var t2 = S('text', { x:160, y:78, 'text-anchor':'middle', 'class':'kc-ct' }); t2.textContent = word || 'interest share'; svg.appendChild(t2);
+ if (legId) legend(legId, pairs.map(function(p){
+ return '<span><i class="' + p[2] + '"></i>' + p[0] + ' &#183; ' + fmt(p[1], cur) + '</span>';
+ }).join(''));
+ }
+ function sipChart(){
+ var P = V('kcSipAmt'), R = V('kcSipR') / 1200, n = V('kcSipY') * 12, cur = SECS.sip.cur;
+ var steps = Math.min(60, n), fv = [], inv = [], mx = 0;
+ for (var s = 0; s <= steps; s++){
+ var m = Math.round(n * s / steps), x = 6 + 308 * s / steps;
+ var v = P * ((Math.pow(1 + R, m) - 1) / R) * (1 + R);
+ fv.push([x, v]); inv.push([x, P * m]); if (v > mx) mx = v;
+ }
+ lineChart('kcSipCg', 'kcSipLeg', [
+ { pts:fv, name:'projected value', fill:true },
+ { pts:inv, name:'you put in', dash:true }
+ ], cur, mx || 1, V('kcSipY') + ' yrs');
+ }
+ function lsChart(){
+ var P = V('kcLsAmt'), R = V('kcLsR') / 1200, n = V('kcLsY') * 12, cur = SECS.ls.cur;
+ var steps = Math.min(60, n), fv = [], mx = 0;
+ for (var s = 0; s <= steps; s++){
+ var m = Math.round(n * s / steps), x = 6 + 308 * s / steps;
+ var v = P * Math.pow(1 + R, m);
+ fv.push([x, v]); if (v > mx) mx = v;
+ }
+ lineChart('kcLsCg', 'kcLsLeg', [
+ { pts:fv, name:'projected value', fill:true },
+ { pts:[[6, P], [314, P]], name:'you put in', dash:true }
+ ], cur, mx || 1, V('kcLsY') + ' yrs');
+ }
+ function swpChart(){
+ var svg = d.getElementById('kcSwCg'); if (!svg) return;
+ var W = V('kcSwW'), Sd = V('kcSwS'), r = V('kcSwR') / 1200, Y = V('kcSwY'), cur = SECS.swp.cur, n = Y * 12;
+ function bal(m){ return r === 0 ? W - Sd * m : W * Math.pow(1 + r, m) - Sd * ((Math.pow(1 + r, m) - 1) / r); }
+ var dry = null;
+ if (Sd > 0){
+ if (r === 0){ if (W / Sd < n) dry = W / Sd; }
+ else if (W * r < Sd){ var mm = Math.log(1 / (1 - (W * r) / Sd)) / Math.log(1 + r); if (mm < n) dry = mm; }
+ }
+ var lim = dry != null ? Math.ceil(dry) : n, steps = Math.min(60, Math.max(2, lim)), pts = [];
+ for (var s = 0; s <= steps; s++){
+ var m = lim * s / steps, x = 6 + 308 * s / steps;
+ pts.push([x, Math.max(0, bal(m))]);
+ }
+ clr(svg); grid(svg, cur, W, Y + ' yrs');
+ var dPath = pts.map(function(p, i){ return (i ? 'L' : 'M') + p[0].toFixed(1) + ' ' + (118 - p[1] / W * 104).toFixed(1); }).join(' ');
+ var area = S('path', { d: dPath + ' L' + pts[pts.length - 1][0].toFixed(1) + ' 118 L6 118 Z', 'class':'kc-area' });
+ svg.appendChild(area); fadeIn(area);
+ var ln = S('path', { d: dPath, 'class':'kc-cl' }); svg.appendChild(ln); drawIn(ln);
+ if (dry != null){
+ var dx = 6 + 308 * (dry / n);
+ svg.appendChild(S('line', { x1:dx - 5, y1:113, x2:dx + 5, y2:123, stroke:'var(--accent-dark)', 'stroke-width':2.5, 'stroke-linecap':'round' }));
+ svg.appendChild(S('line', { x1:dx - 5, y1:123, x2:dx + 5, y2:113, stroke:'var(--accent-dark)', 'stroke-width':2.5, 'stroke-linecap':'round' }));
+ var tx = S('text', { x:Math.min(292, Math.max(52, dx)), y:98, 'text-anchor':'middle', 'class':'kc-ct kc-ctw' });
+ tx.textContent = 'runs dry &#183; ' + (dry / 12 >= 1 ? Math.floor(dry / 12) + 'y ' + Math.round(dry % 12) + 'm' : Math.round(dry) + ' mo');
+ svg.appendChild(tx);
+ } else {
+ var e2 = pts[pts.length - 1];
+ svg.appendChild(S('circle', { cx:e2[0], cy:(118 - e2[1] / W * 104).toFixed(1), r:4.5, 'class':'kc-dotg' }));
+ }
+ legend('kcSwLeg', '<span><i class="lg-a"></i>balance left</span><span><i class="lg-b"></i>' + fmt(Sd, cur) + '/mo out</span>');
+ }
+ function annChart(){
+ var W = V('kcAnW'), r = V('kcAnR') / 1200, n = V('kcAnY') * 12, cur = SECS.ann.cur;
+ var pmt = r === 0 ? W / n : W * r / (1 - Math.pow(1 + r, -n)), tot = pmt * n;
+ donut('kcAnCg', 'kcAnLeg', tot > 0 ? (tot - W) / tot : 0, cur,
+ [['corpus returned', W, 'lg-c'], ['interest earned', Math.max(0, tot - W), 'lg-a']]);
+ }
+ function emiChart(){
+ var P = V('kcEmiP'), yr = V('kcEmiR') / 1200, n = V('kcEmiY') * 12, cur = SECS.emi.cur;
+ var e = yr === 0 ? P / n : P * yr * Math.pow(1 + yr, n) / (Math.pow(1 + yr, n) - 1), tot = e * n;
+ donut('kcEmCg', 'kcEmiLeg', tot > 0 ? (tot - P) / tot : 0, cur,
+ [['principal', P, 'lg-c'], ['interest cost', tot - P, 'lg-a']]);
+ }
+ function intChart(){
+ var svg = d.getElementById('kcInCg'); if (!svg) return;
+ var P = V('kcInP'), r = V('kcInR') / 100, Y = V('kcInY'), m = V('kcInC'), cur = SECS.int.cur;
+ function mat(t){ return m == 0 ? P * (1 + r * t) : P * Math.pow(1 + r / m, m * t); }
+ var steps = Math.min(Y, 14), vals = [], mx = 0;
+ for (var s = 1; s <= steps; s++){ var v = mat(Y * s / steps); vals.push(v); if (v > mx) mx = v; }
+ clr(svg); grid(svg, cur, mx || 1, Y + ' yrs');
+ var bw = 308 / steps;
+ vals.forEach(function(v, ix){
+ var h = Math.max(3, v / (mx || 1) * 100);
+ var rc = S('rect', { x:(6 + ix * bw + 2).toFixed(1), y:(118 - h).toFixed(1), width:Math.max(3, bw - 5).toFixed(1), height:h.toFixed(1), rx:2.5, fill: ix === vals.length - 1 ? 'var(--accent-dark)' : 'rgba(188,91,51,.62)' });
+ svg.appendChild(rc);
+ if (!rm){
+ rc.style.transformOrigin = (6 + ix * bw + bw / 2) + 'px 118px';
+ rc.style.transform = 'scaleY(0)'; rc.getBoundingClientRect();
+ rc.style.transition = 'transform.55s cubic-bezier(.22,.8,.36,1) ' + (ix * 0.03).toFixed(2) + 's';
+ rc.style.transform = 'scaleY(1)';
+ }
+ });
+ legend('kcInLeg', '<span><i class="lg-a"></i>maturity, year by year</span>');
+ }
+ function donut3(svgId, legId, parts, cur, centre, word){
+ var svg = d.getElementById(svgId); if (!svg) return;
+ clr(svg);
+ var C2 = 2 * Math.PI * 44, off = 0;
+ svg.appendChild(S('circle', { cx:160, cy:64, r:44, fill:'none', stroke:'#EADCC8', 'stroke-width':15 }));
+ parts.forEach(function(p){
+ if (p[1] <= 0) return;
+ var arc = S('circle', { cx:160, cy:64, r:44, fill:'none', stroke:p[2], 'stroke-width':15, 'stroke-dasharray':(C2 * p[1]).toFixed(1) + ' ' + C2.toFixed(1), 'stroke-dashoffset':(-C2 * off).toFixed(1), transform:'rotate(-90 160 64)' });
+ svg.appendChild(arc);
+ if (!rm){ arc.style.opacity = 0; arc.getBoundingClientRect(); arc.style.transition = 'opacity.6s ease'; arc.style.opacity = 1; }
+ off += p[1];
+ });
+ var t1 = S('text', { x:160, y:62, 'text-anchor':'middle', 'class':'kc-cbig' }); t1.textContent = centre; svg.appendChild(t1);
+ var t2 = S('text', { x:160, y:78, 'text-anchor':'middle', 'class':'kc-ct' }); t2.textContent = word || ''; svg.appendChild(t2);
+ if (legId) legend(legId, parts.map(function(p){ return '<span><i style="background:' + p[2] + '"></i>' + p[0] + ' &#183; ' + fmt(p[3], cur) + '</span>'; }).join(''));
+ }
+ function bgChart(){
+ var inc = V('kcBgInc'), n = V('kcBgN') / 100, w = V('kcBgW') / 100, s = Math.max(0, 1 - n - w), cur = SECS.bg.cur;
+ donut3('kcBgCg', 'kcBgLeg', [
+ ['needs', n, '#3A2A1C', inc * n],
+ ['wants', w, '#8A7A63', inc * w],
+ ['savings', s, 'var(--accent-dark)', inc * s]
+ ], cur, Math.round(s * 100) + '%', 'to savings');
+ }
+ function glChart(){
+ var FV = V('kcGlTgt'), r = V('kcGlR') / 1200, n = V('kcGlY') * 12, cur = SECS.gl.cur;
+ var pmt = r === 0 ? FV / n : FV * r / ((Math.pow(1 + r, n) - 1) * (1 + r));
+ var steps = Math.min(60, n), fv = [], inv = [], mx = FV;
+ for (var s2 = 0; s2 <= steps; s2++){
+ var m = Math.round(n * s2 / steps), x = 6 + 308 * s2 / steps;
+ fv.push([x, pmt * ((Math.pow(1 + r, m) - 1) / r) * (1 + r)]); inv.push([x, pmt * m]);
+ }
+ lineChart('kcGlCg', 'kcGlLeg', [
+ { pts:fv, name:'climbing to the goal', fill:true },
+ { pts:inv, name:'you put in', dash:true }
+ ], cur, mx || 1, V('kcGlY') + ' yrs');
+ }
+ function rtChart(){
+ var age = V('kcRtAge'), ra = V('kcRtRAge'), exp = V('kcRtExp'), inf = V('kcRtInf') / 100, r = V('kcRtR') / 1200, cur = SECS.rt.cur;
+ var Y = Math.max(1, ra - age), n = Y * 12, corpus = exp * Math.pow(1 + inf, Y) * 300;
+ var sipm = r === 0 ? corpus / n : corpus * r / ((Math.pow(1 + r, n) - 1) * (1 + r));
+ var steps = Math.min(60, n), fv = [], inv = [], mx = corpus;
+ for (var s2 = 0; s2 <= steps; s2++){
+ var m = Math.round(n * s2 / steps), x = 6 + 308 * s2 / steps;
+ fv.push([x, sipm * ((Math.pow(1 + r, m) - 1) / r) * (1 + r)]); inv.push([x, sipm * m]);
+ }
+ lineChart('kcRtCg', 'kcRtLeg', [
+ { pts:fv, name:'corpus on course', fill:true },
+ { pts:inv, name:'you put in', dash:true }
+ ], cur, mx || 1, Y + ' yrs to go');
+ }
+ function ccChart(){
+ var B = V('kcCcBal'), i = V('kcCcR') / 1200, P = V('kcCcPay'), cur = SECS.cc.cur;
+ if (B <= 0 || P <= B * i) return;
+ var n = Math.ceil(-Math.log(1 - B * i / P) / Math.log(1 + i));
+ var steps = Math.min(60, n), pts = [];
+ for (var s2 = 0; s2 <= steps; s2++){
+ var m = n * s2 / steps, x = 6 + 308 * s2 / steps;
+ pts.push([x, Math.max(0, B * Math.pow(1 + i, m) - P * ((Math.pow(1 + i, m) - 1) / i))]);
+ }
+ lineChart('kcCcCg', 'kcCcLeg', [
+ { pts:pts, name:'balance falling', fill:true }
+ ], cur, B, n + ' mo');
+ }
+ function afChart(){
+ var fo = V('kcAfFo') / 100, inc = V('kcAfInc'), cur = SECS.af.cur;
+ donut('kcAfCg', 'kcAfLeg', fo, cur,
+ [['goes to EMI', inc * fo, 'lg-a'], ['stays with you', inc * (1 - fo), 'lg-c']], 'EMI share');
+ }
+ function ppChart(){
+ var svg = d.getElementById('kcPpCg'); if (!svg) return;
+ var P = V('kcPpP'), yr = V('kcPpR') / 1200, n = V('kcPpY') * 12, X = V('kcPpX'), cur = SECS.pp.cur;
+ var e = yr === 0 ? P / n : P * yr * Math.pow(1 + yr, n) / (Math.pow(1 + yr, n) - 1);
+ if (yr === 0) return;
+ function bal(m, emi){ return Math.max(0, P * Math.pow(1 + yr, m) - emi * ((Math.pow(1 + yr, m) - 1) / yr)); }
+ var e2 = e + X, n2 = e2 > P * yr ? Math.ceil(-Math.log(1 - P * yr / e2) / Math.log(1 + yr)) : n;
+ var steps = Math.min(60, n), a = [], b = [];
+ for (var s2 = 0; s2 <= steps; s2++){
+ var m = n * s2 / steps, x = 6 + 308 * s2 / steps;
+ a.push([x, bal(m, e)]); b.push([x, bal(Math.min(m, n2), e2)]);
+ }
+ lineChart('kcPpCg', 'kcPpLeg', [
+ { pts:a, name:'without extra', dash:true },
+ { pts:b, name:'with the extra &#8212; free sooner', fill:true }
+ ], cur, P, V('kcPpY') + ' yrs plan');
+ }
+ function ifChart(){
+ var svg = d.getElementById('kcIfCg'); if (!svg) return;
+ var C = V('kcIfCost'), f = V('kcIfR') / 100, Y = V('kcIfY'), cur = SECS.infl.cur;
+ var steps = Math.min(Y, 14), vals = [], mx = 0;
+ for (var s2 = 1; s2 <= steps; s2++){ var v = C * Math.pow(1 + f, Y * s2 / steps); vals.push(v); if (v > mx) mx = v; }
+ clr(svg); grid(svg, cur, mx || 1, Y + ' yrs');
+ var bw = 308 / steps;
+ vals.forEach(function(v, ix){
+ var h = Math.max(3, v / (mx || 1) * 100);
+ var rc = S('rect', { x:(6 + ix * bw + 2).toFixed(1), y:(118 - h).toFixed(1), width:Math.max(3, bw - 5).toFixed(1), height:h.toFixed(1), rx:2.5, fill: ix === vals.length - 1 ? 'var(--accent-dark)' : 'rgba(188,91,51,.62)' });
+ svg.appendChild(rc);
+ if (!rm){
+ rc.style.transformOrigin = (6 + ix * bw + bw / 2) + 'px 118px';
+ rc.style.transform = 'scaleY(0)'; rc.getBoundingClientRect();
+ rc.style.transition = 'transform.55s cubic-bezier(.22,.8,.36,1) ' + (ix * 0.03).toFixed(2) + 's';
+ rc.style.transform = 'scaleY(1)';
+ }
+ });
+ legend('kcIfLeg', '<span><i class="lg-a"></i>price of the same item, year by year</span>');
+ }
+ function efChart(){
+ var exp = V('kcEfExp'), mo = V('kcEfMo'), have = V('kcEfHave'), cur = SECS.ef.cur;
+ var tgt = exp * mo;
+ donut('kcEfCg', 'kcEfLeg', tgt > 0 ? Math.min(1, have / tgt) : 0, cur,
+ [['already saved', Math.min(have, tgt), 'lg-a'], ['still to build', Math.max(0, tgt - have), 'lg-c']], 'funded');
+ }
+ var CH = { sip:sipChart, ls:lsChart, swp:swpChart, ann:annChart, emi:emiChart, int:intChart, bg:bgChart, gl:glChart, rt:rtChart, cc:ccChart, af:afChart, pp:ppChart, infl:ifChart, ef:efChart };
+ var pend = {};
+ function schedule(k){
+ if (!CH[k] || pend[k]) return;
+ pend[k] = requestAnimationFrame(function(){ pend[k] = 0; try { CH[k](); } catch(e){} });
+ }
+
+ /* ---------- calculators ---------- */
+ function sip(){
+ var P = V('kcSipAmt'), r = V('kcSipR') / 1200, n = V('kcSipY') * 12, cur = SECS.sip.cur;
+ var fv = P * ((Math.pow(1 + r, n) - 1) / r) * (1 + r);
+ put('kcSipInv', P * n, cur); put('kcSipGain', fv - P * n, cur); put('kcSipTot', fv, cur);
+ schedule('sip');
+ }
+ function lump(){
+ var P = V('kcLsAmt'), r = V('kcLsR') / 1200, n = V('kcLsY') * 12, cur = SECS.ls.cur;
+ var fv = P * Math.pow(1 + r, n);
+ put('kcLsInv', P, cur); put('kcLsGain', fv - P, cur); put('kcLsTot', fv, cur);
+ schedule('ls');
+ }
+ function swp(){
+ var W = V('kcSwW'), Sd = V('kcSwS'), r = V('kcSwR') / 1200, Y = V('kcSwY'), cur = SECS.swp.cur;
+ var n = Y * 12, bal;
+ if (r === 0){ bal = W - Sd * n; } else { bal = W * Math.pow(1 + r, n) - Sd * ((Math.pow(1 + r, n) - 1) / r); }
+ put('kcSwOut', Sd * n, cur);
+ var note = d.getElementById('kcSwNote');
+ if (bal <= 0){
+ var m = r === 0 ? Math.floor(W / Sd) : Math.ceil(Math.log(1 / (1 - (W * r) / Sd)) / Math.log(1 + r));
+ putText('kcSwBal', fmt(0, cur) + ' &#8212; runs dry');
+ if (note) note.textContent = 'At these numbers the corpus lasts ' + (m / 12 >= 1 ? Math.floor(m / 12) + ' yr ' + (m % 12) + ' mo' : m + ' months') + ', then runs dry. Lower the withdrawal or raise the return.';
+ } else {
+ put('kcSwBal', bal, cur);
+ if (note) note.textContent = 'Positive balance &#8212; the corpus outlived ' + Y + ' years of withdrawals and kept the change.';
+ }
+ schedule('swp');
+ }
+ function ann(){
+ var W = V('kcAnW'), r = V('kcAnR') / 1200, n = V('kcAnY') * 12, cur = SECS.ann.cur;
+ var pmt = r === 0 ? W / n : W * r / (1 - Math.pow(1 + r, -n));
+ put('kcAnOut', pmt, cur); put('kcAnTot', pmt * n, cur);
+ schedule('ann');
+ }
+ function emi(){
+ var P = V('kcEmiP'), yr = V('kcEmiR') / 1200, n = V('kcEmiY') * 12, cur = SECS.emi.cur;
+ var e = yr === 0 ? P / n : P * yr * Math.pow(1 + yr, n) / (Math.pow(1 + yr, n) - 1);
+ put('kcEmiOut', e, cur); put('kcEmiInt', e * n - P, cur); put('kcEmiTot', e * n, cur);
+ schedule('emi');
+ }
+ function interest(){
+ var P = V('kcInP'), r = V('kcInR') / 100, Y = V('kcInY'), m = V('kcInC'), cur = SECS.int.cur, mat;
+ if (m === 0){ mat = P * (1 + r * Y); } else { mat = P * Math.pow(1 + r / m, m * Y); }
+ put('kcInInt', mat - P, cur); put('kcInMat', mat, cur);
+ schedule('int');
+ }
+ function budget(){
+ var inc = V('kcBgInc'), n = V('kcBgN') / 100, w = V('kcBgW') / 100, cur = SECS.bg.cur;
+ var s = Math.max(0, 1 - n - w), tot = n + w + s;
+ put('kcBgNeed', inc * n, cur); put('kcBgWant', inc * w, cur); put('kcBgSave', inc * s, cur);
+ var note = d.getElementById('kcBgNote');
+ if (note) note.textContent = (1 - n - w) < 0.2 ? 'Savings under 20% &#8212; see if any &#8220;want&#8221; can slip a tier.' : 'Split locked: ' + Math.round(n * 100) + ' / ' + Math.round(w * 100) + ' / ' + Math.round(s * 100) + '. Automate the savings on salary day.';
+ schedule('bg');
+ }
+ function goal(){
+ var FV = V('kcGlTgt'), r = V('kcGlR') / 1200, n = V('kcGlY') * 12, cur = SECS.gl.cur;
+ var pmt = r === 0 ? FV / n : FV * r / ((Math.pow(1 + r, n) - 1) * (1 + r));
+ put('kcGlMo', pmt, cur); put('kcGlPut', pmt * n, cur); put('kcGlGain', FV - pmt * n, cur);
+ schedule('gl');
+ }
+ function retire(){
+ var age = V('kcRtAge'), ra = V('kcRtRAge'), exp = V('kcRtExp'), inf = V('kcRtInf') / 100, r = V('kcRtR') / 1200, cur = SECS.rt.cur;
+ var Y = Math.max(1, ra - age), n = Y * 12, expF = exp * Math.pow(1 + inf, Y), corpus = expF * 300;
+ var sipm = r === 0 ? corpus / n : corpus * r / ((Math.pow(1 + r, n) - 1) * (1 + r));
+ put('kcRtCorpus', corpus, cur); put('kcRtSip', sipm, cur); put('kcRtYrs', Y, cur);
+ var note = d.getElementById('kcRtNote');
+ if (note) note.textContent = 'First-year retirement expense: ' + fmt(expF, cur) + '/mo in today&#8217;s money terms &#8212; that&#8217;s what inflation does while you blink.';
+ schedule('rt');
+ }
+ function ccpay(){
+ var B = V('kcCcBal'), i = V('kcCcR') / 1200, P = V('kcCcPay'), cur = SECS.cc.cur;
+ var note = d.getElementById('kcCcNote');
+ if (B <= 0){ putText('kcCcMo', '0 &#8212; cleared'); put('kcCcInt', 0, cur); put('kcCcTot', 0, cur); if (note) note.textContent = 'Balance nil. Keep it that way &#8212; future you is grateful.'; schedule('cc'); return; }
+ if (P <= B * i){
+ putText('kcCcMo', 'never');
+ putText('kcCcInt', '&#8212;'); putText('kcCcTot', '&#8212;');
+ if (note) note.textContent = 'This payment is below the monthly interest &#8212; the balance would grow forever. Raise the payment.';
+ schedule('cc'); return;
+ }
+ var n = Math.ceil(-Math.log(1 - B * i / P) / Math.log(1 + i));
+ var tot = P * n, intc = tot - B;
+ put('kcCcMo', n, cur); put('kcCcInt', intc, cur); put('kcCcTot', tot, cur);
+ if (note) note.textContent = n > 60 ? 'Over five years of repayments &#8212; every spare rupee above this payment is pure savings.' : 'Short and painful beats long and expensive. Every time.';
+ schedule('cc');
+ }
+ function afford(){
+ var inc = V('kcAfInc'), fo = V('kcAfFo') / 100, r = V('kcAfR') / 1200, n = V('kcAfY') * 12, cur = SECS.af.cur;
+ var emi = inc * fo, loan = r === 0 ? emi * n : emi * (1 - Math.pow(1 + r, -n)) / r;
+ put('kcAfEmi', emi, cur); put('kcAfLoan', loan, cur); putText('kcAfShare', Math.round(fo * 100) + '% of income');
+ var note = d.getElementById('kcAfNote');
+ if (note) note.textContent = fo > 0.5 ? 'Above 50% EMI share, one salary hiccup breaks the budget. Most planners say keep it under 40%.' : 'Healthy zone &#8212; leave headroom for the EMIs you cannot see coming.';
+ schedule('af');
+ }
+ function prepay(){
+ var P = V('kcPpP'), yr = V('kcPpR') / 1200, n = V('kcPpY') * 12, X = V('kcPpX'), cur = SECS.pp.cur;
+ var e = yr === 0 ? P / n : P * yr * Math.pow(1 + yr, n) / (Math.pow(1 + yr, n) - 1);
+ var baseTot = e * n, e2 = e + X, n2, save = 0, cut = 0;
+ if (e2 > P * yr && yr > 0){ n2 = Math.ceil(-Math.log(1 - P * yr / e2) / Math.log(1 + yr)); }
+ else if (yr === 0){ n2 = Math.ceil(P / e2); }
+ else { n2 = Infinity; }
+ if (isFinite(n2)){ save = baseTot - e2 * n2; cut = n - n2; }
+ put('kcPpSave', Math.max(0, save), cur);
+ putText('kcPpCut', isFinite(cut) ? (cut >= 12 ? Math.floor(cut / 12) + ' yr ' + (cut % 12) + ' mo' : cut + ' mo') : '&#8212;');
+ putText('kcPpNew', isFinite(n2) ? (n2 >= 12 ? Math.floor(n2 / 12) + ' yr ' + (n2 % 12) + ' mo' : n2 + ' mo') : 'never at this rate');
+ var note = d.getElementById('kcPpNote');
+ if (note) note.textContent = isFinite(n2) ? 'Pay ' + fmt(e2, cur) + ' a month instead of ' + fmt(e, cur) + ' &#8212; the lender loses, you win.' : 'Extra payment is below the monthly interest &#8212; raise it.';
+ schedule('pp');
+ }
+ function infl(){
+ var C = V('kcIfCost'), f = V('kcIfR') / 100, Y = V('kcIfY'), cur = SECS.infl.cur;
+ var fut = C * Math.pow(1 + f, Y);
+ put('kcIfFut', fut, cur); put('kcIfPow', C / Math.pow(1 + f, Y), cur); putText('kcIfMul', (fut / C).toFixed(2) + '&#215; today');
+ var note = d.getElementById('kcIfNote');
+ if (note) note.textContent = 'Every decade at ' + Math.round(f * 100) + '% inflation quietly doubles the tag &#8212; and halves the wallet.';
+ schedule('infl');
+ }
+ function emerg(){
+ var exp = V('kcEfExp'), mo = V('kcEfMo'), have = V('kcEfHave'), cur = SECS.ef.cur;
+ var tgt = exp * mo, gap = Math.max(0, tgt - have), pctv = tgt > 0 ? have / tgt : 0;
+ put('kcEfTgt', tgt, cur); put('kcEfGap', gap, cur); putText('kcEfPct', Math.min(100, Math.round(pctv * 100)) + '% funded');
+ var note = d.getElementById('kcEfNote');
+ if (note) note.textContent = pctv >= 1 ? 'Fully funded &#8212; this is what calm feels like.' : pctv >= 0.5 ? 'Halfway to bulletproof. Keep the streak.' : 'Even one month of cover changes how a bad day ends.';
+ schedule('ef');
+ }
+ function recalcAll(){ sip(); lump(); swp(); ann(); emi(); interest(); budget(); goal(); retire(); ccpay(); afford(); prepay(); infl(); emerg(); }
+ var FN = { sip:sip, ls:lump, swp:swp, ann:ann, emi:emi, int:interest, bg:budget, gl:goal, rt:retire, cc:ccpay, af:afford, pp:prepay, infl:infl, ef:emerg };
+ function recalc(k){ if (FN[k]) FN[k](); }
+
+ /* ---------- per-section country & currency wiring ---------- */
+ function applySec(k, code){
+ var s = SECS[k]; if (!C[code]) return;
+ s.cty = code; s.man = false; s.cur = C[code][0];
+ SYM[k] = symFor(s.cur); setSym(k);
+ if (SEL[k][0]) SEL[k][0].value = code;
+ if (SEL[k][1]) SEL[k][1].value = s.cur;
+ }
+ Object.keys(SEL).forEach(function(k){
+ var cc = SEL[k][0], cy = SEL[k][1]; if (!cc) return;
+ cc.addEventListener('change', function(){
+ SECS[k].lock = true;
+ applySec(k, cc.value);
+ if (k === 'emi') buildEmi();
+ if (k === 'int') buildInt();
+ recalc(k);
+ });
+ if (cy) cy.addEventListener('change', function(){
+ SECS[k].lock = true; SECS[k].man = true; SECS[k].cur = cy.value;
+ SYM[k] = symFor(SECS[k].cur); setSym(k);
+ recalc(k);
+ });
+ });
+
+ /* ---------- loan & account lists follow each section's own country ---------- */
+ function listFor(kind, code, generic){
+ var e = C[code], base = e ? (kind === 'acc' ? e[2] : e[3]) : generic;
+ var ex = kind === 'acc' ? KC.EXTRA_ACC : KC.EXTRA_LOAN;
+ var m = (ex && ex[code]) ? ex[code] : null;
+ return m ? m.concat(base) : base;
+ }
+ function fillType(sel, list){
+ sel.textContent = '';
+ list.forEach(function(it){ opt(sel, it[1] + '|' + it[0], it[0] + ' &#8212; typical ' + pct(it[1])); });
+ }
+ function buildEmi(){
+ var sel = d.getElementById('kcEmiT'); if (!sel) return;
+ fillType(sel, listFor('loan', SECS.emi.cty, GENERIC_L));
+ var note = d.getElementById('kcEmiNote'), ctry = C[SECS.emi.cty];
+ if (note) note.textContent = ctry
+ ? 'Typical ' + ctry[1] + ' street rates pre-filled &#8212; your bank\u2019s exact offer wins.'
+ : 'Typical global ranges shown &#8212; verify with local banks.';
+ }
+ function buildInt(){
+ var sel = d.getElementById('kcInT'); if (!sel) return;
+ var list = listFor('acc', SECS.int.cty, GENERIC_A);
+ fillType(sel, list);
+ syncCompounding(list[0][0]);
+ }
+ function syncCompounding(name){
+ var c = d.getElementById('kcInC'); if (!c) return;
+ if (/scheme|ppf|epf|pension|provident|nsc|mis|samriddhi|vikas|isa|401|rrsp|cpf|tesouro|cetes|t-?bill|pikadon|ike/i.test(name)) c.value = '1';
+ else if (/simple/i.test(name)) c.value = '0';
+ else c.value = '4';
+ }
+ function setRate(rid, nid, v, fn){ var r = d.getElementById(rid), n = d.getElementById(nid); if (r){ r.value = v; paint(r); } if (n) n.value = v; fn(); }
+ var inT = d.getElementById('kcInT');
+ if (inT) inT.addEventListener('change', function(){ var v = this.value.split('|'); setRate('kcInRR', 'kcInR', v[0], interest); syncCompounding(v[1]); });
+ var emiT = d.getElementById('kcEmiT');
+ if (emiT) emiT.addEventListener('change', function(){ var v = this.value.split('|'); setRate('kcEmiRR', 'kcEmiR', v[0], emi); });
+ var inC = d.getElementById('kcInC');
+ if (inC) inC.addEventListener('change', interest);
+
+ /* ---------- country guide (feeds the calculators on tap) ---------- */
+ var gSel = d.getElementById('kcCty');
+ function fillGuide(){
+ if (!gSel) return;
+ gSel.textContent = '';
+ Object.keys(C).forEach(function(code){ opt(gSel, code, C[code][1]); });
+ gSel.value = SECS.int.cty;
+ }
+ function fillBtns(id, list, target){
+ var box = d.getElementById(id); if (!box) return;
+ box.textContent = '';
+ list.forEach(function(a){
+ var b = d.createElement('button'); b.type = 'button'; b.className = 'kc-pick';
+ b.innerHTML = '<span>' + a[0] + '</span><em>' + pct(a[1]) + '</em>';
+ b.addEventListener('click', function(){
+ applySec(target, gSel.value);
+ if (target === 'int'){
+ buildInt(); setRate('kcInRR', 'kcInR', a[1], interest); syncCompounding(a[0]);
+ var s1 = d.getElementById('kc-int'); if (s1) s1.scrollIntoView({ behavior:'smooth', block:'start' });
+ } else {
+ buildEmi(); setRate('kcEmiRR', 'kcEmiR', a[1], emi);
+ var s2 = d.getElementById('kc-emi'); if (s2) s2.scrollIntoView({ behavior:'smooth', block:'start' });
+ }
+ });
+ box.appendChild(b);
+ });
+ }
+ function buildGuide(){
+ var code = gSel ? gSel.value : 'IN';
+ fillBtns('kcAccList', listFor('acc', code, GENERIC_A), 'int');
+ fillBtns('kcLoanList', listFor('loan', code, GENERIC_L), 'emi');
+ }
+ if (gSel) gSel.addEventListener('change', buildGuide);
+
+ /* ---------- geo detection: defaults every table (respects manual picks) ---------- */
+ var TZ = {'Asia/Kolkata':'IN','Asia/Calcutta':'IN','Asia/Karachi':'PK','Asia/Dhaka':'BD','Asia/Colombo':'LK','Asia/Kathmandu':'NP','Asia/Dubai':'AE','Asia/Riyadh':'SA','Asia/Qatar':'QA','Asia/Kuwait':'KW','Asia/Singapore':'SG','Asia/Tokyo':'JP','Asia/Shanghai':'CN','Asia/Hong_Kong':'HK','Asia/Seoul':'KR','Asia/Jakarta':'ID','Asia/Kuala_Lumpur':'MY','Asia/Manila':'PH','Asia/Bangkok':'TH','Asia/Ho_Chi_Minh':'VN','Europe/London':'GB','Europe/Paris':'FR','Europe/Berlin':'DE','Europe/Madrid':'ES','Europe/Rome':'IT','Europe/Amsterdam':'NL','Europe/Zurich':'CH','Europe/Stockholm':'SE','Europe/Oslo':'NO','Europe/Copenhagen':'DK','Europe/Warsaw':'PL','Europe/Prague':'CZ','Europe/Budapest':'HU','Europe/Istanbul':'TR','Australia/Sydney':'AU','Australia/Melbourne':'AU','Pacific/Auckland':'NZ','America/New_York':'US','America/Chicago':'US','America/Denver':'US','America/Los_Angeles':'US','America/Toronto':'CA','America/Vancouver':'CA','America/Sao_Paulo':'BR','America/Mexico_City':'MX','America/Argentina/Buenos_Aires':'AR','Africa/Johannesburg':'ZA','Africa/Lagos':'NG','Africa/Nairobi':'KE','Africa/Cairo':'EG','Israel':'IL'};
+ function applyAll(code){
+ Object.keys(SEL).forEach(function(k){ if (!SECS[k].lock) applySec(k, code); });
+ fillGuide(); buildEmi(); buildInt(); buildGuide(); recalcAll();
+ }
+ function detect(){
+ var code = null;
+ try { var tz = Intl.DateTimeFormat().resolvedOptions().timeZone || ''; if (TZ[tz]) code = TZ[tz]; } catch(e){}
+ var note = d.getElementById('kcGeoNote');
+ function say(txt){ if (note) note.textContent = txt; }
+ if (code){ applyAll(code); say('your currency was set from your time zone &#8212; every table below lets you switch'); }
+ if (window.fetch){
+ var got = false;
+ var PROVS = ['https://ipapi.co/json/', 'https://ipwho.is/', 'https://get.geojs.io/v1/ip/country.json'];
+ function tryGeo(ix){
+ if (got) return;
+ if (ix >= PROVS.length){ if (!code) say('defaulted to India &#8212; switch inside any table'); return; }
+ Promise.race([fetch(PROVS[ix]).then(function(r){ return r.json(); }),new Promise(function(_,no){ setTimeout(function(){ no(new Error('slow')); },3500); })]).then(function(j){
+ if (got) return;
+ var cc = j && (j.country_code || j.country);
+ if (cc && C[cc]){ got = true; applyAll(cc); say('currency & country set from your location &#8212; switch inside any table'); }
+ else tryGeo(ix + 1);
+ }).catch(function(){ tryGeo(ix + 1); });
+ }
+ tryGeo(0);
+ } else if (!code){ say('defaulted to India &#8212; switch inside any table'); }
+ }
+
+ /* ---------- copy-receipt buttons + page toast ---------- */
+ function toast(msg){
+ var t = d.getElementById('kcToast');
+ if (!t){ t = d.createElement('div'); t.id = 'kcToast'; d.body.appendChild(t); }
+ t.textContent = msg; t.className = 'show';
+ if (toast._tm) clearTimeout(toast._tm);
+ toast._tm = setTimeout(function(){ t.className = ''; }, 1700);
+ }
+ var SUMS = {
+ sip: function(){ return 'SIP &#8212; ' + fmt(V('kcSipAmt'), SECS.sip.cur) + '/mo &#215; ' + V('kcSipY') + ' yrs @ ' + V('kcSipR') + '%/yr &#8594; invested ' + d.getElementById('kcSipInv').textContent + ', gains ' + d.getElementById('kcSipGain').textContent + ', total ' + d.getElementById('kcSipTot').textContent + ' &#183; The Calculator Desk'; },
+ ls: function(){ return 'Lump sum &#8212; ' + fmt(V('kcLsAmt'), SECS.ls.cur) + ' for ' + V('kcLsY') + ' yrs @ ' + V('kcLsR') + '%/yr &#8594; total ' + d.getElementById('kcLsTot').textContent + ' (gains ' + d.getElementById('kcLsGain').textContent + ') &#183; The Calculator Desk'; },
+ swp: function(){ return 'SWP &#8212; corpus ' + fmt(V('kcSwW'), SECS.swp.cur) + ', drawing ' + fmt(V('kcSwS'), SECS.swp.cur) + '/mo @ ' + V('kcSwR') + '%/yr &#8594; after ' + V('kcSwY') + ' yrs: ' + d.getElementById('kcSwBal').textContent + ' &#183; The Calculator Desk'; },
+ ann: function(){ return 'Annuity &#8212; corpus ' + fmt(V('kcAnW'), SECS.ann.cur) + ' over ' + V('kcAnY') + ' yrs @ ' + V('kcAnR') + '%/yr &#8594; ' + d.getElementById('kcAnOut').textContent + '/mo &#183; The Calculator Desk'; },
+ emi: function(){ return 'Loan EMI &#8212; ' + fmt(V('kcEmiP'), SECS.emi.cur) + ' @ ' + V('kcEmiR') + '% for ' + V('kcEmiY') + ' yrs &#8594; EMI ' + d.getElementById('kcEmiOut').textContent + ' (interest ' + d.getElementById('kcEmiInt').textContent + ') &#183; The Calculator Desk'; },
+ int: function(){ return 'Interest &#8212; ' + fmt(V('kcInP'), SECS.int.cur) + ' for ' + V('kcInY') + ' yrs @ ' + V('kcInR') + '% &#8594; maturity ' + d.getElementById('kcInMat').textContent + ' (interest ' + d.getElementById('kcInInt').textContent + ') &#183; The Calculator Desk'; },
+ bg: function(){ return 'Budget &#8212; income ' + fmt(V('kcBgInc'), SECS.bg.cur) + ' &#8594; needs ' + d.getElementById('kcBgNeed').textContent + ', wants ' + d.getElementById('kcBgWant').textContent + ', savings ' + d.getElementById('kcBgSave').textContent + '/mo &#183; The Calculator Desk'; },
+ gl: function(){ return 'Goal &#8212; ' + fmt(V('kcGlTgt'), SECS.gl.cur) + ' in ' + V('kcGlY') + ' yrs @ ' + V('kcGlR') + '%/yr &#8594; save ' + d.getElementById('kcGlMo').textContent + '/mo &#183; The Calculator Desk'; },
+ rt: function(){ return 'Retirement &#8212; retire at ' + V('kcRtRAge') + ' &#8594; corpus ' + d.getElementById('kcRtCorpus').textContent + ' via ' + d.getElementById('kcRtSip').textContent + '/mo &#183; The Calculator Desk'; },
+ cc: function(){ return 'Card payoff &#8212; ' + fmt(V('kcCcBal'), SECS.cc.cur) + ' @ ' + V('kcCcR') + '% APR, paying ' + fmt(V('kcCcPay'), SECS.cc.cur) + '/mo &#8594; ' + d.getElementById('kcCcMo').textContent + ' months &#183; The Calculator Desk'; },
+ af: function(){ return 'Affordability &#8212; income ' + fmt(V('kcAfInc'), SECS.af.cur) + ', ' + V('kcAfFo') + '% to EMI @ ' + V('kcAfR') + '% for ' + V('kcAfY') + ' yrs &#8594; max loan ' + d.getElementById('kcAfLoan').textContent + ' &#183; The Calculator Desk'; },
+ pp: function(){ return 'Prepay &#8212; extra ' + fmt(V('kcPpX'), SECS.pp.cur) + '/mo on the loan &#8594; saves ' + d.getElementById('kcPpSave').textContent + ' interest, ends ' + d.getElementById('kcPpCut').textContent + ' sooner &#183; The Calculator Desk'; },
+ infl: function(){ return 'Inflation &#8212; ' + fmt(V('kcIfCost'), SECS.infl.cur) + ' today @ ' + V('kcIfR') + '%/yr &#215; ' + V('kcIfY') + ' yrs &#8594; ' + d.getElementById('kcIfFut').textContent + ' &#183; The Calculator Desk'; },
+ ef: function(){ return 'Emergency fund &#8212; target ' + d.getElementById('kcEfTgt').textContent + ' (' + V('kcEfMo') + ' months of ' + fmt(V('kcEfExp'), SECS.ef.cur) + ') &#183; The Calculator Desk'; }
+ };
+ [].slice.call(d.querySelectorAll('.kc-copy')).forEach(function(b){
+ b.addEventListener('click', function(){
+ var f = SUMS[b.getAttribute('data-sec')]; if (!f) return;
+ var txt = f();
+ if (navigator.clipboard && navigator.clipboard.writeText){
+ navigator.clipboard.writeText(txt).then(function(){ toast('receipt copied to clipboard \u2713'); }, function(){ toast('copy blocked &#8212; select the receipt text'); });
+ } else { toast('copy not supported here'); }
+ });
+ });
+
+ /* ---------- gentle 3D tilt on cards (desktop pointers only) ---------- */
+ if (!rm && window.matchMedia && matchMedia('(pointer:fine)').matches){
+ [].slice.call(d.querySelectorAll('.kc-card,.kc-board')).forEach(function(c){
+ c.addEventListener('mousemove', function(ev){
+ var rc = c.getBoundingClientRect();
+ var x = (ev.clientX - rc.left) / rc.width -.5, y = (ev.clientY - rc.top) / rc.height -.5;
+ if (c._tr) cancelAnimationFrame(c._tr);
+ c._tr = requestAnimationFrame(function(){
+ c.style.transition = 'none';
+ c.style.transform = 'perspective(900px) rotateX(' + (-y * 2.6).toFixed(2) + 'deg) rotateY(' + (x * 2.6).toFixed(2) + 'deg)';
+ });
+ });
+ c.addEventListener('mouseleave', function(){
+ if (c._tr) cancelAnimationFrame(c._tr);
+ c.style.transition = 'transform.35s ease';
+ c.style.transform = '';
+ });
+ });
+ }
+
+ /* ---------- desk index: smooth scroll + scroll-spy ---------- */
+ var idxLinks = [].slice.call(d.querySelectorAll('.kc-icard'));
+ idxLinks.forEach(function(a){
+ a.addEventListener('click', function(ev){
+ var t = d.getElementById((a.getAttribute('href') || '').slice(1));
+ if (t){ ev.preventDefault(); t.scrollIntoView({ behavior: rm ? 'auto' : 'smooth', block: 'start' }); }
+ });
+ });
+ if ('IntersectionObserver' in window){
+ var spy = new IntersectionObserver(function(es){
+ es.forEach(function(en){
+ if (en.isIntersecting){
+ idxLinks.forEach(function(a){ a.classList.toggle('here', a.getAttribute('href') === '#' + en.target.id); });
+ }
+ });
+ }, { rootMargin: '-40% 0px -55% 0px' });
+ ['kc-emi','kc-sip','kc-lump','kc-bg','kc-gl','kc-rt','kc-int','kc-cc','kc-af','kc-pp','kc-swp','kc-ann','kc-infl','kc-ef','kc-cty'].forEach(function(id){
+ var s = d.getElementById(id); if (s) spy.observe(s);
+ });
+ }
+
+ /* ---------- extension hook: merge future countries/schemes ---------- */
+ window.KC_EXTRA = function(extra){
+ Object.keys(extra).forEach(function(k){ C[k] = extra[k]; });
+ fillCountries(); fillGuide(); buildEmi(); buildInt(); buildGuide(); recalcAll();
+ };
+
+ /* ---------- wire the inputs ---------- */
+ bind('kcSipAmtR','kcSipAmt',sip,'sip'); bind('kcSipRR','kcSipR',sip,'sip'); bind('kcSipYR','kcSipY',sip,'sip');
+ bind('kcLsAmtR','kcLsAmt',lump,'ls'); bind('kcLsRR','kcLsR',lump,'ls'); bind('kcLsYR','kcLsY',lump,'ls');
+ bind('kcSwWR','kcSwW',swp,'swp'); bind('kcSwSR','kcSwS',swp,'swp'); bind('kcSwRR','kcSwR',swp,'swp'); bind('kcSwYR','kcSwY',swp,'swp');
+ bind('kcAnWR','kcAnW',ann,'ann'); bind('kcAnRR','kcAnR',ann,'ann'); bind('kcAnYR','kcAnY',ann,'ann');
+ bind('kcEmiPR','kcEmiP',emi,'emi'); bind('kcEmiRR','kcEmiR',emi,'emi'); bind('kcEmiYR','kcEmiY',emi,'emi');
+ bind('kcInPR','kcInP',interest,'int'); bind('kcInRR','kcInR',interest,'int'); bind('kcInYR','kcInY',interest,'int');
+ bind('kcBgIncR','kcBgInc',budget,'bg'); bind('kcBgNR','kcBgN',budget,'bg'); bind('kcBgWR','kcBgW',budget,'bg');
+ bind('kcGlTgtR','kcGlTgt',goal,'gl'); bind('kcGlYR','kcGlY',goal,'gl'); bind('kcGlRR','kcGlR',goal,'gl');
+ bind('kcRtAgeR','kcRtAge',retire,'rt'); bind('kcRtRAgeR','kcRtRAge',retire,'rt'); bind('kcRtExpR','kcRtExp',retire,'rt'); bind('kcRtInfR','kcRtInf',retire,'rt'); bind('kcRtRR','kcRtR',retire,'rt');
+ bind('kcCcBalR','kcCcBal',ccpay,'cc'); bind('kcCcRR','kcCcR',ccpay,'cc'); bind('kcCcPayR','kcCcPay',ccpay,'cc');
+ bind('kcAfIncR','kcAfInc',afford,'af'); bind('kcAfFoR','kcAfFo',afford,'af'); bind('kcAfRR','kcAfR',afford,'af'); bind('kcAfYR','kcAfY',afford,'af');
+ bind('kcPpPR','kcPpP',prepay,'pp'); bind('kcPpRR','kcPpR',prepay,'pp'); bind('kcPpYR','kcPpY',prepay,'pp'); bind('kcPpXR','kcPpX',prepay,'pp');
+ bind('kcIfCostR','kcIfCost',infl,'infl'); bind('kcIfRR','kcIfR',infl,'infl'); bind('kcIfYR','kcIfY',infl,'infl');
+ bind('kcEfExpR','kcEfExp',emerg,'ef'); bind('kcEfMoR','kcEfMo',emerg,'ef'); bind('kcEfHaveR','kcEfHave',emerg,'ef');
+
+ /* ---------- scroll-in reveals + underline draws ---------- */
+ var secs = [].slice.call(d.querySelectorAll('.kc-sec'));
+ if ('IntersectionObserver' in window){
+ var io = new IntersectionObserver(function(es){
+ es.forEach(function(en){ if (en.isIntersecting){ en.target.classList.add('kc-in'); io.unobserve(en.target); } });
+ }, { threshold:.12 });
+ secs.forEach(function(s){ io.observe(s); });
+ } else { secs.forEach(function(s){ s.classList.add('kc-in'); }); }
+
+ buildEmi(); buildInt(); fillGuide(); buildGuide(); recalcAll(); detect();
+})();
+</script>
+</div>
+<style>.kss-box{position:relative;}.kss-box.kss-slide{position:absolute;inset:0;opacity:0;transform:rotateX(-70deg);transform-origin:50% 100%;transition:opacity.55s ease,transform.6s cubic-bezier(.22,.7,.3,1);pointer-events:none;}.kss-box.kss-slide.kss-on{position:relative;opacity:1;transform:none;pointer-events:auto;}</style><script>(function(){var dd=document;[].slice.call(dd.querySelectorAll('.kc-tip')).forEach(function(x){x.classList.add('kss-pending');});})();</script><script>(function(){if(window.__kssLive){return;}window.__kssLive=1;var d=document,w=window,reduce=false;try{reduce=w.matchMedia('(prefers-reduced-motion: reduce)').matches;}catch(e){}var POOL=["Save first, spend later - the order is the whole trick.", "A written goal beats a wish every single month.", "Track net worth yearly; track spending weekly.", "An EMI should never meet half your take-home.", "Insure the catastrophe, self-insure the inconvenience.", "The emergency fund is sleep, not returns.", "Raises belong to future-you before present-you.", "Automate the SIP; romance never pays on the 5th.", "One index fund beats nine opinions.", "Fees compound too - in the wrong direction.", "A cheap product with cover beats a rich one without.", "Never borrow for a depreciating toy at a young age.", "Prepay the costliest loan; the maths is ruthless.", "Credit score is a habit printed as a number.", " utilisation under 30 percent keeps the bureau calm.", "Pay the full card bill; the minimum is a trapdoor.", "Tax saved legally is the highest-yield investment of April.", "File early; refunds and loans both move faster.", "Keep proof of every deduction; paperwork is the deduction.", "Nominate everywhere; update after every life event.", "A will is love with a signature.", "Joint accounts need individual audits.", "Gold jewellery is emotion; gold bonds are arithmetic.", "Property yields rent; patience yields appreciation.", "Rent is not waste; it buys flexibility by the month.", "Compare loans on total outgo, never on EMI.", "Tenure is the biggest lever - pull it down first.", "Insurance is protection; investment is growth; mixing blurs both.", "An emergency is not an investment opportunity.", "A falling market is a discount for the disciplined.", "SIPs during crashes buy your best units quietly.", "Nobody rings a bell at the top or the bottom.", "Forecasting is entertainment; allocation is strategy.", "Rebalance on a calendar, not on a headline.", "Diversification is admitting you cannot know everything.", "If you cannot explain it, you cannot size it.", "Complex products hide simple fees.", "Guaranteed returns above market are a costume.", "If sales pressure is high, the margin must be too.", "Read the exclusions; the brochure hides them in plain sight.", "Claim settlement ratio is the insurer\"s character.", "Health cover first; the gym membership second.", "A premium waived is a claim avoided.", "Teach kids with real money and real small failures.", "Money fights are values fights wearing numbers.", "Couples who audit together, stay together - financially.", "Teach the jar system before the stock market.", "Retirement is a number wearing an age.", "Start early; even small money outruns late big money.", "The best decade to plant compounding was yesterday.", "Withdrawals before 60 steal twice - once now, once later.", "Annuities buy peace; equities buy growth; retire on both.", "Bucket your money by the year you will need it.", "Cash is a tool, not a home.", "Inflation is the silent partner taking a cut nightly.", "Real return is the only return that matters.", "Currency risk is the toll on every foreign bridge.", "A strong dollar season drains everything else.", "Budgets fail as diets; they work as direction.", "Sinking funds turn emergencies into calendar items.", "Name every account after the goal it serves.", "Subscriptions audit themselves into your bank - quarterly.", "Cashback funded by revolving balances is not a reward.", "Buy now pay later is a credit card without the guardrails.", "One no is cheaper than twelve EMI months of regret.", "Skills are the highest-yield asset at any net worth.", "Income from three taps beats income from one salary.", "Side income is risk management wearing a hobby.", "The tracker is the teacher - what gets measured gets managed.", "Review once a year; ignore the noise the rest of it.", "A flat portfolio is a decision by neglect.", "Rebalancing bands end the should-I-sell debate forever.", "Boring is the highest compliment for a core portfolio.", "If the pitch needs urgency, the product needs a mask.", "Unlisted tips travel with the seller\"s margin.", "Screenshots are the receipts of the digital age.", "The comment section is not a research desk.", "Compounding rewards the boring and bills the brilliant.", "Time in the market funds more seats than timing the market.", "Wealth is quiet; it compounds while you sleep and skip the show."];function buildSlide(){return d.createElement('div');}function lead(slide,text){var b=d.createElement('b');b.textContent=text;slide.appendChild(b);}function pick3(idx){var out=[],base=(idx*3)%POOL.length;for(var j=1;4>j;j++){out.push(POOL[(base+j*3)%POOL.length]);}return out;}var boxes=[].slice.call(d.querySelectorAll('.kss-pending'));boxes.forEach(function(box,bi){var slides=[];var first=buildSlide();first.className='kss-slide kss-on';while(box.firstChild){first.appendChild(box.firstChild);}box.appendChild(first);slides.push(first);var p3=pick3(bi);for(var k=0;p3.length>k;k++){var s=buildSlide();s.className='kss-slide';lead(s,"CA's corner:");s.appendChild(d.createTextNode(' '+p3[k]));box.appendChild(s);slides.push(s);}var cur=0,timer=null;function size(){var sh=slides[cur].offsetHeight;if(sh){box.style.minHeight=sh+'px';}}function show(n){cur=(n+slides.length)%slides.length;slides.forEach(function(s,si){s.classList.toggle('kss-on',si===cur);});size();}function arm(){if(timer){w.clearInterval(timer);}timer=w.setInterval(function(){show(cur+1);},6200+bi*750);}if(!reduce){box.addEventListener('mouseenter',function(){if(timer){w.clearInterval(timer);timer=null;}});box.addEventListener('mouseleave',arm);arm();}});})();</script></div></div>
+<style>/* Additive edition: original page skins stay intact. Only new.enh-* elements use this skin. */
+#enhancedSite{position:relative;max-width:1180px;margin:auto;--eh-ink:#2b1d15;--eh-accent:#a4512d;--eh-line:#e1caab;--eh-paper:#fffaf0}
+#enhancedSite.enh-toolbar{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:10px 8px;margin-bottom:8px;border-bottom:1px dashed #d9c4a4;color:#947557;font:600 9px/1.5 Inter,Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase}#enhancedSite.enh-toolbar a{color:inherit;text-decoration:none}#enhancedSite.enh-effects{font:600 10px/1.5 Inter,Arial,sans-serif;padding:7px 12px;border:1px solid #d9c4a4;background:#fff9ee;color:#8a4429;border-radius:30px;cursor:pointer;white-space:nowrap}
+#enhancedSite.enh-announcement{display:flex;align-items:center;justify-content:space-between;gap:12px;border-block:1px dashed #d8bc99;padding:13px 18px;background:#f2dfbf40;margin:20px 0;color:#8a5233;font:500 11px/1.8 Inter,Arial,sans-serif}#enhancedSite.enh-announcement a{color:#9c4522;font-weight:700;text-decoration:none;white-space:nowrap}
+#enhancedSite.enh-module{position:relative;isolation:isolate;margin:45px 0 20px;padding:clamp(23px,3.8vw,44px);border:1px solid #dec6a4;border-radius:5px 22px 5px 22px;background:radial-gradient(ellipse at 100% 0,#e6c29638,transparent 50%),#fffaf0;color:#2b1d15;box-shadow:0 25px 55px -45px #805333;overflow:hidden;font:14px/1.8 Inter,Arial,sans-serif;scroll-margin-top:50px}
+#enhancedSite.enh-module::before{content:'';position:absolute;inset:9px;border:1px solid #c9a77833;border-radius:2px 16px 2px 16px;pointer-events:none;z-index:-1}#enhancedSite.enh-module *{box-sizing:border-box}#enhancedSite.enh-kicker{display:block;font:700 9px/1.5 Inter,Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:#a4512d;margin-bottom:13px}
+#enhancedSite.enh-module h2{font:600 clamp(26px,3.4vw,39px)/1.2 'Playfair Display',Georgia,serif;color:#2b1d15;margin:0 0 15px;letter-spacing:-.025em}#enhancedSite.enh-module h2 em{color:#a4512d;font-weight:500}#enhancedSite.enh-intro{font:400 13px/1.85 Inter,Arial,sans-serif;color:#79624e;max-width:810px;margin:0 0 26px}#enhancedSite.enh-module h3{font:600 23px/1.3 'Playfair Display',Georgia,serif;margin:0 0 12px;color:#2b1d15}
+#enhancedSite.enh-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}#enhancedSite.enh-card{--rx:0deg;--ry:0deg;position:relative;display:block;min-width:0;padding:24px 22px;border:1px solid #e2cdb0;border-radius:13px;background:#fffdf6;color:#2b1d15;text-decoration:none!important;transform:perspective(800px) rotateX(var(--rx)) rotateY(var(--ry));transition:transform.25s ease,box-shadow.25s ease,border-color.25s ease;overflow:hidden;isolation:isolate}#enhancedSite.enh-card::after{content:'';position:absolute;inset:-40%;background:linear-gradient(110deg,transparent 40%,#dba75a13 50%,transparent 60%);transform:translateX(-70%);pointer-events:none;z-index:-1}#enhancedSite.enh-card:hover{border-color:#bd8b56;box-shadow:0 18px 30px -25px #995f2a}#enhancedSite.enh-card:hover::after{animation:enh-shine 1.1s ease}
+#enhancedSite.enh-card p{font:400 12px/1.85 Inter,Arial,sans-serif;color:#816953;margin:0 0 20px}#enhancedSite.enh-card small{font:700 10px/1.6 Inter,Arial,sans-serif;letter-spacing:.04em;color:#9c4522}#enhancedSite.enh-icon{display:block;width:44px;height:44px;margin-bottom:23px;fill:none;stroke:#a75c35;stroke-width:1.35;stroke-linecap:round;stroke-linejoin:round}#enhancedSite.enh-icon path{stroke-dasharray:160;stroke-dashoffset:0}#enhancedSite.enh-card:hover.enh-icon path{animation:enh-draw 1.3s ease}
+#enhancedSite.enh-trail{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin:25px 0 8px;border:1px solid #d9bf98;border-radius:12px;overflow:hidden}#enhancedSite.enh-trail div{padding:22px;border-right:1px dashed #d9bf98;background:#f7ead1}#enhancedSite.enh-trail div:last-child{border:0}#enhancedSite.enh-trail b{display:block;font:italic 28px/1.1 Georgia,serif;color:#ad683d;margin-bottom:10px}#enhancedSite.enh-trail strong{display:block;font-size:12px;color:#5f3f26;margin-bottom:7px}#enhancedSite.enh-trail span{font-size:11px;line-height:1.8;color:#806346}
+#enhancedSite.enh-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 18px}#enhancedSite.enh-tab{font:600 11px/1.5 Inter,Arial,sans-serif;color:#895032;border:1px solid #d7bc97;background:#fffaf0;padding:10px 15px;border-radius:25px;cursor:pointer}#enhancedSite.enh-tab[aria-selected=true]{background:#352319;border-color:#352319;color:#fff2df}#enhancedSite.enh-panel{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;padding:25px;background:repeating-linear-gradient(transparent 0 31px,#a4754120 32px),#f6e8cf;border:1px solid #dfc5a0;border-radius:4px 16px 4px 16px}#enhancedSite.enh-panel[hidden]{display:none!important}#enhancedSite.enh-panel h3{font-size:27px}#enhancedSite.enh-panel p{font-size:13px;line-height:1.85;color:#715235;margin:0 0 12px}#enhancedSite.enh-panel ul{margin:0;padding-left:17px;font:12px/1.9 Inter,Arial,sans-serif;color:#806044}#enhancedSite.enh-panel a{color:#954a28;font-weight:700;font-size:11px}#enhancedSite.enh-panel.enh-selected{animation:enh-note.45s ease}
+#enhancedSite.enh-details{margin:14px 0 0;border-top:1px dashed #ccb08a;padding:14px 0;font:12px/1.85 Inter,Arial,sans-serif;color:#775b43}#enhancedSite.enh-details summary{cursor:pointer;font-weight:700;color:#6d472b}#enhancedSite.enh-fine{font:400 10px/1.75 Inter,Arial,sans-serif;color:#92765c;margin:18px 0 0}#enhancedSite.enh-callout{padding:16px 20px;border-left:3px solid #af6036;border-radius:0 9px 9px 0;background:#efe0c5;margin:20px 0;font:12px/1.85 Inter,Arial,sans-serif;color:#805932}
+
+#enhancedSite.enh-pulse{animation:enh-pulse.6s ease}#enhancedSite [data-enhanced-note]{position:relative}
+/* Keep the original page's revelation effects visible in standalone and sandbox previews. */
+#enhancedSite.reveal,#enhancedSite.reveal.will-reveal{opacity:1;visibility:visible}#enhancedSite.enh-in{animation:enh-enter.65s cubic-bezier(.2,.7,.2,1) both}
+/* Preserve the approved left/right heroes without flattening their original skins. */
+#enhancedSite .kvP-in,#enhancedSite .kc-htop{display:grid!important;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr)!important;gap:clamp(14px,3vw,38px)!important;align-items:center}#enhancedSite .kvP-in>*,#enhancedSite .kc-htop>*{min-width:0;max-width:100%;width:100%}#enhancedSite .kvP-in>.kvP-panel,#enhancedSite .kc-htop>.kcd-panel{max-width:370px!important;justify-self:end}#enhancedSite .kvP-in .kvP-h1,#enhancedSite .kc-htop h1{font-size:clamp(26px,4.5vw,54px)}
+#enhancedSite.kc-guide{grid-template-columns:repeat(2,minmax(0,1fr))}#enhancedSite.kc-guide>*{min-width:0}#enhancedSite.kc-pick>*{min-width:0;white-space:normal;overflow-wrap:anywhere}#enhancedSite.kc-locale label{min-width:0;max-width:100%;flex-wrap:wrap}#enhancedSite.kc-locale select{min-width:0;max-width:100%}
+#enhancedSite.enh-controls :focus-visible,#enhancedSite.enh-module :focus-visible,#enhancedSite.enh-toolbar :focus-visible{outline:3px solid #ac6237;outline-offset:4px}
+#enhancedSite[data-effects=paused] *,#enhancedSite[data-effects=paused] *::before,#enhancedSite[data-effects=paused] *::after{animation-play-state:paused!important;transition:none!important}
+@keyframes enh-enter{from{opacity:.6;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}@keyframes enh-shine{to{transform:translateX(70%)}}@keyframes enh-draw{from{stroke-dashoffset:160}to{stroke-dashoffset:0}}@keyframes enh-note{from{opacity:.55;transform:translateY(8px) rotate(-.3deg)}to{opacity:1;transform:none}}@keyframes enh-pulse{30%{box-shadow:0 0 0 4px #b4743130}}.post-body #enhancedSite{width:100%!important;max-width:1180px!important}.post-body #enhancedSite.enh-module,.post-body #enhancedSite.enh-grid,.post-body #enhancedSite.enh-panel,.post-body #enhancedSite.enh-trail{width:100%!important;max-width:100%!important}.post-body #enhancedSite.enh-card,.post-body #enhancedSite.enh-panel>*,.post-body #enhancedSite.enh-trail>*{width:100%!important;max-width:100%!important;min-width:0!important}.post-body #enhancedSite .kvP-in>*,.post-body #enhancedSite .kc-htop>*{width:100%!important;max-width:100%!important;min-width:0!important}.post-body #enhancedSite .kvP-in>.kvP-panel,.post-body #enhancedSite .kc-htop>.kcd-panel{max-width:370px!important}
+@media(max-width:700px){#enhancedSite.enh-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#enhancedSite.enh-panel{grid-template-columns:1fr;gap:12px;padding:20px}#enhancedSite.enh-trail{grid-template-columns:1fr}#enhancedSite.enh-trail div{border-right:0;border-bottom:1px dashed #d9bf98;padding:18px 22px}#enhancedSite.enh-module{padding:25px 19px;margin:30px 0 15px}#enhancedSite.enh-announcement{font-size:10px;align-items:start}#enhancedSite.enh-announcement a{white-space:normal}#enhancedSite .kvP-in .kvP-h1,#enhancedSite .kc-htop h1{font-size:clamp(24px,5.8vw,34px)!important}#enhancedSite .kvP-in.kvP-lede,#enhancedSite .kc-htop.kc-lede{font-size:12px;line-height:1.7}#enhancedSite .kvP-in .kvP-panel,#enhancedSite .kc-htop.kcd-panel{padding:12px 10px!important}#enhancedSite .kvP-in.kvP-slide,#enhancedSite .kc-htop.kcd-slide{padding:12px 8px!important}#enhancedSite .kvP-in.kvP-srow,#enhancedSite .kvP-in.kvP-lrow,#enhancedSite .kc-htop.kcd-srow{font-size:10px!important;line-height:1.5;gap:5px;flex-wrap:wrap}#enhancedSite .kvP-in.kvP-lrow>b,#enhancedSite .kc-htop.kcd-srow>b{font-size:12px!important;white-space:normal}#enhancedSite .kvP-in.kvP-caveat,#enhancedSite .kc-htop.kcd-caveat{font-size:18px!important}#enhancedSite .kvP-in.kvP-fine{font-size:10px!important}#enhancedSite.kc-guide{grid-template-columns:minmax(0,1fr)}#enhancedSite.kc-locale label{width:100%}#enhancedSite.kc-locale select{flex:1 1 120px}}
+@media(max-width:450px){#enhancedSite.enh-grid{grid-template-columns:1fr}#enhancedSite.enh-card{padding:22px}#enhancedSite.enh-icon{margin-bottom:14px}#enhancedSite.enh-module{padding:25px 16px}#enhancedSite.enh-toolbar{font-size:8px}#enhancedSite.enh-effects{font-size:9px}}
+@media(prefers-reduced-motion:reduce){#enhancedSite *,#enhancedSite *::before,#enhancedSite *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}#enhancedSite.enh-card{transform:none!important}}
+
+#enhancedSite,#enhancedSite *{box-sizing:border-box}#enhancedSite.kn-tile>img{display:block;width:100%;height:100%;object-fit:cover;transition:transform.6s ease}#enhancedSite.kn-tile:hover>img{transform:scale(1.045)}
+/* Keep the original ledger details legible when animation is reduced or paused. */
+@media(prefers-reduced-motion:reduce){#enhancedSite.kvP-lrow b,#enhancedSite.kvP-lrow i{opacity:1!important;transform:none!important}}
+#enhancedSite[data-effects=paused].kvP-lrow b{opacity:1!important;transform:none!important}
+@media(max-width:700px){#enhancedSite .kvP-in.kvP-lhead{display:block!important;padding-bottom:9px!important}#enhancedSite .kvP-in.kvP-lhead>b{font-size:8px!important;letter-spacing:.16em!important;display:block;margin:0 0 7px}#enhancedSite .kvP-in.kvP-lhead.kvP-caveat{display:block;max-width:100%;margin:0;font-size:17px!important}#enhancedSite .kvP-in.kvP-lrow i{display:none}#enhancedSite .kvP-in.kvP-lrow{display:block!important;padding:7px 0}#enhancedSite .kvP-in.kvP-lrow span{font-size:10px}#enhancedSite .kvP-in.kvP-lrow b{display:block;font-size:15px!important;margin-top:4px}#enhancedSite .kvP-swrow{display:block;font-size:10px!important;padding:8px 0!important}#enhancedSite .kvP-swrow>.kvP-sw{display:flex!important;justify-content:space-between;align-items:center;width:100%!important;gap:7px;margin-top:6px}#enhancedSite .kvP-swrow>.kvP-sw i{flex:0 0 35px;width:35px!important;height:20px!important}#enhancedSite .kvP-swrow>.kvP-sw i::before{width:14px!important;height:14px!important;top:3px!important}#enhancedSite .kvP-swrow>.kvP-sw.on i::before{left:17px!important}}
+@media(max-width:700px){#enhancedSite.kvP-contact #kvPtype{font-size:16px!important;line-height:1.5!important}#enhancedSite.kvP-contact #statusChip{display:block!important;width:100%;max-width:100%;border-radius:14px;letter-spacing:0;font-size:9px!important;line-height:1.5;padding:10px!important}#enhancedSite.kvP-contact #clock{display:block;font-size:9px!important;line-height:1.5;letter-spacing:0}}
+/* The approved News photos occupy the same uniform panels as the original art. */
+#enhancedSite.kn-tile>img{height:160px;object-fit:cover}@media(max-width:600px){#enhancedSite.kn-tile>img{height:130px}}
+</style>
+<script>/* Additive interactions: no original calculator or data engine is replaced. */
+(function(){'use strict';var root=document.getElementById('enhancedSite');if(!root||root.dataset.enhanced)return;root.dataset.enhanced='true';var media=matchMedia('(prefers-reduced-motion: reduce)'),paused=media.matches,btn=root.querySelector('.enh-effects');
+function sync(){root.dataset.effects=paused?'paused':'playing';if(btn){btn.textContent=paused?'Play effects':'Pause effects';btn.setAttribute('aria-pressed',String(paused));}var ar=root.querySelector('#ar-motion');if(ar&&((paused&&ar.getAttribute('aria-pressed')!=='true')||(!paused&&ar.getAttribute('aria-pressed')==='true')))ar.click();}if(btn)btn.addEventListener('click',function(){paused=!paused;sync();});sync();if(media.addEventListener)media.addEventListener('change',function(e){paused=e.matches;sync();});
+root.querySelectorAll('.enh-tabset').forEach(function(set){var tabs=[].slice.call(set.querySelectorAll('.enh-tab')),panels=set.querySelectorAll('.enh-panel');function activate(i,focus){tabs.forEach(function(t,j){t.setAttribute('aria-selected',String(i===j));t.tabIndex=i===j?0:-1;});panels.forEach(function(p,j){p.hidden=i!==j;p.classList.remove('enh-selected');if(i===j&&!paused){void p.offsetWidth;p.classList.add('enh-selected');}});if(focus)tabs[i].focus();}tabs.forEach(function(t,i){t.addEventListener('click',function(){activate(i,false);});t.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();activate((i+(e.key==='ArrowRight'?1:-1)+tabs.length)%tabs.length,true);}if(e.key==='Home'){e.preventDefault();activate(0,true);}if(e.key==='End'){e.preventDefault();activate(tabs.length-1,true);}});});activate(0,false);});
+var reveal=root.querySelectorAll('.reveal,.tl-item,.enh-module,.enh-card,.kc-sec,.kn-sec,.ar-section');if('IntersectionObserver' in window){var ob=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;ob.unobserve(e.target);e.target.classList.add('in');e.target.classList.remove('will-reveal');if(!paused){e.target.classList.add('enh-in');var target=e.target;setTimeout(function(){target.classList.remove('enh-in');},720);}});},{threshold:.04});reveal.forEach(function(e){ob.observe(e);});}else reveal.forEach(function(e){e.classList.add('in');e.classList.remove('will-reveal');});
+if(matchMedia('(pointer:fine)').matches)root.querySelectorAll('.enh-card').forEach(function(card){card.addEventListener('pointermove',function(e){if(paused)return;var r=card.getBoundingClientRect();card.style.setProperty('--rx',((.5-(e.clientY-r.top)/r.height)*3).toFixed(2)+'deg');card.style.setProperty('--ry',(((e.clientX-r.left)/r.width-.5)*4).toFixed(2)+'deg');});card.addEventListener('pointerleave',function(){card.style.setProperty('--rx','0deg');card.style.setProperty('--ry','0deg');});});
+root.addEventListener('input',function(e){if(paused||!e.target.closest('.kc-sec'))return;var section=e.target.closest('.kc-sec'),out=section.querySelector('.kc-receipt,.kc-ticket,.kc-result,.kc-out');if(out){out.classList.remove('enh-pulse');void out.offsetWidth;out.classList.add('enh-pulse');}});
+})();
+</script>
+<style id="professional-page-layout">/* Page hierarchy only. Theme header/footer/navigation remain outside these snippets. */
+#enhancedSite[data-layout=professional]{padding-top:12px;padding-bottom:20px}
+#enhancedSite.pr-page{padding:0 clamp(12px,2vw,24px)!important}
+#enhancedSite.pr-page>.pr-hero{margin:0 0 24px!important;border:1px solid #e3ccb0;border-radius:8px 24px 8px 24px;isolation:isolate}
+#enhancedSite.pr-page>.pr-hero:first-child{margin-top:0!important}
+#enhancedSite .pr-local-nav{display:flex;align-items:center;flex-wrap:wrap;column-gap:8px;row-gap:0;margin:0 0 32px;padding:10px 0;border-bottom:1px solid #ddc8ac;font:500 11px/1.5 Inter,Arial,sans-serif}
+#enhancedSite .pr-nav-label{color:#95765b;text-transform:uppercase;letter-spacing:.13em;font-size:9px;font-weight:700;margin-right:14px}
+#enhancedSite .pr-local-nav a{display:inline-flex;align-items:center;min-height:44px;padding:8px 10px;color:#794c30;text-decoration:none;border-radius:6px;transition:background.2s}
+#enhancedSite .pr-local-nav a:hover{background:#ead2af40;color:#9b4221}
+#enhancedSite .pr-local-nav a:focus-visible,#enhancedSite.pr-index-heading:focus-visible{outline:2px solid #a45b32;outline-offset:3px}
+#enhancedSite.pr-page>.section-head,#enhancedSite.pr-page>.rs-head{padding-top:clamp(30px,4vw,48px);padding-bottom:20px}
+#enhancedSite.pr-page>.story,#enhancedSite.pr-page>.author{margin-top:32px;margin-bottom:32px}
+#enhancedSite.pr-page>.enh-module{margin-top:36px;margin-bottom:28px}
+#enhancedSite.pr-page>.cta{margin-top:40px}
+#enhancedSite.pr-page>.enh-toolbar{margin:32px 0 12px;padding:18px 0 4px;border-top:1px solid #e3d1b9;border-bottom:0;letter-spacing:.07em}
+#enhancedSite.pr-page>.enh-announcement{margin:30px 0 0;padding:15px 0;background:transparent;border-top:1px solid #e3d1b9;border-bottom:0;font-size:10px}
+#enhancedSite.pr-page>.enh-announcement a{font-size:10px;white-space:normal;text-align:right;max-width:155px}
+#enhancedSite.pr-index-heading{grid-column:1/-1;display:block!important;margin-top:12px;padding:8px 0;border-bottom:1px solid #dfc8a7;color:#8e4c29!important;background:none!important;box-shadow:none!important;border-radius:0!important;font:700 10px/1.5 Inter,Arial,sans-serif;text-decoration:none;text-transform:uppercase;letter-spacing:.12em}
+#enhancedSite.pr-index-heading:first-child{margin-top:0}
+#enhancedSite.pr-group-divider{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:20px 0 12px;margin:34px 0 0;border-bottom:1px solid #d5b894;color:#8e4c29;font:600 11px/1.6 Inter,Arial,sans-serif;scroll-margin-top:100px}
+#enhancedSite.pr-group-divider strong{text-transform:uppercase;letter-spacing:.14em;font-size:10px}
+#enhancedSite.pr-group-divider span{color:#9b8069;font-variant-numeric:tabular-nums;white-space:nowrap;font-size:10px}
+#enhancedSite.pr-page>[id]{scroll-margin-top:100px}
+#enhancedSite.pr-page>.ar-mast{margin:12px 0 22px;padding:10px 0;border-top:0;justify-content:flex-start;text-align:left}
+#enhancedSite.pr-page>.ar-toolbar{margin-top:24px;margin-bottom:18px}
+#enhancedSite.pr-page>.ar-directory{margin-top:0}
+#enhancedSite.pr-page>.doc{margin-top:32px}
+@media(max-width:600px){
+ #enhancedSite .pr-local-nav{margin-bottom:22px;padding:6px 0;column-gap:4px}
+ #enhancedSite .pr-nav-label{flex-basis:100%;padding:8px 8px 0;font-size:9px}
+ #enhancedSite .pr-local-nav a{font-size:10px;padding:7px 8px}
+ #enhancedSite.pr-page>.pr-hero{margin-bottom:18px!important;border-radius:5px 16px 5px 16px}
+ #enhancedSite.pr-page>.section-head,#enhancedSite.pr-page>.rs-head{padding-top:28px;padding-bottom:17px}
+ #enhancedSite.pr-group-divider{margin-top:25px;gap:10px}
+ #enhancedSite.pr-group-divider strong{font-size:9px;letter-spacing:.1em}
+ #enhancedSite.pr-page>.enh-toolbar{margin-top:25px}
+}
+
+#enhancedSite.pr-page>.ar-mast{display:block;font-size:11px;line-height:1.7}
+#enhancedSite.pr-page>.ar-mast>span{display:block;text-align:left;max-width:none;width:auto}
+#enhancedSite.pr-page>.kp-steps{margin-top:36px;margin-bottom:28px}
+/* Inset hero copy as well as the note; a framed heading must not touch its border. */
+#enhancedSite.pr-page>.pr-hero{padding-left:clamp(14px,2vw,24px)!important;padding-right:clamp(14px,2vw,24px)!important}
+/* Local links remain compact even inside Blogger's broad post-body styling. */.post-body #enhancedSite .pr-local-nav a,.post-body #enhancedSite .pr-nav-label{width:auto!important;max-width:100%!important}.post-body #enhancedSite.pr-index-heading{width:100%!important}
+@media(max-width:700px){
+ /* Blogger already supplies mobile gutters: avoid narrowing the two-column hero twice. */.post-body #enhancedSite.pr-page{padding-left:0!important;padding-right:0!important}
+ #enhancedSite.kcd-srow,#enhancedSite.kvP-srow{display:block!important}
+ #enhancedSite.kcd-srow>span,#enhancedSite.kvP-srow>span{display:block!important;width:auto!important}
+ #enhancedSite.kcd-srow>b,#enhancedSite.kvP-srow>b{display:block!important;width:auto!important;max-width:100%!important;text-align:left!important;margin-top:4px}
+ #enhancedSite.kcd-fine{font:14px/1.6 'Caveat',cursive!important;margin:12px 0 0!important}
+ #enhancedSite.kc-geoline,#enhancedSite.kc-geoline em{font-size:11px!important;line-height:1.65!important}
+}
+</style>
+ DY_PAGE_FAMILY_START 
+ DY_PAGE_FAMILY_END 
+ DY_SEO_META_START 
+ DY_SEO_META_END 
+ DY_BRAND_IDENTITY_START 
+ DY_BRAND_IDENTITY_END 
+ DY_BRAND_SEO_START 
+ DY_BRAND_SEO_END 
