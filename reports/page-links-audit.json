@@ -1,6 +1,6 @@
 {
   "mode": "page-links-audit",
-  "generated_at_utc": "2026-11-03T04:45:17.699305+00:00",
+  "generated_at_utc": "2026-11-03T04:50:25.237196+00:00",
   "blog": {
     "id": "8911514070006792465",
     "url": "https://millededgeindia.blogspot.com/",
@@ -33,11 +33,6 @@
       "anchors": 21
     },
     {
-      "name": "page: Terms and conditions",
-      "type": "live_page",
-      "anchors": 18
-    },
-    {
       "name": "page: Global snapshot",
       "type": "live_page",
       "anchors": 15
@@ -46,11 +41,6 @@
       "name": "page: Markets today",
       "type": "live_page",
       "anchors": 18
-    },
-    {
-      "name": "page: Privacy policy",
-      "type": "live_page",
-      "anchors": 19
     },
     {
       "name": "page: Money atlas",
@@ -63,24 +53,9 @@
       "anchors": 15
     },
     {
-      "name": "page: Disclaimer",
-      "type": "live_page",
-      "anchors": 21
-    },
-    {
-      "name": "page: Contact us",
-      "type": "live_page",
-      "anchors": 15
-    },
-    {
       "name": "page: Calculator",
       "type": "live_page",
       "anchors": 15
-    },
-    {
-      "name": "page: About us",
-      "type": "live_page",
-      "anchors": 18
     },
     {
       "name": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
@@ -168,13 +143,6 @@
       "content_bytes": 490015
     },
     {
-      "id": "3254393081257151974",
-      "title": "Terms and conditions",
-      "url": "https://millededgeindia.blogspot.com/p/terms-and-conditions.html",
-      "status": "LIVE",
-      "content_bytes": 28499
-    },
-    {
       "id": "8504888514217789256",
       "title": "Global snapshot",
       "url": "https://millededgeindia.blogspot.com/p/global-snapshot.html",
@@ -187,13 +155,6 @@
       "url": "https://millededgeindia.blogspot.com/p/markets-today.html",
       "status": "LIVE",
       "content_bytes": 88096
-    },
-    {
-      "id": "304220949515133754",
-      "title": "Privacy policy",
-      "url": "https://millededgeindia.blogspot.com/p/privacy-policy.html",
-      "status": "LIVE",
-      "content_bytes": 216087
     },
     {
       "id": "8572476015753638755",
@@ -210,32 +171,11 @@
       "content_bytes": 182475
     },
     {
-      "id": "3945823007631424733",
-      "title": "Disclaimer",
-      "url": "https://millededgeindia.blogspot.com/p/disclaimer.html",
-      "status": "LIVE",
-      "content_bytes": 206863
-    },
-    {
-      "id": "4698688245681185879",
-      "title": "Contact us",
-      "url": "https://millededgeindia.blogspot.com/p/contact-us_01883938366.html",
-      "status": "LIVE",
-      "content_bytes": 447501
-    },
-    {
       "id": "7468827438203976743",
       "title": "Calculator",
       "url": "https://millededgeindia.blogspot.com/p/calculator_0908148622.html",
       "status": "LIVE",
       "content_bytes": 196410
-    },
-    {
-      "id": "2716668129166401912",
-      "title": "About us",
-      "url": "https://millededgeindia.blogspot.com/p/about-us_02080501126.html",
-      "status": "LIVE",
-      "content_bytes": 204686
     }
   ],
   "live_posts_count": 0,
@@ -682,160 +622,6 @@
       "path": "/p/contact-milled-edge.html"
     },
     {
-      "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
-      "source_type": "live_page",
-      "button_text": "Contact desk",
-      "href": "https://dailyyield.blogspot.com/p/contact-us_01883938366.html",
-      "path": "/p/contact-us_01883938366.html"
-    },
-    {
-      "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
-      "source_type": "live_page",
-      "button_text": "Privacy Policy",
-      "href": "https://dailyyield.blogspot.com/p/privacy-policy.html",
-      "path": "/p/privacy-policy.html"
-    },
-    {
-      "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
-      "source_type": "live_page",
-      "button_text": "Disclaimer",
-      "href": "https://dailyyield.blogspot.com/p/disclaimer.html",
-      "path": "/p/disclaimer.html"
-    },
-    {
-      "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
-      "source_type": "live_page",
-      "button_text": "Daily Article Original explainers, practical guides and deep dives. READ →",
-      "href": "https://dailyyield.blogspot.com/p/article.html",
-      "path": "/p/article.html"
-    },
-    {
-      "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
-      "source_type": "live_page",
-      "button_text": "Daily News Current financial and economic developments. FOLLOW →",
-      "href": "https://dailyyield.blogspot.com/p/daily-news.html",
-      "path": "/p/daily-news.html"
-    },
-    {
-      "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
-      "source_type": "live_page",
-      "button_text": "Calculators Loan, investing, tax and planning tools. MODEL →",
-      "href": "https://dailyyield.blogspot.com/p/calculator_0908148622.html",
-      "path": "/p/calculator_0908148622.html"
-    },
-    {
-      "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
-      "source_type": "live_page",
-      "button_text": "Markets Today The complete global market command centre. ANALYSE →",
-      "href": "https://dailyyield.blogspot.com/p/markets-today.html",
-      "path": "/p/markets-today.html"
-    },
-    {
-      "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
-      "source_type": "live_page",
-      "button_text": "Global Snapshot A concise cross-asset market summary. SCAN →",
-      "href": "https://dailyyield.blogspot.com/p/global-snapshot.html",
-      "path": "/p/global-snapshot.html"
-    },
-    {
-      "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
-      "source_type": "live_page",
-      "button_text": "Money Atlas Country-by-country money and market context. EXPLORE →",
-      "href": "https://dailyyield.blogspot.com/p/money-atlas_01486068069.html",
-      "path": "/p/money-atlas_01486068069.html"
-    },
-    {
-      "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
-      "source_type": "live_page",
-      "button_text": "For Corporate Finance resources for business decisions. WORK →",
-      "href": "https://dailyyield.blogspot.com/p/for-corporate_01804417406.html",
-      "path": "/p/for-corporate_01804417406.html"
-    },
-    {
-      "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
-      "source_type": "live_page",
-      "button_text": "About",
-      "href": "https://dailyyield.blogspot.com/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
-      "source_type": "live_page",
-      "button_text": "Contact",
-      "href": "https://dailyyield.blogspot.com/p/contact-us_01883938366.html",
-      "path": "/p/contact-us_01883938366.html"
-    },
-    {
-      "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
-      "source_type": "live_page",
-      "button_text": "Disclaimer",
-      "href": "https://dailyyield.blogspot.com/p/disclaimer.html",
-      "path": "/p/disclaimer.html"
-    },
-    {
-      "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
-      "source_type": "live_page",
-      "button_text": "Privacy",
-      "href": "https://dailyyield.blogspot.com/p/privacy-policy.html",
-      "path": "/p/privacy-policy.html"
-    },
-    {
-      "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
-      "source_type": "live_page",
-      "button_text": "Terms",
-      "href": "https://dailyyield.blogspot.com/p/terms-and-conditions.html",
-      "path": "/p/terms-and-conditions.html"
-    },
-    {
-      "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
-      "source_type": "live_page",
-      "button_text": "Kushal Daga — about the author",
-      "href": "https://dailyyield.blogspot.com/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
-      "source_type": "live_page",
-      "button_text": "Contact the Daily Yield desk",
-      "href": "https://dailyyield.blogspot.com/p/contact-us_01883938366.html",
-      "path": "/p/contact-us_01883938366.html"
-    },
-    {
-      "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
-      "source_type": "live_page",
-      "button_text": "All Daily Yield articles",
-      "href": "https://dailyyield.blogspot.com/p/article.html",
-      "path": "/p/article.html"
-    },
-    {
-      "source": "page: Terms and conditions",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: Terms and conditions",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: Terms and conditions",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: Terms and conditions",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
       "source": "page: Global snapshot (https://millededgeindia.blogspot.com/p/global-snapshot.html)",
       "source_type": "live_page",
       "button_text": "Daily Article Original explainers, practical guides and deep dives. READ →",
@@ -1242,209 +1028,6 @@
       "path": "/p/about-us_02080501126.html"
     },
     {
-      "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
-      "source_type": "live_page",
-      "button_text": "Explore the calculators ↗",
-      "href": "https://dailyyield.blogspot.com/p/calculator_0908148622.html",
-      "path": "/p/calculator_0908148622.html"
-    },
-    {
-      "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
-      "source_type": "live_page",
-      "button_text": "Explore the corporate desk ↗",
-      "href": "https://dailyyield.blogspot.com/p/for-corporate_01804417406.html",
-      "path": "/p/for-corporate_01804417406.html"
-    },
-    {
-      "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
-      "source_type": "live_page",
-      "button_text": "Explore the markets desk ↗",
-      "href": "https://dailyyield.blogspot.com/p/global-snapshot.html",
-      "path": "/p/global-snapshot.html"
-    },
-    {
-      "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
-      "source_type": "live_page",
-      "button_text": "Open Contact Us ↗",
-      "href": "https://dailyyield.blogspot.com/p/contact-us_01883938366.html",
-      "path": "/p/contact-us_01883938366.html"
-    },
-    {
-      "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
-      "source_type": "live_page",
-      "button_text": "Daily Article Original explainers, practical guides and deep dives. READ →",
-      "href": "https://dailyyield.blogspot.com/p/article.html",
-      "path": "/p/article.html"
-    },
-    {
-      "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
-      "source_type": "live_page",
-      "button_text": "Daily News Current financial and economic developments. FOLLOW →",
-      "href": "https://dailyyield.blogspot.com/p/daily-news.html",
-      "path": "/p/daily-news.html"
-    },
-    {
-      "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
-      "source_type": "live_page",
-      "button_text": "Calculators Loan, investing, tax and planning tools. MODEL →",
-      "href": "https://dailyyield.blogspot.com/p/calculator_0908148622.html",
-      "path": "/p/calculator_0908148622.html"
-    },
-    {
-      "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
-      "source_type": "live_page",
-      "button_text": "Markets Today The complete global market command centre. ANALYSE →",
-      "href": "https://dailyyield.blogspot.com/p/markets-today.html",
-      "path": "/p/markets-today.html"
-    },
-    {
-      "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
-      "source_type": "live_page",
-      "button_text": "Global Snapshot A concise cross-asset market summary. SCAN →",
-      "href": "https://dailyyield.blogspot.com/p/global-snapshot.html",
-      "path": "/p/global-snapshot.html"
-    },
-    {
-      "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
-      "source_type": "live_page",
-      "button_text": "Money Atlas Country-by-country money and market context. EXPLORE →",
-      "href": "https://dailyyield.blogspot.com/p/money-atlas_01486068069.html",
-      "path": "/p/money-atlas_01486068069.html"
-    },
-    {
-      "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
-      "source_type": "live_page",
-      "button_text": "For Corporate Finance resources for business decisions. WORK →",
-      "href": "https://dailyyield.blogspot.com/p/for-corporate_01804417406.html",
-      "path": "/p/for-corporate_01804417406.html"
-    },
-    {
-      "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
-      "source_type": "live_page",
-      "button_text": "About",
-      "href": "https://dailyyield.blogspot.com/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
-      "source_type": "live_page",
-      "button_text": "Contact",
-      "href": "https://dailyyield.blogspot.com/p/contact-us_01883938366.html",
-      "path": "/p/contact-us_01883938366.html"
-    },
-    {
-      "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
-      "source_type": "live_page",
-      "button_text": "Disclaimer",
-      "href": "https://dailyyield.blogspot.com/p/disclaimer.html",
-      "path": "/p/disclaimer.html"
-    },
-    {
-      "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
-      "source_type": "live_page",
-      "button_text": "Privacy",
-      "href": "https://dailyyield.blogspot.com/p/privacy-policy.html",
-      "path": "/p/privacy-policy.html"
-    },
-    {
-      "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
-      "source_type": "live_page",
-      "button_text": "Terms",
-      "href": "https://dailyyield.blogspot.com/p/terms-and-conditions.html",
-      "path": "/p/terms-and-conditions.html"
-    },
-    {
-      "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
-      "source_type": "live_page",
-      "button_text": "Kushal Daga — about the author",
-      "href": "https://dailyyield.blogspot.com/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
-      "source_type": "live_page",
-      "button_text": "Contact the Daily Yield desk",
-      "href": "https://dailyyield.blogspot.com/p/contact-us_01883938366.html",
-      "path": "/p/contact-us_01883938366.html"
-    },
-    {
-      "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
-      "source_type": "live_page",
-      "button_text": "All Daily Yield articles",
-      "href": "https://dailyyield.blogspot.com/p/article.html",
-      "path": "/p/article.html"
-    },
-    {
-      "source": "page: Privacy policy",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/calculator_0908148622.html",
-      "path": "/p/calculator_0908148622.html"
-    },
-    {
-      "source": "page: Privacy policy",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/for-corporate_01804417406.html",
-      "path": "/p/for-corporate_01804417406.html"
-    },
-    {
-      "source": "page: Privacy policy",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/global-snapshot.html",
-      "path": "/p/global-snapshot.html"
-    },
-    {
-      "source": "page: Privacy policy",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/contact-us_01883938366.html",
-      "path": "/p/contact-us_01883938366.html"
-    },
-    {
-      "source": "page: Privacy policy",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/article.html",
-      "path": "/p/article.html"
-    },
-    {
-      "source": "page: Privacy policy",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/contact-us_01883938366.html",
-      "path": "/p/contact-us_01883938366.html"
-    },
-    {
-      "source": "page: Privacy policy",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: Privacy policy",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: Privacy policy",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: Privacy policy",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
       "source": "page: Money atlas (https://millededgeindia.blogspot.com/p/money-atlas_01486068069.html)",
       "source_type": "live_page",
       "button_text": "Daily Article Original explainers, practical guides and deep dives. READ →",
@@ -1718,398 +1301,6 @@
       "path": "/p/about-us_02080501126.html"
     },
     {
-      "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
-      "source_type": "live_page",
-      "button_text": "Visit this desk ↗",
-      "href": "https://dailyyield.blogspot.com/p/article.html",
-      "path": "/p/article.html"
-    },
-    {
-      "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
-      "source_type": "live_page",
-      "button_text": "Visit this desk ↗",
-      "href": "https://dailyyield.blogspot.com/p/daily-news.html",
-      "path": "/p/daily-news.html"
-    },
-    {
-      "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
-      "source_type": "live_page",
-      "button_text": "Visit this desk ↗",
-      "href": "https://dailyyield.blogspot.com/p/calculator_0908148622.html",
-      "path": "/p/calculator_0908148622.html"
-    },
-    {
-      "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
-      "source_type": "live_page",
-      "button_text": "Visit this desk ↗",
-      "href": "https://dailyyield.blogspot.com/p/for-corporate_01804417406.html",
-      "path": "/p/for-corporate_01804417406.html"
-    },
-    {
-      "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
-      "source_type": "live_page",
-      "button_text": "Visit this desk ↗",
-      "href": "https://dailyyield.blogspot.com/p/money-atlas_01486068069.html",
-      "path": "/p/money-atlas_01486068069.html"
-    },
-    {
-      "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
-      "source_type": "live_page",
-      "button_text": "Visit this desk ↗",
-      "href": "https://dailyyield.blogspot.com/p/global-snapshot.html",
-      "path": "/p/global-snapshot.html"
-    },
-    {
-      "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
-      "source_type": "live_page",
-      "button_text": "Daily Article Original explainers, practical guides and deep dives. READ →",
-      "href": "https://dailyyield.blogspot.com/p/article.html",
-      "path": "/p/article.html"
-    },
-    {
-      "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
-      "source_type": "live_page",
-      "button_text": "Daily News Current financial and economic developments. FOLLOW →",
-      "href": "https://dailyyield.blogspot.com/p/daily-news.html",
-      "path": "/p/daily-news.html"
-    },
-    {
-      "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
-      "source_type": "live_page",
-      "button_text": "Calculators Loan, investing, tax and planning tools. MODEL →",
-      "href": "https://dailyyield.blogspot.com/p/calculator_0908148622.html",
-      "path": "/p/calculator_0908148622.html"
-    },
-    {
-      "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
-      "source_type": "live_page",
-      "button_text": "Markets Today The complete global market command centre. ANALYSE →",
-      "href": "https://dailyyield.blogspot.com/p/markets-today.html",
-      "path": "/p/markets-today.html"
-    },
-    {
-      "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
-      "source_type": "live_page",
-      "button_text": "Global Snapshot A concise cross-asset market summary. SCAN →",
-      "href": "https://dailyyield.blogspot.com/p/global-snapshot.html",
-      "path": "/p/global-snapshot.html"
-    },
-    {
-      "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
-      "source_type": "live_page",
-      "button_text": "Money Atlas Country-by-country money and market context. EXPLORE →",
-      "href": "https://dailyyield.blogspot.com/p/money-atlas_01486068069.html",
-      "path": "/p/money-atlas_01486068069.html"
-    },
-    {
-      "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
-      "source_type": "live_page",
-      "button_text": "For Corporate Finance resources for business decisions. WORK →",
-      "href": "https://dailyyield.blogspot.com/p/for-corporate_01804417406.html",
-      "path": "/p/for-corporate_01804417406.html"
-    },
-    {
-      "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
-      "source_type": "live_page",
-      "button_text": "About",
-      "href": "https://dailyyield.blogspot.com/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
-      "source_type": "live_page",
-      "button_text": "Contact",
-      "href": "https://dailyyield.blogspot.com/p/contact-us_01883938366.html",
-      "path": "/p/contact-us_01883938366.html"
-    },
-    {
-      "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
-      "source_type": "live_page",
-      "button_text": "Disclaimer",
-      "href": "https://dailyyield.blogspot.com/p/disclaimer.html",
-      "path": "/p/disclaimer.html"
-    },
-    {
-      "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
-      "source_type": "live_page",
-      "button_text": "Privacy",
-      "href": "https://dailyyield.blogspot.com/p/privacy-policy.html",
-      "path": "/p/privacy-policy.html"
-    },
-    {
-      "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
-      "source_type": "live_page",
-      "button_text": "Terms",
-      "href": "https://dailyyield.blogspot.com/p/terms-and-conditions.html",
-      "path": "/p/terms-and-conditions.html"
-    },
-    {
-      "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
-      "source_type": "live_page",
-      "button_text": "Kushal Daga — about the author",
-      "href": "https://dailyyield.blogspot.com/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
-      "source_type": "live_page",
-      "button_text": "Contact the Daily Yield desk",
-      "href": "https://dailyyield.blogspot.com/p/contact-us_01883938366.html",
-      "path": "/p/contact-us_01883938366.html"
-    },
-    {
-      "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
-      "source_type": "live_page",
-      "button_text": "All Daily Yield articles",
-      "href": "https://dailyyield.blogspot.com/p/article.html",
-      "path": "/p/article.html"
-    },
-    {
-      "source": "page: Disclaimer",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/article.html",
-      "path": "/p/article.html"
-    },
-    {
-      "source": "page: Disclaimer",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/daily-news.html",
-      "path": "/p/daily-news.html"
-    },
-    {
-      "source": "page: Disclaimer",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/calculator_0908148622.html",
-      "path": "/p/calculator_0908148622.html"
-    },
-    {
-      "source": "page: Disclaimer",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/for-corporate_01804417406.html",
-      "path": "/p/for-corporate_01804417406.html"
-    },
-    {
-      "source": "page: Disclaimer",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/money-atlas_01486068069.html",
-      "path": "/p/money-atlas_01486068069.html"
-    },
-    {
-      "source": "page: Disclaimer",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/global-snapshot.html",
-      "path": "/p/global-snapshot.html"
-    },
-    {
-      "source": "page: Disclaimer",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/article.html",
-      "path": "/p/article.html"
-    },
-    {
-      "source": "page: Disclaimer",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: Disclaimer",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: Disclaimer",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: Disclaimer",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: Disclaimer",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: Disclaimer",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: Contact us (https://millededgeindia.blogspot.com/p/contact-us_01883938366.html)",
-      "source_type": "live_page",
-      "button_text": "Daily Article Original explainers, practical guides and deep dives. READ →",
-      "href": "https://dailyyield.blogspot.com/p/article.html",
-      "path": "/p/article.html"
-    },
-    {
-      "source": "page: Contact us (https://millededgeindia.blogspot.com/p/contact-us_01883938366.html)",
-      "source_type": "live_page",
-      "button_text": "Daily News Current financial and economic developments. FOLLOW →",
-      "href": "https://dailyyield.blogspot.com/p/daily-news.html",
-      "path": "/p/daily-news.html"
-    },
-    {
-      "source": "page: Contact us (https://millededgeindia.blogspot.com/p/contact-us_01883938366.html)",
-      "source_type": "live_page",
-      "button_text": "Calculators Loan, investing, tax and planning tools. MODEL →",
-      "href": "https://dailyyield.blogspot.com/p/calculator_0908148622.html",
-      "path": "/p/calculator_0908148622.html"
-    },
-    {
-      "source": "page: Contact us (https://millededgeindia.blogspot.com/p/contact-us_01883938366.html)",
-      "source_type": "live_page",
-      "button_text": "Markets Today The complete global market command centre. ANALYSE →",
-      "href": "https://dailyyield.blogspot.com/p/markets-today.html",
-      "path": "/p/markets-today.html"
-    },
-    {
-      "source": "page: Contact us (https://millededgeindia.blogspot.com/p/contact-us_01883938366.html)",
-      "source_type": "live_page",
-      "button_text": "Global Snapshot A concise cross-asset market summary. SCAN →",
-      "href": "https://dailyyield.blogspot.com/p/global-snapshot.html",
-      "path": "/p/global-snapshot.html"
-    },
-    {
-      "source": "page: Contact us (https://millededgeindia.blogspot.com/p/contact-us_01883938366.html)",
-      "source_type": "live_page",
-      "button_text": "Money Atlas Country-by-country money and market context. EXPLORE →",
-      "href": "https://dailyyield.blogspot.com/p/money-atlas_01486068069.html",
-      "path": "/p/money-atlas_01486068069.html"
-    },
-    {
-      "source": "page: Contact us (https://millededgeindia.blogspot.com/p/contact-us_01883938366.html)",
-      "source_type": "live_page",
-      "button_text": "For Corporate Finance resources for business decisions. WORK →",
-      "href": "https://dailyyield.blogspot.com/p/for-corporate_01804417406.html",
-      "path": "/p/for-corporate_01804417406.html"
-    },
-    {
-      "source": "page: Contact us (https://millededgeindia.blogspot.com/p/contact-us_01883938366.html)",
-      "source_type": "live_page",
-      "button_text": "About",
-      "href": "https://dailyyield.blogspot.com/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: Contact us (https://millededgeindia.blogspot.com/p/contact-us_01883938366.html)",
-      "source_type": "live_page",
-      "button_text": "Contact",
-      "href": "https://dailyyield.blogspot.com/p/contact-us_01883938366.html",
-      "path": "/p/contact-us_01883938366.html"
-    },
-    {
-      "source": "page: Contact us (https://millededgeindia.blogspot.com/p/contact-us_01883938366.html)",
-      "source_type": "live_page",
-      "button_text": "Disclaimer",
-      "href": "https://dailyyield.blogspot.com/p/disclaimer.html",
-      "path": "/p/disclaimer.html"
-    },
-    {
-      "source": "page: Contact us (https://millededgeindia.blogspot.com/p/contact-us_01883938366.html)",
-      "source_type": "live_page",
-      "button_text": "Privacy",
-      "href": "https://dailyyield.blogspot.com/p/privacy-policy.html",
-      "path": "/p/privacy-policy.html"
-    },
-    {
-      "source": "page: Contact us (https://millededgeindia.blogspot.com/p/contact-us_01883938366.html)",
-      "source_type": "live_page",
-      "button_text": "Terms",
-      "href": "https://dailyyield.blogspot.com/p/terms-and-conditions.html",
-      "path": "/p/terms-and-conditions.html"
-    },
-    {
-      "source": "page: Contact us (https://millededgeindia.blogspot.com/p/contact-us_01883938366.html)",
-      "source_type": "live_page",
-      "button_text": "Kushal Daga — about the author",
-      "href": "https://dailyyield.blogspot.com/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: Contact us (https://millededgeindia.blogspot.com/p/contact-us_01883938366.html)",
-      "source_type": "live_page",
-      "button_text": "Contact the Daily Yield desk",
-      "href": "https://dailyyield.blogspot.com/p/contact-us_01883938366.html",
-      "path": "/p/contact-us_01883938366.html"
-    },
-    {
-      "source": "page: Contact us (https://millededgeindia.blogspot.com/p/contact-us_01883938366.html)",
-      "source_type": "live_page",
-      "button_text": "All Daily Yield articles",
-      "href": "https://dailyyield.blogspot.com/p/article.html",
-      "path": "/p/article.html"
-    },
-    {
-      "source": "page: Contact us",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/article.html",
-      "path": "/p/article.html"
-    },
-    {
-      "source": "page: Contact us",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/contact-us_01883938366.html",
-      "path": "/p/contact-us_01883938366.html"
-    },
-    {
-      "source": "page: Contact us",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: Contact us",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: Contact us",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: Contact us",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: Contact us",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
       "source": "page: Calculator (https://millededgeindia.blogspot.com/p/calculator_0908148622.html)",
       "source_type": "live_page",
       "button_text": "Daily Article Original explainers, practical guides and deep dives. READ →",
@@ -2258,195 +1449,6 @@
     },
     {
       "source": "page: Calculator",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
-      "source_type": "live_page",
-      "button_text": "Open the personal desk ↗",
-      "href": "https://dailyyield.blogspot.com/p/calculator_0908148622.html",
-      "path": "/p/calculator_0908148622.html"
-    },
-    {
-      "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
-      "source_type": "live_page",
-      "button_text": "Open the corporate desk ↗",
-      "href": "https://dailyyield.blogspot.com/p/for-corporate_01804417406.html",
-      "path": "/p/for-corporate_01804417406.html"
-    },
-    {
-      "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
-      "source_type": "live_page",
-      "button_text": "Open the Daily News ↗",
-      "href": "https://dailyyield.blogspot.com/p/daily-news.html",
-      "path": "/p/daily-news.html"
-    },
-    {
-      "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
-      "source_type": "live_page",
-      "button_text": "Daily Article Original explainers, practical guides and deep dives. READ →",
-      "href": "https://dailyyield.blogspot.com/p/article.html",
-      "path": "/p/article.html"
-    },
-    {
-      "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
-      "source_type": "live_page",
-      "button_text": "Daily News Current financial and economic developments. FOLLOW →",
-      "href": "https://dailyyield.blogspot.com/p/daily-news.html",
-      "path": "/p/daily-news.html"
-    },
-    {
-      "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
-      "source_type": "live_page",
-      "button_text": "Calculators Loan, investing, tax and planning tools. MODEL →",
-      "href": "https://dailyyield.blogspot.com/p/calculator_0908148622.html",
-      "path": "/p/calculator_0908148622.html"
-    },
-    {
-      "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
-      "source_type": "live_page",
-      "button_text": "Markets Today The complete global market command centre. ANALYSE →",
-      "href": "https://dailyyield.blogspot.com/p/markets-today.html",
-      "path": "/p/markets-today.html"
-    },
-    {
-      "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
-      "source_type": "live_page",
-      "button_text": "Global Snapshot A concise cross-asset market summary. SCAN →",
-      "href": "https://dailyyield.blogspot.com/p/global-snapshot.html",
-      "path": "/p/global-snapshot.html"
-    },
-    {
-      "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
-      "source_type": "live_page",
-      "button_text": "Money Atlas Country-by-country money and market context. EXPLORE →",
-      "href": "https://dailyyield.blogspot.com/p/money-atlas_01486068069.html",
-      "path": "/p/money-atlas_01486068069.html"
-    },
-    {
-      "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
-      "source_type": "live_page",
-      "button_text": "For Corporate Finance resources for business decisions. WORK →",
-      "href": "https://dailyyield.blogspot.com/p/for-corporate_01804417406.html",
-      "path": "/p/for-corporate_01804417406.html"
-    },
-    {
-      "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
-      "source_type": "live_page",
-      "button_text": "About",
-      "href": "https://dailyyield.blogspot.com/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
-      "source_type": "live_page",
-      "button_text": "Contact",
-      "href": "https://dailyyield.blogspot.com/p/contact-us_01883938366.html",
-      "path": "/p/contact-us_01883938366.html"
-    },
-    {
-      "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
-      "source_type": "live_page",
-      "button_text": "Disclaimer",
-      "href": "https://dailyyield.blogspot.com/p/disclaimer.html",
-      "path": "/p/disclaimer.html"
-    },
-    {
-      "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
-      "source_type": "live_page",
-      "button_text": "Privacy",
-      "href": "https://dailyyield.blogspot.com/p/privacy-policy.html",
-      "path": "/p/privacy-policy.html"
-    },
-    {
-      "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
-      "source_type": "live_page",
-      "button_text": "Terms",
-      "href": "https://dailyyield.blogspot.com/p/terms-and-conditions.html",
-      "path": "/p/terms-and-conditions.html"
-    },
-    {
-      "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
-      "source_type": "live_page",
-      "button_text": "Kushal Daga — about the author",
-      "href": "https://dailyyield.blogspot.com/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
-      "source_type": "live_page",
-      "button_text": "Contact the Daily Yield desk",
-      "href": "https://dailyyield.blogspot.com/p/contact-us_01883938366.html",
-      "path": "/p/contact-us_01883938366.html"
-    },
-    {
-      "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
-      "source_type": "live_page",
-      "button_text": "All Daily Yield articles",
-      "href": "https://dailyyield.blogspot.com/p/article.html",
-      "path": "/p/article.html"
-    },
-    {
-      "source": "page: About us",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/calculator_0908148622.html",
-      "path": "/p/calculator_0908148622.html"
-    },
-    {
-      "source": "page: About us",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/for-corporate_01804417406.html",
-      "path": "/p/for-corporate_01804417406.html"
-    },
-    {
-      "source": "page: About us",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/daily-news.html",
-      "path": "/p/daily-news.html"
-    },
-    {
-      "source": "page: About us",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/article.html",
-      "path": "/p/article.html"
-    },
-    {
-      "source": "page: About us",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: About us",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: About us",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: About us",
-      "source_type": "live_page",
-      "button_text": "(non-button reference)",
-      "href": "/p/about-us_02080501126.html",
-      "path": "/p/about-us_02080501126.html"
-    },
-    {
-      "source": "page: About us",
       "source_type": "live_page",
       "button_text": "(non-button reference)",
       "href": "/p/about-us_02080501126.html",
@@ -7177,17 +6179,9 @@
     "/p/about-us_02080501126.html": {
       "id": "2716668129166401912",
       "title": "About us",
-      "total_button_links": 22,
+      "total_button_links": 12,
       "buttons": [
         {
-          "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
-          "text": "About"
-        },
-        {
-          "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
-          "text": "Kushal Daga — about the author"
-        },
-        {
           "source": "page: Global snapshot (https://millededgeindia.blogspot.com/p/global-snapshot.html)",
           "text": "About"
         },
@@ -7201,14 +6195,6 @@
         },
         {
           "source": "page: Markets today (https://millededgeindia.blogspot.com/p/markets-today.html)",
-          "text": "Kushal Daga — about the author"
-        },
-        {
-          "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
-          "text": "About"
-        },
-        {
-          "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
           "text": "Kushal Daga — about the author"
         },
         {
@@ -7228,35 +6214,11 @@
           "text": "Kushal Daga — about the author"
         },
         {
-          "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
-          "text": "About"
-        },
-        {
-          "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
-          "text": "Kushal Daga — about the author"
-        },
-        {
-          "source": "page: Contact us (https://millededgeindia.blogspot.com/p/contact-us_01883938366.html)",
-          "text": "About"
-        },
-        {
-          "source": "page: Contact us (https://millededgeindia.blogspot.com/p/contact-us_01883938366.html)",
-          "text": "Kushal Daga — about the author"
-        },
-        {
           "source": "page: Calculator (https://millededgeindia.blogspot.com/p/calculator_0908148622.html)",
           "text": "About"
         },
         {
           "source": "page: Calculator (https://millededgeindia.blogspot.com/p/calculator_0908148622.html)",
-          "text": "Kushal Daga — about the author"
-        },
-        {
-          "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
-          "text": "About"
-        },
-        {
-          "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
           "text": "Kushal Daga — about the author"
         },
         {
@@ -7272,21 +6234,9 @@
     "/p/contact-us_01883938366.html": {
       "id": "4698688245681185879",
       "title": "Contact us",
-      "total_button_links": 24,
+      "total_button_links": 12,
       "buttons": [
         {
-          "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
-          "text": "Contact desk"
-        },
-        {
-          "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
-          "text": "Contact"
-        },
-        {
-          "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
-          "text": "Contact the Daily Yield desk"
-        },
-        {
           "source": "page: Global snapshot (https://millededgeindia.blogspot.com/p/global-snapshot.html)",
           "text": "Contact"
         },
@@ -7300,18 +6250,6 @@
         },
         {
           "source": "page: Markets today (https://millededgeindia.blogspot.com/p/markets-today.html)",
-          "text": "Contact the Daily Yield desk"
-        },
-        {
-          "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
-          "text": "Open Contact Us ↗"
-        },
-        {
-          "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
-          "text": "Contact"
-        },
-        {
-          "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
           "text": "Contact the Daily Yield desk"
         },
         {
@@ -7331,35 +6269,11 @@
           "text": "Contact the Daily Yield desk"
         },
         {
-          "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
-          "text": "Contact"
-        },
-        {
-          "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
-          "text": "Contact the Daily Yield desk"
-        },
-        {
-          "source": "page: Contact us (https://millededgeindia.blogspot.com/p/contact-us_01883938366.html)",
-          "text": "Contact"
-        },
-        {
-          "source": "page: Contact us (https://millededgeindia.blogspot.com/p/contact-us_01883938366.html)",
-          "text": "Contact the Daily Yield desk"
-        },
-        {
           "source": "page: Calculator (https://millededgeindia.blogspot.com/p/calculator_0908148622.html)",
           "text": "Contact"
         },
         {
           "source": "page: Calculator (https://millededgeindia.blogspot.com/p/calculator_0908148622.html)",
-          "text": "Contact the Daily Yield desk"
-        },
-        {
-          "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
-          "text": "Contact"
-        },
-        {
-          "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
           "text": "Contact the Daily Yield desk"
         },
         {
@@ -7375,26 +6289,14 @@
     "/p/privacy-policy.html": {
       "id": "304220949515133754",
       "title": "Privacy policy",
-      "total_button_links": 12,
+      "total_button_links": 6,
       "buttons": [
-        {
-          "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
-          "text": "Privacy Policy"
-        },
-        {
-          "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
-          "text": "Privacy"
-        },
         {
           "source": "page: Global snapshot (https://millededgeindia.blogspot.com/p/global-snapshot.html)",
           "text": "Privacy"
         },
         {
           "source": "page: Markets today (https://millededgeindia.blogspot.com/p/markets-today.html)",
-          "text": "Privacy"
-        },
-        {
-          "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
           "text": "Privacy"
         },
         {
@@ -7406,19 +6308,7 @@
           "text": "Privacy"
         },
         {
-          "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
-          "text": "Privacy"
-        },
-        {
-          "source": "page: Contact us (https://millededgeindia.blogspot.com/p/contact-us_01883938366.html)",
-          "text": "Privacy"
-        },
-        {
           "source": "page: Calculator (https://millededgeindia.blogspot.com/p/calculator_0908148622.html)",
-          "text": "Privacy"
-        },
-        {
-          "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
           "text": "Privacy"
         },
         {
@@ -7430,16 +6320,8 @@
     "/p/disclaimer.html": {
       "id": "3945823007631424733",
       "title": "Disclaimer",
-      "total_button_links": 13,
+      "total_button_links": 7,
       "buttons": [
-        {
-          "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
-          "text": "Disclaimer"
-        },
-        {
-          "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
-          "text": "Disclaimer"
-        },
         {
           "source": "page: Global snapshot (https://millededgeindia.blogspot.com/p/global-snapshot.html)",
           "text": "Disclaimer"
@@ -7453,10 +6335,6 @@
           "text": "Disclaimer"
         },
         {
-          "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
-          "text": "Disclaimer"
-        },
-        {
           "source": "page: Money atlas (https://millededgeindia.blogspot.com/p/money-atlas_01486068069.html)",
           "text": "Disclaimer"
         },
@@ -7465,19 +6343,7 @@
           "text": "Disclaimer"
         },
         {
-          "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
-          "text": "Disclaimer"
-        },
-        {
-          "source": "page: Contact us (https://millededgeindia.blogspot.com/p/contact-us_01883938366.html)",
-          "text": "Disclaimer"
-        },
-        {
           "source": "page: Calculator (https://millededgeindia.blogspot.com/p/calculator_0908148622.html)",
-          "text": "Disclaimer"
-        },
-        {
-          "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
           "text": "Disclaimer"
         },
         {
@@ -7489,22 +6355,14 @@
     "/p/terms-and-conditions.html": {
       "id": "3254393081257151974",
       "title": "Terms and conditions",
-      "total_button_links": 11,
+      "total_button_links": 6,
       "buttons": [
-        {
-          "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
-          "text": "Terms"
-        },
         {
           "source": "page: Global snapshot (https://millededgeindia.blogspot.com/p/global-snapshot.html)",
           "text": "Terms"
         },
         {
           "source": "page: Markets today (https://millededgeindia.blogspot.com/p/markets-today.html)",
-          "text": "Terms"
-        },
-        {
-          "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
           "text": "Terms"
         },
         {
@@ -7516,19 +6374,7 @@
           "text": "Terms"
         },
         {
-          "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
-          "text": "Terms"
-        },
-        {
-          "source": "page: Contact us (https://millededgeindia.blogspot.com/p/contact-us_01883938366.html)",
-          "text": "Terms"
-        },
-        {
           "source": "page: Calculator (https://millededgeindia.blogspot.com/p/calculator_0908148622.html)",
-          "text": "Terms"
-        },
-        {
-          "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
           "text": "Terms"
         },
         {
@@ -7571,33 +6417,33 @@
     },
     {
       "path": "/p/about-us_02080501126.html",
-      "status_code": 200,
+      "status_code": 404,
       "category": "legacy",
-      "exists_on_blog": true
+      "exists_on_blog": false
     },
     {
       "path": "/p/contact-us_01883938366.html",
-      "status_code": 200,
+      "status_code": 404,
       "category": "legacy",
-      "exists_on_blog": true
+      "exists_on_blog": false
     },
     {
       "path": "/p/privacy-policy.html",
-      "status_code": 200,
+      "status_code": 404,
       "category": "legacy",
-      "exists_on_blog": true
+      "exists_on_blog": false
     },
     {
       "path": "/p/disclaimer.html",
-      "status_code": 200,
+      "status_code": 404,
       "category": "legacy",
-      "exists_on_blog": true
+      "exists_on_blog": false
     },
     {
       "path": "/p/terms-and-conditions.html",
-      "status_code": 200,
+      "status_code": 404,
       "category": "legacy",
-      "exists_on_blog": true
+      "exists_on_blog": false
     },
     {
       "path": "/p/article.html",
@@ -7643,21 +6489,21 @@
     }
   ],
   "other_page_links": {
-    "/p/calculator_0908148622.html": 47,
-    "/p/markets-today.html": 38,
-    "/p/global-snapshot.html": 46,
-    "/p/money-atlas_01486068069.html": 38,
-    "/p/for-corporate_01804417406.html": 43,
-    "/p/article.html": 24,
-    "/p/daily-news.html": 14
+    "/p/calculator_0908148622.html": 39,
+    "/p/markets-today.html": 33,
+    "/p/global-snapshot.html": 39,
+    "/p/money-atlas_01486068069.html": 32,
+    "/p/for-corporate_01804417406.html": 35,
+    "/p/article.html": 13,
+    "/p/daily-news.html": 7
   },
   "errors": [],
   "result": "success",
   "summary": {
-    "live_pages_total": 15,
+    "live_pages_total": 10,
     "live_posts_total": 0,
     "distinct_paths_linked": 17,
-    "total_button_links": 445,
+    "total_button_links": 354,
     "new_pages_with_zero_buttons": [],
     "legacy_paths_still_linked": [
       "/p/about-us_02080501126.html",
@@ -7667,6 +6513,11 @@
       "/p/terms-and-conditions.html"
     ],
     "broken_links": [
+      "/p/about-us_02080501126.html",
+      "/p/contact-us_01883938366.html",
+      "/p/privacy-policy.html",
+      "/p/disclaimer.html",
+      "/p/terms-and-conditions.html",
       "/p/article.html",
       "/p/daily-news.html"
     ]
