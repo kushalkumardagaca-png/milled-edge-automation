@@ -75,7 +75,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-off
 :root{--me-ease:cubic-bezier(.2,.72,.18,1);--me-copper:#BC5B33;--me-ink:#241610}
 /* Global top-of-page reading progress */
 #meReadingProgress{position:fixed;z-index:9999;left:0;top:0;width:100%;height:3px;background:transparent;pointer-events:none}
-#meReadingProgress span{display:block;width:0;height:100%;background:linear-gradient(90deg,#BC5B33,#E8B469,#7B8B65);box-shadow:0 0 12px #bc5b3370;transform-origin:left center;transition:width .08s linear}
+#meReadingProgress span{display:block;width:0;height:100%;background:linear-gradient(90deg,#BC5B33,#E8B469,#D9A05B);box-shadow:0 0 12px #bc5b3370;transform-origin:left center;transition:width .08s linear}
 html.arena-motion-ready [data-motion]{opacity:0;transform:translate3d(0,26px,0) scale(.985);filter:blur(4px);transition:opacity .8s var(--me-ease),transform .85s var(--me-ease),filter .8s var(--me-ease);transition-delay:var(--me-delay,0ms);will-change:opacity,transform,filter}
 html.arena-motion-ready [data-motion="headline"]{transform:translate3d(0,32px,0) scale(.97);filter:blur(7px)}
 html.arena-motion-ready [data-motion="card"]{transform:translate3d(0,30px,0) rotateX(2deg) scale(.97)}
@@ -562,7 +562,7 @@ h1,h2,h3{font-family:var(--font-display);font-weight:600;line-height:1.14;margin
 @keyframes cueBob{0%,100%{transform:translateY(0)}50%{transform:translateY(7px)}}
 @keyframes cueDot{0%{stroke-dashoffset:10}60%,100%{stroke-dashoffset:-8}}
 /* ============ stats (live) ============ */.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--line);margin:clamp(20px,3vw,40px) 0 0}.stat{background:var(--surface);padding:clamp(20px,3vw,38px) clamp(14px,2vw,28px);position:relative;overflow:hidden;transition:transform.45s var(--ease)}.stat::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:100%;background:var(--grad);transform:scaleX(0);transform-origin:left;transition:transform.6s var(--ease)}.stat:hover{transform:translateY(-4px)}.stat:hover::after{transform:scaleX(1)}.stat b{display:block;font:600 clamp(28px,3.4vw,46px)/1 var(--font-display);color:var(--accent-dark);font-variant-numeric:tabular-nums}.stat b.all{font-style:italic;color:var(--accent-dark,#9C4522)}.stat span{display:block;margin-top:10px;font:500 10.5px/1.5 var(--font-body);letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
-@media (max-width:900px){.stats{grid-template-columns:repeat(2,1fr)}}.live-note{display:flex;align-items:center;gap:10px;margin-top:14px;font-size:12.8px;color:var(--muted)}.ldot{flex:none;width:8px;height:8px;border-radius:50%;background:var(--rust)}.live-note.ok.ldot{background:#7C9A6D;animation:pulse 2.2s ease infinite}
+@media (max-width:900px){.stats{grid-template-columns:repeat(2,1fr)}}.live-note{display:flex;align-items:center;gap:10px;margin-top:14px;font-size:12.8px;color:var(--muted)}.ldot{flex:none;width:8px;height:8px;border-radius:50%;background:var(--rust)}.live-note.ok.ldot{background:#BC5B33;animation:pulse 2.2s ease infinite}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(124,154,109,.7)}70%{box-shadow:0 0 0 9px rgba(124,154,109,0)}100%{box-shadow:0 0 0 0 rgba(124,154,109,0)}}
 /* ============ marquee ============ */.marquee{margin:clamp(48px,7vw,90px) 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;overflow:hidden;position:relative}.marquee-track{display:flex;gap:0;width:max-content;animation:scrollX 30s linear infinite}.marquee:hover.marquee-track{animation-play-state:paused}.marquee span{display:inline-flex;align-items:center;gap:26px;padding:0 26px;font:italic 500 clamp(17px,2vw,24px)/1 var(--font-display);color:var(--muted);white-space:nowrap}.marquee i{font-style:normal;color:var(--accent);font-size:12px}
 @keyframes scrollX{to{transform:translateX(-50%)}}
@@ -712,12 +712,29 @@ html,body{margin:0;padding:0;background:#F8F0E3}.wrap{max-width:none !important;
 <!-- Search (expands) -->
 <!-- Pages tabs -->
 <!-- ===================== VIEW: HOME ===================== -->
-<div class="wrap pr-page"><section class="kvP-hero kvP-about pr-hero" data-motion="hero" style="--me-delay:130ms">
+<div class="wrap pr-page">
+<style id="meFlipAbout">
+/* the hero's changing word: one cell, one visible word, constant line width */
+.kvP-hero .kvP-flip{display:inline-grid!important;overflow:visible;vertical-align:bottom}
+.kvP-hero .kvP-flip i{grid-area:1/1;opacity:0;font-style:normal;white-space:nowrap;
+ animation:meFlipAbout 12s cubic-bezier(.19,1,.22,1) infinite;transition:none!important}
+.kvP-hero .kvP-flip i:nth-child(1){animation-delay:0s}
+.kvP-hero .kvP-flip i:nth-child(2){animation-delay:3s}
+.kvP-hero .kvP-flip i:nth-child(3){animation-delay:6s}
+.kvP-hero .kvP-flip i:nth-child(4){animation-delay:9s}
+@keyframes meFlipAbout{0%{opacity:0;transform:translateY(.5em)}
+ 3%,20%{opacity:1;transform:none}
+ 25%,100%{opacity:0;transform:translateY(-.5em)}}
+@media (prefers-reduced-motion:reduce){
+ .kvP-hero .kvP-flip i{animation:none;transform:none;opacity:0}
+ .kvP-hero .kvP-flip i:nth-child(1){opacity:1}}
+</style>
+<section class="kvP-hero kvP-about pr-hero" data-motion="hero" style="--me-delay:130ms">
 <div class="kvP-in">
 <div class="kvP-copy">
 <span class="kvP-badge"><i></i>About · The Ledger</span>
 <span class="kvP-eyebrow">Navigate · Grow · Prosper</span>
-<h1 class="kvP-h1">Financial clarity for everyday decisions.</h1>
+<h1 class="kvP-h1">Financial clarity for everyday <span class="kvP-flip"><i>decisions.</i><i>money choices.</i><i>budgets.</i><i>the long run.</i></span></h1>
 <p class="kvP-lede">MILLED EDGE explains how business and economic changes reach everyday life. Its research turns complex financial questions into practical education for readers across income levels.</p>
 </div>
 <div class="kvP-panel kvP-ledger"><div class="kvP-deck"><div class="kvP-track" id="kvPt"><div class="kvP-slide">
@@ -945,11 +962,11 @@ root.addEventListener('input',function(e){if(paused||!e.target.closest('.kc-sec'
 <!-- DY_PAGE_FAMILY_END -->
 <!-- DY_SEO_META_START --><!-- DY_SEO_META_END -->
 <!-- DY_BRAND_IDENTITY_START --><!-- DY_BRAND_IDENTITY_END -->
-<!-- DY_ADSENSE_READINESS_START --><style>.dy-adsense-disclosure{max-width:1040px;margin:24px auto;padding:22px;border:1px solid #dce7e1;border-radius:16px;background:#fff;color:#17231d;line-height:1.7}.dy-adsense-disclosure h2{margin:0 0 10px;color:#073b2b;font-size:clamp(22px,3vw,31px)}.dy-adsense-disclosure p{margin:9px 0}.dy-adsense-disclosure a{color:#08744f;text-decoration:underline;text-underline-offset:2px}</style><section aria-labelledby="dy-ads-about" class="dy-adsense-disclosure" data-motion="rise" style="--me-delay:390ms">
+<!-- DY_ADSENSE_READINESS_START --><style>.dy-adsense-disclosure{max-width:1040px;margin:24px auto;padding:22px;border:1px solid #dce7e1;border-radius:16px;background:#fff;color:#17231d;line-height:1.7}.dy-adsense-disclosure h2{margin:0 0 10px;color:#073b2b;font-size:clamp(22px,3vw,31px)}.dy-adsense-disclosure p{margin:9px 0}.dy-adsense-disclosure a{color:#9C4522;text-decoration:underline;text-underline-offset:2px}</style><section aria-labelledby="dy-ads-about" class="dy-adsense-disclosure" data-motion="rise" style="--me-delay:390ms">
 <h2 id="dy-ads-about">Advertising and editorial independence</h2>
 <p>No display advertising is currently running on MILLED EDGE, as confirmed by the publisher on 2 November 2026. If ads are enabled in the future, they must be clearly distinguished from editorial content. Advertising does not buy favourable coverage, change editorial conclusions or replace source-based checks. The named publisher remains accountable for published material.</p>
 </section><!-- DY_ADSENSE_READINESS_END -->
-<!-- DY_IDENTITY_START --><style>.dy-identity{max-width:1040px;margin:24px auto;padding:22px;border:1px solid #dce7e1;border-radius:16px;background:#fff;color:#17231d;line-height:1.7}.dy-identity h2{margin:0 0 10px;color:#073b2b;font-size:clamp(22px,3vw,31px)}.dy-identity p{margin:9px 0}.dy-identity ul{margin:9px 0 9px 20px}.dy-identity a{color:#08744f;text-decoration:underline;text-underline-offset:2px}</style><section aria-labelledby="dy-identity" class="dy-identity" data-motion="rise" style="--me-delay:325ms">
+<!-- DY_IDENTITY_START --><style>.dy-identity{max-width:1040px;margin:24px auto;padding:22px;border:1px solid #dce7e1;border-radius:16px;background:#fff;color:#17231d;line-height:1.7}.dy-identity h2{margin:0 0 10px;color:#073b2b;font-size:clamp(22px,3vw,31px)}.dy-identity p{margin:9px 0}.dy-identity ul{margin:9px 0 9px 20px}.dy-identity a{color:#9C4522;text-decoration:underline;text-underline-offset:2px}</style><section aria-labelledby="dy-identity" class="dy-identity" data-motion="rise" style="--me-delay:325ms">
 <h2 id="dy-identity">Contact and publication details</h2>
 <p><strong>MILLED EDGE</strong> is an independent financial education site at <a href="https://millededgeindia.blogspot.com/">https://millededgeindia.blogspot.com/</a>, operated online from India.</p>
 <p>Reader questions, corrections, topic suggestions and business enquiries can be sent to:</p>
@@ -1013,17 +1030,17 @@ root.addEventListener('input',function(e){if(paused||!e.target.closest('.kc-sec'
  function set(k,v){if(els[k])els[k].textContent=fmt(v);}
  function status(t){if(els.status)els.status.textContent=t;}
  set('posts',snapshot.posts);set('words',snapshot.words);set('pages',snapshot.pages);
- status('Preview snapshot &#183; trying live feed&#8230;');
+ status('Preview snapshot \u00b7 trying live feed\u2026');
  function applyLive(d){
   set('posts',d.posts||0);set('words',d.words||0);set('pages',d.pages||0);
   var when=d.updated?new Date(d.updated):new Date();
-  status('Live from the MILLED EDGE feed &#183; '+when.toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'}));
+  status('Live from the MILLED EDGE feed \u00b7 '+when.toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'}));
  }
  function startJsonp(){
   var uid=0,done={posts:false,words:false,pages:false},totalPosts=0,words=0,collected=0,failed=false;
   var timer=setTimeout(function(){fail('Live feed timed out');},15000);
-  function fail(msg){if(failed)return;failed=true;clearTimeout(timer);status((msg||'Live feed unavailable')+' &#183; showing preview snapshot');}
-  function check(){if(failed)return;if(done.posts&&done.words&&done.pages){clearTimeout(timer);status('Live from the MILLED EDGE feed &#183; '+new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'}));}}
+  function fail(msg){if(failed)return;failed=true;clearTimeout(timer);status((msg||'Live feed unavailable')+' \u00b7 showing preview snapshot');}
+  function check(){if(failed)return;if(done.posts&&done.words&&done.pages){clearTimeout(timer);status('Live from the MILLED EDGE feed \u00b7 '+new Date().toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'}));}}
   function jsonp(kind,extra,cb){
    var name='meLedgerCb'+(++uid);
    var url=site+'/feeds/'+kind+'/default?alt=json-in-script&callback='+name+'&'+extra;
