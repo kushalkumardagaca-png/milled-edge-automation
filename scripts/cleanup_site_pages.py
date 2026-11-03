@@ -15,7 +15,7 @@ PAGES = {
     'financial-disclaimer-milled-edge': ROOT / 'content' / 'pages-fixes' / 'financial-disclaimer-milled-edge.html',
     'terms-milled-edge': ROOT / 'content' / 'pages-fixes' / 'terms-milled-edge.html',
 }
-FORBIDDEN = ('/p/daily-news.html', '/p/article.html', '/p/disclaimer.html', 'dailyyield.blogspot.com', 'milledge.blogspot.com', 'Daily News', 'Daily Article')
+FORBIDDEN = ('/p/daily-news.html', '/p/article.html', '/p/disclaimer.html', 'dailyyield.blogspot.com', 'millededge.blogspot.com', 'milledgeindia.blogspot.com', 'Daily News', 'Daily Article')
 
 
 def main():
