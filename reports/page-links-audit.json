@@ -1,6 +1,6 @@
 {
   "mode": "page-links-audit",
-  "generated_at_utc": "2026-11-03T04:42:39.535225+00:00",
+  "generated_at_utc": "2026-11-03T04:45:17.699305+00:00",
   "blog": {
     "id": "8911514070006792465",
     "url": "https://millededgeindia.blogspot.com/",
@@ -83,10 +83,22 @@
       "anchors": 18
     },
     {
-      "name": "live homepage (theme)",
+      "name": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
       "type": "live_theme",
-      "http_status": 429,
-      "anchors": 0
+      "http_status": 200,
+      "anchors": 37
+    },
+    {
+      "name": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "type": "live_theme",
+      "http_status": 200,
+      "anchors": 47
+    },
+    {
+      "name": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "type": "live_theme",
+      "http_status": 200,
+      "anchors": 41
     },
     {
       "name": "repo theme XML (not installed)",
@@ -2441,6 +2453,2883 @@
       "path": "/p/about-us_02080501126.html"
     },
     {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "Personal Calculators",
+      "href": "https://millededgeindia.blogspot.com/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "Markets Today",
+      "href": "https://millededgeindia.blogspot.com/p/markets-today.html",
+      "path": "/p/markets-today.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "Global Snapshot",
+      "href": "https://millededgeindia.blogspot.com/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "Money Atlas",
+      "href": "https://millededgeindia.blogspot.com/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "For Corporate",
+      "href": "https://millededgeindia.blogspot.com/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "About Us",
+      "href": "https://millededgeindia.blogspot.com/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "Contact Us",
+      "href": "https://millededgeindia.blogspot.com/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "Financial Disclaimer",
+      "href": "https://millededgeindia.blogspot.com/p/financial-disclaimer-milled-edge.html",
+      "path": "/p/financial-disclaimer-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "Privacy Policy",
+      "href": "https://millededgeindia.blogspot.com/p/privacy-policy-milled-edge.html",
+      "path": "/p/privacy-policy-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "Terms & Conditions",
+      "href": "https://millededgeindia.blogspot.com/p/terms-milled-edge.html",
+      "path": "/p/terms-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "For Corporate 11 business tools",
+      "href": "https://millededgeindia.blogspot.com/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "Calculator 14 personal tools",
+      "href": "https://millededgeindia.blogspot.com/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "Global Snapshot boards · commodities · crypto",
+      "href": "https://millededgeindia.blogspot.com/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "Money Atlas country compare & charts",
+      "href": "https://millededgeindia.blogspot.com/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "Personal Calculators 14 tools across borrowing, planning, investing and future income — EMI, SIP, SWP, retirement, budge",
+      "href": "https://millededgeindia.blogspot.com/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "For Corporate 11 business tools — break-even, margins, burn & runway, EOQ, LTV:CAC, NPV·IRR·payback, CAGR, returns and v",
+      "href": "https://millededgeindia.blogspot.com/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "Money Atlas Country comparisons, the reference board, exchange-rate context and the chart studio — the map around every ",
+      "href": "https://millededgeindia.blogspot.com/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "Markets Today Live and delayed prices, day ranges, volume, open interest, charts, technicals, pivots, related ETFs and m",
+      "href": "https://millededgeindia.blogspot.com/p/markets-today.html",
+      "path": "/p/markets-today.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "Global Snapshot World and country top-25 boards, commodities, crypto, fund desks and a symbol search with live charts — ",
+      "href": "https://millededgeindia.blogspot.com/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "Open the contact desk Corrections, questions and partnership enquiries →",
+      "href": "https://millededgeindia.blogspot.com/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "Full disclaimer ↗",
+      "href": "https://millededgeindia.blogspot.com/p/financial-disclaimer-milled-edge.html",
+      "path": "/p/financial-disclaimer-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "Full privacy policy ↗",
+      "href": "https://millededgeindia.blogspot.com/p/privacy-policy-milled-edge.html",
+      "path": "/p/privacy-policy-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "Read the terms ↗",
+      "href": "https://millededgeindia.blogspot.com/p/terms-milled-edge.html",
+      "path": "/p/terms-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "Contact desk",
+      "href": "https://millededgeindia.blogspot.com/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "Calculator",
+      "href": "https://millededgeindia.blogspot.com/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "For Corporate",
+      "href": "https://millededgeindia.blogspot.com/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "Money Atlas",
+      "href": "https://millededgeindia.blogspot.com/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "Markets Today",
+      "href": "https://millededgeindia.blogspot.com/p/markets-today.html",
+      "path": "/p/markets-today.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "Global Snapshot",
+      "href": "https://millededgeindia.blogspot.com/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "About Us",
+      "href": "https://millededgeindia.blogspot.com/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "Contact Us",
+      "href": "https://millededgeindia.blogspot.com/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "Financial Disclaimer",
+      "href": "https://millededgeindia.blogspot.com/p/financial-disclaimer-milled-edge.html",
+      "path": "/p/financial-disclaimer-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "Privacy Policy",
+      "href": "https://millededgeindia.blogspot.com/p/privacy-policy-milled-edge.html",
+      "path": "/p/privacy-policy-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "Terms & Conditions",
+      "href": "https://millededgeindia.blogspot.com/p/terms-milled-edge.html",
+      "path": "/p/terms-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "",
+      "href": "https://millededgeindia.blogspot.com/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "",
+      "href": "https://millededgeindia.blogspot.com/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "",
+      "href": "https://millededgeindia.blogspot.com/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/markets-today.html",
+      "path": "/p/markets-today.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/financial-disclaimer-milled-edge.html",
+      "path": "/p/financial-disclaimer-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/privacy-policy-milled-edge.html",
+      "path": "/p/privacy-policy-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/terms-milled-edge.html",
+      "path": "/p/terms-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/markets-today.html",
+      "path": "/p/markets-today.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/financial-disclaimer-milled-edge.html",
+      "path": "/p/financial-disclaimer-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/privacy-policy-milled-edge.html",
+      "path": "/p/privacy-policy-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/terms-milled-edge.html",
+      "path": "/p/terms-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/markets-today.html",
+      "path": "/p/markets-today.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/financial-disclaimer-milled-edge.html",
+      "path": "/p/financial-disclaimer-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/privacy-policy-milled-edge.html",
+      "path": "/p/privacy-policy-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/terms-milled-edge.html",
+      "path": "/p/terms-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/markets-today.html",
+      "path": "/p/markets-today.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/privacy-policy-milled-edge.html",
+      "path": "/p/privacy-policy-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/terms-milled-edge.html",
+      "path": "/p/terms-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/financial-disclaimer-milled-edge.html",
+      "path": "/p/financial-disclaimer-milled-edge.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/markets-today.html",
+      "path": "/p/markets-today.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Personal Calculators",
+      "href": "https://millededgeindia.blogspot.com/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Markets Today",
+      "href": "https://millededgeindia.blogspot.com/p/markets-today.html",
+      "path": "/p/markets-today.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Global Snapshot",
+      "href": "https://millededgeindia.blogspot.com/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Money Atlas",
+      "href": "https://millededgeindia.blogspot.com/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "For Corporate",
+      "href": "https://millededgeindia.blogspot.com/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "About Us",
+      "href": "https://millededgeindia.blogspot.com/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Contact Us",
+      "href": "https://millededgeindia.blogspot.com/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Financial Disclaimer",
+      "href": "https://millededgeindia.blogspot.com/p/financial-disclaimer-milled-edge.html",
+      "path": "/p/financial-disclaimer-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Privacy Policy",
+      "href": "https://millededgeindia.blogspot.com/p/privacy-policy-milled-edge.html",
+      "path": "/p/privacy-policy-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Terms & Conditions",
+      "href": "https://millededgeindia.blogspot.com/p/terms-milled-edge.html",
+      "path": "/p/terms-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "01 Personal Calculators",
+      "href": "https://millededgeindia.blogspot.com/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "02 Markets Today",
+      "href": "https://millededgeindia.blogspot.com/p/markets-today.html",
+      "path": "/p/markets-today.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "03 Global Snapshot",
+      "href": "https://millededgeindia.blogspot.com/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "04 Money Atlas",
+      "href": "https://millededgeindia.blogspot.com/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "05 For Corporate",
+      "href": "https://millededgeindia.blogspot.com/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "07 Contact Us",
+      "href": "https://millededgeindia.blogspot.com/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Personal finance tools ↗",
+      "href": "https://millededgeindia.blogspot.com/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Corporate finance tools ↗",
+      "href": "https://millededgeindia.blogspot.com/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Markets Today ↗",
+      "href": "https://millededgeindia.blogspot.com/p/markets-today.html",
+      "path": "/p/markets-today.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Calculators Loan, investing, tax and planning tools. MODEL →",
+      "href": "https://millededgeindia.blogspot.com/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Markets Today The complete global market command centre. ANALYSE →",
+      "href": "https://millededgeindia.blogspot.com/p/markets-today.html",
+      "path": "/p/markets-today.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Global Snapshot A concise cross-asset market summary. SCAN →",
+      "href": "https://millededgeindia.blogspot.com/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Money Atlas Country-by-country money and market context. EXPLORE →",
+      "href": "https://millededgeindia.blogspot.com/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "For Corporate Finance resources for business decisions. WORK →",
+      "href": "https://millededgeindia.blogspot.com/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "About",
+      "href": "https://millededgeindia.blogspot.com/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Contact",
+      "href": "https://millededgeindia.blogspot.com/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Disclaimer",
+      "href": "https://millededgeindia.blogspot.com/p/financial-disclaimer-milled-edge.html",
+      "path": "/p/financial-disclaimer-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Privacy",
+      "href": "https://millededgeindia.blogspot.com/p/privacy-policy-milled-edge.html",
+      "path": "/p/privacy-policy-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Terms",
+      "href": "https://millededgeindia.blogspot.com/p/terms-milled-edge.html",
+      "path": "/p/terms-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Contact us",
+      "href": "https://millededgeindia.blogspot.com/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Contact us page",
+      "href": "https://millededgeindia.blogspot.com/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Share on Facebook",
+      "href": "https://www.facebook.com/sharer.php?u=https://millededgeindia.blogspot.com/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Share on WhatsApp",
+      "href": "https://api.whatsapp.com/send?text=About us https://millededgeindia.blogspot.com/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Share by email",
+      "href": "mailto:?subject=About us&body=https://millededgeindia.blogspot.com/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Calculator",
+      "href": "https://millededgeindia.blogspot.com/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "For Corporate",
+      "href": "https://millededgeindia.blogspot.com/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Money Atlas",
+      "href": "https://millededgeindia.blogspot.com/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Markets Today",
+      "href": "https://millededgeindia.blogspot.com/p/markets-today.html",
+      "path": "/p/markets-today.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Global Snapshot",
+      "href": "https://millededgeindia.blogspot.com/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "About Us",
+      "href": "https://millededgeindia.blogspot.com/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Contact Us",
+      "href": "https://millededgeindia.blogspot.com/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Financial Disclaimer",
+      "href": "https://millededgeindia.blogspot.com/p/financial-disclaimer-milled-edge.html",
+      "path": "/p/financial-disclaimer-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Privacy Policy",
+      "href": "https://millededgeindia.blogspot.com/p/privacy-policy-milled-edge.html",
+      "path": "/p/privacy-policy-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Terms & Conditions",
+      "href": "https://millededgeindia.blogspot.com/p/terms-milled-edge.html",
+      "path": "/p/terms-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "",
+      "href": "https://millededgeindia.blogspot.com/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "",
+      "href": "https://millededgeindia.blogspot.com/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "",
+      "href": "https://millededgeindia.blogspot.com/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/markets-today.html",
+      "path": "/p/markets-today.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/financial-disclaimer-milled-edge.html",
+      "path": "/p/financial-disclaimer-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/privacy-policy-milled-edge.html",
+      "path": "/p/privacy-policy-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/terms-milled-edge.html",
+      "path": "/p/terms-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/markets-today.html",
+      "path": "/p/markets-today.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/markets-today.html",
+      "path": "/p/markets-today.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/markets-today.html",
+      "path": "/p/markets-today.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/financial-disclaimer-milled-edge.html",
+      "path": "/p/financial-disclaimer-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/privacy-policy-milled-edge.html",
+      "path": "/p/privacy-policy-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/terms-milled-edge.html",
+      "path": "/p/terms-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/markets-today.html",
+      "path": "/p/markets-today.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/financial-disclaimer-milled-edge.html",
+      "path": "/p/financial-disclaimer-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/privacy-policy-milled-edge.html",
+      "path": "/p/privacy-policy-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/terms-milled-edge.html",
+      "path": "/p/terms-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/markets-today.html",
+      "path": "/p/markets-today.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/privacy-policy-milled-edge.html",
+      "path": "/p/privacy-policy-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/financial-disclaimer-milled-edge.html",
+      "path": "/p/financial-disclaimer-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/markets-today.html",
+      "path": "/p/markets-today.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Personal Calculators",
+      "href": "https://millededgeindia.blogspot.com/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Markets Today",
+      "href": "https://millededgeindia.blogspot.com/p/markets-today.html",
+      "path": "/p/markets-today.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Global Snapshot",
+      "href": "https://millededgeindia.blogspot.com/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Money Atlas",
+      "href": "https://millededgeindia.blogspot.com/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "For Corporate",
+      "href": "https://millededgeindia.blogspot.com/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "About Us",
+      "href": "https://millededgeindia.blogspot.com/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Contact Us",
+      "href": "https://millededgeindia.blogspot.com/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Financial Disclaimer",
+      "href": "https://millededgeindia.blogspot.com/p/financial-disclaimer-milled-edge.html",
+      "path": "/p/financial-disclaimer-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Privacy Policy",
+      "href": "https://millededgeindia.blogspot.com/p/privacy-policy-milled-edge.html",
+      "path": "/p/privacy-policy-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Terms & Conditions",
+      "href": "https://millededgeindia.blogspot.com/p/terms-milled-edge.html",
+      "path": "/p/terms-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Daily Article Original explainers, practical guides and deep dives. READ →",
+      "href": "https://dailyyield.blogspot.com/p/article.html",
+      "path": "/p/article.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Daily News Current financial and economic developments. FOLLOW →",
+      "href": "https://dailyyield.blogspot.com/p/daily-news.html",
+      "path": "/p/daily-news.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Calculators Loan, investing, tax and planning tools. MODEL →",
+      "href": "https://dailyyield.blogspot.com/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Markets Today The complete global market command centre. ANALYSE →",
+      "href": "https://dailyyield.blogspot.com/p/markets-today.html",
+      "path": "/p/markets-today.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Global Snapshot A concise cross-asset market summary. You are here",
+      "href": "https://dailyyield.blogspot.com/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Money Atlas Country-by-country money and market context. EXPLORE →",
+      "href": "https://dailyyield.blogspot.com/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "For Corporate Finance resources for business decisions. WORK →",
+      "href": "https://dailyyield.blogspot.com/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "About",
+      "href": "https://dailyyield.blogspot.com/p/about-us_02080501126.html",
+      "path": "/p/about-us_02080501126.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Contact",
+      "href": "https://dailyyield.blogspot.com/p/contact-us_01883938366.html",
+      "path": "/p/contact-us_01883938366.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Disclaimer",
+      "href": "https://dailyyield.blogspot.com/p/disclaimer.html",
+      "path": "/p/disclaimer.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Privacy",
+      "href": "https://dailyyield.blogspot.com/p/privacy-policy.html",
+      "path": "/p/privacy-policy.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Terms",
+      "href": "https://dailyyield.blogspot.com/p/terms-and-conditions.html",
+      "path": "/p/terms-and-conditions.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Kushal Daga — about the author",
+      "href": "https://dailyyield.blogspot.com/p/about-us_02080501126.html",
+      "path": "/p/about-us_02080501126.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Contact the Daily Yield desk",
+      "href": "https://dailyyield.blogspot.com/p/contact-us_01883938366.html",
+      "path": "/p/contact-us_01883938366.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "All Daily Yield articles",
+      "href": "https://dailyyield.blogspot.com/p/article.html",
+      "path": "/p/article.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Share on Facebook",
+      "href": "https://www.facebook.com/sharer.php?u=https://millededgeindia.blogspot.com/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Share on WhatsApp",
+      "href": "https://api.whatsapp.com/send?text=Global snapshot https://millededgeindia.blogspot.com/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Share by email",
+      "href": "mailto:?subject=Global snapshot&body=https://millededgeindia.blogspot.com/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Calculator",
+      "href": "https://millededgeindia.blogspot.com/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "For Corporate",
+      "href": "https://millededgeindia.blogspot.com/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Money Atlas",
+      "href": "https://millededgeindia.blogspot.com/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Markets Today",
+      "href": "https://millededgeindia.blogspot.com/p/markets-today.html",
+      "path": "/p/markets-today.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Global Snapshot",
+      "href": "https://millededgeindia.blogspot.com/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "About Us",
+      "href": "https://millededgeindia.blogspot.com/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Contact Us",
+      "href": "https://millededgeindia.blogspot.com/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Financial Disclaimer",
+      "href": "https://millededgeindia.blogspot.com/p/financial-disclaimer-milled-edge.html",
+      "path": "/p/financial-disclaimer-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Privacy Policy",
+      "href": "https://millededgeindia.blogspot.com/p/privacy-policy-milled-edge.html",
+      "path": "/p/privacy-policy-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "Terms & Conditions",
+      "href": "https://millededgeindia.blogspot.com/p/terms-milled-edge.html",
+      "path": "/p/terms-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "",
+      "href": "https://millededgeindia.blogspot.com/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "",
+      "href": "https://millededgeindia.blogspot.com/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "",
+      "href": "https://millededgeindia.blogspot.com/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/markets-today.html",
+      "path": "/p/markets-today.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/financial-disclaimer-milled-edge.html",
+      "path": "/p/financial-disclaimer-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/privacy-policy-milled-edge.html",
+      "path": "/p/privacy-policy-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/terms-milled-edge.html",
+      "path": "/p/terms-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/article.html",
+      "path": "/p/article.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/daily-news.html",
+      "path": "/p/daily-news.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/markets-today.html",
+      "path": "/p/markets-today.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/about-us_02080501126.html",
+      "path": "/p/about-us_02080501126.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/contact-us_01883938366.html",
+      "path": "/p/contact-us_01883938366.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/disclaimer.html",
+      "path": "/p/disclaimer.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/privacy-policy.html",
+      "path": "/p/privacy-policy.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/terms-and-conditions.html",
+      "path": "/p/terms-and-conditions.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/about-us_02080501126.html",
+      "path": "/p/about-us_02080501126.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/contact-us_01883938366.html",
+      "path": "/p/contact-us_01883938366.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/article.html",
+      "path": "/p/article.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/about-us_02080501126.html",
+      "path": "/p/about-us_02080501126.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/about-us_02080501126.html",
+      "path": "/p/about-us_02080501126.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/about-us_02080501126.html",
+      "path": "/p/about-us_02080501126.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/financial-disclaimer-milled-edge.html",
+      "path": "/p/financial-disclaimer-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/privacy-policy-milled-edge.html",
+      "path": "/p/privacy-policy-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/terms-milled-edge.html",
+      "path": "/p/terms-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/markets-today.html",
+      "path": "/p/markets-today.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/about-milled-edge.html",
+      "path": "/p/about-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/contact-milled-edge.html",
+      "path": "/p/contact-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/privacy-policy-milled-edge.html",
+      "path": "/p/privacy-policy-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/terms-milled-edge.html",
+      "path": "/p/terms-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/financial-disclaimer-milled-edge.html",
+      "path": "/p/financial-disclaimer-milled-edge.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/calculator_0908148622.html",
+      "path": "/p/calculator_0908148622.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/markets-today.html",
+      "path": "/p/markets-today.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/money-atlas_01486068069.html",
+      "path": "/p/money-atlas_01486068069.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/for-corporate_01804417406.html",
+      "path": "/p/for-corporate_01804417406.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
+      "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+      "source_type": "live_theme",
+      "button_text": "(non-button reference)",
+      "href": "/p/global-snapshot.html",
+      "path": "/p/global-snapshot.html"
+    },
+    {
       "source": "repo theme XML (not installed)",
       "source_type": "repo_theme_file",
       "button_text": "Personal Calculators",
@@ -3754,10 +6643,11 @@
     "/p/about-milled-edge.html": {
       "label": "About us",
       "url": "https://millededgeindia.blogspot.com/p/about-milled-edge.html",
-      "total_button_links": 12,
-      "total_references": 16,
+      "total_button_links": 22,
+      "total_references": 50,
       "by_source_type": {
         "live_page": 5,
+        "live_theme": 10,
         "repo_theme_file": 2,
         "published_page_file": 5
       },
@@ -3781,6 +6671,46 @@
         {
           "source": "page: About us (https://millededgeindia.blogspot.com/p/about-milled-edge.html)",
           "text": "About"
+        },
+        {
+          "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+          "text": "About Us"
+        },
+        {
+          "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+          "text": "About Us"
+        },
+        {
+          "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+          "text": "About Us"
+        },
+        {
+          "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+          "text": "About"
+        },
+        {
+          "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+          "text": "Share on Facebook"
+        },
+        {
+          "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+          "text": "Share on WhatsApp"
+        },
+        {
+          "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+          "text": "Share by email"
+        },
+        {
+          "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+          "text": "About Us"
+        },
+        {
+          "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+          "text": "About Us"
+        },
+        {
+          "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+          "text": "About Us"
         },
         {
           "source": "repo theme XML (not installed)",
@@ -3811,16 +6741,17 @@
           "text": "About us"
         }
       ],
-      "linked_from_live_theme": false,
+      "linked_from_live_theme": true,
       "linked_from_other_live_pages": true
     },
     "/p/contact-milled-edge.html": {
       "label": "Contact us",
       "url": "https://millededgeindia.blogspot.com/p/contact-milled-edge.html",
-      "total_button_links": 19,
-      "total_references": 27,
+      "total_button_links": 34,
+      "total_references": 57,
       "by_source_type": {
         "live_page": 7,
+        "live_theme": 15,
         "repo_theme_file": 5,
         "published_page_file": 7
       },
@@ -3852,6 +6783,66 @@
         {
           "source": "page: About us (https://millededgeindia.blogspot.com/p/about-milled-edge.html)",
           "text": "Contact us page"
+        },
+        {
+          "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+          "text": "Contact Us"
+        },
+        {
+          "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+          "text": "Open the contact desk Corrections, questions and partnership enquiries →"
+        },
+        {
+          "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+          "text": "Contact desk"
+        },
+        {
+          "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+          "text": "Contact Us"
+        },
+        {
+          "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+          "text": ""
+        },
+        {
+          "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+          "text": "Contact Us"
+        },
+        {
+          "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+          "text": "07 Contact Us"
+        },
+        {
+          "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+          "text": "Contact"
+        },
+        {
+          "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+          "text": "Contact us"
+        },
+        {
+          "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+          "text": "Contact us page"
+        },
+        {
+          "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+          "text": "Contact Us"
+        },
+        {
+          "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+          "text": ""
+        },
+        {
+          "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+          "text": "Contact Us"
+        },
+        {
+          "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+          "text": "Contact Us"
+        },
+        {
+          "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+          "text": ""
         },
         {
           "source": "repo theme XML (not installed)",
@@ -3902,16 +6893,17 @@
           "text": "Contact us"
         }
       ],
-      "linked_from_live_theme": false,
+      "linked_from_live_theme": true,
       "linked_from_other_live_pages": true
     },
     "/p/privacy-policy-milled-edge.html": {
       "label": "Privacy Policy",
       "url": "https://millededgeindia.blogspot.com/p/privacy-policy-milled-edge.html",
-      "total_button_links": 11,
-      "total_references": 15,
+      "total_button_links": 19,
+      "total_references": 34,
       "by_source_type": {
         "live_page": 4,
+        "live_theme": 8,
         "repo_theme_file": 3,
         "published_page_file": 4
       },
@@ -3931,6 +6923,38 @@
         {
           "source": "page: About us (https://millededgeindia.blogspot.com/p/about-milled-edge.html)",
           "text": "Privacy"
+        },
+        {
+          "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+          "text": "Privacy Policy"
+        },
+        {
+          "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+          "text": "Full privacy policy ↗"
+        },
+        {
+          "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+          "text": "Privacy Policy"
+        },
+        {
+          "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+          "text": "Privacy Policy"
+        },
+        {
+          "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+          "text": "Privacy"
+        },
+        {
+          "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+          "text": "Privacy Policy"
+        },
+        {
+          "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+          "text": "Privacy Policy"
+        },
+        {
+          "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+          "text": "Privacy Policy"
         },
         {
           "source": "repo theme XML (not installed)",
@@ -3961,16 +6985,17 @@
           "text": "Privacy"
         }
       ],
-      "linked_from_live_theme": false,
+      "linked_from_live_theme": true,
       "linked_from_other_live_pages": true
     },
     "/p/financial-disclaimer-milled-edge.html": {
       "label": "Financial Disclaimer",
       "url": "https://millededgeindia.blogspot.com/p/financial-disclaimer-milled-edge.html",
-      "total_button_links": 11,
-      "total_references": 15,
+      "total_button_links": 19,
+      "total_references": 34,
       "by_source_type": {
         "live_page": 4,
+        "live_theme": 8,
         "repo_theme_file": 3,
         "published_page_file": 4
       },
@@ -3990,6 +7015,38 @@
         {
           "source": "page: About us (https://millededgeindia.blogspot.com/p/about-milled-edge.html)",
           "text": "Disclaimer"
+        },
+        {
+          "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+          "text": "Financial Disclaimer"
+        },
+        {
+          "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+          "text": "Full disclaimer ↗"
+        },
+        {
+          "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+          "text": "Financial Disclaimer"
+        },
+        {
+          "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+          "text": "Financial Disclaimer"
+        },
+        {
+          "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+          "text": "Disclaimer"
+        },
+        {
+          "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+          "text": "Financial Disclaimer"
+        },
+        {
+          "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+          "text": "Financial Disclaimer"
+        },
+        {
+          "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+          "text": "Financial Disclaimer"
         },
         {
           "source": "repo theme XML (not installed)",
@@ -4020,16 +7077,17 @@
           "text": "Disclaimer"
         }
       ],
-      "linked_from_live_theme": false,
+      "linked_from_live_theme": true,
       "linked_from_other_live_pages": true
     },
     "/p/terms-milled-edge.html": {
       "label": "Terms & Conditions",
       "url": "https://millededgeindia.blogspot.com/p/terms-milled-edge.html",
-      "total_button_links": 11,
-      "total_references": 16,
+      "total_button_links": 19,
+      "total_references": 34,
       "by_source_type": {
         "live_page": 4,
+        "live_theme": 8,
         "repo_theme_file": 3,
         "published_page_file": 4
       },
@@ -4049,6 +7107,38 @@
         {
           "source": "page: About us (https://millededgeindia.blogspot.com/p/about-milled-edge.html)",
           "text": "Terms"
+        },
+        {
+          "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+          "text": "Terms & Conditions"
+        },
+        {
+          "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+          "text": "Read the terms ↗"
+        },
+        {
+          "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+          "text": "Terms & Conditions"
+        },
+        {
+          "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+          "text": "Terms & Conditions"
+        },
+        {
+          "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+          "text": "Terms"
+        },
+        {
+          "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+          "text": "Terms & Conditions"
+        },
+        {
+          "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+          "text": "Terms & Conditions"
+        },
+        {
+          "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+          "text": "Terms & Conditions"
         },
         {
           "source": "repo theme XML (not installed)",
@@ -4079,7 +7169,7 @@
           "text": "Terms"
         }
       ],
-      "linked_from_live_theme": false,
+      "linked_from_live_theme": true,
       "linked_from_other_live_pages": true
     }
   },
@@ -4087,7 +7177,7 @@
     "/p/about-us_02080501126.html": {
       "id": "2716668129166401912",
       "title": "About us",
-      "total_button_links": 20,
+      "total_button_links": 22,
       "buttons": [
         {
           "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
@@ -4168,13 +7258,21 @@
         {
           "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
           "text": "Kushal Daga — about the author"
+        },
+        {
+          "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+          "text": "About"
+        },
+        {
+          "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+          "text": "Kushal Daga — about the author"
         }
       ]
     },
     "/p/contact-us_01883938366.html": {
       "id": "4698688245681185879",
       "title": "Contact us",
-      "total_button_links": 22,
+      "total_button_links": 24,
       "buttons": [
         {
           "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
@@ -4263,13 +7361,21 @@
         {
           "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
           "text": "Contact the Daily Yield desk"
+        },
+        {
+          "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+          "text": "Contact"
+        },
+        {
+          "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+          "text": "Contact the Daily Yield desk"
         }
       ]
     },
     "/p/privacy-policy.html": {
       "id": "304220949515133754",
       "title": "Privacy policy",
-      "total_button_links": 11,
+      "total_button_links": 12,
       "buttons": [
         {
           "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
@@ -4314,13 +7420,17 @@
         {
           "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
           "text": "Privacy"
+        },
+        {
+          "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+          "text": "Privacy"
         }
       ]
     },
     "/p/disclaimer.html": {
       "id": "3945823007631424733",
       "title": "Disclaimer",
-      "total_button_links": 12,
+      "total_button_links": 13,
       "buttons": [
         {
           "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
@@ -4369,13 +7479,17 @@
         {
           "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
           "text": "Disclaimer"
+        },
+        {
+          "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+          "text": "Disclaimer"
         }
       ]
     },
     "/p/terms-and-conditions.html": {
       "id": "3254393081257151974",
       "title": "Terms and conditions",
-      "total_button_links": 10,
+      "total_button_links": 11,
       "buttons": [
         {
           "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
@@ -4416,6 +7530,10 @@
         {
           "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
           "text": "Terms"
+        },
+        {
+          "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+          "text": "Terms"
         }
       ]
     }
@@ -4423,7 +7541,7 @@
   "url_status_checks": [
     {
       "path": "/p/about-milled-edge.html",
-      "status_code": 429,
+      "status_code": 200,
       "category": "new",
       "exists_on_blog": true
     },
@@ -4447,13 +7565,13 @@
     },
     {
       "path": "/p/terms-milled-edge.html",
-      "status_code": 429,
+      "status_code": 200,
       "category": "new",
       "exists_on_blog": true
     },
     {
       "path": "/p/about-us_02080501126.html",
-      "status_code": 429,
+      "status_code": 200,
       "category": "legacy",
       "exists_on_blog": true
     },
@@ -4471,7 +7589,7 @@
     },
     {
       "path": "/p/disclaimer.html",
-      "status_code": 429,
+      "status_code": 200,
       "category": "legacy",
       "exists_on_blog": true
     },
@@ -4483,7 +7601,7 @@
     },
     {
       "path": "/p/article.html",
-      "status_code": 429,
+      "status_code": 404,
       "category": "other",
       "exists_on_blog": false
     },
@@ -4501,7 +7619,7 @@
     },
     {
       "path": "/p/for-corporate_01804417406.html",
-      "status_code": 429,
+      "status_code": 200,
       "category": "other",
       "exists_on_blog": true
     },
@@ -4519,19 +7637,19 @@
     },
     {
       "path": "/p/money-atlas_01486068069.html",
-      "status_code": 429,
+      "status_code": 200,
       "category": "other",
       "exists_on_blog": true
     }
   ],
   "other_page_links": {
-    "/p/calculator_0908148622.html": 32,
-    "/p/markets-today.html": 27,
-    "/p/global-snapshot.html": 29,
-    "/p/money-atlas_01486068069.html": 27,
-    "/p/for-corporate_01804417406.html": 31,
-    "/p/article.html": 22,
-    "/p/daily-news.html": 13
+    "/p/calculator_0908148622.html": 47,
+    "/p/markets-today.html": 38,
+    "/p/global-snapshot.html": 46,
+    "/p/money-atlas_01486068069.html": 38,
+    "/p/for-corporate_01804417406.html": 43,
+    "/p/article.html": 24,
+    "/p/daily-news.html": 14
   },
   "errors": [],
   "result": "success",
@@ -4539,7 +7657,7 @@
     "live_pages_total": 15,
     "live_posts_total": 0,
     "distinct_paths_linked": 17,
-    "total_button_links": 320,
+    "total_button_links": 445,
     "new_pages_with_zero_buttons": [],
     "legacy_paths_still_linked": [
       "/p/about-us_02080501126.html",
@@ -4549,14 +7667,8 @@
       "/p/terms-and-conditions.html"
     ],
     "broken_links": [
-      "/p/about-milled-edge.html",
-      "/p/terms-milled-edge.html",
-      "/p/about-us_02080501126.html",
-      "/p/disclaimer.html",
       "/p/article.html",
-      "/p/daily-news.html",
-      "/p/for-corporate_01804417406.html",
-      "/p/money-atlas_01486068069.html"
+      "/p/daily-news.html"
     ]
   }
 }

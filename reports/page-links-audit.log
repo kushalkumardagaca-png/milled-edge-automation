@@ -3,7 +3,7 @@ Audit report saved: /home/runner/work/milled-edge-automation/milled-edge-automat
   "live_pages_total": 15,
   "live_posts_total": 0,
   "distinct_paths_linked": 17,
-  "total_button_links": 320,
+  "total_button_links": 445,
   "new_pages_with_zero_buttons": [],
   "legacy_paths_still_linked": [
     "/p/about-us_02080501126.html",
@@ -13,24 +13,19 @@ Audit report saved: /home/runner/work/milled-edge-automation/milled-edge-automat
     "/p/terms-and-conditions.html"
   ],
   "broken_links": [
-    "/p/about-milled-edge.html",
-    "/p/terms-milled-edge.html",
-    "/p/about-us_02080501126.html",
-    "/p/disclaimer.html",
     "/p/article.html",
-    "/p/daily-news.html",
-    "/p/for-corporate_01804417406.html",
-    "/p/money-atlas_01486068069.html"
+    "/p/daily-news.html"
   ]
 }
 {
   "/p/about-milled-edge.html": {
     "label": "About us",
     "url": "https://millededgeindia.blogspot.com/p/about-milled-edge.html",
-    "total_button_links": 12,
-    "total_references": 16,
+    "total_button_links": 22,
+    "total_references": 50,
     "by_source_type": {
       "live_page": 5,
+      "live_theme": 10,
       "repo_theme_file": 2,
       "published_page_file": 5
     },
@@ -54,6 +49,46 @@ Audit report saved: /home/runner/work/milled-edge-automation/milled-edge-automat
       {
         "source": "page: About us (https://millededgeindia.blogspot.com/p/about-milled-edge.html)",
         "text": "About"
+      },
+      {
+        "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+        "text": "About Us"
+      },
+      {
+        "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
+        "text": "About Us"
+      },
+      {
+        "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+        "text": "About Us"
+      },
+      {
+        "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+        "text": "About"
+      },
+      {
+        "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+        "text": "Share on Facebook"
+      },
+      {
+        "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+        "text": "Share on WhatsApp"
+      },
+      {
+        "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+        "text": "Share by email"
+      },
+      {
+        "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+        "text": "About Us"
+      },
+      {
+        "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+        "text": "About Us"
+      },
+      {
+        "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+        "text": "About Us"
       },
       {
         "source": "repo theme XML (not installed)",
@@ -84,16 +119,17 @@ Audit report saved: /home/runner/work/milled-edge-automation/milled-edge-automat
         "text": "About us"
       }
     ],
-    "linked_from_live_theme": false,
+    "linked_from_live_theme": true,
     "linked_from_other_live_pages": true
   },
   "/p/contact-milled-edge.html": {
     "label": "Contact us",
     "url": "https://millededgeindia.blogspot.com/p/contact-milled-edge.html",
-    "total_button_links": 19,
-    "total_references": 27,
+    "total_button_links": 34,
+    "total_references": 57,
     "by_source_type": {
       "live_page": 7,
+      "live_theme": 15,
       "repo_theme_file": 5,
       "published_page_file": 7
     },
@@ -127,103 +163,53 @@ Audit report saved: /home/runner/work/milled-edge-automation/milled-edge-automat
         "text": "Contact us page"
       },
       {
-        "source": "repo theme XML (not installed)",
+        "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
         "text": "Contact Us"
       },
       {
-        "source": "repo theme XML (not installed)",
+        "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
         "text": "Open the contact desk Corrections, questions and partnership enquiries \u2192"
       },
       {
-        "source": "repo theme XML (not installed)",
+        "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
         "text": "Contact desk"
       },
       {
-        "source": "repo theme XML (not installed)",
+        "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
         "text": "Contact Us"
       },
       {
-        "source": "repo theme XML (not installed)",
+        "source": "live homepage (theme nav/tabs/footer/FAB/FAQ)",
         "text": ""
       },
       {
-        "source": "published page file: about_us.html",
+        "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+        "text": "Contact Us"
+      },
+      {
+        "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
         "text": "07 Contact Us"
       },
       {
-        "source": "published page file: about_us.html",
+        "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
         "text": "Contact"
       },
       {
-        "source": "published page file: about_us.html",
+        "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
         "text": "Contact us"
       },
       {
-        "source": "published page file: about_us.html",
+        "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
         "text": "Contact us page"
       },
       {
-        "source": "published page file: privacy_policy.html",
-        "text": "Contact us"
-      },
-      {
-        "source": "published page file: financial_disclaimer.html",
-        "text": "Contact us"
-      },
-      {
-        "source": "published page file: terms_conditions.html",
-        "text": "Contact us"
-      }
-    ],
-    "linked_from_live_theme": false,
-    "linked_from_other_live_pages": true
-  },
-  "/p/privacy-policy-milled-edge.html": {
-    "label": "Privacy Policy",
-    "url": "https://millededgeindia.blogspot.com/p/privacy-policy-milled-edge.html",
-    "total_button_links": 11,
-    "total_references": 15,
-    "by_source_type": {
-      "live_page": 4,
-      "repo_theme_file": 3,
-      "published_page_file": 4
-    },
-    "buttons": [
-      {
-        "source": "page: Terms & Conditions (https://millededgeindia.blogspot.com/p/terms-milled-edge.html)",
-        "text": "Privacy"
-      },
-      {
-        "source": "page: Financial Disclaimer (https://millededgeindia.blogspot.com/p/financial-disclaimer-milled-edge.html)",
-        "text": "Privacy"
-      },
-      {
-        "source": "page: Privacy Policy (https://millededgeindia.blogspot.com/p/privacy-policy-milled-edge.html)",
-        "text": "Privacy"
-      },
-      {
-        "source": "page: About us (https://millededgeindia.blogspot.com/p/about-milled-edge.html)",
-        "text": "Privacy"
-      },
-      {
-        "source": "repo theme XML (not installed)",
-        "text": "Privacy Policy"
-      },
-      {
-        "source": "repo theme XML (not installed)",
-        "text": "Full privacy policy \u2197"
-      },
-      {
-        "source": "repo theme XML (not installed)",
-        "text": "Privacy Policy"
-      },
-      {
-        
+        "source": "live rendered page: /p/about-milled-edge.html (theme wrapper)",
+        "text": "Co
 {
   "/p/about-us_02080501126.html": {
     "id": "2716668129166401912",
     "title": "About us",
-    "total_button_links": 20,
+    "total_button_links": 22,
     "buttons": [
       {
         "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
@@ -303,6 +289,14 @@ Audit report saved: /home/runner/work/milled-edge-automation/milled-edge-automat
       },
       {
         "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
+        "text": "Kushal Daga \u2014 about the author"
+      },
+      {
+        "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
+        "text": "About"
+      },
+      {
+        "source": "live rendered page: /p/global-snapshot.html (theme wrapper)",
         "text": "Kushal Daga \u2014 about the author"
       }
     ]
@@ -310,7 +304,7 @@ Audit report saved: /home/runner/work/milled-edge-automation/milled-edge-automat
   "/p/contact-us_01883938366.html": {
     "id": "4698688245681185879",
     "title": "Contact us",
-    "total_button_links": 22,
+    "total_button_links": 24,
     "buttons": [
       {
         "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
@@ -365,12 +359,4 @@ Audit report saved: /home/runner/work/milled-edge-automation/milled-edge-automat
         "text": "Contact"
       },
       {
-        "source": "page: For corporate (https://millededgeindia.blogspot.com/p/for-corporate_01804417406.html)",
-        "text": "Contact the Daily Yield desk"
-      },
-      {
-        "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
-        "text": "Contact"
-      },
-      {
-        "source": "page: Disclaimer (https://millededgeindia.blo
+        "source": "page: For corporate (https://millededgeindia.blogspot.com/p/for-corporate_01804417406.
