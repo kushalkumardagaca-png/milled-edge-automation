@@ -12,7 +12,7 @@ Private automation repository for the Blogger site:
 - The public page sitemap lists 10 pages; public post feed and post sitemap are empty by design.
 - The repository's 1 November 2026 Blogger API inventory recorded 654 live posts and 3 soft-trashed posts. The subsequent deletion report records all 657 deleted, zero failures and zero posts remaining. A later read-only check should be run before any new publishing work.
 - Page and post writes are possible through GitHub Actions using OAuth values stored only in repository Actions Secrets.
-- Blogger theme XML is kept in `content/`; Blogger's API lane does not upload themes. Theme changes still require the publisher to upload the XML in Blogger.
+- The no-Daily theme source is `content/Milled-Edge-theme-no-daily-news-article.xml`; the alternate `theme-milled-edge-fresh.xml` is stale and must not be uploaded because it contains legacy News/Article sections. Blogger's API lane does not upload themes. Theme changes still require the publisher to upload the updated no-Daily XML in Blogger.
 
 ## Repository layout
 
@@ -20,7 +20,7 @@ Private automation repository for the Blogger site:
 config/site.json                  Non-secret site configuration
 content/pages/                    Five main page bodies
 content/pages-fixes/              Current in-place page bodies for maintenance
-content/theme-milled-edge-fresh.xml  Theme source; manual Blogger upload required
+content/Milled-Edge-theme-no-daily-news-article.xml  No-Daily theme source; manual upload required
 scripts/                           Blogger API helpers and maintenance scripts
 .github/workflows/                 Read-only, page-write and guarded deletion workflows
 trigger/                           Inactive confirmation files for destructive workflows

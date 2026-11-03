@@ -38,7 +38,7 @@ No secret values are stored in this repository. Do not place credentials in a wo
 - `publish-markets-today.yml`: validates then patches the ten configured existing pages from tracked source files.
 - `delete-all-posts.yml` and `delete-two-pages.yml`: destructive jobs. Their trigger files are inactive after the completed cleanup; do not reactivate without explicit owner direction.
 
-The manual theme upload remains a publisher action: the theme file is maintained in the repository, but Blogger's API publishing workflow does not upload it. The publisher must upload the approved theme XML in Blogger and then request public verification.
+The manual theme upload remains a publisher action: Blogger's API publishing workflow does not upload themes. The updated no-Daily source is `content/Milled-Edge-theme-no-daily-news-article.xml`; it is not live until the publisher uploads it in Blogger and public checks confirm it. Do not upload the older `content/theme-milled-edge-fresh.xml` alternative because it contains legacy News/Article sections.
 
 ## Audit notes
 
