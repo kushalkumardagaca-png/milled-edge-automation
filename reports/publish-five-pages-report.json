@@ -1,0 +1,122 @@
+{
+  "mode": "publish-five-pages-live",
+  "started_at_utc": "2026-11-03T04:23:41.342511+00:00",
+  "blog": {
+    "id": "8911514070006792465",
+    "url": "https://millededgeindia.blogspot.com/",
+    "name": "Milled Edge"
+  },
+  "authorized": [
+    {
+      "display_title": "About us",
+      "expected_path": "/p/about-milled-edge.html"
+    },
+    {
+      "display_title": "Contact us",
+      "expected_path": "/p/contact-milled-edge.html"
+    },
+    {
+      "display_title": "Privacy Policy",
+      "expected_path": "/p/privacy-policy-milled-edge.html"
+    },
+    {
+      "display_title": "Financial Disclaimer",
+      "expected_path": "/p/financial-disclaimer-milled-edge.html"
+    },
+    {
+      "display_title": "Terms & Conditions",
+      "expected_path": "/p/terms-milled-edge.html"
+    }
+  ],
+  "pages": [
+    {
+      "id": "2082189399197263721",
+      "title": "About us",
+      "url": "https://millededgeindia.blogspot.com/p/about-milled-edge.html",
+      "status": "LIVE",
+      "content_file": "publish/about_us.html",
+      "adopted_existing": false
+    },
+    {
+      "id": "7395176556871361869",
+      "title": "Contact us",
+      "url": "https://millededgeindia.blogspot.com/p/contact-milled-edge.html",
+      "status": "LIVE",
+      "content_file": "publish/contact_us.html",
+      "adopted_existing": false
+    },
+    {
+      "id": "311860603682060395",
+      "title": "Privacy Policy",
+      "url": "https://millededgeindia.blogspot.com/p/privacy-policy-milled-edge.html",
+      "status": "LIVE",
+      "content_file": "publish/privacy_policy.html",
+      "adopted_existing": false
+    },
+    {
+      "id": "4626472458869661769",
+      "title": "Financial Disclaimer",
+      "url": "https://millededgeindia.blogspot.com/p/financial-disclaimer-milled-edge.html",
+      "status": "LIVE",
+      "content_file": "publish/financial_disclaimer.html",
+      "adopted_existing": false
+    },
+    {
+      "id": "9145366926436032366",
+      "title": "Terms & Conditions",
+      "url": "https://millededgeindia.blogspot.com/p/terms-milled-edge.html",
+      "status": "LIVE",
+      "content_file": "publish/terms_conditions.html",
+      "adopted_existing": false
+    }
+  ],
+  "http_checks": [
+    {
+      "url": "https://millededgeindia.blogspot.com/p/about-milled-edge.html",
+      "expected_path": "/p/about-milled-edge.html",
+      "status_code": 200,
+      "page_title": "About us",
+      "expected_title": "About us",
+      "ok": true
+    },
+    {
+      "url": "https://millededgeindia.blogspot.com/p/contact-milled-edge.html",
+      "expected_path": "/p/contact-milled-edge.html",
+      "status_code": 200,
+      "page_title": "Contact us",
+      "expected_title": "Contact us",
+      "ok": true
+    },
+    {
+      "url": "https://millededgeindia.blogspot.com/p/privacy-policy-milled-edge.html",
+      "expected_path": "/p/privacy-policy-milled-edge.html",
+      "status_code": 200,
+      "page_title": "Privacy Policy",
+      "expected_title": "Privacy Policy",
+      "ok": true
+    },
+    {
+      "url": "https://millededgeindia.blogspot.com/p/financial-disclaimer-milled-edge.html",
+      "expected_path": "/p/financial-disclaimer-milled-edge.html",
+      "status_code": 200,
+      "page_title": "Financial Disclaimer",
+      "expected_title": "Financial Disclaimer",
+      "ok": true
+    },
+    {
+      "url": "https://millededgeindia.blogspot.com/p/terms-milled-edge.html",
+      "expected_path": "/p/terms-milled-edge.html",
+      "status_code": 200,
+      "page_title": "Terms & Conditions",
+      "expected_title": "Terms & Conditions",
+      "ok": true
+    }
+  ],
+  "legacy_deleted": [],
+  "other_pages_or_posts_touched": [],
+  "cleanup": [],
+  "errors": [],
+  "result": "success",
+  "finished_at_utc": "2026-11-03T04:23:57.169129+00:00",
+  "note": "No legacy pages deleted; no posts touched; optional theme not installed."
+}
