@@ -107,16 +107,33 @@ def all_path_mentions(markup: str, source: str, source_type: str, out: list) -> 
 
 
 def fetch(url: str):
+    """GET a page, retrying Blogger 429/5xx with backoff."""
+    import time
+
     request = urllib.request.Request(
-        url, headers={"User-Agent": "Mozilla/5.0 (compatible; MILLED-EDGE-link-audit/1.0)"}
+        url,
+        headers={
+            "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+            "(KHTML, like Gecko) Chrome/126.0 Safari/537.36",
+            "Accept": "text/html,application/xhtml+xml,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.9",
+        },
     )
-    try:
-        with urllib.request.urlopen(request, timeout=30) as response:
-            return response.status, response.read(6_000_000).decode("utf-8", "replace")
-    except urllib.error.HTTPError as exc:
-        return exc.code, exc.read(2_000_000).decode("utf-8", "replace")
-    except Exception as exc:
-        return 0, f"request error: {exc}"
+    last = (0, "")
+    for attempt in range(5):
+        try:
+            with urllib.request.urlopen(request, timeout=30) as response:
+                return response.status, response.read(6_000_000).decode("utf-8", "replace")
+        except urllib.error.HTTPError as exc:
+            body = exc.read(2_000_000).decode("utf-8", "replace")
+            last = (exc.code, body)
+            if exc.code not in (429, 500, 502, 503, 504):
+                return last
+        except Exception as exc:
+            last = (0, f"request error: {exc}")
+        if attempt < 4:
+            time.sleep(4 * (attempt + 1))
+    return last
 
 
 def list_all(service, collection: str, blog_id: str) -> list[dict]:
@@ -181,13 +198,22 @@ def main() -> int:
             n = scan(body, f"post: {post.get('title')}", "live_post", report["links"])
             report["sources"].append({"name": f"post: {post.get('title')}", "type": "live_post", "anchors": n})
 
-        # Live server-rendered theme: homepage HTML.
-        status, homepage = fetch(BLOG_URL)
-        n = scan(homepage, "live homepage (theme nav/tabs/footer/FAB/FAQ)", "live_theme", report["links"])
-        all_path_mentions(homepage, "live homepage", "live_theme", report["links"])
-        report["sources"].append(
-            {"name": "live homepage (theme)", "type": "live_theme", "http_status": status, "anchors": n}
-        )
+        # Live server-rendered theme: homepage HTML + rendered wrapper of two
+        # representative static pages (nav, page tabs, footer and FABs live there).
+        theme_sources = [
+            ("live homepage (theme nav/tabs/footer/FAB/FAQ)", BLOG_URL),
+            ("live rendered page: /p/about-milled-edge.html (theme wrapper)", urljoin(BLOG_URL, "p/about-milled-edge.html")),
+            ("live rendered page: /p/global-snapshot.html (theme wrapper)", urljoin(BLOG_URL, "p/global-snapshot.html")),
+        ]
+        for name, url in theme_sources:
+            status, page_html = fetch(url)
+            n = scan(page_html, name, "live_theme", report["links"])
+            all_path_mentions(page_html, name, "live_theme", report["links"])
+            report["sources"].append(
+                {"name": name, "type": "live_theme", "http_status": status, "anchors": n}
+            )
+            import time
+            time.sleep(2)
 
         # Repo theme file (explicitly NOT installed on Blogger).
         theme_path = ROOT / "theme" / "MILLED_EDGE_Blogger_Theme_v7.xml"
@@ -267,6 +293,8 @@ def main() -> int:
             seen.append(p)
             url = urljoin(BLOG_URL, p.lstrip("/"))
             code, body = fetch(url)
+            import time
+            time.sleep(1.5)
             report["url_status_checks"].append(
                 {
                     "path": p,
