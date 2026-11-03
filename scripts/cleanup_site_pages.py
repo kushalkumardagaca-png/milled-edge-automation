@@ -9,8 +9,13 @@ PAGES = {
     'for-corporate_01804417406': ROOT / 'content' / 'pages-fixes' / 'for-corporate_01804417406.html',
     'money-atlas_01486068069': ROOT / 'content' / 'pages-fixes' / 'money-atlas_01486068069.html',
     'global-snapshot': ROOT / 'content' / 'pages-fixes' / 'global-snapshot.html',
+    'about-milled-edge': ROOT / 'content' / 'pages-fixes' / 'about-milled-edge.html',
+    'contact-milled-edge': ROOT / 'content' / 'pages-fixes' / 'contact-milled-edge.html',
+    'privacy-policy-milled-edge': ROOT / 'content' / 'pages-fixes' / 'privacy-policy-milled-edge.html',
+    'financial-disclaimer-milled-edge': ROOT / 'content' / 'pages-fixes' / 'financial-disclaimer-milled-edge.html',
+    'terms-milled-edge': ROOT / 'content' / 'pages-fixes' / 'terms-milled-edge.html',
 }
-FORBIDDEN = ('/p/daily-news.html', '/p/article.html', '/p/disclaimer.html', 'dailyyield.blogspot.com', 'Daily News', 'Daily Article')
+FORBIDDEN = ('/p/daily-news.html', '/p/article.html', '/p/disclaimer.html', 'dailyyield.blogspot.com', 'milledge.blogspot.com', 'Daily News', 'Daily Article')
 
 
 def main():
