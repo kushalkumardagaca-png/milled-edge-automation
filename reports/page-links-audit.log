@@ -1,0 +1,376 @@
+Audit report saved: /home/runner/work/milled-edge-automation/milled-edge-automation/reports/page-links-audit.json
+{
+  "live_pages_total": 15,
+  "live_posts_total": 0,
+  "distinct_paths_linked": 17,
+  "total_button_links": 320,
+  "new_pages_with_zero_buttons": [],
+  "legacy_paths_still_linked": [
+    "/p/about-us_02080501126.html",
+    "/p/contact-us_01883938366.html",
+    "/p/privacy-policy.html",
+    "/p/disclaimer.html",
+    "/p/terms-and-conditions.html"
+  ],
+  "broken_links": [
+    "/p/about-milled-edge.html",
+    "/p/terms-milled-edge.html",
+    "/p/about-us_02080501126.html",
+    "/p/disclaimer.html",
+    "/p/article.html",
+    "/p/daily-news.html",
+    "/p/for-corporate_01804417406.html",
+    "/p/money-atlas_01486068069.html"
+  ]
+}
+{
+  "/p/about-milled-edge.html": {
+    "label": "About us",
+    "url": "https://millededgeindia.blogspot.com/p/about-milled-edge.html",
+    "total_button_links": 12,
+    "total_references": 16,
+    "by_source_type": {
+      "live_page": 5,
+      "repo_theme_file": 2,
+      "published_page_file": 5
+    },
+    "buttons": [
+      {
+        "source": "page: Terms & Conditions (https://millededgeindia.blogspot.com/p/terms-milled-edge.html)",
+        "text": "About us"
+      },
+      {
+        "source": "page: Financial Disclaimer (https://millededgeindia.blogspot.com/p/financial-disclaimer-milled-edge.html)",
+        "text": "About us"
+      },
+      {
+        "source": "page: Privacy Policy (https://millededgeindia.blogspot.com/p/privacy-policy-milled-edge.html)",
+        "text": "About us"
+      },
+      {
+        "source": "page: Contact us (https://millededgeindia.blogspot.com/p/contact-milled-edge.html)",
+        "text": "06 About us"
+      },
+      {
+        "source": "page: About us (https://millededgeindia.blogspot.com/p/about-milled-edge.html)",
+        "text": "About"
+      },
+      {
+        "source": "repo theme XML (not installed)",
+        "text": "About Us"
+      },
+      {
+        "source": "repo theme XML (not installed)",
+        "text": "About Us"
+      },
+      {
+        "source": "published page file: about_us.html",
+        "text": "About"
+      },
+      {
+        "source": "published page file: contact_us.html",
+        "text": "06 About us"
+      },
+      {
+        "source": "published page file: privacy_policy.html",
+        "text": "About us"
+      },
+      {
+        "source": "published page file: financial_disclaimer.html",
+        "text": "About us"
+      },
+      {
+        "source": "published page file: terms_conditions.html",
+        "text": "About us"
+      }
+    ],
+    "linked_from_live_theme": false,
+    "linked_from_other_live_pages": true
+  },
+  "/p/contact-milled-edge.html": {
+    "label": "Contact us",
+    "url": "https://millededgeindia.blogspot.com/p/contact-milled-edge.html",
+    "total_button_links": 19,
+    "total_references": 27,
+    "by_source_type": {
+      "live_page": 7,
+      "repo_theme_file": 5,
+      "published_page_file": 7
+    },
+    "buttons": [
+      {
+        "source": "page: Terms & Conditions (https://millededgeindia.blogspot.com/p/terms-milled-edge.html)",
+        "text": "Contact us"
+      },
+      {
+        "source": "page: Financial Disclaimer (https://millededgeindia.blogspot.com/p/financial-disclaimer-milled-edge.html)",
+        "text": "Contact us"
+      },
+      {
+        "source": "page: Privacy Policy (https://millededgeindia.blogspot.com/p/privacy-policy-milled-edge.html)",
+        "text": "Contact us"
+      },
+      {
+        "source": "page: About us (https://millededgeindia.blogspot.com/p/about-milled-edge.html)",
+        "text": "07 Contact Us"
+      },
+      {
+        "source": "page: About us (https://millededgeindia.blogspot.com/p/about-milled-edge.html)",
+        "text": "Contact"
+      },
+      {
+        "source": "page: About us (https://millededgeindia.blogspot.com/p/about-milled-edge.html)",
+        "text": "Contact us"
+      },
+      {
+        "source": "page: About us (https://millededgeindia.blogspot.com/p/about-milled-edge.html)",
+        "text": "Contact us page"
+      },
+      {
+        "source": "repo theme XML (not installed)",
+        "text": "Contact Us"
+      },
+      {
+        "source": "repo theme XML (not installed)",
+        "text": "Open the contact desk Corrections, questions and partnership enquiries \u2192"
+      },
+      {
+        "source": "repo theme XML (not installed)",
+        "text": "Contact desk"
+      },
+      {
+        "source": "repo theme XML (not installed)",
+        "text": "Contact Us"
+      },
+      {
+        "source": "repo theme XML (not installed)",
+        "text": ""
+      },
+      {
+        "source": "published page file: about_us.html",
+        "text": "07 Contact Us"
+      },
+      {
+        "source": "published page file: about_us.html",
+        "text": "Contact"
+      },
+      {
+        "source": "published page file: about_us.html",
+        "text": "Contact us"
+      },
+      {
+        "source": "published page file: about_us.html",
+        "text": "Contact us page"
+      },
+      {
+        "source": "published page file: privacy_policy.html",
+        "text": "Contact us"
+      },
+      {
+        "source": "published page file: financial_disclaimer.html",
+        "text": "Contact us"
+      },
+      {
+        "source": "published page file: terms_conditions.html",
+        "text": "Contact us"
+      }
+    ],
+    "linked_from_live_theme": false,
+    "linked_from_other_live_pages": true
+  },
+  "/p/privacy-policy-milled-edge.html": {
+    "label": "Privacy Policy",
+    "url": "https://millededgeindia.blogspot.com/p/privacy-policy-milled-edge.html",
+    "total_button_links": 11,
+    "total_references": 15,
+    "by_source_type": {
+      "live_page": 4,
+      "repo_theme_file": 3,
+      "published_page_file": 4
+    },
+    "buttons": [
+      {
+        "source": "page: Terms & Conditions (https://millededgeindia.blogspot.com/p/terms-milled-edge.html)",
+        "text": "Privacy"
+      },
+      {
+        "source": "page: Financial Disclaimer (https://millededgeindia.blogspot.com/p/financial-disclaimer-milled-edge.html)",
+        "text": "Privacy"
+      },
+      {
+        "source": "page: Privacy Policy (https://millededgeindia.blogspot.com/p/privacy-policy-milled-edge.html)",
+        "text": "Privacy"
+      },
+      {
+        "source": "page: About us (https://millededgeindia.blogspot.com/p/about-milled-edge.html)",
+        "text": "Privacy"
+      },
+      {
+        "source": "repo theme XML (not installed)",
+        "text": "Privacy Policy"
+      },
+      {
+        "source": "repo theme XML (not installed)",
+        "text": "Full privacy policy \u2197"
+      },
+      {
+        "source": "repo theme XML (not installed)",
+        "text": "Privacy Policy"
+      },
+      {
+        
+{
+  "/p/about-us_02080501126.html": {
+    "id": "2716668129166401912",
+    "title": "About us",
+    "total_button_links": 20,
+    "buttons": [
+      {
+        "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
+        "text": "About"
+      },
+      {
+        "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
+        "text": "Kushal Daga \u2014 about the author"
+      },
+      {
+        "source": "page: Global snapshot (https://millededgeindia.blogspot.com/p/global-snapshot.html)",
+        "text": "About"
+      },
+      {
+        "source": "page: Global snapshot (https://millededgeindia.blogspot.com/p/global-snapshot.html)",
+        "text": "Kushal Daga \u2014 about the author"
+      },
+      {
+        "source": "page: Markets today (https://millededgeindia.blogspot.com/p/markets-today.html)",
+        "text": "About"
+      },
+      {
+        "source": "page: Markets today (https://millededgeindia.blogspot.com/p/markets-today.html)",
+        "text": "Kushal Daga \u2014 about the author"
+      },
+      {
+        "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
+        "text": "About"
+      },
+      {
+        "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
+        "text": "Kushal Daga \u2014 about the author"
+      },
+      {
+        "source": "page: Money atlas (https://millededgeindia.blogspot.com/p/money-atlas_01486068069.html)",
+        "text": "About"
+      },
+      {
+        "source": "page: Money atlas (https://millededgeindia.blogspot.com/p/money-atlas_01486068069.html)",
+        "text": "Kushal Daga \u2014 about the author"
+      },
+      {
+        "source": "page: For corporate (https://millededgeindia.blogspot.com/p/for-corporate_01804417406.html)",
+        "text": "About"
+      },
+      {
+        "source": "page: For corporate (https://millededgeindia.blogspot.com/p/for-corporate_01804417406.html)",
+        "text": "Kushal Daga \u2014 about the author"
+      },
+      {
+        "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
+        "text": "About"
+      },
+      {
+        "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
+        "text": "Kushal Daga \u2014 about the author"
+      },
+      {
+        "source": "page: Contact us (https://millededgeindia.blogspot.com/p/contact-us_01883938366.html)",
+        "text": "About"
+      },
+      {
+        "source": "page: Contact us (https://millededgeindia.blogspot.com/p/contact-us_01883938366.html)",
+        "text": "Kushal Daga \u2014 about the author"
+      },
+      {
+        "source": "page: Calculator (https://millededgeindia.blogspot.com/p/calculator_0908148622.html)",
+        "text": "About"
+      },
+      {
+        "source": "page: Calculator (https://millededgeindia.blogspot.com/p/calculator_0908148622.html)",
+        "text": "Kushal Daga \u2014 about the author"
+      },
+      {
+        "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
+        "text": "About"
+      },
+      {
+        "source": "page: About us (https://millededgeindia.blogspot.com/p/about-us_02080501126.html)",
+        "text": "Kushal Daga \u2014 about the author"
+      }
+    ]
+  },
+  "/p/contact-us_01883938366.html": {
+    "id": "4698688245681185879",
+    "title": "Contact us",
+    "total_button_links": 22,
+    "buttons": [
+      {
+        "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
+        "text": "Contact desk"
+      },
+      {
+        "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
+        "text": "Contact"
+      },
+      {
+        "source": "page: Terms and conditions (https://millededgeindia.blogspot.com/p/terms-and-conditions.html)",
+        "text": "Contact the Daily Yield desk"
+      },
+      {
+        "source": "page: Global snapshot (https://millededgeindia.blogspot.com/p/global-snapshot.html)",
+        "text": "Contact"
+      },
+      {
+        "source": "page: Global snapshot (https://millededgeindia.blogspot.com/p/global-snapshot.html)",
+        "text": "Contact the Daily Yield desk"
+      },
+      {
+        "source": "page: Markets today (https://millededgeindia.blogspot.com/p/markets-today.html)",
+        "text": "Contact"
+      },
+      {
+        "source": "page: Markets today (https://millededgeindia.blogspot.com/p/markets-today.html)",
+        "text": "Contact the Daily Yield desk"
+      },
+      {
+        "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
+        "text": "Open Contact Us \u2197"
+      },
+      {
+        "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
+        "text": "Contact"
+      },
+      {
+        "source": "page: Privacy policy (https://millededgeindia.blogspot.com/p/privacy-policy.html)",
+        "text": "Contact the Daily Yield desk"
+      },
+      {
+        "source": "page: Money atlas (https://millededgeindia.blogspot.com/p/money-atlas_01486068069.html)",
+        "text": "Contact"
+      },
+      {
+        "source": "page: Money atlas (https://millededgeindia.blogspot.com/p/money-atlas_01486068069.html)",
+        "text": "Contact the Daily Yield desk"
+      },
+      {
+        "source": "page: For corporate (https://millededgeindia.blogspot.com/p/for-corporate_01804417406.html)",
+        "text": "Contact"
+      },
+      {
+        "source": "page: For corporate (https://millededgeindia.blogspot.com/p/for-corporate_01804417406.html)",
+        "text": "Contact the Daily Yield desk"
+      },
+      {
+        "source": "page: Disclaimer (https://millededgeindia.blogspot.com/p/disclaimer.html)",
+        "text": "Contact"
+      },
+      {
+        "source": "page: Disclaimer (https://millededgeindia.blo
