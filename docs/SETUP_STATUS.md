@@ -1,33 +1,47 @@
-# Setup status
+# Setup and workflow status
 
-## Completed
+**Checked:** 3 November 2026
+**Site:** https://millededgeindia.blogspot.com/
+**Repository:** `kushalkumardagaca-png/milled-edge-automation`
 
-- Existing Blogger website identified: https://millededgeindia.blogspot.com/
-- Google Cloud project created by owner.
-- Blogger API enabled.
-- OAuth app branding completed and app published.
-- OAuth client created.
-- GitHub repository created.
-- Repository deploy key added with write access.
+## Completed setup
 
-## Current repository phase
+- Blogger API enabled in the owner's Google Cloud project.
+- OAuth app branding and client created by the owner.
+- GitHub repository created and a write-enabled deploy key added.
+- GitHub SSH authentication and a no-op `git push --dry-run` were verified from the agent workspace.
+- Workflow run reports confirm the 1 November 2026 cleanup: 654 live posts plus 3 soft-trashed posts were deleted; 0 failures and 0 remaining. The allowlisted Daily News/Daily Article pages were also deleted, leaving 10 pages at that time.
 
-Read-only inventory.
+## Current public state
 
-## Required GitHub Actions Secrets
+- Current host: `https://millededgeindia.blogspot.com/`.
+- Page sitemap: 10 URLs.
+- Public post feed and post sitemap: 0 posts, intentionally.
+- Robots file points to the current host and its sitemaps.
 
-Add these in repository Settings → Secrets and variables → Actions:
+The repository's inventory and deletion reports are historical snapshots, not a substitute for a fresh read-only inventory before a future publishing batch.
+
+## GitHub Actions credentials
+
+Store these only in repository **Settings → Secrets and variables → Actions**:
 
 - `GOOGLE_CLIENT_ID`
 - `GOOGLE_CLIENT_SECRET`
 - `GOOGLE_REFRESH_TOKEN`
 
-Do not commit these values to the repository.
+No secret values are stored in this repository. Do not place credentials in a workflow file, report, commit, issue or chat message.
 
-## Not enabled yet
+## Workflow state
 
-- Post deletion
-- Page deletion
-- Page creation/update
-- Theme changes
-- Automated publishing
+- `readonly-inventory.yml`: read-only Blogger inventory.
+- `publish-pages.yml`: writes the five core pages from `content/pages/`.
+- `publish-markets-today.yml`: validates then patches the ten configured existing pages from tracked source files.
+- `delete-all-posts.yml` and `delete-two-pages.yml`: destructive jobs. Their trigger files are inactive after the completed cleanup; do not reactivate without explicit owner direction.
+
+The manual theme upload remains a publisher action: the theme file is maintained in the repository, but Blogger's API publishing workflow does not upload it. The publisher must upload the approved theme XML in Blogger and then request public verification.
+
+## Audit notes
+
+- `publish-pages.yml` exposes a `confirm` input that is not currently used as a job condition; its command passes the script confirmation value directly. Review this before expanding the workflow.
+- The script's dry-run lists local file sizes and does not fetch or compare live page bodies. Treat it as a basic preflight, not a live diff.
+- `cleanup_site_pages.py` validates all ten target URLs before patching them, then updates all ten. Any commit to its watched content paths triggers that workflow.
