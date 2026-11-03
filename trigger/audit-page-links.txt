@@ -1,2 +1,3 @@
 AUDIT: READ-ONLY LINK CHECK ACROSS THEME, HOME PAGE AND ALL PAGES
 Re-run with rate-limit backoff and rendered theme wrappers: 2026-11-03
+Post-deletion verification run: 2026-11-03
