@@ -1,0 +1,197 @@
+{
+  "mode": "delete-legacy-five-pages",
+  "started_at_utc": "2026-11-03T04:49:10.751946+00:00",
+  "blog": {
+    "id": "8911514070006792465",
+    "url": "https://millededgeindia.blogspot.com/",
+    "name": "Milled Edge"
+  },
+  "preflight": {
+    "new_url_checks": [
+      {
+        "path": "/p/about-milled-edge.html",
+        "url": "https://millededgeindia.blogspot.com/p/about-milled-edge.html",
+        "status_code": 200,
+        "page_title": "About us",
+        "expected_title": "About us",
+        "ok": true
+      },
+      {
+        "path": "/p/contact-milled-edge.html",
+        "url": "https://millededgeindia.blogspot.com/p/contact-milled-edge.html",
+        "status_code": 200,
+        "page_title": "Contact us",
+        "expected_title": "Contact us",
+        "ok": true
+      },
+      {
+        "path": "/p/privacy-policy-milled-edge.html",
+        "url": "https://millededgeindia.blogspot.com/p/privacy-policy-milled-edge.html",
+        "status_code": 200,
+        "page_title": "Privacy Policy",
+        "expected_title": "Privacy Policy",
+        "ok": true
+      },
+      {
+        "path": "/p/financial-disclaimer-milled-edge.html",
+        "url": "https://millededgeindia.blogspot.com/p/financial-disclaimer-milled-edge.html",
+        "status_code": 200,
+        "page_title": "Financial Disclaimer",
+        "expected_title": "Financial Disclaimer",
+        "ok": true
+      },
+      {
+        "path": "/p/terms-milled-edge.html",
+        "url": "https://millededgeindia.blogspot.com/p/terms-milled-edge.html",
+        "status_code": 200,
+        "page_title": "Terms & Conditions",
+        "expected_title": "Terms & Conditions",
+        "ok": true
+      }
+    ],
+    "legacy_record_checks": [
+      {
+        "id": "2716668129166401912",
+        "expected_title": "About us",
+        "actual_title": "About us",
+        "expected_path": "/p/about-us_02080501126.html",
+        "actual_path": "/p/about-us_02080501126.html",
+        "path_owner_matches": true,
+        "ok": true
+      },
+      {
+        "id": "4698688245681185879",
+        "expected_title": "Contact us",
+        "actual_title": "Contact us",
+        "expected_path": "/p/contact-us_01883938366.html",
+        "actual_path": "/p/contact-us_01883938366.html",
+        "path_owner_matches": true,
+        "ok": true
+      },
+      {
+        "id": "304220949515133754",
+        "expected_title": "Privacy policy",
+        "actual_title": "Privacy policy",
+        "expected_path": "/p/privacy-policy.html",
+        "actual_path": "/p/privacy-policy.html",
+        "path_owner_matches": true,
+        "ok": true
+      },
+      {
+        "id": "3945823007631424733",
+        "expected_title": "Disclaimer",
+        "actual_title": "Disclaimer",
+        "expected_path": "/p/disclaimer.html",
+        "actual_path": "/p/disclaimer.html",
+        "path_owner_matches": true,
+        "ok": true
+      },
+      {
+        "id": "3254393081257151974",
+        "expected_title": "Terms and conditions",
+        "actual_title": "Terms and conditions",
+        "expected_path": "/p/terms-and-conditions.html",
+        "actual_path": "/p/terms-and-conditions.html",
+        "path_owner_matches": true,
+        "ok": true
+      }
+    ],
+    "passed": true
+  },
+  "deleted": [
+    {
+      "id": "2716668129166401912",
+      "title": "About us",
+      "path": "/p/about-us_02080501126.html",
+      "replaced_by": "/p/about-milled-edge.html",
+      "state": "permanently-deleted"
+    },
+    {
+      "id": "4698688245681185879",
+      "title": "Contact us",
+      "path": "/p/contact-us_01883938366.html",
+      "replaced_by": "/p/contact-milled-edge.html",
+      "state": "permanently-deleted"
+    },
+    {
+      "id": "304220949515133754",
+      "title": "Privacy policy",
+      "path": "/p/privacy-policy.html",
+      "replaced_by": "/p/privacy-policy-milled-edge.html",
+      "state": "permanently-deleted"
+    },
+    {
+      "id": "3945823007631424733",
+      "title": "Disclaimer",
+      "path": "/p/disclaimer.html",
+      "replaced_by": "/p/financial-disclaimer-milled-edge.html",
+      "state": "permanently-deleted"
+    },
+    {
+      "id": "3254393081257151974",
+      "title": "Terms and conditions",
+      "path": "/p/terms-and-conditions.html",
+      "replaced_by": "/p/terms-milled-edge.html",
+      "state": "permanently-deleted"
+    }
+  ],
+  "already_missing": [],
+  "untouched_pages_before": 15,
+  "untouched_pages_after": 10,
+  "errors": [],
+  "result": "success",
+  "note": "Only the five exact legacy IDs are targeted. No posts, theme or other pages touched.",
+  "remaining_pages": [
+    {
+      "id": "9145366926436032366",
+      "title": "Terms & Conditions",
+      "url": "https://millededgeindia.blogspot.com/p/terms-milled-edge.html"
+    },
+    {
+      "id": "4626472458869661769",
+      "title": "Financial Disclaimer",
+      "url": "https://millededgeindia.blogspot.com/p/financial-disclaimer-milled-edge.html"
+    },
+    {
+      "id": "311860603682060395",
+      "title": "Privacy Policy",
+      "url": "https://millededgeindia.blogspot.com/p/privacy-policy-milled-edge.html"
+    },
+    {
+      "id": "7395176556871361869",
+      "title": "Contact us",
+      "url": "https://millededgeindia.blogspot.com/p/contact-milled-edge.html"
+    },
+    {
+      "id": "2082189399197263721",
+      "title": "About us",
+      "url": "https://millededgeindia.blogspot.com/p/about-milled-edge.html"
+    },
+    {
+      "id": "8504888514217789256",
+      "title": "Global snapshot",
+      "url": "https://millededgeindia.blogspot.com/p/global-snapshot.html"
+    },
+    {
+      "id": "5236051989054453802",
+      "title": "Markets today",
+      "url": "https://millededgeindia.blogspot.com/p/markets-today.html"
+    },
+    {
+      "id": "8572476015753638755",
+      "title": "Money atlas",
+      "url": "https://millededgeindia.blogspot.com/p/money-atlas_01486068069.html"
+    },
+    {
+      "id": "6065205676235626846",
+      "title": "For corporate",
+      "url": "https://millededgeindia.blogspot.com/p/for-corporate_01804417406.html"
+    },
+    {
+      "id": "7468827438203976743",
+      "title": "Calculator",
+      "url": "https://millededgeindia.blogspot.com/p/calculator_0908148622.html"
+    }
+  ],
+  "finished_at_utc": "2026-11-03T04:49:36.274444+00:00"
+}
