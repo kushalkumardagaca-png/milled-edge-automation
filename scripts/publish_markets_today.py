@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -66,6 +67,31 @@ def list_posts(service, blog_id: str) -> list[dict]:
             return posts
 
 
+def call_with_report(stage: str, fn):
+    try:
+        result = fn()
+    except Exception as exc:
+        status = getattr(exc, "status_code", None)
+        message = str(exc)
+        content = getattr(exc, "content", None)
+        if content:
+            try:
+                body = json.loads(content.decode("utf-8") if isinstance(content, bytes) else content)
+                message = body.get("error", {}).get("message", message)
+            except Exception:
+                pass
+        detail = f"HTTP {status}: {message}" if status else f"{type(exc).__name__}: {message}"
+        safe = f"Market Today publish stage failed — {stage}: {detail}"
+        print(safe, file=sys.stderr, flush=True)
+        summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
+        if summary_path:
+            with open(summary_path, "a", encoding="utf-8") as summary:
+                summary.write(f"## Blogger publish diagnostic\\n\\n{safe}\\n")
+        raise
+    print(f"Completed Blogger publish stage: {stage}", flush=True)
+    return result
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true")
@@ -86,20 +112,20 @@ def main() -> int:
     from blogger_client import get_blogger_service, get_blog_by_url, load_site_config
 
     site = load_site_config()
-    service = get_blogger_service()
-    blog = get_blog_by_url(service, site["blog_url"])
+    service = call_with_report("authenticate to Blogger", get_blogger_service)
+    blog = call_with_report("resolve the configured blog", lambda: get_blog_by_url(service, site["blog_url"]))
     if str(blog["id"]) != str(site["expected_blog_id"]):
         print("Refusing to publish: resolved Blogger blog ID does not match config/site.json", file=sys.stderr)
         return 2
 
-    pages = service.pages().list(blogId=blog["id"], fetchBodies=False, maxResults=50).execute().get("items", [])
+    pages = call_with_report("list existing pages", lambda: service.pages().list(blogId=blog["id"], fetchBodies=False, maxResults=50).execute().get("items", []))
     matches = [p for p in pages if p.get("url", "").rstrip("/").endswith(f"/p/{SLUG}.html")]
     if len(matches) != 1:
         print(f"Expected one existing /p/{SLUG}.html page; found {len(matches)}; no write made", file=sys.stderr)
         return 2
     page = matches[0]
 
-    posts = list_posts(service, str(blog["id"]))
+    posts = call_with_report("list Blogger posts and check for the allowlisted title", lambda: list_posts(service, str(blog["id"])))
     post_matches = [p for p in posts if p.get("title", "").strip() == POST_TITLE]
     if len(post_matches) > 1:
         print(f"Refusing to write: found {len(post_matches)} posts with the allowlisted title", file=sys.stderr)
@@ -109,23 +135,23 @@ def main() -> int:
     # Top 5,000 post if absent; otherwise patch that same post in place.
     if post_matches:
         target = post_matches[0]
-        result = service.posts().patch(
+        result = call_with_report("update the existing allowlisted post", lambda: service.posts().patch(
             blogId=blog["id"],
             postId=target["id"],
             body={"title": POST_TITLE, "content": post_content, "labels": [POST_LABEL]},
             publish=True,
-        ).execute()
+        ).execute())
         action = "updated"
     else:
-        result = service.posts().insert(
+        result = call_with_report("create the one allowlisted live post", lambda: service.posts().insert(
             blogId=blog["id"],
             body={"title": POST_TITLE, "content": post_content, "labels": [POST_LABEL]},
             isDraft=False,
-        ).execute()
+        ).execute())
         action = "created"
 
-    service.pages().patch(blogId=blog["id"], pageId=page["id"], body={"content": page_content}).execute()
-    check = service.posts().get(blogId=blog["id"], postId=result["id"], fetchBody=False).execute()
+    call_with_report("patch the existing Markets Today page", lambda: service.pages().patch(blogId=blog["id"], pageId=page["id"], body={"content": page_content}).execute())
+    check = call_with_report("verify the live Top 5,000 post", lambda: service.posts().get(blogId=blog["id"], postId=result["id"], fetchBody=False).execute())
     if check.get("title") != POST_TITLE or POST_LABEL not in check.get("labels", []) or check.get("status") != "LIVE":
         raise SystemExit("Post write did not verify as LIVE with the expected title and label")
     print(f"Updated existing /p/{SLUG}.html ({len(page_content):,} characters).")
