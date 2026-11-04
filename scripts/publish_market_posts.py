@@ -71,7 +71,7 @@ def write_summary(text: str) -> None:
 def list_all_posts(service, blog_id: str) -> list[dict]:
     out, token = [], None
     while True:
-        kwargs = {"blogId": blog_id, "fetchBodies": False, "maxResults": 500}
+        kwargs = {"blogId": blog_id, "fetchBodies": True, "maxResults": 500}
         if token:
             kwargs["pageToken"] = token
         result = service.posts().list(**kwargs).execute()
@@ -134,6 +134,11 @@ def main() -> int:
         identity = "CategoryID-" + item["slug"]
         post = by_label.get(identity)
         payload = {"title": item["title"], "content": body, "labels": labels}
+        if (post and post.get("status") == "LIVE" and post.get("title") == item["title"]
+                and post.get("content") == body and set(post.get("labels") or []) == set(labels)):
+            results.append({"id": item["slug"], "title": item["title"], "url": post["url"], "action": "unchanged", "labels": labels})
+            print(f"unchanged: {item['title']} — {post['url']}", flush=True)
+            continue
         try:
             if post:
                 saved = service.posts().patch(blogId=blog["id"], postId=post["id"], body=payload).execute(num_retries=5)
@@ -155,6 +160,9 @@ def main() -> int:
             time.sleep(1.5)
 
     if failures:
+        for failure in failures:
+            detail = failure["error"].replace("%", "%25").replace("\\r", " ").replace("\\n", " ").replace(":", "%3A")
+            print(f"::error title=Market category post failure::{failure['id']} — {detail}", flush=True)
         write_summary("## Market-category post batch 1: partial failure\n\n" + json.dumps({"published_or_updated": results, "failures": failures}, indent=2))
         raise SystemExit(f"{len(failures)} posts failed; {len(results)} created or updated. No existing pages were deleted.")
 
