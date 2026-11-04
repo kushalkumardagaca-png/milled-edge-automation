@@ -68,6 +68,8 @@ def replace_once(text: str, old: str, new: str, label: str) -> str:
 
 def make_template() -> str:
     text = SOURCE.read_text(encoding="utf-8")
+    # Category posts use global search; there is intentionally no top-level country selector.
+    text = text.replace("use the country selector above to prioritize local results.", "browse listing-country groups here; global search remains available above.")
     text = text.replace('<h1>World markets. One command centre.</h1><p>Search the global 450,000+ instrument universe, then browse stocks, indices, commodities, crypto, ETFs, funds, bonds and currencies.</p>', '<h1>{{POST_H1}}</h1><p>{{POST_DECK}}</p>')
     old_browser = re.search(r'<section class="dyw-browser">.*?</section>', text, re.S)
     if not old_browser:
