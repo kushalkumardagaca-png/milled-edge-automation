@@ -58,7 +58,7 @@ def list_posts(service, blog_id: str) -> list[dict]:
             kwargs["pageToken"] = token
         # Fetch live, draft, and scheduled posts so a prior partial run cannot
         # cause the allowlisted post to be duplicated.
-        kwargs["status"] = ["live", "draft", "scheduled"]
+        kwargs["status"] = ["LIVE", "DRAFT", "SCHEDULED"]
         response = service.posts().list(**kwargs).execute()
         posts.extend(response.get("items", []))
         token = response.get("nextPageToken")
@@ -125,9 +125,9 @@ def main() -> int:
         action = "created"
 
     service.pages().patch(blogId=blog["id"], pageId=page["id"], body={"content": page_content}).execute()
-    check = service.posts().get(blogId=blog["id"], postId=result["id"]).execute()
-    if check.get("title") != POST_TITLE or POST_LABEL not in check.get("labels", []):
-        raise SystemExit("Post write did not verify with the expected title and label")
+    check = service.posts().get(blogId=blog["id"], postId=result["id"], fetchBody=False).execute()
+    if check.get("title") != POST_TITLE or POST_LABEL not in check.get("labels", []) or check.get("status") != "LIVE":
+        raise SystemExit("Post write did not verify as LIVE with the expected title and label")
     print(f"Updated existing /p/{SLUG}.html ({len(page_content):,} characters).")
     print(f"{action.title()} the single allowlisted Blogger post ({len(post_content):,} characters).")
     print(f"Post URL: {check.get('url', '(URL not returned)')}")
