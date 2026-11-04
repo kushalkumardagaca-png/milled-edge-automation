@@ -50,7 +50,7 @@ def preflight() -> tuple[str, str]:
     return page, post
 
 
-def list_posts(service, blog_id: str) -> list[dict]:
+def list_posts(service, blog_id: str, statuses: list[str] | None = None) -> list[dict]:
     posts: list[dict] = []
     token = None
     while True:
@@ -58,8 +58,9 @@ def list_posts(service, blog_id: str) -> list[dict]:
         if token:
             kwargs["pageToken"] = token
         # Fetch live, draft, and scheduled posts so a prior partial run cannot
-        # cause the allowlisted post to be duplicated.
-        kwargs["status"] = ["LIVE", "DRAFT", "SCHEDULED"]
+        # cause the allowlisted post to be duplicated. Verification can request
+        # LIVE alone; status is a list filter, not a Post resource field.
+        kwargs["status"] = statuses or ["LIVE", "DRAFT", "SCHEDULED"]
         response = service.posts().list(**kwargs).execute()
         posts.extend(response.get("items", []))
         token = response.get("nextPageToken")
@@ -153,9 +154,15 @@ def main() -> int:
         action = "created"
 
     call_with_report("patch the existing Markets Today page", lambda: service.pages().patch(blogId=blog["id"], pageId=page["id"], body={"content": page_content}).execute())
-    check = call_with_report("verify the live Top 5,000 post", lambda: service.posts().get(blogId=blog["id"], postId=result["id"], fetchBody=False).execute())
-    if check.get("title") != POST_TITLE or POST_LABEL not in check.get("labels", []) or check.get("status") != "LIVE":
-        raise SystemExit("Post write did not verify as LIVE with the expected title and label")
+    check = call_with_report("verify the Top 5,000 post title and label", lambda: service.posts().get(blogId=blog["id"], postId=result["id"], fetchBody=False).execute())
+    if check.get("title") != POST_TITLE or POST_LABEL not in check.get("labels", []):
+        detail = f"title={check.get('title')!r}; labels={check.get('labels')!r}"
+        print(f"::error title=Blogger post content verification::{detail}", flush=True)
+        raise SystemExit("Post write did not verify with the expected title and label")
+    live_posts = call_with_report("verify the post is LIVE", lambda: list_posts(service, str(blog["id"]), statuses=["LIVE"]))
+    if not any(p.get("id") == result["id"] for p in live_posts):
+        print("::error title=Blogger publication verification::The allowlisted post ID was not returned by the LIVE posts filter", flush=True)
+        raise SystemExit("Post write did not verify as LIVE")
     print(f"Updated existing /p/{SLUG}.html ({len(page_content):,} characters).")
     print(f"{action.title()} the single allowlisted Blogger post ({len(post_content):,} characters).")
     print(f"Post URL: {check.get('url', '(URL not returned)')}")
