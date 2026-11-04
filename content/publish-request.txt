@@ -1,1 +1,1 @@
-requested 2026-11-04 — follow-up: correct privacy analytics/retention statements, remove unsupported correction/payment history claims, and align the approved Contact Facebook URL
+requested 2026-11-04 — screenshot-led refresh: pair the hero card and page-introduction note on Contact, Privacy Policy, Financial Disclaimer and Terms; refine the summaries and section copy; remove cursive typography; correct Terms correction-window wording. About remains unchanged.
