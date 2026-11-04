@@ -1252,7 +1252,19 @@ html,body{max-width:100%;overflow-x:clip}.fk-home main,.fk-home #enhancedHome,.k
 @media(max-width:560px){.dy-breadcrumb{padding-right:58px}}
 @media(prefers-reduced-motion:reduce){.dy-load-screen,.dy-load-screen *{animation:none!important;transition:none!important}}
 /* DY_SITE_ENHANCEMENTS_CSS_END */
-]]></b:skin>
+/* Latest visual refinements: larger masthead, accent EDGE, and a wrapping social row. */
+.topbar-inner{height:clamp(112px,11vw,132px)!important}
+.topbar-title{display:inline-flex!important;flex-direction:row!important;align-items:center!important;justify-content:center!important;gap:0!important;padding:0!important;max-width:calc(100vw - 120px);overflow:visible!important}
+.topbar-title .tb-a{font:800 clamp(40px,5.2vw,62px)/.96 var(--font-display)!important;letter-spacing:.085em!important;white-space:nowrap!important;color:var(--ink)!important}
+.topbar-title .tb-edge{color:var(--accent-dark)!important}
+.fd-soc{display:flex!important;flex-wrap:wrap!important;gap:10px!important;max-width:100%;margin-top:6px!important}
+.fd-soc a{width:44px!important;height:44px!important;flex:0 0 44px;border-radius:50%;display:grid;place-items:center}
+.fd-soc svg{width:19px!important;height:19px!important;stroke:currentColor!important;fill:none!important;stroke-width:1.8!important;stroke-linecap:round;stroke-linejoin:round}
+@media(max-width:560px){.topbar-inner{height:102px!important}.topbar-title{max-width:calc(100vw - 104px)}.topbar-title .tb-a{font-size:clamp(30px,8.2vw,34px)!important;letter-spacing:.065em!important}}
+@media(max-device-width:760px){.topbar-inner{height:102px!important}.topbar-title .tb-a{font-size:clamp(30px,8.2vw,34px)!important}}
+
+]]>
+</b:skin>
 <script>document.documentElement.className += &#39; js&#39;;if(window.matchMedia){if(window.matchMedia(&#39;(prefers-reduced-motion: reduce)&#39;).matches){document.documentElement.className += &#39; reduce&#39;;}}</script>
 <script>//<![CDATA[
 
@@ -1315,7 +1327,7 @@ if(D.body)start();else D.addEventListener('DOMContentLoaded',start);}})();
 <!-- The consent-gated theme loader above is the only GA4 implementation. -->
 <script type='application/ld+json'>{&quot;@context&quot;:&quot;https://schema.org&quot;,&quot;@type&quot;:&quot;WebSite&quot;,&quot;@id&quot;:&quot;https://millededgeindia.blogspot.com/#website&quot;,&quot;url&quot;:&quot;https://millededgeindia.blogspot.com/&quot;,&quot;name&quot;:&quot;MILLED EDGE&quot;,&quot;alternateName&quot;:&quot;MILLED EDGE&quot;,&quot;publisher&quot;:{&quot;@type&quot;:&quot;Person&quot;,&quot;name&quot;:&quot;Kushal Kumar Daga&quot;,&quot;url&quot;:&quot;https://millededgeindia.blogspot.com/p/about-milled-edge.html&quot;},&quot;potentialAction&quot;:{&quot;@type&quot;:&quot;SearchAction&quot;,&quot;target&quot;:{&quot;@type&quot;:&quot;EntryPoint&quot;,&quot;urlTemplate&quot;:&quot;https://millededgeindia.blogspot.com/search?q={search_term_string}&quot;},&quot;query-input&quot;:&quot;required name=search_term_string&quot;}}</script>
 <b:if cond='data:view.isHomepage'>
-<script type='application/ld+json'>{&quot;@context&quot;:&quot;https://schema.org&quot;,&quot;@type&quot;:&quot;FAQPage&quot;,&quot;mainEntity&quot;:[{&quot;@type&quot;:&quot;Question&quot;,&quot;name&quot;:&quot;What does MILLED EDGE publish?&quot;,&quot;acceptedAnswer&quot;:{&quot;@type&quot;:&quot;Answer&quot;,&quot;text&quot;:&quot;MILLED EDGE offers financial education, practical calculators and market context through dedicated pages. It does not publish articles as posts.&quot;}},{&quot;@type&quot;:&quot;Question&quot;,&quot;name&quot;:&quot;Is MILLED EDGE personal financial advice?&quot;,&quot;acceptedAnswer&quot;:{&quot;@type&quot;:&quot;Answer&quot;,&quot;text&quot;:&quot;No. MILLED EDGE provides educational information and arithmetic tools. Consider your circumstances and use an appropriately qualified adviser when needed.&quot;}},{&quot;@type&quot;:&quot;Question&quot;,&quot;name&quot;:&quot;How can I report a correction?&quot;,&quot;acceptedAnswer&quot;:{&quot;@type&quot;:&quot;Answer&quot;,&quot;text&quot;:&quot;Send the page URL and correction details to the desk email (millededge.official@gmail.com) or the publisher (kushalkumardaga.ca@gmail.com). If a correction is published, it will include a dated note.&quot;}}]}</script>
+<script type='application/ld+json'>{&quot;@context&quot;:&quot;https://schema.org&quot;,&quot;@type&quot;:&quot;FAQPage&quot;,&quot;mainEntity&quot;:[{&quot;@type&quot;:&quot;Question&quot;,&quot;name&quot;:&quot;What does MILLED EDGE publish?&quot;,&quot;acceptedAnswer&quot;:{&quot;@type&quot;:&quot;Answer&quot;,&quot;text&quot;:&quot;MILLED EDGE offers financial education, practical calculators and market context through dedicated pages. It does not publish articles as posts.&quot;}},{&quot;@type&quot;:&quot;Question&quot;,&quot;name&quot;:&quot;Is MILLED EDGE personal financial advice?&quot;,&quot;acceptedAnswer&quot;:{&quot;@type&quot;:&quot;Answer&quot;,&quot;text&quot;:&quot;No. MILLED EDGE provides educational information and arithmetic tools. Consider your circumstances and use an appropriately qualified adviser when needed.&quot;}},{&quot;@type&quot;:&quot;Question&quot;,&quot;name&quot;:&quot;How can I report a correction?&quot;,&quot;acceptedAnswer&quot;:{&quot;@type&quot;:&quot;Answer&quot;,&quot;text&quot;:&quot;Send the page URL and correction details to kushalkumardaga.ca@gmail.com. If a correction is published, it will include a dated note.&quot;}}]}</script>
 </b:if>
 <!-- DY_SITE_ENHANCEMENTS_HEAD_END -->
 </head>
@@ -1346,7 +1358,7 @@ window.__dyLoadStart=(window.performance&&performance.now)?performance.now():Dat
  <div class='topbar-inner'>
 
 
- <a class='topbar-title' expr:href='data:blog.homepageUrl'><span class='tb-a'>MILLED EDGE</span><span class='tb-line'><span class='tb-b' id='tbType'>By Kushal Kumar Daga</span><span aria-hidden='true' class='tb-caret'/><svg aria-hidden='true' class='tb-squig' viewBox='0 0 92 8'><path d='M2 6c12-6 24 4 36-1s26-5 52 1'/></svg></span></a>
+ <a class='topbar-title' expr:href='data:blog.homepageUrl'><span class='tb-a'><span class='tb-milled'>MILLED</span> <span class='tb-edge'>EDGE</span></span></a>
 
 
  </div>
@@ -2648,7 +2660,7 @@ window.__dyLoadStart=(window.performance&&performance.now)?performance.now():Dat
 <section aria-labelledby='dyFaqTitle' class='dy-site-faq' id='dy-site-faq'><h2 id='dyFaqTitle'>MILLED EDGE, clearly answered</h2>
 <details><summary>What does MILLED EDGE publish?</summary><p>MILLED EDGE offers financial education, practical calculators and market context through dedicated pages. It does not publish articles as posts.</p></details>
 <details><summary>Is MILLED EDGE personal financial advice?</summary><p>No. MILLED EDGE provides educational information and arithmetic tools. Consider your circumstances and use an appropriately qualified adviser when needed.</p></details>
-<details><summary>How can I report a correction?</summary><p>Send the page URL and correction details to the desk email (<a href='mailto:millededge.official@gmail.com'>millededge.official@gmail.com</a>) or the publisher (<a href='mailto:kushalkumardaga.ca@gmail.com'>kushalkumardaga.ca@gmail.com</a>). If a correction is published, it will include a dated note.</p></details></section>
+<details><summary>How can I report a correction?</summary><p>Send the page URL and correction details to <a href='mailto:kushalkumardaga.ca@gmail.com'>kushalkumardaga.ca@gmail.com</a>. If a correction is published, it will include a dated note.</p></details></section>
 </b:if>
 <!-- DY_VISIBLE_FAQ_END -->
 
@@ -2659,14 +2671,17 @@ window.__dyLoadStart=(window.performance&&performance.now)?performance.now():Dat
  <span class='ft-by'>By Kushal Kumar Daga</span><p class='ft-legal'>Published by MILLED EDGE. Written by Kushal Kumar Daga, the short form of the publisher&#39;s legal name, Kushal Kumar Daga, which is the name used on ownership, payment and platform records.</p>
  <p>Money decisions, settled by arithmetic &#8212; not opinion.</p>
  <div class='fd-soc'>
- <a aria-label='Facebook' href='https://www.facebook.com/millededge' rel='me noopener' target='_blank'><svg aria-hidden='true' viewBox='0 0 24 24'><path d='M13.5 21v-8h2.8l.4-3h-3.2V8.1c0-.9.3-1.6 1.7-1.6H17V3.8c-.3 0-1.4-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2H7.5v3h2.8v8'/></svg></a>
- <a aria-label='Bluesky' href='https://bsky.app/profile/millededge.bsky.social' rel='me noopener' target='_blank'><svg aria-hidden='true' viewBox='0 0 24 24'><path d='M12 11c-1.2-2.5-4.4-6-7.3-8C2 1.2 1 1.5 1 4.2c0 .6.3 5.2.5 5.9.8 2.6 3.7 3.5 6.3 3-4.5.7-5.7 3-3.2 5.3 4.8 4.4 6.8-1 7.4-2.7.6 1.7 2.1 7.1 7.3 2.7 2.7-2.3 1.2-4.6-3.3-5.3 2.6.5 5.5-.4 6.3-3 .2-.7.5-5.3.5-5.9C23 1.5 22 1.2 19.3 3 16.4 5 13.2 8.5 12 11Z'/></svg></a>
- <a aria-label='Tumblr' href='https://www.tumblr.com/milledge' rel='me noopener' target='_blank'><svg aria-hidden='true' viewBox='0 0 24 24'><path d='M14 21c-4.1 0-6-2.4-6-5.8V10H5V6.7c3.2-1.1 4.6-3.5 4.8-5.7H13v5h4v4h-4v4.5c0 1.7.9 2.3 2.1 2.3.7 0 1.3-.2 1.9-.5V20c-.8.6-1.8 1-3 1Z'/></svg></a>
+ <a aria-label='Instagram' href='https://www.instagram.com/millededge' rel='me noopener' target='_blank'><svg aria-hidden='true' viewBox='0 0 24 24'><rect height='16' rx='4.5' width='16' x='4' y='4'/><circle cx='12' cy='12' r='3.5'/><circle cx='17.5' cy='6.7' r='.7'/></svg></a>
+ <a aria-label='X' href='https://x.com/MilledEdge' rel='me noopener' target='_blank'><svg aria-hidden='true' viewBox='0 0 24 24'><path d='M4 3.5 20 20.5M20 3.5 4 20.5'/></svg></a>
+ <a aria-label='LinkedIn' href='https://www.linkedin.com/company/milled-edge/' rel='me noopener' target='_blank'><svg aria-hidden='true' viewBox='0 0 24 24'><path d='M6 9v9M6 6.2v.1M10.3 18v-8.7M10.3 13c.2-2.2 4.9-2.8 4.9.8V18'/></svg></a>
  <a aria-label='Mastodon' href='https://mastodon.social/@millededge' rel='me noopener' target='_blank'><svg aria-hidden='true' viewBox='0 0 24 24'><path d='M20 15c-.4 2.1-3.8 2.3-5.8 2.6-1.1.1-2.2.1-3.3-.1.2 1.7 1.3 2.4 3 2.5 1.8.1 3.4-.4 4.5-1l.1 2.3c-1.3.7-3.1 1-4.8 1-5.2-.2-8.6-3.2-8.9-8.8-.1-1.2 0-4.7 0-5.6C4.9 4 7.5 2.8 12 2.8S19.1 4 19.4 7.9c.1 1 .1 5.4-.4 7.1Z'/><path d='M8.5 13V8.3c0-2.4 3.1-2.5 3.5-.5.4-2 3.5-1.9 3.5.5V13M12 8v4.3'/></svg></a>
+ <a aria-label='Tumblr' href='https://www.tumblr.com/milledge' rel='me noopener' target='_blank'><svg aria-hidden='true' viewBox='0 0 24 24'><path d='M14 21c-4.1 0-6-2.4-6-5.8V10H5V6.7c3.2-1.1 4.6-3.5 4.8-5.7H13v5h4v4h-4v4.5c0 1.7.9 2.3 2.1 2.3.7 0 1.3-.2 1.9-.5V20c-.8.6-1.8 1-3 1Z'/></svg></a>
+ <a aria-label='Bluesky' href='https://bsky.app/profile/millededge.bsky.social' rel='me noopener' target='_blank'><svg aria-hidden='true' viewBox='0 0 24 24'><path d='M12 11c-1.2-2.5-4.4-6-7.3-8C2 1.2 1 1.5 1 4.2c0 .6.3 5.2.5 5.9.8 2.6 3.7 3.5 6.3 3-4.5.7-5.7 3-3.2 5.3 4.8 4.4 6.8-1 7.4-2.7.6 1.7 2.1 7.1 7.3 2.7 2.7-2.3 1.2-4.6-3.3-5.3 2.6.5 5.5-.4 6.3-3 .2-.7.5-5.3.5-5.9C23 1.5 22 1.2 19.3 3 16.4 5 13.2 8.5 12 11Z'/></svg></a>
+ <a aria-label='Facebook' href='https://www.facebook.com/millededge' rel='me noopener' target='_blank'><svg aria-hidden='true' viewBox='0 0 24 24'><path d='M13.5 21v-8h2.8l.4-3h-3.2V8.1c0-.9.3-1.6 1.7-1.6H17V3.8c-.3 0-1.4-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2H7.5v3h2.8v8'/></svg></a>
  <a aria-label='Email' href='mailto:kushalkumardaga.ca@gmail.com'><svg aria-hidden='true' viewBox='0 0 24 24'><rect height='13' rx='1.5' width='18' x='3' y='5.5'/><path d='m4 7.5 8 5.5 8-5.5'/></svg></a>
  </div>
  </div>
- <div class='ft-contact'><span class='ft-eyebrow'>Start a conversation</span><span class='ft-eyebrow'>Desk inbox</span><a class='ft-email' href='mailto:millededge.official@gmail.com'>millededge.official@gmail.com</a><span class='ft-eyebrow'>Publisher</span><a class='ft-email' href='mailto:kushalkumardaga.ca@gmail.com'>kushalkumardaga.ca@gmail.com</a><p>For corrections, include the page URL and details. Any correction we publish will carry a dated note.</p></div></div><div class='ft-groups'><nav aria-labelledby='footer-explore-title' class='ft-group ft-explore'><span class='ft-eyebrow'>01 / The working desk</span><h2 id='footer-explore-title'>Explore</h2><ul class='ft-page-links'><li><a href='https://millededgeindia.blogspot.com/'>Home</a></li><li><a href='https://millededgeindia.blogspot.com/p/calculator_0908148622.html'>Calculator</a></li><li><a href='https://millededgeindia.blogspot.com/p/for-corporate_01804417406.html'>For Corporate</a></li><li><a href='https://millededgeindia.blogspot.com/p/money-atlas_01486068069.html'>Money Atlas</a></li><li><a href='https://millededgeindia.blogspot.com/p/markets-today.html'>Markets Today</a></li><li><a href='https://millededgeindia.blogspot.com/p/global-snapshot.html'>Global Snapshot</a></li></ul></nav><nav aria-labelledby='footer-information-title' class='ft-group ft-information'><span class='ft-eyebrow'>02 / About this publication</span><h2 id='footer-information-title'>About &amp; Policies</h2><ul class='ft-page-links'><li><a href='https://millededgeindia.blogspot.com/p/about-milled-edge.html'>About Us</a></li><li><a href='https://millededgeindia.blogspot.com/p/contact-milled-edge.html'>Contact Us</a></li><li><a href='https://millededgeindia.blogspot.com/p/financial-disclaimer-milled-edge.html'>Financial Disclaimer</a></li><li><a href='https://millededgeindia.blogspot.com/p/privacy-policy-milled-edge.html'>Privacy Policy</a></li><li/><li><a href='https://millededgeindia.blogspot.com/p/terms-milled-edge.html'>Terms &amp; Conditions</a></li></ul></nav></div></div>
+ <div class='ft-contact'><span class='ft-eyebrow'>Start a conversation</span><span class='ft-eyebrow'>Contact</span><a class='ft-email' href='mailto:kushalkumardaga.ca@gmail.com'>kushalkumardaga.ca@gmail.com</a><p>For corrections, include the page URL and details. Any correction we publish will carry a dated note.</p></div></div><div class='ft-groups'><nav aria-labelledby='footer-explore-title' class='ft-group ft-explore'><span class='ft-eyebrow'>01 / The working desk</span><h2 id='footer-explore-title'>Explore</h2><ul class='ft-page-links'><li><a href='https://millededgeindia.blogspot.com/'>Home</a></li><li><a href='https://millededgeindia.blogspot.com/p/calculator_0908148622.html'>Calculator</a></li><li><a href='https://millededgeindia.blogspot.com/p/for-corporate_01804417406.html'>For Corporate</a></li><li><a href='https://millededgeindia.blogspot.com/p/money-atlas_01486068069.html'>Money Atlas</a></li><li><a href='https://millededgeindia.blogspot.com/p/markets-today.html'>Markets Today</a></li><li><a href='https://millededgeindia.blogspot.com/p/global-snapshot.html'>Global Snapshot</a></li></ul></nav><nav aria-labelledby='footer-information-title' class='ft-group ft-information'><span class='ft-eyebrow'>02 / About this publication</span><h2 id='footer-information-title'>About &amp; Policies</h2><ul class='ft-page-links'><li><a href='https://millededgeindia.blogspot.com/p/about-milled-edge.html'>About Us</a></li><li><a href='https://millededgeindia.blogspot.com/p/contact-milled-edge.html'>Contact Us</a></li><li><a href='https://millededgeindia.blogspot.com/p/financial-disclaimer-milled-edge.html'>Financial Disclaimer</a></li><li><a href='https://millededgeindia.blogspot.com/p/privacy-policy-milled-edge.html'>Privacy Policy</a></li><li/><li><a href='https://millededgeindia.blogspot.com/p/terms-milled-edge.html'>Terms &amp; Conditions</a></li></ul></nav></div></div>
  <b:section class='footer-attribution' id='footer' maxwidgets='1' showaddelement='no'>
    <b:widget id='Attribution1' locked='true' title='' type='Attribution' version='2' visible='true'>
      <b:widget-settings>
@@ -2866,25 +2881,6 @@ window.__dyLoadStart=(window.performance&&performance.now)?performance.now():Dat
  //]]>
  </script>
 
-<script>
-//<![CDATA[
-/* brand typing loop */
-(function(){
- var el = document.getElementById('tbType');
- if (!el) return;
- var W = 'By Kushal Kumar Daga';
- if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches){ el.textContent = W; return; }
- el.textContent = W;
- var sq = document.querySelector('.tb-squig path');
- var i = W.length, del = true, hold = 46;
- function redraw(){ if (!sq) return; sq.style.animation = 'none'; void sq.getBoundingClientRect(); sq.style.animation = ''; }
- setInterval(function(){
- if (!del){ i++; el.textContent = W.slice(0, i); if (i >= W.length){ del = true; hold = 46; redraw(); } }
- else { if (hold > 0){ hold--; } else { i--; el.textContent = W.slice(0, i); if (i <= 0){ del = false; hold = 10; } } }
- }, 110);
-})();
-//]]>
-</script>
 <script>
 //<![CDATA[
 /* heading flourish: h2s slide in + underline draws as you scroll */
