@@ -1,15 +1,12 @@
-name: Publish Market Today and Top 5,000; clean retired routes
+name: Publish Market Today and retire ranking post
 
 on:
   push:
     paths:
       - 'content/markets-today.html'
-      - 'content/market-data/**'
-      - 'content/posts/top-5000-market-instruments.html'
       - 'content/pages-fixes/**'
       - 'scripts/cleanup_site_pages.py'
       - 'scripts/publish_markets_today.py'
-      - 'scripts/build_markets_rankings.py'
       - '.github/workflows/publish-markets-today.yml'
 
 permissions:
@@ -42,10 +39,10 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install --quiet google-auth google-api-python-client
-      - name: Validate page, 50,000-row source and 5,000-row post locally
+      - name: Validate Market Today and retired-content removal locally
         working-directory: scripts
         run: python publish_markets_today.py --dry-run
-      - name: Patch Market Today and create or update only the Top 5,000 post
+      - name: Patch Market Today and delete only the exact retired Top 5,000 post
         working-directory: scripts
         env:
           GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
