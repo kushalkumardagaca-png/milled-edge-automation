@@ -136,12 +136,13 @@ def main() -> int:
         payload = {"title": item["title"], "content": body, "labels": labels}
         try:
             if post:
-                saved = service.posts().patch(blogId=blog["id"], postId=post["id"], body=payload).execute()
+                saved = service.posts().patch(blogId=blog["id"], postId=post["id"], body=payload).execute(num_retries=5)
                 action = "updated"
                 if saved.get("status") == "DRAFT":
-                    saved = service.posts().publish(blogId=blog["id"], postId=post["id"]).execute()
+                    saved = service.posts().publish(blogId=blog["id"], postId=post["id"]).execute(num_retries=5)
             else:
-                saved = service.posts().insert(blogId=blog["id"], body=payload, isDraft=False).execute()
+                saved = service.posts().insert(blogId=blog["id"], body=payload, isDraft=False).execute(num_retries=5)
+                # Pace writes so a batch retry after a transient Blogger quota response remains gentle.
                 action = "created"
             if not saved.get("url") or not saved.get("id"):
                 raise RuntimeError("Blogger API response omitted the new post URL or ID")
@@ -150,6 +151,8 @@ def main() -> int:
         except Exception as exc:
             failures.append({"id": item["slug"], "error": f"{type(exc).__name__}: {exc}"})
             print(f"FAILED: {item['slug']} — {type(exc).__name__}: {exc}", file=sys.stderr, flush=True)
+        finally:
+            time.sleep(1.5)
 
     if failures:
         write_summary("## Market-category post batch 1: partial failure\n\n" + json.dumps({"published_or_updated": results, "failures": failures}, indent=2))
