@@ -1,0 +1,2769 @@
+[
+  {
+    "id": "equity-stocks-country-region",
+    "slug": "equity-stocks-country-region",
+    "division_id": "equity-stocks",
+    "division": "Equity stocks",
+    "category_id": "country-region",
+    "category": "Country and region",
+    "scope": "equities grouped by issuer/listing country and region",
+    "title": "Equity stocks: Country and region | Milled Edge",
+    "search_description": "Explore equities grouped by issuer/listing country and region. Review the source, data timing, and category methodology; market values may be delayed and a",
+    "labels": [
+      "Markets",
+      "equity-stocks",
+      "country-and-region",
+      "Global Market Data"
+    ],
+    "batch": 1,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "stock"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "india",
+        "label": "India",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "India"
+          }
+        ]
+      },
+      {
+        "id": "united-states",
+        "label": "United States",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "United States"
+          }
+        ]
+      },
+      {
+        "id": "china",
+        "label": "China",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "China"
+          }
+        ]
+      },
+      {
+        "id": "united-kingdom",
+        "label": "United Kingdom",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "United Kingdom"
+          }
+        ]
+      },
+      {
+        "id": "japan",
+        "label": "Japan",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "Japan"
+          }
+        ]
+      },
+      {
+        "id": "hong-kong",
+        "label": "Hong Kong",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "Hong Kong"
+          }
+        ]
+      },
+      {
+        "id": "germany",
+        "label": "Germany",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "Germany"
+          }
+        ]
+      },
+      {
+        "id": "france",
+        "label": "France",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "France"
+          }
+        ]
+      },
+      {
+        "id": "canada",
+        "label": "Canada",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "Canada"
+          }
+        ]
+      },
+      {
+        "id": "australia",
+        "label": "Australia",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "Australia"
+          }
+        ]
+      },
+      {
+        "id": "brazil",
+        "label": "Brazil",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "Brazil"
+          }
+        ]
+      },
+      {
+        "id": "south-korea",
+        "label": "South Korea",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "South Korea"
+          }
+        ]
+      },
+      {
+        "id": "singapore",
+        "label": "Singapore",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "Singapore"
+          }
+        ]
+      },
+      {
+        "id": "indonesia",
+        "label": "Indonesia",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "Indonesia"
+          }
+        ]
+      },
+      {
+        "id": "uae",
+        "label": "United Arab Emirates",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "United Arab Emirates"
+          }
+        ]
+      },
+      {
+        "id": "saudi-arabia",
+        "label": "Saudi Arabia",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "Saudi Arabia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "equity-stocks-exchange-venue",
+    "slug": "equity-stocks-exchange-venue",
+    "division_id": "equity-stocks",
+    "division": "Equity stocks",
+    "category_id": "exchange-venue",
+    "category": "Exchange and venue",
+    "scope": "shares grouped by their reported listing exchange or trading venue",
+    "title": "Equity stocks: Exchange and venue | Milled Edge",
+    "search_description": "Explore shares grouped by their reported listing exchange or trading venue. Review the source, data timing, and category methodology; market values may be ",
+    "labels": [
+      "Markets",
+      "equity-stocks",
+      "exchange-and-venue",
+      "Global Market Data"
+    ],
+    "batch": 1,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "stock"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "nse",
+        "label": "NSE India",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "NSE"
+          }
+        ]
+      },
+      {
+        "id": "bse",
+        "label": "BSE India",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "BSE"
+          }
+        ]
+      },
+      {
+        "id": "nyse",
+        "label": "NYSE",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "NYSE"
+          }
+        ]
+      },
+      {
+        "id": "nasdaq",
+        "label": "Nasdaq",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "NASDAQ"
+          }
+        ]
+      },
+      {
+        "id": "lse",
+        "label": "London Stock Exchange",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "LSE"
+          }
+        ]
+      },
+      {
+        "id": "tokyo",
+        "label": "Tokyo Stock Exchange",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "TSE"
+          }
+        ]
+      },
+      {
+        "id": "hkex",
+        "label": "Hong Kong Exchange",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "HKEX"
+          }
+        ]
+      },
+      {
+        "id": "sse",
+        "label": "Shanghai Exchange",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "SSE"
+          }
+        ]
+      },
+      {
+        "id": "szse",
+        "label": "Shenzhen Exchange",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "SZSE"
+          }
+        ]
+      },
+      {
+        "id": "tsx",
+        "label": "Toronto Exchange",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "TSX"
+          }
+        ]
+      },
+      {
+        "id": "asx",
+        "label": "Australian Exchange",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "ASX"
+          }
+        ]
+      },
+      {
+        "id": "euronext",
+        "label": "Euronext",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "EURONEXT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "equity-stocks-sector-industry",
+    "slug": "equity-stocks-sector-industry",
+    "division_id": "equity-stocks",
+    "division": "Equity stocks",
+    "category_id": "sector-industry",
+    "category": "Sector and industry",
+    "scope": "equities grouped by the provider's industry classifications",
+    "title": "Equity stocks: Sector and industry | Milled Edge",
+    "search_description": "Explore equities grouped by the provider's industry classifications. Review the source, data timing, and category methodology; market values may be delayed",
+    "labels": [
+      "Markets",
+      "equity-stocks",
+      "sector-and-industry",
+      "Global Market Data"
+    ],
+    "batch": 1,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "stock"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "technology-services",
+        "label": "Technology services",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "sector",
+            "operation": "equal",
+            "right": "Technology Services"
+          }
+        ]
+      },
+      {
+        "id": "electronic-technology",
+        "label": "Electronic technology",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "sector",
+            "operation": "equal",
+            "right": "Electronic Technology"
+          }
+        ]
+      },
+      {
+        "id": "finance",
+        "label": "Finance",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "sector",
+            "operation": "equal",
+            "right": "Finance"
+          }
+        ]
+      },
+      {
+        "id": "energy-minerals",
+        "label": "Energy minerals",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "sector",
+            "operation": "equal",
+            "right": "Energy Minerals"
+          }
+        ]
+      },
+      {
+        "id": "health-technology",
+        "label": "Health technology",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "sector",
+            "operation": "equal",
+            "right": "Health Technology"
+          }
+        ]
+      },
+      {
+        "id": "consumer-nondurables",
+        "label": "Consumer non-durables",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "sector",
+            "operation": "equal",
+            "right": "Consumer Non-Durables"
+          }
+        ]
+      },
+      {
+        "id": "producer-manufacturing",
+        "label": "Producer manufacturing",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "sector",
+            "operation": "equal",
+            "right": "Producer Manufacturing"
+          }
+        ]
+      },
+      {
+        "id": "utilities",
+        "label": "Utilities",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "sector",
+            "operation": "equal",
+            "right": "Utilities"
+          }
+        ]
+      },
+      {
+        "id": "transportation",
+        "label": "Transportation",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "sector",
+            "operation": "equal",
+            "right": "Transportation"
+          }
+        ]
+      },
+      {
+        "id": "non-energy-minerals",
+        "label": "Non-energy minerals",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "sector",
+            "operation": "equal",
+            "right": "Non-Energy Minerals"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "equity-stocks-market-cap",
+    "slug": "equity-stocks-market-cap",
+    "division_id": "equity-stocks",
+    "division": "Equity stocks",
+    "category_id": "market-cap",
+    "category": "Market capitalization",
+    "scope": "equities grouped by reported market-capitalization bands",
+    "title": "Equity stocks: Market capitalization | Milled Edge",
+    "search_description": "Explore equities grouped by reported market-capitalization bands. Review the source, data timing, and category methodology; market values may be delayed an",
+    "labels": [
+      "Markets",
+      "equity-stocks",
+      "market-capitalization",
+      "Global Market Data"
+    ],
+    "batch": 1,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "stock"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "mega-cap",
+        "label": "Mega cap · above $200B",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "market_cap_basic",
+            "operation": "egreater",
+            "right": 200000000000
+          }
+        ]
+      },
+      {
+        "id": "large-cap",
+        "label": "Large cap · $10B–$200B",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "market_cap_basic",
+            "operation": "egreater",
+            "right": 10000000000
+          },
+          {
+            "left": "market_cap_basic",
+            "operation": "eless",
+            "right": 200000000000
+          }
+        ]
+      },
+      {
+        "id": "mid-cap",
+        "label": "Mid cap · $2B–$10B",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "market_cap_basic",
+            "operation": "egreater",
+            "right": 2000000000
+          },
+          {
+            "left": "market_cap_basic",
+            "operation": "eless",
+            "right": 10000000000
+          }
+        ]
+      },
+      {
+        "id": "small-cap",
+        "label": "Small cap · $300M–$2B",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "market_cap_basic",
+            "operation": "egreater",
+            "right": 300000000
+          },
+          {
+            "left": "market_cap_basic",
+            "operation": "eless",
+            "right": 2000000000
+          }
+        ]
+      },
+      {
+        "id": "micro-cap",
+        "label": "Micro cap · below $300M",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "market_cap_basic",
+            "operation": "eless",
+            "right": 300000000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "equity-stocks-share-class",
+    "slug": "equity-stocks-share-class",
+    "division_id": "equity-stocks",
+    "division": "Equity stocks",
+    "category_id": "share-class",
+    "category": "Share class",
+    "scope": "common, preferred, and other provider-classified share types",
+    "title": "Equity stocks: Share class | Milled Edge",
+    "search_description": "Explore common, preferred, and other provider-classified share types. Review the source, data timing, and category methodology; market values may be delaye",
+    "labels": [
+      "Markets",
+      "equity-stocks",
+      "share-class",
+      "Global Market Data"
+    ],
+    "batch": 1,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "stock"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "common",
+        "label": "Common shares",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "subtype",
+            "operation": "match",
+            "right": "common"
+          }
+        ]
+      },
+      {
+        "id": "preferred",
+        "label": "Preferred shares",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "subtype",
+            "operation": "match",
+            "right": "preferred"
+          }
+        ]
+      },
+      {
+        "id": "other-classes",
+        "label": "Other share classes",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "subtype",
+            "operation": "match",
+            "right": "other"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "equity-stocks-listing-status",
+    "slug": "equity-stocks-listing-status",
+    "division_id": "equity-stocks",
+    "division": "Equity stocks",
+    "category_id": "listing-status",
+    "category": "Listing and primary status",
+    "scope": "primary listings and other supported listing records",
+    "title": "Equity stocks: Listing and primary status | Milled Edge",
+    "search_description": "Explore primary listings and other supported listing records. Review the source, data timing, and category methodology; market values may be delayed and ar",
+    "labels": [
+      "Markets",
+      "equity-stocks",
+      "listing-and-primary-status",
+      "Global Market Data"
+    ],
+    "batch": 1,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "stock"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "primary-listings",
+        "label": "Primary listings",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "is_primary",
+            "operation": "equal",
+            "right": true
+          }
+        ]
+      },
+      {
+        "id": "other-listings",
+        "label": "Other supported listings",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "is_primary",
+            "operation": "equal",
+            "right": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "market-indices-index-country",
+    "slug": "market-indices-index-country",
+    "division_id": "market-indices",
+    "division": "Market indices",
+    "category_id": "index-country",
+    "category": "Country and region",
+    "scope": "benchmarks grouped by the market or region they represent",
+    "title": "Market indices: Country and region | Milled Edge",
+    "search_description": "Explore benchmarks grouped by the market or region they represent. Review the source, data timing, and category methodology; market values may be delayed a",
+    "labels": [
+      "Markets",
+      "market-indices",
+      "country-and-region",
+      "Global Market Data"
+    ],
+    "batch": 1,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "index"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "india",
+        "label": "India",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "exchange",
+            "operation": "in_range",
+            "right": [
+              "NSE",
+              "BSE"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "united-states",
+        "label": "United States",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "exchange",
+            "operation": "in_range",
+            "right": [
+              "SP",
+              "DJ",
+              "NASDAQ",
+              "CBOE"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "china",
+        "label": "China",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "exchange",
+            "operation": "in_range",
+            "right": [
+              "SSE",
+              "SZSE"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "united-kingdom",
+        "label": "United Kingdom",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "name",
+            "operation": "match",
+            "right": "FTSE"
+          }
+        ]
+      },
+      {
+        "id": "japan",
+        "label": "Japan-linked benchmarks",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "Japan"
+          }
+        ]
+      },
+      {
+        "id": "hong-kong",
+        "label": "Hong Kong",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "HSI"
+          }
+        ]
+      },
+      {
+        "id": "germany",
+        "label": "Germany",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "XETR"
+          }
+        ]
+      },
+      {
+        "id": "france",
+        "label": "France",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "name",
+            "operation": "match",
+            "right": "CAC"
+          }
+        ]
+      },
+      {
+        "id": "canada",
+        "label": "Canada",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "TSX"
+          }
+        ]
+      },
+      {
+        "id": "australia",
+        "label": "Australia",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "ASX"
+          }
+        ]
+      },
+      {
+        "id": "brazil",
+        "label": "Brazil",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "BMFBOVESPA"
+          }
+        ]
+      },
+      {
+        "id": "south-korea",
+        "label": "South Korea",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "name",
+            "operation": "match",
+            "right": "KOSPI"
+          }
+        ]
+      },
+      {
+        "id": "singapore",
+        "label": "Singapore",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "name",
+            "operation": "match",
+            "right": "STI"
+          }
+        ]
+      },
+      {
+        "id": "indonesia",
+        "label": "Indonesia",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "IDX"
+          }
+        ]
+      },
+      {
+        "id": "uae",
+        "label": "United Arab Emirates",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "DFM"
+          }
+        ]
+      },
+      {
+        "id": "saudi-arabia",
+        "label": "Saudi Arabia",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "TADAWUL"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "market-indices-index-scope",
+    "slug": "market-indices-index-scope",
+    "division_id": "market-indices",
+    "division": "Market indices",
+    "category_id": "index-scope",
+    "category": "Market scope",
+    "scope": "broad-market, sector, and other supported benchmark scopes",
+    "title": "Market indices: Market scope | Milled Edge",
+    "search_description": "Explore broad-market, sector, and other supported benchmark scopes. Review the source, data timing, and category methodology; market values may be delayed ",
+    "labels": [
+      "Markets",
+      "market-indices",
+      "market-scope",
+      "Global Market Data"
+    ],
+    "batch": 1,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "index"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "main-benchmarks",
+        "label": "Main benchmark indices",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "main"
+          }
+        ]
+      },
+      {
+        "id": "cfd-index-products",
+        "label": "CFD index products",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "cfd"
+          }
+        ]
+      },
+      {
+        "id": "crypto-market-cap",
+        "label": "Crypto market-cap indices",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "crypto"
+          }
+        ]
+      },
+      {
+        "id": "synthetic-indices",
+        "label": "Synthetic indices",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "synthetic"
+          }
+        ]
+      },
+      {
+        "id": "other-index-types",
+        "label": "Other provider index types",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "index_other"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "market-indices-index-asset-class",
+    "slug": "market-indices-index-asset-class",
+    "division_id": "market-indices",
+    "division": "Market indices",
+    "category_id": "index-asset-class",
+    "category": "Asset class",
+    "scope": "equity, bond, commodity, volatility, and other supported index classes",
+    "title": "Market indices: Asset class | Milled Edge",
+    "search_description": "Explore equity, bond, commodity, volatility, and other supported index classes. Review the source, data timing, and category methodology; market values may",
+    "labels": [
+      "Markets",
+      "market-indices",
+      "asset-class",
+      "Global Market Data"
+    ],
+    "batch": 1,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "index"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "equity-benchmarks",
+        "label": "Main market benchmarks",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "main"
+          }
+        ]
+      },
+      {
+        "id": "bond-indices",
+        "label": "Bond indices",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "bond"
+          }
+        ]
+      },
+      {
+        "id": "commodity-indices",
+        "label": "Commodity indices",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "commodity"
+          }
+        ]
+      },
+      {
+        "id": "crypto-indices",
+        "label": "Crypto capitalization indices",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "crypto"
+          }
+        ]
+      },
+      {
+        "id": "other-asset-indices",
+        "label": "Other asset indices",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "index_other"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "market-indices-index-weighting",
+    "slug": "market-indices-index-weighting",
+    "division_id": "market-indices",
+    "division": "Market indices",
+    "category_id": "index-weighting",
+    "category": "Index construction and format",
+    "scope": "provider-classified main benchmarks, CFD products, crypto-capitalization indices, synthetic indices, and other index formats",
+    "title": "Market indices: Index construction and format | Milled Edge",
+    "search_description": "Explore provider-classified main benchmarks, CFD products, crypto-capitalization indices, synthetic indices, and other index formats. Review the source, da",
+    "labels": [
+      "Markets",
+      "market-indices",
+      "index-construction-and-format",
+      "Global Market Data"
+    ],
+    "batch": 1,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "index"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "main-benchmarks",
+        "label": "Main benchmarks",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "main"
+          }
+        ]
+      },
+      {
+        "id": "cfd-products",
+        "label": "CFD index products",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "cfd"
+          }
+        ]
+      },
+      {
+        "id": "crypto-capitalization",
+        "label": "Crypto capitalization indices",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "crypto"
+          }
+        ]
+      },
+      {
+        "id": "synthetic-indices",
+        "label": "Synthetic indices",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "synthetic"
+          }
+        ]
+      },
+      {
+        "id": "other-provider-types",
+        "label": "Other provider index types",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "index_other"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "market-indices-index-provider",
+    "slug": "market-indices-index-provider",
+    "division_id": "market-indices",
+    "division": "Market indices",
+    "category_id": "index-provider",
+    "category": "Index provider and family",
+    "scope": "indices grouped by their reported provider or benchmark family",
+    "title": "Market indices: Index provider and family | Milled Edge",
+    "search_description": "Explore indices grouped by their reported provider or benchmark family. Review the source, data timing, and category methodology; market values may be dela",
+    "labels": [
+      "Markets",
+      "market-indices",
+      "index-provider-and-family",
+      "Global Market Data"
+    ],
+    "batch": 1,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "index"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "sp-dow-jones",
+        "label": "S&P Dow Jones",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "S&P"
+          }
+        ]
+      },
+      {
+        "id": "msci",
+        "label": "MSCI",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "MSCI"
+          }
+        ]
+      },
+      {
+        "id": "ftse-russell",
+        "label": "FTSE Russell",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "FTSE"
+          }
+        ]
+      },
+      {
+        "id": "nasdaq",
+        "label": "Nasdaq indices",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "Nasdaq"
+          }
+        ]
+      },
+      {
+        "id": "nifty",
+        "label": "Nifty indices",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "Nifty"
+          }
+        ]
+      },
+      {
+        "id": "nikkei",
+        "label": "Nikkei and Japan-linked benchmarks",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "Japan"
+          }
+        ]
+      },
+      {
+        "id": "other-providers",
+        "label": "Other providers",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "index"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "commodities-commodity-precious",
+    "slug": "commodities-commodity-precious",
+    "division_id": "commodities",
+    "division": "Commodities",
+    "category_id": "commodity-precious",
+    "category": "Precious metals and gemstones",
+    "scope": "gold, silver, platinum, palladium, and supported gemstone benchmarks",
+    "title": "Commodities: Precious metals and gemstones | Milled Edge",
+    "search_description": "Explore gold, silver, platinum, palladium, and supported gemstone benchmarks. Review the source, data timing, and category methodology; market values may b",
+    "labels": [
+      "Markets",
+      "commodities",
+      "precious-metals-and-gemstones",
+      "Global Market Data"
+    ],
+    "batch": 1,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "in_range",
+        "right": [
+          "futures",
+          "spot"
+        ]
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "gold",
+        "label": "Gold",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "gold"
+          }
+        ]
+      },
+      {
+        "id": "silver",
+        "label": "Silver",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "silver"
+          }
+        ]
+      },
+      {
+        "id": "platinum",
+        "label": "Platinum",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "platinum"
+          }
+        ]
+      },
+      {
+        "id": "palladium",
+        "label": "Palladium",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "palladium"
+          }
+        ]
+      },
+      {
+        "id": "diamond",
+        "label": "Diamond · where listed",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "diamond"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "commodities-commodity-base-metals",
+    "slug": "commodities-commodity-base-metals",
+    "division_id": "commodities",
+    "division": "Commodities",
+    "category_id": "commodity-base-metals",
+    "category": "Base and industrial metals",
+    "scope": "copper, aluminium, zinc, nickel, lead, and other supported metals",
+    "title": "Commodities: Base and industrial metals | Milled Edge",
+    "search_description": "Explore copper, aluminium, zinc, nickel, lead, and other supported metals. Review the source, data timing, and category methodology; market values may be d",
+    "labels": [
+      "Markets",
+      "commodities",
+      "base-and-industrial-metals",
+      "Global Market Data"
+    ],
+    "batch": 1,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "in_range",
+        "right": [
+          "futures",
+          "spot"
+        ]
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "copper",
+        "label": "Copper",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "copper"
+          }
+        ]
+      },
+      {
+        "id": "aluminium",
+        "label": "Aluminium",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "aluminium"
+          }
+        ]
+      },
+      {
+        "id": "zinc",
+        "label": "Zinc",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "zinc"
+          }
+        ]
+      },
+      {
+        "id": "nickel",
+        "label": "Nickel",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "nickel"
+          }
+        ]
+      },
+      {
+        "id": "lead",
+        "label": "Lead",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "lead"
+          }
+        ]
+      },
+      {
+        "id": "other-base-metals",
+        "label": "Other base metals",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "metal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "commodities-commodity-minerals",
+    "slug": "commodities-commodity-minerals",
+    "division_id": "commodities",
+    "division": "Commodities",
+    "category_id": "commodity-minerals",
+    "category": "Minerals and elements",
+    "scope": "iron ore, lithium, cobalt, uranium, coal, and supported mineral markets",
+    "title": "Commodities: Minerals and elements | Milled Edge",
+    "search_description": "Explore iron ore, lithium, cobalt, uranium, coal, and supported mineral markets. Review the source, data timing, and category methodology; market values ma",
+    "labels": [
+      "Markets",
+      "commodities",
+      "minerals-and-elements",
+      "Global Market Data"
+    ],
+    "batch": 1,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "in_range",
+        "right": [
+          "futures",
+          "spot"
+        ]
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "iron-ore",
+        "label": "Iron ore",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "iron ore"
+          }
+        ]
+      },
+      {
+        "id": "lithium",
+        "label": "Lithium",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "lithium"
+          }
+        ]
+      },
+      {
+        "id": "cobalt",
+        "label": "Cobalt",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "cobalt"
+          }
+        ]
+      },
+      {
+        "id": "uranium",
+        "label": "Uranium",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "uranium"
+          }
+        ]
+      },
+      {
+        "id": "coal",
+        "label": "Coal",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "coal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "commodities-commodity-gases",
+    "slug": "commodities-commodity-gases",
+    "division_id": "commodities",
+    "division": "Commodities",
+    "category_id": "commodity-gases",
+    "category": "Industrial gases and chemicals",
+    "scope": "hydrogen, nitrogen, and other instruments only when the source supplies them",
+    "title": "Commodities: Industrial gases and chemicals | Milled Edge",
+    "search_description": "Explore hydrogen, nitrogen, and other instruments only when the source supplies them. Review the source, data timing, and category methodology; market valu",
+    "labels": [
+      "Markets",
+      "commodities",
+      "industrial-gases-and-chemicals",
+      "Global Market Data"
+    ],
+    "batch": 1,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "in_range",
+        "right": [
+          "futures",
+          "spot"
+        ]
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "hydrogen",
+        "label": "Hydrogen · where listed",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "hydrogen"
+          }
+        ]
+      },
+      {
+        "id": "nitrogen",
+        "label": "Nitrogen · where listed",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "nitrogen"
+          }
+        ]
+      },
+      {
+        "id": "other-industrial-gases",
+        "label": "Other industrial gases",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "industrial gas"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "commodities-commodity-energy",
+    "slug": "commodities-commodity-energy",
+    "division_id": "commodities",
+    "division": "Commodities",
+    "category_id": "commodity-energy",
+    "category": "Energy and fuels",
+    "scope": "WTI, Brent, natural gas, gasoline, heating oil, and supported fuels",
+    "title": "Commodities: Energy and fuels | Milled Edge",
+    "search_description": "Explore WTI, Brent, natural gas, gasoline, heating oil, and supported fuels. Review the source, data timing, and category methodology; market values may be",
+    "labels": [
+      "Markets",
+      "commodities",
+      "energy-and-fuels",
+      "Global Market Data"
+    ],
+    "batch": 1,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "in_range",
+        "right": [
+          "futures",
+          "spot"
+        ]
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "wti",
+        "label": "WTI crude oil",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "WTI"
+          }
+        ]
+      },
+      {
+        "id": "brent",
+        "label": "Brent crude oil",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "Brent"
+          }
+        ]
+      },
+      {
+        "id": "natural-gas",
+        "label": "Natural gas",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "natural gas"
+          }
+        ]
+      },
+      {
+        "id": "gasoline",
+        "label": "Gasoline",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "gasoline"
+          }
+        ]
+      },
+      {
+        "id": "heating-oil",
+        "label": "Heating oil",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "heating oil"
+          }
+        ]
+      },
+      {
+        "id": "other-fuels",
+        "label": "Other fuels",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "fuel"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "commodities-commodity-grains",
+    "slug": "commodities-commodity-grains",
+    "division_id": "commodities",
+    "division": "Commodities",
+    "category_id": "commodity-grains",
+    "category": "Grains and oilseeds",
+    "scope": "wheat, corn, soybeans, rice, oats, and supported oilseed markets",
+    "title": "Commodities: Grains and oilseeds | Milled Edge",
+    "search_description": "Explore wheat, corn, soybeans, rice, oats, and supported oilseed markets. Review the source, data timing, and category methodology; market values may be de",
+    "labels": [
+      "Markets",
+      "commodities",
+      "grains-and-oilseeds",
+      "Global Market Data"
+    ],
+    "batch": 1,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "in_range",
+        "right": [
+          "futures",
+          "spot"
+        ]
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "wheat",
+        "label": "Wheat",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "wheat"
+          }
+        ]
+      },
+      {
+        "id": "corn",
+        "label": "Corn",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "corn"
+          }
+        ]
+      },
+      {
+        "id": "soybeans",
+        "label": "Soybeans",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "soybean"
+          }
+        ]
+      },
+      {
+        "id": "rice",
+        "label": "Rice",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "rice"
+          }
+        ]
+      },
+      {
+        "id": "oats",
+        "label": "Oats",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "oats"
+          }
+        ]
+      },
+      {
+        "id": "soymeal",
+        "label": "Soybean meal",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "soybean meal"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "commodities-commodity-fibres-softs",
+    "slug": "commodities-commodity-fibres-softs",
+    "division_id": "commodities",
+    "division": "Commodities",
+    "category_id": "commodity-fibres-softs",
+    "category": "Fibres and soft commodities",
+    "scope": "cotton, jute where available, sugar, coffee, cocoa, and other softs",
+    "title": "Commodities: Fibres and soft commodities | Milled Edge",
+    "search_description": "Explore cotton, jute where available, sugar, coffee, cocoa, and other softs. Review the source, data timing, and category methodology; market values may be",
+    "labels": [
+      "Markets",
+      "commodities",
+      "fibres-and-soft-commodities",
+      "Global Market Data"
+    ],
+    "batch": 1,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "in_range",
+        "right": [
+          "futures",
+          "spot"
+        ]
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "cotton",
+        "label": "Cotton",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "cotton"
+          }
+        ]
+      },
+      {
+        "id": "jute",
+        "label": "Jute · where listed",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "jute"
+          }
+        ]
+      },
+      {
+        "id": "sugar",
+        "label": "Sugar",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "sugar"
+          }
+        ]
+      },
+      {
+        "id": "coffee",
+        "label": "Coffee",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "coffee"
+          }
+        ]
+      },
+      {
+        "id": "cocoa",
+        "label": "Cocoa",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "cocoa"
+          }
+        ]
+      },
+      {
+        "id": "other-softs",
+        "label": "Other soft commodities",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "soft commodity"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "commodities-commodity-livestock",
+    "slug": "commodities-commodity-livestock",
+    "division_id": "commodities",
+    "division": "Commodities",
+    "category_id": "commodity-livestock",
+    "category": "Livestock",
+    "scope": "live cattle, lean hogs, and other supported livestock contracts",
+    "title": "Commodities: Livestock | Milled Edge",
+    "search_description": "Explore live cattle, lean hogs, and other supported livestock contracts. Review the source, data timing, and category methodology; market values may be del",
+    "labels": [
+      "Markets",
+      "commodities",
+      "livestock",
+      "Global Market Data"
+    ],
+    "batch": 1,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "in_range",
+        "right": [
+          "futures",
+          "spot"
+        ]
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "live-cattle",
+        "label": "Live cattle",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "cattle"
+          }
+        ]
+      },
+      {
+        "id": "lean-hogs",
+        "label": "Lean hogs",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "hog"
+          }
+        ]
+      },
+      {
+        "id": "other-livestock",
+        "label": "Other livestock",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "livestock"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "commodities-commodity-forestry",
+    "slug": "commodities-commodity-forestry",
+    "division_id": "commodities",
+    "division": "Commodities",
+    "category_id": "commodity-forestry",
+    "category": "Forestry and building materials",
+    "scope": "lumber and other supported forestry or building-material benchmarks",
+    "title": "Commodities: Forestry and building materials | Milled Edge",
+    "search_description": "Explore lumber and other supported forestry or building-material benchmarks. Review the source, data timing, and category methodology; market values may be",
+    "labels": [
+      "Markets",
+      "commodities",
+      "forestry-and-building-materials",
+      "Global Market Data"
+    ],
+    "batch": 1,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "in_range",
+        "right": [
+          "futures",
+          "spot"
+        ]
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "lumber",
+        "label": "Lumber",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "lumber"
+          }
+        ]
+      },
+      {
+        "id": "other-forestry",
+        "label": "Other forestry materials",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures",
+              "spot"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "forestry"
+          }
+        ]
+      }
+    ]
+  }
+]
