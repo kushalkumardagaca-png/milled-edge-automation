@@ -90,7 +90,7 @@ DIVISION_SPECS = [
         ("commodity-precious", "Precious metals and gemstones", "gold, silver, platinum, palladium, and supported gemstone benchmarks"),
         ("commodity-base-metals", "Base and industrial metals", "copper, aluminium, zinc, nickel, lead, and other supported metals"),
         ("commodity-minerals", "Minerals and elements", "iron ore, lithium, cobalt, uranium, coal, and supported mineral markets"),
-        ("commodity-gases", "Industrial gases and chemicals", "hydrogen, nitrogen, and other instruments only when the source supplies them"),
+        ("commodity-gases", "Gas and chemical futures", "gas-linked, fertilizer, and chemical futures available in the provider feed; industrial-gas coverage can be limited"),
         ("commodity-energy", "Energy and fuels", "WTI, Brent, natural gas, gasoline, heating oil, and supported fuels"),
         ("commodity-grains", "Grains and oilseeds", "wheat, corn, soybeans, rice, oats, and supported oilseed markets"),
         ("commodity-fibres-softs", "Fibres and soft commodities", "cotton, jute where available, sugar, coffee, cocoa, and other softs"),

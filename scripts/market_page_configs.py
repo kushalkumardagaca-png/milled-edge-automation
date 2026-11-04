@@ -60,9 +60,11 @@ PAGE_ROWS = {
         {"id":"small-cap","label":"Small cap · $300M–$2B","filters":[f("market_cap_basic","egreater",300_000_000),f("market_cap_basic","eless",2_000_000_000)]},
         {"id":"micro-cap","label":"Micro cap · below $300M","filters":[f("market_cap_basic","eless",300_000_000)]},
     ]),
-    "equity-stocks-share-class": ("stock", choices([
-        ("common","Common shares","common"),("preferred","Preferred shares","preferred"),
-        ("other-classes","Other share classes","other")],"subtype","match")),
+    "equity-stocks-share-class": ("stock", [
+        {"id":"common","label":"Common shares","filters":[f("subtype","match","common")]},
+        {"id":"preferred","label":"Preferred shares","filters":[f("subtype","match","preferred")]},
+        {"id":"non-primary","label":"Non-primary listings","filters":[f("is_primary","equal",False)]},
+    ]), 
     "equity-stocks-listing-status": ("stock", [
         {"id":"primary-listings","label":"Primary listings","filters":[f("is_primary","equal",True)]},
         {"id":"other-listings","label":"Other supported listings","filters":[f("is_primary","equal",False)]},
@@ -108,7 +110,7 @@ PAGE_ROWS = {
     ]),
     "market-indices-index-provider": ("index", choices([
         ("sp-dow-jones","S&P Dow Jones","S&P"),("msci","MSCI","MSCI"),("ftse-russell","FTSE Russell","FTSE"),
-        ("nasdaq","Nasdaq indices","Nasdaq"),("nifty","Nifty indices","Nifty"),
+        ("cboe","CBOE benchmarks","CBOE"),("nifty","Nifty indices","Nifty"),
         ("nikkei","Nikkei and Japan-linked benchmarks","Japan"),("other-providers","Other providers","index")],"description","match")),
     "commodities-commodity-precious": ("futures", choices([
         ("gold","Gold","gold"),("silver","Silver","silver"),("platinum","Platinum","platinum"),
@@ -120,8 +122,9 @@ PAGE_ROWS = {
         ("iron-ore","Iron ore","iron ore"),("lithium","Lithium","lithium"),("cobalt","Cobalt","cobalt"),
         ("uranium","Uranium","uranium"),("coal","Coal","coal")])),
     "commodities-commodity-gases": ("futures", choices([
-        ("hydrogen","Hydrogen · where listed","hydrogen"),("nitrogen","Nitrogen · where listed","nitrogen"),
-        ("other-industrial-gases","Other industrial gases","industrial gas")])),
+        ("natural-gas","Natural-gas contracts","natural gas"),
+        ("fertilizers","Fertilizer contracts","fertilizer"),
+        ("chemical-products","Chemical-product contracts","chemicals")])), 
     "commodities-commodity-energy": ("futures", choices([
         ("wti","WTI crude oil","WTI"),("brent","Brent crude oil","Brent"),("natural-gas","Natural gas","natural gas"),
         ("gasoline","Gasoline","gasoline"),("heating-oil","Heating oil","heating oil"),("other-fuels","Other fuels","fuel")])),
@@ -129,12 +132,12 @@ PAGE_ROWS = {
         ("wheat","Wheat","wheat"),("corn","Corn","corn"),("soybeans","Soybeans","soybean"),
         ("rice","Rice","rice"),("oats","Oats","oats"),("soymeal","Soybean meal","soybean meal")])),
     "commodities-commodity-fibres-softs": ("futures", choices([
-        ("cotton","Cotton","cotton"),("jute","Jute · where listed","jute"),("sugar","Sugar","sugar"),
-        ("coffee","Coffee","coffee"),("cocoa","Cocoa","cocoa"),("other-softs","Other soft commodities","soft commodity")])),
+        ("cotton","Cotton","cotton"),("sugar","Sugar","sugar"),
+        ("coffee","Coffee","coffee"),("cocoa","Cocoa","cocoa")])), 
     "commodities-commodity-livestock": ("futures", choices([
         ("live-cattle","Live cattle","cattle"),("lean-hogs","Lean hogs","hog"),("other-livestock","Other livestock","livestock")])),
     "commodities-commodity-forestry": ("futures", choices([
-        ("lumber","Lumber","lumber"),("other-forestry","Other forestry materials","forestry")])),
+        ("lumber","Lumber contracts","lumber")])), 
 }
 
 BASE_TYPE = {
