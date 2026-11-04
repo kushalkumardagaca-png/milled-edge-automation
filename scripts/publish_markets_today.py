@@ -83,6 +83,8 @@ def call_with_report(stage: str, fn):
         detail = f"HTTP {status}: {message}" if status else f"{type(exc).__name__}: {message}"
         safe = f"Market Today publish stage failed — {stage}: {detail}"
         print(safe, file=sys.stderr, flush=True)
+        annotation = detail.replace("%", "%25").replace("\\r", "%0D").replace("\\n", "%0A")
+        print(f"::error file=.github/workflows/publish-markets-today.yml,title=Market directory publish::{annotation}", file=sys.stderr, flush=True)
         summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
         if summary_path:
             with open(summary_path, "a", encoding="utf-8") as summary:
