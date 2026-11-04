@@ -29,8 +29,14 @@ def preflight() -> str:
     for marker in ("Top 50,000 market directory", "dywTop50000", "dywCountry", "top-50000.json", "Top-5000-Markets"):
         if marker in page:
             raise SystemExit(f"Refusing to publish: retired Top 50,000 content remains: {marker}")
-    if "dyw-instrument-track" not in page:
-        raise SystemExit("Refusing to publish: continuous instrument chooser is missing")
+    required_browse = (
+        "dyw-division-index", "dywDivisionIndex", "dywDivisionDirectory",
+        "MARKET_DIVISIONS", "dyw-ticker-viewport", "pointerdown", "pointermove",
+        "pointerup", "dywInstrumentResults", "dywCategoryList", "dywAnalysis",
+    )
+    missing = [marker for marker in required_browse if marker not in page]
+    if missing:
+        raise SystemExit("Refusing to publish: incomplete division/category browse flow: " + ", ".join(missing))
     return page
 
 
