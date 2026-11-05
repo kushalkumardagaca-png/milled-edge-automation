@@ -21,7 +21,7 @@ on:
       - 'scripts/verify_market_posts.py'
       - '.github/workflows/publish-market-category-posts.yml'
   schedule:
-    - cron: '15 12 * * *'
+    - cron: '0 14 * * *'
 
 permissions:
   contents: read
@@ -79,7 +79,9 @@ jobs:
           from datetime import datetime, timezone
           import os
           now = datetime.now(timezone.utc)
-          retry = os.environ["GITHUB_EVENT_NAME"] == "schedule" or now.date().isoformat() != "2026-11-05" or now.hour >= 12
+          event = os.environ["GITHUB_EVENT_NAME"]
+          retry_window = now.date().isoformat() != "2026-11-05" or now.hour >= 14
+          retry = retry_window and (event != "schedule" or now.date().isoformat() == "2026-11-05")
           print("publish=" + ("true" if retry else "false"))
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
               f.write("publish=" + ("true" if retry else "false") + "\n")

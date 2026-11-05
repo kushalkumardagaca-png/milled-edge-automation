@@ -199,4 +199,24 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    try:
+        raise SystemExit(main())
+    except SystemExit as exc:
+        if exc.code not in (0, None):
+            detail = str(exc)
+            for secret_name in ("GOOGLE_CLIENT_ID", "GOOGLE_CLIENT_SECRET", "GOOGLE_REFRESH_TOKEN"):
+                secret = os.environ.get(secret_name, "")
+                if secret:
+                    detail = detail.replace(secret, "[redacted]")
+            print(f"::error title=Commodity-page publishing failed::{detail}", flush=True)
+            summary("## Commodity page publish failed\n\n" + detail)
+        raise
+    except Exception as exc:
+        detail = f"{type(exc).__name__}: {exc}"
+        for secret_name in ("GOOGLE_CLIENT_ID", "GOOGLE_CLIENT_SECRET", "GOOGLE_REFRESH_TOKEN"):
+            secret = os.environ.get(secret_name, "")
+            if secret:
+                detail = detail.replace(secret, "[redacted]")
+        print(f"::error title=Commodity-page publishing failed::{detail}", flush=True)
+        summary("## Commodity page publish failed\n\n" + detail)
+        raise
