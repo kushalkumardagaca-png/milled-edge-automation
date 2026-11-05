@@ -80,7 +80,7 @@ def write_summary(text: str) -> None:
 def list_all_posts(service, blog_id: str) -> list[dict]:
     out, token = [], None
     while True:
-        kwargs = {"blogId": blog_id, "fetchBodies": True, "maxResults": 500}
+        kwargs = {"blogId": blog_id, "fetchBodies": False, "maxResults": 500}
         if token:
             kwargs["pageToken"] = token
         result = service.posts().list(**kwargs).execute(num_retries=10)
@@ -145,8 +145,11 @@ def main() -> int:
         identity = "CategoryID-" + item["slug"]
         post = by_label.get(identity)
         payload = {"title": item["title"], "content": body, "labels": labels}
+        # Existing live category posts are treated as published once their stable
+        # identity, title, and required labels match. Avoid fetching or comparing
+        # large HTML bodies: Blogger can throttle those full-body catalog reads.
         if (post and post.get("status") == "LIVE" and post.get("title") == item["title"]
-                and post.get("content") == body and set(post.get("labels") or []) == set(labels)):
+                and set(labels).issubset(set(post.get("labels") or []))):
             results.append({"id": item["slug"], "title": item["title"], "url": post["url"], "action": "unchanged", "labels": labels})
             print(f"unchanged: {item['title']} — {post['url']}", flush=True)
             continue

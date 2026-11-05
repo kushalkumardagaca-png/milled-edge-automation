@@ -20,6 +20,7 @@ on:
 
 permissions:
   contents: read
+  actions: write
 
 jobs:
   publish-batches-2-through-5:
@@ -39,6 +40,33 @@ jobs:
             python scripts/build_market_posts.py --batch "$batch" --publication-date
             python scripts/publish_market_posts.py --batch "$batch" --dry-run
           done
+      - name: Cancel stalled attempt and wait for it to stop
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json, os, time, urllib.error, urllib.request
+          run_id = "41942337869"
+          base = f"https://api.github.com/repos/{os.environ['GITHUB_REPOSITORY']}/actions/runs/{run_id}"
+          headers = {"Accept": "application/vnd.github+json", "Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}", "X-GitHub-Api-Version": "2022-11-28"}
+          def get_run():
+              req = urllib.request.Request(base, headers=headers)
+              return json.load(urllib.request.urlopen(req, timeout=20))
+          current = get_run()
+          if current["status"] != "completed":
+              req = urllib.request.Request(base + "/cancel", headers=headers, method="POST")
+              try:
+                  urllib.request.urlopen(req, timeout=20).read()
+              except urllib.error.HTTPError as exc:
+                  if exc.code not in (409, 422): raise
+              for _ in range(36):
+                  time.sleep(5)
+                  current = get_run()
+                  if current["status"] == "completed": break
+              else:
+                  raise SystemExit("Previous publication attempt did not stop within three minutes; refusing concurrent publishing.")
+          print("Previous run status:", current["status"], current.get("conclusion"))
+          PY
       - name: Publish and publicly verify batches 2 through 5
         env:
           GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
