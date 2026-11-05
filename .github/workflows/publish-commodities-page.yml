@@ -43,7 +43,7 @@ jobs:
           now = datetime.now(timezone.utc)
           event = os.environ['GITHUB_EVENT_NAME']
           is_retry_window = now.date().isoformat() != '2026-11-05' or now.hour >= 12
-          publish = is_retry_window and (event != 'schedule' or now.date().isoformat() == '2026-11-05')
+          publish = event != 'schedule' or (is_retry_window and now.date().isoformat() == '2026-11-05')
           print('publish=' + ('true' if publish else 'false'))
           with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as f:
               f.write('publish=' + ('true' if publish else 'false') + '\n')

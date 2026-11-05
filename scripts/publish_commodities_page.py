@@ -42,8 +42,15 @@ def preflight() -> tuple[str, dict, dict[str, str]]:
     catalog = json.loads(CATALOG_PATH.read_text(encoding="utf-8"))
     if len(data.get("items", [])) != 55:
         raise SystemExit("Refusing to publish: expected 55 commodity-only benchmark rows.")
-    if "me-commodity-page" not in body or "me-c-item" not in body or "World Bank" not in body:
-        raise SystemExit("Refusing to publish: required commodity page sections or source disclosure are missing.")
+    required_markers = (
+        "me-commodity-page", "me-c-item", "me-c-topic-labels", "me-c-faq",
+        "World Bank", "schema.org", "spatialCoverage", "canonical",
+        "m.description", "Country / location", "Formal series", "Common name",
+        "PHYSICAL COMMODITY PRICE BENCHMARK", "No exchange ticker assigned",
+    )
+    missing = [marker for marker in required_markers if marker.casefold() not in body.casefold()]
+    if missing:
+        raise SystemExit("Refusing to publish: SEO/GEO/content preflight markers are missing: " + ", ".join(missing))
     if "#meMarketPanel" in body or "CategoryID-commodities-" in body:
         raise SystemExit("Refusing to publish a commodity page containing theme/category-menu wiring.")
     titles = {x["slug"]: x["title"] for x in catalog if x.get("slug") in EXPECTED_SLUGS}

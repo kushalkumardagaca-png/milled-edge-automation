@@ -5,392 +5,677 @@
   "monthly_file_url": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Monthly.xlsx",
   "release_date": "2026-11-03",
   "price_month": "October 2026",
-  "note": "Monthly physical-commodity benchmark averages; not live quotes or retail prices. Each series has its own grade, geography and delivery basis. Explicit futures/forward-month series, commodity indexes, and financial securities are excluded.",
+  "note": "Monthly physical-commodity benchmark averages; not live quotes or retail prices. Each series has its own grade, geography and delivery basis. Explicit futures/forward-month series, broad aggregate commodity indexes, and financial securities are excluded.",
   "items": [
     {
       "name": "Gold",
       "value": 4105,
       "unit": "USD / troy oz",
       "basis": "Spot average of daily rates; pure gold benchmark.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Gold — Spot average of daily rates; pure gold benchmark.",
+      "common_name": "Gold",
+      "location": "Global — spot average benchmark",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Silver",
       "value": 57.0,
       "unit": "USD / troy oz",
       "basis": "99.9% refined silver; London afternoon fixing.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Silver — 99.9% refined silver; London afternoon fixing.",
+      "common_name": "Silver",
+      "location": "United Kingdom — London afternoon fixing",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Platinum",
       "value": 1621,
       "unit": "USD / troy oz",
       "basis": "99.95% minimum purity; spot average of daily rates.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Platinum — 99.95% minimum purity; spot average of daily rates.",
+      "common_name": "Platinum",
+      "location": "Global — spot average benchmark",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Crude oil — average",
       "value": 108.5,
       "unit": "USD / barrel",
       "basis": "Equal-weight average of Brent, Dubai and West Texas Intermediate.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Crude oil — average — Equal-weight average of Brent, Dubai and West Texas Intermediate.",
+      "common_name": "Crude oil",
+      "location": "Global — equal-weight Brent, Dubai and WTI average",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Crude oil — Brent",
       "value": 125.0,
       "unit": "USD / barrel",
       "basis": "U.K. Brent, 38° API physical crude benchmark.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Crude oil — Brent — U.K. Brent, 38° API physical crude benchmark.",
+      "common_name": "Crude oil",
+      "location": "North Sea / United Kingdom — Brent 38° API",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Crude oil — Dubai",
       "value": 102.7,
       "unit": "USD / barrel",
       "basis": "Dubai Fateh, 32° API physical crude benchmark.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Crude oil — Dubai — Dubai Fateh, 32° API physical crude benchmark.",
+      "common_name": "Crude oil",
+      "location": "United Arab Emirates — Dubai Fateh 32° API",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Crude oil — WTI",
       "value": 97.7,
       "unit": "USD / barrel",
       "basis": "West Texas Intermediate, 40° API physical crude benchmark.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Crude oil — WTI — West Texas Intermediate, 40° API physical crude benchmark.",
+      "common_name": "Crude oil",
+      "location": "United States — West Texas Intermediate 40° API",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Natural gas — United States",
       "value": 2.96,
       "unit": "USD / MMBtu",
       "basis": "Spot price at Henry Hub, Louisiana.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Natural gas — United States — Spot price at Henry Hub, Louisiana.",
+      "common_name": "Natural gas",
+      "location": "United States — Henry Hub, Louisiana",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Liquefied natural gas — Japan",
       "value": 16.59,
       "unit": "USD / MMBtu",
       "basis": "Japan LNG import price, CIF; latest monthly values are estimates.",
-      "status": "estimated"
+      "status": "estimated",
+      "formal_name": "Liquefied natural gas — Japan — Japan LNG import price, CIF; latest monthly values are estimates.",
+      "common_name": "Liquefied natural gas",
+      "location": "Japan — LNG import price, CIF",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Tea — average",
       "value": 2.88,
       "unit": "USD / kg",
       "basis": "Arithmetic average of Kolkata, Colombo and Mombasa/Nairobi auction quotations.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Tea — average — Arithmetic average of Kolkata, Colombo and Mombasa/Nairobi auction quotations.",
+      "common_name": "Tea",
+      "location": "Sri Lanka / India / Kenya — auction quotations",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Tea — Colombo",
       "value": 3.75,
       "unit": "USD / kg",
       "basis": "Sri Lankan origin; all tea; average weekly quotes.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Tea — Colombo — Sri Lankan origin; all tea; average weekly quotes.",
+      "common_name": "Tea",
+      "location": "Sri Lanka — Colombo tea auctions",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Tea — Kolkata",
       "value": 2.55,
       "unit": "USD / kg",
       "basis": "Leaf tea including excise duty; average weekly quotes.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Tea — Kolkata — Leaf tea including excise duty; average weekly quotes.",
+      "common_name": "Tea",
+      "location": "India — Kolkata tea quotations",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Tea — Mombasa",
       "value": 2.33,
       "unit": "USD / kg",
       "basis": "African origin; all tea; average weekly quotes.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Tea — Mombasa — African origin; all tea; average weekly quotes.",
+      "common_name": "Tea",
+      "location": "Kenya — Mombasa/Nairobi tea auctions",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Coconut oil",
       "value": 2029,
       "unit": "USD / metric tonne",
       "basis": "CFR Northwest Europe.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Coconut oil — CFR Northwest Europe.",
+      "common_name": "Coconut oil",
+      "location": "Northwest Europe — CFR import benchmark",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Fish meal",
       "value": 2840,
       "unit": "USD / metric tonne",
       "basis": "Herring fishmeal, 64% protein, FOB North Germany.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Fish meal — Herring fishmeal, 64% protein, FOB North Germany.",
+      "common_name": "Fish meal",
+      "location": "Germany — FOB North Germany",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Groundnuts",
       "value": 1600,
       "unit": "USD / metric tonne",
       "basis": "U.S. 40/50 runners, CFR Northwest Europe.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Groundnuts — U.S. 40/50 runners, CFR Northwest Europe.",
+      "common_name": "Groundnuts",
+      "location": "United States origin — CFR Northwest Europe",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Groundnut oil",
       "value": 1850,
       "unit": "USD / metric tonne",
       "basis": "Indian groundnut oil, refined, EXW.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Groundnut oil — Indian groundnut oil, refined, EXW.",
+      "common_name": "Groundnut oil",
+      "location": "India — refined, ex-works",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Palm oil",
       "value": 1120,
       "unit": "USD / metric tonne",
       "basis": "Malaysia crude RBD benchmark.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Palm oil — Malaysia crude RBD benchmark.",
+      "common_name": "Palm oil",
+      "location": "Malaysia — crude RBD benchmark",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Palm-kernel oil",
       "value": 2287,
       "unit": "USD / metric tonne",
       "basis": "Malaysia/Indonesia crude, CIF Rotterdam.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Palm-kernel oil — Malaysia/Indonesia crude, CIF Rotterdam.",
+      "common_name": "Palm-kernel oil",
+      "location": "Malaysia / Indonesia — CIF Rotterdam",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Soybean meal",
       "value": 453,
       "unit": "USD / metric tonne",
       "basis": "U.S. 48% protein, FOB Rotterdam.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Soybean meal — U.S. 48% protein, FOB Rotterdam.",
+      "common_name": "Soybean meal",
+      "location": "United States origin — FOB Rotterdam",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Soybean oil",
       "value": 1546,
       "unit": "USD / metric tonne",
       "basis": "U.S. crude degummed, FOB U.S. Gulf.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Soybean oil — U.S. crude degummed, FOB U.S. Gulf.",
+      "common_name": "Soybean oil",
+      "location": "United States — FOB U.S. Gulf",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Soybeans",
       "value": 515,
       "unit": "USD / metric tonne",
       "basis": "U.S. soybeans, FOB U.S. Gulf.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Soybeans — U.S. soybeans, FOB U.S. Gulf.",
+      "common_name": "Soybeans",
+      "location": "United States — FOB U.S. Gulf",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Maize",
       "value": 226.5,
       "unit": "USD / metric tonne",
       "basis": "U.S. No. 2 yellow, FOB U.S. Gulf ports.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Maize — U.S. No. 2 yellow, FOB U.S. Gulf ports.",
+      "common_name": "Maize",
+      "location": "United States — FOB U.S. Gulf ports",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Rice — Thailand 5% broken",
       "value": 489,
       "unit": "USD / metric tonne",
       "basis": "White rice, milled; indicative export price, FOB Bangkok.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Rice — Thailand 5% broken — White rice, milled; indicative export price, FOB Bangkok.",
+      "common_name": "Rice",
+      "location": "Thailand — FOB Bangkok",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Rice — Thailand 25% broken",
       "value": 472,
       "unit": "USD / metric tonne",
       "basis": "White rice, milled; indicative export price, FOB Bangkok.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Rice — Thailand 25% broken — White rice, milled; indicative export price, FOB Bangkok.",
+      "common_name": "Rice",
+      "location": "Thailand — FOB Bangkok",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Rice — Thailand A1",
       "value": 467.4,
       "unit": "USD / metric tonne",
       "basis": "Thai A1 Super rice, government standard, FOB Bangkok.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Rice — Thailand A1 — Thai A1 Super rice, government standard, FOB Bangkok.",
+      "common_name": "Rice",
+      "location": "Thailand — FOB Bangkok",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Rice — Vietnam 5% broken",
       "value": 413.9,
       "unit": "USD / metric tonne",
       "basis": "White rice, milled; indicative export price, FOB Hanoi.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Rice — Vietnam 5% broken — White rice, milled; indicative export price, FOB Hanoi.",
+      "common_name": "Rice",
+      "location": "Vietnam — FOB Hanoi",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Wheat — U.S. hard red winter",
       "value": 317,
       "unit": "USD / metric tonne",
       "basis": "No. 2 hard red winter export price, U.S. Gulf.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Wheat — U.S. hard red winter — No. 2 hard red winter export price, U.S. Gulf.",
+      "common_name": "Wheat",
+      "location": "United States — export price, U.S. Gulf",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Wheat — U.S. soft red winter",
       "value": 260.3,
       "unit": "USD / metric tonne",
       "basis": "No. 2 soft red winter export price, delivered U.S. Gulf.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Wheat — U.S. soft red winter — No. 2 soft red winter export price, delivered U.S. Gulf.",
+      "common_name": "Wheat",
+      "location": "United States — delivered U.S. Gulf",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Bananas — European Union",
       "value": 1.1,
       "unit": "USD / kg",
       "basis": "Central and South American origin; Southern Europe wholesale/import benchmark.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Bananas — European Union — Central and South American origin; Southern Europe wholesale/import benchmark.",
+      "common_name": "Bananas",
+      "location": "Central / South America origin — Southern Europe",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Bananas — United States",
       "value": 1.18,
       "unit": "USD / kg",
       "basis": "Central and South American origin; U.S. Gulf wholesale/import benchmark.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Bananas — United States — Central and South American origin; U.S. Gulf wholesale/import benchmark.",
+      "common_name": "Bananas",
+      "location": "Central / South America origin — U.S. Gulf ports",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Beef",
       "value": 6.83,
       "unit": "USD / kg",
       "basis": "New Zealand 90% chemical-lean beef, CIF U.S. import benchmark.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Beef — New Zealand 90% chemical-lean beef, CIF U.S. import benchmark.",
+      "common_name": "Beef",
+      "location": "New Zealand origin — CIF U.S. import",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Chicken",
       "value": 1.84,
       "unit": "USD / kg",
       "basis": "Frozen chicken consolidated wholesale price, São Paulo State, Brazil.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Chicken — Frozen chicken consolidated wholesale price, São Paulo State, Brazil.",
+      "common_name": "Chicken",
+      "location": "Brazil — São Paulo State wholesale",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Lamb",
       "value": 7.48,
       "unit": "USD / kg",
       "basis": "New Zealand frozen lamb cuts, CIF China import benchmark.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Lamb — New Zealand frozen lamb cuts, CIF China import benchmark.",
+      "common_name": "Lamb",
+      "location": "New Zealand origin — CIF China import",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Oranges",
       "value": 0.75,
       "unit": "USD / kg",
       "basis": "Mediterranean navel oranges, CIF Paris import benchmark.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Oranges — Mediterranean navel oranges, CIF Paris import benchmark.",
+      "common_name": "Oranges",
+      "location": "Mediterranean origin — CIF Paris",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Sugar — European Union",
       "value": 0.37,
       "unit": "USD / kg",
       "basis": "Raw sugar import benchmark, CIF European ports.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Sugar — European Union — Raw sugar import benchmark, CIF European ports.",
+      "common_name": "Sugar",
+      "location": "European Union — raw sugar import, CIF",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Sugar — world",
       "value": 0.43,
       "unit": "USD / kg",
       "basis": "International Sugar Agreement daily raw-sugar price, FOB Caribbean ports.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Sugar — world — International Sugar Agreement daily raw-sugar price, FOB Caribbean ports.",
+      "common_name": "Sugar",
+      "location": "Greater Caribbean — raw sugar export benchmark",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Logs — Africa",
       "value": 392.1,
       "unit": "USD / cubic metre",
       "basis": "Sapele, high quality, FOB Douala, Cameroon.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Logs — Africa — Sapele, high quality, FOB Douala, Cameroon.",
+      "common_name": "Logs",
+      "location": "Cameroon — FOB Douala, sapele",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Logs — Southeast Asia",
       "value": 188.5,
       "unit": "USD / cubic metre",
       "basis": "Meranti; importers’ Tokyo sale-price benchmark.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Logs — Southeast Asia — Meranti; importers’ Tokyo sale-price benchmark.",
+      "common_name": "Logs",
+      "location": "Southeast Asian origin — Tokyo import market",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Plywood",
       "value": 345.8,
       "unit": "US cents / sheet",
       "basis": "Lauan, 3-ply; spot Tokyo benchmark.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Plywood — Lauan, 3-ply; spot Tokyo benchmark.",
+      "common_name": "Plywood",
+      "location": "Japan — spot Tokyo market",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Sawnwood — Africa",
       "value": 636.8,
       "unit": "USD / cubic metre",
       "basis": "Sapele, FOB Cameroonian ports.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Sawnwood — Africa — Sapele, FOB Cameroonian ports.",
+      "common_name": "Sawnwood",
+      "location": "Cameroon — sapele, FOB ports",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Sawnwood — Southeast Asia",
       "value": 724.3,
       "unit": "USD / cubic metre",
       "basis": "Meranti, C&F U.K. ports.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Sawnwood — Southeast Asia — Meranti, C&F U.K. ports.",
+      "common_name": "Sawnwood",
+      "location": "Southeast Asian origin — C&F U.K. ports",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Cotton",
       "value": 2.0,
       "unit": "USD / kg",
       "basis": "Cotlook A physical cotton price benchmark; middling 1-3/32 inch, Far East C/F.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Cotton — Cotlook A physical cotton price benchmark; middling 1-3/32 inch, Far East C/F.",
+      "common_name": "Cotton",
+      "location": "Far East — Cotlook A physical cotton benchmark",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "DAP fertilizer",
       "value": 803.1,
       "unit": "USD / metric tonne",
       "basis": "Diammonium phosphate, spot, FOB U.S. Gulf.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "DAP fertilizer — Diammonium phosphate, spot, FOB U.S. Gulf.",
+      "common_name": "DAP fertilizer",
+      "location": "United States — spot, FOB U.S. Gulf",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Phosphate rock",
       "value": 170,
       "unit": "USD / metric tonne",
       "basis": "FOB North Africa.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Phosphate rock — FOB North Africa.",
+      "common_name": "Phosphate rock",
+      "location": "North Africa — FOB",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Potassium chloride fertilizer",
       "value": 357.5,
       "unit": "USD / metric tonne",
       "basis": "Granular potash, spot, CFR Brazil.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Potassium chloride fertilizer — Granular potash, spot, CFR Brazil.",
+      "common_name": "Potassium chloride fertilizer",
+      "location": "Brazil — spot, CFR",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "TSP fertilizer",
       "value": 692,
       "unit": "USD / metric tonne",
       "basis": "Triple superphosphate, spot import price, U.S. Gulf.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "TSP fertilizer — Triple superphosphate, spot import price, U.S. Gulf.",
+      "common_name": "TSP fertilizer",
+      "location": "United States — spot import, U.S. Gulf",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Urea fertilizer — Eastern Europe",
       "value": 420,
       "unit": "USD / metric tonne",
       "basis": "Prill urea, spot, FOB Middle East.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Urea fertilizer — Eastern Europe — Prill urea, spot, FOB Middle East.",
+      "common_name": "Urea fertilizer",
+      "location": "Middle East — prill urea, spot FOB",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Aluminum",
       "value": 3061,
       "unit": "USD / metric tonne",
       "basis": "Primary high-grade ingot; LME physical-settlement benchmark.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Aluminum — Primary high-grade ingot; LME physical-settlement benchmark.",
+      "common_name": "Aluminum",
+      "location": "Global benchmark — LME physical settlement",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Copper",
       "value": 14508,
       "unit": "USD / metric tonne",
       "basis": "Grade A cathodes/wire bar; LME physical-settlement benchmark.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Copper — Grade A cathodes/wire bar; LME physical-settlement benchmark.",
+      "common_name": "Copper",
+      "location": "Global benchmark — LME physical settlement",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Iron ore",
       "value": 90.8,
       "unit": "USD / dry metric tonne",
       "basis": "62% Fe fines, spot price, CFR China.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Iron ore — 62% Fe fines, spot price, CFR China.",
+      "common_name": "Iron ore",
+      "location": "China — 62% Fe fines, spot CFR",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Lead",
       "value": 1860,
       "unit": "USD / metric tonne",
       "basis": "Refined high-grade lead; LME physical-settlement benchmark.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Lead — Refined high-grade lead; LME physical-settlement benchmark.",
+      "common_name": "Lead",
+      "location": "Global benchmark — LME physical settlement",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Nickel",
       "value": 15436,
       "unit": "USD / metric tonne",
       "basis": "High-grade nickel cathodes; LME physical-settlement benchmark.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Nickel — High-grade nickel cathodes; LME physical-settlement benchmark.",
+      "common_name": "Nickel",
+      "location": "Global benchmark — LME physical settlement",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Tin",
       "value": 51696,
       "unit": "USD / metric tonne",
       "basis": "Refined tin; LME physical-settlement benchmark.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Tin — Refined tin; LME physical-settlement benchmark.",
+      "common_name": "Tin",
+      "location": "Global benchmark — LME physical settlement",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     },
     {
       "name": "Zinc",
       "value": 3818,
       "unit": "USD / metric tonne",
       "basis": "Refined special high-grade zinc; LME physical-settlement benchmark.",
-      "status": "reported"
+      "status": "reported",
+      "formal_name": "Zinc — Refined special high-grade zinc; LME physical-settlement benchmark.",
+      "common_name": "Zinc",
+      "location": "Global benchmark — LME physical settlement",
+      "series_type": "PHYSICAL COMMODITY PRICE BENCHMARK",
+      "symbol": "No exchange ticker assigned"
     }
-  ]
+  ],
+  "meta_description": "Browse 55 physical commodity price benchmarks, including gold and silver. October 2026 monthly averages with grade, unit, source basis and location disclosed.",
+  "topic_labels": [
+    "Commodities",
+    "Gold prices",
+    "Silver prices",
+    "Physical commodity prices",
+    "World Bank Pink Sheet",
+    "Monthly commodity benchmarks"
+  ],
+  "geo_summary": "Global benchmark coverage; each series states its country, market location, grade or delivery basis."
 }
