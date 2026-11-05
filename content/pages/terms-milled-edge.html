@@ -463,6 +463,66 @@
 #meDoc .md-social-link:focus-visible{outline:3px solid rgba(188,91,51,.35);outline-offset:3px}
 @media(max-width:640px){#meDoc .md-social-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}#meDoc .md-social-link{padding:10px 11px;font-size:13px}}
 @media(prefers-reduced-motion:reduce){#meDoc .md-social-link{transition:none}#meDoc .md-social-link:hover,#meDoc .md-social-link:focus-visible{transform:none}}
+
+/* ============================================================
+   MILLED EDGE · table desk
+   A designed replacement for the bare .md-table look: a copper
+   rule under the head, banded rows, hairline dividers that draw
+   themselves in, a hover lift, and a full-width container so the
+   table uses every pixel of the article column.
+   Added 2026-11-05.
+   ============================================================ */
+#meDoc .md-tablewrap{position:relative;width:100%!important;max-width:100%!important;
+  margin:22px 0 6px;padding:0;border:1px solid rgba(188,91,51,.22);border-radius:16px;
+  background:linear-gradient(180deg,#FFFDF9,#FCF7EF);
+  box-shadow:0 18px 44px -34px rgba(36,22,16,.5),0 1px 0 #fff inset;
+  overflow:auto;-webkit-overflow-scrolling:touch}
+#meDoc .md-tablewrap::before{content:"";position:absolute;inset:0 0 auto;height:3px;
+  background:linear-gradient(90deg,#BC5B33,#E8B469 60%,#D9A05B);opacity:.9;pointer-events:none}
+
+#meDoc table.md-table{width:100%!important;max-width:100%!important;min-width:0!important;
+  table-layout:fixed!important;border-collapse:separate;border-spacing:0;
+  font:400 13.5px/1.6 Inter,Arial,sans-serif;color:#3C2A1E}
+
+/* head: uppercase tracked labels sitting on a copper rule */
+#meDoc table.md-table thead th{position:sticky;top:0;z-index:2;text-align:left;
+  padding:15px 18px 13px;background:linear-gradient(180deg,#FBF3E7,#F7EDDD);
+  border-bottom:2px solid rgba(188,91,51,.45);
+  font:700 9.5px/1.3 Inter,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#7A4A2C;
+  white-space:normal}
+#meDoc table.md-table thead th:not(:last-child){border-right:1px solid rgba(188,91,51,.12)}
+
+/* body rows: banding + a divider that animates in from the left */
+#meDoc table.md-table tbody td{padding:14px 18px;vertical-align:top;
+  border-bottom:1px solid #F1E5D4;overflow-wrap:anywhere;position:relative;
+  transition:background .25s ease,box-shadow .25s ease,transform .25s ease}
+#meDoc table.md-table tbody tr:nth-child(even) td{background:rgba(250,243,231,.55)}
+#meDoc table.md-table tbody tr:last-child td{border-bottom:0}
+#meDoc table.md-table tbody td:first-child{font-weight:600;color:#241610}
+#meDoc table.md-table tbody td:not(:last-child){border-right:1px solid rgba(188,91,51,.07)}
+
+/* row hover: the row lifts and a copper edge appears on the left */
+#meDoc table.md-table tbody tr{transition:transform .28s cubic-bezier(.2,.72,.18,1)}
+#meDoc table.md-table tbody tr:hover td{background:linear-gradient(90deg,rgba(188,91,51,.10),rgba(232,180,105,.10) 55%,rgba(232,180,105,0))}
+#meDoc table.md-table tbody tr:hover td:first-child{box-shadow:inset 3px 0 0 #BC5B33}
+
+/* the reveal: rows fade up once the desk is on screen */
+html.arena-motion-ready #meDoc table.md-table tbody tr,
+html.arena-motion-ready #meDoc table.md-table thead tr{opacity:0;transform:translate3d(0,10px,0)}
+html.arena-motion-ready #meDoc table.md-table.is-in tbody tr,
+html.arena-motion-ready #meDoc table.md-table.is-in thead tr{
+  opacity:1;transform:none;transition:opacity .5s ease,transform .5s cubic-bezier(.2,.72,.18,1);
+  transition-delay:calc(var(--r,0) * 45ms)}
+@media (prefers-reduced-motion:reduce){
+  html.arena-motion-ready #meDoc table.md-table tbody tr,
+  html.arena-motion-ready #meDoc table.md-table thead tr{opacity:1;transform:none}
+  #meDoc table.md-table tbody tr{transition:none}
+}
+@media (max-width:640px){
+  #meDoc table.md-table{font-size:12.6px}
+  #meDoc table.md-table thead th{padding:12px 12px 10px;letter-spacing:.1em}
+  #meDoc table.md-table tbody td{padding:11px 12px}
+}
 </style><style id="meNoNavLayoutFix">
 /* no-nav layout fix: the Contents rail is gone, so the article owns the full row */
 .me-doc .md-grid{grid-template-columns:minmax(0,1fr)!important}
@@ -629,6 +689,32 @@ if(rt){
   },{rootMargin:'0px 0px -8% 0px',threshold:.06});
   blocks.forEach(function(b){ io.observe(b); });
 })();
+
+/* the table desk: rows rise in once, with a small stagger, and only when the
+   reader has not asked for reduced motion. Numbers the rows for the delay. */
+(function(){
+  var tables=[].slice.call(root.querySelectorAll('table.md-table'));
+  if(!tables.length) return;
+  var reduce=false;
+  try{ reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches; }catch(e){}
+  tables.forEach(function(t){
+    [].slice.call(t.querySelectorAll('thead tr, tbody tr')).forEach(function(tr,i){
+      tr.style.setProperty('--r', String(i));
+    });
+  });
+  if(reduce||!('IntersectionObserver' in window)){
+    tables.forEach(function(t){ t.classList.add('is-in'); });
+    return;
+  }
+  document.documentElement.classList.add('arena-motion-ready');
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){ en.target.classList.add('is-in'); io.unobserve(en.target); }
+    });
+  },{rootMargin:'0px 0px -6% 0px',threshold:.08});
+  tables.forEach(function(t){ io.observe(t); });
+})();
+
 })();
 //]]>
 </script>
