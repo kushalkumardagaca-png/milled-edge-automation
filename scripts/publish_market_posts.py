@@ -16,6 +16,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 POST_ROOT = ROOT / "content" / "market-posts"
 BATCH_SIZES = {1:20, 2:20, 3:22, 4:22, 5:20}
+WRITE_DELAY_SECONDS = 6
 
 
 def load_catalog(batch: int) -> list[dict]:
@@ -82,7 +83,7 @@ def list_all_posts(service, blog_id: str) -> list[dict]:
         kwargs = {"blogId": blog_id, "fetchBodies": True, "maxResults": 500}
         if token:
             kwargs["pageToken"] = token
-        result = service.posts().list(**kwargs).execute()
+        result = service.posts().list(**kwargs).execute(num_retries=10)
         out.extend(result.get("items", []))
         token = result.get("nextPageToken")
         if not token:
@@ -150,12 +151,12 @@ def main() -> int:
             continue
         try:
             if post:
-                saved = service.posts().patch(blogId=blog["id"], postId=post["id"], body=payload).execute(num_retries=5)
+                saved = service.posts().patch(blogId=blog["id"], postId=post["id"], body=payload).execute(num_retries=10)
                 action = "updated"
                 if saved.get("status") == "DRAFT":
-                    saved = service.posts().publish(blogId=blog["id"], postId=post["id"]).execute(num_retries=5)
+                    saved = service.posts().publish(blogId=blog["id"], postId=post["id"]).execute(num_retries=10)
             else:
-                saved = service.posts().insert(blogId=blog["id"], body=payload, isDraft=False).execute(num_retries=5)
+                saved = service.posts().insert(blogId=blog["id"], body=payload, isDraft=False).execute(num_retries=10)
                 # Pace writes so a batch retry after a transient Blogger quota response remains gentle.
                 action = "created"
             if not saved.get("url") or not saved.get("id"):
@@ -166,7 +167,7 @@ def main() -> int:
             failures.append({"id": item["slug"], "error": f"{type(exc).__name__}: {exc}"})
             print(f"FAILED: {item['slug']} — {type(exc).__name__}: {exc}", file=sys.stderr, flush=True)
         finally:
-            time.sleep(1.5)
+            time.sleep(WRITE_DELAY_SECONDS)
 
     if failures:
         for failure in failures:
