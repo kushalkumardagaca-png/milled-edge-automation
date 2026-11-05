@@ -15,6 +15,7 @@ on:
       - 'scripts/market_page_configs.py'
       - 'scripts/build_market_posts.py'
       - 'scripts/publish_market_posts.py'
+      - 'scripts/verify_market_posts.py'
       - '.github/workflows/publish-market-category-posts.yml'
 
 permissions:
@@ -46,5 +47,7 @@ jobs:
         run: |
           set -euo pipefail
           for batch in 2 3 4 5; do
-            python scripts/publish_market_posts.py --batch "$batch" --confirm PUBLISH
+            python scripts/publish_market_posts.py --batch "$batch" --confirm PUBLISH --allow-public-check-pending
           done
+      - name: Verify all 104 public category URLs and post features
+        run: python scripts/verify_market_posts.py --batches 2,3,4,5
