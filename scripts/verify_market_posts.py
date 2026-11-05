@@ -12,6 +12,17 @@ ROOT = Path(__file__).resolve().parent.parent
 POST_ROOT = ROOT / "content" / "market-posts"
 BLOG_URL = "https://millededgeindia.blogspot.com"
 FEED_URL = BLOG_URL + "/feeds/posts/default/-/MarketCategoryPost?alt=json&max-results=18&start-index={}"
+RETIRED_COMMODITY_IDS = {
+    "commodities-commodity-precious",
+    "commodities-commodity-base-metals",
+    "commodities-commodity-minerals",
+    "commodities-commodity-gases",
+    "commodities-commodity-energy",
+    "commodities-commodity-grains",
+    "commodities-commodity-fibres-softs",
+    "commodities-commodity-livestock",
+    "commodities-commodity-forestry",
+}
 REQUIRED = ("dyw-post-lane", "dywAnalysis", "dywCompareOne", "dywCompareTwo", "application/ld+json")
 
 
@@ -61,7 +72,8 @@ def main() -> int:
     for batch in batches:
         catalog_path = POST_ROOT / f"batch-{batch}-catalog.json"
         for item in json.loads(catalog_path.read_text(encoding="utf-8")):
-            expected[item["slug"]] = item
+            if item["slug"] not in RETIRED_COMMODITY_IDS:
+                expected[item["slug"]] = item
     entries = get_feed_entries()
     live: dict[str, dict] = {}
     duplicates = []
@@ -90,15 +102,16 @@ def main() -> int:
     with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
         outcomes = list(pool.map(lambda x: (x[0], x[1], *inspect(x[1])), targets))
     failures = [{"id": slug, "url": url, "detail": detail} for slug, url, ok, detail in outcomes if not ok]
-    report = {"expected": len(expected), "live_category_posts": len(live), "verified_target_posts": sum(ok for _, _, ok, _ in outcomes), "missing": missing, "duplicate_ids": sorted(set(duplicates)), "title_mismatches": wrong_titles, "url_failures": failures}
+    retired_still_live = sorted(set(live) & RETIRED_COMMODITY_IDS)
+    report = {"expected": len(expected), "live_category_posts": len(live), "verified_target_posts": sum(ok for _, _, ok, _ in outcomes), "missing": missing, "retired_commodity_posts_still_live": retired_still_live, "duplicate_ids": sorted(set(duplicates)), "title_mismatches": wrong_titles, "url_failures": failures}
     print(json.dumps(report, indent=2, ensure_ascii=False))
-    if unexpected_missing or duplicates or wrong_titles or failures or len(targets) != len(expected) - len(permitted_pending):
+    if unexpected_missing or retired_still_live or duplicates or wrong_titles or failures or len(targets) != len(expected) - len(permitted_pending):
         raise SystemExit("Final public verification failed; retain all existing navigation and pages.")
-    expected_live = 100 if args.allow_pending else 104
+    expected_live = 91 if args.allow_pending else 95
     if len(live) != expected_live:
         raise SystemExit(f"Expected {expected_live} public category posts, found {len(live)}")
     if args.allow_pending:
-        print("Verified 100 unique published category posts; the four explicitly pending Other-instruments entries remain unpublished.")
+        print("Verified 91 published non-commodity category posts; nine retired commodity posts are absent and the four explicitly pending entries remain unpublished.")
     else:
         print("Verified all 104 unique category posts are public; requested batch URLs return complete market functionality.")
     return 0

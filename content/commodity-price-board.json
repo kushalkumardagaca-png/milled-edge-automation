@@ -1,0 +1,396 @@
+{
+  "title": "Commodities",
+  "source_name": "World Bank Commodity Price Data (The Pink Sheet)",
+  "source_url": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Pink-Sheet-November-2026.pdf",
+  "monthly_file_url": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Monthly.xlsx",
+  "release_date": "2026-11-03",
+  "price_month": "October 2026",
+  "note": "Monthly physical-commodity benchmark averages; not live quotes or retail prices. Each series has its own grade, geography and delivery basis. Explicit futures/forward-month series, commodity indexes, and financial securities are excluded.",
+  "items": [
+    {
+      "name": "Gold",
+      "value": 4105,
+      "unit": "USD / troy oz",
+      "basis": "Spot average of daily rates; pure gold benchmark.",
+      "status": "reported"
+    },
+    {
+      "name": "Silver",
+      "value": 57.0,
+      "unit": "USD / troy oz",
+      "basis": "99.9% refined silver; London afternoon fixing.",
+      "status": "reported"
+    },
+    {
+      "name": "Platinum",
+      "value": 1621,
+      "unit": "USD / troy oz",
+      "basis": "99.95% minimum purity; spot average of daily rates.",
+      "status": "reported"
+    },
+    {
+      "name": "Crude oil — average",
+      "value": 108.5,
+      "unit": "USD / barrel",
+      "basis": "Equal-weight average of Brent, Dubai and West Texas Intermediate.",
+      "status": "reported"
+    },
+    {
+      "name": "Crude oil — Brent",
+      "value": 125.0,
+      "unit": "USD / barrel",
+      "basis": "U.K. Brent, 38° API physical crude benchmark.",
+      "status": "reported"
+    },
+    {
+      "name": "Crude oil — Dubai",
+      "value": 102.7,
+      "unit": "USD / barrel",
+      "basis": "Dubai Fateh, 32° API physical crude benchmark.",
+      "status": "reported"
+    },
+    {
+      "name": "Crude oil — WTI",
+      "value": 97.7,
+      "unit": "USD / barrel",
+      "basis": "West Texas Intermediate, 40° API physical crude benchmark.",
+      "status": "reported"
+    },
+    {
+      "name": "Natural gas — United States",
+      "value": 2.96,
+      "unit": "USD / MMBtu",
+      "basis": "Spot price at Henry Hub, Louisiana.",
+      "status": "reported"
+    },
+    {
+      "name": "Liquefied natural gas — Japan",
+      "value": 16.59,
+      "unit": "USD / MMBtu",
+      "basis": "Japan LNG import price, CIF; latest monthly values are estimates.",
+      "status": "estimated"
+    },
+    {
+      "name": "Tea — average",
+      "value": 2.88,
+      "unit": "USD / kg",
+      "basis": "Arithmetic average of Kolkata, Colombo and Mombasa/Nairobi auction quotations.",
+      "status": "reported"
+    },
+    {
+      "name": "Tea — Colombo",
+      "value": 3.75,
+      "unit": "USD / kg",
+      "basis": "Sri Lankan origin; all tea; average weekly quotes.",
+      "status": "reported"
+    },
+    {
+      "name": "Tea — Kolkata",
+      "value": 2.55,
+      "unit": "USD / kg",
+      "basis": "Leaf tea including excise duty; average weekly quotes.",
+      "status": "reported"
+    },
+    {
+      "name": "Tea — Mombasa",
+      "value": 2.33,
+      "unit": "USD / kg",
+      "basis": "African origin; all tea; average weekly quotes.",
+      "status": "reported"
+    },
+    {
+      "name": "Coconut oil",
+      "value": 2029,
+      "unit": "USD / metric tonne",
+      "basis": "CFR Northwest Europe.",
+      "status": "reported"
+    },
+    {
+      "name": "Fish meal",
+      "value": 2840,
+      "unit": "USD / metric tonne",
+      "basis": "Herring fishmeal, 64% protein, FOB North Germany.",
+      "status": "reported"
+    },
+    {
+      "name": "Groundnuts",
+      "value": 1600,
+      "unit": "USD / metric tonne",
+      "basis": "U.S. 40/50 runners, CFR Northwest Europe.",
+      "status": "reported"
+    },
+    {
+      "name": "Groundnut oil",
+      "value": 1850,
+      "unit": "USD / metric tonne",
+      "basis": "Indian groundnut oil, refined, EXW.",
+      "status": "reported"
+    },
+    {
+      "name": "Palm oil",
+      "value": 1120,
+      "unit": "USD / metric tonne",
+      "basis": "Malaysia crude RBD benchmark.",
+      "status": "reported"
+    },
+    {
+      "name": "Palm-kernel oil",
+      "value": 2287,
+      "unit": "USD / metric tonne",
+      "basis": "Malaysia/Indonesia crude, CIF Rotterdam.",
+      "status": "reported"
+    },
+    {
+      "name": "Soybean meal",
+      "value": 453,
+      "unit": "USD / metric tonne",
+      "basis": "U.S. 48% protein, FOB Rotterdam.",
+      "status": "reported"
+    },
+    {
+      "name": "Soybean oil",
+      "value": 1546,
+      "unit": "USD / metric tonne",
+      "basis": "U.S. crude degummed, FOB U.S. Gulf.",
+      "status": "reported"
+    },
+    {
+      "name": "Soybeans",
+      "value": 515,
+      "unit": "USD / metric tonne",
+      "basis": "U.S. soybeans, FOB U.S. Gulf.",
+      "status": "reported"
+    },
+    {
+      "name": "Maize",
+      "value": 226.5,
+      "unit": "USD / metric tonne",
+      "basis": "U.S. No. 2 yellow, FOB U.S. Gulf ports.",
+      "status": "reported"
+    },
+    {
+      "name": "Rice — Thailand 5% broken",
+      "value": 489,
+      "unit": "USD / metric tonne",
+      "basis": "White rice, milled; indicative export price, FOB Bangkok.",
+      "status": "reported"
+    },
+    {
+      "name": "Rice — Thailand 25% broken",
+      "value": 472,
+      "unit": "USD / metric tonne",
+      "basis": "White rice, milled; indicative export price, FOB Bangkok.",
+      "status": "reported"
+    },
+    {
+      "name": "Rice — Thailand A1",
+      "value": 467.4,
+      "unit": "USD / metric tonne",
+      "basis": "Thai A1 Super rice, government standard, FOB Bangkok.",
+      "status": "reported"
+    },
+    {
+      "name": "Rice — Vietnam 5% broken",
+      "value": 413.9,
+      "unit": "USD / metric tonne",
+      "basis": "White rice, milled; indicative export price, FOB Hanoi.",
+      "status": "reported"
+    },
+    {
+      "name": "Wheat — U.S. hard red winter",
+      "value": 317,
+      "unit": "USD / metric tonne",
+      "basis": "No. 2 hard red winter export price, U.S. Gulf.",
+      "status": "reported"
+    },
+    {
+      "name": "Wheat — U.S. soft red winter",
+      "value": 260.3,
+      "unit": "USD / metric tonne",
+      "basis": "No. 2 soft red winter export price, delivered U.S. Gulf.",
+      "status": "reported"
+    },
+    {
+      "name": "Bananas — European Union",
+      "value": 1.1,
+      "unit": "USD / kg",
+      "basis": "Central and South American origin; Southern Europe wholesale/import benchmark.",
+      "status": "reported"
+    },
+    {
+      "name": "Bananas — United States",
+      "value": 1.18,
+      "unit": "USD / kg",
+      "basis": "Central and South American origin; U.S. Gulf wholesale/import benchmark.",
+      "status": "reported"
+    },
+    {
+      "name": "Beef",
+      "value": 6.83,
+      "unit": "USD / kg",
+      "basis": "New Zealand 90% chemical-lean beef, CIF U.S. import benchmark.",
+      "status": "reported"
+    },
+    {
+      "name": "Chicken",
+      "value": 1.84,
+      "unit": "USD / kg",
+      "basis": "Frozen chicken consolidated wholesale price, São Paulo State, Brazil.",
+      "status": "reported"
+    },
+    {
+      "name": "Lamb",
+      "value": 7.48,
+      "unit": "USD / kg",
+      "basis": "New Zealand frozen lamb cuts, CIF China import benchmark.",
+      "status": "reported"
+    },
+    {
+      "name": "Oranges",
+      "value": 0.75,
+      "unit": "USD / kg",
+      "basis": "Mediterranean navel oranges, CIF Paris import benchmark.",
+      "status": "reported"
+    },
+    {
+      "name": "Sugar — European Union",
+      "value": 0.37,
+      "unit": "USD / kg",
+      "basis": "Raw sugar import benchmark, CIF European ports.",
+      "status": "reported"
+    },
+    {
+      "name": "Sugar — world",
+      "value": 0.43,
+      "unit": "USD / kg",
+      "basis": "International Sugar Agreement daily raw-sugar price, FOB Caribbean ports.",
+      "status": "reported"
+    },
+    {
+      "name": "Logs — Africa",
+      "value": 392.1,
+      "unit": "USD / cubic metre",
+      "basis": "Sapele, high quality, FOB Douala, Cameroon.",
+      "status": "reported"
+    },
+    {
+      "name": "Logs — Southeast Asia",
+      "value": 188.5,
+      "unit": "USD / cubic metre",
+      "basis": "Meranti; importers’ Tokyo sale-price benchmark.",
+      "status": "reported"
+    },
+    {
+      "name": "Plywood",
+      "value": 345.8,
+      "unit": "US cents / sheet",
+      "basis": "Lauan, 3-ply; spot Tokyo benchmark.",
+      "status": "reported"
+    },
+    {
+      "name": "Sawnwood — Africa",
+      "value": 636.8,
+      "unit": "USD / cubic metre",
+      "basis": "Sapele, FOB Cameroonian ports.",
+      "status": "reported"
+    },
+    {
+      "name": "Sawnwood — Southeast Asia",
+      "value": 724.3,
+      "unit": "USD / cubic metre",
+      "basis": "Meranti, C&F U.K. ports.",
+      "status": "reported"
+    },
+    {
+      "name": "Cotton",
+      "value": 2.0,
+      "unit": "USD / kg",
+      "basis": "Cotlook A physical cotton price benchmark; middling 1-3/32 inch, Far East C/F.",
+      "status": "reported"
+    },
+    {
+      "name": "DAP fertilizer",
+      "value": 803.1,
+      "unit": "USD / metric tonne",
+      "basis": "Diammonium phosphate, spot, FOB U.S. Gulf.",
+      "status": "reported"
+    },
+    {
+      "name": "Phosphate rock",
+      "value": 170,
+      "unit": "USD / metric tonne",
+      "basis": "FOB North Africa.",
+      "status": "reported"
+    },
+    {
+      "name": "Potassium chloride fertilizer",
+      "value": 357.5,
+      "unit": "USD / metric tonne",
+      "basis": "Granular potash, spot, CFR Brazil.",
+      "status": "reported"
+    },
+    {
+      "name": "TSP fertilizer",
+      "value": 692,
+      "unit": "USD / metric tonne",
+      "basis": "Triple superphosphate, spot import price, U.S. Gulf.",
+      "status": "reported"
+    },
+    {
+      "name": "Urea fertilizer — Eastern Europe",
+      "value": 420,
+      "unit": "USD / metric tonne",
+      "basis": "Prill urea, spot, FOB Middle East.",
+      "status": "reported"
+    },
+    {
+      "name": "Aluminum",
+      "value": 3061,
+      "unit": "USD / metric tonne",
+      "basis": "Primary high-grade ingot; LME physical-settlement benchmark.",
+      "status": "reported"
+    },
+    {
+      "name": "Copper",
+      "value": 14508,
+      "unit": "USD / metric tonne",
+      "basis": "Grade A cathodes/wire bar; LME physical-settlement benchmark.",
+      "status": "reported"
+    },
+    {
+      "name": "Iron ore",
+      "value": 90.8,
+      "unit": "USD / dry metric tonne",
+      "basis": "62% Fe fines, spot price, CFR China.",
+      "status": "reported"
+    },
+    {
+      "name": "Lead",
+      "value": 1860,
+      "unit": "USD / metric tonne",
+      "basis": "Refined high-grade lead; LME physical-settlement benchmark.",
+      "status": "reported"
+    },
+    {
+      "name": "Nickel",
+      "value": 15436,
+      "unit": "USD / metric tonne",
+      "basis": "High-grade nickel cathodes; LME physical-settlement benchmark.",
+      "status": "reported"
+    },
+    {
+      "name": "Tin",
+      "value": 51696,
+      "unit": "USD / metric tonne",
+      "basis": "Refined tin; LME physical-settlement benchmark.",
+      "status": "reported"
+    },
+    {
+      "name": "Zinc",
+      "value": 3818,
+      "unit": "USD / metric tonne",
+      "basis": "Refined special high-grade zinc; LME physical-settlement benchmark.",
+      "status": "reported"
+    }
+  ]
+}
