@@ -1,9 +1,9 @@
 {
   "workflow": "publish-page-nav-removal",
-  "run_id": "42024806863",
-  "run_number": "8",
+  "run_id": "42028162029",
+  "run_number": "9",
   "event": "push",
   "job_status": "success",
-  "commit": "f3a9ea281305d1b187574a9e5cf51539a16ffa01",
-  "utc": "2026-11-05T12:10:06Z"
+  "commit": "27f85fb3e2730a9e0b7332b56fbd419158fda296",
+  "utc": "2026-11-05T12:33:50Z"
 }
