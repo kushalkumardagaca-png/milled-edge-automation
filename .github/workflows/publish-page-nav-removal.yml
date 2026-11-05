@@ -1,0 +1,72 @@
+name: Remove in-page nav elements from the five document pages
+
+# Auto-triggered by a push to main touching any of the five bodies, the script, or
+# this workflow. Also runnable by hand. The publisher has authorised this change
+# explicitly, so no approval gate is used - matching the core-page publishing lane.
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - 'content/pages/about-milled-edge.html'
+      - 'content/pages/contact-milled-edge.html'
+      - 'content/pages/privacy-policy-milled-edge.html'
+      - 'content/pages/terms-milled-edge.html'
+      - 'content/pages/financial-disclaimer-milled-edge.html'
+      - 'scripts/remove_page_nav_elements.py'
+      - '.github/workflows/publish-page-nav-removal.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: blogger-page-nav-removal
+  cancel-in-progress: false
+
+jobs:
+  remove-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install --quiet google-auth google-api-python-client
+
+      - name: Preflight (local, no writes)
+        run: python scripts/remove_page_nav_elements.py --dry-run
+
+      - name: Remove the elements and push to Blogger
+        env:
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+        run: python scripts/remove_page_nav_elements.py --confirm REMOVE-NAV --publish
+
+      - name: Record the run in reports/
+        if: always()
+        run: |
+          set -euo pipefail
+          mkdir -p reports
+          {
+            echo "{"
+            echo "  \"workflow\": \"publish-page-nav-removal\","
+            echo "  \"run_id\": \"${{ github.run_id }}\","
+            echo "  \"run_number\": \"${{ github.run_number }}\","
+            echo "  \"event\": \"${{ github.event_name }}\","
+            echo "  \"job_status\": \"${{ job.status }}\","
+            echo "  \"commit\": \"${{ github.sha }}\","
+            echo "  \"utc\": \"$(date -u +%Y-%m-%dT%H:%M:%SZ)\""
+            echo "}"
+          } > reports/page-nav-removal-last-run.json
+          git config user.name  "Arena Agent"
+          git config user.email "arena-agent@users.noreply.github.com"
+          git add reports/page-nav-removal-last-run.json
+          git commit -m "Page nav removal run ${{ github.run_number }} [${{ job.status }}] [skip ci]" || echo "nothing to commit"
+          git push || echo "report push skipped (non-fatal)"
