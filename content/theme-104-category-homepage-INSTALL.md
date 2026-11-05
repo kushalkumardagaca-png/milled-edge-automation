@@ -1,11 +1,15 @@
-# Installing the 104-category MILLED EDGE theme
+# Installing the MILLED EDGE Market Today theme
 
-The XML file is a complete Blogger theme based on the current MILLED EDGE theme, with the refreshed homepage, four market tapes and the 18-division/104-category directory.
+The Blogger XML is a complete theme based on the current MILLED EDGE theme. It contains the Market Today menu, direct links to published category posts, the commodity price board, the homepage tapes, and the 18-division directory.
 
-1. In Blogger, open **Theme** and make a backup of the current theme first.
-2. Use the Theme page’s **Restore / Upload** control to upload `theme-104-category-homepage.xml`.
-3. Open the public homepage on desktop and mobile. Confirm the four tapes appear and the category directory expands.
-4. Quotes use the TradingView scanner and refresh approximately every 60 seconds. Feed availability and quote timing vary by instrument and exchange. Diamond, hydrogen and nitrogen are explicitly marked where this provider does not return a comparable standard commodity quote. Mutual-fund NAVs are described as provider-scheduled rather than presented as intraday quotes.
-5. The local-market basket uses an approximate IP-country lookup when available; it is not GPS. If lookup is unavailable, the global basket remains.
+1. In Blogger, open **Theme** and back up the current theme.
+2. Use **Restore / Upload** to upload `theme-104-category-homepage.xml`.
+3. On desktop, click **Market Today**. The 18 divisions should open between the two navigation rows in a six-column grid. Hover or click a division to reveal its published categories. A category link opens its post directly; the four unpublished categories are marked pending, not linked to an archive.
+4. The **Commodities** tile opens one flat commodity price board. It does not list commodity subcategories, futures, ETFs, miners, or other related securities. The board shows only ten provider-supported commodity CFD references (including gold and silver), with quote units and a disclosure that CFD references are not local physical/retail cash prices. Indicative INR per gram is a reference conversion only.
+5. The homepage quote feeds refresh approximately every 60 seconds. Coverage and timing vary by instrument and exchange; no value is fabricated when the provider returns none.
 
-The companion `homepage-104-preview.html` is an offline visual preview. It intentionally shows quote placeholders rather than stale or fabricated prices. The theme XML itself was XML-parsed and checked for four ticker rows, 18 divisions, 104 category links and all seven profiles listed on the Contact page.
+## Separate post-body update
+
+The updated category-post source has a rebuilt global search (bounded provider requests, explicit timeout/failure feedback, no misleading generic “Submitted” status) and tighter small-screen layout rules. Those are post-body changes, so uploading the theme XML alone does not update already-published post bodies. The repository workflow is configured to patch the 100 existing public posts after its write-limit cooldown; it uses the original Blogger publication timestamps and an existing-only guard, so it will not create the four pending entries. The regenerated HTML for all 104 catalog entries is in `content/market-posts/`.
+
+`content/market-post-links.json` maps the 100 currently published category posts to their canonical Blogger URLs. The commodity-category URLs are no longer presented in the division menus; the theme routes those legacy URLs to the single commodity board.

@@ -8,7 +8,7 @@
     "category": "Country and region",
     "scope": "equities grouped by issuer/listing country and region",
     "title": "Equity stocks: Country and region | Milled Edge",
-    "search_description": "Explore equities grouped by issuer/listing country and region. Review the source, data timing, and category methodology; market values may be delayed and a",
+    "search_description": "Explore equities grouped by issuer/listing country and region. Review the source, data timing, and category methodology; market values may be delayed and.",
     "labels": [
       "Markets",
       "equity-stocks",
@@ -291,7 +291,7 @@
     "category": "Exchange and venue",
     "scope": "shares grouped by their reported listing exchange or trading venue",
     "title": "Equity stocks: Exchange and venue | Milled Edge",
-    "search_description": "Explore shares grouped by their reported listing exchange or trading venue. Review the source, data timing, and category methodology; market values may be ",
+    "search_description": "Explore shares grouped by their reported listing exchange or trading venue. Review the source, data timing, and category methodology; market values may.",
     "labels": [
       "Markets",
       "equity-stocks",
@@ -510,7 +510,7 @@
     "category": "Sector and industry",
     "scope": "equities grouped by the provider's industry classifications",
     "title": "Equity stocks: Sector and industry | Milled Edge",
-    "search_description": "Explore equities grouped by the provider's industry classifications. Review the source, data timing, and category methodology; market values may be delayed",
+    "search_description": "Explore equities grouped by the provider's industry classifications. Review the source, data timing, and category methodology; market values may be.",
     "labels": [
       "Markets",
       "equity-stocks",
@@ -697,7 +697,7 @@
     "category": "Market capitalization",
     "scope": "equities grouped by reported market-capitalization bands",
     "title": "Equity stocks: Market capitalization | Milled Edge",
-    "search_description": "Explore equities grouped by reported market-capitalization bands. Review the source, data timing, and category methodology; market values may be delayed an",
+    "search_description": "Explore equities grouped by reported market-capitalization bands. Review the source, data timing, and category methodology; market values may be delayed.",
     "labels": [
       "Markets",
       "equity-stocks",
@@ -819,7 +819,7 @@
     "category": "Share class",
     "scope": "common, preferred, and other provider-classified share types",
     "title": "Equity stocks: Share class | Milled Edge",
-    "search_description": "Explore common, preferred, and other provider-classified share types. Review the source, data timing, and category methodology; market values may be delaye",
+    "search_description": "Explore common, preferred, and other provider-classified share types. Review the source, data timing, and category methodology; market values may be.",
     "labels": [
       "Markets",
       "equity-stocks",
@@ -894,7 +894,7 @@
     "category": "Listing and primary status",
     "scope": "primary listings and other supported listing records",
     "title": "Equity stocks: Listing and primary status | Milled Edge",
-    "search_description": "Explore primary listings and other supported listing records. Review the source, data timing, and category methodology; market values may be delayed and ar",
+    "search_description": "Explore primary listings and other supported listing records. Review the source, data timing, and category methodology; market values may be delayed and.",
     "labels": [
       "Markets",
       "equity-stocks",
@@ -953,7 +953,7 @@
     "category": "Country and region",
     "scope": "benchmarks grouped by the market or region they represent",
     "title": "Market indices: Country and region | Milled Edge",
-    "search_description": "Explore benchmarks grouped by the market or region they represent. Review the source, data timing, and category methodology; market values may be delayed a",
+    "search_description": "Explore benchmarks grouped by the market or region they represent. Review the source, data timing, and category methodology; market values may be delayed.",
     "labels": [
       "Markets",
       "market-indices",
@@ -1247,7 +1247,7 @@
     "category": "Market scope",
     "scope": "broad-market, sector, and other supported benchmark scopes",
     "title": "Market indices: Market scope | Milled Edge",
-    "search_description": "Explore broad-market, sector, and other supported benchmark scopes. Review the source, data timing, and category methodology; market values may be delayed ",
+    "search_description": "Explore broad-market, sector, and other supported benchmark scopes. Review the source, data timing, and category methodology; market values may be.",
     "labels": [
       "Markets",
       "market-indices",
@@ -1354,7 +1354,7 @@
     "category": "Asset class",
     "scope": "equity, bond, commodity, volatility, and other supported index classes",
     "title": "Market indices: Asset class | Milled Edge",
-    "search_description": "Explore equity, bond, commodity, volatility, and other supported index classes. Review the source, data timing, and category methodology; market values may",
+    "search_description": "Explore equity, bond, commodity, volatility, and other supported index classes. Review the source, data timing, and category methodology; market values.",
     "labels": [
       "Markets",
       "market-indices",
@@ -1461,7 +1461,7 @@
     "category": "Index construction and format",
     "scope": "provider-classified main benchmarks, CFD products, crypto-capitalization indices, synthetic indices, and other index formats",
     "title": "Market indices: Index construction and format | Milled Edge",
-    "search_description": "Explore provider-classified main benchmarks, CFD products, crypto-capitalization indices, synthetic indices, and other index formats. Review the source, da",
+    "search_description": "Explore provider-classified main benchmarks, CFD products, crypto-capitalization indices, synthetic indices, and other index formats. Review the source.",
     "labels": [
       "Markets",
       "market-indices",
@@ -1568,7 +1568,7 @@
     "category": "Index provider and family",
     "scope": "indices grouped by their reported provider or benchmark family",
     "title": "Market indices: Index provider and family | Milled Edge",
-    "search_description": "Explore indices grouped by their reported provider or benchmark family. Review the source, data timing, and category methodology; market values may be dela",
+    "search_description": "Explore indices grouped by their reported provider or benchmark family. Review the source, data timing, and category methodology; market values may be.",
     "labels": [
       "Markets",
       "market-indices",
@@ -1707,7 +1707,7 @@
     "category": "Precious metals and gemstones",
     "scope": "gold, silver, platinum, palladium, and supported gemstone benchmarks",
     "title": "Commodities: Precious metals and gemstones | Milled Edge",
-    "search_description": "Explore gold, silver, platinum, palladium, and supported gemstone benchmarks. Review the source, data timing, and category methodology; market values may b",
+    "search_description": "Explore gold, silver, platinum, palladium, and supported gemstone benchmarks. Review the source, data timing, and category methodology; market values may.",
     "labels": [
       "Markets",
       "commodities",
@@ -1832,7 +1832,7 @@
     "category": "Base and industrial metals",
     "scope": "copper, aluminium, zinc, nickel, lead, and other supported metals",
     "title": "Commodities: Base and industrial metals | Milled Edge",
-    "search_description": "Explore copper, aluminium, zinc, nickel, lead, and other supported metals. Review the source, data timing, and category methodology; market values may be d",
+    "search_description": "Explore copper, aluminium, zinc, nickel, lead, and other supported metals. Review the source, data timing, and category methodology; market values may be.",
     "labels": [
       "Markets",
       "commodities",
@@ -1976,7 +1976,7 @@
     "category": "Minerals and elements",
     "scope": "iron ore, lithium, cobalt, uranium, coal, and supported mineral markets",
     "title": "Commodities: Minerals and elements | Milled Edge",
-    "search_description": "Explore iron ore, lithium, cobalt, uranium, coal, and supported mineral markets. Review the source, data timing, and category methodology; market values ma",
+    "search_description": "Explore iron ore, lithium, cobalt, uranium, coal, and supported mineral markets. Review the source, data timing, and category methodology; market values.",
     "labels": [
       "Markets",
       "commodities",
@@ -2101,7 +2101,7 @@
     "category": "Gas and chemical futures",
     "scope": "gas-linked, fertilizer, and chemical futures available in the provider feed; industrial-gas coverage can be limited",
     "title": "Commodities: Gas and chemical futures | Milled Edge",
-    "search_description": "Explore gas-linked, fertilizer, and chemical futures available in the provider feed; industrial-gas coverage can be limited. Review the source, data timing",
+    "search_description": "Explore gas-linked, fertilizer, and chemical futures available in the provider feed; industrial-gas coverage can be limited. Review the source, data.",
     "labels": [
       "Markets",
       "commodities",
@@ -2188,7 +2188,7 @@
     "category": "Energy and fuels",
     "scope": "WTI, Brent, natural gas, gasoline, heating oil, and supported fuels",
     "title": "Commodities: Energy and fuels | Milled Edge",
-    "search_description": "Explore WTI, Brent, natural gas, gasoline, heating oil, and supported fuels. Review the source, data timing, and category methodology; market values may be",
+    "search_description": "Explore WTI, Brent, natural gas, gasoline, heating oil, and supported fuels. Review the source, data timing, and category methodology; market values may.",
     "labels": [
       "Markets",
       "commodities",
@@ -2332,7 +2332,7 @@
     "category": "Grains and oilseeds",
     "scope": "wheat, corn, soybeans, rice, oats, and supported oilseed markets",
     "title": "Commodities: Grains and oilseeds | Milled Edge",
-    "search_description": "Explore wheat, corn, soybeans, rice, oats, and supported oilseed markets. Review the source, data timing, and category methodology; market values may be de",
+    "search_description": "Explore wheat, corn, soybeans, rice, oats, and supported oilseed markets. Review the source, data timing, and category methodology; market values may be.",
     "labels": [
       "Markets",
       "commodities",
@@ -2476,7 +2476,7 @@
     "category": "Fibres and soft commodities",
     "scope": "cotton, jute where available, sugar, coffee, cocoa, and other softs",
     "title": "Commodities: Fibres and soft commodities | Milled Edge",
-    "search_description": "Explore cotton, jute where available, sugar, coffee, cocoa, and other softs. Review the source, data timing, and category methodology; market values may be",
+    "search_description": "Explore cotton, jute where available, sugar, coffee, cocoa, and other softs. Review the source, data timing, and category methodology; market values may.",
     "labels": [
       "Markets",
       "commodities",
@@ -2582,7 +2582,7 @@
     "category": "Livestock",
     "scope": "live cattle, lean hogs, and other supported livestock contracts",
     "title": "Commodities: Livestock | Milled Edge",
-    "search_description": "Explore live cattle, lean hogs, and other supported livestock contracts. Review the source, data timing, and category methodology; market values may be del",
+    "search_description": "Explore live cattle, lean hogs, and other supported livestock contracts. Review the source, data timing, and category methodology; market values may be.",
     "labels": [
       "Markets",
       "commodities",
@@ -2669,7 +2669,7 @@
     "category": "Forestry and building materials",
     "scope": "lumber and other supported forestry or building-material benchmarks",
     "title": "Commodities: Forestry and building materials | Milled Edge",
-    "search_description": "Explore lumber and other supported forestry or building-material benchmarks. Review the source, data timing, and category methodology; market values may be",
+    "search_description": "Explore lumber and other supported forestry or building-material benchmarks. Review the source, data timing, and category methodology; market values may.",
     "labels": [
       "Markets",
       "commodities",

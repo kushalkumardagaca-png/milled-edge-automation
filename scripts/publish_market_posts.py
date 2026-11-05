@@ -33,7 +33,7 @@ def load_catalog(batch: int) -> list[dict]:
     return data
 
 
-def post_body(item: dict, batch: int) -> str:
+def post_body(item: dict, batch: int, allow_pending_missing_date: bool = False) -> str:
     path = POST_ROOT / f"batch-{batch}" / f"{item['slug']}.html"
     if not path.is_file():
         raise SystemExit(f"Missing generated post body: {path}")
@@ -46,7 +46,14 @@ def post_body(item: dict, batch: int) -> str:
     if missing:
         raise SystemExit(f"Post {item['slug']} is missing required functionality/metadata markers: {missing}")
     if '"datePublished"' not in body:
-        raise SystemExit(f"Post {item['slug']} has no publication date; regenerate with --publication-date before live publishing")
+        pending = {
+            "other-instruments-other-country",
+            "other-instruments-other-exchange",
+            "other-instruments-other-subtype",
+            "other-instruments-other-type",
+        }
+        if not (allow_pending_missing_date and item["slug"] in pending):
+            raise SystemExit(f"Post {item['slug']} has no publication date; populate it from Blogger or regenerate a genuinely new post with --publication-date")
     if any(marker in body for marker in ("DY_SEO_META_START", "DY_BRAND_IDENTITY_START", "DY_PAGE_FAMILY_START", "DY_BRAND_SEO_START")):
         raise SystemExit(f"Post {item['slug']} contains source-template markers that should not be published")
     if len(body) > 1_000_000:
@@ -54,13 +61,13 @@ def post_body(item: dict, batch: int) -> str:
     return body
 
 
-def preflight(batch: int) -> list[tuple[dict, str, list[str]]]:
+def preflight(batch: int, allow_pending_missing_date: bool = False) -> list[tuple[dict, str, list[str]]]:
     catalog = load_catalog(batch)
     prepared = []
     for item in catalog:
         if item.get("batch") != batch:
             raise SystemExit(f"Catalog entry {item.get('slug')} is assigned to batch {item.get('batch')}, not {batch}")
-        body = post_body(item, batch)
+        body = post_body(item, batch, allow_pending_missing_date)
         labels = list(dict.fromkeys(item["labels"] + ["MarketCategoryPost", "CategoryID-" + item["slug"]]))
         if sum(len(x) for x in labels) > 200:
             raise SystemExit(f"Post labels exceed Blogger's combined length safety limit: {item['slug']}")
@@ -113,10 +120,12 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--batch", type=int, required=True, choices=range(1, 6))
     parser.add_argument("--dry-run", action="store_true")
+    parser.add_argument("--force-update", action="store_true", help="patch existing live posts even when title and labels are unchanged")
+    parser.add_argument("--existing-only", action="store_true", help="never create/publish a category post absent from Blogger")
     parser.add_argument("--confirm", default="")
     parser.add_argument("--allow-public-check-pending", action="store_true", help="continue batch sequence; run the separate final feed verification")
     args = parser.parse_args()
-    prepared = preflight(args.batch)
+    prepared = preflight(args.batch, allow_pending_missing_date=args.existing_only)
     print(f"Validated batch {args.batch}: {len(prepared)} category posts; {sum(len(body) for _, body, _ in prepared):,} HTML characters total.")
     print("This publisher never deletes existing posts or pages.")
     if args.dry_run:
@@ -140,15 +149,19 @@ def main() -> int:
                 by_label[label] = post
 
     results = []
+    skipped = []
     failures = []
     for item, body, labels in prepared:
         identity = "CategoryID-" + item["slug"]
         post = by_label.get(identity)
         payload = {"title": item["title"], "content": body, "labels": labels}
-        # Existing live category posts are treated as published once their stable
-        # identity, title, and required labels match. Avoid fetching or comparing
-        # large HTML bodies: Blogger can throttle those full-body catalog reads.
-        if (post and post.get("status") == "LIVE" and post.get("title") == item["title"]
+        if not post and args.existing_only:
+            skipped.append({"id": item["slug"], "title": item["title"], "reason": "no existing Blogger post; pending entries are not created"})
+            print(f"skipped (existing-only): {item['title']}", flush=True)
+            continue
+        # Avoid fetching/comparing large HTML bodies during the preflight; callers
+        # can explicitly force a safe patch when generated post-body content changed.
+        if (post and not args.force_update and post.get("status") == "LIVE" and post.get("title") == item["title"]
                 and set(labels).issubset(set(post.get("labels") or []))):
             results.append({"id": item["slug"], "title": item["title"], "url": post["url"], "action": "unchanged", "labels": labels})
             print(f"unchanged: {item['title']} — {post['url']}", flush=True)
@@ -177,7 +190,7 @@ def main() -> int:
         for failure in failures:
             detail = failure["error"].replace("%", "%25").replace("\\r", " ").replace("\\n", " ").replace(":", "%3A")
             print(f"::error title=Market category post failure::{failure['id']} — {detail}", flush=True)
-        write_summary(f"## Market-category post batch {args.batch}: partial failure\n\n" + json.dumps({"published_or_updated": results, "failures": failures}, indent=2))
+        write_summary(f"## Market-category post batch {args.batch}: partial failure\n\n" + json.dumps({"published_or_updated": results, "skipped": skipped, "failures": failures}, indent=2))
         raise SystemExit(f"{len(failures)} posts failed; {len(results)} created or updated. No existing pages were deleted.")
 
     # Public checks happen after API writes; a transient delivery failure is
@@ -187,10 +200,12 @@ def main() -> int:
         ok, detail = public_check(result["url"])
         public_results.append({"url": result["url"], "ok": ok, "detail": detail})
         print(("verified: " if ok else "public-check pending: ") + result["url"] + " — " + detail, flush=True)
-    summary = f"## Market-category post batch {args.batch}\n\n" + json.dumps({"posts": results, "public_checks": public_results}, indent=2)
+    summary = f"## Market-category post batch {args.batch}\n\n" + json.dumps({"posts": results, "skipped": skipped, "public_checks": public_results}, indent=2)
     write_summary(summary)
-    if len(results) != BATCH_SIZES[args.batch]:
-        raise SystemExit(f"Expected {BATCH_SIZES[args.batch]} results, got {len(results)}")
+    expected_results = (sum(1 for item, _, _ in prepared if "CategoryID-" + item["slug"] in by_label)
+                        if args.existing_only else BATCH_SIZES[args.batch])
+    if len(results) != expected_results:
+        raise SystemExit(f"Expected {expected_results} results, got {len(results)}")
     if not all(x["ok"] for x in public_results):
         message = f"All {len(results)} posts in batch {args.batch} were submitted, but one or more immediate URL checks are still pending."
         if not args.allow_public_check_pending:

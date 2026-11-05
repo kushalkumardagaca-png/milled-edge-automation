@@ -54,6 +54,7 @@ def inspect(url: str) -> tuple[bool, str]:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--batches", default="2,3,4,5")
+    parser.add_argument("--allow-pending", action="store_true", help="accept the four explicitly pending Other-instruments posts; still require all other catalog IDs to be public")
     args = parser.parse_args()
     batches = [int(x) for x in args.batches.split(",") if x]
     expected: dict[str, dict] = {}
@@ -76,6 +77,14 @@ def main() -> int:
         if alt:
             live[ids[0]] = {"title": entry.get("title", {}).get("$t", ""), "url": alt, "labels": labels}
     missing = sorted(set(expected) - set(live))
+    pending_ids = {
+        "other-instruments-other-country",
+        "other-instruments-other-exchange",
+        "other-instruments-other-subtype",
+        "other-instruments-other-type",
+    }
+    permitted_pending = sorted(set(missing) & pending_ids) if args.allow_pending else []
+    unexpected_missing = sorted(set(missing) - set(permitted_pending))
     wrong_titles = [slug for slug in expected.keys() & live.keys() if expected[slug]["title"] != live[slug]["title"]]
     targets = [(slug, live[slug]["url"]) for slug in expected.keys() & live.keys()]
     with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
@@ -83,11 +92,15 @@ def main() -> int:
     failures = [{"id": slug, "url": url, "detail": detail} for slug, url, ok, detail in outcomes if not ok]
     report = {"expected": len(expected), "live_category_posts": len(live), "verified_target_posts": sum(ok for _, _, ok, _ in outcomes), "missing": missing, "duplicate_ids": sorted(set(duplicates)), "title_mismatches": wrong_titles, "url_failures": failures}
     print(json.dumps(report, indent=2, ensure_ascii=False))
-    if missing or duplicates or wrong_titles or failures or len(targets) != len(expected):
+    if unexpected_missing or duplicates or wrong_titles or failures or len(targets) != len(expected) - len(permitted_pending):
         raise SystemExit("Final public verification failed; retain all existing navigation and pages.")
-    if len(live) != 104:
-        raise SystemExit(f"Expected 104 public category posts after these batches, found {len(live)}")
-    print("Verified all 104 unique category posts are public; requested batch URLs return complete market functionality.")
+    expected_live = 100 if args.allow_pending else 104
+    if len(live) != expected_live:
+        raise SystemExit(f"Expected {expected_live} public category posts, found {len(live)}")
+    if args.allow_pending:
+        print("Verified 100 unique published category posts; the four explicitly pending Other-instruments entries remain unpublished.")
+    else:
+        print("Verified all 104 unique category posts are public; requested batch URLs return complete market functionality.")
     return 0
 
 

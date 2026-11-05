@@ -13,6 +13,7 @@ from zoneinfo import ZoneInfo
 ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / "content" / "markets-today.html"
 OUT = ROOT / "content" / "market-posts"
+PUBLISHED_DATES = json.loads((ROOT / "content" / "market-post-published-dates.json").read_text(encoding="utf-8"))
 
 spec = importlib.util.spec_from_file_location("market_page_configs", Path(__file__).with_name("market_page_configs.py"))
 config_module = importlib.util.module_from_spec(spec)
@@ -88,7 +89,7 @@ def make_template() -> str:
     text = replace_once(text, old_select,
         "function selectCategory(id,move){if(MARKET_POST_CONFIG){var ps=MARKET_POST_CONFIG.subcategories.find(function(x){return x.id===id});if(ps){activatePostSubcategory(ps,!!move);return}}currentCategory=CATEGORIES[id]||CATEGORIES.global;categoryOffset=0;selectedDivision='Popular';selectedBrowseCategory='Market screens';MARKET_DIVISIONS.forEach(function(d){d.categories.forEach(function(cat){if(cat.items.indexOf(currentCategory.id)>=0){selectedDivision=d.title;selectedBrowseCategory=cat.title}})});R.querySelectorAll('[data-cat]').forEach(function(b){b.classList.toggle('active',b.dataset.cat===currentCategory.id)});loadCategory(true);if(move)setTimeout(function(){E('dywCategoryTitle').scrollIntoView({behavior:'smooth',block:'start'})},80)}",
         'selectCategory')
-    old_dir = "function loadDirectory(){worldScan([],null,[0,1],['name']).then(function(j){E('dywUniverse').textContent=Number(j.totalCount||0).toLocaleString('en-IN');E('dywClock').textContent='Global directory connected · '+Number(j.totalCount||0).toLocaleString('en-IN')+' instruments'}).catch(function(){});buildCategories();selectCategory('global')}"
+    old_dir = "function loadDirectory(){worldScan([],null,[0,1],['name']).then(function(j){E('dywUniverse').textContent=Number(j.totalCount||0).toLocaleString('en-IN');E('dywClock').textContent='Global directory connected · '+Number(j.totalCount||0).toLocaleString('en-IN')+' instruments'}).catch(function(){E('dywUniverse').textContent='Provider unavailable';E('dywClock').textContent='Global directory unavailable; live quote data may still load separately.'});buildCategories();selectCategory('global')}"
     text = replace_once(text, old_dir,
         "function loadDirectory(){worldScan([],null,[0,1],['name']).then(function(j){E('dywUniverse').textContent=Number(j.totalCount||0).toLocaleString('en-IN');E('dywClock').textContent='Global directory connected · '+Number(j.totalCount||0).toLocaleString('en-IN')+' instruments'}).catch(function(){});buildCategories();if(MARKET_POST_CONFIG){if(MARKET_POST_CONFIG.subcategories.length)activatePostSubcategory(MARKET_POST_CONFIG.subcategories[0],false)}else selectCategory('global')}",
         'loadDirectory')
@@ -106,7 +107,7 @@ def render_post(template: str, cfg: dict, publication_date: bool = False) -> str
     today = datetime.now(ZoneInfo("Asia/Kolkata")).date().isoformat()
     config = {
         **cfg,
-        "date_published": today if publication_date or cfg.get("batch") == 1 else None,
+        "date_published": PUBLISHED_DATES.get(cfg["slug"]) or (today if publication_date else None),
     }
     # page-specific headline and explanatory copy; never rely on ticker values as the only prose.
     h1 = f"{cfg['division']}: {cfg['category']} market directory"

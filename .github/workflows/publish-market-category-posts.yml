@@ -1,8 +1,11 @@
-name: Publish remaining market category posts
+name: Refresh published market category post bodies
 
 on:
   push:
     paths:
+      - 'content/market-posts/batch-1/**'
+      - 'content/market-posts/batch-1-catalog.json'
+      - 'content/market-post-published-dates.json'
       - 'content/market-posts/batch-2/**'
       - 'content/market-posts/batch-3/**'
       - 'content/market-posts/batch-4/**'
@@ -25,9 +28,9 @@ permissions:
   actions: write
 
 jobs:
-  publish-batches-2-through-5:
+  refresh-batches-1-through-5:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -35,12 +38,12 @@ jobs:
           python-version: '3.12'
       - name: Install Blogger API client dependencies
         run: pip install --quiet google-auth google-api-python-client
-      - name: Regenerate with publication dates and preflight all 84 posts
+      - name: Regenerate without changing publication dates and preflight all 104 catalog entries
         run: |
           set -euo pipefail
-          for batch in 2 3 4 5; do
-            python scripts/build_market_posts.py --batch "$batch" --publication-date
-            python scripts/publish_market_posts.py --batch "$batch" --dry-run
+          for batch in 1 2 3 4 5; do
+            python scripts/build_market_posts.py --batch "$batch"
+            python scripts/publish_market_posts.py --batch "$batch" --dry-run --existing-only
           done
       - name: Cancel stalled attempt and wait for it to stop
         env:
@@ -81,7 +84,7 @@ jobs:
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
               f.write("publish=" + ("true" if retry else "false") + "\n")
           PY
-      - name: Publish and publicly verify batches 2 through 5
+      - name: Patch existing published posts only; keep pending entries unpublished
         if: steps.quota-window.outputs.publish == 'true'
         env:
           GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
@@ -89,9 +92,9 @@ jobs:
           GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
         run: |
           set -euo pipefail
-          for batch in 2 3 4 5; do
-            python scripts/publish_market_posts.py --batch "$batch" --confirm PUBLISH --allow-public-check-pending
+          for batch in 1 2 3 4 5; do
+            python scripts/publish_market_posts.py --batch "$batch" --confirm PUBLISH --force-update --existing-only --allow-public-check-pending
           done
-      - name: Verify all 104 public category URLs and post features
+      - name: Verify all currently published category URLs and preserve four pending entries
         if: steps.quota-window.outputs.publish == 'true'
-        run: python scripts/verify_market_posts.py --batches 2,3,4,5
+        run: python scripts/verify_market_posts.py --batches 1,2,3,4,5 --allow-pending
