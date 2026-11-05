@@ -4,11 +4,9 @@ from blogger_client import get_blogger_service, get_blog_by_url, load_site_confi
 
 ROOT = Path(__file__).resolve().parent.parent
 PAGES = {
-    'markets-today': ROOT / 'content' / 'markets-today.html',
     'calculator_0908148622': ROOT / 'content' / 'pages-fixes' / 'calculator_0908148622.html',
     'for-corporate_01804417406': ROOT / 'content' / 'pages-fixes' / 'for-corporate_01804417406.html',
     'money-atlas_01486068069': ROOT / 'content' / 'pages-fixes' / 'money-atlas_01486068069.html',
-    'global-snapshot': ROOT / 'content' / 'pages-fixes' / 'global-snapshot.html',
     'about-milled-edge': ROOT / 'content' / 'pages-fixes' / 'about-milled-edge.html',
     'contact-milled-edge': ROOT / 'content' / 'pages-fixes' / 'contact-milled-edge.html',
     'privacy-policy-milled-edge': ROOT / 'content' / 'pages-fixes' / 'privacy-policy-milled-edge.html',

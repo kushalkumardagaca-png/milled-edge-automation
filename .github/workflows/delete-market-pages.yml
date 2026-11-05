@@ -1,0 +1,58 @@
+name: Delete the retired Markets Today and Global Snapshot pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'trigger/delete-market-pages.txt'
+      - 'scripts/delete_retired_market_pages.py'
+      - '.github/workflows/delete-market-pages.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: delete-retired-market-pages
+  cancel-in-progress: false
+
+jobs:
+  delete-pages:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify owner authorization phrase
+        id: confirm
+        run: |
+          if grep -qx 'CONFIRM: DELETE MARKETS TODAY AND GLOBAL SNAPSHOT PAGES' trigger/delete-market-pages.txt; then
+            echo 'confirmed=true' >> "$GITHUB_OUTPUT"
+          else
+            echo 'confirmed=false' >> "$GITHUB_OUTPUT"
+            echo 'No exact confirmation phrase; no deletion performed.'
+          fi
+      - uses: actions/setup-python@v5
+        if: steps.confirm.outputs.confirmed == 'true'
+        with:
+          python-version: '3.12'
+      - name: Install Blogger API dependencies
+        if: steps.confirm.outputs.confirmed == 'true'
+        run: pip install --quiet google-auth google-api-python-client
+      - name: Permanently delete only the two verified market pages
+        if: steps.confirm.outputs.confirmed == 'true'
+        env:
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+        run: python scripts/delete_retired_market_pages.py
+      - name: Preserve the verification report
+        if: always() && steps.confirm.outputs.confirmed == 'true'
+        run: |
+          mkdir -p reports
+          if [ -f artifacts/delete-market-pages-report.json ]; then cp artifacts/delete-market-pages-report.json reports/delete-market-pages-report.json; fi
+          printf '%s\n' "${{ github.run_id }}" > reports/delete-market-pages-run-id.txt
+          printf '%s\n' "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" > reports/delete-market-pages-run-url.txt
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add reports
+          if git diff --cached --quiet; then echo 'No report changes to commit.'; else git commit -m 'Retired market pages deletion report [skip ci]'; git pull --rebase origin main; git push origin HEAD:main; fi
