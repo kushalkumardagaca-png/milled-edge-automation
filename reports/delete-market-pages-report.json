@@ -1,0 +1,93 @@
+{
+  "mode": "delete-retired-market-pages",
+  "started_at_utc": "2026-11-05T06:28:44.853631+00:00",
+  "blog": {
+    "id": "8911514070006792465",
+    "url": "https://millededgeindia.blogspot.com/"
+  },
+  "targets": [
+    {
+      "id": "5236051989054453802",
+      "title": "Markets today",
+      "path": "/p/markets-today.html",
+      "actual_title": "Markets today",
+      "actual_url": "https://millededgeindia.blogspot.com/p/markets-today.html",
+      "state": "verified"
+    },
+    {
+      "id": "8504888514217789256",
+      "title": "Global snapshot",
+      "path": "/p/global-snapshot.html",
+      "actual_title": "Global snapshot",
+      "actual_url": "https://millededgeindia.blogspot.com/p/global-snapshot.html",
+      "state": "verified"
+    }
+  ],
+  "deleted": [
+    {
+      "id": "5236051989054453802",
+      "title": "Markets today",
+      "path": "/p/markets-today.html",
+      "actual_title": "Markets today",
+      "actual_url": "https://millededgeindia.blogspot.com/p/markets-today.html",
+      "state": "verified",
+      "action": "permanently-deleted"
+    },
+    {
+      "id": "8504888514217789256",
+      "title": "Global snapshot",
+      "path": "/p/global-snapshot.html",
+      "actual_title": "Global snapshot",
+      "actual_url": "https://millededgeindia.blogspot.com/p/global-snapshot.html",
+      "state": "verified",
+      "action": "permanently-deleted"
+    }
+  ],
+  "already_missing": [],
+  "failed": [],
+  "tally_candidates": [],
+  "remaining_pages_count": 8,
+  "finished_at_utc": "2026-11-05T06:28:46.452131+00:00",
+  "remaining_pages": [
+    {
+      "id": "9145366926436032366",
+      "title": "Terms & Conditions",
+      "url": "https://millededgeindia.blogspot.com/p/terms-milled-edge.html"
+    },
+    {
+      "id": "4626472458869661769",
+      "title": "Financial Disclaimer",
+      "url": "https://millededgeindia.blogspot.com/p/financial-disclaimer-milled-edge.html"
+    },
+    {
+      "id": "311860603682060395",
+      "title": "Privacy Policy",
+      "url": "https://millededgeindia.blogspot.com/p/privacy-policy-milled-edge.html"
+    },
+    {
+      "id": "7395176556871361869",
+      "title": "Contact us",
+      "url": "https://millededgeindia.blogspot.com/p/contact-milled-edge.html"
+    },
+    {
+      "id": "2082189399197263721",
+      "title": "About us",
+      "url": "https://millededgeindia.blogspot.com/p/about-milled-edge.html"
+    },
+    {
+      "id": "8572476015753638755",
+      "title": "Money atlas",
+      "url": "https://millededgeindia.blogspot.com/p/money-atlas_01486068069.html"
+    },
+    {
+      "id": "6065205676235626846",
+      "title": "For corporate",
+      "url": "https://millededgeindia.blogspot.com/p/for-corporate_01804417406.html"
+    },
+    {
+      "id": "7468827438203976743",
+      "title": "Calculator",
+      "url": "https://millededgeindia.blogspot.com/p/calculator_0908148622.html"
+    }
+  ]
+}
