@@ -17,6 +17,17 @@ ROOT = Path(__file__).resolve().parent.parent
 POST_ROOT = ROOT / "content" / "market-posts"
 BATCH_SIZES = {1:20, 2:20, 3:22, 4:22, 5:20}
 WRITE_DELAY_SECONDS = 20
+RETIRED_CATEGORY_IDS = {
+    "commodities-commodity-precious",
+    "commodities-commodity-base-metals",
+    "commodities-commodity-minerals",
+    "commodities-commodity-gases",
+    "commodities-commodity-energy",
+    "commodities-commodity-grains",
+    "commodities-commodity-fibres-softs",
+    "commodities-commodity-livestock",
+    "commodities-commodity-forestry",
+}
 
 
 def load_catalog(batch: int) -> list[dict]:
@@ -155,6 +166,10 @@ def main() -> int:
         identity = "CategoryID-" + item["slug"]
         post = by_label.get(identity)
         payload = {"title": item["title"], "content": body, "labels": labels}
+        if item["slug"] in RETIRED_CATEGORY_IDS:
+            skipped.append({"id": item["slug"], "title": item["title"], "reason": "retired commodity category; never recreated or refreshed"})
+            print(f"skipped (retired): {item['title']}", flush=True)
+            continue
         if not post and args.existing_only:
             skipped.append({"id": item["slug"], "title": item["title"], "reason": "no existing Blogger post; pending entries are not created"})
             print(f"skipped (existing-only): {item['title']}", flush=True)
@@ -202,8 +217,9 @@ def main() -> int:
         print(("verified: " if ok else "public-check pending: ") + result["url"] + " — " + detail, flush=True)
     summary = f"## Market-category post batch {args.batch}\n\n" + json.dumps({"posts": results, "skipped": skipped, "public_checks": public_results}, indent=2)
     write_summary(summary)
-    expected_results = (sum(1 for item, _, _ in prepared if "CategoryID-" + item["slug"] in by_label)
-                        if args.existing_only else BATCH_SIZES[args.batch])
+    expected_results = (sum(1 for item, _, _ in prepared
+                            if item["slug"] not in RETIRED_CATEGORY_IDS and "CategoryID-" + item["slug"] in by_label)
+                        if args.existing_only else BATCH_SIZES[args.batch] - sum(1 for item, _, _ in prepared if item["slug"] in RETIRED_CATEGORY_IDS))
     if len(results) != expected_results:
         raise SystemExit(f"Expected {expected_results} results, got {len(results)}")
     if not all(x["ok"] for x in public_results):
