@@ -1,0 +1,61 @@
+name: Move project market posts to Blogger Trash
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm:
+        description: Type TRASH 100 PROJECT POSTS to move only the verified project posts to Blogger Trash
+        required: true
+        type: string
+  schedule:
+    # Resume once after the observed Blogger write-rate limit has had time to reset.
+    # The date gate below prevents this annual cron expression from repeating later.
+    - cron: '15 12 6 11 *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: blogger-trash-project-market-posts
+  cancel-in-progress: false
+
+jobs:
+  trash-project-posts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Gate on explicit request or cooldown date
+        id: gate
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          CONFIRM: ${{ inputs.confirm }}
+        run: |
+          set -euo pipefail
+          run=false
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] && [ "$CONFIRM" = 'TRASH 100 PROJECT POSTS' ]; then run=true; fi
+          if [ "$EVENT_NAME" = "schedule" ] && [ "$(date -u +%F)" = '2026-11-06' ]; then run=true; fi
+          echo "run=$run" >> "$GITHUB_OUTPUT"
+          echo "Authorized operation: $run"
+      - uses: actions/checkout@v4
+        if: steps.gate.outputs.run == 'true'
+      - uses: actions/setup-python@v5
+        if: steps.gate.outputs.run == 'true'
+        with:
+          python-version: '3.12'
+      - name: Install Blogger API dependencies
+        if: steps.gate.outputs.run == 'true'
+        run: pip install --quiet google-auth google-api-python-client google-auth-httplib2
+      - name: Preflight exact target set (read-only)
+        if: steps.gate.outputs.run == 'true'
+        env:
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+        run: python scripts/trash_market_category_posts.py --dry-run
+      - name: Move exact project posts to Trash and verify none remain live
+        if: steps.gate.outputs.run == 'true'
+        env:
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+        run: python scripts/trash_market_category_posts.py --confirm 'TRASH 100 PROJECT POSTS'
