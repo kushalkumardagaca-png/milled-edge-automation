@@ -21,6 +21,7 @@ The page scripts already guard for the removed nodes (``if(bar)`` and
 from __future__ import annotations
 
 import argparse
+import html as html_lib
 import pathlib
 import re
 import sys
@@ -173,12 +174,11 @@ def main() -> int:
         return 2
 
     total = sum(n for _, _, _, n in planned)
-    if total == 0:
-        print("\nEvery page is already clean. Nothing to do.")
-        return 0
     if args.dry_run:
         print(f"\nDry run complete. {total} block(s) would be removed. No files written.")
         return 0
+    if total == 0:
+        print("\nEvery page source is already clean.")
 
     for path, before, after, n in planned:
         if n:
@@ -202,9 +202,7 @@ def main() -> int:
 
     pages = service.pages().list(blogId=blog["id"], fetchBodies=False).execute().get("items", [])
     targets, errors = {}, []
-    for path, _, _, n in planned:
-        if not n:
-            continue
+    for path, _, _, _n in planned:
         matches = [p for p in pages
                    if p.get("url", "").rstrip("/").endswith(f"/p/{path.stem}.html")]
         if len(matches) != 1:
@@ -217,14 +215,34 @@ def main() -> int:
             print("  - " + e, file=sys.stderr)
         return 2
 
-    for path, _, after, n in planned:
-        if not n:
+    def norm(text: str) -> str:
+        # Blogger may re-encode entities or collapse whitespace on the way in, so
+        # comparison is done on a normalised form to avoid republishing for nothing.
+        return re.sub(r"\s+", " ", html_lib.unescape(text or "")).strip()
+
+    published = skipped = failed = 0
+    for path, _, _after, _n in planned:
+        slug, page_id = path.stem, targets[path.stem]
+        local = path.read_text(encoding="utf-8")
+        remote = service.pages().get(blogId=blog["id"], pageId=page_id).execute().get("content", "")
+        if norm(local) == norm(remote):
+            print(f"unchanged {slug:40s} pageId={page_id} - Blogger already serves this body")
+            skipped += 1
             continue
-        service.pages().patch(
-            blogId=blog["id"], pageId=targets[path.stem], body={"content": after}
-        ).execute()
-        print(f"published {path.stem:40s} pageId={targets[path.stem]} {len(after):7d} bytes")
-    return 0
+        try:
+            service.pages().patch(
+                blogId=blog["id"], pageId=page_id, body={"content": local}
+            ).execute()
+        except Exception as exc:  # noqa: BLE001 - report and continue with the rest
+            print(f"FAILED    {slug:40s} pageId={page_id}: {type(exc).__name__}: {exc}", file=sys.stderr)
+            failed += 1
+            continue
+        print(f"published {slug:40s} pageId={page_id} {len(local):7d} bytes "
+              f"(blogger had {len(remote):7d})")
+        published += 1
+
+    print(f"\nSummary: {published} published, {skipped} already current, {failed} failed")
+    return 0 if failed == 0 else 1
 
 
 if __name__ == "__main__":
