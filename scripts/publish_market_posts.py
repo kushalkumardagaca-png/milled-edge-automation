@@ -16,7 +16,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 POST_ROOT = ROOT / "content" / "market-posts"
 BATCH_SIZES = {1:20, 2:20, 3:22, 4:22, 5:20}
-WRITE_DELAY_SECONDS = 6
+WRITE_DELAY_SECONDS = 20
 
 
 def load_catalog(batch: int) -> list[dict]:
@@ -155,12 +155,12 @@ def main() -> int:
             continue
         try:
             if post:
-                saved = service.posts().patch(blogId=blog["id"], postId=post["id"], body=payload).execute(num_retries=10)
+                saved = service.posts().patch(blogId=blog["id"], postId=post["id"], body=payload).execute(num_retries=3)
                 action = "updated"
                 if saved.get("status") == "DRAFT":
-                    saved = service.posts().publish(blogId=blog["id"], postId=post["id"]).execute(num_retries=10)
+                    saved = service.posts().publish(blogId=blog["id"], postId=post["id"]).execute(num_retries=3)
             else:
-                saved = service.posts().insert(blogId=blog["id"], body=payload, isDraft=False).execute(num_retries=10)
+                saved = service.posts().insert(blogId=blog["id"], body=payload, isDraft=False).execute(num_retries=3)
                 # Pace writes so a batch retry after a transient Blogger quota response remains gentle.
                 action = "created"
             if not saved.get("url") or not saved.get("id"):
