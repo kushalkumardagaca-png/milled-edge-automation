@@ -1,0 +1,1996 @@
+[
+  {
+    "id": "economic-data-econ-inflation",
+    "slug": "economic-data-econ-inflation",
+    "division_id": "economic-data",
+    "division": "Economic indicators",
+    "category_id": "econ-inflation",
+    "category": "Inflation and prices",
+    "scope": "reported inflation and price indicators",
+    "title": "Economic data: Inflation and prices | Milled Edge",
+    "search_description": "Explore reported inflation and price indicators. Review the source, data timing, and category methodology; market values may be delayed and are not.",
+    "labels": [
+      "Markets",
+      "economic-indicators",
+      "inflation-and-prices",
+      "Global Market Data"
+    ],
+    "batch": 5,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "economic"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "inflation",
+        "label": "Inflation series",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "economic"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "inflation"
+          }
+        ]
+      },
+      {
+        "id": "cpi",
+        "label": "Consumer-price series",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "economic"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "CPI"
+          }
+        ]
+      },
+      {
+        "id": "prices",
+        "label": "Price-index series",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "economic"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "price index"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "economic-data-econ-employment",
+    "slug": "economic-data-econ-employment",
+    "division_id": "economic-data",
+    "division": "Economic indicators",
+    "category_id": "econ-employment",
+    "category": "Employment and labour",
+    "scope": "reported employment and labour-market indicators",
+    "title": "Economic data: Employment and labour | Milled Edge",
+    "search_description": "Explore reported employment and labour-market indicators. Review the source, data timing, and category methodology; market values may be delayed and are.",
+    "labels": [
+      "Markets",
+      "economic-indicators",
+      "employment-and-labour",
+      "Global Market Data"
+    ],
+    "batch": 5,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "economic"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "employment",
+        "label": "Employment series",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "economic"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "employment"
+          }
+        ]
+      },
+      {
+        "id": "unemployment",
+        "label": "Unemployment series",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "economic"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "unemployment"
+          }
+        ]
+      },
+      {
+        "id": "labour",
+        "label": "Labour-market series",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "economic"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "labor"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "economic-data-econ-rates",
+    "slug": "economic-data-econ-rates",
+    "division_id": "economic-data",
+    "division": "Economic indicators",
+    "category_id": "econ-rates",
+    "category": "Rates and monetary policy",
+    "scope": "reported policy-rate and monetary indicators",
+    "title": "Economic data: Rates and monetary policy | Milled Edge",
+    "search_description": "Explore reported policy-rate and monetary indicators. Review the source, data timing, and category methodology; market values may be delayed and are not.",
+    "labels": [
+      "Markets",
+      "economic-indicators",
+      "rates-and-monetary-policy",
+      "Global Market Data"
+    ],
+    "batch": 5,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "economic"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "policy-rate",
+        "label": "Policy-rate series",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "economic"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "interest rate"
+          }
+        ]
+      },
+      {
+        "id": "central-bank",
+        "label": "Central-bank series",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "economic"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "central bank"
+          }
+        ]
+      },
+      {
+        "id": "rate-series",
+        "label": "Rate and monetary series",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "economic"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "rate"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "economic-data-econ-trade",
+    "slug": "economic-data-econ-trade",
+    "division_id": "economic-data",
+    "division": "Economic indicators",
+    "category_id": "econ-trade",
+    "category": "Trade and external accounts",
+    "scope": "reported trade and external-balance indicators",
+    "title": "Economic data: Trade and external accounts | Milled Edge",
+    "search_description": "Explore reported trade and external-balance indicators. Review the source, data timing, and category methodology; market values may be delayed and are.",
+    "labels": [
+      "Markets",
+      "economic-indicators",
+      "trade-and-external-accounts",
+      "Global Market Data"
+    ],
+    "batch": 5,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "economic"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "trade",
+        "label": "Trade series",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "economic"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "trade"
+          }
+        ]
+      },
+      {
+        "id": "exports",
+        "label": "Export series",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "economic"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "export"
+          }
+        ]
+      },
+      {
+        "id": "imports",
+        "label": "Import series",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "economic"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "import"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "economic-data-econ-fiscal",
+    "slug": "economic-data-econ-fiscal",
+    "division_id": "economic-data",
+    "division": "Economic indicators",
+    "category_id": "econ-fiscal",
+    "category": "Fiscal and public debt",
+    "scope": "reported government-finance and public-debt indicators",
+    "title": "Economic data: Fiscal and public debt | Milled Edge",
+    "search_description": "Explore reported government-finance and public-debt indicators. Review the source, data timing, and category methodology; market values may be delayed.",
+    "labels": [
+      "Markets",
+      "economic-indicators",
+      "fiscal-and-public-debt",
+      "Global Market Data"
+    ],
+    "batch": 5,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "economic"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "debt",
+        "label": "Public-debt series",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "economic"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "debt"
+          }
+        ]
+      },
+      {
+        "id": "fiscal",
+        "label": "Fiscal series",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "economic"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "fiscal"
+          }
+        ]
+      },
+      {
+        "id": "deficit",
+        "label": "Deficit series",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "economic"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "deficit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "economic-data-econ-production",
+    "slug": "economic-data-econ-production",
+    "division_id": "economic-data",
+    "division": "Economic indicators",
+    "category_id": "econ-production",
+    "category": "Production, housing, and sentiment",
+    "scope": "other supported production, housing, and sentiment series",
+    "title": "Economic data: Production, housing & sentiment",
+    "search_description": "Explore other supported production, housing, and sentiment series. Review the source, data timing, and category methodology; market values may be delayed.",
+    "labels": [
+      "Markets",
+      "economic-indicators",
+      "production-housing-and-sentiment",
+      "Global Market Data"
+    ],
+    "batch": 5,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "economic"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "production",
+        "label": "Production series",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "economic"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "production"
+          }
+        ]
+      },
+      {
+        "id": "housing",
+        "label": "Housing series",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "economic"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "housing"
+          }
+        ]
+      },
+      {
+        "id": "sentiment",
+        "label": "Sentiment series",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "economic"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "sentiment"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "structured-products-structured-protection",
+    "slug": "structured-products-structured-protection",
+    "division_id": "structured-products",
+    "division": "Structured products",
+    "category_id": "structured-protection",
+    "category": "Capital protection",
+    "scope": "products classified as capital-protected when stated by the source",
+    "title": "Structured products: Capital protection | Milled Edge",
+    "search_description": "Explore products classified as capital-protected when stated by the source. Review the source, data timing, and category methodology; market values may.",
+    "labels": [
+      "Markets",
+      "structured-products",
+      "capital-protection",
+      "Global Market Data"
+    ],
+    "batch": 5,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "in_range",
+        "right": [
+          "stock",
+          "fund",
+          "dr"
+        ]
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "certificates",
+        "label": "Certificate records (capital protection is not verified by the feed)",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "fund",
+              "dr"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "certificate"
+          }
+        ]
+      },
+      {
+        "id": "warrants",
+        "label": "Warrant records (terms require issuer-document verification)",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "fund",
+              "dr"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "warrant"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "structured-products-structured-leverage",
+    "slug": "structured-products-structured-leverage",
+    "division_id": "structured-products",
+    "division": "Structured products",
+    "category_id": "structured-leverage",
+    "category": "Leveraged and inverse",
+    "scope": "leveraged or inverse products where provider data identifies them",
+    "title": "Structured products: Leveraged and inverse | Milled Edge",
+    "search_description": "Explore leveraged or inverse products where provider data identifies them. Review the source, data timing, and category methodology; market values may be.",
+    "labels": [
+      "Markets",
+      "structured-products",
+      "leveraged-and-inverse",
+      "Global Market Data"
+    ],
+    "batch": 5,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "in_range",
+        "right": [
+          "stock",
+          "fund",
+          "dr"
+        ]
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "leveraged",
+        "label": "Leveraged listed products",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "fund",
+              "dr"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "leveraged"
+          }
+        ]
+      },
+      {
+        "id": "inverse",
+        "label": "Inverse listed products",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "fund",
+              "dr"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "inverse"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "structured-products-structured-notes-warrants",
+    "slug": "structured-products-structured-notes-warrants",
+    "division_id": "structured-products",
+    "division": "Structured products",
+    "category_id": "structured-notes-warrants",
+    "category": "Notes and warrants",
+    "scope": "supported structured notes, certificates, and warrant records",
+    "title": "Structured products: Notes and warrants | Milled Edge",
+    "search_description": "Explore supported structured notes, certificates, and warrant records. Review the source, data timing, and category methodology; market values may be.",
+    "labels": [
+      "Markets",
+      "structured-products",
+      "notes-and-warrants",
+      "Global Market Data"
+    ],
+    "batch": 5,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "in_range",
+        "right": [
+          "stock",
+          "fund",
+          "dr"
+        ]
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "warrants",
+        "label": "Warrant records",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "fund",
+              "dr"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "warrant"
+          }
+        ]
+      },
+      {
+        "id": "certificates",
+        "label": "Certificate records",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "fund",
+              "dr"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "certificate"
+          }
+        ]
+      },
+      {
+        "id": "notes",
+        "label": "Note records",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "fund",
+              "dr"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "note"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "structured-products-structured-underlying",
+    "slug": "structured-products-structured-underlying",
+    "division_id": "structured-products",
+    "division": "Structured products",
+    "category_id": "structured-underlying",
+    "category": "Underlying asset",
+    "scope": "products grouped by the reported underlying",
+    "title": "Structured products: Underlying asset | Milled Edge",
+    "search_description": "Explore products grouped by the reported underlying. Review the source, data timing, and category methodology; market values may be delayed and are not.",
+    "labels": [
+      "Markets",
+      "structured-products",
+      "underlying-asset",
+      "Global Market Data"
+    ],
+    "batch": 5,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "in_range",
+        "right": [
+          "stock",
+          "fund",
+          "dr"
+        ]
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "gold",
+        "label": "Gold-linked product references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "fund",
+              "dr"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "gold"
+          }
+        ]
+      },
+      {
+        "id": "index",
+        "label": "Index-linked product references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "fund",
+              "dr"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "index"
+          }
+        ]
+      },
+      {
+        "id": "crypto",
+        "label": "Crypto-linked product references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "fund",
+              "dr"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "crypto"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "structured-products-structured-issuer-maturity",
+    "slug": "structured-products-structured-issuer-maturity",
+    "division_id": "structured-products",
+    "division": "Structured products",
+    "category_id": "structured-issuer-maturity",
+    "category": "Issuer and maturity",
+    "scope": "products grouped by issuer or maturity where available",
+    "title": "Structured products: Issuer and maturity | Milled Edge",
+    "search_description": "Explore products grouped by issuer or maturity where available. Review the source, data timing, and category methodology; market values may be delayed.",
+    "labels": [
+      "Markets",
+      "structured-products",
+      "issuer-and-maturity",
+      "Global Market Data"
+    ],
+    "batch": 5,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "in_range",
+        "right": [
+          "stock",
+          "fund",
+          "dr"
+        ]
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "2026",
+        "label": "2026 maturity references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "fund",
+              "dr"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "2026"
+          }
+        ]
+      },
+      {
+        "id": "2030",
+        "label": "2030 maturity references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "fund",
+              "dr"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "2030"
+          }
+        ]
+      },
+      {
+        "id": "issuer",
+        "label": "Issuer references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "fund",
+              "dr"
+            ]
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "certificate"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "reits-reit-country",
+    "slug": "reits-reit-country",
+    "division_id": "reits",
+    "division": "REITs and listed real estate",
+    "category_id": "reit-country",
+    "category": "Country and region",
+    "scope": "REITs grouped by reported listing country or region",
+    "title": "REITs: Country and region | Milled Edge",
+    "search_description": "Explore REITs grouped by reported listing country or region. Review the source, data timing, and category methodology; market values may be delayed and.",
+    "labels": [
+      "Markets",
+      "reits-and-listed-real-estate",
+      "country-and-region",
+      "Global Market Data"
+    ],
+    "batch": 5,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "stock"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "united-states",
+        "label": "United States",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "United States"
+          }
+        ]
+      },
+      {
+        "id": "india",
+        "label": "India",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "India"
+          }
+        ]
+      },
+      {
+        "id": "united-kingdom",
+        "label": "United Kingdom",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "United Kingdom"
+          }
+        ]
+      },
+      {
+        "id": "canada",
+        "label": "Canada",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "Canada"
+          }
+        ]
+      },
+      {
+        "id": "australia",
+        "label": "Australia",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "Australia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "reits-reit-property-sector",
+    "slug": "reits-reit-property-sector",
+    "division_id": "reits",
+    "division": "REITs and listed real estate",
+    "category_id": "reit-property-sector",
+    "category": "Property sector",
+    "scope": "residential, retail, industrial, office, and other supported sectors",
+    "title": "REITs: Property sector | Milled Edge",
+    "search_description": "Explore residential, retail, industrial, office, and other supported sectors. Review the source, data timing, and category methodology; market values may.",
+    "labels": [
+      "Markets",
+      "reits-and-listed-real-estate",
+      "property-sector",
+      "Global Market Data"
+    ],
+    "batch": 5,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "stock"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "residential",
+        "label": "Residential property",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "residential"
+          }
+        ]
+      },
+      {
+        "id": "retail",
+        "label": "Retail property",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "retail"
+          }
+        ]
+      },
+      {
+        "id": "industrial",
+        "label": "Industrial property",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "industrial"
+          }
+        ]
+      },
+      {
+        "id": "office",
+        "label": "Office property",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "office"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "reits-reit-structure",
+    "slug": "reits-reit-structure",
+    "division_id": "reits",
+    "division": "REITs and listed real estate",
+    "category_id": "reit-structure",
+    "category": "REIT structure",
+    "scope": "equity, mortgage, and other structures when identified",
+    "title": "REITs: REIT structure | Milled Edge",
+    "search_description": "Explore equity, mortgage, and other structures when identified. Review the source, data timing, and category methodology; market values may be delayed.",
+    "labels": [
+      "Markets",
+      "reits-and-listed-real-estate",
+      "reit-structure",
+      "Global Market Data"
+    ],
+    "batch": 5,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "stock"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "mortgage",
+        "label": "Mortgage REIT references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "mortgage reit"
+          }
+        ]
+      },
+      {
+        "id": "reported-reits",
+        "label": "Provider-labelled REIT listings (structure not normalized)",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "REIT"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "reits-reit-market-cap",
+    "slug": "reits-reit-market-cap",
+    "division_id": "reits",
+    "division": "REITs and listed real estate",
+    "category_id": "reit-market-cap",
+    "category": "Market capitalization",
+    "scope": "REITs grouped by reported market-capitalization bands",
+    "title": "REITs: Market capitalization | Milled Edge",
+    "search_description": "Explore REITs grouped by reported market-capitalization bands. Review the source, data timing, and category methodology; market values may be delayed and.",
+    "labels": [
+      "Markets",
+      "reits-and-listed-real-estate",
+      "market-capitalization",
+      "Global Market Data"
+    ],
+    "batch": 5,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "stock"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "reported-cap",
+        "label": "Reported market-cap data",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "market_cap_basic",
+            "operation": "egreater",
+            "right": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "reits-reit-exchange",
+    "slug": "reits-reit-exchange",
+    "division_id": "reits",
+    "division": "REITs and listed real estate",
+    "category_id": "reit-exchange",
+    "category": "Exchange and venue",
+    "scope": "REITs grouped by reported listing venue",
+    "title": "REITs: Exchange and venue | Milled Edge",
+    "search_description": "Explore REITs grouped by reported listing venue. Review the source, data timing, and category methodology; market values may be delayed and are not.",
+    "labels": [
+      "Markets",
+      "reits-and-listed-real-estate",
+      "exchange-and-venue",
+      "Global Market Data"
+    ],
+    "batch": 5,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "stock"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "nyse",
+        "label": "NYSE",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "NYSE"
+          }
+        ]
+      },
+      {
+        "id": "nasdaq",
+        "label": "NASDAQ",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "NASDAQ"
+          }
+        ]
+      },
+      {
+        "id": "lse",
+        "label": "LSE",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "LSE"
+          }
+        ]
+      },
+      {
+        "id": "nse",
+        "label": "NSE",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "NSE"
+          }
+        ]
+      },
+      {
+        "id": "bse",
+        "label": "BSE",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "BSE"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "other-instruments-other-type",
+    "slug": "other-instruments-other-type",
+    "division_id": "other-instruments",
+    "division": "Other and not-yet-classified instruments",
+    "category_id": "other-type",
+    "category": "Provider instrument type",
+    "scope": "records grouped by the provider's reported instrument type",
+    "title": "Other instruments: Instrument type | Milled Edge",
+    "search_description": "Explore records grouped by the provider's reported instrument type. Review the source, data timing, and category methodology; market values may be.",
+    "labels": [
+      "Markets",
+      "other-and-not-yet-classified-instruments",
+      "provider-instrument-type",
+      "Global Market Data"
+    ],
+    "batch": 5,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "in_range",
+        "right": [
+          "stock",
+          "bond",
+          "fund",
+          "futures",
+          "forex",
+          "spot",
+          "economic",
+          "dr",
+          "index"
+        ]
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "stock",
+        "label": "STOCK records",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "bond",
+              "fund",
+              "futures",
+              "forex",
+              "spot",
+              "economic",
+              "dr",
+              "index"
+            ]
+          },
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "stock"
+          }
+        ]
+      },
+      {
+        "id": "bond",
+        "label": "BOND records",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "bond",
+              "fund",
+              "futures",
+              "forex",
+              "spot",
+              "economic",
+              "dr",
+              "index"
+            ]
+          },
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "bond"
+          }
+        ]
+      },
+      {
+        "id": "fund",
+        "label": "FUND records",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "bond",
+              "fund",
+              "futures",
+              "forex",
+              "spot",
+              "economic",
+              "dr",
+              "index"
+            ]
+          },
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          }
+        ]
+      },
+      {
+        "id": "futures",
+        "label": "FUTURES records",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "bond",
+              "fund",
+              "futures",
+              "forex",
+              "spot",
+              "economic",
+              "dr",
+              "index"
+            ]
+          },
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          }
+        ]
+      },
+      {
+        "id": "forex",
+        "label": "FOREX records",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "bond",
+              "fund",
+              "futures",
+              "forex",
+              "spot",
+              "economic",
+              "dr",
+              "index"
+            ]
+          },
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "forex"
+          }
+        ]
+      },
+      {
+        "id": "spot",
+        "label": "SPOT records",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "bond",
+              "fund",
+              "futures",
+              "forex",
+              "spot",
+              "economic",
+              "dr",
+              "index"
+            ]
+          },
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "spot"
+          }
+        ]
+      },
+      {
+        "id": "economic",
+        "label": "ECONOMIC records",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "bond",
+              "fund",
+              "futures",
+              "forex",
+              "spot",
+              "economic",
+              "dr",
+              "index"
+            ]
+          },
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "economic"
+          }
+        ]
+      },
+      {
+        "id": "dr",
+        "label": "DR records",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "bond",
+              "fund",
+              "futures",
+              "forex",
+              "spot",
+              "economic",
+              "dr",
+              "index"
+            ]
+          },
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "dr"
+          }
+        ]
+      },
+      {
+        "id": "index",
+        "label": "INDEX records",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "bond",
+              "fund",
+              "futures",
+              "forex",
+              "spot",
+              "economic",
+              "dr",
+              "index"
+            ]
+          },
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "index"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "other-instruments-other-subtype",
+    "slug": "other-instruments-other-subtype",
+    "division_id": "other-instruments",
+    "division": "Other and not-yet-classified instruments",
+    "category_id": "other-subtype",
+    "category": "Provider subtype",
+    "scope": "records grouped by the provider's reported subtype",
+    "title": "Other instruments: Instrument subtype | Milled Edge",
+    "search_description": "Explore records grouped by the provider's reported subtype. Review the source, data timing, and category methodology; market values may be delayed and.",
+    "labels": [
+      "Markets",
+      "other-and-not-yet-classified-instruments",
+      "provider-subtype",
+      "Global Market Data"
+    ],
+    "batch": 5,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "in_range",
+        "right": [
+          "stock",
+          "bond",
+          "fund",
+          "futures",
+          "forex",
+          "spot",
+          "economic",
+          "dr",
+          "index"
+        ]
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "corporate-bonds",
+        "label": "Corporate bonds",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "bond"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "corporate"
+          }
+        ]
+      },
+      {
+        "id": "government-bonds",
+        "label": "Government bonds",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "bond"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "government"
+          }
+        ]
+      },
+      {
+        "id": "crypto-spot",
+        "label": "Crypto spot",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "spot"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "crypto"
+          }
+        ]
+      },
+      {
+        "id": "crypto-futures",
+        "label": "Crypto futures",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "crypto"
+          }
+        ]
+      },
+      {
+        "id": "etfs",
+        "label": "ETFs",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "etf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "other-instruments-other-country",
+    "slug": "other-instruments-other-country",
+    "division_id": "other-instruments",
+    "division": "Other and not-yet-classified instruments",
+    "category_id": "other-country",
+    "category": "Country and region",
+    "scope": "unclassified records grouped by reported country or region",
+    "title": "Other instruments: Country and region | Milled Edge",
+    "search_description": "Explore unclassified records grouped by reported country or region. Review the source, data timing, and category methodology; market values may be.",
+    "labels": [
+      "Markets",
+      "other-and-not-yet-classified-instruments",
+      "country-and-region",
+      "Global Market Data"
+    ],
+    "batch": 5,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "in_range",
+        "right": [
+          "stock",
+          "bond",
+          "fund",
+          "futures",
+          "forex",
+          "spot",
+          "economic",
+          "dr",
+          "index"
+        ]
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "united-states",
+        "label": "United States",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "bond",
+              "fund",
+              "futures",
+              "forex",
+              "spot",
+              "economic",
+              "dr",
+              "index"
+            ]
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "United States"
+          }
+        ]
+      },
+      {
+        "id": "india",
+        "label": "India",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "bond",
+              "fund",
+              "futures",
+              "forex",
+              "spot",
+              "economic",
+              "dr",
+              "index"
+            ]
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "India"
+          }
+        ]
+      },
+      {
+        "id": "united-kingdom",
+        "label": "United Kingdom",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "bond",
+              "fund",
+              "futures",
+              "forex",
+              "spot",
+              "economic",
+              "dr",
+              "index"
+            ]
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "United Kingdom"
+          }
+        ]
+      },
+      {
+        "id": "canada",
+        "label": "Canada",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "bond",
+              "fund",
+              "futures",
+              "forex",
+              "spot",
+              "economic",
+              "dr",
+              "index"
+            ]
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "Canada"
+          }
+        ]
+      },
+      {
+        "id": "australia",
+        "label": "Australia",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "bond",
+              "fund",
+              "futures",
+              "forex",
+              "spot",
+              "economic",
+              "dr",
+              "index"
+            ]
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "Australia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "other-instruments-other-exchange",
+    "slug": "other-instruments-other-exchange",
+    "division_id": "other-instruments",
+    "division": "Other and not-yet-classified instruments",
+    "category_id": "other-exchange",
+    "category": "Exchange and venue",
+    "scope": "unclassified records grouped by reported exchange or venue",
+    "title": "Other instruments: Exchange and venue | Milled Edge",
+    "search_description": "Explore unclassified records grouped by reported exchange or venue. Review the source, data timing, and category methodology; market values may be.",
+    "labels": [
+      "Markets",
+      "other-and-not-yet-classified-instruments",
+      "exchange-and-venue",
+      "Global Market Data"
+    ],
+    "batch": 5,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "in_range",
+        "right": [
+          "stock",
+          "bond",
+          "fund",
+          "futures",
+          "forex",
+          "spot",
+          "economic",
+          "dr",
+          "index"
+        ]
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "nyse",
+        "label": "NYSE",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "bond",
+              "fund",
+              "futures",
+              "forex",
+              "spot",
+              "economic",
+              "dr",
+              "index"
+            ]
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "NYSE"
+          }
+        ]
+      },
+      {
+        "id": "nasdaq",
+        "label": "NASDAQ",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "bond",
+              "fund",
+              "futures",
+              "forex",
+              "spot",
+              "economic",
+              "dr",
+              "index"
+            ]
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "NASDAQ"
+          }
+        ]
+      },
+      {
+        "id": "cme",
+        "label": "CME",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "bond",
+              "fund",
+              "futures",
+              "forex",
+              "spot",
+              "economic",
+              "dr",
+              "index"
+            ]
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "CME"
+          }
+        ]
+      },
+      {
+        "id": "fx-idc",
+        "label": "FX_IDC",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "bond",
+              "fund",
+              "futures",
+              "forex",
+              "spot",
+              "economic",
+              "dr",
+              "index"
+            ]
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "FX_IDC"
+          }
+        ]
+      },
+      {
+        "id": "binance",
+        "label": "BINANCE",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock",
+              "bond",
+              "fund",
+              "futures",
+              "forex",
+              "spot",
+              "economic",
+              "dr",
+              "index"
+            ]
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "BINANCE"
+          }
+        ]
+      }
+    ]
+  }
+]

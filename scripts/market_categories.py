@@ -79,12 +79,12 @@ DIVISION_SPECS = [
         ("future-liquidity", "Reported activity", "futures grouped by reported volume or open-interest ranges"),
     ]),
     ("options", "Options", [
-        ("option-underlying", "Underlying asset", "options grouped by their reported underlying instrument"),
-        ("option-call-put", "Call and put", "call and put contracts where the source identifies the option side"),
-        ("option-expiry", "Expiry", "options grouped by available expiry dates or tenor"),
-        ("option-strike", "Strike and moneyness", "contracts grouped by strike or moneyness when available"),
-        ("option-exchange", "Country and exchange", "options grouped by supported country and trading venue"),
-        ("option-style", "Exercise style", "American, European, and other styles where identified by the source"),
+        ("option-underlying", "Underlying asset", "supported equity, index, and futures underlyings for option research; standalone option contracts are not exposed by the connected global scan"),
+        ("option-call-put", "Call and put", "call and put option-chain data must be verified at the exchange; this directory supplies underlying instruments only"),
+        ("option-expiry", "Expiry", "option expiry and tenor require exchange option-chain verification; directory rows are related underlyings"),
+        ("option-strike", "Strike and moneyness", "strike and moneyness are not normalized in the connected scan; use underlying quotes as discovery context"),
+        ("option-exchange", "Country and exchange", "related underlyings grouped by their reported country and venue; this is not a complete option-chain feed"),
+        ("option-style", "Exercise style", "exercise style is not exposed consistently; related underlyings are shown without inferring American or European terms"),
     ]),
     ("commodities", "Commodities", [
         ("commodity-precious", "Precious metals and gemstones", "gold, silver, platinum, palladium, and supported gemstone benchmarks"),
@@ -116,8 +116,8 @@ DIVISION_SPECS = [
     ]),
     ("crypto-derivatives", "Crypto derivatives", [
         ("cryptoderiv-futures", "Crypto futures", "supported crypto-linked futures contracts"),
-        ("cryptoderiv-perpetuals", "Perpetual contracts", "supported perpetual markets where the source identifies them"),
-        ("cryptoderiv-options", "Crypto options", "supported crypto option records where available"),
+        ("cryptoderiv-perpetuals", "Perpetual contracts", "crypto-classified derivative records; perpetual status must be verified with each venue"),
+        ("cryptoderiv-options", "Crypto options", "related crypto derivative records for discovery; standalone option-chain records are not exposed consistently by the connected scan"),
         ("cryptoderiv-underlying", "Underlying crypto asset", "derivatives grouped by their reported underlying asset"),
         ("cryptoderiv-venue", "Exchange and venue", "crypto derivatives grouped by reported trading venue"),
     ]),
@@ -152,6 +152,23 @@ DIVISION_SPECS = [
     ]),
 ]
 
+TITLE_DIVISION = {
+    "Exchange-traded funds (ETFs)":"ETFs",
+    "Currencies and foreign exchange":"FX",
+    "Cryptocurrency spot markets":"Crypto spot",
+    "Economic indicators":"Economic data",
+    "REITs and listed real estate":"REITs",
+    "Other and not-yet-classified instruments":"Other instruments",
+}
+TITLE_CATEGORY = {
+    "Gaming, payments, and other themes":"Gaming, payments & themes",
+    "Production, housing, and sentiment":"Production, housing & sentiment",
+    "Major, minor, and emerging pairs":"Major/minor/emerging pairs",
+    "Issuer and underlying security":"Issuer and underlying",
+    "Provider instrument type":"Instrument type",
+    "Provider subtype":"Instrument subtype",
+}
+
 # Publication order prioritizes the equity, index, and commodity desks that
 # replace the most prominent Global Snapshot boards in the first 20-post batch.
 BATCH_ORDER = [
@@ -175,12 +192,19 @@ def build_catalog() -> list[dict[str, object]]:
     for division_key in BATCH_ORDER:
         _, division_title, categories = ordered[division_key]
         for category_key, category_title, scope in categories:
-            title = f"{division_title}: {category_title} | Milled Edge"
+            title_division = TITLE_DIVISION.get(division_title, division_title)
+            title_category = TITLE_CATEGORY.get(category_title, category_title)
+            title_core = f"{title_division}: {title_category}"
+            title = title_core + " | Milled Edge" if len(title_core) <= 45 else title_core
+            if len(title) > 60:
+                raise ValueError(f"Category title exceeds concise-title limit: {title}")
             slug = slugify(f"{division_key}-{category_key}")
             description = (
                 f"Explore {scope}. Review the source, data timing, and category methodology; "
                 "market values may be delayed and are not executable quotes."
             )
+            if len(description) > 155:
+                description = description[:154].rsplit(" ", 1)[0].rstrip(" ,;:") + "."
             labels = ["Markets", slugify(division_title), slugify(category_title), "Global Market Data"]
             pages.append({
                 "id": slug,

@@ -1,0 +1,1807 @@
+[
+  {
+    "id": "index-funds-indexfund-wrapper",
+    "slug": "index-funds-indexfund-wrapper",
+    "division_id": "index-funds",
+    "division": "Index funds",
+    "category_id": "indexfund-wrapper",
+    "category": "Fund wrapper",
+    "scope": "ETF, mutual-fund, or other wrapper where provider data identifies it",
+    "title": "Index funds: Fund wrapper | Milled Edge",
+    "search_description": "Explore ETF, mutual-fund, or other wrapper where provider data identifies it. Review the source, data timing, and category methodology; market values may.",
+    "labels": [
+      "Markets",
+      "index-funds",
+      "fund-wrapper",
+      "Global Market Data"
+    ],
+    "batch": 3,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "fund"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "etf",
+        "label": "ETF wrappers",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "etf"
+          }
+        ]
+      },
+      {
+        "id": "mutual",
+        "label": "Mutual-fund wrappers",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "mutual"
+          }
+        ]
+      },
+      {
+        "id": "closed-end",
+        "label": "Closed-end wrappers",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "closedend"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mutual-funds-mf-asset-class",
+    "slug": "mutual-funds-mf-asset-class",
+    "division_id": "mutual-funds",
+    "division": "Mutual funds",
+    "category_id": "mf-asset-class",
+    "category": "Asset class",
+    "scope": "equity, debt, hybrid, and other supported mutual-fund asset classes",
+    "title": "Mutual funds: Asset class | Milled Edge",
+    "search_description": "Explore equity, debt, hybrid, and other supported mutual-fund asset classes. Review the source, data timing, and category methodology; market values may.",
+    "labels": [
+      "Markets",
+      "mutual-funds",
+      "asset-class",
+      "Global Market Data"
+    ],
+    "batch": 3,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "fund"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "equity",
+        "label": "Equity mutual-fund records",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "equity"
+          }
+        ]
+      },
+      {
+        "id": "debt",
+        "label": "Debt and bond-fund records",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "bond"
+          }
+        ]
+      },
+      {
+        "id": "hybrid",
+        "label": "Hybrid-fund references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "hybrid"
+          }
+        ]
+      },
+      {
+        "id": "commodity",
+        "label": "Commodity-fund references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "commodity"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mutual-funds-mf-equity-style",
+    "slug": "mutual-funds-mf-equity-style",
+    "division_id": "mutual-funds",
+    "division": "Mutual funds",
+    "category_id": "mf-equity-style",
+    "category": "Equity style and market cap",
+    "scope": "large-cap, mid-cap, small-cap, multi-cap, and flexi-cap styles",
+    "title": "Mutual funds: Equity style and market cap | Milled Edge",
+    "search_description": "Explore large-cap, mid-cap, small-cap, multi-cap, and flexi-cap styles. Review the source, data timing, and category methodology; market values may be.",
+    "labels": [
+      "Markets",
+      "mutual-funds",
+      "equity-style-and-market-cap",
+      "Global Market Data"
+    ],
+    "batch": 3,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "fund"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "large-cap",
+        "label": "Large-cap style references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "large cap"
+          }
+        ]
+      },
+      {
+        "id": "mid-cap",
+        "label": "Mid-cap style references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "mid cap"
+          }
+        ]
+      },
+      {
+        "id": "small-cap",
+        "label": "Small-cap style references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "small cap"
+          }
+        ]
+      },
+      {
+        "id": "multi-cap",
+        "label": "Multi-cap references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "multi cap"
+          }
+        ]
+      },
+      {
+        "id": "multi-asset",
+        "label": "Multi-asset style references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "multi asset"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mutual-funds-mf-debt-duration",
+    "slug": "mutual-funds-mf-debt-duration",
+    "division_id": "mutual-funds",
+    "division": "Mutual funds",
+    "category_id": "mf-debt-duration",
+    "category": "Debt duration and risk",
+    "scope": "debt schemes grouped by reported duration or credit-risk profile",
+    "title": "Mutual funds: Debt duration and risk | Milled Edge",
+    "search_description": "Explore debt schemes grouped by reported duration or credit-risk profile. Review the source, data timing, and category methodology; market values may be.",
+    "labels": [
+      "Markets",
+      "mutual-funds",
+      "debt-duration-and-risk",
+      "Global Market Data"
+    ],
+    "batch": 3,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "fund"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "short-duration",
+        "label": "Short-duration references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "short duration"
+          }
+        ]
+      },
+      {
+        "id": "long-duration",
+        "label": "Long-duration references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "long duration"
+          }
+        ]
+      },
+      {
+        "id": "credit-risk",
+        "label": "Credit-risk references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "credit risk"
+          }
+        ]
+      },
+      {
+        "id": "corporate-debt",
+        "label": "Corporate-debt references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "corporate bond"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mutual-funds-mf-geography",
+    "slug": "mutual-funds-mf-geography",
+    "division_id": "mutual-funds",
+    "division": "Mutual funds",
+    "category_id": "mf-geography",
+    "category": "Country and region",
+    "scope": "mutual funds grouped by reported geographic investment focus",
+    "title": "Mutual funds: Country and region | Milled Edge",
+    "search_description": "Explore mutual funds grouped by reported geographic investment focus. Review the source, data timing, and category methodology; market values may be.",
+    "labels": [
+      "Markets",
+      "mutual-funds",
+      "country-and-region",
+      "Global Market Data"
+    ],
+    "batch": 3,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "fund"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "india",
+        "label": "India",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "India"
+          }
+        ]
+      },
+      {
+        "id": "united-states",
+        "label": "United States",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "United States"
+          }
+        ]
+      },
+      {
+        "id": "united-kingdom",
+        "label": "United Kingdom",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "United Kingdom"
+          }
+        ]
+      },
+      {
+        "id": "canada",
+        "label": "Canada",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "Canada"
+          }
+        ]
+      },
+      {
+        "id": "australia",
+        "label": "Australia",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "Australia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mutual-funds-mf-sector-theme",
+    "slug": "mutual-funds-mf-sector-theme",
+    "division_id": "mutual-funds",
+    "division": "Mutual funds",
+    "category_id": "mf-sector-theme",
+    "category": "Sector and theme",
+    "scope": "sectoral and thematic mutual-fund classifications where available",
+    "title": "Mutual funds: Sector and theme | Milled Edge",
+    "search_description": "Explore sectoral and thematic mutual-fund classifications where available. Review the source, data timing, and category methodology; market values may be.",
+    "labels": [
+      "Markets",
+      "mutual-funds",
+      "sector-and-theme",
+      "Global Market Data"
+    ],
+    "batch": 3,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "fund"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "technology",
+        "label": "Technology funds",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "technology"
+          }
+        ]
+      },
+      {
+        "id": "energy",
+        "label": "Energy funds",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "energy"
+          }
+        ]
+      },
+      {
+        "id": "healthcare",
+        "label": "Healthcare funds",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "health"
+          }
+        ]
+      },
+      {
+        "id": "financials",
+        "label": "Financial-sector funds",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "financial"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mutual-funds-mf-tax-goal",
+    "slug": "mutual-funds-mf-tax-goal",
+    "division_id": "mutual-funds",
+    "division": "Mutual funds",
+    "category_id": "mf-tax-goal",
+    "category": "Tax-saving and goal-based",
+    "scope": "supported tax-saving and solution-oriented fund categories",
+    "title": "Mutual funds: Tax-saving and goal-based | Milled Edge",
+    "search_description": "Explore supported tax-saving and solution-oriented fund categories. Review the source, data timing, and category methodology; market values may be.",
+    "labels": [
+      "Markets",
+      "mutual-funds",
+      "tax-saving-and-goal-based",
+      "Global Market Data"
+    ],
+    "batch": 3,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "fund"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "tax",
+        "label": "Tax-saving references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "tax"
+          }
+        ]
+      },
+      {
+        "id": "retirement",
+        "label": "Retirement references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "retirement"
+          }
+        ]
+      },
+      {
+        "id": "income",
+        "label": "Income-oriented references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "income"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "mutual-funds-mf-management-style",
+    "slug": "mutual-funds-mf-management-style",
+    "division_id": "mutual-funds",
+    "division": "Mutual funds",
+    "category_id": "mf-management-style",
+    "category": "Management style",
+    "scope": "active, passive, and other reported management approaches",
+    "title": "Mutual funds: Management style | Milled Edge",
+    "search_description": "Explore active, passive, and other reported management approaches. Review the source, data timing, and category methodology; market values may be delayed.",
+    "labels": [
+      "Markets",
+      "mutual-funds",
+      "management-style",
+      "Global Market Data"
+    ],
+    "batch": 3,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "fund"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "active",
+        "label": "Active-management references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "active"
+          }
+        ]
+      },
+      {
+        "id": "passive",
+        "label": "Passive/index references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "passive"
+          }
+        ]
+      },
+      {
+        "id": "index",
+        "label": "Index-oriented references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "index"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "other-funds-otherfund-type",
+    "slug": "other-funds-otherfund-type",
+    "division_id": "other-funds",
+    "division": "Other funds",
+    "category_id": "otherfund-type",
+    "category": "Fund type",
+    "scope": "supported fund records outside the ETF, index-fund, and mutual-fund routes",
+    "title": "Other funds: Fund type | Milled Edge",
+    "search_description": "Explore supported fund records outside the ETF, index-fund, and mutual-fund routes. Review the source, data timing, and category methodology; market.",
+    "labels": [
+      "Markets",
+      "other-funds",
+      "fund-type",
+      "Global Market Data"
+    ],
+    "batch": 3,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "fund"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "closed-end",
+        "label": "Closed-end funds",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "closedend"
+          }
+        ]
+      },
+      {
+        "id": "etf",
+        "label": "ETF records",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "etf"
+          }
+        ]
+      },
+      {
+        "id": "mutual",
+        "label": "Mutual-fund records",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "mutual"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "other-funds-otherfund-asset-class",
+    "slug": "other-funds-otherfund-asset-class",
+    "division_id": "other-funds",
+    "division": "Other funds",
+    "category_id": "otherfund-asset-class",
+    "category": "Asset class",
+    "scope": "other funds grouped by their reported underlying exposure",
+    "title": "Other funds: Asset class | Milled Edge",
+    "search_description": "Explore other funds grouped by their reported underlying exposure. Review the source, data timing, and category methodology; market values may be delayed.",
+    "labels": [
+      "Markets",
+      "other-funds",
+      "asset-class",
+      "Global Market Data"
+    ],
+    "batch": 3,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "fund"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "equity",
+        "label": "Equity exposure",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "equity"
+          }
+        ]
+      },
+      {
+        "id": "bonds",
+        "label": "Bond exposure",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "bond"
+          }
+        ]
+      },
+      {
+        "id": "gold",
+        "label": "Gold and commodity exposure",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "gold"
+          }
+        ]
+      },
+      {
+        "id": "crypto",
+        "label": "Crypto exposure",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "crypto"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "other-funds-otherfund-geography",
+    "slug": "other-funds-otherfund-geography",
+    "division_id": "other-funds",
+    "division": "Other funds",
+    "category_id": "otherfund-geography",
+    "category": "Country and region",
+    "scope": "other funds grouped by reported market or regional focus",
+    "title": "Other funds: Country and region | Milled Edge",
+    "search_description": "Explore other funds grouped by reported market or regional focus. Review the source, data timing, and category methodology; market values may be delayed.",
+    "labels": [
+      "Markets",
+      "other-funds",
+      "country-and-region",
+      "Global Market Data"
+    ],
+    "batch": 3,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "fund"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "united-states",
+        "label": "United States",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "United States"
+          }
+        ]
+      },
+      {
+        "id": "india",
+        "label": "India",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "India"
+          }
+        ]
+      },
+      {
+        "id": "united-kingdom",
+        "label": "United Kingdom",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "United Kingdom"
+          }
+        ]
+      },
+      {
+        "id": "canada",
+        "label": "Canada",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "Canada"
+          }
+        ]
+      },
+      {
+        "id": "australia",
+        "label": "Australia",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "country",
+            "operation": "equal",
+            "right": "Australia"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "other-funds-otherfund-strategy",
+    "slug": "other-funds-otherfund-strategy",
+    "division_id": "other-funds",
+    "division": "Other funds",
+    "category_id": "otherfund-strategy",
+    "category": "Strategy and theme",
+    "scope": "supported strategy and thematic classifications",
+    "title": "Other funds: Strategy and theme | Milled Edge",
+    "search_description": "Explore supported strategy and thematic classifications. Review the source, data timing, and category methodology; market values may be delayed and are.",
+    "labels": [
+      "Markets",
+      "other-funds",
+      "strategy-and-theme",
+      "Global Market Data"
+    ],
+    "batch": 3,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "fund"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "leveraged",
+        "label": "Leveraged strategies",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "leveraged"
+          }
+        ]
+      },
+      {
+        "id": "inverse",
+        "label": "Inverse strategies",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "inverse"
+          }
+        ]
+      },
+      {
+        "id": "income",
+        "label": "Income strategies",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "income"
+          }
+        ]
+      },
+      {
+        "id": "index",
+        "label": "Index strategies",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "index"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "other-funds-otherfund-provider-subtype",
+    "slug": "other-funds-otherfund-provider-subtype",
+    "division_id": "other-funds",
+    "division": "Other funds",
+    "category_id": "otherfund-provider-subtype",
+    "category": "Provider subtype",
+    "scope": "funds grouped by the source's own subtype labels",
+    "title": "Other funds: Instrument subtype | Milled Edge",
+    "search_description": "Explore funds grouped by the source's own subtype labels. Review the source, data timing, and category methodology; market values may be delayed and are.",
+    "labels": [
+      "Markets",
+      "other-funds",
+      "provider-subtype",
+      "Global Market Data"
+    ],
+    "batch": 3,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "fund"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "etf",
+        "label": "ETF",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "etf"
+          }
+        ]
+      },
+      {
+        "id": "mutual",
+        "label": "Mutual",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "mutual"
+          }
+        ]
+      },
+      {
+        "id": "closed-end",
+        "label": "Closed-end",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "fund"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "closedend"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "futures-future-underlying",
+    "slug": "futures-future-underlying",
+    "division_id": "futures",
+    "division": "Futures",
+    "category_id": "future-underlying",
+    "category": "Underlying asset class",
+    "scope": "equity, index, commodity, currency, rates, and other underlyings",
+    "title": "Futures: Underlying asset class | Milled Edge",
+    "search_description": "Explore equity, index, commodity, currency, rates, and other underlyings. Review the source, data timing, and category methodology; market values may be.",
+    "labels": [
+      "Markets",
+      "futures",
+      "underlying-asset-class",
+      "Global Market Data"
+    ],
+    "batch": 3,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "futures"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "equity-index",
+        "label": "Equity-index futures",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "index"
+          }
+        ]
+      },
+      {
+        "id": "rates",
+        "label": "Rates and bond futures",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "bond"
+          }
+        ]
+      },
+      {
+        "id": "currency",
+        "label": "Currency futures",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "currency"
+          }
+        ]
+      },
+      {
+        "id": "commodity",
+        "label": "Commodity futures",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "oil"
+          }
+        ]
+      },
+      {
+        "id": "crypto",
+        "label": "Crypto-classified futures",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "crypto"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "futures-future-contract-family",
+    "slug": "futures-future-contract-family",
+    "division_id": "futures",
+    "division": "Futures",
+    "category_id": "future-contract-family",
+    "category": "Contract family",
+    "scope": "futures grouped by their reported contract or product family",
+    "title": "Futures: Contract family | Milled Edge",
+    "search_description": "Explore futures grouped by their reported contract or product family. Review the source, data timing, and category methodology; market values may be.",
+    "labels": [
+      "Markets",
+      "futures",
+      "contract-family",
+      "Global Market Data"
+    ],
+    "batch": 3,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "futures"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "continuous",
+        "label": "Continuous",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "continuous"
+          }
+        ]
+      },
+      {
+        "id": "micro",
+        "label": "Micro",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "micro"
+          }
+        ]
+      },
+      {
+        "id": "mini",
+        "label": "Mini",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "mini"
+          }
+        ]
+      },
+      {
+        "id": "crypto-linked",
+        "label": "Crypto-linked",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "crypto"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "futures-future-exchange",
+    "slug": "futures-future-exchange",
+    "division_id": "futures",
+    "division": "Futures",
+    "category_id": "future-exchange",
+    "category": "Country and exchange",
+    "scope": "contracts grouped by supported country and trading venue",
+    "title": "Futures: Country and exchange | Milled Edge",
+    "search_description": "Explore contracts grouped by supported country and trading venue. Review the source, data timing, and category methodology; market values may be delayed.",
+    "labels": [
+      "Markets",
+      "futures",
+      "country-and-exchange",
+      "Global Market Data"
+    ],
+    "batch": 3,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "futures"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "cme",
+        "label": "CME",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "CME"
+          }
+        ]
+      },
+      {
+        "id": "cbot",
+        "label": "CBOT",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "CBOT"
+          }
+        ]
+      },
+      {
+        "id": "nymex",
+        "label": "NYMEX",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "NYMEX"
+          }
+        ]
+      },
+      {
+        "id": "eurex",
+        "label": "EUREX",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "EUREX"
+          }
+        ]
+      },
+      {
+        "id": "sgx",
+        "label": "SGX",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "SGX"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "futures-future-expiry",
+    "slug": "futures-future-expiry",
+    "division_id": "futures",
+    "division": "Futures",
+    "category_id": "future-expiry",
+    "category": "Expiry and tenor",
+    "scope": "contracts grouped by available expiry or tenor data",
+    "title": "Futures: Expiry and tenor | Milled Edge",
+    "search_description": "Explore contracts grouped by available expiry or tenor data. Review the source, data timing, and category methodology; market values may be delayed and.",
+    "labels": [
+      "Markets",
+      "futures",
+      "expiry-and-tenor",
+      "Global Market Data"
+    ],
+    "batch": 3,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "futures"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "2026",
+        "label": "2026 contract references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "2026"
+          }
+        ]
+      },
+      {
+        "id": "2027",
+        "label": "2027 contract references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "2027"
+          }
+        ]
+      },
+      {
+        "id": "2028",
+        "label": "2028 contract references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "2028"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "futures-future-settlement",
+    "slug": "futures-future-settlement",
+    "division_id": "futures",
+    "division": "Futures",
+    "category_id": "future-settlement",
+    "category": "Settlement and delivery",
+    "scope": "cash-settled, deliverable, and other reported settlement details",
+    "title": "Futures: Settlement and delivery | Milled Edge",
+    "search_description": "Explore cash-settled, deliverable, and other reported settlement details. Review the source, data timing, and category methodology; market values may be.",
+    "labels": [
+      "Markets",
+      "futures",
+      "settlement-and-delivery",
+      "Global Market Data"
+    ],
+    "batch": 3,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "futures"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "all-reported-futures",
+        "label": "Provider-listed futures (settlement terms require contract-source verification)",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "futures-future-liquidity",
+    "slug": "futures-future-liquidity",
+    "division_id": "futures",
+    "division": "Futures",
+    "category_id": "future-liquidity",
+    "category": "Reported activity",
+    "scope": "futures grouped by reported volume or open-interest ranges",
+    "title": "Futures: Reported activity | Milled Edge",
+    "search_description": "Explore futures grouped by reported volume or open-interest ranges. Review the source, data timing, and category methodology; market values may be.",
+    "labels": [
+      "Markets",
+      "futures",
+      "reported-activity",
+      "Global Market Data"
+    ],
+    "batch": 3,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "futures"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "active",
+        "label": "Higher reported activity",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "volume",
+            "operation": "egreater",
+            "right": 0
+          }
+        ]
+      },
+      {
+        "id": "reported-activity",
+        "label": "Open-interest / activity fields where supplied",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "options-option-underlying",
+    "slug": "options-option-underlying",
+    "division_id": "options",
+    "division": "Options",
+    "category_id": "option-underlying",
+    "category": "Underlying asset",
+    "scope": "supported equity, index, and futures underlyings for option research; standalone option contracts are not exposed by the connected global scan",
+    "title": "Options: Underlying asset | Milled Edge",
+    "search_description": "Explore supported equity, index, and futures underlyings for option research; standalone option contracts are not exposed by the connected global scan..",
+    "labels": [
+      "Markets",
+      "options",
+      "underlying-asset",
+      "Global Market Data"
+    ],
+    "batch": 3,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "futures"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "equity-underlyings",
+        "label": "Equity underlyings (not option contracts)",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "index-underlyings",
+        "label": "Index underlyings (not option contracts)",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "index"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "futures-underlyings",
+        "label": "Futures underlyings (not option contracts)",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "options-option-call-put",
+    "slug": "options-option-call-put",
+    "division_id": "options",
+    "division": "Options",
+    "category_id": "option-call-put",
+    "category": "Call and put",
+    "scope": "call and put option-chain data must be verified at the exchange; this directory supplies underlying instruments only",
+    "title": "Options: Call and put | Milled Edge",
+    "search_description": "Explore call and put option-chain data must be verified at the exchange; this directory supplies underlying instruments only. Review the source, data.",
+    "labels": [
+      "Markets",
+      "options",
+      "call-and-put",
+      "Global Market Data"
+    ],
+    "batch": 3,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "futures"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "equity-underlyings",
+        "label": "Equity underlyings (not option contracts)",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "index-underlyings",
+        "label": "Index underlyings (not option contracts)",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "index"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "futures-underlyings",
+        "label": "Futures underlyings (not option contracts)",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "options-option-expiry",
+    "slug": "options-option-expiry",
+    "division_id": "options",
+    "division": "Options",
+    "category_id": "option-expiry",
+    "category": "Expiry",
+    "scope": "option expiry and tenor require exchange option-chain verification; directory rows are related underlyings",
+    "title": "Options: Expiry | Milled Edge",
+    "search_description": "Explore option expiry and tenor require exchange option-chain verification; directory rows are related underlyings. Review the source, data timing, and.",
+    "labels": [
+      "Markets",
+      "options",
+      "expiry",
+      "Global Market Data"
+    ],
+    "batch": 3,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "futures"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "futures-underlyings",
+        "label": "Futures underlyings (not option contracts)",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

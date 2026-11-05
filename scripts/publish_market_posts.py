@@ -1,7 +1,7 @@
-"""Publish or safely update a prepared Blogger market-category post batch.
+"""Publish or safely update one prepared Blogger market-category post batch.
 
-This first release is limited to batch 1 (20 posts). It never deletes posts or
-pages and uses a stable per-post label to make retries idempotent.
+The publisher is explicit about batch number and requires --confirm PUBLISH.
+It never deletes posts or pages and uses stable category labels for retries.
 """
 from __future__ import annotations
 
@@ -14,24 +14,26 @@ import urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-POST_DIR = ROOT / "content" / "market-posts" / "batch-1"
-CATALOG_PATH = ROOT / "content" / "market-posts" / "batch-1-catalog.json"
+POST_ROOT = ROOT / "content" / "market-posts"
+BATCH_SIZES = {1:20, 2:20, 3:22, 4:22, 5:20}
 
 
-def load_catalog() -> list[dict]:
-    if not CATALOG_PATH.is_file():
-        raise SystemExit(f"Missing generated post catalog: {CATALOG_PATH}")
-    data = json.loads(CATALOG_PATH.read_text(encoding="utf-8"))
-    if len(data) != 20:
-        raise SystemExit(f"Expected exactly 20 category posts in batch 1, found {len(data)}")
+def load_catalog(batch: int) -> list[dict]:
+    catalog_path = POST_ROOT / f"batch-{batch}-catalog.json"
+    if not catalog_path.is_file():
+        raise SystemExit(f"Missing generated post catalog: {catalog_path}")
+    data = json.loads(catalog_path.read_text(encoding="utf-8"))
+    expected = BATCH_SIZES[batch]
+    if len(data) != expected:
+        raise SystemExit(f"Expected {expected} category posts in batch {batch}, found {len(data)}")
     ids = [x["slug"] for x in data]
     if len(set(ids)) != len(ids):
         raise SystemExit("Duplicate category-post IDs in batch catalog")
     return data
 
 
-def post_body(item: dict) -> str:
-    path = POST_DIR / f"{item['slug']}.html"
+def post_body(item: dict, batch: int) -> str:
+    path = POST_ROOT / f"batch-{batch}" / f"{item['slug']}.html"
     if not path.is_file():
         raise SystemExit(f"Missing generated post body: {path}")
     body = path.read_text(encoding="utf-8")
@@ -42,21 +44,27 @@ def post_body(item: dict) -> str:
     missing = [x for x in required if x not in body]
     if missing:
         raise SystemExit(f"Post {item['slug']} is missing required functionality/metadata markers: {missing}")
+    if '"datePublished"' not in body:
+        raise SystemExit(f"Post {item['slug']} has no publication date; regenerate with --publication-date before live publishing")
+    if any(marker in body for marker in ("DY_SEO_META_START", "DY_BRAND_IDENTITY_START", "DY_PAGE_FAMILY_START", "DY_BRAND_SEO_START")):
+        raise SystemExit(f"Post {item['slug']} contains source-template markers that should not be published")
     if len(body) > 1_000_000:
         raise SystemExit(f"Post {item['slug']} exceeds the 1 MB safety threshold")
     return body
 
 
-def preflight() -> list[tuple[dict, str, list[str]]]:
-    catalog = load_catalog()
+def preflight(batch: int) -> list[tuple[dict, str, list[str]]]:
+    catalog = load_catalog(batch)
     prepared = []
     for item in catalog:
-        body = post_body(item)
+        if item.get("batch") != batch:
+            raise SystemExit(f"Catalog entry {item.get('slug')} is assigned to batch {item.get('batch')}, not {batch}")
+        body = post_body(item, batch)
         labels = list(dict.fromkeys(item["labels"] + ["MarketCategoryPost", "CategoryID-" + item["slug"]]))
         if sum(len(x) for x in labels) > 200:
             raise SystemExit(f"Post labels exceed Blogger's combined length safety limit: {item['slug']}")
         prepared.append((item, body, labels))
-    if len({x[0]["title"] for x in prepared}) != 20:
+    if len({x[0]["title"] for x in prepared}) != BATCH_SIZES[batch]:
         raise SystemExit("Post titles are not unique")
     return prepared
 
@@ -102,12 +110,13 @@ def public_check(url: str) -> tuple[bool, str]:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
+    parser.add_argument("--batch", type=int, required=True, choices=range(1, 6))
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--confirm", default="")
     args = parser.parse_args()
-    prepared = preflight()
-    print(f"Validated {len(prepared)} category posts; {sum(len(body) for _, body, _ in prepared):,} HTML characters total.")
-    print("Release order: 20 posts in this first batch; no legacy page/post deletion is part of this script.")
+    prepared = preflight(args.batch)
+    print(f"Validated batch {args.batch}: {len(prepared)} category posts; {sum(len(body) for _, body, _ in prepared):,} HTML characters total.")
+    print("This publisher never deletes existing posts or pages.")
     if args.dry_run:
         return 0
     if args.confirm != "PUBLISH":
@@ -163,7 +172,7 @@ def main() -> int:
         for failure in failures:
             detail = failure["error"].replace("%", "%25").replace("\\r", " ").replace("\\n", " ").replace(":", "%3A")
             print(f"::error title=Market category post failure::{failure['id']} — {detail}", flush=True)
-        write_summary("## Market-category post batch 1: partial failure\n\n" + json.dumps({"published_or_updated": results, "failures": failures}, indent=2))
+        write_summary(f"## Market-category post batch {args.batch}: partial failure\n\n" + json.dumps({"published_or_updated": results, "failures": failures}, indent=2))
         raise SystemExit(f"{len(failures)} posts failed; {len(results)} created or updated. No existing pages were deleted.")
 
     # Public checks happen after API writes; a transient delivery failure is
@@ -173,12 +182,12 @@ def main() -> int:
         ok, detail = public_check(result["url"])
         public_results.append({"url": result["url"], "ok": ok, "detail": detail})
         print(("verified: " if ok else "public-check pending: ") + result["url"] + " — " + detail, flush=True)
-    summary = "## Market-category post batch 1\n\n" + json.dumps({"posts": results, "public_checks": public_results}, indent=2)
+    summary = f"## Market-category post batch {args.batch}\n\n" + json.dumps({"posts": results, "public_checks": public_results}, indent=2)
     write_summary(summary)
-    if len(results) != 20:
-        raise SystemExit(f"Expected 20 results, got {len(results)}")
+    if len(results) != BATCH_SIZES[args.batch]:
+        raise SystemExit(f"Expected {BATCH_SIZES[args.batch]} results, got {len(results)}")
     if not all(x["ok"] for x in public_results):
-        raise SystemExit("All 20 posts were submitted, but one or more public checks did not pass; do not retire old pages")
+        raise SystemExit(f"All {len(results)} posts in batch {args.batch} were submitted, but one or more public checks did not pass; do not retire old pages")
     return 0
 
 

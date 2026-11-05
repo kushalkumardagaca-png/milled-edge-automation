@@ -1,0 +1,1370 @@
+{
+  "prepared_at": "2026-11-05",
+  "status": "publication_requested",
+  "post_count": 84,
+  "batch_counts": {
+    "2": 20,
+    "3": 22,
+    "4": 22,
+    "5": 20
+  },
+  "subcategory_lane_count": 287,
+  "provider_filter_validation": {
+    "provider": "TradingView global scanner",
+    "filters_tested": 287,
+    "zero_result_filters": 0,
+    "note": "Counts are live-provider snapshots and can change."
+  },
+  "coverage_notes": [
+    "Standalone option contracts are not exposed by the connected global scan; option pages present related underlyings, not option records.",
+    "Perpetual-vs-dated crypto derivative status and structured-product terms require venue or issuer documentation.",
+    "The Blogger API publisher does not set native per-post search-description or custom-permalink fields.",
+    "Blogger publication dates are inserted into structured data during the live-publish build."
+  ],
+  "posts": [
+    {
+      "batch": 2,
+      "slug": "depositary-receipts-underlying-country",
+      "title": "Depositary receipts: Underlying country | Milled Edge",
+      "division": "Depositary receipts",
+      "category": "Underlying country",
+      "description": "Explore depositary receipts grouped by the issuer's underlying country. Review the source, data timing, and category methodology; market values may be.",
+      "labels": [
+        "Markets",
+        "depositary-receipts",
+        "underlying-country",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 5,
+      "html_path": "batch-2/depositary-receipts-underlying-country.html"
+    },
+    {
+      "batch": 2,
+      "slug": "depositary-receipts-receipt-program",
+      "title": "Depositary receipts: Receipt program and type | Milled Edge",
+      "division": "Depositary receipts",
+      "category": "Receipt program and type",
+      "description": "Explore depositary receipts grouped by provider-reported receipt type. Review the source, data timing, and category methodology; market values may be.",
+      "labels": [
+        "Markets",
+        "depositary-receipts",
+        "receipt-program-and-type",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 3,
+      "html_path": "batch-2/depositary-receipts-receipt-program.html"
+    },
+    {
+      "batch": 2,
+      "slug": "depositary-receipts-receipt-exchange",
+      "title": "Depositary receipts: Exchange and venue | Milled Edge",
+      "division": "Depositary receipts",
+      "category": "Exchange and venue",
+      "description": "Explore depositary receipts grouped by reported listing venue. Review the source, data timing, and category methodology; market values may be delayed and.",
+      "labels": [
+        "Markets",
+        "depositary-receipts",
+        "exchange-and-venue",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 3,
+      "html_path": "batch-2/depositary-receipts-receipt-exchange.html"
+    },
+    {
+      "batch": 2,
+      "slug": "depositary-receipts-receipt-underlying",
+      "title": "Depositary receipts: Issuer and underlying | Milled Edge",
+      "division": "Depositary receipts",
+      "category": "Issuer and underlying security",
+      "description": "Explore receipts connected to their issuer and underlying security. Review the source, data timing, and category methodology; market values may be.",
+      "labels": [
+        "Markets",
+        "depositary-receipts",
+        "issuer-and-underlying-security",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 4,
+      "html_path": "batch-2/depositary-receipts-receipt-underlying.html"
+    },
+    {
+      "batch": 2,
+      "slug": "bonds-fixed-income-bond-issuer-type",
+      "title": "Bonds and fixed income: Issuer type | Milled Edge",
+      "division": "Bonds and fixed income",
+      "category": "Issuer type",
+      "description": "Explore government, sovereign, corporate, and other reported bond issuers. Review the source, data timing, and category methodology; market values may be.",
+      "labels": [
+        "Markets",
+        "bonds-and-fixed-income",
+        "issuer-type",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 2,
+      "html_path": "batch-2/bonds-fixed-income-bond-issuer-type.html"
+    },
+    {
+      "batch": 2,
+      "slug": "bonds-fixed-income-bond-country",
+      "title": "Bonds and fixed income: Country and region | Milled Edge",
+      "division": "Bonds and fixed income",
+      "category": "Country and region",
+      "description": "Explore fixed-income records grouped by reported country or region. Review the source, data timing, and category methodology; market values may be.",
+      "labels": [
+        "Markets",
+        "bonds-and-fixed-income",
+        "country-and-region",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 5,
+      "html_path": "batch-2/bonds-fixed-income-bond-country.html"
+    },
+    {
+      "batch": 2,
+      "slug": "bonds-fixed-income-bond-maturity",
+      "title": "Bonds and fixed income: Maturity and duration | Milled Edge",
+      "division": "Bonds and fixed income",
+      "category": "Maturity and duration",
+      "description": "Explore bonds grouped by reported maturity or duration information. Review the source, data timing, and category methodology; market values may be.",
+      "labels": [
+        "Markets",
+        "bonds-and-fixed-income",
+        "maturity-and-duration",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 4,
+      "html_path": "batch-2/bonds-fixed-income-bond-maturity.html"
+    },
+    {
+      "batch": 2,
+      "slug": "bonds-fixed-income-bond-credit-quality",
+      "title": "Bonds and fixed income: Credit quality | Milled Edge",
+      "division": "Bonds and fixed income",
+      "category": "Credit quality",
+      "description": "Explore bond records grouped by supported credit-quality classifications. Review the source, data timing, and category methodology; market values may be.",
+      "labels": [
+        "Markets",
+        "bonds-and-fixed-income",
+        "credit-quality",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 1,
+      "html_path": "batch-2/bonds-fixed-income-bond-credit-quality.html"
+    },
+    {
+      "batch": 2,
+      "slug": "bonds-fixed-income-bond-coupon-structure",
+      "title": "Bonds and fixed income: Coupon and structure | Milled Edge",
+      "division": "Bonds and fixed income",
+      "category": "Coupon and structure",
+      "description": "Explore fixed, floating, inflation-linked, and other reported bond structures. Review the source, data timing, and category methodology; market values.",
+      "labels": [
+        "Markets",
+        "bonds-and-fixed-income",
+        "coupon-and-structure",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 2,
+      "html_path": "batch-2/bonds-fixed-income-bond-coupon-structure.html"
+    },
+    {
+      "batch": 2,
+      "slug": "bonds-fixed-income-bond-currency",
+      "title": "Bonds and fixed income: Currency | Milled Edge",
+      "division": "Bonds and fixed income",
+      "category": "Currency",
+      "description": "Explore bonds grouped by their quoted or denomination currency. Review the source, data timing, and category methodology; market values may be delayed.",
+      "labels": [
+        "Markets",
+        "bonds-and-fixed-income",
+        "currency",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 2,
+      "html_path": "batch-2/bonds-fixed-income-bond-currency.html"
+    },
+    {
+      "batch": 2,
+      "slug": "etfs-etf-asset-class",
+      "title": "ETFs: Asset class | Milled Edge",
+      "division": "Exchange-traded funds (ETFs)",
+      "category": "Asset class",
+      "description": "Explore equity, bond, commodity, crypto, currency, and other ETF exposures. Review the source, data timing, and category methodology; market values may.",
+      "labels": [
+        "Markets",
+        "exchange-traded-funds-etfs",
+        "asset-class",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 5,
+      "html_path": "batch-2/etfs-etf-asset-class.html"
+    },
+    {
+      "batch": 2,
+      "slug": "etfs-etf-country",
+      "title": "ETFs: Country and region | Milled Edge",
+      "division": "Exchange-traded funds (ETFs)",
+      "category": "Country and region",
+      "description": "Explore ETFs grouped by supported market or regional exposure. Review the source, data timing, and category methodology; market values may be delayed and.",
+      "labels": [
+        "Markets",
+        "exchange-traded-funds-etfs",
+        "country-and-region",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 5,
+      "html_path": "batch-2/etfs-etf-country.html"
+    },
+    {
+      "batch": 2,
+      "slug": "etfs-etf-sector-theme",
+      "title": "ETFs: Sector and theme | Milled Edge",
+      "division": "Exchange-traded funds (ETFs)",
+      "category": "Sector and theme",
+      "description": "Explore sector and thematic ETF classifications where provider data exists. Review the source, data timing, and category methodology; market values may.",
+      "labels": [
+        "Markets",
+        "exchange-traded-funds-etfs",
+        "sector-and-theme",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 4,
+      "html_path": "batch-2/etfs-etf-sector-theme.html"
+    },
+    {
+      "batch": 2,
+      "slug": "etfs-etf-benchmark",
+      "title": "ETFs: Tracked benchmark | Milled Edge",
+      "division": "Exchange-traded funds (ETFs)",
+      "category": "Tracked benchmark",
+      "description": "Explore ETFs grouped by the benchmark they report tracking. Review the source, data timing, and category methodology; market values may be delayed and.",
+      "labels": [
+        "Markets",
+        "exchange-traded-funds-etfs",
+        "tracked-benchmark",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 4,
+      "html_path": "batch-2/etfs-etf-benchmark.html"
+    },
+    {
+      "batch": 2,
+      "slug": "etfs-etf-strategy",
+      "title": "ETFs: Investment strategy | Milled Edge",
+      "division": "Exchange-traded funds (ETFs)",
+      "category": "Investment strategy",
+      "description": "Explore active, passive, leveraged, inverse, and other reported ETF strategies. Review the source, data timing, and category methodology; market values.",
+      "labels": [
+        "Markets",
+        "exchange-traded-funds-etfs",
+        "investment-strategy",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 4,
+      "html_path": "batch-2/etfs-etf-strategy.html"
+    },
+    {
+      "batch": 2,
+      "slug": "etfs-etf-distribution",
+      "title": "ETFs: Distribution and structure | Milled Edge",
+      "division": "Exchange-traded funds (ETFs)",
+      "category": "Distribution and structure",
+      "description": "Explore accumulating, distributing, and other supported ETF structures. Review the source, data timing, and category methodology; market values may be.",
+      "labels": [
+        "Markets",
+        "exchange-traded-funds-etfs",
+        "distribution-and-structure",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 3,
+      "html_path": "batch-2/etfs-etf-distribution.html"
+    },
+    {
+      "batch": 2,
+      "slug": "index-funds-indexfund-country",
+      "title": "Index funds: Country and region | Milled Edge",
+      "division": "Index funds",
+      "category": "Country and region",
+      "description": "Explore index funds grouped by the market or region they track. Review the source, data timing, and category methodology; market values may be delayed.",
+      "labels": [
+        "Markets",
+        "index-funds",
+        "country-and-region",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 5,
+      "html_path": "batch-2/index-funds-indexfund-country.html"
+    },
+    {
+      "batch": 2,
+      "slug": "index-funds-indexfund-asset-class",
+      "title": "Index funds: Asset class | Milled Edge",
+      "division": "Index funds",
+      "category": "Asset class",
+      "description": "Explore equity, fixed-income, commodity, and other index-fund exposures. Review the source, data timing, and category methodology; market values may be.",
+      "labels": [
+        "Markets",
+        "index-funds",
+        "asset-class",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 4,
+      "html_path": "batch-2/index-funds-indexfund-asset-class.html"
+    },
+    {
+      "batch": 2,
+      "slug": "index-funds-indexfund-market-cap",
+      "title": "Index funds: Market-cap segment | Milled Edge",
+      "division": "Index funds",
+      "category": "Market-cap segment",
+      "description": "Explore broad-market, large-cap, mid-cap, and small-cap index strategies. Review the source, data timing, and category methodology; market values may be.",
+      "labels": [
+        "Markets",
+        "index-funds",
+        "market-cap-segment",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 4,
+      "html_path": "batch-2/index-funds-indexfund-market-cap.html"
+    },
+    {
+      "batch": 2,
+      "slug": "index-funds-indexfund-benchmark",
+      "title": "Index funds: Tracked benchmark | Milled Edge",
+      "division": "Index funds",
+      "category": "Tracked benchmark",
+      "description": "Explore index funds grouped by their reported underlying benchmark. Review the source, data timing, and category methodology; market values may be.",
+      "labels": [
+        "Markets",
+        "index-funds",
+        "tracked-benchmark",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 4,
+      "html_path": "batch-2/index-funds-indexfund-benchmark.html"
+    },
+    {
+      "batch": 3,
+      "slug": "index-funds-indexfund-wrapper",
+      "title": "Index funds: Fund wrapper | Milled Edge",
+      "division": "Index funds",
+      "category": "Fund wrapper",
+      "description": "Explore ETF, mutual-fund, or other wrapper where provider data identifies it. Review the source, data timing, and category methodology; market values may.",
+      "labels": [
+        "Markets",
+        "index-funds",
+        "fund-wrapper",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 3,
+      "html_path": "batch-3/index-funds-indexfund-wrapper.html"
+    },
+    {
+      "batch": 3,
+      "slug": "mutual-funds-mf-asset-class",
+      "title": "Mutual funds: Asset class | Milled Edge",
+      "division": "Mutual funds",
+      "category": "Asset class",
+      "description": "Explore equity, debt, hybrid, and other supported mutual-fund asset classes. Review the source, data timing, and category methodology; market values may.",
+      "labels": [
+        "Markets",
+        "mutual-funds",
+        "asset-class",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 4,
+      "html_path": "batch-3/mutual-funds-mf-asset-class.html"
+    },
+    {
+      "batch": 3,
+      "slug": "mutual-funds-mf-equity-style",
+      "title": "Mutual funds: Equity style and market cap | Milled Edge",
+      "division": "Mutual funds",
+      "category": "Equity style and market cap",
+      "description": "Explore large-cap, mid-cap, small-cap, multi-cap, and flexi-cap styles. Review the source, data timing, and category methodology; market values may be.",
+      "labels": [
+        "Markets",
+        "mutual-funds",
+        "equity-style-and-market-cap",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 5,
+      "html_path": "batch-3/mutual-funds-mf-equity-style.html"
+    },
+    {
+      "batch": 3,
+      "slug": "mutual-funds-mf-debt-duration",
+      "title": "Mutual funds: Debt duration and risk | Milled Edge",
+      "division": "Mutual funds",
+      "category": "Debt duration and risk",
+      "description": "Explore debt schemes grouped by reported duration or credit-risk profile. Review the source, data timing, and category methodology; market values may be.",
+      "labels": [
+        "Markets",
+        "mutual-funds",
+        "debt-duration-and-risk",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 4,
+      "html_path": "batch-3/mutual-funds-mf-debt-duration.html"
+    },
+    {
+      "batch": 3,
+      "slug": "mutual-funds-mf-geography",
+      "title": "Mutual funds: Country and region | Milled Edge",
+      "division": "Mutual funds",
+      "category": "Country and region",
+      "description": "Explore mutual funds grouped by reported geographic investment focus. Review the source, data timing, and category methodology; market values may be.",
+      "labels": [
+        "Markets",
+        "mutual-funds",
+        "country-and-region",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 5,
+      "html_path": "batch-3/mutual-funds-mf-geography.html"
+    },
+    {
+      "batch": 3,
+      "slug": "mutual-funds-mf-sector-theme",
+      "title": "Mutual funds: Sector and theme | Milled Edge",
+      "division": "Mutual funds",
+      "category": "Sector and theme",
+      "description": "Explore sectoral and thematic mutual-fund classifications where available. Review the source, data timing, and category methodology; market values may be.",
+      "labels": [
+        "Markets",
+        "mutual-funds",
+        "sector-and-theme",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 4,
+      "html_path": "batch-3/mutual-funds-mf-sector-theme.html"
+    },
+    {
+      "batch": 3,
+      "slug": "mutual-funds-mf-tax-goal",
+      "title": "Mutual funds: Tax-saving and goal-based | Milled Edge",
+      "division": "Mutual funds",
+      "category": "Tax-saving and goal-based",
+      "description": "Explore supported tax-saving and solution-oriented fund categories. Review the source, data timing, and category methodology; market values may be.",
+      "labels": [
+        "Markets",
+        "mutual-funds",
+        "tax-saving-and-goal-based",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 3,
+      "html_path": "batch-3/mutual-funds-mf-tax-goal.html"
+    },
+    {
+      "batch": 3,
+      "slug": "mutual-funds-mf-management-style",
+      "title": "Mutual funds: Management style | Milled Edge",
+      "division": "Mutual funds",
+      "category": "Management style",
+      "description": "Explore active, passive, and other reported management approaches. Review the source, data timing, and category methodology; market values may be delayed.",
+      "labels": [
+        "Markets",
+        "mutual-funds",
+        "management-style",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 3,
+      "html_path": "batch-3/mutual-funds-mf-management-style.html"
+    },
+    {
+      "batch": 3,
+      "slug": "other-funds-otherfund-type",
+      "title": "Other funds: Fund type | Milled Edge",
+      "division": "Other funds",
+      "category": "Fund type",
+      "description": "Explore supported fund records outside the ETF, index-fund, and mutual-fund routes. Review the source, data timing, and category methodology; market.",
+      "labels": [
+        "Markets",
+        "other-funds",
+        "fund-type",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 3,
+      "html_path": "batch-3/other-funds-otherfund-type.html"
+    },
+    {
+      "batch": 3,
+      "slug": "other-funds-otherfund-asset-class",
+      "title": "Other funds: Asset class | Milled Edge",
+      "division": "Other funds",
+      "category": "Asset class",
+      "description": "Explore other funds grouped by their reported underlying exposure. Review the source, data timing, and category methodology; market values may be delayed.",
+      "labels": [
+        "Markets",
+        "other-funds",
+        "asset-class",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 4,
+      "html_path": "batch-3/other-funds-otherfund-asset-class.html"
+    },
+    {
+      "batch": 3,
+      "slug": "other-funds-otherfund-geography",
+      "title": "Other funds: Country and region | Milled Edge",
+      "division": "Other funds",
+      "category": "Country and region",
+      "description": "Explore other funds grouped by reported market or regional focus. Review the source, data timing, and category methodology; market values may be delayed.",
+      "labels": [
+        "Markets",
+        "other-funds",
+        "country-and-region",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 5,
+      "html_path": "batch-3/other-funds-otherfund-geography.html"
+    },
+    {
+      "batch": 3,
+      "slug": "other-funds-otherfund-strategy",
+      "title": "Other funds: Strategy and theme | Milled Edge",
+      "division": "Other funds",
+      "category": "Strategy and theme",
+      "description": "Explore supported strategy and thematic classifications. Review the source, data timing, and category methodology; market values may be delayed and are.",
+      "labels": [
+        "Markets",
+        "other-funds",
+        "strategy-and-theme",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 4,
+      "html_path": "batch-3/other-funds-otherfund-strategy.html"
+    },
+    {
+      "batch": 3,
+      "slug": "other-funds-otherfund-provider-subtype",
+      "title": "Other funds: Instrument subtype | Milled Edge",
+      "division": "Other funds",
+      "category": "Provider subtype",
+      "description": "Explore funds grouped by the source's own subtype labels. Review the source, data timing, and category methodology; market values may be delayed and are.",
+      "labels": [
+        "Markets",
+        "other-funds",
+        "provider-subtype",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 3,
+      "html_path": "batch-3/other-funds-otherfund-provider-subtype.html"
+    },
+    {
+      "batch": 3,
+      "slug": "futures-future-underlying",
+      "title": "Futures: Underlying asset class | Milled Edge",
+      "division": "Futures",
+      "category": "Underlying asset class",
+      "description": "Explore equity, index, commodity, currency, rates, and other underlyings. Review the source, data timing, and category methodology; market values may be.",
+      "labels": [
+        "Markets",
+        "futures",
+        "underlying-asset-class",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 5,
+      "html_path": "batch-3/futures-future-underlying.html"
+    },
+    {
+      "batch": 3,
+      "slug": "futures-future-contract-family",
+      "title": "Futures: Contract family | Milled Edge",
+      "division": "Futures",
+      "category": "Contract family",
+      "description": "Explore futures grouped by their reported contract or product family. Review the source, data timing, and category methodology; market values may be.",
+      "labels": [
+        "Markets",
+        "futures",
+        "contract-family",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 4,
+      "html_path": "batch-3/futures-future-contract-family.html"
+    },
+    {
+      "batch": 3,
+      "slug": "futures-future-exchange",
+      "title": "Futures: Country and exchange | Milled Edge",
+      "division": "Futures",
+      "category": "Country and exchange",
+      "description": "Explore contracts grouped by supported country and trading venue. Review the source, data timing, and category methodology; market values may be delayed.",
+      "labels": [
+        "Markets",
+        "futures",
+        "country-and-exchange",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 5,
+      "html_path": "batch-3/futures-future-exchange.html"
+    },
+    {
+      "batch": 3,
+      "slug": "futures-future-expiry",
+      "title": "Futures: Expiry and tenor | Milled Edge",
+      "division": "Futures",
+      "category": "Expiry and tenor",
+      "description": "Explore contracts grouped by available expiry or tenor data. Review the source, data timing, and category methodology; market values may be delayed and.",
+      "labels": [
+        "Markets",
+        "futures",
+        "expiry-and-tenor",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 3,
+      "html_path": "batch-3/futures-future-expiry.html"
+    },
+    {
+      "batch": 3,
+      "slug": "futures-future-settlement",
+      "title": "Futures: Settlement and delivery | Milled Edge",
+      "division": "Futures",
+      "category": "Settlement and delivery",
+      "description": "Explore cash-settled, deliverable, and other reported settlement details. Review the source, data timing, and category methodology; market values may be.",
+      "labels": [
+        "Markets",
+        "futures",
+        "settlement-and-delivery",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 1,
+      "html_path": "batch-3/futures-future-settlement.html"
+    },
+    {
+      "batch": 3,
+      "slug": "futures-future-liquidity",
+      "title": "Futures: Reported activity | Milled Edge",
+      "division": "Futures",
+      "category": "Reported activity",
+      "description": "Explore futures grouped by reported volume or open-interest ranges. Review the source, data timing, and category methodology; market values may be.",
+      "labels": [
+        "Markets",
+        "futures",
+        "reported-activity",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 2,
+      "html_path": "batch-3/futures-future-liquidity.html"
+    },
+    {
+      "batch": 3,
+      "slug": "options-option-underlying",
+      "title": "Options: Underlying asset | Milled Edge",
+      "division": "Options",
+      "category": "Underlying asset",
+      "description": "Explore supported equity, index, and futures underlyings for option research; standalone option contracts are not exposed by the connected global scan..",
+      "labels": [
+        "Markets",
+        "options",
+        "underlying-asset",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 3,
+      "html_path": "batch-3/options-option-underlying.html"
+    },
+    {
+      "batch": 3,
+      "slug": "options-option-call-put",
+      "title": "Options: Call and put | Milled Edge",
+      "division": "Options",
+      "category": "Call and put",
+      "description": "Explore call and put option-chain data must be verified at the exchange; this directory supplies underlying instruments only. Review the source, data.",
+      "labels": [
+        "Markets",
+        "options",
+        "call-and-put",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 3,
+      "html_path": "batch-3/options-option-call-put.html"
+    },
+    {
+      "batch": 3,
+      "slug": "options-option-expiry",
+      "title": "Options: Expiry | Milled Edge",
+      "division": "Options",
+      "category": "Expiry",
+      "description": "Explore option expiry and tenor require exchange option-chain verification; directory rows are related underlyings. Review the source, data timing, and.",
+      "labels": [
+        "Markets",
+        "options",
+        "expiry",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 1,
+      "html_path": "batch-3/options-option-expiry.html"
+    },
+    {
+      "batch": 4,
+      "slug": "options-option-strike",
+      "title": "Options: Strike and moneyness | Milled Edge",
+      "division": "Options",
+      "category": "Strike and moneyness",
+      "description": "Explore strike and moneyness are not normalized in the connected scan; use underlying quotes as discovery context. Review the source, data timing, and.",
+      "labels": [
+        "Markets",
+        "options",
+        "strike-and-moneyness",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 2,
+      "html_path": "batch-4/options-option-strike.html"
+    },
+    {
+      "batch": 4,
+      "slug": "options-option-exchange",
+      "title": "Options: Country and exchange | Milled Edge",
+      "division": "Options",
+      "category": "Country and exchange",
+      "description": "Explore related underlyings grouped by their reported country and venue; this is not a complete option-chain feed. Review the source, data timing, and.",
+      "labels": [
+        "Markets",
+        "options",
+        "country-and-exchange",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 2,
+      "html_path": "batch-4/options-option-exchange.html"
+    },
+    {
+      "batch": 4,
+      "slug": "options-option-style",
+      "title": "Options: Exercise style | Milled Edge",
+      "division": "Options",
+      "category": "Exercise style",
+      "description": "Explore exercise style is not exposed consistently; related underlyings are shown without inferring American or European terms. Review the source, data.",
+      "labels": [
+        "Markets",
+        "options",
+        "exercise-style",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 2,
+      "html_path": "batch-4/options-option-style.html"
+    },
+    {
+      "batch": 4,
+      "slug": "forex-fx-base-currency",
+      "title": "FX: Base currency | Milled Edge",
+      "division": "Currencies and foreign exchange",
+      "category": "Base currency",
+      "description": "Explore FX pairs grouped by their base currency. Review the source, data timing, and category methodology; market values may be delayed and are not.",
+      "labels": [
+        "Markets",
+        "currencies-and-foreign-exchange",
+        "base-currency",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 5,
+      "html_path": "batch-4/forex-fx-base-currency.html"
+    },
+    {
+      "batch": 4,
+      "slug": "forex-fx-quote-currency",
+      "title": "FX: Quote currency | Milled Edge",
+      "division": "Currencies and foreign exchange",
+      "category": "Quote currency",
+      "description": "Explore FX pairs grouped by their quote currency. Review the source, data timing, and category methodology; market values may be delayed and are not.",
+      "labels": [
+        "Markets",
+        "currencies-and-foreign-exchange",
+        "quote-currency",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 5,
+      "html_path": "batch-4/forex-fx-quote-currency.html"
+    },
+    {
+      "batch": 4,
+      "slug": "forex-fx-pair-class",
+      "title": "FX: Major/minor/emerging pairs | Milled Edge",
+      "division": "Currencies and foreign exchange",
+      "category": "Major, minor, and emerging pairs",
+      "description": "Explore pair classes only where the source can support the classification. Review the source, data timing, and category methodology; market values may be.",
+      "labels": [
+        "Markets",
+        "currencies-and-foreign-exchange",
+        "major-minor-and-emerging-pairs",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 3,
+      "html_path": "batch-4/forex-fx-pair-class.html"
+    },
+    {
+      "batch": 4,
+      "slug": "forex-fx-region",
+      "title": "FX: Country and region | Milled Edge",
+      "division": "Currencies and foreign exchange",
+      "category": "Country and region",
+      "description": "Explore supported local and regional currency markets. Review the source, data timing, and category methodology; market values may be delayed and are not.",
+      "labels": [
+        "Markets",
+        "currencies-and-foreign-exchange",
+        "country-and-region",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 5,
+      "html_path": "batch-4/forex-fx-region.html"
+    },
+    {
+      "batch": 4,
+      "slug": "forex-fx-venue",
+      "title": "FX: Provider and venue | Milled Edge",
+      "division": "Currencies and foreign exchange",
+      "category": "Provider and venue",
+      "description": "Explore pairs grouped by their reported source or trading venue. Review the source, data timing, and category methodology; market values may be delayed.",
+      "labels": [
+        "Markets",
+        "currencies-and-foreign-exchange",
+        "provider-and-venue",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 4,
+      "html_path": "batch-4/forex-fx-venue.html"
+    },
+    {
+      "batch": 4,
+      "slug": "crypto-spot-crypto-major",
+      "title": "Crypto spot: Major coins and networks | Milled Edge",
+      "division": "Cryptocurrency spot markets",
+      "category": "Major coins and networks",
+      "description": "Explore Bitcoin, Ethereum, Solana, and other supported networks. Review the source, data timing, and category methodology; market values may be delayed.",
+      "labels": [
+        "Markets",
+        "cryptocurrency-spot-markets",
+        "major-coins-and-networks",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 3,
+      "html_path": "batch-4/crypto-spot-crypto-major.html"
+    },
+    {
+      "batch": 4,
+      "slug": "crypto-spot-crypto-stablecoins",
+      "title": "Crypto spot: Stablecoins | Milled Edge",
+      "division": "Cryptocurrency spot markets",
+      "category": "Stablecoins",
+      "description": "Explore stablecoin markets where identified by the source. Review the source, data timing, and category methodology; market values may be delayed and are.",
+      "labels": [
+        "Markets",
+        "cryptocurrency-spot-markets",
+        "stablecoins",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 3,
+      "html_path": "batch-4/crypto-spot-crypto-stablecoins.html"
+    },
+    {
+      "batch": 4,
+      "slug": "crypto-spot-crypto-defi",
+      "title": "Crypto spot: Decentralized finance | Milled Edge",
+      "division": "Cryptocurrency spot markets",
+      "category": "Decentralized finance",
+      "description": "Explore supported DeFi assets grouped by available classifications. Review the source, data timing, and category methodology; market values may be.",
+      "labels": [
+        "Markets",
+        "cryptocurrency-spot-markets",
+        "decentralized-finance",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 3,
+      "html_path": "batch-4/crypto-spot-crypto-defi.html"
+    },
+    {
+      "batch": 4,
+      "slug": "crypto-spot-crypto-layer2",
+      "title": "Crypto spot: Layer 2 and scaling | Milled Edge",
+      "division": "Cryptocurrency spot markets",
+      "category": "Layer 2 and scaling",
+      "description": "Explore supported scaling-network assets where identifiable. Review the source, data timing, and category methodology; market values may be delayed and.",
+      "labels": [
+        "Markets",
+        "cryptocurrency-spot-markets",
+        "layer-2-and-scaling",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 3,
+      "html_path": "batch-4/crypto-spot-crypto-layer2.html"
+    },
+    {
+      "batch": 4,
+      "slug": "crypto-spot-crypto-exchange-tokens",
+      "title": "Crypto spot: Exchange tokens | Milled Edge",
+      "division": "Cryptocurrency spot markets",
+      "category": "Exchange tokens",
+      "description": "Explore supported exchange-related crypto assets. Review the source, data timing, and category methodology; market values may be delayed and are not.",
+      "labels": [
+        "Markets",
+        "cryptocurrency-spot-markets",
+        "exchange-tokens",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 3,
+      "html_path": "batch-4/crypto-spot-crypto-exchange-tokens.html"
+    },
+    {
+      "batch": 4,
+      "slug": "crypto-spot-crypto-infrastructure",
+      "title": "Crypto spot: Infrastructure and oracles | Milled Edge",
+      "division": "Cryptocurrency spot markets",
+      "category": "Infrastructure and oracles",
+      "description": "Explore supported infrastructure, oracle, and protocol assets. Review the source, data timing, and category methodology; market values may be delayed and.",
+      "labels": [
+        "Markets",
+        "cryptocurrency-spot-markets",
+        "infrastructure-and-oracles",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 3,
+      "html_path": "batch-4/crypto-spot-crypto-infrastructure.html"
+    },
+    {
+      "batch": 4,
+      "slug": "crypto-spot-crypto-themes",
+      "title": "Crypto spot: Gaming, payments & themes | Milled Edge",
+      "division": "Cryptocurrency spot markets",
+      "category": "Gaming, payments, and other themes",
+      "description": "Explore theme classifications only when supported by reliable metadata. Review the source, data timing, and category methodology; market values may be.",
+      "labels": [
+        "Markets",
+        "cryptocurrency-spot-markets",
+        "gaming-payments-and-other-themes",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 3,
+      "html_path": "batch-4/crypto-spot-crypto-themes.html"
+    },
+    {
+      "batch": 4,
+      "slug": "crypto-spot-crypto-quote-venue",
+      "title": "Crypto spot: Quote currency and venue | Milled Edge",
+      "division": "Cryptocurrency spot markets",
+      "category": "Quote currency and venue",
+      "description": "Explore spot crypto instruments grouped by quote currency or exchange. Review the source, data timing, and category methodology; market values may be.",
+      "labels": [
+        "Markets",
+        "cryptocurrency-spot-markets",
+        "quote-currency-and-venue",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 4,
+      "html_path": "batch-4/crypto-spot-crypto-quote-venue.html"
+    },
+    {
+      "batch": 4,
+      "slug": "crypto-derivatives-cryptoderiv-futures",
+      "title": "Crypto derivatives: Crypto futures | Milled Edge",
+      "division": "Crypto derivatives",
+      "category": "Crypto futures",
+      "description": "Explore supported crypto-linked futures contracts. Review the source, data timing, and category methodology; market values may be delayed and are not.",
+      "labels": [
+        "Markets",
+        "crypto-derivatives",
+        "crypto-futures",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 1,
+      "html_path": "batch-4/crypto-derivatives-cryptoderiv-futures.html"
+    },
+    {
+      "batch": 4,
+      "slug": "crypto-derivatives-cryptoderiv-perpetuals",
+      "title": "Crypto derivatives: Perpetual contracts | Milled Edge",
+      "division": "Crypto derivatives",
+      "category": "Perpetual contracts",
+      "description": "Explore crypto-classified derivative records; perpetual status must be verified with each venue. Review the source, data timing, and category.",
+      "labels": [
+        "Markets",
+        "crypto-derivatives",
+        "perpetual-contracts",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 1,
+      "html_path": "batch-4/crypto-derivatives-cryptoderiv-perpetuals.html"
+    },
+    {
+      "batch": 4,
+      "slug": "crypto-derivatives-cryptoderiv-options",
+      "title": "Crypto derivatives: Crypto options | Milled Edge",
+      "division": "Crypto derivatives",
+      "category": "Crypto options",
+      "description": "Explore related crypto derivative records for discovery; standalone option-chain records are not exposed consistently by the connected scan. Review the.",
+      "labels": [
+        "Markets",
+        "crypto-derivatives",
+        "crypto-options",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 1,
+      "html_path": "batch-4/crypto-derivatives-cryptoderiv-options.html"
+    },
+    {
+      "batch": 4,
+      "slug": "crypto-derivatives-cryptoderiv-underlying",
+      "title": "Crypto derivatives: Underlying crypto asset | Milled Edge",
+      "division": "Crypto derivatives",
+      "category": "Underlying crypto asset",
+      "description": "Explore derivatives grouped by their reported underlying asset. Review the source, data timing, and category methodology; market values may be delayed.",
+      "labels": [
+        "Markets",
+        "crypto-derivatives",
+        "underlying-crypto-asset",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 3,
+      "html_path": "batch-4/crypto-derivatives-cryptoderiv-underlying.html"
+    },
+    {
+      "batch": 4,
+      "slug": "crypto-derivatives-cryptoderiv-venue",
+      "title": "Crypto derivatives: Exchange and venue | Milled Edge",
+      "division": "Crypto derivatives",
+      "category": "Exchange and venue",
+      "description": "Explore crypto derivatives grouped by reported trading venue. Review the source, data timing, and category methodology; market values may be delayed and.",
+      "labels": [
+        "Markets",
+        "crypto-derivatives",
+        "exchange-and-venue",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 4,
+      "html_path": "batch-4/crypto-derivatives-cryptoderiv-venue.html"
+    },
+    {
+      "batch": 4,
+      "slug": "economic-data-econ-growth",
+      "title": "Economic data: Growth and GDP | Milled Edge",
+      "division": "Economic indicators",
+      "category": "Growth and GDP",
+      "description": "Explore reported GDP and economic-growth indicators. Review the source, data timing, and category methodology; market values may be delayed and are not.",
+      "labels": [
+        "Markets",
+        "economic-indicators",
+        "growth-and-gdp",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 2,
+      "html_path": "batch-4/economic-data-econ-growth.html"
+    },
+    {
+      "batch": 5,
+      "slug": "economic-data-econ-inflation",
+      "title": "Economic data: Inflation and prices | Milled Edge",
+      "division": "Economic indicators",
+      "category": "Inflation and prices",
+      "description": "Explore reported inflation and price indicators. Review the source, data timing, and category methodology; market values may be delayed and are not.",
+      "labels": [
+        "Markets",
+        "economic-indicators",
+        "inflation-and-prices",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 3,
+      "html_path": "batch-5/economic-data-econ-inflation.html"
+    },
+    {
+      "batch": 5,
+      "slug": "economic-data-econ-employment",
+      "title": "Economic data: Employment and labour | Milled Edge",
+      "division": "Economic indicators",
+      "category": "Employment and labour",
+      "description": "Explore reported employment and labour-market indicators. Review the source, data timing, and category methodology; market values may be delayed and are.",
+      "labels": [
+        "Markets",
+        "economic-indicators",
+        "employment-and-labour",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 3,
+      "html_path": "batch-5/economic-data-econ-employment.html"
+    },
+    {
+      "batch": 5,
+      "slug": "economic-data-econ-rates",
+      "title": "Economic data: Rates and monetary policy | Milled Edge",
+      "division": "Economic indicators",
+      "category": "Rates and monetary policy",
+      "description": "Explore reported policy-rate and monetary indicators. Review the source, data timing, and category methodology; market values may be delayed and are not.",
+      "labels": [
+        "Markets",
+        "economic-indicators",
+        "rates-and-monetary-policy",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 3,
+      "html_path": "batch-5/economic-data-econ-rates.html"
+    },
+    {
+      "batch": 5,
+      "slug": "economic-data-econ-trade",
+      "title": "Economic data: Trade and external accounts | Milled Edge",
+      "division": "Economic indicators",
+      "category": "Trade and external accounts",
+      "description": "Explore reported trade and external-balance indicators. Review the source, data timing, and category methodology; market values may be delayed and are.",
+      "labels": [
+        "Markets",
+        "economic-indicators",
+        "trade-and-external-accounts",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 3,
+      "html_path": "batch-5/economic-data-econ-trade.html"
+    },
+    {
+      "batch": 5,
+      "slug": "economic-data-econ-fiscal",
+      "title": "Economic data: Fiscal and public debt | Milled Edge",
+      "division": "Economic indicators",
+      "category": "Fiscal and public debt",
+      "description": "Explore reported government-finance and public-debt indicators. Review the source, data timing, and category methodology; market values may be delayed.",
+      "labels": [
+        "Markets",
+        "economic-indicators",
+        "fiscal-and-public-debt",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 3,
+      "html_path": "batch-5/economic-data-econ-fiscal.html"
+    },
+    {
+      "batch": 5,
+      "slug": "economic-data-econ-production",
+      "title": "Economic data: Production, housing & sentiment",
+      "division": "Economic indicators",
+      "category": "Production, housing, and sentiment",
+      "description": "Explore other supported production, housing, and sentiment series. Review the source, data timing, and category methodology; market values may be delayed.",
+      "labels": [
+        "Markets",
+        "economic-indicators",
+        "production-housing-and-sentiment",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 3,
+      "html_path": "batch-5/economic-data-econ-production.html"
+    },
+    {
+      "batch": 5,
+      "slug": "structured-products-structured-protection",
+      "title": "Structured products: Capital protection | Milled Edge",
+      "division": "Structured products",
+      "category": "Capital protection",
+      "description": "Explore products classified as capital-protected when stated by the source. Review the source, data timing, and category methodology; market values may.",
+      "labels": [
+        "Markets",
+        "structured-products",
+        "capital-protection",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 2,
+      "html_path": "batch-5/structured-products-structured-protection.html"
+    },
+    {
+      "batch": 5,
+      "slug": "structured-products-structured-leverage",
+      "title": "Structured products: Leveraged and inverse | Milled Edge",
+      "division": "Structured products",
+      "category": "Leveraged and inverse",
+      "description": "Explore leveraged or inverse products where provider data identifies them. Review the source, data timing, and category methodology; market values may be.",
+      "labels": [
+        "Markets",
+        "structured-products",
+        "leveraged-and-inverse",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 2,
+      "html_path": "batch-5/structured-products-structured-leverage.html"
+    },
+    {
+      "batch": 5,
+      "slug": "structured-products-structured-notes-warrants",
+      "title": "Structured products: Notes and warrants | Milled Edge",
+      "division": "Structured products",
+      "category": "Notes and warrants",
+      "description": "Explore supported structured notes, certificates, and warrant records. Review the source, data timing, and category methodology; market values may be.",
+      "labels": [
+        "Markets",
+        "structured-products",
+        "notes-and-warrants",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 3,
+      "html_path": "batch-5/structured-products-structured-notes-warrants.html"
+    },
+    {
+      "batch": 5,
+      "slug": "structured-products-structured-underlying",
+      "title": "Structured products: Underlying asset | Milled Edge",
+      "division": "Structured products",
+      "category": "Underlying asset",
+      "description": "Explore products grouped by the reported underlying. Review the source, data timing, and category methodology; market values may be delayed and are not.",
+      "labels": [
+        "Markets",
+        "structured-products",
+        "underlying-asset",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 3,
+      "html_path": "batch-5/structured-products-structured-underlying.html"
+    },
+    {
+      "batch": 5,
+      "slug": "structured-products-structured-issuer-maturity",
+      "title": "Structured products: Issuer and maturity | Milled Edge",
+      "division": "Structured products",
+      "category": "Issuer and maturity",
+      "description": "Explore products grouped by issuer or maturity where available. Review the source, data timing, and category methodology; market values may be delayed.",
+      "labels": [
+        "Markets",
+        "structured-products",
+        "issuer-and-maturity",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 3,
+      "html_path": "batch-5/structured-products-structured-issuer-maturity.html"
+    },
+    {
+      "batch": 5,
+      "slug": "reits-reit-country",
+      "title": "REITs: Country and region | Milled Edge",
+      "division": "REITs and listed real estate",
+      "category": "Country and region",
+      "description": "Explore REITs grouped by reported listing country or region. Review the source, data timing, and category methodology; market values may be delayed and.",
+      "labels": [
+        "Markets",
+        "reits-and-listed-real-estate",
+        "country-and-region",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 5,
+      "html_path": "batch-5/reits-reit-country.html"
+    },
+    {
+      "batch": 5,
+      "slug": "reits-reit-property-sector",
+      "title": "REITs: Property sector | Milled Edge",
+      "division": "REITs and listed real estate",
+      "category": "Property sector",
+      "description": "Explore residential, retail, industrial, office, and other supported sectors. Review the source, data timing, and category methodology; market values may.",
+      "labels": [
+        "Markets",
+        "reits-and-listed-real-estate",
+        "property-sector",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 4,
+      "html_path": "batch-5/reits-reit-property-sector.html"
+    },
+    {
+      "batch": 5,
+      "slug": "reits-reit-structure",
+      "title": "REITs: REIT structure | Milled Edge",
+      "division": "REITs and listed real estate",
+      "category": "REIT structure",
+      "description": "Explore equity, mortgage, and other structures when identified. Review the source, data timing, and category methodology; market values may be delayed.",
+      "labels": [
+        "Markets",
+        "reits-and-listed-real-estate",
+        "reit-structure",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 2,
+      "html_path": "batch-5/reits-reit-structure.html"
+    },
+    {
+      "batch": 5,
+      "slug": "reits-reit-market-cap",
+      "title": "REITs: Market capitalization | Milled Edge",
+      "division": "REITs and listed real estate",
+      "category": "Market capitalization",
+      "description": "Explore REITs grouped by reported market-capitalization bands. Review the source, data timing, and category methodology; market values may be delayed and.",
+      "labels": [
+        "Markets",
+        "reits-and-listed-real-estate",
+        "market-capitalization",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 1,
+      "html_path": "batch-5/reits-reit-market-cap.html"
+    },
+    {
+      "batch": 5,
+      "slug": "reits-reit-exchange",
+      "title": "REITs: Exchange and venue | Milled Edge",
+      "division": "REITs and listed real estate",
+      "category": "Exchange and venue",
+      "description": "Explore REITs grouped by reported listing venue. Review the source, data timing, and category methodology; market values may be delayed and are not.",
+      "labels": [
+        "Markets",
+        "reits-and-listed-real-estate",
+        "exchange-and-venue",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 5,
+      "html_path": "batch-5/reits-reit-exchange.html"
+    },
+    {
+      "batch": 5,
+      "slug": "other-instruments-other-type",
+      "title": "Other instruments: Instrument type | Milled Edge",
+      "division": "Other and not-yet-classified instruments",
+      "category": "Provider instrument type",
+      "description": "Explore records grouped by the provider's reported instrument type. Review the source, data timing, and category methodology; market values may be.",
+      "labels": [
+        "Markets",
+        "other-and-not-yet-classified-instruments",
+        "provider-instrument-type",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 9,
+      "html_path": "batch-5/other-instruments-other-type.html"
+    },
+    {
+      "batch": 5,
+      "slug": "other-instruments-other-subtype",
+      "title": "Other instruments: Instrument subtype | Milled Edge",
+      "division": "Other and not-yet-classified instruments",
+      "category": "Provider subtype",
+      "description": "Explore records grouped by the provider's reported subtype. Review the source, data timing, and category methodology; market values may be delayed and.",
+      "labels": [
+        "Markets",
+        "other-and-not-yet-classified-instruments",
+        "provider-subtype",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 5,
+      "html_path": "batch-5/other-instruments-other-subtype.html"
+    },
+    {
+      "batch": 5,
+      "slug": "other-instruments-other-country",
+      "title": "Other instruments: Country and region | Milled Edge",
+      "division": "Other and not-yet-classified instruments",
+      "category": "Country and region",
+      "description": "Explore unclassified records grouped by reported country or region. Review the source, data timing, and category methodology; market values may be.",
+      "labels": [
+        "Markets",
+        "other-and-not-yet-classified-instruments",
+        "country-and-region",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 5,
+      "html_path": "batch-5/other-instruments-other-country.html"
+    },
+    {
+      "batch": 5,
+      "slug": "other-instruments-other-exchange",
+      "title": "Other instruments: Exchange and venue | Milled Edge",
+      "division": "Other and not-yet-classified instruments",
+      "category": "Exchange and venue",
+      "description": "Explore unclassified records grouped by reported exchange or venue. Review the source, data timing, and category methodology; market values may be.",
+      "labels": [
+        "Markets",
+        "other-and-not-yet-classified-instruments",
+        "exchange-and-venue",
+        "Global Market Data"
+      ],
+      "subcategory_lanes": 5,
+      "html_path": "batch-5/other-instruments-other-exchange.html"
+    }
+  ]
+}

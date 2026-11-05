@@ -6,8 +6,9 @@ import html
 import importlib.util
 import json
 import re
-from datetime import date
+from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCE = ROOT / "content" / "markets-today.html"
@@ -68,6 +69,9 @@ def replace_once(text: str, old: str, new: str, label: str) -> str:
 
 def make_template() -> str:
     text = SOURCE.read_text(encoding="utf-8")
+    # Remove page-publisher tokens that belong only to the source template and
+    # otherwise render as stray plain text in Blogger post bodies.
+    text = re.sub(r"(?m)^\s*(?:DY_SEO_META_(?:START|END)|DY_BRAND_IDENTITY_(?:START|END)|DY_PAGE_FAMILY_(?:START|END)|DY_BRAND_SEO_(?:START|END))\s*$", "", text)
     # Category posts use global search; there is intentionally no top-level country selector.
     text = text.replace("use the country selector above to prioritize local results.", "browse listing-country groups here; global search remains available above.")
     text = text.replace('<h1>World markets. One command centre.</h1><p>Search the global 450,000+ instrument universe, then browse stocks, indices, commodities, crypto, ETFs, funds, bonds and currencies.</p>', '<h1>{{POST_H1}}</h1><p>{{POST_DECK}}</p>')
@@ -98,10 +102,11 @@ def make_template() -> str:
     return text
 
 
-def render_post(template: str, cfg: dict) -> str:
+def render_post(template: str, cfg: dict, publication_date: bool = False) -> str:
+    today = datetime.now(ZoneInfo("Asia/Kolkata")).date().isoformat()
     config = {
         **cfg,
-        "date_published": date.today().isoformat(),
+        "date_published": today if publication_date or cfg.get("batch") == 1 else None,
     }
     # page-specific headline and explanatory copy; never rely on ticker values as the only prose.
     h1 = f"{cfg['division']}: {cfg['category']} market directory"
@@ -111,25 +116,46 @@ def render_post(template: str, cfg: dict) -> str:
         'Equity stocks': [('TradingView market scanner','https://www.tradingview.com/markets/stocks/'),('U.S. SEC EDGAR filings','https://www.sec.gov/edgar/search/'),('NSE India','https://www.nseindia.com/'),('BSE India','https://www.bseindia.com/')],
         'Market indices': [('TradingView market scanner','https://www.tradingview.com/markets/indices/'),('S&P Dow Jones Indices','https://www.spglobal.com/spdji/en/'),('Nasdaq Indexes','https://www.nasdaq.com/solutions/indexes')],
         'Commodities': [('TradingView commodity markets','https://www.tradingview.com/markets/commodities/'),('CME Group contract resources','https://www.cmegroup.com/markets.html'),('ICE markets','https://www.ice.com/markets'),('London Metal Exchange','https://www.lme.com/')],
+        'Depositary receipts': [('SEC EDGAR company filings','https://www.sec.gov/edgar/search/'),('Investor.gov international investing','https://www.investor.gov/introduction-investing/investing-basics/investment-products/american-depositary-receipts-adrs')],
+        'Bonds and fixed income': [('U.S. Treasury marketable securities','https://treasurydirect.gov/marketable-securities/'),('FINRA fixed-income data','https://www.finra.org/finra-data/fixed-income'),('Reserve Bank of India','https://www.rbi.org.in/')],
+        'Exchange-traded funds (ETFs)': [('SEC ETF resources','https://www.investor.gov/introduction-investing/investing-basics/investment-products/exchange-traded-funds-etfs'),('TradingView fund scanner','https://www.tradingview.com/markets/etf/funds/portfolio-allocation/market-cap/'),('NSE India','https://www.nseindia.com/')],
+        'Index funds': [('SEC investor resources','https://www.investor.gov/'),('U.S. SEC EDGAR filings','https://www.sec.gov/edgar/search/'),('AMFI India','https://www.amfiindia.com/')],
+        'Mutual funds': [('SEC mutual-fund resources','https://www.investor.gov/introduction-investing/investing-basics/investment-products/mutual-funds-and-exchange-traded-funds-etfs'),('AMFI India','https://www.amfiindia.com/'),('U.S. SEC EDGAR filings','https://www.sec.gov/edgar/search/')],
+        'Other funds': [('U.S. SEC EDGAR filings','https://www.sec.gov/edgar/search/'),('AMFI India','https://www.amfiindia.com/'),('TradingView fund scanner','https://www.tradingview.com/markets/etf/funds/portfolio-allocation/market-cap/')],
+        'Futures': [('CME Group contract resources','https://www.cmegroup.com/markets.html'),('ICE markets','https://www.ice.com/markets'),('U.S. CFTC','https://www.cftc.gov/MarketReports/index.htm')],
+        'Options': [('Options Industry Council education','https://www.optionseducation.org/'),('Options Clearing Corporation','https://www.theocc.com/'),('U.S. CFTC','https://www.cftc.gov/')],
+        'Currencies and foreign exchange': [('Bank for International Settlements','https://www.bis.org/statistics/rpfx22.htm'),('Reserve Bank of India','https://www.rbi.org.in/'),('TradingView forex scanner','https://www.tradingview.com/markets/currencies/rates-all/')],
+        'Cryptocurrency spot markets': [('U.S. SEC investor resources','https://www.investor.gov/'),('TradingView crypto markets','https://www.tradingview.com/markets/cryptocurrencies/prices-all/')],
+        'Crypto derivatives': [('CME Group cryptocurrency products','https://www.cmegroup.com/markets/cryptocurrencies.html'),('U.S. CFTC','https://www.cftc.gov/'),('TradingView futures markets','https://www.tradingview.com/markets/futures/quotes-all/')],
+        'Economic indicators': [('FRED economic data','https://fred.stlouisfed.org/'),('World Bank Data','https://data.worldbank.org/'),('IMF Data','https://www.imf.org/en/Data')],
+        'Structured products': [('FINRA structured notes overview','https://www.finra.org/investors/investing/investment-products/structured-notes'),('SEC EDGAR filings','https://www.sec.gov/edgar/search/'),('Investor.gov','https://www.investor.gov/')],
+        'REITs and listed real estate': [('SEC REIT investor resources','https://www.investor.gov/introduction-investing/investing-basics/investment-products/real-estate-investment-trusts-reits'),('Nareit investor resources','https://www.reit.com/investing'),('SEC EDGAR filings','https://www.sec.gov/edgar/search/')],
     }.get(cfg['division'], [('TradingView global scanner','https://www.tradingview.com/markets/')])
     refs_html = ''.join('<li><a href="'+html.escape(url,quote=True)+'" rel="noopener noreferrer">'+html.escape(label)+'</a></li>' for label,url in references)
     article_schema = {
         '@context':'https://schema.org','@type':'BlogPosting','headline':cfg['title'],
-        'description':cfg['search_description'],'datePublished':config['date_published'],
-        'dateModified':config['date_published'],
+        'description':cfg['search_description'],'dateModified':today,
         'author':{'@type':'Organization','name':'Milled Edge','url':'https://milledgeindia.blogspot.com/p/about-milled-edge.html'},
         'publisher':{'@type':'Organization','name':'Milled Edge','url':'https://milledgeindia.blogspot.com/'},
         'articleSection':cfg['division'],'keywords':', '.join([cfg['division'],cfg['category']]+cfg['labels']),
     }
+    if config["date_published"]:
+        article_schema["datePublished"] = config["date_published"]
     schema_html='<script type="application/ld+json">'+json.dumps(article_schema,ensure_ascii=False,separators=(',',':')).replace('</','<\\/')+'</script>'
+    coverage_note = {
+        "Options": "<p><strong>Coverage note:</strong> the connected global scanner does not return standalone call/put option contracts. These rows therefore show related underlyings—not option contracts. Verify strike, expiry, exercise style, settlement, and contract terms against the relevant exchange or clearing-house option chain.</p>",
+        "Crypto derivatives": "<p><strong>Coverage note:</strong> provider subtype and symbol text are used to identify crypto-linked derivative records. The source does not consistently distinguish perpetuals from dated futures or expose a standalone crypto-options chain; verify product terms with the venue.</p>",
+        "Structured products": "<p><strong>Coverage note:</strong> scanner labels such as certificate or warrant are discovery cues only; they do not establish capital protection, leverage, issuer credit, or payoff terms. Consult the current issuer prospectus and exchange documents.</p>",
+        "Economic indicators": "<p><strong>Coverage note:</strong> provider labels, release calendars, units, seasonal adjustment, and revision history can differ. Verify each series with its originating statistical agency before comparing observations.</p>",
+    }.get(cfg["division"], "")
     editorial = (
         '<section class="dyw-post-intro"><p class="dyw-eyebrow">'+html.escape(cfg['division'])+' / '+html.escape(cfg['category'])+'</p>'
         '<h2>How to use this market directory</h2><p>'+html.escape(cfg['search_description'])+'</p>'
-        '<p>This page groups instruments by '+html.escape(cfg['scope'])+'. Select a subcategory row to load its matching instrument table; each table is paginated so additional provider matches remain available. Select a ticker to open the quote, chart, technical panels, related coverage, and news where supported.</p>'
+        '<p>This page groups instruments by '+html.escape(cfg['scope'])+'. Select a subcategory row to load its matching instrument table; each table is paginated so additional provider matches remain available. Select a ticker to open the quote, chart, technical panels, related coverage, and news where supported.</p>' + coverage_note +
         '<h2>Classification, sources, and data limits</h2><p>Provider type, subtype, issuer country, exchange, and quote fields are used when supplied. Category matches can be incomplete when a provider has missing metadata; an absent result does not prove that a market or instrument does not exist. Price and activity fields may be delayed, may differ across venues, and are not executable offers.</p>'
         '<p>Use primary issuer, exchange, benchmark, or contract documents to verify instrument terms before relying on a figure:</p><ul>'+refs_html+'</ul>'
         '<p><strong>Editorial and risk note:</strong> Milled Edge provides market information and educational context, not personalized investment advice. Automated data collection and formatting do not constitute independent verification of every quote. See the <a href="/p/financial-disclaimer-milled-edge.html">financial disclaimer</a>.</p>'
-        '<p>Category content last reviewed '+html.escape(config['date_published'])+'; live quote timestamps are shown separately and do not represent an editorial review.</p></section>'+schema_html
+        '<p>Category content last reviewed '+html.escape(today)+'; live quote timestamps are shown separately and do not represent an editorial review.</p></section>'+schema_html
     )
     out = template.replace('{{POST_H1}}', html.escape(h1)).replace('{{POST_DECK}}', html.escape(deck))
     out = out.replace('{{POST_DIVISION}}', html.escape(cfg['division'])).replace('{{POST_CATEGORY}}', html.escape(cfg['category']))
@@ -140,13 +166,14 @@ def render_post(template: str, cfg: dict) -> str:
     if marker not in out:
         raise ValueError('Main application script marker not found')
     out = out.replace(marker, config_js+marker, 1)
-    return out
+    return out.rstrip() + "\n"
 
 
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument('--batch', type=int, default=1, choices=range(1,6))
     ap.add_argument('--dry-run', action='store_true')
+    ap.add_argument('--publication-date', action='store_true', help='include datePublished for content being published now')
     args = ap.parse_args()
     template = make_template()
     pages = [p for p in config_module.build_page_configs() if p['batch'] == args.batch]
@@ -156,7 +183,7 @@ def main() -> int:
     if not args.dry_run:
         catalog_path.write_text(json.dumps(pages, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     for p in pages:
-        body = render_post(template, p)
+        body = render_post(template, p, publication_date=args.publication_date)
         unresolved = [mark for mark in ('{{POST_H1}}','{{POST_DECK}}','{{POST_DIVISION}}','{{POST_CATEGORY}}','{{POST_BROWSER_NOTE}}','{{POST_EDITORIAL}}') if mark in body]
         if unresolved:
             raise SystemExit(f"Unresolved placeholders in {p['slug']}: {unresolved}")

@@ -1,0 +1,1618 @@
+[
+  {
+    "id": "options-option-strike",
+    "slug": "options-option-strike",
+    "division_id": "options",
+    "division": "Options",
+    "category_id": "option-strike",
+    "category": "Strike and moneyness",
+    "scope": "strike and moneyness are not normalized in the connected scan; use underlying quotes as discovery context",
+    "title": "Options: Strike and moneyness | Milled Edge",
+    "search_description": "Explore strike and moneyness are not normalized in the connected scan; use underlying quotes as discovery context. Review the source, data timing, and.",
+    "labels": [
+      "Markets",
+      "options",
+      "strike-and-moneyness",
+      "Global Market Data"
+    ],
+    "batch": 4,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "futures"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "equity-underlyings",
+        "label": "Equity underlyings (not option contracts)",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "index-underlyings",
+        "label": "Index underlyings (not option contracts)",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "index"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "options-option-exchange",
+    "slug": "options-option-exchange",
+    "division_id": "options",
+    "division": "Options",
+    "category_id": "option-exchange",
+    "category": "Country and exchange",
+    "scope": "related underlyings grouped by their reported country and venue; this is not a complete option-chain feed",
+    "title": "Options: Country and exchange | Milled Edge",
+    "search_description": "Explore related underlyings grouped by their reported country and venue; this is not a complete option-chain feed. Review the source, data timing, and.",
+    "labels": [
+      "Markets",
+      "options",
+      "country-and-exchange",
+      "Global Market Data"
+    ],
+    "batch": 4,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "futures"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "equity-underlyings",
+        "label": "Equity underlyings (not option contracts)",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "futures-underlyings",
+        "label": "Futures underlyings (not option contracts)",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "futures"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "options-option-style",
+    "slug": "options-option-style",
+    "division_id": "options",
+    "division": "Options",
+    "category_id": "option-style",
+    "category": "Exercise style",
+    "scope": "exercise style is not exposed consistently; related underlyings are shown without inferring American or European terms",
+    "title": "Options: Exercise style | Milled Edge",
+    "search_description": "Explore exercise style is not exposed consistently; related underlyings are shown without inferring American or European terms. Review the source, data.",
+    "labels": [
+      "Markets",
+      "options",
+      "exercise-style",
+      "Global Market Data"
+    ],
+    "batch": 4,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "futures"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "equity-underlyings",
+        "label": "Equity underlyings (not option contracts)",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "stock"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "index-underlyings",
+        "label": "Index underlyings (not option contracts)",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "in_range",
+            "right": [
+              "index"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "forex-fx-base-currency",
+    "slug": "forex-fx-base-currency",
+    "division_id": "forex",
+    "division": "Currencies and foreign exchange",
+    "category_id": "fx-base-currency",
+    "category": "Base currency",
+    "scope": "FX pairs grouped by their base currency",
+    "title": "FX: Base currency | Milled Edge",
+    "search_description": "Explore FX pairs grouped by their base currency. Review the source, data timing, and category methodology; market values may be delayed and are not.",
+    "labels": [
+      "Markets",
+      "currencies-and-foreign-exchange",
+      "base-currency",
+      "Global Market Data"
+    ],
+    "batch": 4,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "forex"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "usd",
+        "label": "USD pairs",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "forex"
+          },
+          {
+            "left": "name",
+            "operation": "match",
+            "right": "USD"
+          }
+        ]
+      },
+      {
+        "id": "eur",
+        "label": "EUR pairs",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "forex"
+          },
+          {
+            "left": "name",
+            "operation": "match",
+            "right": "EUR"
+          }
+        ]
+      },
+      {
+        "id": "gbp",
+        "label": "GBP pairs",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "forex"
+          },
+          {
+            "left": "name",
+            "operation": "match",
+            "right": "GBP"
+          }
+        ]
+      },
+      {
+        "id": "jpy",
+        "label": "JPY pairs",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "forex"
+          },
+          {
+            "left": "name",
+            "operation": "match",
+            "right": "JPY"
+          }
+        ]
+      },
+      {
+        "id": "inr",
+        "label": "INR pairs",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "forex"
+          },
+          {
+            "left": "name",
+            "operation": "match",
+            "right": "INR"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "forex-fx-quote-currency",
+    "slug": "forex-fx-quote-currency",
+    "division_id": "forex",
+    "division": "Currencies and foreign exchange",
+    "category_id": "fx-quote-currency",
+    "category": "Quote currency",
+    "scope": "FX pairs grouped by their quote currency",
+    "title": "FX: Quote currency | Milled Edge",
+    "search_description": "Explore FX pairs grouped by their quote currency. Review the source, data timing, and category methodology; market values may be delayed and are not.",
+    "labels": [
+      "Markets",
+      "currencies-and-foreign-exchange",
+      "quote-currency",
+      "Global Market Data"
+    ],
+    "batch": 4,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "forex"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "usd",
+        "label": "USD quote-currency matches",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "forex"
+          },
+          {
+            "left": "name",
+            "operation": "match",
+            "right": "USD"
+          }
+        ]
+      },
+      {
+        "id": "eur",
+        "label": "EUR quote-currency matches",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "forex"
+          },
+          {
+            "left": "name",
+            "operation": "match",
+            "right": "EUR"
+          }
+        ]
+      },
+      {
+        "id": "jpy",
+        "label": "JPY quote-currency matches",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "forex"
+          },
+          {
+            "left": "name",
+            "operation": "match",
+            "right": "JPY"
+          }
+        ]
+      },
+      {
+        "id": "aud",
+        "label": "AUD quote-currency matches",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "forex"
+          },
+          {
+            "left": "name",
+            "operation": "match",
+            "right": "AUD"
+          }
+        ]
+      },
+      {
+        "id": "cad",
+        "label": "CAD quote-currency matches",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "forex"
+          },
+          {
+            "left": "name",
+            "operation": "match",
+            "right": "CAD"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "forex-fx-pair-class",
+    "slug": "forex-fx-pair-class",
+    "division_id": "forex",
+    "division": "Currencies and foreign exchange",
+    "category_id": "fx-pair-class",
+    "category": "Major, minor, and emerging pairs",
+    "scope": "pair classes only where the source can support the classification",
+    "title": "FX: Major/minor/emerging pairs | Milled Edge",
+    "search_description": "Explore pair classes only where the source can support the classification. Review the source, data timing, and category methodology; market values may be.",
+    "labels": [
+      "Markets",
+      "currencies-and-foreign-exchange",
+      "major-minor-and-emerging-pairs",
+      "Global Market Data"
+    ],
+    "batch": 4,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "forex"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "synthetic",
+        "label": "Synthetic pairs",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "forex"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "synthetic"
+          }
+        ]
+      },
+      {
+        "id": "cfd",
+        "label": "CFD pairs",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "forex"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "cfd"
+          }
+        ]
+      },
+      {
+        "id": "spread-bet",
+        "label": "Spread-bet pairs",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "forex"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "spreadbet"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "forex-fx-region",
+    "slug": "forex-fx-region",
+    "division_id": "forex",
+    "division": "Currencies and foreign exchange",
+    "category_id": "fx-region",
+    "category": "Country and region",
+    "scope": "supported local and regional currency markets",
+    "title": "FX: Country and region | Milled Edge",
+    "search_description": "Explore supported local and regional currency markets. Review the source, data timing, and category methodology; market values may be delayed and are not.",
+    "labels": [
+      "Markets",
+      "currencies-and-foreign-exchange",
+      "country-and-region",
+      "Global Market Data"
+    ],
+    "batch": 4,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "forex"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "jpy",
+        "label": "JPY-linked pairs",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "forex"
+          },
+          {
+            "left": "name",
+            "operation": "match",
+            "right": "JPY"
+          }
+        ]
+      },
+      {
+        "id": "inr",
+        "label": "INR-linked pairs",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "forex"
+          },
+          {
+            "left": "name",
+            "operation": "match",
+            "right": "INR"
+          }
+        ]
+      },
+      {
+        "id": "cny",
+        "label": "CNY-linked pairs",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "forex"
+          },
+          {
+            "left": "name",
+            "operation": "match",
+            "right": "CNY"
+          }
+        ]
+      },
+      {
+        "id": "aud",
+        "label": "AUD-linked pairs",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "forex"
+          },
+          {
+            "left": "name",
+            "operation": "match",
+            "right": "AUD"
+          }
+        ]
+      },
+      {
+        "id": "nzd",
+        "label": "NZD-linked pairs",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "forex"
+          },
+          {
+            "left": "name",
+            "operation": "match",
+            "right": "NZD"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "forex-fx-venue",
+    "slug": "forex-fx-venue",
+    "division_id": "forex",
+    "division": "Currencies and foreign exchange",
+    "category_id": "fx-venue",
+    "category": "Provider and venue",
+    "scope": "pairs grouped by their reported source or trading venue",
+    "title": "FX: Provider and venue | Milled Edge",
+    "search_description": "Explore pairs grouped by their reported source or trading venue. Review the source, data timing, and category methodology; market values may be delayed.",
+    "labels": [
+      "Markets",
+      "currencies-and-foreign-exchange",
+      "provider-and-venue",
+      "Global Market Data"
+    ],
+    "batch": 4,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "forex"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "fx_idc",
+        "label": "FX_IDC",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "forex"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "FX_IDC"
+          }
+        ]
+      },
+      {
+        "id": "oanda",
+        "label": "OANDA",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "forex"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "OANDA"
+          }
+        ]
+      },
+      {
+        "id": "saxo",
+        "label": "SAXO",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "forex"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "SAXO"
+          }
+        ]
+      },
+      {
+        "id": "forexcom",
+        "label": "FOREXCOM",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "forex"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "FOREXCOM"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crypto-spot-crypto-major",
+    "slug": "crypto-spot-crypto-major",
+    "division_id": "crypto-spot",
+    "division": "Cryptocurrency spot markets",
+    "category_id": "crypto-major",
+    "category": "Major coins and networks",
+    "scope": "Bitcoin, Ethereum, Solana, and other supported networks",
+    "title": "Crypto spot: Major coins and networks | Milled Edge",
+    "search_description": "Explore Bitcoin, Ethereum, Solana, and other supported networks. Review the source, data timing, and category methodology; market values may be delayed.",
+    "labels": [
+      "Markets",
+      "cryptocurrency-spot-markets",
+      "major-coins-and-networks",
+      "Global Market Data"
+    ],
+    "batch": 4,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "spot"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "bitcoin",
+        "label": "Bitcoin markets",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "spot"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "Bitcoin"
+          }
+        ]
+      },
+      {
+        "id": "ethereum",
+        "label": "Ethereum markets",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "spot"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "Ethereum"
+          }
+        ]
+      },
+      {
+        "id": "solana",
+        "label": "Solana markets",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "spot"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "Solana"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crypto-spot-crypto-stablecoins",
+    "slug": "crypto-spot-crypto-stablecoins",
+    "division_id": "crypto-spot",
+    "division": "Cryptocurrency spot markets",
+    "category_id": "crypto-stablecoins",
+    "category": "Stablecoins",
+    "scope": "stablecoin markets where identified by the source",
+    "title": "Crypto spot: Stablecoins | Milled Edge",
+    "search_description": "Explore stablecoin markets where identified by the source. Review the source, data timing, and category methodology; market values may be delayed and are.",
+    "labels": [
+      "Markets",
+      "cryptocurrency-spot-markets",
+      "stablecoins",
+      "Global Market Data"
+    ],
+    "batch": 4,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "spot"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "tether",
+        "label": "Tether markets",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "spot"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "Tether"
+          }
+        ]
+      },
+      {
+        "id": "usd-coin",
+        "label": "USD Coin markets",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "spot"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "USD Coin"
+          }
+        ]
+      },
+      {
+        "id": "dai",
+        "label": "DAI markets",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "spot"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "DAI"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crypto-spot-crypto-defi",
+    "slug": "crypto-spot-crypto-defi",
+    "division_id": "crypto-spot",
+    "division": "Cryptocurrency spot markets",
+    "category_id": "crypto-defi",
+    "category": "Decentralized finance",
+    "scope": "supported DeFi assets grouped by available classifications",
+    "title": "Crypto spot: Decentralized finance | Milled Edge",
+    "search_description": "Explore supported DeFi assets grouped by available classifications. Review the source, data timing, and category methodology; market values may be.",
+    "labels": [
+      "Markets",
+      "cryptocurrency-spot-markets",
+      "decentralized-finance",
+      "Global Market Data"
+    ],
+    "batch": 4,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "spot"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "uniswap",
+        "label": "Uniswap/DeFi references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "spot"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "Uniswap"
+          }
+        ]
+      },
+      {
+        "id": "aave",
+        "label": "Aave/DeFi references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "spot"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "Aave"
+          }
+        ]
+      },
+      {
+        "id": "defi",
+        "label": "Other DeFi-labelled records",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "spot"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "DeFi"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crypto-spot-crypto-layer2",
+    "slug": "crypto-spot-crypto-layer2",
+    "division_id": "crypto-spot",
+    "division": "Cryptocurrency spot markets",
+    "category_id": "crypto-layer2",
+    "category": "Layer 2 and scaling",
+    "scope": "supported scaling-network assets where identifiable",
+    "title": "Crypto spot: Layer 2 and scaling | Milled Edge",
+    "search_description": "Explore supported scaling-network assets where identifiable. Review the source, data timing, and category methodology; market values may be delayed and.",
+    "labels": [
+      "Markets",
+      "cryptocurrency-spot-markets",
+      "layer-2-and-scaling",
+      "Global Market Data"
+    ],
+    "batch": 4,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "spot"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "arbitrum",
+        "label": "Arbitrum markets",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "spot"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "Arbitrum"
+          }
+        ]
+      },
+      {
+        "id": "optimism",
+        "label": "Optimism markets",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "spot"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "Optimism"
+          }
+        ]
+      },
+      {
+        "id": "polygon",
+        "label": "Polygon markets",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "spot"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "Polygon"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crypto-spot-crypto-exchange-tokens",
+    "slug": "crypto-spot-crypto-exchange-tokens",
+    "division_id": "crypto-spot",
+    "division": "Cryptocurrency spot markets",
+    "category_id": "crypto-exchange-tokens",
+    "category": "Exchange tokens",
+    "scope": "supported exchange-related crypto assets",
+    "title": "Crypto spot: Exchange tokens | Milled Edge",
+    "search_description": "Explore supported exchange-related crypto assets. Review the source, data timing, and category methodology; market values may be delayed and are not.",
+    "labels": [
+      "Markets",
+      "cryptocurrency-spot-markets",
+      "exchange-tokens",
+      "Global Market Data"
+    ],
+    "batch": 4,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "spot"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "bnb",
+        "label": "BNB markets",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "spot"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "BNB"
+          }
+        ]
+      },
+      {
+        "id": "okb",
+        "label": "OKB markets",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "spot"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "OKB"
+          }
+        ]
+      },
+      {
+        "id": "exchange",
+        "label": "Exchange-token references",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "spot"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "exchange token"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crypto-spot-crypto-infrastructure",
+    "slug": "crypto-spot-crypto-infrastructure",
+    "division_id": "crypto-spot",
+    "division": "Cryptocurrency spot markets",
+    "category_id": "crypto-infrastructure",
+    "category": "Infrastructure and oracles",
+    "scope": "supported infrastructure, oracle, and protocol assets",
+    "title": "Crypto spot: Infrastructure and oracles | Milled Edge",
+    "search_description": "Explore supported infrastructure, oracle, and protocol assets. Review the source, data timing, and category methodology; market values may be delayed and.",
+    "labels": [
+      "Markets",
+      "cryptocurrency-spot-markets",
+      "infrastructure-and-oracles",
+      "Global Market Data"
+    ],
+    "batch": 4,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "spot"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "chainlink",
+        "label": "Chainlink markets",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "spot"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "Chainlink"
+          }
+        ]
+      },
+      {
+        "id": "pyth",
+        "label": "Pyth markets",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "spot"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "Pyth"
+          }
+        ]
+      },
+      {
+        "id": "oracle",
+        "label": "Oracle-labelled records",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "spot"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "oracle"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crypto-spot-crypto-themes",
+    "slug": "crypto-spot-crypto-themes",
+    "division_id": "crypto-spot",
+    "division": "Cryptocurrency spot markets",
+    "category_id": "crypto-themes",
+    "category": "Gaming, payments, and other themes",
+    "scope": "theme classifications only when supported by reliable metadata",
+    "title": "Crypto spot: Gaming, payments & themes | Milled Edge",
+    "search_description": "Explore theme classifications only when supported by reliable metadata. Review the source, data timing, and category methodology; market values may be.",
+    "labels": [
+      "Markets",
+      "cryptocurrency-spot-markets",
+      "gaming-payments-and-other-themes",
+      "Global Market Data"
+    ],
+    "batch": 4,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "spot"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "gaming",
+        "label": "Gaming-labelled records",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "spot"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "gaming"
+          }
+        ]
+      },
+      {
+        "id": "payments",
+        "label": "Payment-labelled records",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "spot"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "payment"
+          }
+        ]
+      },
+      {
+        "id": "metaverse",
+        "label": "Metaverse-labelled records",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "spot"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "metaverse"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crypto-spot-crypto-quote-venue",
+    "slug": "crypto-spot-crypto-quote-venue",
+    "division_id": "crypto-spot",
+    "division": "Cryptocurrency spot markets",
+    "category_id": "crypto-quote-venue",
+    "category": "Quote currency and venue",
+    "scope": "spot crypto instruments grouped by quote currency or exchange",
+    "title": "Crypto spot: Quote currency and venue | Milled Edge",
+    "search_description": "Explore spot crypto instruments grouped by quote currency or exchange. Review the source, data timing, and category methodology; market values may be.",
+    "labels": [
+      "Markets",
+      "cryptocurrency-spot-markets",
+      "quote-currency-and-venue",
+      "Global Market Data"
+    ],
+    "batch": 4,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "spot"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "usdt",
+        "label": "USDT quote pairs",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "spot"
+          },
+          {
+            "left": "name",
+            "operation": "match",
+            "right": "USDT"
+          }
+        ]
+      },
+      {
+        "id": "usd",
+        "label": "USD quote pairs",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "spot"
+          },
+          {
+            "left": "name",
+            "operation": "match",
+            "right": "USD"
+          }
+        ]
+      },
+      {
+        "id": "binance",
+        "label": "Binance listings",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "spot"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "BINANCE"
+          }
+        ]
+      },
+      {
+        "id": "coinbase",
+        "label": "Coinbase listings",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "spot"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "COINBASE"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crypto-derivatives-cryptoderiv-futures",
+    "slug": "crypto-derivatives-cryptoderiv-futures",
+    "division_id": "crypto-derivatives",
+    "division": "Crypto derivatives",
+    "category_id": "cryptoderiv-futures",
+    "category": "Crypto futures",
+    "scope": "supported crypto-linked futures contracts",
+    "title": "Crypto derivatives: Crypto futures | Milled Edge",
+    "search_description": "Explore supported crypto-linked futures contracts. Review the source, data timing, and category methodology; market values may be delayed and are not.",
+    "labels": [
+      "Markets",
+      "crypto-derivatives",
+      "crypto-futures",
+      "Global Market Data"
+    ],
+    "batch": 4,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "futures"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "crypto-futures",
+        "label": "Crypto subtype futures",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "crypto"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crypto-derivatives-cryptoderiv-perpetuals",
+    "slug": "crypto-derivatives-cryptoderiv-perpetuals",
+    "division_id": "crypto-derivatives",
+    "division": "Crypto derivatives",
+    "category_id": "cryptoderiv-perpetuals",
+    "category": "Perpetual contracts",
+    "scope": "crypto-classified derivative records; perpetual status must be verified with each venue",
+    "title": "Crypto derivatives: Perpetual contracts | Milled Edge",
+    "search_description": "Explore crypto-classified derivative records; perpetual status must be verified with each venue. Review the source, data timing, and category.",
+    "labels": [
+      "Markets",
+      "crypto-derivatives",
+      "perpetual-contracts",
+      "Global Market Data"
+    ],
+    "batch": 4,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "futures"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "crypto-classified",
+        "label": "Crypto-classified derivative records (perpetual status needs venue verification)",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "crypto"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crypto-derivatives-cryptoderiv-options",
+    "slug": "crypto-derivatives-cryptoderiv-options",
+    "division_id": "crypto-derivatives",
+    "division": "Crypto derivatives",
+    "category_id": "cryptoderiv-options",
+    "category": "Crypto options",
+    "scope": "related crypto derivative records for discovery; standalone option-chain records are not exposed consistently by the connected scan",
+    "title": "Crypto derivatives: Crypto options | Milled Edge",
+    "search_description": "Explore related crypto derivative records for discovery; standalone option-chain records are not exposed consistently by the connected scan. Review the.",
+    "labels": [
+      "Markets",
+      "crypto-derivatives",
+      "crypto-options",
+      "Global Market Data"
+    ],
+    "batch": 4,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "futures"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "crypto-underlyings",
+        "label": "Listed crypto futures underlying set (option contracts are not exposed by this scan)",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "crypto"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crypto-derivatives-cryptoderiv-underlying",
+    "slug": "crypto-derivatives-cryptoderiv-underlying",
+    "division_id": "crypto-derivatives",
+    "division": "Crypto derivatives",
+    "category_id": "cryptoderiv-underlying",
+    "category": "Underlying crypto asset",
+    "scope": "derivatives grouped by their reported underlying asset",
+    "title": "Crypto derivatives: Underlying crypto asset | Milled Edge",
+    "search_description": "Explore derivatives grouped by their reported underlying asset. Review the source, data timing, and category methodology; market values may be delayed.",
+    "labels": [
+      "Markets",
+      "crypto-derivatives",
+      "underlying-crypto-asset",
+      "Global Market Data"
+    ],
+    "batch": 4,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "futures"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "bitcoin",
+        "label": "Bitcoin-linked contracts",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "Bitcoin"
+          }
+        ]
+      },
+      {
+        "id": "ethereum",
+        "label": "Ethereum-linked contracts",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "Ethereum"
+          }
+        ]
+      },
+      {
+        "id": "other-crypto",
+        "label": "Other crypto-classified contracts",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "subtype",
+            "operation": "equal",
+            "right": "crypto"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "crypto-derivatives-cryptoderiv-venue",
+    "slug": "crypto-derivatives-cryptoderiv-venue",
+    "division_id": "crypto-derivatives",
+    "division": "Crypto derivatives",
+    "category_id": "cryptoderiv-venue",
+    "category": "Exchange and venue",
+    "scope": "crypto derivatives grouped by reported trading venue",
+    "title": "Crypto derivatives: Exchange and venue | Milled Edge",
+    "search_description": "Explore crypto derivatives grouped by reported trading venue. Review the source, data timing, and category methodology; market values may be delayed and.",
+    "labels": [
+      "Markets",
+      "crypto-derivatives",
+      "exchange-and-venue",
+      "Global Market Data"
+    ],
+    "batch": 4,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "futures"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "binance",
+        "label": "BINANCE",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "BINANCE"
+          }
+        ]
+      },
+      {
+        "id": "okx",
+        "label": "OKX",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "OKX"
+          }
+        ]
+      },
+      {
+        "id": "bybit",
+        "label": "BYBIT",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "BYBIT"
+          }
+        ]
+      },
+      {
+        "id": "cme",
+        "label": "CME",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "futures"
+          },
+          {
+            "left": "exchange",
+            "operation": "equal",
+            "right": "CME"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "economic-data-econ-growth",
+    "slug": "economic-data-econ-growth",
+    "division_id": "economic-data",
+    "division": "Economic indicators",
+    "category_id": "econ-growth",
+    "category": "Growth and GDP",
+    "scope": "reported GDP and economic-growth indicators",
+    "title": "Economic data: Growth and GDP | Milled Edge",
+    "search_description": "Explore reported GDP and economic-growth indicators. Review the source, data timing, and category methodology; market values may be delayed and are not.",
+    "labels": [
+      "Markets",
+      "economic-indicators",
+      "growth-and-gdp",
+      "Global Market Data"
+    ],
+    "batch": 4,
+    "base_filters": [
+      {
+        "left": "type",
+        "operation": "equal",
+        "right": "economic"
+      }
+    ],
+    "subcategories": [
+      {
+        "id": "gdp",
+        "label": "GDP and growth series",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "economic"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "GDP"
+          }
+        ]
+      },
+      {
+        "id": "growth",
+        "label": "Growth series",
+        "filters": [
+          {
+            "left": "type",
+            "operation": "equal",
+            "right": "economic"
+          },
+          {
+            "left": "description",
+            "operation": "match",
+            "right": "growth"
+          }
+        ]
+      }
+    ]
+  }
+]

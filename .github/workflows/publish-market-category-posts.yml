@@ -1,9 +1,16 @@
-name: Publish market category posts
+name: Publish remaining market category posts
 
 on:
   push:
     paths:
-      - 'content/market-posts/**'
+      - 'content/market-posts/batch-2/**'
+      - 'content/market-posts/batch-3/**'
+      - 'content/market-posts/batch-4/**'
+      - 'content/market-posts/batch-5/**'
+      - 'content/market-posts/batch-2-catalog.json'
+      - 'content/market-posts/batch-3-catalog.json'
+      - 'content/market-posts/batch-4-catalog.json'
+      - 'content/market-posts/batch-5-catalog.json'
       - 'scripts/market_categories.py'
       - 'scripts/market_page_configs.py'
       - 'scripts/build_market_posts.py'
@@ -14,9 +21,9 @@ permissions:
   contents: read
 
 jobs:
-  publish-batch-1:
+  publish-batches-2-through-5:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -24,13 +31,20 @@ jobs:
           python-version: '3.12'
       - name: Install Blogger API client dependencies
         run: pip install --quiet google-auth google-api-python-client
-      - name: Regenerate batch 1 and validate before publishing
+      - name: Regenerate with publication dates and preflight all 84 posts
         run: |
-          python scripts/build_market_posts.py --batch 1
-          python scripts/publish_market_posts.py --dry-run
-      - name: Publish or update only the first 20 category posts
+          set -euo pipefail
+          for batch in 2 3 4 5; do
+            python scripts/build_market_posts.py --batch "$batch" --publication-date
+            python scripts/publish_market_posts.py --batch "$batch" --dry-run
+          done
+      - name: Publish and publicly verify batches 2 through 5
         env:
           GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
           GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
           GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
-        run: python scripts/publish_market_posts.py --confirm PUBLISH
+        run: |
+          set -euo pipefail
+          for batch in 2 3 4 5; do
+            python scripts/publish_market_posts.py --batch "$batch" --confirm PUBLISH
+          done
