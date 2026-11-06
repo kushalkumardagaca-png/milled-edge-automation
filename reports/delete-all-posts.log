@@ -1,35 +1,13 @@
-Found 654 posts with status LIVE
+Found 100 posts with status LIVE
 Found 0 posts with status DRAFT
 Found 0 posts with status SCHEDULED
-Found 3 posts with status SOFT_TRASHED
-Total unique posts to delete: 657
-Progress: 25/657 processed
-Progress: 50/657 processed
-Progress: 75/657 processed
-Progress: 100/657 processed
-Progress: 125/657 processed
-Progress: 150/657 processed
-Progress: 175/657 processed
-Progress: 200/657 processed
-Progress: 225/657 processed
-Progress: 250/657 processed
-Progress: 275/657 processed
-Progress: 300/657 processed
-Progress: 325/657 processed
-Progress: 350/657 processed
-Progress: 375/657 processed
-Progress: 400/657 processed
-Progress: 425/657 processed
-Progress: 450/657 processed
-Progress: 475/657 processed
-Progress: 500/657 processed
-Progress: 525/657 processed
-Progress: 550/657 processed
-Progress: 575/657 processed
-Progress: 600/657 processed
-Progress: 625/657 processed
-Progress: 650/657 processed
+Found 0 posts with status SOFT_TRASHED
+Total unique posts to delete: 100
+Progress: 25/100 processed
+Progress: 50/100 processed
+Progress: 75/100 processed
+Progress: 100/100 processed
 Report saved: /home/runner/work/milled-edge-automation/milled-edge-automation/artifacts/delete-all-posts-report.json
-Deleted entries: 657
+Deleted entries: 100
 Failed entries: 0
 Remaining posts: 0
