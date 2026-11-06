@@ -7,10 +7,10 @@ on:
         description: Type TRASH 100 PROJECT POSTS to move only the verified project posts to Blogger Trash
         required: true
         type: string
-  schedule:
-    # Resume once after the observed Blogger write-rate limit has had time to reset.
-    # The date gate below prevents this annual cron expression from repeating later.
-    - cron: '15 12 6 11 *'
+  # SCHEDULE DISABLED 2026-11-06: it was armed to fire at 12:15 UTC on 2026-11-06 and
+  # trash 100 project posts. Those posts were permanently deleted at 06:22 UTC on the
+  # same day with the owner's written authorisation, so the scheduled run is obsolete.
+  # Manual dispatch only.
 
 permissions:
   contents: read
